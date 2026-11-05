@@ -1,12 +1,14 @@
 // Check real photo requests, scroll/focus loading, and a JavaScript-free fallback.
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import {spawn} from 'node:child_process';
 import {chromium,firefox,webkit} from 'playwright';
+const laptopIds=JSON.parse(fs.readFileSync('data/phones.json','utf8')).filter(p=>p.category==='laptop').map(p=>p.id);
 const port=8771,base=process.env.IMAGE_BASE||`http://127.0.0.1:${port}`;
 const server=process.env.IMAGE_BASE?null:spawn(process.execPath,['serve.mjs',String(port)],{stdio:'ignore'});
 if(server)await new Promise(r=>setTimeout(r,700));
 try{for(const name of (process.env.IMAGE_ENGINES||'chromium,webkit').split(',')){
- const engine={chromium,firefox,webkit}[name],browser=await engine.launch();
+ const engine={chromium,firefox,webkit}[name],browser=await engine.launch(name==='chromium'&&process.env.IMAGE_CHROME_PATH?{executablePath:process.env.IMAGE_CHROME_PATH}:{});
  try{for(const width of [390,820,1440]){
   const ctx=await browser.newContext({viewport:{width,height:844},reducedMotion:'reduce'});
   await ctx.addInitScript(()=>Object.defineProperty(navigator,'doNotTrack',{get:()=> '1'}));
@@ -18,7 +20,7 @@ try{for(const name of (process.env.IMAGE_ENGINES||'chromium,webkit').split(','))
   await card.locator('img.pimg').waitFor({state:'visible'});
   await p.waitForFunction(id=>{const img=document.querySelector(`.pcard[data-id="${id}"] img.pimg`);return img?.complete&&img.naturalWidth>0},id);
   assert.equal(await card.locator('noscript[data-card-photo]').count(),0,'fallback removed when image activates');
-  await p.evaluate(()=>location.hash='#/c/laptop');await p.waitForFunction(()=>document.querySelector('[data-bx-category]:checked')?.value==='laptop');
+  await p.evaluate(()=>location.hash='#/c/laptop');await p.waitForFunction(ids=>{const cards=[...document.querySelectorAll('.pcard')];return cards.length>0&&cards.every(c=>ids.includes(c.dataset.id))},laptopIds);
   await p.locator('.pcard').first().locator('.fav').focus();await p.waitForFunction(()=>{const img=document.querySelector('.pcard img.pimg');return img?.complete&&img.naturalWidth>0});
   await ctx.close();
   const nojs=await browser.newContext({viewport:{width,height:844},javaScriptEnabled:false});const q=await nojs.newPage();

@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T04:31:02.485Z",
+  "generated": "2026-11-05T15:13:37.978Z",
   "shops": {
     "ispace": {
       "name": "iSpace",
@@ -115,6 +115,11 @@
       "name": "LikeMobile",
       "site": "https://likemobile.am",
       "note": "Exact catalogue SKU prices and stock"
+    },
+    "vesta": {
+      "name": "Vesta",
+      "site": "https://vesta.am",
+      "note": "Exact reviewed product pages and current cash prices"
     }
   },
   "offers": {
@@ -1198,6 +1203,22 @@
         "shop": "yerevanmobile",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:52:20.029Z"
+      },
+      {
+        "id": "apple-iphone-18-pro-max",
+        "title": "APPLE iPhone 18 Pro Max 256GB Burgundy",
+        "price": 709000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-18-Pro-Max-256GB-Burgundy",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Burgundy",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:21.521Z",
+        "sku": "APPLE iPhone 18 Pro Max 256GB Burgundy",
+        "productId": "106400",
+        "ramFromPage": true
       },
       {
         "id": "apple-iphone-18-pro-max",
@@ -4882,6 +4903,70 @@
         "seen": "2026-11-05"
       },
       {
+        "id": "apple-iphone-18-pro",
+        "title": "APPLE IPHONE 18 Pro 256GB Glacier",
+        "price": 639000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-18-Pro-256GB-Blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Glacier",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:25.422Z",
+        "sku": "APPLE iPhone 18 Pro 256GB Glacier",
+        "productId": "104942",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-18-pro",
+        "title": "APPLE IPHONE 18 Pro 256GB Black",
+        "price": 639000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-18-Pro-256GB-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:25.426Z",
+        "sku": "APPLE iPhone 18 Pro 256GB Black",
+        "productId": "104943",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-18-pro",
+        "title": "APPLE IPHONE 18 Pro 256GB Burgundy",
+        "price": 639000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-18-Pro-256GB-Burgundy",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Burgundy",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:26.282Z",
+        "sku": "APPLE iPhone 18 Pro 256GB Burgundy",
+        "productId": "104941",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-18-pro",
+        "title": "APPLE IPHONE 18 Pro 256GB Silver",
+        "price": 639000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-18-Pro-256GB-Silver",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:28.003Z",
+        "sku": "APPLE iPhone 18 Pro 256GB Silver",
+        "productId": "104939",
+        "ramFromPage": true
+      },
+      {
         "title": "iPhone 18 Pro 256GB Black, Model A3714",
         "url": "https://catalog.asbc.am/en/product/mjrp4af-a",
         "sku": "MJRP4AF/A",
@@ -8106,6 +8191,22 @@
       },
       {
         "id": "samsung-galaxy-s26-fe",
+        "title": "SAMSUNG GALAXY S26 FE 256GB Graphite",
+        "price": 284900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S26-FE-256GB-Graphite",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Graphite",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:54.468Z",
+        "sku": "SAMSUNG S741 8/256 Graphite",
+        "productId": "104209",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s26-fe",
         "price": 295900,
         "storage": 256,
         "ram": 8,
@@ -8688,6 +8789,22 @@
         "shop": "viva",
         "seen": "2026-11-05",
         "esim": false
+      },
+      {
+        "id": "samsung-galaxy-z-fold-8-ultra",
+        "title": "SAMSUNG Galaxy Z Fold8 Ultra 256GB Graphite",
+        "price": 710900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-Galaxy-Z-Fold8-Ultra-256GB-Graphite",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Graphite",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:21.566Z",
+        "sku": "SAMSUNG F976 12GB/256GB Graphite",
+        "productId": "104213",
+        "ramFromPage": true
       },
       {
         "id": "samsung-galaxy-z-fold-8-ultra",
@@ -9517,6 +9634,54 @@
         "shop": "viva",
         "seen": "2026-11-05",
         "esim": false
+      },
+      {
+        "id": "samsung-galaxy-z-fold-8",
+        "title": "SAMSUNG Galaxy Z Fold8 256GB Lavender",
+        "price": 643900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-Galaxy-Z-Fold8-256GB-Lavender",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Lavender",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:23.832Z",
+        "sku": "SAMSUNG F971 12GB/256GB Lavender",
+        "productId": "104214",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-z-fold-8",
+        "title": "SAMSUNG Galaxy Z Fold8 256GB Graphite",
+        "price": 643900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-Galaxy-Z-Fold8-256GB-Graphite",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Graphite",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:23.837Z",
+        "sku": "SAMSUNG F971 12GB/256GB Graphite",
+        "productId": "104211",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-z-fold-8",
+        "title": "SAMSUNG Galaxy Z Fold8 256GB Cream",
+        "price": 643900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-Galaxy-Z-Fold8-256GB-Cream",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cream",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:24.601Z",
+        "sku": "SAMSUNG F971 12GB/256GB Cream",
+        "productId": "104216",
+        "ramFromPage": true
       },
       {
         "title": "Samsung Galaxy Z Fold8 12/512GB (Graphite)",
@@ -11099,6 +11264,54 @@
       },
       {
         "id": "samsung-galaxy-a27",
+        "title": "SAMSUNG GALAXY A27 256GB BLUE",
+        "price": 152900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A27-256GB-BLUE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:13.942Z",
+        "sku": "SAMSUNG A276 8/256GB Blue",
+        "productId": "102497",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a27",
+        "title": "SAMSUNG GALAXY A27 256GB PINK",
+        "price": 152900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A27-256GB-pink",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Pink",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:14.206Z",
+        "sku": "SAMSUNG A276 8/256GB Light Pink",
+        "productId": "102495",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a27",
+        "title": "SAMSUNG GALAXY A27 256GB BLACK",
+        "price": 152900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A27-256GB-BLACK",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:14.778Z",
+        "sku": "SAMSUNG A276 8/256GB Black",
+        "productId": "102494",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a27",
         "price": 161900,
         "title": "SAMSUNG A27 (A276) 256GB Black",
         "url": "https://vlv.am/en/Product/47455",
@@ -11608,6 +11821,70 @@
         "shop": "yerevanmobile",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:50:34.080Z"
+      },
+      {
+        "id": "samsung-galaxy-s25-fe",
+        "title": "SAMSUNG GALAXY S25 FE 256 LIGHT BLUE",
+        "price": 269900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S25-128-GB-LIGHT-BLUE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Icyblue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:55.876Z",
+        "sku": "SAMSUNG S731 8/256 Light Blue",
+        "productId": "92682",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s25-fe",
+        "title": "SAMSUNG GALAXY S25 FE 256 WHITE",
+        "price": 269900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S25-FE-128-WHITE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:55.973Z",
+        "sku": "SAMSUNG S731 8/256 White",
+        "productId": "92684",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s25-fe",
+        "title": "SAMSUNG GALAXY S25 FE 256 DARK BLUE",
+        "price": 269900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S25-FE-128-DARK-BLUE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Navy",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:57.207Z",
+        "sku": "SAMSUNG S731 8/256 Dark Blue",
+        "productId": "92681",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s25-fe",
+        "title": "SAMSUNG GALAXY S25 FE 256 BLACK",
+        "price": 269900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S25-FE-128-BLACK",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Jetblack",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:57.577Z",
+        "sku": "SAMSUNG S731 8/256 Black",
+        "productId": "92680",
+        "ramFromPage": true
       }
     ],
     "samsung-galaxy-s26-ultra": [
@@ -12201,6 +12478,38 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "samsung-galaxy-s26-ultra",
+        "title": "SAMSUNG GALAXY S26 ULTRA 256 GB VIOLET",
+        "price": 412900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S26-ULTRA-256-GB-VIOLET",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cobalt Violet",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:41.709Z",
+        "sku": "SAMSUNG S948 12GB/256GB Cobalt Violet",
+        "productId": "99119",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s26-ultra",
+        "title": "SAMSUNG GALAXY S26 ULTRA 256 GB BLACK",
+        "price": 412900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S26-ULTRA-256-GB-BLACK",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:42.562Z",
+        "sku": "SAMSUNG S948 12GB/256GB Black",
+        "productId": "99116",
+        "ramFromPage": true
       },
       {
         "id": "samsung-galaxy-s26-ultra",
@@ -14003,6 +14312,38 @@
       },
       {
         "id": "samsung-galaxy-s26",
+        "title": "SAMSUNG GALAXY S26 256 GB VIOLET",
+        "price": 346900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S26-256-GB-VIOLET",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cobalt Violet",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:50.137Z",
+        "sku": "SAMSUNG S942 12GB/256GB Cobalt Violet",
+        "productId": "99118",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s26",
+        "title": "SAMSUNG GALAXY S26 256 GB BLACK",
+        "price": 346900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S26-256-GB-BLACK",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:50.888Z",
+        "sku": "SAMSUNG S942 12GB/256GB Black",
+        "productId": "99117",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-s26",
         "price": 351000,
         "storage": 512,
         "ram": 12,
@@ -15669,6 +16010,70 @@
       },
       {
         "id": "samsung-galaxy-a57",
+        "title": "SAMSUNG GALAXY A57 5G 256GB BLUE",
+        "price": 196900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A57-5G-256GB-BLUE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Awesome Navy",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:02.737Z",
+        "sku": "SAMSUNG A576 8/256GB Awesome Navy",
+        "productId": "99446",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a57",
+        "title": "SAMSUNG GALAXY A57 5G 256GB GREY",
+        "price": 196900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A57-5G-256GB-GREY",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Awesome Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:04.179Z",
+        "sku": "SAMSUNG A576 8/256GB Awesome Gray",
+        "productId": "99445",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a57",
+        "title": "SAMSUNG GALAXY A57 5G 256GB PURPLE",
+        "price": 196900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A57-5G-256GB-PURPLE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Awesome Lilac",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:04.681Z",
+        "sku": "SAMSUNG A576 8/256GB Awesome Lilac",
+        "productId": "99449",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a57",
+        "title": "SAMSUNG GALAXY A57 5G 256GB ICE BLUE",
+        "price": 196900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A57-5G-256GB-ICE-BLUE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Awesome Icyblue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:04.799Z",
+        "sku": "SAMSUNG A576 8/256GB Awesome Icyblue",
+        "productId": "99447",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a57",
         "price": 205000,
         "storage": 512,
         "ram": 12,
@@ -16614,6 +17019,22 @@
         "esim": false
       },
       {
+        "id": "xiaomi-redmi-note-15-pro-plus-5g",
+        "title": "XIAOMI REDMI Note 15 Pro + 5G 8GB/256GB Mocha Brown",
+        "price": 175900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-15-Pro-plus-5G-8GB-256GB-Mocha-Brown",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Brown",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:07.559Z",
+        "sku": "REDMI Note 15 Pro +5G 8GB/256GB Mocha Brown",
+        "productId": "96013",
+        "ramFromPage": true
+      },
+      {
         "title": "Xiaomi Redmi Note 15 Pro Plus 5G 12/512GB (Mocha Brown)",
         "url": "https://likemobile.am/en/xiaomi-redmi-note-15-pro-plus-5g-12512gb-mocha-brown",
         "price": 179000,
@@ -17014,6 +17435,22 @@
         "seen": "2026-11-04",
         "checkedAt": "2026-11-04T17:06:16.941Z",
         "band": null
+      },
+      {
+        "id": "xiaomi-poco-m8-5g",
+        "title": "POCO M8 5G 8GB/256GB Silver",
+        "price": 119900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-M8-5G-8GB-256GB-SILVER",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:32.435Z",
+        "sku": "POCO M8 5G 8GB/256GB Silver",
+        "productId": "96085",
+        "ramFromPage": true
       },
       {
         "id": "xiaomi-poco-m8-5g",
@@ -18452,6 +18889,57 @@
       },
       {
         "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 256GB Silver eSim",
+        "price": 519000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-256GB-Silver-esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Silver",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:36.273Z",
+        "sku": "APPLE iPhone 17 Pro Max 256GB Silver eSim",
+        "productId": "100070",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 256GB Deep Blue eSim",
+        "price": 519000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-256GB-Deep-Blue-esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Deep Blue",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:36.416Z",
+        "sku": "APPLE iPhone 17 Pro Max 256GB Deep Blue eSim",
+        "productId": "100069",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 256GB Cosmic Orange eSim",
+        "price": 519000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-256GB-Cosmic-Orange-esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cosmic Orange",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:37.450Z",
+        "sku": "APPLE iPhone 17 Pro Max 256GB Cosmic Orange eSim",
+        "productId": "100068",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
         "price": 524900,
         "title": "Apple iPhone 17 Pro Max 256GB Deep Blue (eSim+eSim)",
         "url": "https://www.zigzag.am/am/apple-iphone-17-pro-max-256gb-deep-blue-esim-plusesim.html",
@@ -18778,6 +19266,54 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 256GB Deep Blue",
+        "price": 559000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-256GB-Deep-Blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:34.691Z",
+        "sku": "APPLE iPhone 17 Pro Max 256GB Deep Blue",
+        "productId": "100061",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 256GB Silver",
+        "price": 559000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-256GB-Silver",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:34.695Z",
+        "sku": "APPLE iPhone 17 Pro Max 256GB Silver",
+        "productId": "100062",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 256GB Cosmic Orange",
+        "price": 559000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-256GB-Cosmic-Orange",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cosmic Orange",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:35.814Z",
+        "sku": "APPLE iPhone 17 Pro Max 256GB Cosmic Orange",
+        "productId": "100060",
+        "ramFromPage": true
       },
       {
         "id": "apple-iphone-17-pro-max",
@@ -19354,6 +19890,57 @@
       },
       {
         "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 512GB Silver eSim",
+        "price": 609000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-512GB-Silver-eSim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Silver",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:28.192Z",
+        "sku": "APPLE iPhone 17 Pro Max 512GB Silver eSim",
+        "productId": "100074",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 512GB Deep Blue eSim",
+        "price": 609000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-512GB-Deep-Blue-esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Deep Blue",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:28.786Z",
+        "sku": "APPLE iPhone 17 Pro Max 512GB Deep Blue eSim",
+        "productId": "100072",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 512GB Cosmic Orange eSim",
+        "price": 609000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-512GB-Cosmic-Orange-esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Cosmic Orange",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:30.486Z",
+        "sku": "APPLE iPhone 17 Pro Max 512GB Cosmic Orange eSim",
+        "productId": "100071",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
         "price": 619000,
         "title": "iPhone 17 Pro Max",
         "url": "https://istyle.am/en/product/iPhone%2017%20Pro%20Max?color=8&variant=487&SIM+%D6%84%D5%A1%D6%80%D5%BF%D5%AB+%D6%84%D5%A1%D5%B6%D5%A1%D5%AF=2&%D5%86%D5%A5%D6%80%D6%84%D5%AB%D5%B6+%D5%80%D5%AB%D5%B7%D5%B8%D5%B2%D5%B8%D6%82%D5%A9%D5%B5%D5%B8%D6%82%D5%B6=5",
@@ -19861,6 +20448,38 @@
         "esim": true,
         "seen": "2026-11-05",
         "band": null
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 512GB Silver",
+        "price": 659900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-512GB-Silver",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:21.539Z",
+        "sku": "APPLE iPhone 17 Pro Max 512GB Silver",
+        "productId": "100067",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro-max",
+        "title": "APPLE IPHONE 17 Pro Max 512GB Deep Blue",
+        "price": 659900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-Max-512GB-Deep-Blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:23.215Z",
+        "sku": "APPLE iPhone 17 Pro Max 512GB Deep Blue",
+        "productId": "100066",
+        "ramFromPage": true
       },
       {
         "title": "iPhone 17 Pro Max 512GB Silver,Model A3526",
@@ -21270,6 +21889,57 @@
       },
       {
         "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 256GB Silver eSim",
+        "price": 475000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-256GB-Silver-eSim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Silver",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:39.619Z",
+        "sku": "APPLE iPhone 17 Pro 256GB Silver eSim",
+        "productId": "100056",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 256GB Deep Blue eSim",
+        "price": 475000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-256GB-Deep-Blue-eSim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Deep Blue",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:40.288Z",
+        "sku": "APPLE iPhone 17 Pro 256GB Deep Blue eSim",
+        "productId": "100055",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 256GB Cosmic Orange eSim",
+        "price": 475000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-256GB-Cosmic-Orange-Esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cosmic Orange",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:40.924Z",
+        "sku": "APPLE iPhone 17 Pro 256GB Cosmic Orange eSim",
+        "productId": "100054",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
         "price": 484000,
         "storage": 256,
         "ram": 12,
@@ -21753,6 +22423,54 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 256GB Cosmic Orange",
+        "price": 509000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-256GB-Cosmic-Orange",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Cosmic Orange",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:37.959Z",
+        "sku": "APPLE iPhone 17 Pro 256GB Cosmic Orange",
+        "productId": "100044",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 256GB Deep Blue",
+        "price": 509000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-256GB-Deep-Blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:38.510Z",
+        "sku": "APPLE iPhone 17 Pro 256GB Deep Blue",
+        "productId": "100043",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 256GB Silver",
+        "price": 509000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-256GB-Silver",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:39.428Z",
+        "sku": "APPLE iPhone 17 Pro 256GB Silver",
+        "productId": "100042",
+        "ramFromPage": true
       },
       {
         "id": "apple-iphone-17-pro",
@@ -22341,6 +23059,40 @@
       },
       {
         "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 512GB Silver eSim",
+        "price": 559900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-512GB-Silver-eSim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Silver",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:33.104Z",
+        "sku": "APPLE iPhone 17 Pro 512GB Silver eSim",
+        "productId": "100059",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 512GB Deep Blue eSim",
+        "price": 559900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-512GB-deep-blue-esim",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Deep Blue",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:33.919Z",
+        "sku": "APPLE iPhone 17 Pro 512GB Deep Blue eSim",
+        "productId": "100058",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
         "price": 564000,
         "storage": 512,
         "ram": 12,
@@ -22717,6 +23469,54 @@
         "shop": "appzone",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:18:15.499Z"
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 512GB Silver",
+        "price": 589000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-512GB-Silver",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:30.511Z",
+        "sku": "APPLE iPhone 17 Pro 512GB Silver",
+        "productId": "100053",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 512GB Deep Blue",
+        "price": 589000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-512GB-deep-blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:31.294Z",
+        "sku": "APPLE iPhone 17 Pro 512GB Deep Blue",
+        "productId": "100046",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17-pro",
+        "title": "APPLE IPHONE 17 Pro 512GB Cosmic Orange",
+        "price": 589000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-IPHONE-17-Pro-512GB-Cosmic-Orange",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Cosmic Orange",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:32.326Z",
+        "sku": "APPLE iPhone 17 Pro 512GB Cosmic Orange",
+        "productId": "100045",
+        "ramFromPage": true
       },
       {
         "id": "apple-iphone-17-pro",
@@ -24569,6 +25369,74 @@
       },
       {
         "id": "apple-iphone-17",
+        "title": "APPLE iPhone 17 256GB White eSim",
+        "price": 385900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-17-256GB-White-eSim",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "White",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:47.789Z",
+        "sku": "APPLE iPhone 17 256GB White eSim",
+        "productId": "100086",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17",
+        "title": "APPLE iPhone 17 256GB Black eSim",
+        "price": 385900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-17-256GB-Black-eSim",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:48.013Z",
+        "sku": "APPLE iPhone 17 256GB Black eSim",
+        "productId": "100083",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17",
+        "title": "APPLE iPhone 17 256GB Sage eSim",
+        "price": 385900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-17-256GB-Sage-eSim",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Sage",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:48.782Z",
+        "sku": "APPLE iPhone 17 256GB Sage eSim",
+        "productId": "100085",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17",
+        "title": "APPLE iPhone 17 256GB Mist Blue eSim",
+        "price": 385900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-17-256GB-Mist-Blue-eSim",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Mist Blue",
+        "esim": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:49.502Z",
+        "sku": "APPLE iPhone 17 256GB Mist Blue eSim",
+        "productId": "100084",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17",
         "price": 396900,
         "storage": 256,
         "ram": 8,
@@ -24725,6 +25593,38 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "apple-iphone-17",
+        "title": "APPLE iPhone 17 256GB Black",
+        "price": 409900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-17-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:42.779Z",
+        "sku": "APPLE iPhone 17 256GB Black",
+        "productId": "100081",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-17",
+        "title": "APPLE iPhone 17 256GB White",
+        "price": 409900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-17-256GB-White",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:43.389Z",
+        "sku": "APPLE iPhone 17 256GB White",
+        "productId": "100078",
+        "ramFromPage": true
       },
       {
         "id": "apple-iphone-17",
@@ -25659,6 +26559,22 @@
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:08:14.603Z",
         "esim": false
+      },
+      {
+        "id": "xiaomi-redmi-note-14-pro-plus-5g",
+        "title": "XIAOMI REDMI NOTE 14 Pro+5G 8/256 Midnight Black",
+        "price": 151900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-NOTE-14-Pro-5G-8-256-Midnight-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:15.599Z",
+        "sku": "REDMI NOTE 14 Pro+5G 8/256 Midnight Black",
+        "productId": "88053",
+        "ramFromPage": true
       },
       {
         "title": "Xiaomi Redmi Note 14 Pro Plus 5G 12/512GB (Frost Blue)",
@@ -27847,6 +28763,38 @@
         "checkedAt": "2026-11-05T03:21:08.734Z"
       },
       {
+        "id": "samsung-galaxy-a56",
+        "title": "SAMSUNG GALAXY A56 5G 128GB GRAY",
+        "price": 143900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A56-5G-128GB-GRAY",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 128,
+        "color": "Awesome Light Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:20.349Z",
+        "sku": "SAMSUNG A566 8/128 Gray",
+        "productId": "88902",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a56",
+        "title": "SAMSUNG GALAXY A56 5G 128GB PINK",
+        "price": 143900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A56-5G-128GB-PINK",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 128,
+        "color": "Awesome Pink",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:21.989Z",
+        "sku": "SAMSUNG A566 8/128 Pink",
+        "productId": "88901",
+        "ramFromPage": true
+      },
+      {
         "title": "Samsung Galaxy A56 8/256GB (Lightgray)",
         "url": "https://likemobile.am/en/574561-variant-1884-1472-70",
         "price": 144000,
@@ -28188,6 +29136,22 @@
         "shop": "ibolit",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:44:08.029Z"
+      },
+      {
+        "id": "samsung-galaxy-a36",
+        "title": "SAMSUNG GALAXY A36 5G 128GB LAVENDER",
+        "price": 116900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A36-5G-128GB-LAVENDER",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 128,
+        "color": "Awesome Lavender",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:32.431Z",
+        "sku": "SAMSUNG A366 8/128 Laveder",
+        "productId": "88896",
+        "ramFromPage": true
       },
       {
         "title": "Samsung Galaxy A36 8/256GB (Lime)",
@@ -28712,6 +29676,54 @@
         "esim": true,
         "seen": "2026-11-05",
         "band": null
+      },
+      {
+        "id": "apple-iphone-air",
+        "title": "APPLE iPhone Air 256GB (Light Gold)",
+        "price": 395000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-Air-256GB-Light-Gold",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Light Gold",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:44.214Z",
+        "sku": "APPLE iPhone Air 256GB Light Gold",
+        "productId": "100040",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-air",
+        "title": "APPLE iPhone Air 256GB Sky Blue",
+        "price": 395000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-Air-256GB-Sky-Blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Sky Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:45.107Z",
+        "sku": "APPLE iPhone Air 256GB Sky Blue",
+        "productId": "93154",
+        "ramFromPage": true
+      },
+      {
+        "id": "apple-iphone-air",
+        "title": "APPLE iPhone Air 256GB Space Black",
+        "price": 395000,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/APPLE-iPhone-Air-256GB-Space-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Space Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:45.166Z",
+        "sku": "APPLE iPhone Air 256GB Space Black",
+        "productId": "93155",
+        "ramFromPage": true
       },
       {
         "id": "apple-iphone-air",
@@ -30265,6 +31277,22 @@
         "shop": "ibolit",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:41:50.693Z"
+      },
+      {
+        "id": "samsung-galaxy-s25-ultra",
+        "title": "SAMSUNG GALAXY S25 ULTRA 256 GB BLACK",
+        "price": 391900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-S25-ULTRA-256-GB-BLACK",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Titanium Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:46.762Z",
+        "sku": "SAMSUNG S938 12/256 Titanium Black",
+        "productId": "87827",
+        "ramFromPage": true
       },
       {
         "id": "samsung-galaxy-s25-ultra",
@@ -34136,6 +35164,23 @@
     ],
     "xiaomi-redmi-pad-2-pro": [
       {
+        "id": "xiaomi-redmi-pad-2-pro",
+        "title": "REDMI Pad 2 Pro 6GB/128GB Graphite Gray",
+        "price": 92900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/REDMI-Pad-2-Pro-6GB-128GB-Graphite-Gray",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 128,
+        "color": "Graphite Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:30.834Z",
+        "sku": "REDMI Pad 2 Pro 6GB/128GB Graphite Gray",
+        "productId": "105882",
+        "ramFromPage": true
+      },
+      {
         "title": "Xiaomi Redmi Pad 2 Pro 8/256GB (Graphite Gray)",
         "url": "https://likemobile.am/en/xiaomi-redmi-pad-2-pro-8256gb-graphite-gray",
         "price": 129000,
@@ -34199,9 +35244,43 @@
         "band": null,
         "shop": "eldorado",
         "cell": false
+      },
+      {
+        "id": "xiaomi-redmi-pad-2-pro",
+        "title": "REDMI Pad 2 Pro 8GB/256GB Graphite Gray",
+        "price": 147900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/REDMI-Pad-2-Pro-8GB-256GB-Graphite-Gray",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Graphite Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:25.273Z",
+        "sku": "REDMI Pad 2 Pro 8GB/256GB Graphite Gray",
+        "productId": "102297",
+        "ramFromPage": true
       }
     ],
     "xiaomi-redmi-pad-se-8-7-4g": [
+      {
+        "id": "xiaomi-redmi-pad-se-8-7-4g",
+        "title": "REDMI Pad SE 8.7 4G 6/128GB Graphite Gray",
+        "price": 67900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/REDMI-Pad-SE-8-7-4G-6-128GB-Graphite-Gray",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 128,
+        "color": "Graphite Gray",
+        "cell": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:34.401Z",
+        "sku": "REDMI Pad SE 8.7 4G 6/128GB Graphite Gray",
+        "productId": "99402",
+        "ramFromPage": true
+      },
       {
         "title": "Xiaomi Redmi Pad SE 8.7 4G 6GB/128GB (Graphite Gray)",
         "url": "https://likemobile.am/en/46512111-variant-1477-1471-69",
@@ -45700,6 +46779,19 @@
       },
       {
         "id": "marshall-acton-iii",
+        "title": "MARSHALL Acton III (1006004)(Black)",
+        "price": 109900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/marshal-action-iii-1006004-black",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:53.456059+00:00",
+        "sku": "MARSHALL Acton III (1006004)(Black)",
+        "productId": "100328"
+      },
+      {
+        "id": "marshall-acton-iii",
         "price": 114900,
         "title": "MARSHALL Acton III (1006004) Black",
         "url": "https://vlv.am/en/Product/36422",
@@ -45939,6 +47031,19 @@
         "band": null,
         "color": "Cream",
         "shop": "zigzag"
+      },
+      {
+        "id": "marshall-woburn-iii",
+        "title": "MARSHALL Woburn III (1006016)(Black)",
+        "price": 189900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/marshall-woburn-iii-1006016-black",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:57.819490+00:00",
+        "sku": "MARSHALL Woburn III (1006016)(Black)",
+        "productId": "100335"
       },
       {
         "id": "marshall-woburn-iii",
@@ -49789,6 +50894,18 @@
         "color": null,
         "shop": "likemobile",
         "seen": "2026-11-05"
+      },
+      {
+        "id": "karcher-fcv-3eu",
+        "title": "KARCHER FCV 3 *EU",
+        "price": 139000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/karcher-fcv-3-eu",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:51.544260+00:00",
+        "sku": "KARCHER FCV 3 *EU",
+        "productId": "91916"
       }
     ],
     "berg-vc1569r": [
@@ -50326,6 +51443,18 @@
       },
       {
         "id": "samsung-vc20m251awb",
+        "title": "SAMSUNG VC20M251AWB/EV",
+        "price": 49900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc20m251awb-ev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:31.566092+00:00",
+        "sku": "SAMSUNG VC20M251AWB/EV",
+        "productId": "8836"
+      },
+      {
+        "id": "samsung-vc20m251awb",
         "price": 50900,
         "title": "SAMSUNG VC20M251AWB/EV",
         "url": "https://vlv.am/en/Product/8777",
@@ -50384,6 +51513,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:52:34.460Z"
+      },
+      {
+        "id": "samsung-vc18m21c0vr",
+        "title": "SAMSUNG VC18M21C0VR/EV",
+        "price": 59000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc18m21c0vr-ev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:36.925196+00:00",
+        "sku": "SAMSUNG VC18M21C0VR/EV",
+        "productId": "8955"
       },
       {
         "id": "samsung-vc18m21c0vr",
@@ -50703,6 +51844,18 @@
         "color": null,
         "shop": "likemobile",
         "seen": "2026-11-05"
+      },
+      {
+        "id": "dreame-h15-pro-heat",
+        "title": "DREAME H15 Pro Heat wet and dry Vacuum Cleaner (HHR48A)",
+        "price": 339000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/dreame-h15-pro-heat-wet-and-dry-vacuum-cleaner-hhr84",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:57.688083+00:00",
+        "sku": "DREAME H15 Pro Heat wet and dry Vacuum Cleaner (HHR48A)",
+        "productId": "90320"
       }
     ],
     "dreame-g10-pro": [
@@ -50720,6 +51873,18 @@
         "color": null,
         "shop": "likemobile",
         "seen": "2026-11-05"
+      },
+      {
+        "id": "dreame-g10-pro",
+        "title": "DREAME G10 Pro Wet and Dry Vacuum (HHR20A)",
+        "price": 129900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/dreame-g10-pro-wet-and-dry-vacuum-hhr20a",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:47.451364+00:00",
+        "sku": "DREAME G10 Pro Wet and Dry Vacuum (HHR20A)",
+        "productId": "93834"
       }
     ],
     "kenwood-mg360": [
@@ -50987,6 +52152,19 @@
         "ram": null,
         "shop": "likemobile",
         "seen": "2026-11-05"
+      },
+      {
+        "id": "midea-ag-09n8d1",
+        "title": "MIDEA AG-09N8D1 CARBON / Inverter < 30m²",
+        "price": 229000,
+        "url": "https://vesta.am/odorakichner/household-air-conditioners/midea-ag-09n8d1-carbon",
+        "shop": "vesta",
+        "color": "Carbon",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:05:30.092999+00:00",
+        "sku": "MIDEA AG-09N8D1 CARBON",
+        "productId": "83391"
       }
     ],
     "midea-af12n1c2": [
@@ -51086,6 +52264,30 @@
         "color": null,
         "shop": "likemobile",
         "seen": "2026-11-05"
+      },
+      {
+        "id": "midea-mf01712bs40",
+        "title": "MIDEA MF01712BS40/W",
+        "price": 162000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/midea-mf01712bs40-w",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:30.287233+00:00",
+        "sku": "MIDEA MF01712BS40/W",
+        "productId": "89130"
+      },
+      {
+        "id": "midea-mf01712bs40",
+        "title": "MIDEA MF01712BS40/T",
+        "price": 172000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/midea-mf01712bs40-t",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:31.147334+00:00",
+        "sku": "MIDEA MF01712BS40/T",
+        "productId": "89133"
       }
     ],
     "midea-af-24n8d0": [
@@ -53377,6 +54579,23 @@
       },
       {
         "id": "xiaomi-redmi-pad-2",
+        "title": "XIAOMI REDMI Pad 2 8/256GB Graphite Gray",
+        "price": 104900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/REDMI-Pad-2-8-256GB-Graphite-Gray",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:27.559Z",
+        "sku": "REDMI Pad 2 8/256GB Graphite Gray",
+        "productId": "93460",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-pad-2",
         "price": 107000,
         "storage": 256,
         "title": "Xiaomi Redmi Pad 2",
@@ -53897,6 +55116,38 @@
       },
       {
         "id": "xiaomi-redmi-17",
+        "title": "REDMI 17 4GB/128GB Black",
+        "price": 79900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-17-4GB-128GB-Black",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:40.688Z",
+        "sku": "REDMI 17 4GB/128GB Black",
+        "productId": "102899",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-17",
+        "title": "REDMI 17 4GB/128GB Deep Blue",
+        "price": 79900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-17-4GB-128GB-Deep-Blue",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:40.751Z",
+        "sku": "REDMI 17 4GB/128GB Deep Blue",
+        "productId": "105892",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-17",
         "price": 84000,
         "storage": 256,
         "ram": 4,
@@ -54327,6 +55578,54 @@
         "band": null,
         "shop": "eldorado",
         "esim": false
+      },
+      {
+        "id": "xiaomi-redmi-17",
+        "title": "REDMI 17 8GB/256GB Oak Green",
+        "price": 114900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-17-8GB-256GB-Oak-Green",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:33.196Z",
+        "sku": "REDMI 17 8GB/256GB Oak Green",
+        "productId": "103140",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-17",
+        "title": "REDMI 17 8GB/256GB Black",
+        "price": 114900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-17-8GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:33.976Z",
+        "sku": "REDMI 17 8GB/256GB Black",
+        "productId": "103137",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-17",
+        "title": "REDMI 17 8GB/256GB Deep Blue",
+        "price": 114900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-17-8GB-256GB-Deep-Blue",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:33.982Z",
+        "sku": "REDMI 17 8GB/256GB Deep Blue",
+        "productId": "103139",
+        "ramFromPage": true
       }
     ],
     "xiaomi-redmi-note-17-5g": [
@@ -54773,6 +56072,38 @@
       },
       {
         "id": "xiaomi-redmi-note-17-5g",
+        "title": "REDMI Note 17 5G 6GB/256GB Sky Teal",
+        "price": 139900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-17-5G-6GB-256GB-Sky-Teal",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 256,
+        "color": "Teal",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:25.287Z",
+        "sku": "REDMI Note 17 5G 6GB/256GB Sky Teal",
+        "productId": "103146",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-note-17-5g",
+        "title": "REDMI Note 17 5G 6GB/256GB Black",
+        "price": 139900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-17-5G-6GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:25.406Z",
+        "sku": "REDMI Note 17 5G 6GB/256GB Black",
+        "productId": "103141",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-note-17-5g",
         "price": 149900,
         "storage": 256,
         "ram": 8,
@@ -55130,6 +56461,22 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "xiaomi-redmi-note-17-pro-max-5g",
+        "title": "REDMI Note 17 Pro Max 5G 8GB/256GB Black",
+        "price": 219900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-17-Pro-Max-5G-8GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:00.915Z",
+        "sku": "REDMI Note 17 Pro Max 5G 8GB/256GB Black",
+        "productId": "104181",
+        "ramFromPage": true
       },
       {
         "id": "xiaomi-redmi-note-17-pro-max-5g",
@@ -55536,6 +56883,38 @@
       },
       {
         "id": "xiaomi-17t-pro",
+        "title": "XIAOMI 17T Pro 12/256GB Deep Blue",
+        "price": 327900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/XIAOMI-17T-Pro-12-256GB-Deep-Blue",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Deep Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:51.512Z",
+        "sku": "XIAOMI 17T Pro 12/256GB Deep Blue",
+        "productId": "100403",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-17t-pro",
+        "title": "XIAOMI 17T Pro 12/256GB Black",
+        "price": 327900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/XIAOMI-17T-Pro-12-256GB-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:52.328Z",
+        "sku": "XIAOMI 17T Pro 12/256GB Black",
+        "productId": "100402",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-17t-pro",
         "price": 329700,
         "storage": 512,
         "ram": 12,
@@ -55792,6 +57171,22 @@
         "color": "Black",
         "shop": "zigzag",
         "esim": false
+      },
+      {
+        "id": "xiaomi-17t",
+        "title": "XIAOMI 17T 12/256GB Black",
+        "price": 243900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/XIAOMI-17T-12-256GB-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:59.266Z",
+        "sku": "XIAOMI 17T 12/256GB Black",
+        "productId": "100401",
+        "ramFromPage": true
       },
       {
         "id": "xiaomi-17t",
@@ -56396,6 +57791,38 @@
       },
       {
         "id": "poco-c81-pro",
+        "title": "POCO C81 Pro 4GB/128GB Green",
+        "price": 60900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-C81-Pro-4GB-128GB-Green",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:42.991Z",
+        "sku": "POCO C81 Pro 4GB/128GB Green",
+        "productId": "106040",
+        "ramFromPage": true
+      },
+      {
+        "id": "poco-c81-pro",
+        "title": "POCO C81 Pro 4GB/128GB Gold",
+        "price": 60900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-C81-Pro-4GB-128GB-Gold",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Light Gold",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:44.027Z",
+        "sku": "POCO C81 Pro 4GB/128GB Gold",
+        "productId": "106039",
+        "ramFromPage": true
+      },
+      {
+        "id": "poco-c81-pro",
         "price": 69000,
         "storage": 256,
         "ram": 4,
@@ -56880,6 +58307,38 @@
         "esim": false
       },
       {
+        "id": "xiaomi-redmi-note-17-pro-5g",
+        "title": "REDMI Note 17 Pro 5G 8GB/256GB Satin Orange",
+        "price": 169900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-17-Pro-5G-8GB-256GB-Satin-Orange",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Orange",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:11.247Z",
+        "sku": "REDMI Note 17 Pro 5G 8GB/256GB Satin Orange",
+        "productId": "104846",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-note-17-pro-5g",
+        "title": "REDMI Note 17 Pro 5G 8GB/256GB Purple",
+        "price": 169900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-17-Pro-5G-8GB-256GB-Purple",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Purple",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:12.594Z",
+        "sku": "REDMI Note 17 Pro 5G 8GB/256GB Purple",
+        "productId": "104845",
+        "ramFromPage": true
+      },
+      {
         "title": "Redmi Note 17 pro 5G 8/512",
         "url": "https://miarmenia.am/en/product/649/redmi-note-17-pro-5g-8-512",
         "price": 197900,
@@ -57185,6 +58644,32 @@
         "shop": "zigzag"
       },
       {
+        "id": "xiaomi-smart-air-fryer-6-5l",
+        "title": "Xiaomi Smart Air Fryer 6,5l (BHR7358EU)",
+        "price": 44900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/xiaomi-bhr7358eu",
+        "shop": "vesta",
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:12.764694+00:00",
+        "sku": "XIAOMI BHR7358EU",
+        "productId": "83193"
+      },
+      {
+        "id": "xiaomi-smart-air-fryer-6-5l",
+        "title": "Xiaomi Smart Air Fryer 6,5l (BHR7357EU)",
+        "price": 44900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/xiaomi-bhr7357eu",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:13.784228+00:00",
+        "sku": "XIAOMI BHR7357EU",
+        "productId": "83194"
+      },
+      {
         "title": "Xiaomi Mi Smart Air Fryer 6,5 L",
         "url": "https://miarmenia.am/en/product/142/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%B3%D5%A1%D6%80%D5%BA%D5%A1%D5%BB%D5%A5%D5%BC%D5%B8%D6%81-xiaomi-mi-smart-air-fryer-6%2C5-l",
         "price": 45900,
@@ -57245,6 +58730,19 @@
       }
     ],
     "xiaomi-dual-zone-air-fryer-10l": [
+      {
+        "id": "xiaomi-dual-zone-air-fryer-10l",
+        "title": "Xiaomi Dual Zone Air Fryer 10L (BHR07SGEU)",
+        "price": 59900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/xiaomi-bhr07sgeu",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:15.465959+00:00",
+        "sku": "XIAOMI BHR07SGEU",
+        "productId": "92383"
+      },
       {
         "title": "Xiaomi Dual Zone 10L",
         "url": "https://miarmenia.am/en/product/415/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%B3%D5%A1%D6%80%D5%BA%D5%A1%D5%BB%D5%A5%D5%BC%D5%B8%D6%81-xiaomi-dual-zone-10l",
@@ -57770,6 +59268,22 @@
       },
       {
         "id": "xiaomi-poco-f9-pro",
+        "title": "POCO F9 Pro 12GB/256GB Black",
+        "price": 339900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-F9-Pro-12GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:51.592Z",
+        "sku": "POCO F9 Pro 12GB/256GB Black",
+        "productId": "106411",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-poco-f9-pro",
         "price": 349000,
         "storage": 512,
         "ram": 12,
@@ -58034,6 +59548,18 @@
       }
     ],
     "xiaomi-mijia-capsule-coffee-machine": [
+      {
+        "id": "xiaomi-mijia-capsule-coffee-machine",
+        "title": "XIAOMI Mijia Capsule Coffee Machine",
+        "price": 45900,
+        "url": "https://vesta.am/manr-kencax/srchepner/xiaomi-mijia-capsule-coffee-machine",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:13.045187+00:00",
+        "sku": "XIAOMI BHR099AEU",
+        "productId": "105010"
+      },
       {
         "title": "Mijia capsule coffee machine",
         "url": "https://miarmenia.am/en/product/642/mijia-capsule-coffee-machine",
@@ -58449,6 +59975,18 @@
         "shop": "miarmenia",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:19:04.482Z"
+      },
+      {
+        "id": "dreame-h15-mix",
+        "title": "DREAME H15 Mix Wet and Dry Vacuum (HHV46B) EUB",
+        "price": 389900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/dreame-h15-mix-wet-and-dry-vacuum-hhv46b-eub",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:58.481622+00:00",
+        "sku": "DREAME H15 Mix Wet and Dry Vacuum (HHV46B) EUB",
+        "productId": "93822"
       }
     ],
     "xiaomi-tv-stick-4k-2nd-gen": [
@@ -59486,6 +61024,40 @@
         "band": null,
         "shop": "eldorado",
         "cell": true
+      },
+      {
+        "id": "xiaomi-redmi-pad-2-9-7-4g",
+        "title": "REDMI Pad 2 9.7 4G 4GB/128GB Silver",
+        "price": 83900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/REDMI-Pad-2-9-7-4G-4GB-128GB-SILVER",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Silver",
+        "cell": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:31.547Z",
+        "sku": "REDMI Pad 2 9.7 4G 4GB/128GB Silver",
+        "productId": "102287",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-pad-2-9-7-4g",
+        "title": "REDMI Pad 2 9.7 4G 4GB/128GB Graphite Gray",
+        "price": 83900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/REDMI-Pad-2-9-7-4G-4GB-128GB-Graphite-Gray",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Graphite Gray",
+        "cell": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:33.302Z",
+        "sku": "REDMI Pad 2 9.7 4G 4GB/128GB Graphite Gray",
+        "productId": "102286",
+        "ramFromPage": true
       }
     ],
     "xiaomi-handheld-garment-steamer-mjgtj02lf": [
@@ -59657,6 +61229,19 @@
       }
     ],
     "xiaomi-air-fryer-6-5l": [
+      {
+        "id": "xiaomi-air-fryer-6-5l",
+        "title": "Xiaomi Air Fryer 6.5l (BHR083NEU)",
+        "price": 34900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/xiaomi-air-fryer-6.5-bhr083neu",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:10.679980+00:00",
+        "sku": "XIAOMI BHR083NEU",
+        "productId": "100363"
+      },
       {
         "title": "Xiaomi Air Fryer 6,5 L",
         "url": "https://miarmenia.am/en/product/519/%D5%B3%D5%A1%D6%80%D5%BA%D5%A1%D5%BB%D5%A5%D5%BC%D5%B8%D6%81-xiaomi-air-fryer-6%2C5-l",
@@ -60803,6 +62388,22 @@
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:23:51.646Z",
         "esim": false
+      },
+      {
+        "id": "samsung-galaxy-z-flip-8",
+        "title": "SAMSUNG Galaxy Z Flip8 256GB Graphite",
+        "price": 462900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-Galaxy-Z-Flip8-256GB-Graphite",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Graphite",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:41.040Z",
+        "sku": "SAMSUNG F776 12GB/256GB Graphite",
+        "productId": "104212",
+        "ramFromPage": true
       },
       {
         "id": "samsung-galaxy-z-flip-8",
@@ -68461,6 +70062,54 @@
       },
       {
         "id": "samsung-galaxy-a37",
+        "title": "SAMSUNG GALAXY A37 5G 256GB GREEN",
+        "price": 169900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A37-5G-256GB-GREEN",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Awesome Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:07.962Z",
+        "sku": "SAMSUNG A376 8/256GB Awesome GrayGreen",
+        "productId": "99444",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a37",
+        "title": "SAMSUNG GALAXY A37 5G 256GB LAVENDER",
+        "price": 169900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A37-5G-256GB-LAVENDER",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Purple",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:07.986Z",
+        "sku": "SAMSUNG A376 8/256GB Awesome Lavender",
+        "productId": "99443",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a37",
+        "title": "SAMSUNG GALAXY A37 5G 256GB WHITE",
+        "price": 169900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A37-5G-256GB-WHITE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:09.196Z",
+        "sku": "SAMSUNG A376 8/256GB Awesome White",
+        "productId": "99442",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a37",
         "price": 170900,
         "title": "SAMSUNG A37 (A376) 128GB Charcoal (Black)",
         "url": "https://vlv.am/en/Product/45162",
@@ -68558,6 +70207,38 @@
       },
       {
         "id": "honor-600",
+        "title": "HONOR 600 8GB/256GB Golden White",
+        "price": 199900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-8GB-256GB-Golden-White",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:02.652Z",
+        "sku": "HONOR 600 8GB/256GB Golden White",
+        "productId": "100231",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-600",
+        "title": "HONOR 600 8GB/256GB Black",
+        "price": 199900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-8GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:02.744Z",
+        "sku": "HONOR 600 8GB/256GB Black",
+        "productId": "100230",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-600",
         "price": 209900,
         "title": "Smartphone Honor 600 12GB/256GB Golden White (VKJ-NX9)",
         "url": "https://eldorado.am/en/honor-600-12gb-256gb-golden-white-vkj-nx9",
@@ -68587,9 +70268,41 @@
         "checkedAt": "2026-11-03T18:38:26.924Z",
         "colorRaw": "Black",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "honor-600",
+        "title": "HONOR 600 8GB/512GB Black",
+        "price": 229900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-8GB-512GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 512,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:59.261Z",
+        "sku": "HONOR 600 8GB/512GB Black",
+        "productId": "105350",
+        "ramFromPage": true
       }
     ],
     "honor-600-lite": [
+      {
+        "id": "honor-600-lite",
+        "title": "HONOR 600 Lite 8GB/256GB Velvet Black",
+        "price": 139900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-Lite-8GB-256GB-Velvet-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:27.317Z",
+        "sku": "HONOR 600 Lite 8GB/256GB Velvet Black",
+        "productId": "99702",
+        "ramFromPage": true
+      },
       {
         "id": "honor-600-lite",
         "price": 149900,
@@ -68679,6 +70392,22 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "honor-600-lite",
+        "title": "HONOR 600 Lite 8GB/256GB Velvet Grey",
+        "price": 149900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-Lite-8GB-256GB-Velvet-Grey",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:17.322Z",
+        "sku": "HONOR 600 Lite 8GB/256GB Velvet Grey",
+        "productId": "99703",
+        "ramFromPage": true
       }
     ],
     "honor-magic-8-pro": [
@@ -68981,6 +70710,54 @@
       },
       {
         "id": "honor-x9d",
+        "title": "HONOR X9d 8/256 Sunrise Gold",
+        "price": 149900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X9d-8-256-Sunrise-Gold",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Gold",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:15.589Z",
+        "sku": "HONOR X9d 8/256 Sunrise Gold",
+        "productId": "93830",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x9d",
+        "title": "HONOR X9d 8/256 Midnight Black",
+        "price": 149900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X9d-8-256-Midnight-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Midnight Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:16.562Z",
+        "sku": "HONOR X9d 8/256 Midnight Black",
+        "productId": "93829",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x9d",
+        "title": "HONOR X9d 8/256 Forest Green",
+        "price": 149900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X9d-8-256-Forest-Green",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:17.313Z",
+        "sku": "HONOR X9d 8/256 Forest Green",
+        "productId": "93828",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x9d",
         "title": "Honor X9d 5G 12GB",
         "url": "https://shop.ucom.am/am/honor-x9d-5g-12gb.html",
         "image": "https://shop.ucom.am/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/m/a/martin_identity_pictures_forest_green___hq_png_rgb_20250721_4_1.webp",
@@ -69102,6 +70879,38 @@
         "color": null,
         "shop": "zigzag",
         "esim": false
+      },
+      {
+        "id": "honor-x9d",
+        "title": "HONOR X9d 12/256 Midnight Black",
+        "price": 159900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X9d-12-256-Midnight-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Midnight Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:11.915Z",
+        "sku": "HONOR X9d 12/256 Midnight Black",
+        "productId": "93825",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x9d",
+        "title": "HONOR X9d 12/256 Forest Green",
+        "price": 159900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X9d-12-256-Forest-Green",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:13.361Z",
+        "sku": "HONOR X9d 12/256 Forest Green",
+        "productId": "93824",
+        "ramFromPage": true
       }
     ],
     "apple-iphone-duo": [
@@ -69652,6 +71461,38 @@
       },
       {
         "id": "xiaomi-poco-c95-pro",
+        "title": "POCO C95 Pro 8GB/256GB Blue",
+        "price": 108900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-C95-Pro-8GB-256GB-Blue",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:34.789Z",
+        "sku": "POCO C95 Pro 8GB/256GB Blue",
+        "productId": "106410",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-poco-c95-pro",
+        "title": "POCO C95 Pro 8GB/256GB Black",
+        "price": 108900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-C95-Pro-8GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:35.458Z",
+        "sku": "POCO C95 Pro 8GB/256GB Black",
+        "productId": "106409",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-poco-c95-pro",
         "price": 109000,
         "title": "Xiaomi Poco C95 Pro 8GB/256GB Blue",
         "url": "https://redstore.am/en/product/xiaomi-poco-c95-pro-8gb256gb-blue",
@@ -70137,6 +71978,38 @@
         "shop": "viva",
         "seen": "2026-11-05",
         "esim": false
+      },
+      {
+        "id": "samsung-galaxy-a18",
+        "title": "SAMSUNG GALAXY A18 256GB SILVER",
+        "price": 140900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A18-256GB-SILVER",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:22.609Z",
+        "sku": "SAMSUNG A185 8GB/256GB Silver",
+        "productId": "105300",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a18",
+        "title": "SAMSUNG GALAXY A18 256GB LIGHT BLUE",
+        "price": 140900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A18-256GB-LIGHT-BLUE",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Light Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:22.636Z",
+        "sku": "SAMSUNG A185 8GB/256GB Light Blue",
+        "productId": "106754",
+        "ramFromPage": true
       }
     ],
     "samsung-galaxy-a08": [
@@ -70606,6 +72479,54 @@
         "band": null,
         "colorRaw": "Dark Blue",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "samsung-galaxy-a08",
+        "title": "SAMSUNG GALAXY A08 128GB DARK BLUE",
+        "price": 97900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A08-128GB-DARK-BLUE",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 128,
+        "color": "Dark Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:35.363Z",
+        "sku": "SAMSUNG A085 6GB/128GB Dark Blue",
+        "productId": "105297",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a08",
+        "title": "SAMSUNG GALAXY A08 128GB SILVER",
+        "price": 97900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A08-128GB-silver",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 128,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:36.236Z",
+        "sku": "SAMSUNG A085 6GB/128GB Silver",
+        "productId": "105295",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a08",
+        "title": "SAMSUNG GALAXY A08 128GB GREEN",
+        "price": 97900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A08-128GB-GREEN",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 128,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:37.388Z",
+        "sku": "SAMSUNG A085 6GB/128GB Green",
+        "productId": "105294",
+        "ramFromPage": true
       }
     ],
     "samsung-galaxy-a07s": [
@@ -70816,6 +72737,38 @@
         "shop": "viva",
         "seen": "2026-11-05",
         "esim": false
+      },
+      {
+        "id": "samsung-galaxy-a07s",
+        "title": "SAMSUNG GALAXY A07S 128GB GREEN",
+        "price": 71900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A07S-128GB-GREEN",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:42.175Z",
+        "sku": "SAMSUNG A077 4GB/128GB Green",
+        "productId": "105292",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a07s",
+        "title": "SAMSUNG GALAXY A07S 128GB BLACK",
+        "price": 71900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A07S-128GB-BLACK",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:42.228Z",
+        "sku": "SAMSUNG A077 4GB/128GB Black",
+        "productId": "105291",
+        "ramFromPage": true
       }
     ],
     "realme-16": [
@@ -71307,6 +73260,38 @@
       },
       {
         "id": "xiaomi-redmi-a7-pro",
+        "title": "REDMI A7 Pro 4GB/128GB Mist Blue",
+        "price": 55900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-A7-Pro-4GB-128GB-Mist-Blue",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:44.636Z",
+        "sku": "REDMI A7 Pro 4GB/128GB Mist Blue",
+        "productId": "99592",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-a7-pro",
+        "title": "REDMI A7 Pro 4GB/128GB Black",
+        "price": 55900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-A7-Pro-4GB-128GB-Black",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:45.692Z",
+        "sku": "REDMI A7 Pro 4GB/128GB Black",
+        "productId": "99591",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-a7-pro",
         "price": 56000,
         "title": "Xiaomi Redmi A7 Pro 4GB/128GB Black",
         "url": "https://redstore.am/en/product/xiaomi-redmi-a7-pro-4gb128gb-black",
@@ -71626,6 +73611,54 @@
         "band": null,
         "shop": "eldorado",
         "esim": false
+      },
+      {
+        "id": "xiaomi-redmi-note-15-pro",
+        "title": "XIAOMI REDMI Note 15 Pro 8GB/256GB Titanium Color",
+        "price": 125900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-15-8GB-256GB-Titanium-Color",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Titanium",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:27.532Z",
+        "sku": "REDMI Note 15 Pro 8GB/256GB Titanium Color",
+        "productId": "96010",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-note-15-pro",
+        "title": "XIAOMI REDMI Note 15 Pro 8GB/256GB Glacier Blue",
+        "price": 125900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-15-Pro-8GB-256GB-Glacier-Blue",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Glacier Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:28.705Z",
+        "sku": "REDMI Note 15 Pro 8GB/256GB Glacier Blue",
+        "productId": "96009",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-redmi-note-15-pro",
+        "title": "XIAOMI REDMI Note 15 Pro 8GB/256GB Black",
+        "price": 125900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/REDMI-Note-15-Pro-8GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:29.161Z",
+        "sku": "REDMI Note 15 Pro 8GB/256GB Black",
+        "productId": "96008",
+        "ramFromPage": true
       },
       {
         "id": "xiaomi-redmi-note-15-pro",
@@ -72436,6 +74469,22 @@
       },
       {
         "id": "poco-c85",
+        "title": "POCO C85 8GB/256GB Green",
+        "price": 74900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-C85-8GB-256GB-Green",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:41.477Z",
+        "sku": "POCO C85 8GB/256GB Green",
+        "productId": "102284",
+        "ramFromPage": true
+      },
+      {
+        "id": "poco-c85",
         "price": 82000,
         "title": "Poco C85 8GB/256GB Green",
         "url": "https://redstore.am/en/product/xiaomi-poco-c85-8gb256gb-green",
@@ -72673,6 +74722,54 @@
         "shop": "yerevanmobile",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:50:23.338Z"
+      },
+      {
+        "id": "samsung-galaxy-a17",
+        "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
+        "image": null,
+        "storage": 128,
+        "price": 74000,
+        "color": "Black",
+        "title": "Samsung Galaxy A17 (4GB RAM)",
+        "inStock": true,
+        "band": null,
+        "ram": 4,
+        "shop": "planet3d",
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T10:59:17.182Z",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a17",
+        "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
+        "image": null,
+        "storage": 128,
+        "price": 74000,
+        "color": "Blue",
+        "title": "Samsung Galaxy A17 (4GB RAM)",
+        "inStock": true,
+        "band": null,
+        "ram": 4,
+        "shop": "planet3d",
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T10:59:17.182Z",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a17",
+        "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
+        "image": null,
+        "storage": 128,
+        "price": 74000,
+        "color": "Gray",
+        "title": "Samsung Galaxy A17 (4GB RAM)",
+        "inStock": true,
+        "band": null,
+        "ram": 4,
+        "shop": "planet3d",
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T10:59:17.182Z",
+        "ramFromPage": true
       },
       {
         "id": "samsung-galaxy-a17",
@@ -72953,6 +75050,22 @@
       },
       {
         "id": "samsung-galaxy-a17",
+        "title": "SAMSUNG GALAXY A17 256GB GREY",
+        "price": 95900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/SAMSUNG-GALAXY-A17-256GB-GREY",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:37.472Z",
+        "sku": "SAMSUNG A175 8/256 Gray",
+        "productId": "92773",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-a17",
         "price": 97000,
         "title": "Samsung Galaxy A17 8GB/256GB Black",
         "url": "https://redstore.am/en/product/samsung-galaxy-a17-8gb256gb-black",
@@ -73107,54 +75220,6 @@
         "shop": "yerevanmobile",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:50:23.338Z"
-      },
-      {
-        "id": "samsung-galaxy-a17",
-        "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-        "image": null,
-        "storage": 128,
-        "price": 74000,
-        "color": "Black",
-        "title": "Samsung Galaxy A17 (4GB RAM)",
-        "inStock": true,
-        "band": null,
-        "ram": 4,
-        "shop": "planet3d",
-        "seen": "2026-11-05",
-        "checkedAt": "2026-11-05T10:59:17.182Z",
-        "ramFromPage": true
-      },
-      {
-        "id": "samsung-galaxy-a17",
-        "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-        "image": null,
-        "storage": 128,
-        "price": 74000,
-        "color": "Blue",
-        "title": "Samsung Galaxy A17 (4GB RAM)",
-        "inStock": true,
-        "band": null,
-        "ram": 4,
-        "shop": "planet3d",
-        "seen": "2026-11-05",
-        "checkedAt": "2026-11-05T10:59:17.182Z",
-        "ramFromPage": true
-      },
-      {
-        "id": "samsung-galaxy-a17",
-        "url": "https://3dplanet.am/en/store/product/samsung-galaxy-a17",
-        "image": null,
-        "storage": 128,
-        "price": 74000,
-        "color": "Gray",
-        "title": "Samsung Galaxy A17 (4GB RAM)",
-        "inStock": true,
-        "band": null,
-        "ram": 4,
-        "shop": "planet3d",
-        "seen": "2026-11-05",
-        "checkedAt": "2026-11-05T10:59:17.182Z",
-        "ramFromPage": true
       },
       {
         "id": "samsung-galaxy-a17",
@@ -76313,6 +78378,23 @@
       },
       {
         "id": "samsung-galaxy-tab-a11-plus",
+        "title": "SAMSUNG GALAXY TAB A11+ GREY",
+        "price": 114900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/SAMSUNG-GALAXY-TAB-A11-PLUS-GREY",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 128,
+        "color": "Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:27.613Z",
+        "sku": "SAMSUNG X230 6/128 Gray",
+        "productId": "95182",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-tab-a11-plus",
         "price": 120900,
         "title": "Samsung Galaxy Tab A11+ Wi-Fi 6GB/128GB Silver",
         "url": "https://shop.viva.am/en/product/samsung-galaxy-tab-a11-wi-fi-6gb-128gb-silver/",
@@ -76633,6 +78715,23 @@
       },
       {
         "id": "samsung-galaxy-tab-a11",
+        "title": "SAMSUNG GALAXY TAB A11 GREY",
+        "price": 77900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/SAMSUNG-GALAXY-TAB-A11-GREY",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 128,
+        "color": "Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:33.563Z",
+        "sku": "SAMSUNG X130 8/128 Gray",
+        "productId": "93958",
+        "ramFromPage": true
+      },
+      {
+        "id": "samsung-galaxy-tab-a11",
         "price": 85000,
         "title": "Samsung Galaxy Tab A11 8GB/128GB LTE X135 Gray",
         "url": "https://redstore.am/en/product/samsung-galaxy-tab-a11-8gb128gb-lte-x135-gray",
@@ -76730,6 +78829,23 @@
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:46:51.947Z",
         "cell": true
+      },
+      {
+        "id": "samsung-galaxy-tab-a11",
+        "title": "SAMSUNG GALAXY TAB A11 GREY SIM",
+        "price": 94900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/SAMSUNG-GALAXY-TAB-A11-GREY-SIM",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 128,
+        "color": "Gray",
+        "cell": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:30.691Z",
+        "sku": "SAMSUNG X135 8/128 Gray",
+        "productId": "94971",
+        "ramFromPage": true
       }
     ],
     "samsung-galaxy-tab-s11-ultra": [
@@ -82132,6 +84248,54 @@
       },
       {
         "id": "honor-x7e",
+        "title": "HONOR X7e 6/256 Sunrise Orange",
+        "price": 89900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X7e-6-256-Sunrise-Orange",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 256,
+        "color": "Orange",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:39.298Z",
+        "sku": "HONOR X7e 6/256 Sunrise Orange",
+        "productId": "100723",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x7e",
+        "title": "HONOR X7e 6/256 Light Blue",
+        "price": 89900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X7e-6-256-Light-Blue",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 256,
+        "color": "Light Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:39.303Z",
+        "sku": "HONOR X7e 6/256 Light Blue",
+        "productId": "100722",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x7e",
+        "title": "HONOR X7e 6/256 Midnight Black",
+        "price": 89900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X7e-6-256-Midnight-Black",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 256,
+        "color": "Midnight Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:39.825Z",
+        "sku": "HONOR X7e 6/256 Midnight Black",
+        "productId": "100721",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x7e",
         "price": 95000,
         "storage": 256,
         "ram": 6,
@@ -82329,6 +84493,38 @@
         "color": "Silver",
         "shop": "zigzag",
         "esim": false
+      },
+      {
+        "id": "xiaomi-poco-m8-pro-5g",
+        "title": "POCO M8 Pro 5G 8GB/256GB Silver",
+        "price": 149900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-M8-Pro-5G-8GB-256GB-Silver",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Silver",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:19.418Z",
+        "sku": "POCO M8 Pro 5G 8GB/256GB Silver",
+        "productId": "96088",
+        "ramFromPage": true
+      },
+      {
+        "id": "xiaomi-poco-m8-pro-5g",
+        "title": "POCO M8 Pro 5G 8GB/256GB Black",
+        "price": 149900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/POCO-M8-Pro-5G-8GB-256GB-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:20.355Z",
+        "sku": "POCO M8 Pro 5G 8GB/256GB Black",
+        "productId": "96087",
+        "ramFromPage": true
       },
       {
         "id": "xiaomi-poco-m8-pro-5g",
@@ -87526,6 +89722,58 @@
       },
       {
         "id": "jbl-flip-6",
+        "title": "JBL FLIP 6 TEAL",
+        "price": 47900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-flip-6-teal",
+        "shop": "vesta",
+        "color": "Teal",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:45.628519+00:00",
+        "sku": "JBL FLIP 6 TEAL",
+        "productId": "101052"
+      },
+      {
+        "id": "jbl-flip-6",
+        "title": "JBL FLIP 6 BLACK",
+        "price": 47900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-flip-6-black",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:47.756690+00:00",
+        "sku": "JBL FLIP 6 BLACK",
+        "productId": "101035"
+      },
+      {
+        "id": "jbl-flip-6",
+        "title": "JBL FLIP 6 GRAY",
+        "price": 47900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-flip-6-gray",
+        "shop": "vesta",
+        "color": "Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:47.830227+00:00",
+        "sku": "JBL FLIP 6 GRAY",
+        "productId": "101036"
+      },
+      {
+        "id": "jbl-flip-6",
+        "title": "JBL FLIP 6 RED",
+        "price": 47900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-flip-6-red",
+        "shop": "vesta",
+        "color": "Red",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:49.779501+00:00",
+        "sku": "JBL FLIP 6 RED",
+        "productId": "101037"
+      },
+      {
+        "id": "jbl-flip-6",
         "shop": "ibolit",
         "title": "JBL Flip 6 Squared",
         "price": 53900,
@@ -87947,6 +90195,19 @@
         "shop": "ibolit",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:39:41.903Z"
+      },
+      {
+        "id": "jbl-boombox-3",
+        "title": "JBL BOOMBOX 3 BLK",
+        "price": 219900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-boombox-3-blk",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:03.775301+00:00",
+        "sku": "JBL BOOMBOX 3 BLK",
+        "productId": "101742"
       }
     ],
     "sony-ps5-dualsense-edge": [
@@ -89927,6 +92188,22 @@
         "band": null,
         "shop": "eldorado",
         "esim": false
+      },
+      {
+        "id": "honor-x9c",
+        "title": "HONOR X9c 8/256 Jade Cyane",
+        "price": 139900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X9c-8-256-Jade-Cyane",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Jade Cyan",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:26.284Z",
+        "sku": "HONOR X9c 8/256 Jade Cyane",
+        "productId": "87016",
+        "ramFromPage": true
       }
     ],
     "apple-ipad-10-9-wi-fi-a14-mpqa3rk-a": [
@@ -90285,6 +92562,19 @@
         "checkedAt": "2026-11-03T18:25:15.035Z",
         "colorRaw": "White",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "honor-choice-x7-lite",
+        "title": "HONOR CHOICE Earbuds X7 Lite White",
+        "price": 9900,
+        "url": "https://vesta.am/bjjayin-heraxosner/akanjakalner/honor-choice-earbuds-x7-lite-white",
+        "shop": "vesta",
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:05:57.679171+00:00",
+        "sku": "HONOR CHOICE Earbuds X7 Lite White",
+        "productId": "90319"
       }
     ],
     "samsung-galaxy-a26": [
@@ -99105,6 +101395,19 @@
         "shop": "redstore",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:16:40.625Z"
+      },
+      {
+        "id": "canon-eos-r6-mark-iii-24-105-stm",
+        "title": "CANON EOS R6 MKIII V2.4 RF24-105 S SEE",
+        "price": 1699000,
+        "url": "https://vesta.am/Audio-Video-equipment/CAMERAS/CANON-EOS-R6-MARK-III-V2-4-RF24-105MM-STM",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:36.800Z",
+        "sku": "CANON EOS R6 MKIII V2.4 RF24-105 S SEE",
+        "productId": "101925"
       }
     ],
     "boneco-e200": [
@@ -99812,6 +102115,58 @@
         "shop": "planet3d",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:33:34.244Z"
+      },
+      {
+        "id": "jbl-charge-6",
+        "title": "JBL CHARGE 6 WHITE",
+        "price": 64000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-charge-6-white",
+        "shop": "vesta",
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:49.726642+00:00",
+        "sku": "JBL CHARGE 6 WHITE",
+        "productId": "104838"
+      },
+      {
+        "id": "jbl-charge-6",
+        "title": "JBL CHARGE 6 BLK",
+        "price": 64000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-charge-6-black",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:51.671978+00:00",
+        "sku": "JBL CHARGE 6 BLK",
+        "productId": "104839"
+      },
+      {
+        "id": "jbl-charge-6",
+        "title": "JBL CHARGE 6 BLU",
+        "price": 64000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-charge-6-blue",
+        "shop": "vesta",
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:51.668943+00:00",
+        "sku": "JBL CHARGE 6 BLU",
+        "productId": "104840"
+      },
+      {
+        "id": "jbl-charge-6",
+        "title": "JBL CHARGE 6 SQUAD",
+        "price": 64000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-charge-6-squad",
+        "shop": "vesta",
+        "color": "Squad",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:54.015797+00:00",
+        "sku": "JBL CHARGE 6 SQUAD",
+        "productId": "104841"
       },
       {
         "id": "jbl-charge-6",
@@ -100885,6 +103240,19 @@
       },
       {
         "id": "marshall-kilburn-iii",
+        "title": "MARSHALL Kilburn III (1007443)(Black And Brass)",
+        "price": 153900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/marshall-kilburn-iii-1007443-black-and-brass",
+        "shop": "vesta",
+        "color": "Black Brass",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:57.039992+00:00",
+        "sku": "MARSHALL Kilburn III (1007443)(Black And Brass)",
+        "productId": "100331"
+      },
+      {
+        "id": "marshall-kilburn-iii",
         "price": 172900,
         "title": "Marshall Kilburn III Cream (1007973)",
         "url": "https://www.zigzag.am/am/marshall-kilburn-iii-cream-1007973.html",
@@ -101052,6 +103420,45 @@
         "band": null,
         "shop": "istyle",
         "seen": "2026-11-05"
+      },
+      {
+        "id": "jbl-xtreme-5",
+        "title": "JBL XTREME 5 BLUE",
+        "price": 199000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-xtreme-5-blue",
+        "shop": "vesta",
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:58.830730+00:00",
+        "sku": "JBL XTREME 5 BLUE",
+        "productId": "103005"
+      },
+      {
+        "id": "jbl-xtreme-5",
+        "title": "JBL XTREME 5 BLACK",
+        "price": 199000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-xtreme-5-black",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:00.202762+00:00",
+        "sku": "JBL XTREME 5 BLACK",
+        "productId": "103006"
+      },
+      {
+        "id": "jbl-xtreme-5",
+        "title": "JBL XTREME 5 SQUAD",
+        "price": 199000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-xtreme-5-squad",
+        "shop": "vesta",
+        "color": "Squad",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:00.589223+00:00",
+        "sku": "JBL XTREME 5 SQUAD",
+        "productId": "103007"
       }
     ],
     "harman-kardon-aura-studio-5": [
@@ -101316,6 +103723,32 @@
       },
       {
         "id": "jbl-boombox-4",
+        "title": "JBL BOOMBOX 4 BLUE",
+        "price": 249900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-boombox-4-blue",
+        "shop": "vesta",
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:06.475240+00:00",
+        "sku": "JBL BOOMBOX 4 BLUE",
+        "productId": "103003"
+      },
+      {
+        "id": "jbl-boombox-4",
+        "title": "JBL BOOMBOX 4 SQUAD",
+        "price": 249900,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-boombox-4-squad",
+        "shop": "vesta",
+        "color": "Squad",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:07.229802+00:00",
+        "sku": "JBL BOOMBOX 4 SQUAD",
+        "productId": "103004"
+      },
+      {
+        "id": "jbl-boombox-4",
         "price": 259000,
         "title": "JBL BOOMBOX 4 SQUAD (AM)",
         "url": "https://vlv.am/en/Product/48546",
@@ -101503,6 +103936,18 @@
         "shop": "redstore",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:15:07.761Z"
+      },
+      {
+        "id": "jbl-partybox-720",
+        "title": "JBL PARTYBOX 720 EU",
+        "price": 339000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-partybox720eu",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:10.799579+00:00",
+        "sku": "JBL PARTYBOX 720 EU",
+        "productId": "94970"
       }
     ],
     "sony-srs-xv900": [
@@ -101628,6 +104073,18 @@
       },
       {
         "id": "gorenje-r401w-food-slicer",
+        "title": "GORENJE R401W",
+        "price": 26900,
+        "url": "https://vesta.am/manr-kencax/shertahat/gorenje-r401w",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:06.204568+00:00",
+        "sku": "GORENJE R401W",
+        "productId": "9345"
+      },
+      {
+        "id": "gorenje-r401w-food-slicer",
         "shop": "likemobile",
         "title": "GORENJE R401W Food Slicer",
         "price": 29000,
@@ -101671,6 +104128,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "gorenje-jc400be-juicer",
+        "title": "GORENJE JC400BE",
+        "price": 26900,
+        "url": "https://vesta.am/manr-kencax/hyutahan/gorenje-jc400be",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:49.289933+00:00",
+        "sku": "GORENJE JC400BE",
+        "productId": "90432"
       },
       {
         "id": "gorenje-jc400be-juicer",
@@ -101753,6 +104222,18 @@
         "shop": "redstore",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:16:31.982Z"
+      },
+      {
+        "id": "gorenje-r607a-food-slicer",
+        "title": "GORENJE R607A",
+        "price": 52000,
+        "url": "https://vesta.am/manr-kencax/shertahat/gorenje-r607a",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:07.062066+00:00",
+        "sku": "GORENJE R607A",
+        "productId": "94762"
       }
     ],
     "midea-mfd45s110s": [
@@ -101932,9 +104413,34 @@
         "shop": "redstore",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:17:28.785Z"
+      },
+      {
+        "id": "midea-ag-12n8d1",
+        "title": "MIDEA AG-12N8D1 CARBON / Inverter < 40m²",
+        "price": 245000,
+        "url": "https://vesta.am/odorakichner/household-air-conditioners/midea-ag-12n8d1-carbon",
+        "shop": "vesta",
+        "color": "Carbon",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:05:32.801084+00:00",
+        "sku": "MIDEA AG-12N8D1 CARBON",
+        "productId": "83390"
       }
     ],
     "midea-mfk03w80b": [
+      {
+        "id": "midea-mfk03w80b",
+        "title": "MIDEA MFK03W80B/S-C",
+        "price": 195000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/midea-mfk03w80b-s-c",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:33.326620+00:00",
+        "sku": "MIDEA MFK03W80B/S-C",
+        "productId": "83855"
+      },
       {
         "id": "midea-mfk03w80b",
         "price": 205000,
@@ -102002,6 +104508,19 @@
         "shop": "redstore",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:17:32.847Z"
+      },
+      {
+        "id": "midea-ag-18n8d0",
+        "title": "MIDEA AG-18N8D0 CARBON / Inverter < 60m²",
+        "price": 333000,
+        "url": "https://vesta.am/odorakichner/household-air-conditioners/midea-ag-18n8d0-carbon",
+        "shop": "vesta",
+        "color": "Carbon",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:05:35.674987+00:00",
+        "sku": "MIDEA AG-18N8D0 CARBON",
+        "productId": "83247"
       }
     ],
     "midea-gp-18hrfn8": [
@@ -102070,6 +104589,19 @@
         "shop": "redstore",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T04:17:35.869Z"
+      },
+      {
+        "id": "midea-ag-24n8d0",
+        "title": "MIDEA AG-24N8D0 CARBON / Inverter < 80m²",
+        "price": 398000,
+        "url": "https://vesta.am/odorakichner/household-air-conditioners/midea-ag-24n8d0-carbon",
+        "shop": "vesta",
+        "color": "Carbon",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:05:41.910056+00:00",
+        "sku": "MIDEA AG-24N8D0 CARBON",
+        "productId": "83248"
       }
     ],
     "midea-gp-24hrfn8": [
@@ -107196,6 +109728,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:43:19.189Z"
+      },
+      {
+        "id": "samsung-vcc5241s3k",
+        "title": "SAMSUNG VCC5241S3K/XEV",
+        "price": 43900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vcc5241s3k-xev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:28.706949+00:00",
+        "sku": "SAMSUNG VCC5241S3K/XEV",
+        "productId": "2875"
       }
     ],
     "samsung-vcc5251v3r": [
@@ -107505,6 +110049,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "samsung-vcc8836v36",
+        "title": "SAMSUNG VCC8836V36/XEV",
+        "price": 74900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vcc8836v36-xev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:47.450638+00:00",
+        "sku": "SAMSUNG VCC8836V36/XEV",
+        "productId": "36150"
       }
     ],
     "kenwood-tcx751rd": [
@@ -107601,6 +110157,19 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "samsung-vc20m255awb",
+        "title": "SAMSUNG VC20M255AWB/EV",
+        "price": 53900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc20m255awb-ev",
+        "shop": "vesta",
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:32.202187+00:00",
+        "sku": "SAMSUNG VC20M255AWB/EV",
+        "productId": "8953"
       }
     ],
     "philips-bhb862-00": [
@@ -107635,6 +110204,18 @@
       }
     ],
     "samsung-vc20m257awr": [
+      {
+        "id": "samsung-vc20m257awr",
+        "title": "SAMSUNG VC20M257AWR/EV",
+        "price": 58000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc20m257awr-ev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:36.079860+00:00",
+        "sku": "SAMSUNG VC20M257AWR/EV",
+        "productId": "8431"
+      },
       {
         "id": "samsung-vc20m257awr",
         "price": 58900,
@@ -107792,6 +110373,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:45:01.020Z"
+      },
+      {
+        "id": "samsung-vcc8835v37",
+        "title": "SAMSUNG VCC8835V37/XEV",
+        "price": 66000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc8835v37-xev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:43.177086+00:00",
+        "sku": "SAMSUNG VCC8835V37/XEV",
+        "productId": "73792"
       }
     ],
     "samsung-vc18m3160vg": [
@@ -107983,6 +110576,18 @@
       }
     ],
     "kenwood-zjg112cl": [
+      {
+        "id": "kenwood-zjg112cl",
+        "title": "KENWOOD ZJG112CL",
+        "price": 31000,
+        "url": "https://vesta.am/manr-kencax/teynik/kenwood-zjg112cl",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:34.367822+00:00",
+        "sku": "KENWOOD ZJG112CL",
+        "productId": "10298"
+      },
       {
         "id": "kenwood-zjg112cl",
         "price": 31100,
@@ -108855,6 +111460,18 @@
     "kenwood-je280a": [
       {
         "id": "kenwood-je280a",
+        "title": "KENWOOD JE280A",
+        "price": 9900,
+        "url": "https://vesta.am/manr-kencax/hyutahan/kenwood-je280a",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:47.544382+00:00",
+        "sku": "KENWOOD JE280A",
+        "productId": "10924"
+      },
+      {
+        "id": "kenwood-je280a",
         "price": 10000,
         "title": "KENWOOD JE280A",
         "url": "https://vlv.am/en/Product/14783",
@@ -109365,6 +111982,19 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:48:19.633Z"
+      },
+      {
+        "id": "de-longhi-ec230",
+        "title": "DELONGHI EC230.BK",
+        "price": 51900,
+        "url": "https://vesta.am/manr-kencax/srchepner/delonghi-ec230.bk",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:14.920892+00:00",
+        "sku": "DELONGHI EC230.BK",
+        "productId": "67553"
       }
     ],
     "hisense-rd32wrn": [
@@ -110249,6 +112879,18 @@
     "kenwood-jmp601si": [
       {
         "id": "kenwood-jmp601si",
+        "title": "KENWOOD JMP601SI",
+        "price": 92500,
+        "url": "https://vesta.am/manr-kencax/hyutahan/kenwood-jmp601si",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:51.718233+00:00",
+        "sku": "KENWOOD JMP601SI",
+        "productId": "79298"
+      },
+      {
+        "id": "kenwood-jmp601si",
         "price": 92700,
         "title": "KENWOOD JMP601Si",
         "url": "https://vlv.am/en/Product/18338",
@@ -110292,6 +112934,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:51:36.117Z"
+      },
+      {
+        "id": "kenwood-mg700",
+        "title": "KENWOOD MG700",
+        "price": 111900,
+        "url": "https://vesta.am/manr-kencax/msaxacner/kenwood-mg700",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:00.087223+00:00",
+        "sku": "KENWOOD MG700",
+        "productId": "63996"
       }
     ],
     "sony-ht-s40r": [
@@ -111371,6 +114025,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "samsung-vcc4326s3a",
+        "title": "SAMSUNG VCC4326S3A/XEV",
+        "price": 49000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vcc4326s3a-xev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:29.428933+00:00",
+        "sku": "SAMSUNG VCC4326S3A/XEV",
+        "productId": "79464"
       }
     ],
     "samsung-vc18m2150sg": [
@@ -111388,6 +114054,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:54:01.730Z"
+      },
+      {
+        "id": "samsung-vc18m2150sg",
+        "title": "SAMSUNG VC18M2150SG/EV",
+        "price": 59000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc18m2150sg-ev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:40.581424+00:00",
+        "sku": "SAMSUNG VC18M2150SG/EV",
+        "productId": "8837"
       }
     ],
     "philips-bhs510-00": [
@@ -111980,6 +114658,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "samsung-vcc8837v3p",
+        "title": "SAMSUNG VCC8837V3P/XEV",
+        "price": 70900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vcc8837v3p-xev",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:43.937837+00:00",
+        "sku": "SAMSUNG VCC8837V3P/XEV",
+        "productId": "69093"
       }
     ],
     "karcher-wd5p-v-25-5-22": [
@@ -112326,6 +115016,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T17:55:55.386Z"
+      },
+      {
+        "id": "kenwood-jmp400wh",
+        "title": "KENWOOD JMP400WH",
+        "price": 63900,
+        "url": "https://vesta.am/manr-kencax/hyutahan/kenwood-jmp400wh",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:51.047588+00:00",
+        "sku": "KENWOOD JMP400WH",
+        "productId": "65458"
       }
     ],
     "kenwood-blp41-a0wh": [
@@ -115473,6 +118175,19 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "hitachi-hrtn7489dfbbkcs",
+        "title": "HITACHI HRTN7489DFBBKCS",
+        "price": 434000,
+        "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/hitachi-hrtn7489dfbbkcs",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:08:54.340463+00:00",
+        "sku": "HITACHI HRTN7489DFBBKCS",
+        "productId": "79258"
       }
     ],
     "hitachi-hrtn7489dfbegcs": [
@@ -117575,6 +120290,32 @@
         "checkedAt": "2026-11-03T18:10:32.351Z",
         "colorRaw": "Titanium Gold",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "dreame-ahd51-pocket",
+        "title": "DREAME Pocket Titanium Gold (AHD51)",
+        "price": 69900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-pocket-titanium-gold-ahd51",
+        "shop": "vesta",
+        "color": "Titanium Gold",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:07.057789+00:00",
+        "sku": "DREAME Pocket Titanium Gold (AHD51)",
+        "productId": "88043"
+      },
+      {
+        "id": "dreame-ahd51-pocket",
+        "title": "DREAME Pocket Space Gray (AHD51)",
+        "price": 69900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-pocket-space-gray-ahd51",
+        "shop": "vesta",
+        "color": "Space Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:08.327809+00:00",
+        "sku": "DREAME Pocket Space Gray (AHD51)",
+        "productId": "88044"
       }
     ],
     "electrolux-ech-bmi2000-heater": [
@@ -118160,6 +120901,19 @@
     "lg-f4v5vyl2p": [
       {
         "id": "lg-f4v5vyl2p",
+        "title": "LG F4V5VYL2P",
+        "price": 299000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-f4v5vyl2p",
+        "shop": "vesta",
+        "color": "Iron Grey",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:38.089173+00:00",
+        "sku": "LG F4V5VYL2P",
+        "productId": "86071"
+      },
+      {
+        "id": "lg-f4v5vyl2p",
         "price": 379000,
         "title": "LG F4V5VYL2P",
         "url": "https://vlv.am/en/Product/36827",
@@ -118423,6 +121177,18 @@
     "samsung-mx-st50b": [
       {
         "id": "samsung-mx-st50b",
+        "title": "SAMSUNG MX-ST50B/RU",
+        "price": 239000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/samsung-mx-st50b-ru",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:04.679076+00:00",
+        "sku": "SAMSUNG MX-ST50B/RU",
+        "productId": "84159"
+      },
+      {
+        "id": "samsung-mx-st50b",
         "price": 239900,
         "title": "SAMSUNG MX-ST50B/RU",
         "url": "https://vlv.am/en/Product/37347",
@@ -118452,6 +121218,18 @@
       }
     ],
     "samsung-mx-st90b": [
+      {
+        "id": "samsung-mx-st90b",
+        "title": "SAMSUNG MX-ST90B/RU",
+        "price": 399000,
+        "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/samsung-mx-st90b-ru",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:11:11.598142+00:00",
+        "sku": "SAMSUNG MX-ST90B/RU",
+        "productId": "81454"
+      },
       {
         "id": "samsung-mx-st90b",
         "price": 399900,
@@ -119001,6 +121779,18 @@
       },
       {
         "id": "samsung-qe55qn80fauxru",
+        "title": "SAMSUNG QE55QN80FAUXRU",
+        "price": 499000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE55QN80FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:12:03.336Z",
+        "sku": "SAMSUNG QE55QN80FAUXRU",
+        "productId": "89781"
+      },
+      {
+        "id": "samsung-qe55qn80fauxru",
         "price": 499900,
         "title": "Smart TV Samsung QE55QN80FAUXRU",
         "url": "https://eldorado.am/en/smart-tv-samsung-qe55qn80fauxru",
@@ -119030,6 +121820,18 @@
       }
     ],
     "samsung-qe77s85faexru": [
+      {
+        "id": "samsung-qe77s85faexru",
+        "title": "SAMSUNG QE77S85FAEXRU",
+        "price": 1369000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE77S85FAEXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:00.853Z",
+        "sku": "SAMSUNG QE77S85FAEXRU",
+        "productId": "89817"
+      },
       {
         "id": "samsung-qe77s85faexru",
         "price": 1771000,
@@ -119456,6 +122258,18 @@
       },
       {
         "id": "samsung-qe65s90faexru",
+        "title": "SAMSUNG QE65S90FAEXRU",
+        "price": 989000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65S90FAEXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:11.287Z",
+        "sku": "SAMSUNG QE65S90FAEXRU",
+        "productId": "90525"
+      },
+      {
+        "id": "samsung-qe65s90faexru",
         "price": 989900,
         "title": "Smart TV Samsung QE65S90FAEXRU",
         "url": "https://eldorado.am/en/smart-tv-samsung-qe65s90faexru",
@@ -119485,6 +122299,18 @@
       }
     ],
     "samsung-qe65s95fauxru": [
+      {
+        "id": "samsung-qe65s95fauxru",
+        "title": "SAMSUNG QE65S95FAUXRU",
+        "price": 1139000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65S95FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:07.225Z",
+        "sku": "SAMSUNG QE65S95FAUXRU",
+        "productId": "93149"
+      },
       {
         "id": "samsung-qe65s95fauxru",
         "price": 1139900,
@@ -119543,6 +122369,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe77s90faexru",
+        "title": "SAMSUNG QE77S90FAEXRU",
+        "price": 1469000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE77S90FAEXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:58.631Z",
+        "sku": "SAMSUNG QE77S90FAEXRU",
+        "productId": "90827"
       },
       {
         "id": "samsung-qe77s90faexru",
@@ -119645,6 +122483,32 @@
         "checkedAt": "2026-11-03T18:21:56.623Z",
         "colorRaw": "Purple",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "dreame-amf18a-airstyle-pro",
+        "title": "DREAME AirStyle Pro Gold Titanium (AMF18A)",
+        "price": 159900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dream-airstyle-pro-gold-titanium-amf18a",
+        "shop": "vesta",
+        "color": "Gold Titanium",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:10.706669+00:00",
+        "sku": "DREAME AirStyle Pro Gold Titanium (AMF18A)",
+        "productId": "87316"
+      },
+      {
+        "id": "dreame-amf18a-airstyle-pro",
+        "title": "DREAME AirStyle Pro Purple (AMF18A)",
+        "price": 159900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-airstyle-pro-purple-amf18a",
+        "shop": "vesta",
+        "color": "Purple",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:12.353766+00:00",
+        "sku": "DREAME AirStyle Pro Purple (AMF18A)",
+        "productId": "93823"
       }
     ],
     "bosch-kgn36xi30u": [
@@ -120790,6 +123654,18 @@
       }
     ],
     "samsung-qe48s90faexru": [
+      {
+        "id": "samsung-qe48s90faexru",
+        "title": "SAMSUNG QE48S90FAEXRU",
+        "price": 564000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE48S90FAEXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:44.702Z",
+        "sku": "SAMSUNG QE48S90FAEXRU",
+        "productId": "93148"
+      },
       {
         "id": "samsung-qe48s90faexru",
         "price": 733000,
@@ -122768,6 +125644,18 @@
     "samsung-qe75qn80fauxru": [
       {
         "id": "samsung-qe75qn80fauxru",
+        "title": "SAMSUNG QE75QN80FAUXRU",
+        "price": 879000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE75QN80FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:14.949Z",
+        "sku": "SAMSUNG QE75QN80FAUXRU",
+        "productId": "90096"
+      },
+      {
+        "id": "samsung-qe75qn80fauxru",
         "price": 879900,
         "title": "Smart TV Samsung QE75QN80FAUXRU",
         "url": "https://eldorado.am/en/smart-tv-samsung-qe75qn80fauxru",
@@ -123369,6 +126257,18 @@
     "sony-k-65xr50": [
       {
         "id": "sony-k-65xr50",
+        "title": "SONY K-65XR50",
+        "price": 749000,
+        "url": "https://vesta.am/tv/SONY-K-65XR50",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:20.445Z",
+        "sku": "SONY K-65XR50",
+        "productId": "101414"
+      },
+      {
+        "id": "sony-k-65xr50",
         "price": 749900,
         "title": "Sony K-65XR50",
         "url": "https://www.zigzag.am/am/sony-k-65xr50.html",
@@ -123398,6 +126298,18 @@
       }
     ],
     "sony-k-55xr50": [
+      {
+        "id": "sony-k-55xr50",
+        "title": "SONY K-55XR50",
+        "price": 579000,
+        "url": "https://vesta.am/tv/SONY-K-55XR50",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:43.483Z",
+        "sku": "SONY K-55XR50",
+        "productId": "101410"
+      },
       {
         "id": "sony-k-55xr50",
         "price": 579900,
@@ -123460,6 +126372,18 @@
       }
     ],
     "xiaomi-vacuum-s40c-bhr9664eu": [
+      {
+        "id": "xiaomi-vacuum-s40c-bhr9664eu",
+        "title": "Xiaomi Robot Vacuum S40C (BHR9664EU)",
+        "price": 59900,
+        "url": "https://vesta.am/manr-kencax/poshekulner/xiaomi-robot-vacuum-s40c-bhr9664eu",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:41.384483+00:00",
+        "sku": "XIAOMI BHR9664EU",
+        "productId": "100406"
+      },
       {
         "id": "xiaomi-vacuum-s40c-bhr9664eu",
         "price": 69900,
@@ -123667,6 +126591,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe65qn990fuxru",
+        "title": "SAMSUNG QE65QN990FUXRU",
+        "price": 1949000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65QN990FUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:52.578Z",
+        "sku": "SAMSUNG QE65QN990FUXRU",
+        "productId": "91797"
       },
       {
         "id": "samsung-qe65qn990fuxru",
@@ -123962,6 +126898,18 @@
       }
     ],
     "tcl-65c6k": [
+      {
+        "id": "tcl-65c6k",
+        "title": "TCL 65C6K",
+        "price": 479000,
+        "url": "https://vesta.am/tv/TCL-65C6K",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:12:12.603Z",
+        "sku": "TCL 65C6K",
+        "productId": "96070"
+      },
       {
         "id": "tcl-65c6k",
         "price": 479900,
@@ -124429,6 +127377,19 @@
         "checkedAt": "2026-11-03T18:23:49.440Z",
         "colorRaw": "Rosy White",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "dreame-ahd52-pocket-ultra",
+        "title": "DREAME Pocket Ultra Rosy White (AHD52)",
+        "price": 86900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-hair-dryer-pocket-ultra-rosy-white-ahd52",
+        "shop": "vesta",
+        "color": "Rosy White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:08.863921+00:00",
+        "sku": "DREAME Pocket Ultra Rosy White (AHD52)",
+        "productId": "95044"
       }
     ],
     "dreame-ama10a-hairdryer-aero-straight": [
@@ -124446,6 +127407,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T18:23:47.094Z"
+      },
+      {
+        "id": "dreame-ama10a-hairdryer-aero-straight",
+        "title": "DREAME Aero Straight (AMA10A)",
+        "price": 164900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-aero-straight-ama10a",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:13.581108+00:00",
+        "sku": "DREAME Aero Straight (AMA10A)",
+        "productId": "93835"
       }
     ],
     "mova-e30-ultra-vacuum": [
@@ -124723,6 +127696,19 @@
         "checkedAt": "2026-11-03T18:25:11.548Z",
         "colorRaw": "Gold",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "dreame-azd20a-dazzle",
+        "title": "DREAME Dazzle Gold (AZD20A)",
+        "price": 139900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-dazzle-gold-azd20a",
+        "shop": "vesta",
+        "color": "Gold",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:10.504233+00:00",
+        "sku": "DREAME Dazzle Gold (AZD20A)",
+        "productId": "95040"
       }
     ],
     "lg-a9lslim": [
@@ -125404,6 +128390,23 @@
         "cell": false,
         "colorRaw": "Space Gray",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "honor-pad-x8b-ndl2-w09",
+        "title": "HONOR Pad X8b WiFi 6GB/256GB Space Gray",
+        "price": 102900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/HONOR-Pad-X8b-WiFi-6GB-256GB-Space-Gray",
+        "shop": "vesta",
+        "ram": 6,
+        "storage": 256,
+        "color": "Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:28.285Z",
+        "sku": "HONOR Pad X8b WiFi 6GB/256GB Space Gray",
+        "productId": "98949",
+        "ramFromPage": true
       }
     ],
     "honor-x8d": [
@@ -125686,6 +128689,54 @@
         "color": "Gray",
         "shop": "zigzag",
         "esim": false
+      },
+      {
+        "id": "honor-x8d",
+        "title": "HONOR X8d 8GB/256GB Velvet Grey",
+        "price": 119900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X8d-8GB-256GB-Velvet-Grey",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:29.436Z",
+        "sku": "HONOR X8d 8GB/256GB Velvet Grey",
+        "productId": "99399",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x8d",
+        "title": "HONOR X8d 8GB/256GB Light Blue",
+        "price": 119900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X8d-8GB-256GB-Light-Blue",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Light Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:30.632Z",
+        "sku": "HONOR X8d 8GB/256GB Light Blue",
+        "productId": "99398",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-x8d",
+        "title": "HONOR X8d 8GB/256GB Velvet Black",
+        "price": 119900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-X8d-8GB-256GB-Velvet-Black",
+        "shop": "vesta",
+        "ram": 8,
+        "storage": 256,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:31.617Z",
+        "sku": "HONOR X8d 8GB/256GB Velvet Black",
+        "productId": "99397",
+        "ramFromPage": true
       }
     ],
     "toshiba-gr-rs755wi-pmj-06": [
@@ -126166,6 +129217,32 @@
         "checkedAt": "2026-11-03T18:29:23.976Z",
         "colorRaw": "White",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "dreame-ahg11a-hairdryer-mini",
+        "title": "DREAME Нairdryer Mini Purple (AHG11A) EU",
+        "price": 20900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-hairdryer-mini-purple-ahg11a-eu",
+        "shop": "vesta",
+        "color": "Purple",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:05.379365+00:00",
+        "sku": "DREAME Нairdryer Mini Purple (AHG11A) EU",
+        "productId": "99791"
+      },
+      {
+        "id": "dreame-ahg11a-hairdryer-mini",
+        "title": "DREAME Нairdryer Mini Blue (AHG11A) (EU)",
+        "price": 20900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-hairdryer-mini-blue-ahg11a-eu",
+        "shop": "vesta",
+        "color": "Blue",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:06.563858+00:00",
+        "sku": "DREAME Нairdryer Mini Blue (AHG11A) (EU)",
+        "productId": "99614"
       }
     ],
     "lg-vc5420nhtcg": [
@@ -126637,6 +129714,30 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T18:30:59.392Z"
+      },
+      {
+        "id": "bosch-smv6ecx08e",
+        "title": "BOSCH SMV6ECX08E",
+        "price": 620000,
+        "url": "https://vesta.am/aman-lvalu-meqena/nerkarucvox-spasq-lvacox/bosch-smv6ecx08e",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:06.067989+00:00",
+        "sku": "BOSCH SMV6ECX08E",
+        "productId": "94739"
+      },
+      {
+        "id": "bosch-smv6ecx08e",
+        "title": "BOSCH SMV6ECX08E",
+        "price": 620000,
+        "url": "https://vesta.am/nerkarucvogh-texnika/nerkarucvox-spasq-lvacox-meqena/bosch-smv6ecx08e",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:02.517548+00:00",
+        "sku": "BOSCH SMV6ECX08E",
+        "productId": "94739"
       }
     ],
     "bosch-wan28201me": [
@@ -126685,6 +129786,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe55s85haexpy",
+        "title": "SAMSUNG QE55S85HAEXPY",
+        "price": 637000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE55S85HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:37.020Z",
+        "sku": "SAMSUNG QE55S85HAEXPY",
+        "productId": "106021"
       }
     ],
     "samsung-qe55s90hauxpy": [
@@ -126716,6 +129829,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe55s90hauxpy",
+        "title": "SAMSUNG QE55S90HAUXPY",
+        "price": 1049000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE55S90HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:10.580Z",
+        "sku": "SAMSUNG QE55S90HAUXPY",
+        "productId": "104874"
       }
     ],
     "samsung-qe65s85haexpy": [
@@ -126747,6 +129872,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe65s85haexpy",
+        "title": "SAMSUNG QE65S85HAEXPY",
+        "price": 862000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65S85HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:16.548Z",
+        "sku": "SAMSUNG QE65S85HAEXPY",
+        "productId": "101217"
       }
     ],
     "samsung-ue43m70hauxpy": [
@@ -126958,6 +130095,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "samsung-ue65m80hauxpy",
+        "title": "SAMSUNG UE65M80HAUXPY",
+        "price": 479000,
+        "url": "https://vesta.am/tv/SAMSUNG-UE65M80HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:12:13.350Z",
+        "sku": "SAMSUNG UE65M80HAUXPY",
+        "productId": "100439"
       },
       {
         "id": "samsung-ue65m80hauxpy",
@@ -127177,6 +130326,32 @@
         "checkedAt": "2026-11-03T18:31:43.080Z",
         "colorRaw": "White",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "mova-fd10s-pro-air-fryer",
+        "title": "MOVA FD10s Pro Black (FD10s Pro)",
+        "price": 65900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/mova-fd10s-pro-black-fd10s-pro",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:16.749804+00:00",
+        "sku": "MOVA FD10s Pro Black (FD10s Pro)",
+        "productId": "99855"
+      },
+      {
+        "id": "mova-fd10s-pro-air-fryer",
+        "title": "MOVA FD10s Pro White (FD10s Pro)",
+        "price": 65900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/mova-fd10s-pro-white-fd10s-pro",
+        "shop": "vesta",
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:17.185375+00:00",
+        "sku": "MOVA FD10s Pro White (FD10s Pro)",
+        "productId": "99858"
       }
     ],
     "mova-s70-pro-roller-vacuum": [
@@ -127594,6 +130769,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe65qn70hauxpy",
+        "title": "SAMSUNG QE65QN70HAUXPY",
+        "price": 535000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65QN70HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:50.733Z",
+        "sku": "SAMSUNG QE65QN70HAUXPY",
+        "productId": "101085"
       }
     ],
     "samsung-qe75qn70hauxpy": [
@@ -127625,6 +130812,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe75qn70hauxpy",
+        "title": "SAMSUNG QE75QN70HAUXPY",
+        "price": 722000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE75QN70HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:22.500Z",
+        "sku": "SAMSUNG QE75QN70HAUXPY",
+        "productId": "101084"
       }
     ],
     "samsung-qe85qn70hauxpy": [
@@ -127656,6 +130855,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe85qn70hauxpy",
+        "title": "SAMSUNG QE85QN70HAUXPY",
+        "price": 892000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE85QN70HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:14.472Z",
+        "sku": "SAMSUNG QE85QN70HAUXPY",
+        "productId": "104867"
       }
     ],
     "samsung-qe55qn80hauxpy": [
@@ -127673,6 +130884,18 @@
         "shop": "vlv",
         "seen": "2026-11-03",
         "checkedAt": "2026-11-03T18:32:34.835Z"
+      },
+      {
+        "id": "samsung-qe55qn80hauxpy",
+        "title": "SAMSUNG QE55QN80HAUXPY",
+        "price": 619000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE55QN80HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:38.058Z",
+        "sku": "SAMSUNG QE55QN80HAUXPY",
+        "productId": "100440"
       },
       {
         "id": "samsung-qe55qn80hauxpy",
@@ -127718,6 +130941,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe65s95hauxpy",
+        "title": "SAMSUNG QE65S95HAUXPY",
+        "price": 1162000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65S95HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:05.793Z",
+        "sku": "SAMSUNG QE65S95HAUXPY",
+        "productId": "101352"
       }
     ],
     "philips-bre728-00": [
@@ -127986,6 +131221,19 @@
         "checkedAt": "2026-11-03T18:33:10.913Z",
         "colorRaw": "Rose Pink",
         "colorSource": "vlv:title"
+      },
+      {
+        "id": "dreame-ams01a-airstyle-pro-hi",
+        "title": "DREAME AirStyle Pro HI Rose Pink (AMS01A)",
+        "price": 199900,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/dreame-airstyle-pro-hi-rose-pink-ams01a",
+        "shop": "vesta",
+        "color": "Rose Pink",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:14.144505+00:00",
+        "sku": "DREAME AirStyle Pro HI Rose Pink (AMS01A)",
+        "productId": "100016"
       }
     ],
     "hisense-hvc6133wii": [
@@ -128408,6 +131656,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-mre55r85hauxpy",
+        "title": "SAMSUNG MRE55R85HAUXPY",
+        "price": 679000,
+        "url": "https://vesta.am/tv/SAMSUNG-MRE55R85HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:28.011Z",
+        "sku": "SAMSUNG MRE55R85HAUXPY",
+        "productId": "101216"
       }
     ],
     "samsung-mre65r85hauxpy": [
@@ -128439,6 +131699,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-mre65r85hauxpy",
+        "title": "SAMSUNG MRE65R85HAUXPY",
+        "price": 879000,
+        "url": "https://vesta.am/tv/SAMSUNG-MRE65R85HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:16.340Z",
+        "sku": "SAMSUNG MRE65R85HAUXPY",
+        "productId": "101083"
       }
     ],
     "samsung-qe48s90haexpy": [
@@ -128470,6 +131742,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe48s90haexpy",
+        "title": "SAMSUNG QE48S90HAEXPY",
+        "price": 799000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE48S90HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:18.626Z",
+        "sku": "SAMSUNG QE48S90HAEXPY",
+        "productId": "101082"
       }
     ],
     "samsung-qe65qn80hauxpy": [
@@ -128490,6 +131774,18 @@
       },
       {
         "id": "samsung-qe65qn80hauxpy",
+        "title": "SAMSUNG QE65QN80HAUXPY",
+        "price": 749000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65QN80HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:21.194Z",
+        "sku": "SAMSUNG QE65QN80HAUXPY",
+        "productId": "101215"
+      },
+      {
+        "id": "samsung-qe65qn80hauxpy",
         "price": 749900,
         "title": "Samsung QE65QN80HAUXPY",
         "url": "https://www.zigzag.am/am/samsung-qe65qn80hauxpy.html",
@@ -128504,6 +131800,18 @@
       }
     ],
     "samsung-ue85m80hauxpy": [
+      {
+        "id": "samsung-ue85m80hauxpy",
+        "title": "SAMSUNG UE85M80HAUXPY",
+        "price": 819000,
+        "url": "https://vesta.am/tv/SAMSUNG-UE85M80HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:16.777Z",
+        "sku": "SAMSUNG UE85M80HAUXPY",
+        "productId": "101213"
+      },
       {
         "id": "samsung-ue85m80hauxpy",
         "price": 839000,
@@ -129068,6 +132376,19 @@
     "lg-f4x5vypy8": [
       {
         "id": "lg-f4x5vypy8",
+        "title": "LG F4X5VYPY8",
+        "price": 309000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-f4x5vypy8",
+        "shop": "vesta",
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:40.190630+00:00",
+        "sku": "LG F4X5VYPY8",
+        "productId": "101394"
+      },
+      {
+        "id": "lg-f4x5vypy8",
         "price": 379000,
         "title": "LG F4X5VYPY8",
         "url": "https://vlv.am/en/Product/47878",
@@ -129384,6 +132705,18 @@
       },
       {
         "id": "samsung-qe77s85haexpy",
+        "title": "SAMSUNG QE77S85HAEXPY",
+        "price": 1199000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE77S85HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:04.778Z",
+        "sku": "SAMSUNG QE77S85HAEXPY",
+        "productId": "101218"
+      },
+      {
+        "id": "samsung-qe77s85haexpy",
         "price": 1199963,
         "title": "SAMSUNG QE77S85HAEXPY",
         "url": "https://vlv.am/en/Product/48200",
@@ -129427,6 +132760,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe83s90haexpy",
+        "title": "SAMSUNG QE83S90HAEXPY",
+        "price": 2499000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE83S90HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:47.231Z",
+        "sku": "SAMSUNG QE83S90HAEXPY",
+        "productId": "106055"
       }
     ],
     "samsung-mre75r95hauxpy": [
@@ -129489,6 +132834,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-ue85u8000huxpy",
+        "title": "SAMSUNG UE85U8000HUXPY",
+        "price": 594000,
+        "url": "https://vesta.am/tv/SAMSUNG-UE85U8000HUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:42.319Z",
+        "sku": "SAMSUNG UE85U8000HUXPY",
+        "productId": "100431"
       }
     ],
     "lenovo-ideapad-slim-3-15iph11-ultra-5-322": [
@@ -129999,6 +133356,54 @@
     "honor-600-pro": [
       {
         "id": "honor-600-pro",
+        "title": "HONOR 600 Pro 12GB/256GB Golden White",
+        "price": 299900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-Pro-12GB-256GB-GOLDEN-WHITE",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:53.809Z",
+        "sku": "HONOR 600 Pro 12GB/256GB Golden White",
+        "productId": "101451",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-600-pro",
+        "title": "HONOR 600 Pro 12GB/512GB Black",
+        "price": 324900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-Pro-12GB-512GB-Black",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:52.922Z",
+        "sku": "HONOR 600 Pro 12GB/512GB Black",
+        "productId": "100233",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-600-pro",
+        "title": "HONOR 600 Pro 12GB/512GB Golden White",
+        "price": 324900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-600-Pro-12GB-512GB-Golden-White",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "White",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:53.020Z",
+        "sku": "HONOR 600 Pro 12GB/512GB Golden White",
+        "productId": "100234",
+        "ramFromPage": true
+      },
+      {
+        "id": "honor-600-pro",
         "price": 329900,
         "title": "Smartphone Honor 600 Pro 12/512GB Black (VKP-NX9)",
         "url": "https://eldorado.am/en/honor-600-pro-12-512gb-black-vkp-nx9",
@@ -130076,6 +133481,22 @@
         "band": null,
         "shop": "eldorado",
         "esim": false
+      },
+      {
+        "id": "honor-200",
+        "title": "HONOR 200 12/512 Emerald Green",
+        "price": 184900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-200-12-512-Emerald-Green",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Green",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:06.610Z",
+        "sku": "HONOR 200 12/512 Emerald Green",
+        "productId": "83315",
+        "ramFromPage": true
       }
     ],
     "lenovo-ideapad-5-2-in-1-14iru9": [
@@ -130154,6 +133575,22 @@
         "band": null,
         "shop": "eldorado",
         "esim": false
+      },
+      {
+        "id": "honor-400",
+        "title": "HONOR 400 12/256 Desert Gold",
+        "price": 184900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-400-12-256-Desert-Gold",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 256,
+        "color": "Desert Gold",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:14:06.023Z",
+        "sku": "HONOR 400 12/256 Desert Gold",
+        "productId": "90694",
+        "ramFromPage": true
       }
     ],
     "asus-vy249hf-w": [
@@ -130436,6 +133873,22 @@
         "shop": "yerevanmobile",
         "seen": "2026-11-05",
         "checkedAt": "2026-11-05T03:50:35.945Z"
+      },
+      {
+        "id": "honor-400-pro",
+        "title": "HONOR 400 Pro 12/512 Lunar Grey",
+        "price": 269900,
+        "url": "https://vesta.am/Mobile-phones/MOBILE/HONOR-400-Pro-12-512-Lunar-Grey",
+        "shop": "vesta",
+        "ram": 12,
+        "storage": 512,
+        "color": "Lunar Gray",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:13:55.198Z",
+        "sku": "HONOR 400 Pro 12/512 Lunar Grey",
+        "productId": "90696",
+        "ramFromPage": true
       }
     ],
     "honor-pad-x7-jms-w09": [
@@ -130453,6 +133906,23 @@
         "band": null,
         "shop": "eldorado",
         "cell": false
+      },
+      {
+        "id": "honor-pad-x7-jms-w09",
+        "title": "HONOR Pad X7 4GB/128GB Gray",
+        "price": 59900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/HONOR-Pad-X7-4GB-128GB-Gray",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Gray",
+        "cell": false,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:36.031Z",
+        "sku": "HONOR Pad X7 4GB/128GB Gray",
+        "productId": "99672",
+        "ramFromPage": true
       }
     ],
     "honor-pad-x7-lte-jms-l09": [
@@ -130485,6 +133955,23 @@
         "band": null,
         "shop": "eldorado",
         "cell": true
+      },
+      {
+        "id": "honor-pad-x7-lte-jms-l09",
+        "title": "HONOR Pad X7 LTE 4GB/128GB Gray",
+        "price": 64900,
+        "url": "https://vesta.am/Mobile-phones/Tablets/HONOR-Pad-X7-LTE-4GB-128GB-Gray",
+        "shop": "vesta",
+        "ram": 4,
+        "storage": 128,
+        "color": "Gray",
+        "cell": true,
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:19:35.458Z",
+        "sku": "HONOR Pad X7 LTE 4GB/128GB Gray",
+        "productId": "102500",
+        "ramFromPage": true
       }
     ],
     "honor-pad-x9a": [
@@ -130590,6 +134077,19 @@
         "band": null,
         "color": "White",
         "shop": "zigzag"
+      },
+      {
+        "id": "honor-choice-infowear-2i-kch-wb01",
+        "title": "HONOR Choice Watch 2i Black",
+        "price": 19900,
+        "url": "https://vesta.am/bjjayin-heraxosner/jamacuycner-brasletner/honor-choice-watch-2i-black",
+        "shop": "vesta",
+        "color": "Black",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:05:57.775267+00:00",
+        "sku": "HONOR Choice Watch 2i Black",
+        "productId": "99400"
       }
     ],
     "samsung-galaxy-watch4-40-mm": [
@@ -132954,6 +136454,18 @@
     "samsung-ue75m80hauxpy": [
       {
         "id": "samsung-ue75m80hauxpy",
+        "title": "SAMSUNG UE75M80HAUXPY",
+        "price": 609000,
+        "url": "https://vesta.am/tv/SAMSUNG-UE75M80HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:38.802Z",
+        "sku": "SAMSUNG UE75M80HAUXPY",
+        "productId": "100436"
+      },
+      {
+        "id": "samsung-ue75m80hauxpy",
         "price": 629000,
         "title": "Smart TV Samsung UE75M80HAUXPY",
         "url": "https://eldorado.am/en/samsung-ue75m80hauxpy",
@@ -134297,6 +137809,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "gorenje-hbx601xg-hand-blender",
+        "title": "GORENJE HBX601XG",
+        "price": 11500,
+        "url": "https://vesta.am/manr-kencax/blenderner/gorenje-hbx601xg",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:24.194468+00:00",
+        "sku": "GORENJE HBX601XG",
+        "productId": "78764"
       }
     ],
     "ariete-00c0438": [
@@ -135577,6 +139101,18 @@
         "inStock": true,
         "band": null,
         "shop": "eldorado"
+      },
+      {
+        "id": "bosch-kgn56cx30u",
+        "title": "BOSCH KGN56CX30U",
+        "price": 759700,
+        "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/bosch-kgn56cx30u",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:01.376236+00:00",
+        "sku": "BOSCH KGN56CX30U",
+        "productId": "98942"
       }
     ],
     "bosch-kgn39lr3ar": [
@@ -141813,6 +145349,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-mre65r95hauxpy",
+        "title": "SAMSUNG MRE65R95HAUXPY",
+        "price": 1599000,
+        "url": "https://vesta.am/tv/SAMSUNG-MRE65R95HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:57.575Z",
+        "sku": "SAMSUNG MRE65R95HAUXPY",
+        "productId": "102271"
       }
     ],
     "samsung-mre75r85hauxpy": [
@@ -141829,6 +145377,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-mre75r85hauxpy",
+        "title": "SAMSUNG MRE75R85HAUXPY",
+        "price": 1279000,
+        "url": "https://vesta.am/tv/SAMSUNG-MRE75R85HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:02.079Z",
+        "sku": "SAMSUNG MRE75R85HAUXPY",
+        "productId": "102273"
       }
     ],
     "samsung-mre85r95hauxpy": [
@@ -141861,6 +145421,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe100qn80fuxru",
+        "title": "SAMSUNG QE100QN80FUXRU",
+        "price": 1699000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE100QN80FUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:57.031Z",
+        "sku": "SAMSUNG QE100QN80FUXRU",
+        "productId": "95961"
       }
     ],
     "samsung-qe115qn90fuxru": [
@@ -141941,6 +145513,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe55ls03fauxru",
+        "title": "SAMSUNG QE55LS03FAUXRU",
+        "price": 489000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE55LS03FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:12:07.774Z",
+        "sku": "SAMSUNG QE55LS03FAUXRU",
+        "productId": "90541"
       }
     ],
     "samsung-qe55ls03hauxpy": [
@@ -142005,6 +145589,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe55qn90fauxru",
+        "title": "SAMSUNG QE55QN90FAUXRU",
+        "price": 714000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE55QN90FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:24.635Z",
+        "sku": "SAMSUNG QE55QN90FAUXRU",
+        "productId": "93371"
       }
     ],
     "samsung-qe65ls03hauxpy": [
@@ -142069,6 +145665,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe65s90haexpy",
+        "title": "SAMSUNG QE65S90HAEXPY",
+        "price": 1449000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65S90HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:59.658Z",
+        "sku": "SAMSUNG QE65S90HAEXPY",
+        "productId": "102278"
       }
     ],
     "samsung-qe65s95cauxru": [
@@ -142106,6 +145714,18 @@
     "samsung-qe75qn80hauxpy": [
       {
         "id": "samsung-qe75qn80hauxpy",
+        "title": "SAMSUNG QE75QN80HAUXPY",
+        "price": 1109000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE75QN80HAUXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:08.827Z",
+        "sku": "SAMSUNG QE75QN80HAUXPY",
+        "productId": "106020"
+      },
+      {
+        "id": "samsung-qe75qn80hauxpy",
         "price": 1109900,
         "title": "Samsung QE75QN80HAUXPY",
         "url": "https://www.zigzag.am/am/samsung-qe75qn80hauxpy.html",
@@ -142133,9 +145753,33 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe75qn90fauxru",
+        "title": "SAMSUNG QE75QN90FAUXRU",
+        "price": 1279000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE75QN90FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:01.626Z",
+        "sku": "SAMSUNG QE75QN90FAUXRU",
+        "productId": "90828"
       }
     ],
     "samsung-qe83s85faexru": [
+      {
+        "id": "samsung-qe83s85faexru",
+        "title": "SAMSUNG QE83S85FAEXRU",
+        "price": 1799000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE83S85FAEXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:54.511Z",
+        "sku": "SAMSUNG QE83S85FAEXRU",
+        "productId": "89818"
+      },
       {
         "id": "samsung-qe83s85faexru",
         "price": 1799900,
@@ -142165,9 +145809,33 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe85qn80fauxru",
+        "title": "SAMSUNG QE85QN80FAUXRU",
+        "price": 1189000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE85QN80FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:05.473Z",
+        "sku": "SAMSUNG QE85QN80FAUXRU",
+        "productId": "90097"
       }
     ],
     "samsung-qe85qn90dauxru": [
+      {
+        "id": "samsung-qe85qn90dauxru",
+        "title": "SAMSUNG QE85QN90DAUXRU",
+        "price": 1429000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE85QN90DAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:00.066Z",
+        "sku": "SAMSUNG QE85QN90DAUXRU",
+        "productId": "83174"
+      },
       {
         "id": "samsung-qe85qn90dauxru",
         "price": 1799000,
@@ -142197,6 +145865,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe85qn90fauxru",
+        "title": "SAMSUNG QE85QN90FAUXRU",
+        "price": 1829000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE85QN90FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:53.994Z",
+        "sku": "SAMSUNG QE85QN90FAUXRU",
+        "productId": "93140"
       }
     ],
     "samsung-ue100m90huxpy": [
@@ -142357,6 +146037,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "sony-kd-65x80l",
+        "title": "SONY KD-65X80L",
+        "price": 469000,
+        "url": "https://vesta.am/tv/SONY-KD-65X80L",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:12:18.154Z",
+        "sku": "SONY KD-65X80L",
+        "productId": "87660"
       }
     ],
     "sony-kd-75x75wl": [
@@ -142801,6 +146493,18 @@
         "band": null,
         "color": null,
         "shop": "zigzag"
+      },
+      {
+        "id": "samsung-qe83s95haexpy",
+        "title": "SAMSUNG QE83S95HAEXPY",
+        "price": 1949000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE83S95HAEXPY",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:51.868Z",
+        "sku": "SAMSUNG QE83S95HAEXPY",
+        "productId": "106060"
       }
     ],
     "panasonic-lumix-fz82d": [
@@ -143947,6 +147651,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-escm15cd-coffee-machine",
+        "title": "GORENJE ESCM15CD",
+        "price": 59900,
+        "url": "https://vesta.am/manr-kencax/srchepner/gorenje-escm15cd",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:14.884588+00:00",
+        "sku": "GORENJE ESCM15CD",
+        "productId": "89420"
       }
     ],
     "gorenje-escm15dbk-coffee-machine": [
@@ -143995,6 +147711,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-gs520e15s-dishwasher",
+        "title": "GORENJE GS520E15S",
+        "price": 239500,
+        "url": "https://vesta.am/aman-lvalu-meqena/standart-spasq-lvacox/gorenje-gs520e15s",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:02.237566+00:00",
+        "sku": "GORENJE GS520E15S",
+        "productId": "72337"
       }
     ],
     "gorenje-gs643c90x-dishwasher": [
@@ -144011,6 +147739,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-gs643c90x-dishwasher",
+        "title": "GORENJE GS643C90X",
+        "price": 269000,
+        "url": "https://vesta.am/aman-lvalu-meqena/standart-spasq-lvacox/gorenje-gs643c90x",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:03.648999+00:00",
+        "sku": "GORENJE GS643C90X",
+        "productId": "92084"
       }
     ],
     "gorenje-gs673b90x-dishwasher": [
@@ -144027,9 +147767,33 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-gs673b90x-dishwasher",
+        "title": "GORENJE GS673B90X",
+        "price": 345000,
+        "url": "https://vesta.am/aman-lvalu-meqena/standart-spasq-lvacox/gorenje-gs673b90x",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:04.235717+00:00",
+        "sku": "GORENJE GS673B90X",
+        "productId": "91510"
       }
     ],
     "gorenje-hbc802qw-blender": [
+      {
+        "id": "gorenje-hbc802qw-blender",
+        "title": "GORENJE HBC802QW",
+        "price": 19900,
+        "url": "https://vesta.am/manr-kencax/blenderner/gorenje-hbc802qw",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:25.172215+00:00",
+        "sku": "GORENJE HBC802QW",
+        "productId": "11664"
+      },
       {
         "id": "gorenje-hbc802qw-blender",
         "shop": "likemobile",
@@ -144059,6 +147823,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-hbc806qw-blender",
+        "title": "GORENJE HBC806QW",
+        "price": 26900,
+        "url": "https://vesta.am/manr-kencax/blenderner/gorenje-hbc806qw",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:25.929917+00:00",
+        "sku": "GORENJE HBC806QW",
+        "productId": "11666"
       }
     ],
     "gorenje-hbc807qb-hand-blender": [
@@ -144075,9 +147851,33 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-hbc807qb-hand-blender",
+        "title": "GORENJE HBC807QB",
+        "price": 28900,
+        "url": "https://vesta.am/manr-kencax/blenderner/gorenje-hbc807qb",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:27.206147+00:00",
+        "sku": "GORENJE HBC807QB",
+        "productId": "11668"
       }
     ],
     "gorenje-hbx1000eb-hand-blender": [
+      {
+        "id": "gorenje-hbx1000eb-hand-blender",
+        "title": "GORENJE HBX1000EB",
+        "price": 29900,
+        "url": "https://vesta.am/manr-kencax/blenderner/gorenje-hbx1000eb",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:27.780201+00:00",
+        "sku": "GORENJE HBX1000EB",
+        "productId": "90421"
+      },
       {
         "id": "gorenje-hbx1000eb-hand-blender",
         "shop": "likemobile",
@@ -144112,6 +147912,18 @@
     "gorenje-jc900e-juicer": [
       {
         "id": "gorenje-jc900e-juicer",
+        "title": "GORENJE JC900E",
+        "price": 38500,
+        "url": "https://vesta.am/manr-kencax/hyutahan/gorenje-jc900e",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:49.894470+00:00",
+        "sku": "GORENJE JC900E",
+        "productId": "10764"
+      },
+      {
+        "id": "gorenje-jc900e-juicer",
         "shop": "likemobile",
         "title": "Gorenje JC900E Juicer",
         "price": 39000,
@@ -144126,6 +147938,18 @@
       }
     ],
     "gorenje-k15dws-kettle": [
+      {
+        "id": "gorenje-k15dws-kettle",
+        "title": "GORENJE K15DWS",
+        "price": 17500,
+        "url": "https://vesta.am/manr-kencax/teynik/gorenje-k15dws",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:33.102458+00:00",
+        "sku": "GORENJE K15DWS",
+        "productId": "67050"
+      },
       {
         "id": "gorenje-k15dws-kettle",
         "shop": "likemobile",
@@ -144144,6 +147968,18 @@
     "gorenje-k17gdwii-kettle": [
       {
         "id": "gorenje-k17gdwii-kettle",
+        "title": "GORENJE K17GDWII",
+        "price": 17500,
+        "url": "https://vesta.am/manr-kencax/teynik/gorenje-k17gdwii",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:32.027367+00:00",
+        "sku": "GORENJE K17GDWII",
+        "productId": "86382"
+      },
+      {
+        "id": "gorenje-k17gdwii-kettle",
         "shop": "likemobile",
         "title": "GORENJE K17GDWII Electric Kettle",
         "price": 18000,
@@ -144158,6 +147994,18 @@
       }
     ],
     "gorenje-k17gxg-kettle": [
+      {
+        "id": "gorenje-k17gxg-kettle",
+        "title": "GORENJE K17GXG",
+        "price": 12900,
+        "url": "https://vesta.am/manr-kencax/teynik/gorenje-k17gxg",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:30.134109+00:00",
+        "sku": "GORENJE K17GXG",
+        "productId": "78768"
+      },
       {
         "id": "gorenje-k17gxg-kettle",
         "shop": "likemobile",
@@ -144187,9 +148035,33 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-m450xg-hand-mixer",
+        "title": "GORENJE M450XG",
+        "price": 13500,
+        "url": "https://vesta.am/manr-kencax/harich/gorenje-m450xg",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:42.044230+00:00",
+        "sku": "GORENJE M450XG",
+        "productId": "78765"
       }
     ],
     "gorenje-m500dc-hand-mixer": [
+      {
+        "id": "gorenje-m500dc-hand-mixer",
+        "title": "GORENJE M500DC",
+        "price": 13900,
+        "url": "https://vesta.am/manr-kencax/harich/gorenje-m500dc",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:42.362362+00:00",
+        "sku": "GORENJE M500DC",
+        "productId": "20318"
+      },
       {
         "id": "gorenje-m500dc-hand-mixer",
         "shop": "likemobile",
@@ -144219,6 +148091,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-mg2202xe-meat-grinder",
+        "title": "GORENJE MG2202XE",
+        "price": 58000,
+        "url": "https://vesta.am/manr-kencax/msaxacner/gorenje-mg2202xe",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:57.683616+00:00",
+        "sku": "GORENJE MG2202XE",
+        "productId": "63282"
       }
     ],
     "gorenje-mmc600xg-stand-mixer": [
@@ -144235,6 +148119,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-mmc600xg-stand-mixer",
+        "title": "GORENJE MMC600XG",
+        "price": 54500,
+        "url": "https://vesta.am/manr-kencax/harich/gorenje-mmc600xg",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:43.853472+00:00",
+        "sku": "GORENJE MMC600XG",
+        "productId": "80061"
       }
     ],
     "gorenje-mmc800cw-stand-mixer": [
@@ -144251,6 +148147,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-mmc800cw-stand-mixer",
+        "title": "GORENJE MMC800CW",
+        "price": 65000,
+        "url": "https://vesta.am/manr-kencax/harich/gorenje-mmc800cw",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:44.106722+00:00",
+        "sku": "GORENJE MMC800CW",
+        "productId": "85311"
       }
     ],
     "gorenje-mo17e1s-microwave": [
@@ -144267,6 +148175,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-mo17e1s-microwave",
+        "title": "GORENJE MO17E1S",
+        "price": 41500,
+        "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/gorenje-mo17e1s",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:53.789954+00:00",
+        "sku": "GORENJE MO17E1S",
+        "productId": "19890"
       }
     ],
     "gorenje-mo20a4xh-microwave": [
@@ -144283,6 +148203,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-mo20a4xh-microwave",
+        "title": "GORENJE MO20A4XH",
+        "price": 58500,
+        "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/gorenje-mo20a4xh",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:57.691094+00:00",
+        "sku": "GORENJE MO20A4XH",
+        "productId": "68994"
       }
     ],
     "gorenje-nrs8182kx-refrigerator": [
@@ -144299,6 +148231,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-nrs8182kx-refrigerator",
+        "title": "GORENJE NRS8182KX",
+        "price": 419900,
+        "url": "https://vesta.am/sarnaranner-sarcaranner/mec-sarnaran/gorenje-nrs8182kx",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:21.814751+00:00",
+        "sku": "GORENJE NRS8182KX",
+        "productId": "75991"
       }
     ],
     "gorenje-r708a-food-slicer": [
@@ -144315,6 +148259,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-r708a-food-slicer",
+        "title": "GORENJE R708A",
+        "price": 59900,
+        "url": "https://vesta.am/manr-kencax/shertahat/gorenje-r708a",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:09.766279+00:00",
+        "sku": "GORENJE R708A",
+        "productId": "74403"
       }
     ],
     "gorenje-r902a-food-slicer": [
@@ -144331,6 +148287,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-r902a-food-slicer",
+        "title": "GORENJE R902A",
+        "price": 112000,
+        "url": "https://vesta.am/manr-kencax/shertahat/gorenje-r902a",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:10.739977+00:00",
+        "sku": "GORENJE R902A",
+        "productId": "74404"
       }
     ],
     "gorenje-rea35kc-air-conditioner": [
@@ -144368,6 +148336,18 @@
     "gorenje-s400xg-chopper": [
       {
         "id": "gorenje-s400xg-chopper",
+        "title": "GORENJE S400XG",
+        "price": 9900,
+        "url": "https://vesta.am/manr-kencax/manracnogh-sarq/gorenje-s400xg",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:53.788468+00:00",
+        "sku": "GORENJE S400XG",
+        "productId": "93971"
+      },
+      {
+        "id": "gorenje-s400xg-chopper",
         "shop": "likemobile",
         "title": "Gorenje S400XG Chopper",
         "price": 10000,
@@ -144400,6 +148380,18 @@
     "gorenje-tcm350w-coffee-machine": [
       {
         "id": "gorenje-tcm350w-coffee-machine",
+        "title": "GORENJE TCM350W",
+        "price": 13500,
+        "url": "https://vesta.am/manr-kencax/srchepner/gorenje-tcm350w",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:13.115024+00:00",
+        "sku": "GORENJE TCM350W",
+        "productId": "93977"
+      },
+      {
+        "id": "gorenje-tcm350w-coffee-machine",
         "shop": "likemobile",
         "title": "GORENJE TCM350W Coffee Machine",
         "price": 14000,
@@ -144427,6 +148419,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-w2nhpi62scss-washing-machine",
+        "title": "GORENJE W2NHPI62SCSS",
+        "price": 149900,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/gorenje-w2nhpi62scss",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:29.361396+00:00",
+        "sku": "GORENJE W2NHPI62SCSS",
+        "productId": "83125"
       }
     ],
     "gorenje-w3nhei74sas-washing-machine": [
@@ -144443,6 +148447,18 @@
         "inStock": true,
         "seen": "2026-11-04",
         "band": null
+      },
+      {
+        "id": "gorenje-w3nhei74sas-washing-machine",
+        "title": "GORENJE W3NHEI74SAS",
+        "price": 192000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/gorenje-w3nhei74sas",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:32.116839+00:00",
+        "sku": "GORENJE W3NHEI74SAS",
+        "productId": "93170"
       }
     ],
     "gorenje-wd2pa964adw-washer-dryer": [
@@ -145324,6 +149340,286 @@
         "band": null,
         "color": "Starlight",
         "shop": "zigzag"
+      }
+    ],
+    "samsung-qe77s95fauxru": [
+      {
+        "id": "samsung-qe77s95fauxru",
+        "title": "SAMSUNG QE77S95FAUXRU",
+        "price": 1699000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE77S95FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:10:56.804Z",
+        "sku": "SAMSUNG QE77S95FAUXRU",
+        "productId": "93419"
+      }
+    ],
+    "samsung-qe65qn90fauxru": [
+      {
+        "id": "samsung-qe65qn90fauxru",
+        "title": "SAMSUNG QE65QN90FAUXRU",
+        "price": 939000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65QN90FAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:13.795Z",
+        "sku": "SAMSUNG QE65QN90FAUXRU",
+        "productId": "90523"
+      }
+    ],
+    "tcl-75c6k": [
+      {
+        "id": "tcl-75c6k",
+        "title": "TCL 75C6K",
+        "price": 729000,
+        "url": "https://vesta.am/tv/TCL-75C6K",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:21.627Z",
+        "sku": "TCL 75C6K",
+        "productId": "99451"
+      }
+    ],
+    "samsung-qe65qn85dbuxru": [
+      {
+        "id": "samsung-qe65qn85dbuxru",
+        "title": "SAMSUNG QE65QN85DBUXRU",
+        "price": 718000,
+        "url": "https://vesta.am/tv/SAMSUNG-QE65QN85DBUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:22.861Z",
+        "sku": "SAMSUNG QE65QN85DBUXRU",
+        "productId": "82997"
+      }
+    ],
+    "samsung-qe75q60dauxru": [
+      {
+        "id": "samsung-qe75q60dauxru",
+        "title": "SAMSUNG QE75Q60DAUXRU",
+        "price": 679900,
+        "url": "https://vesta.am/tv/SAMSUNG-QE75Q60DAUXRU",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:26.336Z",
+        "sku": "SAMSUNG QE75Q60DAUXRU",
+        "productId": "83592"
+      }
+    ],
+    "tcl-65c7l": [
+      {
+        "id": "tcl-65c7l",
+        "title": "TCL 65C7L",
+        "price": 639000,
+        "url": "https://vesta.am/tv/TCL-65C7L",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:11:30.632Z",
+        "sku": "TCL 65C7L",
+        "productId": "101091"
+      }
+    ],
+    "lg-55qned70a6a": [
+      {
+        "id": "lg-55qned70a6a",
+        "title": "LG 55QNED70A6A",
+        "price": 479000,
+        "url": "https://vesta.am/tv/LG-55QNED70A6A",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T11:12:16.374Z",
+        "sku": "LG 55QNED70A6A",
+        "productId": "96328"
+      }
+    ],
+    "xiaomi-air-fryer-4-5l-bhr8234eu": [
+      {
+        "id": "xiaomi-air-fryer-4-5l-bhr8234eu",
+        "title": "Xiaomi Smart Air Fryer 4.5L (BHR8234EU)",
+        "price": 44900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/xiaomi-bhr8234eu",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:11.462665+00:00",
+        "sku": "XIAOMI BHR8234EU",
+        "productId": "92380"
+      }
+    ],
+    "braun-hf5054ibk": [
+      {
+        "id": "braun-hf5054ibk",
+        "title": "BRAUN HF5054IBK",
+        "price": 55900,
+        "url": "https://vesta.am/manr-kencax/aerogrills/braun-hf5054ibk",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:06:14.601882+00:00",
+        "sku": "BRAUN HF5054IBK",
+        "productId": "106334"
+      }
+    ],
+    "karcher-se-5-eu": [
+      {
+        "id": "karcher-se-5-eu",
+        "title": "KARCHER SE 5 EU",
+        "price": 188000,
+        "url": "https://vesta.am/manr-kencax/poshekulner/karcher-se-5-eu",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:07:55.672918+00:00",
+        "sku": "KARCHER SE 5 EU",
+        "productId": "87240"
+      }
+    ],
+    "lg-lbb509eqyw": [
+      {
+        "id": "lg-lbb509eqyw",
+        "title": "LG LBB509EQYW",
+        "price": 359000,
+        "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/lg-lbb509eqyw",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:08:53.085706+00:00",
+        "sku": "LG LBB509EQYW",
+        "productId": "105057"
+      }
+    ],
+    "samsung-rt47cg6442s9wt": [
+      {
+        "id": "samsung-rt47cg6442s9wt",
+        "title": "SAMSUNG RT47CG6442S9WT",
+        "price": 529000,
+        "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/samsung-rt47cg6442s9wt",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:08:57.429825+00:00",
+        "sku": "SAMSUNG RT47CG6442S9WT",
+        "productId": "77484"
+      }
+    ],
+    "samsung-rt53dg7b60s9wr": [
+      {
+        "id": "samsung-rt53dg7b60s9wr",
+        "title": "SAMSUNG RT53DG7B60S9WR",
+        "price": 669000,
+        "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/samsung-rt23dg7b60s9wr",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:08:59.643773+00:00",
+        "sku": "SAMSUNG RT53DG7B60S9WR",
+        "productId": "89994"
+      }
+    ],
+    "lg-f2y1hyp6j": [
+      {
+        "id": "lg-f2y1hyp6j",
+        "title": "LG F2Y1HYP6J",
+        "price": 209000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-f2y1hyp6j",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:33.824095+00:00",
+        "sku": "LG F2Y1HYP6J",
+        "productId": "93370"
+      }
+    ],
+    "lg-f2v5hylyj": [
+      {
+        "id": "lg-f2v5hylyj",
+        "title": "LG F2V5HYLYJ",
+        "price": 239000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-f2v5hylyj",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:34.980232+00:00",
+        "sku": "LG F2V5HYLYJ",
+        "productId": "86069"
+      }
+    ],
+    "samsung-ww80ag6s28ablp": [
+      {
+        "id": "samsung-ww80ag6s28ablp",
+        "title": "SAMSUNG WW80AG6S28ABLP",
+        "price": 309000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/samsung-ww80ag6s28ablp",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:39.066104+00:00",
+        "sku": "SAMSUNG WW80AG6S28ABLP",
+        "productId": "78688"
+      }
+    ],
+    "lg-f4x5eypy6": [
+      {
+        "id": "lg-f4x5eypy6",
+        "title": "LG F4X5EYPY6",
+        "price": 349000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-f4x5eypy6",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:41.007182+00:00",
+        "sku": "LG F4X5EYPY6",
+        "productId": "105018"
+      }
+    ],
+    "samsung-wd90dg6g94bblp": [
+      {
+        "id": "samsung-wd90dg6g94bblp",
+        "title": "SAMSUNG WD90DG6G94BBLP",
+        "price": 459000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/samsung-wd90dg6g94bblp",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:41.908924+00:00",
+        "sku": "SAMSUNG WD90DG6G94BBLP",
+        "productId": "90137"
+      }
+    ],
+    "lg-w4w8bvpkzhm": [
+      {
+        "id": "lg-w4w8bvpkzhm",
+        "title": "LG W4W8BVPKZHM",
+        "price": 1109000,
+        "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-w4w8bvpkzhm",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:09:43.283072+00:00",
+        "sku": "LG W4W8BVPKZHM",
+        "productId": "100235"
+      }
+    ],
+    "babyliss-6709de": [
+      {
+        "id": "babyliss-6709de",
+        "title": "BABYLISS 6709DE",
+        "price": 18500,
+        "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/babyliss-6709de",
+        "shop": "vesta",
+        "inStock": true,
+        "seen": "2026-11-05",
+        "checkedAt": "2026-11-05T15:10:04.769728+00:00",
+        "sku": "BABYLISS 6709DE",
+        "productId": "99078"
       }
     ]
   }

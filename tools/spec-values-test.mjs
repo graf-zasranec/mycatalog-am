@@ -38,3 +38,6 @@ assert.equal(megabytePhoneMemory({category:'laptop'}, {ram:4/1024,storage:16/102
 console.log('MB_BUILD_GUARD_PASS: exact whole-MB 2G phone memory and malformed/dropped-TB protection');
 const nokia210=JSON.parse((await import('node:fs')).readFileSync('data/phones.json')).find(p=>p.id==='nokia-210');
 assert.equal(megabytePhoneMemory(nokia210,nokia210.variants[0]),true,'actual verified Nokia210 must pass the production memory guard');
+
+const nokia105=JSON.parse((await import('node:fs')).readFileSync('data/phones.json')).find(p=>p.id==='nokia-105-4g');
+assert.equal(megabytePhoneMemory(nokia105,nokia105.variants.find(v=>v.storage!=null)),true,'manufacturer MB storage on existing S30+ 4G feature phone passes without falsely claiming 2G');
