@@ -1,3 +1,4 @@
+import {readPlanetModifiers,planetRamOptions} from './tools/planet-modifiers.mjs';
 // Collects real smartphone prices from Armenian online shops into data/prices.json.
 //
 //   node scrape.mjs            all shops
@@ -759,18 +760,7 @@ function magentoChildren(html, colors, aliases = {}) {
 async function planetModifiers(varId) {
   let data;
   try { data = JSON.parse(await get('https://3dplanet.am/variations/' + varId + '/modifiers')); } catch { return {}; }
-  const out = {};
-  for (const m of (Array.isArray(data) ? data : [])) {
-    const name = ((m.specification || {}).translations || [])[0]?.name || '';
-    const key = /^colou?r$/i.test(name) ? 'color' : /^sim$/i.test(name) ? 'sim' : null;
-    if (!key) continue;
-    out[key] = (m.values || []).map(v => ({
-      name: clean(((v.value || {}).value) || ''),
-      price: Math.round(Number(v.price || 0)),
-      active: v.is_active !== 0
-    })).filter(c => c.name);
-  }
-  return out;
+  return readPlanetModifiers(data);
 }
 // ...and the smaller one is RAM, but only when the title really lists both
 // Two capacities that are the SAME capacity are one figure written twice - telecom titles the
@@ -2293,13 +2283,13 @@ const SHOPS = {
           // colour on an Android phone and once per SIM build on a lone-colour iPhone.
           const simOpts = sims.length ? sims : [{ name: null, price: t.price, active: true }];
           const colOpts = cols.length ? cols : [{ name: null, price: 0, active: true }];
-          for (const s of simOpts) for (const c of colOpts) {
-            if (!s.active || !c.active) continue;
+          for (const r of planetRamOptions(mod)) for (const s of simOpts) for (const c of colOpts) {
+            if (!r.active || !s.active || !c.active) continue;
             out.push({
-              id, url: u, image: img, storage: t.storage,
+              id, url: u, image: img, storage: t.storage, ram:r.ram, ramFromPage:r.ram!=null,
               // SIM's own value already IS the final price for that build; a colour delta rides
               // on top of it exactly as it would on the plain tier price.
-              price: (sims.length ? s.price : t.price) + c.price,
+              price: Math.max(sims.length ? s.price : t.price, r.price) + c.price,
               // same rule as magentoChildren: a colour name of 3DPlanet's own that maps to
               // none of the product's colours is left unstated rather than invented
               color: c.name ? (colorOf(c.name, (phoneById[id] || {}).colors) || null) : null,
@@ -2308,7 +2298,7 @@ const SHOPS = {
               // re-derives esim from title+url for every shop and would DELETE a value it
               // cannot itself confirm; without the label in the title that pass saw a plain
               // "Apple iPhone 18 Pro" and erased the very field this line sets.
-              title: sims.length ? `${title} (${s.name})` : title,
+              title: (sims.length ? `${title} (${s.name})` : title) + (r.ram!=null ? ` (${r.ram}GB RAM)` : ''),
               esim: sims.length ? simBuild(s.name) : undefined,
               inStock: true
             });
@@ -2500,8 +2490,14 @@ const SHOPS = {
                 inStock: k.inStock !== false });
             continue;
           }
+          // This exact factory Matte Glass edition is sold only as 8/256 GB.
+          // Xiaomi's reviewed SKU: https://www.mi.com/de/support/terms/spring-sale-2026/
+          const matteGlass = id === 'xiaomi-redmi-pad-2-pro'
+            && new URL(url).pathname === '/en/xiaomi-redmi-pad-2-pro-matte-glass-version.html'
+            && /^Xiaomi Redmi Pad 2 Pro Matte Glass Version$/i.test(title);
           if (cartState === true) out.push({ id, price, title, url,
-            storage: storageOf(title) ?? storageOf(url), ram: ramOf(title), inStock: true });
+            storage: matteGlass ? 256 : storageOf(title) ?? storageOf(url),
+            ram: matteGlass ? 8 : ramOf(title), ramFromPage: matteGlass || undefined, inStock: true });
         }
       }
       // The grids are first pages only (no ?p=), so most products never showed up in them and
