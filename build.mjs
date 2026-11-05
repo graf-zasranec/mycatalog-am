@@ -465,7 +465,10 @@ function seoTitle(shell) {
   // A late font swap can re-wrap the headline and move the whole mobile hero.
   const fonts = rd('fonts/fonts.css').replace(/url\(([^)]+)\)/g, 'url(/fonts/$1)')
     .replaceAll('font-display:swap', 'font-display:optional').replaceAll('font-display: swap', 'font-display: optional');
-  const preload = ['noto-sans-armenian-armenian-16.woff2', 'manrope-latin-15.woff2', 'fraunces-text-19.woff2']
+  // The visible РУС language button needs Cyrillic on every locale. Without
+  // this hint its font starts only after the stylesheet, adding a critical hop
+  // on mobile even though the other above-the-fold fonts are already preloaded.
+  const preload = ['noto-sans-armenian-armenian-16.woff2', 'manrope-latin-15.woff2', 'manrope-cyrillic-13.woff2', 'fraunces-text-19.woff2']
     .map(f => `<link rel="preload" href="/fonts/${f}" as="font" type="font/woff2" crossorigin>`).join('');
   return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`)
     .replace('<link rel="stylesheet" href="fonts/fonts.css">', `${preload}<style>${fonts}</style>`)
