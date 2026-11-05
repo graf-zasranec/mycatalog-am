@@ -953,6 +953,7 @@ const PANELS = ['Mini-LED', 'QNED', 'Neo QLED', 'QLED', 'AMOLED', 'OLED', 'NanoC
 function panelOf(p) {
   const t = String(p.display?.type || '');
   if (!t) return null;
+  if (/\bAMOLED\b/i.test(t)) return 'OLED';
   return PANELS.find(k => new RegExp('\\b' + k.replace(/[-\s]/g, '[-\\s]?') + '\\b', 'i').test(t)) || null;
 }
 // Named the way a shop names it, from the long side of the panel: "2560 x 1600" is QHD.
@@ -3734,16 +3735,15 @@ document.addEventListener('invalid',e=>{const section=e.target.closest?.('.bx-fi
 function bxFilterGroupBody(k,pool){const f=FILT[k];if(!f)return'';const label=esc(f.label());if(f.kind==='set'){const vals=setVals(k,f,pool);if(vals.length<2)return'';return `<fieldset class="bx-fieldset" data-bx-set="${k}"><legend>${label}</legend>${k==='brand'?`<input class="bx-brand-find" type="search" placeholder="${esc(bxFilterWord('find'))}" aria-label="${esc(bxFilterWord('find'))}">`:''}<div class="bx-check-grid">${vals.map(v=>`<label><input type="checkbox" name="${k}" value="${esc(String(v))}" data-bx-field="${k}" ${(st[f.arr]||[]).includes(v)?'checked':''}><span>${esc(f.fmt?f.fmt(v):v)}</span></label>`).join('')}</div></fieldset>`;}
 if(f.kind==='flag')return `<label class="bx-flag"><input type="checkbox" data-bx-field="${k}" ${st[k]?'checked':''}><span>${label}</span></label>`;
 const options=bxFilterOptions(k);if(options.length<2)return'';return `<label class="bx-field">${label}<select name="${k}" data-bx-field="${k}">${options.map(o=>`<option value="${esc(o.value)}" ${String(st[k]||0)===o.value?'selected':''}>${esc(o.label)}</option>`).join('')}</select></label>`;}
-function bxFilterFormBody(barHTML){const pool=inView(),bar=barHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${bxCategoryChoices(cats)}${bxFilterGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}">${esc(bxFilterWord('budget'))} ${money(n)}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxFilterGroup('shop',pool)}<div class="bx-spec-fields">${keys.map(k=>bxFilterGroup(k,pool)).join('')}</div><div class="bx-flag-fields">${flags.map(k=>bxFilterGroup(k,pool)).join('')}</div></div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
+function bxFilterFormBody(barHTML){const pool=inView(),bar=barHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${st.cat?'':bxCategoryChoices(cats)}${bxFilterGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}">${esc(bxFilterWord('budget'))} ${money(n)}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxFilterGroup('shop',pool)}<div class="bx-spec-fields">${keys.map(k=>bxFilterGroup(k,pool)).join('')}</div><div class="bx-flag-fields">${flags.map(k=>bxFilterGroup(k,pool)).join('')}</div></div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
 function bxRestoreFilters(force=false){const bar=document.querySelector('#fbar');if(!bar)return;let panel=document.querySelector('.bx-filter-sidebar');const signature=bxFilterSignature();if(panel&&!force&&panel.dataset.signature===signature)return;if(!panel){panel=document.createElement('aside');panel.className='bx-filter-sidebar';panel.setAttribute('aria-label',x('filtersT'));bar.before(panel);}panel.dataset.signature=signature;panel.innerHTML=bxFilterForm();}
 function bxStartFilters(){const main=document.querySelector('#main');if(main)new MutationObserver(()=>bxRestoreFilters()).observe(main,{childList:true});bxRestoreFilters();}
 document.addEventListener('click',e=>{const budget=e.target.closest('[data-bx-budget]');if(budget){const form=budget.closest('form');form.querySelector('[data-bx-min]').value='';form.querySelector('[data-bx-max]').value=budget.dataset.bxBudget;form.querySelector('[data-bx-max]').setCustomValidity('');}if(e.target.closest('[data-fsheet]')){bxFilterInvoker=e.target.closest('[data-fsheet]');bxRestoreFilters(true);const panel=document.querySelector('.bx-filter-sidebar');panel?.setAttribute('role','dialog');panel?.setAttribute('aria-modal','true');panel?.querySelector('.bx-filter-close')?.focus();}if(e.target.closest('[data-fsclose]'))bxCloseFilterFocus();if(e.target.closest('[data-rm]'))queueMicrotask(()=>bxRestoreFilters(true));});
 document.addEventListener('input',e=>{if(e.target.matches('[data-bx-min],[data-bx-max]'))e.target.closest('form').querySelector('[data-bx-max]').setCustomValidity('');if(!e.target.matches('.bx-brand-find'))return;const query=e.target.value.toLocaleLowerCase(st.lang);for(const label of e.target.closest('fieldset').querySelectorAll('.bx-check-grid label'))label.hidden=!label.textContent.toLocaleLowerCase(st.lang).includes(query);});
-// Keep category changes in the form until Apply, while showing the selected
-// category's real brands/specifications immediately. Rendering a draft must not
+// Non-category filters remain drafts until Apply. Rendering a draft must not
 // mutate the catalogue state, price bounds or the native toolbar's option cache.
 function bxReadFilterForm(form) {
-  const cat=form.querySelector('[data-bx-category]:checked').value;
+  const cat=form.querySelector('[data-bx-category]:checked')?.value??st.cat;
   const bounds=priceBounds(cat);
   const range=bxPriceRange(form.querySelector('[data-bx-min]').value,form.querySelector('[data-bx-max]').value,bounds.min,bounds.max);
   const next={...st,cat,pmin:range.min,pmax:range.max,bounds:[bounds.min,bounds.max],page:1};
@@ -3765,18 +3765,12 @@ function bxFilterDraftHTML(next) {
     for(const [key,value]of bodies)filterBodies.set(key,value);
   }
 }
+// Categories navigate immediately; other form inputs remain drafts until Apply.
 document.addEventListener('change',e=>{
   if(!e.target.matches('[data-bx-category]'))return;
-  const form=e.target.closest('form'),panel=form.closest('.bx-filter-sidebar');
-  const low=form.querySelector('[data-bx-min]').value,high=form.querySelector('[data-bx-max]').value;
-  const cat=e.target.value,scroll=panel.scrollTop;
-  const {next}=bxReadFilterForm(form);
-  form.outerHTML=bxFilterDraftHTML(next);
-  const replacement=panel.querySelector('form');
-  replacement.querySelector('[data-bx-min]').value=low;
-  replacement.querySelector('[data-bx-max]').value=high;
-  const selected=[...replacement.querySelectorAll('[data-bx-category]')].find(el=>el.value===cat);
-  selected?.focus({preventScroll:true});panel.scrollTop=scroll;
+  const cat=e.target.value;
+  closeSheet();bxCloseFilterFocus();
+  location.hash=cat?'#/c/'+encodeURIComponent(cat):'#/';
 });
 document.addEventListener('submit',e=>{
   if(!e.target.matches('.bx-filter-form'))return;

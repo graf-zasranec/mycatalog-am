@@ -2,7 +2,7 @@ import fs from'node:fs';
 // Reuse the catalogue's real isolated data/DOM harness, adding presentation exports.
 const harness="import assert from 'node:assert/strict';\n"+fs.readFileSync('tools/app-test.mjs','utf8').split('let bad = 0, n = 0;')[0]
  .replace("from './analytics.mjs'",'from '+JSON.stringify(new URL('./analytics.mjs',import.meta.url).href))
- .replace('PMIN, PMAX };','PMIN, PMAX, bxFilterForm, bxFilterOptions, bxFilterSignature, bxHeroOffers, mastHero, bxPriceRange, routeLinkClick, priceBounds, bxFilterDraftHTML };');
+ .replace('PMIN, PMAX };','PMIN, PMAX, bxFilterForm, bxFilterOptions, bxFilterSignature, bxHeroOffers, mastHero, bxPriceRange, routeLinkClick, priceBounds, bxFilterDraftHTML, panelOf };');
 const checks=`
 const {prerender,productRenderer}=await import(${JSON.stringify(new URL('./prerender.mjs',import.meta.url).href)});
 const renderData={DATA:phones,STR,PRICES:prices,TERMS,HISTORY:stub.HISTORY,COMING:stub.COMING,PAGEONLY:{},MERGED:{},BLOG:[],IMGDATA:{},THUMBDATA:{},COLORIMG:{},COLORTHUMB:{},PBOX:{},COMPARE_WITH:{}};
@@ -32,6 +32,13 @@ assert.ok(form.includes('data-bx-set="brand"'),'cold prerender hydration retains
 assert.ok(app.filterBodies.has('price'),'native option bodies initialized without opening hidden panels');
 assert.ok(app.bxFilterOptions('stor').some(v=>v.value==='256'),'actual256GB option remains');
 const applied=app.st,bodies=[...app.filterBodies];
+assert.equal(app.panelOf({display:{type:'Dynamic AMOLED 2X'}}),'OLED','AMOLED is included in OLED');
+assert.equal(app.panelOf({display:{type:'Tandem OLED'}}),'OLED','Tandem OLED remains OLED');
+assert.equal(app.panelOf({display:{type:'IPS LCD'}}),'IPS','LCD types remain distinct');
+const tabletForm=app.bxFilterDraftHTML({...app.st,cat:'tablet'});
+assert.ok(!tabletForm.includes('data-bx-category'),'tablet section hides global category choices');
+assert.ok(tabletForm.includes('data-bx-set="panel"'),'tablet section retains display filter');
+
 const headphoneDraft=app.bxFilterDraftHTML({...applied,cat:'headphones'});
 assert.ok(headphoneDraft.includes('data-bx-set="hform"'),'category draft offers headphone-specific type');
 assert.ok(!headphoneDraft.includes('value="Dell"'),'category draft excludes unrelated brands');
