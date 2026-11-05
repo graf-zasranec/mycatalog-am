@@ -70846,7 +70846,10 @@
     },
     "body": {
       "weight": 3000
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "xiaomi-smart-air-purifier-4-lite-bhr5274gl",
@@ -70890,6 +70893,9 @@
     },
     "sources": [
       "https://www.mi.com/global/product/xiaomi-smart-air-purifier-4-lite/specs/"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -150042,6 +150048,362 @@
       "https://www.mi.com/global/product/xiaomi-ultra-slim-power-bank-5000mah/specs/",
       "https://vlv.am/en/Product/43421",
       "https://vega.am/en/power-bank-xiaomi-ultra-slim-5000mah-bhr9535gl.html"
+    ]
+  },
+  {
+    "id": "gorenje-rea26kc-air-conditioner",
+    "brand": "Gorenje",
+    "category": "climate",
+    "name": "REA26 KC Inverter Air Conditioner",
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Gorenje REA26 KC",
+      "Gorenje REA26KC"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "area": "Up to 30 m²",
+      "control": "app"
+    },
+    "body": {
+      "width": 780,
+      "height": 270,
+      "thickness": 200
+    },
+    "sources": [
+      "https://gorenje.md/ro/product/%D0%BA%D0%BE%D0%BD%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%B5%D1%80-gorenje-rea26-kc/",
+      "https://vesta.am/odorakichner/household-air-conditioners/gorenje-rea26-kc"
+    ],
+    "summaryEn": "9000 BTU inverter split air conditioner with heating, cooling, R32 refrigerant and Wi-Fi control. Indoor and outdoor units included.",
+    "tier": "mid",
+    "priceAmd": 209900,
+    "priceAmdMax": 209900,
+    "popularity": 35,
+    "accent": "#D7D8DA",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 209900
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "midea-xt-12n8d6-white",
+    "brand": "Midea",
+    "category": "climate",
+    "name": "XT-12N8D6 White Inverter Air Conditioner",
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Midea XT-12N8D6 White"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "area": "Up to 40 m²",
+      "control": "app"
+    },
+    "body": {
+      "width": 920,
+      "height": 321,
+      "thickness": 211
+    },
+    "sources": [
+      "https://mideacaucasus.com/en/product/xt",
+      "https://vesta.am/odorakichner/household-air-conditioners/midea-xt-12n8d6-white"
+    ],
+    "summaryEn": "White 12000 BTU inverter split system with heating, cooling, R32 refrigerant and Wi-Fi control. Indoor and outdoor units included.",
+    "tier": "mid",
+    "priceAmd": 279000,
+    "priceAmdMax": 279000,
+    "popularity": 35,
+    "accent": "#D7D8DA",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 279000
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "xiaomi-smart-air-fryer-5-5l-bhr8238eu",
+    "brand": "Xiaomi",
+    "category": "kitchen",
+    "name": "Smart Air Fryer 5.5L (BHR8238EU)",
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Xiaomi Smart Air Fryer 5.5L",
+      "Xiaomi MAF15 BHR8238EU"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 1600,
+      "volume": 5.5,
+      "control": "app"
+    },
+    "body": {
+      "weight": 5100,
+      "width": 286,
+      "thickness": 386,
+      "height": 291
+    },
+    "sources": [
+      "https://www.mi.co.id/id/product/xiaomi-smart-air-fryer-5-5-liter/specs/",
+      "https://www.mi.co.id/id/support/faq/details/KA-125898/",
+      "https://vesta.am/manr-kencax/aerogrills/xiaomi-bhr8238eu"
+    ],
+    "summaryEn": "5.5-litre smart air fryer with 1600 W heating, a viewing window and Xiaomi Home app control.",
+    "tier": "mid",
+    "priceAmd": 49900,
+    "priceAmdMax": 49900,
+    "popularity": 35,
+    "accent": "#D7D8DA",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49900
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "gorenje-af2700bp",
+    "brand": "Gorenje",
+    "category": "kitchen",
+    "name": "AF2700BP Air Fryer",
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Gorenje AF2700BP"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 2700,
+      "volume": 9,
+      "control": "touch",
+      "programs": 8,
+      "temperature": "80–200 °C"
+    },
+    "body": {
+      "weight": 8400
+    },
+    "sources": [
+      "https://pl.gorenje.com/produkty/gotowanie-i-pieczenie/urzadzenia-wielofunkcyjne/AIR-FRYER-AF2700BP/p/000000000000746007",
+      "https://vesta.am/manr-kencax/aerogrills/gorenje-af2700bp"
+    ],
+    "summaryEn": "9-litre air fryer with a removable zone divider, independent controls and eight cooking presets.",
+    "tier": "mid",
+    "priceAmd": 61900,
+    "priceAmdMax": 61900,
+    "popularity": 35,
+    "accent": "#303238",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 61900
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "midea-mf-cy110a",
+    "brand": "Midea",
+    "category": "kitchen",
+    "name": "MF-CY110A Air Fryer",
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Midea MF-CY110A"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 1850,
+      "volume": 11,
+      "control": "electronic",
+      "programs": 8,
+      "temperature": "40–200 °C"
+    },
+    "body": {
+      "weight": 9150
+    },
+    "sources": [
+      "https://www.midea.com/ge-en/small-appliances/air-fryer/air-fryer-midea-mf-cy110a.mf-cy110a",
+      "https://vesta.am/manr-kencax/aerogrills/midea-mf-cy110a"
+    ],
+    "summaryEn": "11-litre dual-zone air fryer with 6- and 5-litre compartments, viewing windows and synchronized finishing.",
+    "tier": "mid",
+    "priceAmd": 94000,
+    "priceAmdMax": 94000,
+    "popularity": 35,
+    "accent": "#303238",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 94000
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "dreame-tasti-dz30",
+    "brand": "Dreame",
+    "category": "kitchen",
+    "name": "Tasti DZ30 Air Fryer",
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Dreame DZ30",
+      "Dreame Tasti DZ30"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 3000,
+      "volume": 11,
+      "control": "touch",
+      "programs": 8
+    },
+    "body": {
+      "weight": 8500
+    },
+    "sources": [
+      "https://am.dreametech.com/en/product/dreame-air-fryer-tasti-dz30/",
+      "https://sklep.maxkuchnie.pl/storage/file/pimcore_import/2026/1/19/bea82ddeb6e95af0cb969784028d4f77/frytkownica-beztluszczowa-dreame-tasti-dz30-instrukcja.pdf",
+      "https://vesta.am/manr-kencax/aerogrills/dreame-dz30-black"
+    ],
+    "summaryEn": "11-litre dual-basket air fryer with two 5.5-litre chambers, 3000 W heating and touch controls.",
+    "tier": "mid",
+    "priceAmd": 109900,
+    "priceAmdMax": 109900,
+    "popularity": 35,
+    "accent": "#303238",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 109900
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "philips-na350-00",
+    "brand": "Philips",
+    "category": "kitchen",
+    "name": "3000 Series Dual Basket Airfryer NA350/00",
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Philips NA350/00",
+      "Philips Dual Basket Airfryer NA350/00"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 2750,
+      "volume": 9,
+      "control": "touch",
+      "programs": 8,
+      "temperature": "40–200 °C"
+    },
+    "body": {
+      "weight": 7850
+    },
+    "sources": [
+      "https://www.philips.co.uk/c-p/NA350_00/3000-series-dual-basket-airfryer",
+      "https://www.documents.philips.com/assets/20240217/66509cd9b4fa439eac61b1190117e476.pdf",
+      "https://vesta.am/manr-kencax/aerogrills/philips-na350-00"
+    ],
+    "summaryEn": "9-litre dual-basket air fryer with 2750 W power, Rapid Air circulation and synchronized cooking.",
+    "tier": "mid",
+    "priceAmd": 115000,
+    "priceAmdMax": 115000,
+    "popularity": 35,
+    "accent": "#303238",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 115000
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "electrolux-eap-2075d",
+    "brand": "Electrolux",
+    "category": "purifier",
+    "name": "EAP-2075D Yin&Yang Air Purifier",
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Electrolux EAP-2075D",
+      "Electrolux EAP-2075D Yin&Yang"
+    ],
+    "appliance": {
+      "type": "air_purifier",
+      "power": 60,
+      "area": "Up to 75 m²",
+      "airflow": "Up to 600 m³/h",
+      "noise": "Below 23 dB in night mode",
+      "filter": "Pre-filter, HEPA and activated carbon",
+      "control": "app"
+    },
+    "body": {
+      "weight": 5400,
+      "width": 265,
+      "height": 680,
+      "thickness": 265
+    },
+    "sources": [
+      "https://image.stoking.ru/uploads/image/stoking-library/electrolux/bez-serii/fap-1016/manualyinyang2050d2075d.pdf",
+      "https://vesta.am/manr-kencax/ody-maqrwx-sarq/electrolux-eap-2075d"
+    ],
+    "summaryEn": "60 W air purifier for rooms up to 75 m², with HEPA/carbon filtration, air-quality sensing and app control.",
+    "tier": "mid",
+    "priceAmd": 84000,
+    "priceAmdMax": 84000,
+    "popularity": 35,
+    "accent": "#D7D8DA",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 84000
+      }
+    ],
+    "unsure": [
+      "popularity"
     ]
   }
 ]
