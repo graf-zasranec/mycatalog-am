@@ -2849,7 +2849,7 @@
     "accent": "#4A6fA5",
     "display": {
       "size": 11,
-      "type": "Liquid Retina",
+      "type": "Liquid Retina IPS LCD",
       "resolution": "1640x2360",
       "refresh": 60,
       "touch": true
@@ -41983,7 +41983,7 @@
       "refresh": 120,
       "ppi": 239,
       "brightness": 1600,
-      "type": "AMOLED"
+      "type": "Dynamic AMOLED 2X"
     },
     "chipset": {
       "name": "MediaTek Dimensity 9400+",
@@ -42030,7 +42030,8 @@
     ],
     "cardSlot": true,
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://insights.samsung.com/2025/11/07/galaxy-tab-s11-tab-s11-ultra-s10-fe-and-s10-fe-choosing-a-tablet-for-business/"
     ],
     "colors": [
       "Gray",
@@ -42199,7 +42200,7 @@
       "refresh": 120,
       "ppi": 274,
       "brightness": 1750,
-      "type": "AMOLED"
+      "type": "Dynamic AMOLED 2X"
     },
     "chipset": {
       "name": "Snapdragon 8 Gen 2",
@@ -42246,7 +42247,8 @@
     ],
     "cardSlot": true,
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-tab-s9-sets-the-new-standard-to-bring-galaxys-premium-experience-to-a-tablet"
     ],
     "colors": [
       "Graphite",
@@ -42356,7 +42358,7 @@
       "refresh": 120,
       "ppi": 266,
       "brightness": 1750,
-      "type": "AMOLED"
+      "type": "Dynamic AMOLED 2X"
     },
     "chipset": {
       "name": "Snapdragon 8 Gen 2",
@@ -42409,7 +42411,8 @@
     ],
     "cardSlot": true,
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-tab-s9-sets-the-new-standard-to-bring-galaxys-premium-experience-to-a-tablet"
     ],
     "colors": [
       "Graphite",
@@ -42440,7 +42443,7 @@
       "refresh": 120,
       "ppi": 239,
       "brightness": 1750,
-      "type": "AMOLED"
+      "type": "Dynamic AMOLED 2X"
     },
     "battery": {
       "capacity": 11200,
@@ -42480,7 +42483,8 @@
     },
     "released": "2023-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-tab-s9-sets-the-new-standard-to-bring-galaxys-premium-experience-to-a-tablet"
     ],
     "colors": [
       "Graphite",
@@ -90874,6 +90878,11 @@
         "ram": null,
         "storage": null,
         "priceAmd": 19900
+      },
+      {
+        "ram": 0.046875,
+        "storage": 0.125,
+        "priceAmd": 16900
       }
     ],
     "colors": [
@@ -90923,6 +90932,11 @@
         "ram": null,
         "storage": null,
         "priceAmd": 12900
+      },
+      {
+        "ram": 0.00390625,
+        "storage": 0.00390625,
+        "priceAmd": 11900
       }
     ],
     "colors": [
@@ -90968,6 +90982,11 @@
       {
         "ram": null,
         "storage": null,
+        "priceAmd": 12900
+      },
+      {
+        "ram": 0.00390625,
+        "storage": 0.00390625,
         "priceAmd": 12900
       }
     ],
