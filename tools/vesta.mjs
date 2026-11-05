@@ -31,6 +31,13 @@ export async function collectVesta({get,pause,products,
    if(row.kind==='tablet'&&fresh.cell!==row.axes?.cell)throw Error('Vesta connectivity changed');
    if(!ids.get(row.id).variants?.some(v=>v.ram===fresh.ram&&v.storage===fresh.storage))throw Error('Unsupported catalogue configuration');
   }
+  if(row.kind==='console'&&current.inStock&&row.axes?.storage!=null){
+   const raw=readVestaPhoneAxes(html).fields?.SSD;
+   const match=/^(\d+)\s*(GB|TB)$/i.exec(raw||'');
+   const storage=match?Number(match[1])*(match[2].toUpperCase()==='TB'?1024:1):null;
+   if(storage!==row.axes.storage)throw Error('Vesta console storage changed');
+   if(!ids.get(row.id).variants?.some(v=>v.storage===storage))throw Error('Unsupported console configuration');
+  }
   offers.push({...current,id:row.id,...(row.axes||{}),title:row.offerTitle||current.title,ramFromPage:row.axes?.ram!=null||undefined});
  }catch(e){const kept=previous.filter(o=>o.shop==='vesta'&&o.url===row.url&&!o.seeded);offers.push(...kept);warn('Vesta held:',row.url,e.message,'retained',kept.length,'with original dates');}}
  return offers;

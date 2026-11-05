@@ -19,3 +19,11 @@ const manifest=JSON.parse(fs.readFileSync('data/vesta-catalogue.json')),products
 assert.equal(new Set(manifest.map(x=>x.url)).size,manifest.length,'unique exact URLs');
 for(const r of manifest){assert.ok(r.productId&&r.title&&r.sourceSHA256);const p=products.find(p=>p.id===r.id);assert.ok(p,'known model');if(['phone','tablet'].includes(r.kind)){assert.ok(p.variants.some(v=>v.ram===r.axes.ram&&v.storage===r.axes.storage));assert.ok(p.colors.includes(r.axes.color));if(r.kind==='tablet')assert.equal(typeof r.axes.cell,'boolean');}}
 console.log('VESTA_COLLECTOR_PASS: hardware and product ID guards, unavailable and dated failure handling, manifest integrity');
+
+const consoleRow={id:'sony-ps5-slim-digital',kind:'console',title:'SONY PS5 Slim Digital Edition Game pack Top Bundle',productId:'123',url:'https://vesta.am/consoles/sony-ps5-slim-digital',axes:{storage:825}};
+const consolePage=box().replaceAll('TCL 55C6K',consoleRow.title)+'<div id="tab-description"><table><tr><td>SSD:</td><td>825 GB</td></tr></table></div><div id="tab-review">';
+const readConsole=html=>collectVesta({get:async()=>html,pause:async()=>{},products:[{id:consoleRow.id,variants:[{ram:16,storage:825},{ram:16,storage:1024}]}],rows:[consoleRow],previous:[],warn:()=>{}});
+assert.equal((await readConsole(consolePage))[0].storage,825);
+assert.equal((await readConsole(consolePage.replace('825 GB','1 TB'))).length,0,'changed console SSD must not retain the old 825 GB label');
+assert.equal((await readConsole(consolePage.replace('SSD:','Other:'))).length,0,'missing console storage must be held');
+console.log('VESTA_CONSOLE_PASS: selected SSD is rechecked at every refresh');

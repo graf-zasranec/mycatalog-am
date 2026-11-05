@@ -4,7 +4,7 @@
  "measurement": "native visible product long edge, alpha > 128; SHA256-bound to cutout",
  "note": "Images below600px visible native long edge need a larger exact original, never enlargement. Unmeasured/stale cutouts need tools/thumbnails.py. Identity, finish and cutout quality still require visual review.",
  "unmeasured": 0,
- "total": 3438,
+ "total": 3440,
  "missing": 0,
  "tooSmall": 284,
  "products": [
@@ -41,6 +41,22 @@
    "visibleLong": 566
   },
   {
+   "id": "hitachi-r-v660puc7-1",
+   "brand": "Hitachi",
+   "name": "Fridge R-V660PUC7-1 550 L",
+   "category": "largeappliance",
+   "shops": 3,
+   "query": "Hitachi Fridge R-V660PUC7-1 550 L",
+   "what": "too small",
+   "file": "images/cut/hitachi-r-v660puc7-1__inox.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 267,
+   "visibleHeight": 566,
+   "visibleLong": 566
+  },
+  {
    "id": "jbl-jr460nc",
    "brand": "JBL",
    "name": "JR460NC",
@@ -55,6 +71,22 @@
    "visibleWidth": 317,
    "visibleHeight": 388,
    "visibleLong": 388
+  },
+  {
+   "id": "kenwood-hmp30",
+   "brand": "Kenwood",
+   "name": "Hand Mixer HMP30",
+   "category": "kitchen",
+   "shops": 3,
+   "query": "Kenwood Hand Mixer HMP30",
+   "what": "too small",
+   "file": "images/cut/kenwood-hmp30__black.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 361,
+   "visibleHeight": 537,
+   "visibleLong": 537
   },
   {
    "id": "lg-f4x5vypy8",
@@ -103,6 +135,38 @@
    "visibleWidth": 363,
    "visibleHeight": 484,
    "visibleLong": 484
+  },
+  {
+   "id": "philips-bhs742-00",
+   "brand": "Philips",
+   "name": "Hair Straightener BHS742/00",
+   "category": "haircare",
+   "shops": 3,
+   "query": "Philips Hair Straightener BHS742/00",
+   "what": "too small",
+   "file": "images/cut/philips-bhs742-00__main.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 592,
+   "visibleHeight": 564,
+   "visibleLong": 592
+  },
+  {
+   "id": "philips-bt5780-15",
+   "brand": "Philips",
+   "name": "Beardtrimmer Series 5000 BT5780/15",
+   "category": "grooming",
+   "shops": 3,
+   "query": "Philips Beardtrimmer Series 5000 BT5780/15",
+   "what": "too small",
+   "file": "images/cut/philips-bt5780-15__main.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 150,
+   "visibleHeight": 574,
+   "visibleLong": 574
   },
   {
    "id": "xiaomi-pad-8-pro",
@@ -393,22 +457,6 @@
    "visibleLong": 568
   },
   {
-   "id": "hitachi-r-v660puc7-1",
-   "brand": "Hitachi",
-   "name": "Fridge R-V660PUC7-1 550 L",
-   "category": "largeappliance",
-   "shops": 2,
-   "query": "Hitachi Fridge R-V660PUC7-1 550 L",
-   "what": "too small",
-   "file": "images/cut/hitachi-r-v660puc7-1__inox.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 267,
-   "visibleHeight": 566,
-   "visibleLong": 566
-  },
-  {
    "id": "jbl-jr320",
    "brand": "JBL",
    "name": "JR320",
@@ -455,22 +503,6 @@
    "visibleWidth": 313,
    "visibleHeight": 240,
    "visibleLong": 313
-  },
-  {
-   "id": "kenwood-hmp30",
-   "brand": "Kenwood",
-   "name": "Hand Mixer HMP30",
-   "category": "kitchen",
-   "shops": 2,
-   "query": "Kenwood Hand Mixer HMP30",
-   "what": "too small",
-   "file": "images/cut/kenwood-hmp30__black.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 361,
-   "visibleHeight": 537,
-   "visibleLong": 537
   },
   {
    "id": "kenwood-jmp400wh",
@@ -601,36 +633,20 @@
    "visibleLong": 565
   },
   {
-   "id": "philips-bhs742-00",
+   "id": "philips-bhs515-00",
    "brand": "Philips",
-   "name": "Hair Straightener BHS742/00",
+   "name": "Hair Straightener BHS515/00",
    "category": "haircare",
    "shops": 2,
-   "query": "Philips Hair Straightener BHS742/00",
+   "query": "Philips Hair Straightener BHS515/00",
    "what": "too small",
-   "file": "images/cut/philips-bhs742-00__main.webp",
+   "file": "images/cut/philips-bhs515-00__main.webp",
    "state": "too small",
    "width": 700,
    "height": 700,
-   "visibleWidth": 592,
-   "visibleHeight": 564,
-   "visibleLong": 592
-  },
-  {
-   "id": "philips-bt5780-15",
-   "brand": "Philips",
-   "name": "Beardtrimmer Series 5000 BT5780/15",
-   "category": "grooming",
-   "shops": 2,
-   "query": "Philips Beardtrimmer Series 5000 BT5780/15",
-   "what": "too small",
-   "file": "images/cut/philips-bt5780-15__main.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 150,
-   "visibleHeight": 574,
-   "visibleLong": 574
+   "visibleWidth": 560,
+   "visibleHeight": 140,
+   "visibleLong": 560
   },
   {
    "id": "razer-hammerhead-hyperspeed",
@@ -727,6 +743,22 @@
    "visibleWidth": 574,
    "visibleHeight": 334,
    "visibleLong": 574
+  },
+  {
+   "id": "samsung-wd18db8995bz-ld",
+   "brand": "Samsung",
+   "name": "Washing Machine WD18DB8995BZ/LD 18 kg",
+   "category": "largeappliance",
+   "shops": 2,
+   "query": "Samsung Washing Machine WD18DB8995BZ/LD 18 kg",
+   "what": "too small",
+   "file": "images/cut/samsung-wd18db8995bz-ld__iron-grey.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 280,
+   "visibleHeight": 448,
+   "visibleLong": 448
   },
   {
    "id": "sony-ht-s350",
@@ -3017,22 +3049,6 @@
    "visibleLong": 443
   },
   {
-   "id": "philips-bhs515-00",
-   "brand": "Philips",
-   "name": "Hair Straightener BHS515/00",
-   "category": "haircare",
-   "shops": 1,
-   "query": "Philips Hair Straightener BHS515/00",
-   "what": "too small",
-   "file": "images/cut/philips-bhs515-00__main.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 560,
-   "visibleHeight": 140,
-   "visibleLong": 560
-  },
-  {
    "id": "realme-buds-air-5",
    "brand": "Realme",
    "name": "Buds Air 5",
@@ -3237,22 +3253,6 @@
    "width": 700,
    "height": 700,
    "visibleWidth": 328,
-   "visibleHeight": 448,
-   "visibleLong": 448
-  },
-  {
-   "id": "samsung-wd18db8995bz-ld",
-   "brand": "Samsung",
-   "name": "Washing Machine WD18DB8995BZ/LD 18 kg",
-   "category": "largeappliance",
-   "shops": 1,
-   "query": "Samsung Washing Machine WD18DB8995BZ/LD 18 kg",
-   "what": "too small",
-   "file": "images/cut/samsung-wd18db8995bz-ld__iron-grey.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 280,
    "visibleHeight": 448,
    "visibleLong": 448
   },

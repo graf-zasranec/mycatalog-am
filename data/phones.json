@@ -71007,7 +71007,8 @@
       "battery.capacity"
     ],
     "colors": [
-      "Dark Grey"
+      "Dark Grey",
+      "White"
     ],
     "appliance": {
       "type": "scale",
@@ -71171,7 +71172,8 @@
       }
     ],
     "colors": [
-      "White"
+      "White",
+      "Black"
     ],
     "appliance": {
       "type": "air_fryer",
@@ -89852,6 +89854,11 @@
         "ram": 16,
         "storage": 1024,
         "priceAmd": 278500
+      },
+      {
+        "ram": 16,
+        "storage": 825,
+        "priceAmd": 329000
       }
     ],
     "battery": {},
@@ -89871,6 +89878,10 @@
     "summaryEn": "The current PlayStation 5 Slim without a disc drive: games are downloaded only.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://direct.playstation.com/en-us/buy-consoles/playstation5-digital-edition-console-825-gb",
+      "https://vesta.am/hamakargichner-monitorner/tesaxagher/sony-ps5-slim-digital-1tb-game-pack-top-bundle"
     ]
   },
   {
@@ -90000,7 +90011,8 @@
       }
     ],
     "colors": [
-      "Black"
+      "Black",
+      "White"
     ],
     "display": {},
     "battery": {},
@@ -125715,7 +125727,8 @@
       }
     ],
     "colors": [
-      "Inox"
+      "Inox",
+      "Black"
     ]
   },
   {
@@ -150935,6 +150948,97 @@
     },
     "unsure": [
       "popularity"
+    ]
+  },
+  {
+    "id": "midea-mfd60s350si-c",
+    "category": "largeappliance",
+    "brand": "Midea",
+    "tier": "upper-mid",
+    "priceAmd": 229000,
+    "priceAmdMax": 229000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 229000
+      }
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "display": {},
+    "unsure": [
+      "popularity"
+    ],
+    "name": "MFD60S350Si-C Dishwasher",
+    "aliases": [
+      "Midea MFD60S350Si-C"
+    ],
+    "appliance": {
+      "type": "dishwasher",
+      "settings": 14,
+      "power": 2100,
+      "noise": "47 dB"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi"
+    },
+    "body": {
+      "weight": 45300,
+      "dimensions": "845 × 598 × 600 mm"
+    },
+    "summaryEn": "Freestanding 14-place dishwasher with Wi-Fi and SmartHome app control, touch controls, an LED display and a 1–24-hour delay timer. Rated at 47 dB, with A++ energy efficiency under the regional rating scheme.",
+    "sources": [
+      "https://www.midea.com/ge-en/dishwashers/freestanding-dishwasher/midea-freestanding-dishwasher-with-ion-dishfresh-function.mfd60s350si-c",
+      "https://vesta.am/aman-lvalu-meqena/standart-spasq-lvacox/midea-mfd60s350si-c"
+    ]
+  },
+  {
+    "id": "dreame-l50-ultra-ae",
+    "category": "vacuum",
+    "brand": "Dreame",
+    "tier": "upper-mid",
+    "priceAmd": 409900,
+    "priceAmdMax": 409900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 409900
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "display": {},
+    "unsure": [
+      "popularity"
+    ],
+    "name": "L50 Ultra AE Robot Vacuum",
+    "aliases": [
+      "Dreame L50 Ultra AE",
+      "Dreame RLL51SE"
+    ],
+    "battery": {
+      "capacity": 5200
+    },
+    "appliance": {
+      "type": "robot_vacuum",
+      "suctionPa": 28000
+    },
+    "body": {
+      "weight": 4030,
+      "dimensions": "350 × 350 × 97 mm"
+    },
+    "summaryEn": "Robot vacuum and mop with up to 28,000 Pa suction, a 5,200 mAh battery, extending side brush and mop, and TriCut 3.0 brush. Includes a self-emptying dock with mop washing at up to 100°C and hot-air drying. Climbs obstacles up to 2 cm; robot height 97 mm.",
+    "sources": [
+      "https://global.dreametech.com/products/l50-ultra-ae",
+      "https://vesta.am/manr-kencax/poshekulner/dreame-l50-ultra-ae-white-rll51se-eua"
     ]
   }
 ]
