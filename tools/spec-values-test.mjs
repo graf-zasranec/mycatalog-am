@@ -36,8 +36,9 @@ assert.equal(megabytePhoneMemory(feature,{ram:4/1024,storage:16/1024}),true,'man
 for(const variant of [{ram:8,storage:1},{ram:8,storage:.5},{ram:null,storage:16/1024},{ram:0,storage:0},{ram:4/1024,storage:-1}])assert.equal(megabytePhoneMemory(feature,variant),false,'malformed or dropped-TB values retain the build guard');
 assert.equal(megabytePhoneMemory({category:'laptop'}, {ram:4/1024,storage:16/1024}),false);
 console.log('MB_BUILD_GUARD_PASS: exact whole-MB 2G phone memory and malformed/dropped-TB protection');
-const nokia210=JSON.parse((await import('node:fs')).readFileSync('data/phones.json')).find(p=>p.id==='nokia-210');
+// Button phones left the catalogue (owner, 2026-11-06), so these two are fixed examples, not catalogue reads.
+const nokia210={category:'phone',connectivity:{network:'2G'},variants:[{ram:4/1024,storage:16/1024}]};
 assert.equal(megabytePhoneMemory(nokia210,nokia210.variants[0]),true,'actual verified Nokia210 must pass the production memory guard');
 
-const nokia105=JSON.parse((await import('node:fs')).readFileSync('data/phones.json')).find(p=>p.id==='nokia-105-4g');
+const nokia105={category:'phone',specNA:{'chipset.name':'S30+ feature phone'},variants:[{ram:null,storage:null},{ram:48/1024,storage:128/1024}]};
 assert.equal(megabytePhoneMemory(nokia105,nokia105.variants.find(v=>v.storage!=null)),true,'manufacturer MB storage on existing S30+ 4G feature phone passes without falsely claiming 2G');

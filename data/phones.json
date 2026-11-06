@@ -87342,68 +87342,6 @@
     }
   },
   {
-    "id": "nokia-150-2023",
-    "category": "phone",
-    "brand": "Nokia",
-    "name": "150 (2023)",
-    "aliases": [
-      "Nokia 150 2023 (Black)"
-    ],
-    "tier": "budget",
-    "priceAmd": 20000,
-    "priceAmdMax": 20000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 20000
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {
-      "size": 2.4,
-      "resolution": "240x320"
-    },
-    "battery": {
-      "capacity": 1450
-    },
-    "summaryEn": "Nokia 150 (2023).",
-    "sources": [
-      "https://likemobile.am/en/nokia-150-2023-black",
-      "https://www.gizmochina.com/product/nokia-150-2023/",
-      "https://www.hmd.com/en_int/nokia-150-2023/specs"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "camera": {
-      "main": "0.3 MP (VGA), LED flash"
-    },
-    "specNA": {
-      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
-    },
-    "body": {
-      "weight": 106.3,
-      "height": 130.95,
-      "width": 50.6,
-      "thickness": 15.15,
-      "materials": "Polycarbonate back",
-      "ip": "IP52"
-    },
-    "connectivity": {
-      "network": "2G",
-      "sim": "Mini-SIM",
-      "ports": "Micro-USB (1.1), 3.5 mm headphone jack"
-    },
-    "os": "S30+",
-    "cardSlot": true,
-    "year": 2023
-  },
-  {
     "id": "panasonic-mc-cg713",
     "category": "vacuum",
     "brand": "Panasonic",
@@ -90927,163 +90865,6 @@
     }
   },
   {
-    "id": "nokia-105-4g",
-    "category": "phone",
-    "brand": "Nokia",
-    "name": "105 4G",
-    "aliases": [
-      "NOKIA 105 4G Black"
-    ],
-    "tier": "budget",
-    "priceAmd": 19900,
-    "priceAmdMax": 19900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 19900
-      },
-      {
-        "ram": 0.046875,
-        "storage": 0.125,
-        "priceAmd": 16900
-      }
-    ],
-    "colors": [
-      "Black",
-      "Blue"
-    ],
-    "display": {
-      "size": 1.8,
-      "resolution": "120x160"
-    },
-    "battery": {
-      "capacity": 1450
-    },
-    "summaryEn": "Nokia 105 4G.",
-    "sources": [
-      "https://vlv.am/en/Product/48133",
-      "https://www.mysmartprix.com/mobile/nokia-150-2023-msp23768",
-      "https://www.hmd.com/en_int/nokia-105-4g/specs"
-    ],
-    "unsure": [
-      "popularity",
-      "battery.capacity"
-    ],
-    "specNA": {
-      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
-      "camera.main": "no camera (checked 2026-10-23)"
-    },
-    "body": {
-      "weight": 93
-    }
-  },
-  {
-    "id": "nokia-106",
-    "category": "phone",
-    "brand": "Nokia",
-    "name": "106",
-    "aliases": [
-      "NOKIA 106 Charcoal/Black"
-    ],
-    "tier": "budget",
-    "priceAmd": 12900,
-    "priceAmdMax": 12900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 12900
-      },
-      {
-        "ram": 0.00390625,
-        "storage": 0.00390625,
-        "priceAmd": 11900
-      }
-    ],
-    "colors": [
-      "Charcoal/Black",
-      "Red"
-    ],
-    "display": {
-      "size": 1.8,
-      "resolution": "120x160"
-    },
-    "battery": {
-      "capacity": 1000
-    },
-    "summaryEn": "Nokia 106.",
-    "sources": [
-      "https://vlv.am/en/Product/29638"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "specNA": {
-      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)",
-      "camera.main": "no camera (checked 2026-10-23)"
-    },
-    "body": {
-      "weight": 79.4
-    }
-  },
-  {
-    "id": "nokia-110",
-    "category": "phone",
-    "brand": "Nokia",
-    "name": "110",
-    "aliases": [
-      "NOKIA 110 CHARCOAL"
-    ],
-    "tier": "budget",
-    "priceAmd": 12900,
-    "priceAmdMax": 12900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 12900
-      },
-      {
-        "ram": 0.00390625,
-        "storage": 0.00390625,
-        "priceAmd": 12900
-      }
-    ],
-    "colors": [
-      "CHARCOAL"
-    ],
-    "display": {
-      "size": 1.8,
-      "resolution": "120x160"
-    },
-    "battery": {
-      "capacity": 1000
-    },
-    "summaryEn": "Nokia 110.",
-    "sources": [
-      "https://vlv.am/en/Product/42380"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "camera": {
-      "main": "QVGA"
-    },
-    "specNA": {
-      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
-    },
-    "body": {
-      "weight": 79.6
-    }
-  },
-  {
     "id": "panasonic-rp-hje118-earphones",
     "category": "headphones",
     "brand": "Panasonic",
@@ -93231,106 +93012,6 @@
     "unsure": [
       "popularity"
     ]
-  },
-  {
-    "id": "nokia-210",
-    "category": "phone",
-    "brand": "Nokia",
-    "name": "210 (TA-1139)",
-    "aliases": [
-      "NOKIA 210 (TA-1139) Grey"
-    ],
-    "tier": "budget",
-    "priceAmd": 19900,
-    "priceAmdMax": 19900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 0.00390625,
-        "storage": 0.015625,
-        "priceAmd": 19900
-      }
-    ],
-    "colors": [
-      "Grey"
-    ],
-    "display": {
-      "size": 2.4,
-      "resolution": "240x320"
-    },
-    "battery": {
-      "capacity": 1020
-    },
-    "summaryEn": "Nokia 210 (TA-1139).",
-    "sources": [
-      "https://vlv.am/en/Product/26006",
-      "https://device.report/m/a01dc6a9c508dce64bb22b63c7ed4dffbcf5b79d6d2a25f783570474f496ed89.pdf"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "MediaTek MT6260A"
-    },
-    "camera": {
-      "main": "0.3 MP (VGA), LED flash"
-    },
-    "body": {
-      "weight": 82
-    },
-    "connectivity": {
-      "network": "2G"
-    }
-  },
-  {
-    "id": "nokia-3310-ds",
-    "category": "phone",
-    "brand": "Nokia",
-    "name": "3310 Dual SIM",
-    "aliases": [
-      "NOKIA 3310 D/S Gray"
-    ],
-    "tier": "budget",
-    "priceAmd": 29900,
-    "priceAmdMax": 29900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 29900
-      }
-    ],
-    "colors": [
-      "Gray"
-    ],
-    "display": {
-      "size": 2.4,
-      "resolution": "240x320"
-    },
-    "battery": {
-      "capacity": 1200
-    },
-    "summaryEn": "Nokia 3310 Dual SIM.",
-    "sources": [
-      "https://vlv.am/en/Product/31014",
-      "https://www.gsmarena.com/nokia_3310_(2017)-8605.php"
-    ],
-    "unsure": [
-      "popularity",
-      "body.weight"
-    ],
-    "camera": {
-      "main": "2 MP, LED flash"
-    },
-    "specNA": {
-      "chipset.name": "S30+ feature phone: HMD publishes no chipset (checked 2026-10-23)"
-    },
-    "body": {
-      "weight": 79.6
-    }
   },
   {
     "id": "panasonic-sc-bmax5",
@@ -152348,6 +152029,296 @@
     ],
     "colors": [
       "Gray"
+    ]
+  },
+  {
+    "id": "hp-omnibook-7-flip-16-ultra-7-256v",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 7 Flip 16 Ultra 7 256V",
+    "aliases": [
+      "HP Omnibook 7 Flip"
+    ],
+    "tier": "upper-mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 256V"
+    },
+    "graphics": {
+      "name": "Intel Arc 140V",
+      "type": "integrated"
+    },
+    "battery": {},
+    "os": "Windows 11",
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "A 16-inch 2-in-1 laptop with Intel Core Ultra 7 256V.",
+    "sources": [
+      "https://likemobile.am/en/hp-omnibook-7-flip"
+    ]
+  },
+  {
+    "id": "hp-victus-15-fa2093dhp",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "Victus 15-FA2093DHP",
+    "aliases": [
+      "HP Victus Gaming 15-FA2093DHP",
+      "15-FA2093DHP"
+    ],
+    "tier": "upper-mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 659000,
+    "priceAmdMax": 659000,
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 659000
+      }
+    ],
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "refresh": 144,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    },
+    "graphics": {
+      "name": "Nvidia GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "body": {
+      "weight": 2290
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "os": "Windows 11",
+    "summaryEn": "A 15.6-inch gaming laptop with Intel Core i7-13620H and Nvidia GeForce RTX 5060.",
+    "sources": [
+      "https://likemobile.am/en/hp-victus-gaming-15-fa2093dhp",
+      "https://www.shi.com/product/50562332/Victus-by-HP-Laptop-15-fa2093dx"
+    ]
+  },
+  {
+    "id": "hp-elitebook-655-g10",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "EliteBook 655 G10",
+    "aliases": [
+      "HP ELITEBOOK 655 G10"
+    ],
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 289000,
+    "priceAmdMax": 289000,
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 289000
+      }
+    ],
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "touch": false
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 PRO 7530U"
+    },
+    "graphics": {
+      "name": "AMD Radeon Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1770
+    },
+    "battery": {
+      "capacity": 51
+    },
+    "os": "Windows 11",
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "A 15.6-inch business laptop with AMD Ryzen 5 PRO 7530U.",
+    "sources": [
+      "https://appzone.am/en/Assortment/hp-elitebook-655-g10/",
+      "https://www.hp.com/ie-en/products/laptops/product-details/product-specifications/2101728943"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-16iru8-i3-1315u",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 16IRU8 i3-1315U",
+    "aliases": [
+      "LENOVO 3 16IRU8 i3-1315U 8GB SSD256 16\" (82X8001DRK)",
+      "82X8001DRK"
+    ],
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 259900,
+    "priceAmdMax": 259900,
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 259900
+      }
+    ],
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core i3-1315U"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1740
+    },
+    "battery": {
+      "capacity": 47
+    },
+    "colors": [
+      "Gray"
+    ],
+    "summaryEn": "Lenovo IdeaPad Slim 3 16IRU8 with Intel Core i3-1315U.",
+    "sources": [
+      "https://vlv.am/en/Product/34864",
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IRU8/IdeaPad_Slim_3_16IRU8_Spec.PDF"
+    ]
+  },
+  {
+    "id": "acer-aspire-5-a515-58p-nx-khjer-004",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Aspire 5 A515-58P (NX.KHJER.004)",
+    "aliases": [
+      "ACER A 515-58P 15.6 FHD/i5-1335U/8/512Gb (NX.KHJER.004)",
+      "NX.KHJER.004"
+    ],
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 259900,
+    "priceAmdMax": 259900,
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 259900
+      }
+    ],
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1780
+    },
+    "battery": {},
+    "colors": [
+      "Gray"
+    ],
+    "summaryEn": "Acer Aspire 5 A515-58P with Intel Core i5-1335U.",
+    "sources": [
+      "https://vlv.am/en/Product/34989"
+    ]
+  },
+  {
+    "id": "electrolux-ehu-3815d",
+    "category": "climate",
+    "brand": "Electrolux",
+    "name": "Humidifier EHU-3815D",
+    "aliases": [
+      "Electrolux EHU-3815D",
+      "ELECTROLUX EHU-3815D",
+      "EHU-3815D",
+      "ELECTROLUX EHU-3815D Yoga Air Humidifiers",
+      "Humidifier Electrolux EHU-3815D Yogahealth"
+    ],
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": 53900,
+    "priceAmdMax": 53900,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 53900
+      }
+    ],
+    "appliance": {
+      "type": "humidifier",
+      "power": 110,
+      "volume": 6.3,
+      "noise": "21 dB"
+    },
+    "battery": {},
+    "colors": [
+      "White"
+    ],
+    "summaryEn": "Electrolux Humidifier EHU-3815D.",
+    "sources": [
+      "https://www.zigzag.am/en/electrolux-ehu-3815d.html",
+      "https://catalog.onliner.by/humidifier/electrolux/ehu3815d"
     ]
   }
 ]
