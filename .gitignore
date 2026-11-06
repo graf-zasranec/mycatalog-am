@@ -96,3 +96,7 @@ node_modules/
 .playwright-cli/
 .playwright/
 images/social/*.source
+
+# Local shared assistant context (private paths and audit context are not site assets).
+**/graphify-out/
+.hallmark/
