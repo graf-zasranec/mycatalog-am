@@ -73265,15 +73265,17 @@
       "chipset",
       "battery.capacity"
     ],
-    "chipset": {},
+    "chipset": {
+      "name": "Intel Core 5"
+    },
     "body": {
       "weight": 1590
     },
-    "specNA": {
-      "chipset.name": true
-    },
     "colors": [
       "Silver"
+    ],
+    "sources": [
+      "https://www.yerevanmobile.am/en/acer-notebook-aspire-lite-15-6-fhd-core-i5.html"
     ]
   },
   {
@@ -75733,7 +75735,8 @@
       }
     ],
     "display": {
-      "size": 16
+      "size": 16,
+      "resolution": "2560x1600"
     },
     "battery": {
       "capacity": 75
@@ -75749,15 +75752,13 @@
     "chipset": {
       "name": "Intel Core 5 220H"
     },
-    "specNA": {
-      "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2560x1600 (checked 2026-10-23)"
-    },
     "body": {
       "weight": 1790
     },
     "sources": [
       "https://www.notebookcheck.net/Honor-MagicBook-X16-Plus-2024.892027.0.html",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.notebookcheck.net/Honor-MagicBook-X16-Plus-2025.1090686.0.html"
     ],
     "os": "Windows 11",
     "colors": [
@@ -82864,15 +82865,15 @@
       "resolution": "1920x1080"
     },
     "os": "Windows 11",
-    "specNA": {
-      "chipset.name": "Shop SKU code does not identify the configuration; the maker sells it with Ryzen 3 7320U or Ryzen 5 7520U (checked 2026-10-23)"
-    },
     "body": {
       "weight": 1620
     },
     "colors": [
       "Silver"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    }
   },
   {
     "id": "asus-vivobook-x1504va",
@@ -87376,15 +87377,16 @@
       "name": "AMD Radeon Graphics",
       "type": "integrated"
     },
-    "specNA": {
-      "chipset.name": "HP model 17-dp0105dx not found in any spec sheet (checked 2026-10-23)"
-    },
     "body": {
       "weight": 2009
     },
     "sources": [
-      "https://files.bbystatic.com/ykmeHGuBhj7PwCjZ%2F1xxMQ%3D%3D/e14e0b00-29e0-4276-8f8b-2c0cbad01183.pdf"
-    ]
+      "https://files.bbystatic.com/ykmeHGuBhj7PwCjZ%2F1xxMQ%3D%3D/e14e0b00-29e0-4276-8f8b-2c0cbad01183.pdf",
+      "https://www.bestbuy.com/product/hp-omnibook-3-17-3-full-hd-laptop-amd-ryzen-5-40-2025-8gb-memory-512gb-ssd-glacier-silver/JJGWKLZ8SW"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 40"
+    }
   },
   {
     "id": "hp-omnibook-5-flip-14-fp0023dx",
@@ -87595,19 +87597,20 @@
       "name": "AMD Radeon 610M",
       "type": "integrated"
     },
-    "specNA": {
-      "chipset.name": "Listed only as \"Ryzen 5\"; exact chip not published (checked 2026-10-23)"
-    },
     "body": {
       "weight": 1640
     },
     "sources": [
       "https://technave.com/gadget/HP-OmniBook-3-16-inch-Laptop-16-Price-in-Malaysia-Spec-46163.html",
-      "https://partsurfer.hp.com/"
+      "https://partsurfer.hp.com/",
+      "https://allsell.am/en/hp-omnibook-3-16-by0015-ryzen-5-40-8gb-i-256gb-d7nf2ua-aba"
     ],
     "colors": [
       "Silver"
-    ]
+    ],
+    "chipset": {
+      "name": "AMD Ryzen 5 40"
+    }
   },
   {
     "id": "hp-omnibook-5-16-cd0070-ultra-7-355",
@@ -97674,20 +97677,21 @@
     "sources": [
       "https://vlv.am/en/Product/47866",
       "https://www.samsung.com/uk/audio-devices/soundbar/q930h-black-hw-q930h-xu/",
-      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-q930h-py"
+      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-q930h-py",
+      "https://www.sammobile.com/news/samsung-hw-q930h-soundbar-everything-to-know/"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 5300
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "samsung-hw-q990h",

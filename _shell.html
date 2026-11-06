@@ -1706,7 +1706,8 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 .bx-more-filters[open]>summary::after{content:'▴'}
 .bx-more-filters .bx-filter-section>summary{min-height:32px;padding:4px 0;font-size:12.5px}
 .bx-filter-fields>.bx-fieldset:not(.bx-chipset){padding:10px 0 12px}
-.bx-chip span{font-size:11.5px}
+.bx-chip{max-width:100%}
+.bx-chip span{font-size:11.5px;white-space:normal;overflow-wrap:anywhere}
 .bx-filter-fields .bx-price-inputs{gap:6px}
 .bx-filter-fields .bx-price-inputs label{font-size:11px;gap:3px}
 .bx-filter-fields .bx-price-inputs input{min-height:32px;padding:5px 8px;font-size:12px}
