@@ -10126,11 +10126,14 @@
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
     },
-    "specNA": {
-      "body.weight": "ASUS has taken the H7 Core spec page down (redirects to the series list); no maker figure"
-    },
     "colors": [
       "Gun Metal"
+    ],
+    "body": {
+      "weight": 252
+    },
+    "sources": [
+      "https://www.multitronic.fi/en/products/2618920/asus-tuf-gaming-h7-core-gaming-headset--yellow"
     ]
   },
   {
@@ -159121,7 +159124,8 @@
       }
     ],
     "appliance": {
-      "type": "boiler"
+      "type": "boiler",
+      "power": 160
     },
     "battery": {},
     "colors": [
@@ -159129,11 +159133,9 @@
     ],
     "summaryEn": "Bosch Gas Boiler WBN6000-35CR.",
     "sources": [
-      "https://vlv.am/en/Product/18873"
-    ],
-    "specNA": {
-      "appliance.power": "Electrical consumption is not published in the sources checked on 2026-11-06."
-    }
+      "https://vlv.am/en/Product/18873",
+      "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o575800v272_GAZ6000_IM.pdf"
+    ]
   },
   {
     "id": "bosch-wbc24-1c",
@@ -159241,7 +159243,8 @@
       }
     ],
     "appliance": {
-      "type": "boiler"
+      "type": "boiler",
+      "power": 112
     },
     "battery": {},
     "colors": [
@@ -159249,11 +159252,9 @@
     ],
     "summaryEn": "Bosch Condensing Gas Boiler GC1200W 24 kW.",
     "sources": [
-      "https://vlv.am/en/Product/35286"
-    ],
-    "specNA": {
-      "appliance.power": "Electrical consumption is not published in the sources checked on 2026-11-06."
-    }
+      "https://vlv.am/en/Product/35286",
+      "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o633019v272_____UZ.pdf"
+    ]
   },
   {
     "id": "bosch-gc1200w-28-30",
@@ -159283,7 +159284,8 @@
       }
     ],
     "appliance": {
-      "type": "boiler"
+      "type": "boiler",
+      "power": 125
     },
     "battery": {},
     "colors": [
@@ -159291,11 +159293,9 @@
     ],
     "summaryEn": "Bosch Condensing Gas Boiler GC1200W 28/30 kW.",
     "sources": [
-      "https://vlv.am/en/Product/35287"
-    ],
-    "specNA": {
-      "appliance.power": "Electrical consumption is not published in the sources checked on 2026-11-06."
-    }
+      "https://vlv.am/en/Product/35287",
+      "https://www.bosch-homecomfort.com/ocsmedia/optimized/full/o633019v272_____UZ.pdf"
+    ]
   },
   {
     "id": "harman-kardon-luna-2",
