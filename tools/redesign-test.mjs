@@ -21,10 +21,12 @@ app.routeLinkClick({target:{closest:()=>link},button:0,ctrlKey:true,preventDefau
 assert.equal(prevented,false,'modified clicks retain normal browser behavior');
 app.filterBodies.clear();
 const form=app.bxFilterForm();
-assert.ok(form.includes('data-bx-section="brand"'),'brand filter has an independent disclosure');
-assert.ok(form.includes('data-bx-section="price"'),'price filter has an independent disclosure');
+// Option B (owner, 2026-11-06): brand and the first spec questions are chips, always visible;
+// price is always open; everything else folds under one "More filters" disclosure.
+assert.ok(/class="bx-fieldset bx-chipset" data-bx-set="brand"/.test(form),'brand filter is a visible chip group');
+assert.ok(form.includes('data-bx-min')&&!form.includes('data-bx-section="price"'),'price filter is always open');
 assert.ok(!form.includes('data-bx-section="category"'),'first category section always stays visible');
-assert.ok(!/<details[^>]*data-bx-section="brand"[^>]*\\sopen/.test(form),'unused filters initially collapse');
+assert.ok(!/<details[^>]*data-bx-section="more"[^>]*\\sopen/.test(form),'More filters initially collapse');
 const productMarkup=productRenderer(renderData)(phones.find(p=>p.id==='jbl-tune-530bt'),'en').main;
 assert.ok(productMarkup.includes('id="offList"'),'product shop offers stay available');
 assert.ok(!productMarkup.includes('class="rail2"'),'redundant product price-range graphic removed');

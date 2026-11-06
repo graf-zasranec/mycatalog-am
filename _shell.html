@@ -1681,6 +1681,39 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 .bx-filter-active{color:var(--brand);font-size:8px}.bx-spec-fields,.bx-flag-fields{gap:0}
 @media(max-width:800px){.bx-filter-fields{gap:0;padding:10px 18px}.bx-filter-section>summary{min-height:48px;font-size:14px}.bx-filter-content{padding-bottom:14px}}
 @media(max-width:800px){.bx-category-choices{grid-template-columns:repeat(2,minmax(0,1fr))}.bx-category-choice{font-size:12px;gap:5px;padding:7px 5px}.bx-category-choice:has(input[value=""]){grid-column:1/-1}.bx-category-count{font-size:10px}}
+/* Option B filters (2026-11-06): chips for the common questions, compact rows under More filters */
+.bx-chipset{padding:10px 0 12px;border-top:1px solid var(--line)}
+.bx-chipset legend{float:left;width:100%;margin:0 0 8px;font-size:12px;font-weight:750;position:static;clip-path:none;height:auto;overflow:visible}
+.bx-chips{display:flex;flex-wrap:wrap;gap:5px;clear:both}
+.bx-chip{position:relative;display:inline-flex;cursor:pointer}
+.bx-chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.bx-chip span{display:inline-flex;align-items:center;gap:4px;min-height:27px;padding:3px 8px;border:1px solid var(--line2);border-radius:8px;background:var(--bg);color:var(--text);font-size:12px;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}
+.bx-chip span i{font-style:normal;font-weight:500;color:var(--muted);font-size:11px}
+.bx-chip:hover span{border-color:var(--brand)}
+.bx-chip input:checked+span{background:var(--brand);border-color:var(--brand);color:var(--ink-64,#fff)}
+.bx-chip input:checked+span i{color:inherit;opacity:.8}
+.bx-chip input:focus-visible+span{outline:2px solid var(--brand);outline-offset:2px}
+.bx-chip-more{display:contents}
+.bx-chip-more>summary{display:inline-flex;align-items:center;min-height:27px;padding:3px 8px;border:1px dashed var(--line2);border-radius:8px;font-size:12px;font-weight:700;color:var(--muted);cursor:pointer;list-style:none}
+.bx-chip-more>summary::-webkit-details-marker{display:none}
+.bx-chip-more[open]>summary{display:none}
+.bx-chip-more>.bx-chips{display:contents}
+.bx-more-filters{border-top:1px solid var(--line)}
+.bx-more-filters>summary{display:flex;align-items:center;gap:6px;min-height:40px;list-style:none;cursor:pointer;font-size:13px;font-weight:750;color:var(--brand)}
+.bx-more-filters>summary::-webkit-details-marker{display:none}
+.bx-more-filters>summary span{color:var(--muted);font-weight:600}
+.bx-more-filters>summary::after{content:'▾';margin-left:auto}
+.bx-more-filters[open]>summary::after{content:'▴'}
+.bx-more-filters .bx-filter-section>summary{min-height:32px;padding:4px 0;font-size:12.5px}
+.bx-filter-fields>.bx-fieldset:not(.bx-chipset){padding:10px 0 12px}
+.bx-chip span{font-size:11.5px}
+.bx-filter-fields .bx-price-inputs{gap:6px}
+.bx-filter-fields .bx-price-inputs label{font-size:11px;gap:3px}
+.bx-filter-fields .bx-price-inputs input{min-height:32px;padding:5px 8px;font-size:12px}
+.bx-filter-fields .bx-budgets{flex-wrap:nowrap;gap:4px;margin-top:6px}
+.bx-filter-fields .bx-budgets button{min-height:26px;padding:3px 6px;font-size:10.5px;white-space:nowrap;flex:1 1 0;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.bx-filter-fields{padding-top:6px}
+.bx-filter-fields>.bx-fieldset:not(.bx-chipset) legend{margin-bottom:6px}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
