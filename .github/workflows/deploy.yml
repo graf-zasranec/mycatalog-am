@@ -102,7 +102,8 @@ jobs:
           fi
           source_commit=$(git rev-parse HEAD)
           for attempt in 1 2 3; do
-            git add 'data/site-*.js' 'data/site-ui*.css' data/details data/startup data/startup-manifest.json data/product-extras.json data/thumbnails.json data/photo-native-metrics.json data/photos-needed.json images/thumb images/social data/page-manifest.json index.html p c b ru en 'sitemap*.xml'
+            node tools/prune-bundles.mjs
+            git add 'data/site-*.js' 'data/site-ui*.css' data/details data/startup data/startup-manifest.json data/product-extras.json data/thumbnails.json data/photo-native-metrics.json data/photos-needed.json images/thumb images/social data/page-manifest.json index.html p c b deals ru en 'sitemap*.xml'
             node tools/release-assets.mjs --staged
             if ! git diff --cached --quiet; then
               git commit -m "Build refreshed catalogue"

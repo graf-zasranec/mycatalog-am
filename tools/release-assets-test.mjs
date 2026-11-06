@@ -86,6 +86,7 @@ try {
     }
   }
   put(crawl,'tools/release-assets.mjs','');
+  put(crawl,'tools/prune-bundles.mjs','');
   for (const producer of ['photo-box','thumbnails','social']) {
     put(crawl,`tools/${producer}.py`,`from pathlib import Path\nPath('images/thumb/${producer}.txt').write_text('rebuilt')\n`);
   }

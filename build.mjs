@@ -83,10 +83,12 @@ for (const p of phones) {
   // the LAST day the higher price was seen, so a price that bounced back up and down again is
   // dated from its latest fall, not its first
   const top = run.reduce((a, b) => b.lo >= a.lo ? b : a);
-  if ((top.lo - last.lo) / top.lo < 0.05) continue;
-  // A spike then a partial return is not a fall: BaByliss ST394E went 24 900 -> 34 900 -> 27 900 and read as -7 000.
+  // A spike then a return is not a fall: BaByliss ST394E went 24 900 -> 34 900 -> 27 900 and Sony K-75S30
+  // 549 990 -> 759 900 -> 549 900. The fall counts from the lowest price before the peak, not from the peak.
   if (run.some(v => v.lo < last.lo)) continue;
-  DROPS.push({ id: p.id, lo: last.lo, since: top.d, fall: top.lo - last.lo, run: run.map(v => v.lo),
+  const base = Math.min(...run.slice(0, run.lastIndexOf(top) + 1).map(v => v.lo));
+  if ((base - last.lo) / base < 0.05) continue;
+  DROPS.push({ id: p.id, lo: last.lo, since: top.d, fall: base - last.lo, run: run.map(v => v.lo),
     loShop: offs[0].shop, shops: last.shops, pop: p.popularity || 0 });
 }
 DROPS.sort((a, b) => b.pop - a.pop);
@@ -882,7 +884,7 @@ td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
 ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
 ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
+@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
 a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>`;
 // path: the page's place under the site root ('p/apple-iphone-17/'), the same in every language
 const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')

@@ -229,14 +229,19 @@ function tokenized(text) {
   }
   return out + ' ';
 }
+const APPLE_OWN_WORDS = ['airtag', 'pencil', 'keyboard', 'magic kb'];
 function looksLikeAccessory(text) {
   // "Refrigerators (Top Mount)" names where the freezer sits, not a wall mount
   const h = tokenized(text).replace(/  +/g, ' ').replace(/ (top|bottom) mount /g, ' ');
   // Owner, 2026-10-16: Apple's own Magic Mouse, Magic Keyboard, Apple Pencil and AirTag ARE
   // carried. Only the device itself: a case, key ring, loop, tips, charger, an iPad keyboard
   // folio or a bundle with an iPad/Mac still counts as an accessory and falls through below.
-  if (/ (magic mouse|magic keyboard|magic trackpad|apple pencil|pencil pro|pencil usb c|airtag) /.test(h)
-      && !/ (case|cover|key ?ring|keyring|loop|holder|tips?|folio|charger|charging|strap|skin|sleeve|protector|grip|clip|cable|carabiner|battery|android|belkin|ipad|iphone|macbook|imac|mobee) /.test(h)) return false;
+  if (/ (magic mouse|magic keyboard|magic trackpad|apple pencil|pencil pro|pencil usb c|airtag) /.test(h)) {
+    // "Apple Pencil Pro for iPad" is the Pencil; "iPad Air + Apple Pencil" is a bundle
+    const own = / (apple pencil|pencil pro|pencil usb c) /.test(h) ? h.replace(/ (for|для) ipad /g, ' ') : h;
+    if (!/ (case|cover|key ?ring|keyring|loop|holder|tips?|folio|charger|charging|strap|skin|sleeve|protector|grip|clip|cable|carabiner|battery|android|belkin|ipad|iphone|macbook|imac|mobee) /.test(own)
+        && !ACCESSORY_WORDS.some(w => !APPLE_OWN_WORDS.includes(w) && h.includes(' ' + w + ' '))) return false;
+  }
   if (ACCESSORY_WORDS.some(w => h.includes(' ' + w + ' '))) return true;
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
@@ -951,6 +956,13 @@ if (process.argv[2] === '--selftest') {
     [null, 'AirTag FineWoven Key Ring - Black'],
     [null, 'APPLE Leather Case for Apple Pencil'],
     [null, 'Mobee Magic Charger for Apple Magic Mouse'],
+    [null, 'Чехол для Apple AirTag'],
+    [null, 'Apple AirTag պատյան'],
+    [null, 'Apple AirTag Bumper'],
+    [null, 'Baseus Stylus Pencil Pro'],
+    [null, 'Magic Keyboard Dock'],
+    [null, 'Apple iPad Air 11 + Apple Pencil Pro'],
+    ['apple-pencil-pro', 'Apple Pencil Pro for iPad'],
     [null, 'Apple Magic Keyboard iPad Pro 11 - RU Black /MWR23'],
     // the PROLED MacBook Pro must not fall onto the mini-LED M5 Pro page, nor M6 onto M5
     ['apple-macbook-pro-proled-m5-pro', 'Apple MacBook Pro 14 PROLED M5 Pro 18/20 48GB/1TB Silver /MMF54'],
