@@ -2396,11 +2396,14 @@
     },
     "battery": {},
     "summaryEn": "The wired EarPods, now on USB-C — no charging, no pairing, no losing one.",
-    "specNA": {
-      "body.weight": "Apple lists no weight for EarPods (apple.com shop page read 2026-10-02)"
-    },
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 10
+    },
+    "sources": [
+      "https://www.coolblue.nl/en/product/942218/apple-earpods-with-usb-c.html"
     ]
   },
   {
@@ -6347,7 +6350,8 @@
       "name": "Apple S10 SiP"
     },
     "battery": {
-      "life": "18 hours"
+      "life": "18 hours",
+      "capacity": 327
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -6388,9 +6392,9 @@
       "weight": 29,
       "materials": "Aluminium or titanium case"
     },
-    "specNA": {
-      "battery.capacity": "Apple publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    "sources": [
+      "https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-10-gps-cellular-46mm.html"
+    ]
   },
   {
     "id": "apple-watch-series-11",
@@ -18384,7 +18388,8 @@
       "resolution": "454x454"
     },
     "battery": {
-      "life": "14 days"
+      "life": "14 days",
+      "capacity": 297
     },
     "summaryEn": "Garmin Venu 3 with Leather.",
     "unsure": [
@@ -18395,14 +18400,14 @@
     "body": {
       "weight": 47
     },
-    "specNA": {
-      "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    },
     "colors": [
       "Black"
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "sources": [
+      "https://duelvs.com/smartwatch/garmin-venu-3"
     ]
   },
   {
@@ -30187,9 +30192,12 @@
     "connectivity": {
       "bluetooth": "5.0"
     },
-    "specNA": {
-      "body.weight": "JBL spec sheet gives only the total with case (73 g), no per-earbud weight"
-    }
+    "body": {
+      "weight": 13.6
+    },
+    "sources": [
+      "https://support.jbl.com/ca/en/headphones/headphones-in-ear-grp/headphones-in-ear/TUNE125TWS-.html"
+    ]
   },
   {
     "id": "jbl-tune-125bt",
@@ -62797,17 +62805,17 @@
       "resolution": "1920x1200",
       "type": "IPS LCD"
     },
-    "battery": {},
+    "battery": {
+      "capacity": 6500
+    },
     "summaryEn": "Amazon Fire HD 10 Kids.",
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "specNA": {
-      "chipset.name": "sold as 11th gen (MediaTek MT8183) and 13th gen (MediaTek MT8186A) under one listing (2026-10-03)",
-      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
+      "chipset.name": "sold as 11th gen (MediaTek MT8183) and 13th gen (MediaTek MT8186A) under one listing (2026-10-03)"
     },
     "colors": [
       "Pink",
@@ -62819,7 +62827,8 @@
     },
     "sources": [
       "https://www.amazon.com/Amazon_Fire_HD_10_Kids/dp/B0BL5TKDVG",
-      "https://developer.amazon.com/docs/device-specs/ft-device-specifications-firehd-models.html"
+      "https://developer.amazon.com/docs/device-specs/ft-device-specifications-firehd-models.html",
+      "https://duelvs.com/tablet/amazon-fire-hd-10-kids-pro-2023"
     ]
   },
   {
@@ -64750,15 +64759,16 @@
     "colors": [
       "Black"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Sony lists profiles and codecs but no Bluetooth version (sony.co.uk spec page, 2026-10-03)"
-    },
     "body": {
       "weight": 21200
     },
     "sources": [
-      "https://www.sony.co.uk/electronics/hi-fi-systems/mhc-v73d/specifications"
-    ]
+      "https://www.sony.co.uk/electronics/hi-fi-systems/mhc-v73d/specifications",
+      "https://drhead.ae/brands/sony/products/personal-audio/wireless-speakers/party"
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "jbl-partybox-330",
@@ -67191,15 +67201,16 @@
       "form": "tws",
       "anc": true
     },
-    "specNA": {
-      "connectivity.bluetooth": "Beats lists Class 1 Bluetooth and no version number (beatsbydre.com, 2026-10-03)"
-    },
     "body": {
       "weight": 5.78
     },
     "sources": [
-      "https://ie.selectonline.com/beats-earphones-wireless-powerbeats-fit"
-    ]
+      "https://ie.selectonline.com/beats-earphones-wireless-powerbeats-fit",
+      "https://hifi.de/test/beats-powerbeats-fit-test-245858"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "bose-noise-cancelling-700",
@@ -72296,14 +72307,14 @@
       "type": "Retina LTPO OLED"
     },
     "battery": {
-      "life": "18 hours"
+      "life": "18 hours",
+      "capacity": 296
     },
     "summaryEn": "Apple Watch SE 2 44mm.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
       "body.weight"
     ],
     "chipset": {
@@ -72320,11 +72331,9 @@
       "materials": "Aluminium case"
     },
     "sources": [
-      "https://support.apple.com/kb/SP877"
+      "https://support.apple.com/kb/SP877",
+      "https://9to5mac.com/2022/09/13/apple-watch-battery-mah-lte/"
     ],
-    "specNA": {
-      "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
-    },
     "os": "watchOS 9"
   },
   {
@@ -75096,7 +75105,8 @@
     "display": {
       "size": 27,
       "resolution": "1920x1080",
-      "refresh": 144
+      "refresh": 144,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Xiaomi A27i 2026.",
@@ -75106,11 +75116,11 @@
       "chipset",
       "battery.capacity"
     ],
-    "specNA": {
-      "display.type": "Xiaomi's spec page does not name the panel type (checked 2026-10-23)"
-    },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://aio.lv/en/product--xiaomi-69664--12498784.md"
     ]
   },
   {
@@ -75174,7 +75184,8 @@
     "display": {
       "size": 27,
       "resolution": "2560x1440",
-      "refresh": 200
+      "refresh": 200,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "Xiaomi 2K Gaming G27Qi 2026.",
@@ -75184,11 +75195,11 @@
       "chipset",
       "battery.capacity"
     ],
-    "specNA": {
-      "display.type": "Xiaomi's spec page does not name the panel type (checked 2026-10-23)"
-    },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.inet.se/produkt/2300109/xiaomi-27-g27qi-ips-qhd-180-hz"
     ]
   },
   {
@@ -76299,15 +76310,16 @@
       "Green",
       "Red"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 3300
     },
     "sources": [
-      "https://yandex.ru/alice/support/station/meet/characteristics-duo-max.html"
-    ]
+      "https://yandex.ru/alice/support/station/meet/characteristics-duo-max.html",
+      "https://alice.yandex.ru/station-duo-max"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "harman-kardon-citation-sub",
@@ -89366,20 +89378,21 @@
     "summaryEn": "JBL SoundBar 800.",
     "sources": [
       "https://likemobile.am/en/jbl-soundbar-800",
-      "https://jbl.com/soundbars/BAR-800-.html"
+      "https://jbl.com/soundbars/BAR-800-.html",
+      "https://comparisontabl.es/soundbars/jbl-bar-800-vs-jbl-bar-1000/"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 3400
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "jbl-soundbar-500",
@@ -89406,20 +89419,21 @@
     "summaryEn": "JBL SoundBar 500.",
     "sources": [
       "https://likemobile.am/en/jbl-soundbar-500",
-      "https://www.jbl.com/soundbars/BAR-500-.html"
+      "https://www.jbl.com/soundbars/BAR-500-.html",
+      "https://support.jbl.com/product-registration/BAR-500-.html"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 2800
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "jbl-soundbar-sb270",
@@ -89753,16 +89767,17 @@
     "summaryEn": "JBL JR POP.",
     "sources": [
       "https://likemobile.am/en/jbl-jr-pop-red",
-      "https://support.jbl.com/id/en/speakers/speakers-portable/JR+POP.html"
+      "https://support.jbl.com/id/en/speakers/speakers-portable/JR+POP.html",
+      "https://cdn.shopify.com/s/files/1/0002/6483/0990/files/JBL_JRPOP_Spec_Sheet_English.pdf"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "JBL manuals disagree (4.1 in EN/FR, 4.2 in DE/DA) (checked 2026-10-23)"
-    },
     "body": {
       "weight": 120
+    },
+    "connectivity": {
+      "bluetooth": "4.2"
     }
   },
   {
@@ -93677,20 +93692,21 @@
     "summaryEn": "LG NP3530.",
     "sources": [
       "https://vlv.am/en/Product/4607",
-      "https://www.lg.com/us/home-audio/lg-NP3530"
+      "https://www.lg.com/us/home-audio/lg-NP3530",
+      "https://www.bhphotovideo.com/c/product/965842-REG/lg_electronics_np3530_portable_speaker.html"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 500
     },
     "colors": [
       "White"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "3.0"
+    }
   },
   {
     "id": "panasonic-rp-hje118-earphones",
@@ -94549,19 +94565,18 @@
     "display": {
       "size": 34,
       "resolution": "3440x1440",
-      "refresh": 180
+      "refresh": 180,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "Hisense 34G6K-PRO.",
     "sources": [
-      "https://vlv.am/en/Product/39706"
+      "https://vlv.am/en/Product/39706",
+      "https://zit.ng/products/hisense-34-inch-curved-1080p-monitor-his34g6k-pro"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "display.type": "Hisense's page does not name the panel type (checked 2026-10-23)"
-    },
     "colors": [
       "Black"
     ]
@@ -96007,20 +96022,21 @@
     "summaryEn": "Panasonic SC-BMAX10.",
     "sources": [
       "https://vlv.am/en/Product/38725",
-      "https://help.na.panasonic.com/answers/features-and-specifications-home-audio-sc-bmax10e-ww-sc-bmax5e-ww/"
+      "https://help.na.panasonic.com/answers/features-and-specifications-home-audio-sc-bmax10e-ww-sc-bmax5e-ww/",
+      "https://www.ep-online.ch/pluess/de/p/1461484/sc-bmax10e-k"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 9300
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "panasonic-sc-tmax15",
@@ -96087,20 +96103,21 @@
     "summaryEn": "Panasonic SC-TMAX45.",
     "sources": [
       "https://vlv.am/en/Product/38723",
-      "https://www.panasonic.com/ae/consumer/home-entertainment/audio/mini-systems/sc-tmax45.html"
+      "https://www.panasonic.com/ae/consumer/home-entertainment/audio/mini-systems/sc-tmax45.html",
+      "https://www.panasonic.com/nz/consumer/television-audio/audio/bluetooth-speakers/sc-tmax45.specs.html"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 12000
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "philips-223v5lhsb2",
@@ -96292,21 +96309,22 @@
     "sources": [
       "https://vlv.am/en/Product/47863",
       "https://e-catalog.com/cmp/179443/hw-b750f-vs-hw-b650/",
-      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b750f-ru"
+      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b750f-ru",
+      "https://manuals.plus/m/f02389b9aa3ab56f9f9128d5b498317a6e2dc3d57b1bcd83365548ee16974ca6"
     ],
     "unsure": [
       "popularity",
       "body.weight"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 3200
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "samsung-hw-q600c",
@@ -96375,20 +96393,21 @@
     "sources": [
       "https://vlv.am/en/Product/47864",
       "https://www.samsung.com/in/audio-devices/soundbar/q800h-black-hw-q800h-xl/",
-      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-q800h-py"
+      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-q800h-py",
+      "https://shop.post.ch/de/elektronik/audio/lautsprecher/samsung-soundbar-q-series-hw-q800h-5-1-2-kanal/p/892521"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 5100
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.3"
+    }
   },
   {
     "id": "samsung-hw-q930h",
@@ -96497,21 +96516,22 @@
     "summaryEn": "Samsung HW-A450.",
     "sources": [
       "https://vlv.am/en/Product/17931",
-      "https://e-catalog.com/SAMSUNG-HW-A450.htm"
+      "https://e-catalog.com/SAMSUNG-HW-A450.htm",
+      "https://www.easylounge.com/barre-de-son/samsung-hw-a450-noir-70125"
     ],
     "unsure": [
       "popularity",
       "body.weight"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 1500
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "samsung-hw-a45c",
@@ -96857,20 +96877,21 @@
     "summaryEn": "Sony HT-S350.",
     "sources": [
       "https://vlv.am/en/Product/12384",
-      "https://www.sony-asia.com/electronics/support/sound-bars-home-theater-systems-sound-bars-surround-speakers/ht-s350/specifications"
+      "https://www.sony-asia.com/electronics/support/sound-bars-home-theater-systems-sound-bars-surround-speakers/ht-s350/specifications",
+      "https://www.sony-mea.com/en/electronics/sound-bars/ht-s350/specifications"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 2400
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "sony-srs-xg500",
@@ -96897,20 +96918,21 @@
     "summaryEn": "Sony SRS-XG500.",
     "sources": [
       "https://vlv.am/en/Product/18672",
-      "https://www.rtings.com/speaker/reviews/sony/srs-xg500"
+      "https://www.rtings.com/speaker/reviews/sony/srs-xg500",
+      "https://drhead.ae/brands/sony/products/personal-audio/wireless-speakers/party"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Sony does not state it; retailers disagree (4.2 vs 5.0) (checked 2026-10-23)"
-    },
     "body": {
       "weight": 5600
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "sony-ult-field-5",
@@ -105552,7 +105574,8 @@
     "summaryEn": "Apple EarPods (3.5 mm).",
     "sources": [
       "https://mobilecentre.am/product/apple-earpods-with-3.5mm-headphone-plug-mwu53/32390/",
-      "https://mobilecentre.am/product/apple-micearpods-with-3.5-mm-headphone-plug/19829/"
+      "https://mobilecentre.am/product/apple-micearpods-with-3.5-mm-headphone-plug/19829/",
+      "https://office.quadient.co.uk/apple-earpods-with-3-5mm-headphone-plug-mnhf2zm-a--1"
     ],
     "unsure": [
       "popularity"
@@ -105560,12 +105583,12 @@
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
     },
-    "specNA": {
-      "body.weight": "Apple lists no weight for EarPods (checked 2026-10-24)"
-    },
     "colors": [
       "White"
-    ]
+    ],
+    "body": {
+      "weight": 10.2
+    }
   },
   {
     "id": "xiaomi-mi-true-wireless-earbuds-basic-2s",
