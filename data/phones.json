@@ -5156,6 +5156,12 @@
         "storage": 1024,
         "size": 15,
         "priceAmd": 899000
+      },
+      {
+        "ram": 24,
+        "storage": 512,
+        "size": 15,
+        "priceAmd": 805000
       }
     ],
     "body": {
@@ -5876,7 +5882,8 @@
       {
         "ram": 48,
         "storage": 2048,
-        "priceAmd": 2533900
+        "priceAmd": 2533900,
+        "size": 16
       }
     ],
     "body": {
@@ -14033,6 +14040,12 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 299000
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 258000,
+        "size": 15
       }
     ],
     "battery": {
@@ -19214,7 +19227,9 @@
       "Obsidian",
       "Olive",
       "Fog",
-      "Canyon"
+      "Canyon",
+      "Green",
+      "Mint"
     ],
     "summaryEn": "The largest Pixel: a 6.8-inch 120 Hz LTPO screen on Tensor G6, with a 42 MP front camera.",
     "unsure": [
@@ -19651,7 +19666,8 @@
     "colors": [
       "Sand",
       "Black",
-      "Gray"
+      "Gray",
+      "White"
     ]
   },
   {
@@ -30845,7 +30861,8 @@
       "Pink",
       "Light Blue",
       "Beige",
-      "Teal"
+      "Teal",
+      "Mint"
     ],
     "audio": {
       "form": "tws",
@@ -32404,6 +32421,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 221900
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 262400
       }
     ],
     "display": {
@@ -32607,6 +32629,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 379900
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 334400
       }
     ],
     "display": {
@@ -33214,6 +33241,11 @@
         "ram": 16,
         "storage": 1024,
         "priceAmd": 459900
+      },
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 584400
       }
     ],
     "battery": {
@@ -44003,7 +44035,8 @@
     ],
     "colors": [
       "Cream",
-      "Green"
+      "Green",
+      "Silver"
     ],
     "summaryEn": "The first 3 nm smartwatch chip, and the sensor array that came with it.",
     "unsure": [
@@ -44122,7 +44155,8 @@
     "os": "Wear OS 6, One UI Watch",
     "colors": [
       "Black",
-      "White"
+      "White",
+      "Silver"
     ],
     "summaryEn": "The Watch 8 with a steel case and the rotating bezel.",
     "sources": [
@@ -52306,6 +52340,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 559000
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 565000
       }
     ],
     "colors": [
@@ -52487,7 +52526,8 @@
     "colors": [
       "Black",
       "Deep Violet",
-      "Deep Blue"
+      "Deep Blue",
+      "Pink"
     ],
     "summaryEn": "Xiaomi’s 2026 T-series flagship, sold here in 12/256 and 12/512.",
     "unsure": [
@@ -53723,6 +53763,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 80900
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 64900
       }
     ],
     "display": {
@@ -61453,7 +61498,8 @@
       "Green",
       "Midnight",
       "Pink",
-      "Starlight"
+      "Starlight",
+      "Red"
     ],
     "connectivity": {
       "bluetooth": "5.0",
@@ -81691,6 +81737,12 @@
         "ram": 8,
         "storage": 128,
         "priceAmd": 182000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 339400,
+        "size": 15
       }
     ],
     "battery": {
@@ -82370,6 +82422,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 539000
+      },
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 626400
       }
     ],
     "battery": {
@@ -82921,6 +82978,17 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 285000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 275000
+      },
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 305000,
+        "size": 15
       }
     ],
     "battery": {
@@ -84633,6 +84701,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 616400
+      },
+      {
+        "ram": 32,
+        "storage": 2048,
+        "priceAmd": 1378400
       }
     ],
     "display": {
@@ -85130,6 +85203,12 @@
         "storage": 512,
         "size": 16,
         "priceAmd": 701400
+      },
+      {
+        "ram": 96,
+        "storage": 512,
+        "priceAmd": 1059400,
+        "size": 16
       }
     ],
     "display": {
@@ -87530,7 +87609,8 @@
       "Black",
       "Emerald",
       "Gray",
-      "Crimson"
+      "Crimson",
+      "Grey"
     ]
   },
   {
@@ -93132,7 +93212,8 @@
       "Light Green",
       "Light Pink",
       "Silver",
-      "Gray"
+      "Gray",
+      "Lavender"
     ],
     "summaryEn": "Samsung Galaxy Tab S9 FE+: 12.4-inch IPS LCD display, Samsung Exynos 1380, 8 GB RAM, 10,090 mAh battery, S Pen in the box.",
     "sources": [
@@ -108358,6 +108439,11 @@
         "ram": 24,
         "storage": 512,
         "priceAmd": 799000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 495000
       }
     ],
     "colors": [
@@ -129548,7 +129634,9 @@
     ],
     "colors": [
       "Inox",
-      "Black"
+      "Black",
+      "Beige",
+      "Silver"
     ]
   },
   {
