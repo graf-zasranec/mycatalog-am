@@ -84,6 +84,8 @@ for (const p of phones) {
   // dated from its latest fall, not its first
   const top = run.reduce((a, b) => b.lo >= a.lo ? b : a);
   if ((top.lo - last.lo) / top.lo < 0.05) continue;
+  // A spike then a partial return is not a fall: BaByliss ST394E went 24 900 -> 34 900 -> 27 900 and read as -7 000.
+  if (run.some(v => v.lo < last.lo)) continue;
   DROPS.push({ id: p.id, lo: last.lo, since: top.d, fall: top.lo - last.lo, run: run.map(v => v.lo),
     loShop: offs[0].shop, shops: last.shops, pop: p.popularity || 0 });
 }

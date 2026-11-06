@@ -1347,7 +1347,7 @@ function paintChrome() {
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
     + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
   paintCmpCount();
-  $('#foot').innerHTML = `<b>Better.am</b><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
+  $('#foot').innerHTML = `<b>Better.am</b><a href="${st.lang === 'hy' ? '' : st.lang + '/'}deals/">${esc({ hy: 'Ինչն է էժանացել', ru: 'Что подешевело', en: 'What got cheaper' }[st.lang] || 'What got cheaper')}</a><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
     + `<nav class="ft-categories" aria-label="${esc(t('nav.catalog'))}">${[...new Set(DATA.map(catOf))].sort((a,b)=>catName(a).localeCompare(catName(b),st.lang)).map(cat=>`<a href="${st.lang === 'hy' ? '/' : '/' + st.lang + '/'}c/${esc(cat)}/" data-route="#/c/${esc(cat)}">${esc(catName(cat))}</a>`).join('')}</nav>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a>${typeof window.gtag === 'function' ? `<button type="button" class="analytics-settings" data-analytics-settings>${({hy:'Վիճակագրության կարգավորումներ',ru:'Настройки статистики',en:'Analytics settings'})[st.lang]}</button>` : ''}</span>`;
