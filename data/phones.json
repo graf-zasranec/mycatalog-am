@@ -90573,20 +90573,21 @@
     "summaryEn": "JBL SoundBar 1000.",
     "sources": [
       "https://likemobile.am/en/jbl-soundbar-1000",
-      "https://www.jbl.com/soundbars/BAR-1000-.html"
+      "https://www.jbl.com/soundbars/BAR-1000-.html",
+      "https://support.jbl.com/dk/da/speakers/speakers-soundbars/BAR-1000-.html"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 3700
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "5.0"
+    }
   },
   {
     "id": "jbl-soundbar-800",
@@ -96180,17 +96181,18 @@
     "summaryEn": "JBL Bar 1000 Pro.",
     "sources": [
       "https://vlv.am/en/Product/25034",
-      "https://global.jbl.com/soundbars/BAR-1000-.html"
+      "https://global.jbl.com/soundbars/BAR-1000-.html",
+      "https://www.digit.in/audio/jbl-bar-1000-pro-880w-bluetooth-soundbar.html"
     ],
     "unsure": [
       "popularity",
       "body.weight"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "JBL does not state it; retailers disagree (5.0 vs 5.3) (checked 2026-10-23)"
-    },
     "body": {
       "weight": 3700
+    },
+    "connectivity": {
+      "bluetooth": "5.0"
     }
   },
   {
@@ -97504,20 +97506,21 @@
     "sources": [
       "https://vlv.am/en/Product/47862",
       "https://www.samsung.com/levant/audio-devices/soundbar/b650f-black-hw-b650f-zn/",
-      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b650f-ru"
+      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b650f-ru",
+      "https://www.appliancesonline.com.au/ak/e/b/4/a/eb4abc17bd44ca848e06d2eec49998f095b876fa_B650F_B_Series_Soundbar_Spec_Sheet.pdf"
     ],
     "unsure": [
       "popularity"
     ],
-    "specNA": {
-      "connectivity.bluetooth": "Bluetooth is listed but no version is published on the maker or retailer spec sheets (checked 2026-10-23)"
-    },
     "body": {
       "weight": 2200
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "bluetooth": "4.2"
+    }
   },
   {
     "id": "samsung-hw-b750f",
@@ -159139,7 +159142,8 @@
       }
     ],
     "appliance": {
-      "type": "boiler"
+      "type": "boiler",
+      "power": 150
     },
     "battery": {},
     "colors": [
@@ -159147,11 +159151,9 @@
     ],
     "summaryEn": "Bosch Condensing Gas Boiler WBC24-1C.",
     "sources": [
-      "https://vlv.am/en/Product/18874"
-    ],
-    "specNA": {
-      "appliance.power": "Electrical consumption is not published in the sources checked on 2026-11-06."
-    }
+      "https://vlv.am/en/Product/18874",
+      "https://www.bosch-homecomfort.com/uz/media/country_pool/condens2500w_im.pdf"
+    ]
   },
   {
     "id": "bosch-wbc-28-1c",
@@ -159179,7 +159181,8 @@
       }
     ],
     "appliance": {
-      "type": "boiler"
+      "type": "boiler",
+      "power": 150
     },
     "battery": {},
     "colors": [
@@ -159187,11 +159190,9 @@
     ],
     "summaryEn": "Bosch Condensing Gas Boiler WBC 28-1C.",
     "sources": [
-      "https://vlv.am/en/Product/35366"
-    ],
-    "specNA": {
-      "appliance.power": "Electrical consumption is not published in the sources checked on 2026-11-06."
-    }
+      "https://vlv.am/en/Product/35366",
+      "https://www.bosch-homecomfort.com/uz/media/country_pool/condens2500w_im.pdf"
+    ]
   },
   {
     "id": "bosch-gc1200w-24",
