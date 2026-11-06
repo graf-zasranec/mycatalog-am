@@ -18,7 +18,17 @@ for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
   await page.goto(base+(lang==='hy'?'/':`/${lang}/`));
   await page.waitForFunction(()=>document.documentElement.dataset.appReady==='true');
   const form=page.locator('.bx-filter-form');
-  const openSection=async key=>{const section=form.locator(`[data-bx-section="${key}"]`);if(await section.getAttribute('open')===null)await section.locator('summary').click();};
+  const openSection=async key=>{
+   const section=form.locator(`[data-bx-section="${key}"]`);
+   // Compact filters nest secondary controls under More filters. Open the
+   // enclosing disclosures through their summaries, just as a visitor does.
+   const parents=section.locator('xpath=ancestor::details');
+   for(let i=0;i<await parents.count();i++){
+    const parent=parents.nth(i);
+    if(await parent.getAttribute('open')===null)await parent.locator(':scope > summary').click();
+   }
+   if(await section.getAttribute('open')===null)await section.locator(':scope > summary').click();
+  };
   if(width<800)await page.locator('[data-bx-mobile-category]').click();
   await form.locator('.bx-category-choice:has(input[value="headphones"])').click();
   await page.waitForURL(/#\/c\/headphones$/);
@@ -27,7 +37,7 @@ for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
   assert.equal(await form.locator('[data-bx-category]').count(),0,'category page hides global categories');checks++;
   const ids=await page.locator('.pcard').evaluateAll(es=>es.map(e=>e.dataset.id));
   assert.ok(ids.length&&ids.every(id=>catalogue.get(id)?.category==='headphones'),'category click immediately changes results');checks++;
-  await openSection('price');
+  assert.ok(await form.locator('[data-bx-min]').isVisible()&&await form.locator('[data-bx-max]').isVisible(),'price controls stay directly accessible');checks++;
   await form.locator('[data-bx-max]').fill('1000000');
   await form.locator('[data-bx-min]').fill('1200000');
   await form.locator(width<800?'.bx-apply':'.bx-filter-quick').click();

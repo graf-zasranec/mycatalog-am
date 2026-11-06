@@ -43562,10 +43562,10 @@
       "ppi": 206
     },
     "chipset": {
-      "name": "Snapdragon 6 Gen 3",
+      "name": "MediaTek MT8775",
       "process": "4 nm",
       "gpu": "Arm Mali-G615 MC2",
-      "cpu": "Octa-core (4x2.4 GHz Cortex-A78 & 4x1.8 GHz Cortex-A55)"
+      "cpu": "Octa-core (2.5 GHz, 2.0 GHz)"
     },
     "variants": [
       {
@@ -43593,12 +43593,12 @@
     },
     "connectivity": {
       "network": "Wi-Fi, or 5G",
-      "wifi": "Wi-Fi 6",
+      "wifi": "Wi-Fi 5",
       "bluetooth": "5.3",
       "nfc": false
     },
     "cardSlot": true,
-    "os": "Android 15, One UI 7",
+    "os": "Android 16, One UI 8",
     "colors": [
       "Silver",
       "Gray"
