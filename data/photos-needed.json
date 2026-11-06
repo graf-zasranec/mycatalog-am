@@ -4,9 +4,9 @@
  "measurement": "native visible product long edge, alpha > 128; SHA256-bound to cutout",
  "note": "Images below600px visible native long edge need a larger exact original, never enlargement. Unmeasured/stale cutouts need tools/thumbnails.py. Identity, finish and cutout quality still require visual review.",
  "unmeasured": 0,
- "total": 3496,
+ "total": 3498,
  "missing": 0,
- "tooSmall": 294,
+ "tooSmall": 295,
  "products": [
   {
    "id": "sony-playstation-vr2",
@@ -759,6 +759,22 @@
    "visibleWidth": 530,
    "visibleHeight": 527,
    "visibleLong": 530
+  },
+  {
+   "id": "jbl-tune-buds-2",
+   "brand": "JBL",
+   "name": "Tune Buds 2",
+   "category": "headphones",
+   "shops": 2,
+   "query": "JBL Tune Buds 2",
+   "what": "too small",
+   "file": "images/cut/jbl-tune-buds-2__black.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 161,
+   "visibleHeight": 152,
+   "visibleLong": 161
   },
   {
    "id": "jbl-wave-300-tws",
