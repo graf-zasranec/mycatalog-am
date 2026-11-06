@@ -66,7 +66,8 @@
       },
       "offerAxes": {
         "ram": 16,
-        "storage": 512
+        "storage": 512,
+        "size": 15
       }
     },
     {
@@ -80,7 +81,8 @@
       },
       "offerAxes": {
         "ram": 16,
-        "storage": 512
+        "storage": 512,
+        "size": 15
       }
     },
     {
@@ -94,7 +96,8 @@
       },
       "offerAxes": {
         "ram": 16,
-        "storage": 512
+        "storage": 512,
+        "size": 15
       }
     },
     {
@@ -108,7 +111,8 @@
       },
       "offerAxes": {
         "ram": 16,
-        "storage": 512
+        "storage": 512,
+        "size": 15
       }
     },
     {
@@ -4078,6 +4082,17 @@
       "offerAxes": {
         "ram": 48
       }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-pro-142-m5-max-mgdu4space-black",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "ram": 36,
+        "storage": 2048
+      },
+      "source": "https://redstore.am/en/product/macbook-pro-142-m5-max-mgdu4space-black",
+      "evidence": "Shop page 2026-11-06: 36GB LPDDR5, 2TB SSD."
     }
   ],
   "dell-14-plus-2in1-db04250": [
@@ -4285,6 +4300,17 @@
       "matchAxes": {
         "storage": 512
       }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/hp-15-fd0153dx",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "source": "https://redstore.am/en/product/hp-15-fd0153dx",
+      "evidence": "Shop page 2026-11-06: 8GB DDR4, 256GB SSD."
     }
   ],
   "hp-elitebook-ultra-g1q": [
@@ -5430,6 +5456,17 @@
           "name": "Intel Core i5"
         }
       }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/lenovo-v15-g4-iru",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "source": "https://redstore.am/en/product/lenovo-v15-g4-iru",
+      "evidence": "Shop page 2026-11-06: 8GB DDR4, 256GB SSD."
     }
   ],
   "dell-vostro-3910": [
@@ -6268,7 +6305,9 @@
         "cell": false
       },
       "offerAxes": {
-        "color": "Gray"
+        "color": "Gray",
+        "ram": 6,
+        "storage": 128
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected source explicitly states Grey; spelling canonicalized to existing Gray."
@@ -10375,6 +10414,16 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manual exact Eldorado selected product H1/labelled Color field: Headphones Beats Studio Pro Wireless (A2924). Manufacturer SKU suffix BLK/BK=Black, WHT=White, BLU=Blue, SIL=Silver, MIT=Mint only when explicitly printed in exact product heading."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/beats-studio-pro-headphones-kim-edition-mw673-dune",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Dune"
+      },
+      "source": "https://redstore.am/en/product/beats-studio-pro-headphones-kim-edition-mw673-dune",
+      "evidence": "Shop title names the colour."
     }
   ],
   "google-fitbit-air": [
@@ -10413,6 +10462,16 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manual exact merchant page H1 or labelled Color field: Google Fitbit Air Berry; selected finish Berry. Squad maps to existing BlackCamo; EC9255.M labelledSilver maps to catalogueMetal. No child colour/price inferred from a family selector."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/google-fitbit-air-fog",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Fog"
+      },
+      "source": "https://redstore.am/en/product/google-fitbit-air-fog",
+      "evidence": "Shop title names the colour."
     }
   ],
   "harman-kardon-studio-8": [
@@ -12709,6 +12768,16 @@
       },
       "source": "https://istyle.am/en/product/Harman%20Kardon%20%20LUNA%202?color=145&variant=775",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/harman-kardon-luna2miteu-t.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Mint"
+      },
+      "source": "https://www.zigzag.am/am/harman-kardon-luna2miteu-t.html",
+      "evidence": "Shop page 2026-11-06: Color Ice Mint."
     }
   ],
   "jbl-tune-buds-2": [
@@ -14908,6 +14977,16 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manual visual review of exact merchant listing product image (not shoplogo), source URL/title and configured RAM/storage retained. Advertised finish Coral. Evidence manual-shop-photos-v2 contact sheets and shop-photo-proof-v2/176.png. Generic multi-colour collage, repeated AppZone placeholders and ambiguous watch-band/case images excluded."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/yandex-smart-station-lite-2-yndx-00026-violet.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://www.zigzag.am/am/yandex-smart-station-lite-2-yndx-00026-violet.html",
+      "evidence": "Shop title says Violet."
     }
   ],
   "dyson-ontrac": [
@@ -15305,6 +15384,30 @@
       },
       "source": "https://www.pixel.am/product/xiaomi-poco-m7",
       "evidence": "Manually selected 8/128 ԳԲ / Սև; Գինը: 64,900 AMD; stock available; "
+    }
+  ],
+  "apple-magic-keyboard-touch-id-numeric": [
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/apple-magic-keyboard-touch-id-numeric-keypad-ru-mk2c3rs-a.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://www.zigzag.am/am/apple-magic-keyboard-touch-id-numeric-keypad-ru-mk2c3rs-a.html",
+      "evidence": "MK2C3 is the white-key model."
+    }
+  ],
+  "xiaomi-redmi-8-lite": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/xiaomi-redmi-buds-8-lite-blue",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "https://redstore.am/en/product/xiaomi-redmi-buds-8-lite-blue",
+      "evidence": "Shop title names the colour."
     }
   ]
 }

@@ -960,6 +960,8 @@ if (process.argv[2] === '--selftest') {
     ['apple-imac-24-m6', 'Apple iMac 24 M6 10/10 16GB/256GB Blue /MH094'],
     ['apple-mac-studio-m5-ultra', 'Apple Mac Studio M5 Ultra 96GB 1TB'],
     ['apple-mac-mini-m5-pro', 'Apple Mac Mini M5 Pro'],
+    ['canon-eos-r50-v-14-30', 'Canon EOS R50 V Creator'],
+    ['harman-kardon-luna-2', 'Harman Kardon LUNA2MITEU/T'],
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
