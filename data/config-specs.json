@@ -2368,6 +2368,105 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected 1TB rear-body photo is the existing Cream/white finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-z-fold8-ultra-512gb-violet-shadow/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:09.090Z",
+      "matchAxes": {
+        "storage": 512,
+        "esim": false,
+        "color": "Violet Shadow"
+      },
+      "offerAxes": {
+        "ram": 12
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact Viva 512GB variant specification table RAM12, ROM512."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-z-fold8-ultra-512gb-graphite/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:09.097Z",
+      "matchAxes": {
+        "storage": 512,
+        "esim": false,
+        "color": "Graphite"
+      },
+      "offerAxes": {
+        "ram": 12
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact Viva 512GB variant specification table RAM12, ROM512."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-z-fold8-ultra-512gb-cream/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:10.874Z",
+      "matchAxes": {
+        "storage": 512,
+        "esim": false,
+        "color": "Cream"
+      },
+      "offerAxes": {
+        "ram": 12
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact Viva 512GB variant specification table RAM12, ROM512."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-z-fold8-ultra-512gb-violet-shadow/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:09.090Z",
+      "matchAxes": {
+        "ram": 12,
+        "storage": 512,
+        "esim": false,
+        "color": "Violet Shadow"
+      },
+      "offerAxes": {
+        "ram": 12
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact Viva 512GB variant specification table RAM12, ROM512."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-z-fold8-ultra-512gb-graphite/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:09.097Z",
+      "matchAxes": {
+        "ram": 12,
+        "storage": 512,
+        "esim": false,
+        "color": "Graphite"
+      },
+      "offerAxes": {
+        "ram": 12
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact Viva 512GB variant specification table RAM12, ROM512."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-z-fold8-ultra-512gb-cream/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:10.874Z",
+      "matchAxes": {
+        "ram": 12,
+        "storage": 512,
+        "esim": false,
+        "color": "Cream"
+      },
+      "offerAxes": {
+        "ram": 12
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact Viva 512GB variant specification table RAM12, ROM512."
     }
   ],
   "xiaomi-17-pro-max": [
@@ -2690,6 +2789,262 @@
       "offerAxes": {
         "ram": 4
       }
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18-4gb_128gb/34462/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:12.925Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 128
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18/34465/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:15.062Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18-6gb_128gb-_black_/34465/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:16.548Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18-8gb_256gb-_black_/34468/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:17.404Z",
+      "matchAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/samsung-galaxy-a18-6gb128gb-black",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:04:02.901Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "esim": false
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-a18-4gb-128gb-black/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:10.477Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 128,
+        "esim": false
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-a18-6gb-128gb-black/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:17.734Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "esim": false
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-a18-8gb-256gb-black/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:23.272Z",
+      "matchAxes": {
+        "ram": 8,
+        "storage": 256,
+        "esim": false
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18-4gb_128gb/34462/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:12.925Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 128,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18/34465/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:15.062Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18-6gb_128gb-_black_/34465/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:16.548Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-a18-8gb_256gb-_black_/34468/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:03:17.404Z",
+      "matchAxes": {
+        "ram": 8,
+        "storage": 256,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/samsung-galaxy-a18-6gb128gb-black",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:04:02.901Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "esim": false,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-a18-4gb-128gb-black/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:10.477Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 128,
+        "esim": false,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-a18-6gb-128gb-black/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:17.734Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "esim": false,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/en/product/samsung-galaxy-a18-8gb-256gb-black/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:23.272Z",
+      "matchAxes": {
+        "ram": 8,
+        "storage": 256,
+        "esim": false,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact selected product title explicitly Black; RAM/storage title matches existing offer. Palette omitted the black finish."
     }
   ],
   "xiaomi-redmi-note-11-proplus-5g": [
@@ -2740,6 +3095,37 @@
       "offerAxes": {
         "ram": 8
       }
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/xiaomi-poco-f5-_12gb_256gb_/29910/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:54.373Z",
+      "matchAxes": {
+        "ram": 12,
+        "storage": 256
+      },
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 PocoF5 12/256 (White); catalogue omitted White."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/xiaomi-poco-f5-_12gb_256gb_/29910/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:54.373Z",
+      "matchAxes": {
+        "ram": 12,
+        "storage": 256,
+        "color": "White"
+      },
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 PocoF5 12/256 (White); catalogue omitted White."
     }
   ],
   "apple-iphone-17-pro-max": [
@@ -3639,6 +4025,25 @@
       "offerAxes": {
         "storage": 64
       }
+    },
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/hy/devices/lenovo-tab-m9-4-64g-grey/2539/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:40.786Z",
+      "matchAxes": {
+        "cell": false,
+        "color": "Grey"
+      },
+      "offerAxes": {
+        "ram": 4,
+        "storage": 64
+      },
+      "correctAxes": {
+        "cell": true
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Team exact SKUZAC50096RU, code240106: RAM4GB, internalmemory64GB, network4G/LTEWiFi. Read manufacturer/shop source via web and browser; page uses h2."
     }
   ],
   "samsung-galaxy-tab-s8": [
@@ -4142,6 +4547,35 @@
       "correctAxes": {
         "storage": 256
       }
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/dell-vostro-3910/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:38.515Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT DellVostro3910 specification table RAM8GB, Memory256GB."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/dell-vostro-3910/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:38.515Z",
+      "matchAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "offerAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT DellVostro3910 specification table RAM8GB, Memory256GB."
     }
   ],
   "lenovo-v15-g4": [
@@ -4306,6 +4740,23 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Manually opened product. Selected H1 and specification colour agree on this default finish; other picker finishes are not presumed selected."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/apple-watch-se-3-40mm/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:02:35.820Z",
+      "matchAxes": {
+        "storage": 44
+      },
+      "offerAxes": {
+        "color": "Midnight"
+      },
+      "correctAxes": {
+        "storage": 40
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT selected product title AppleWatchSE3 40mmblack; previous44mm assignment contradicted source. Black maps to ApplecaseMidnight; source is case+bandblack."
     }
   ],
   "apple-watch-series-11": [
@@ -4350,6 +4801,35 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact MEV04 case finish is Space Gray in title and source table; black is the sport-band colour."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/apple-watch-series-11-gps-46mm-space-grey-black-sport-band-s-m-mev04rk-a.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:51.895Z",
+      "matchAxes": {
+        "storage": 46
+      },
+      "offerAxes": {
+        "color": "Space Gray"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact MEV04RK/A specification colour SpaceGray; bandBlack is not watchcase colour."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/apple-watch-series-11-gps-46mm-space-grey-black-sport-band-s-m-mev04rk-a.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:51.895Z",
+      "matchAxes": {
+        "storage": 46,
+        "color": "Space Gray"
+      },
+      "offerAxes": {
+        "color": "Space Gray"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact MEV04RK/A specification colour SpaceGray; bandBlack is not watchcase colour."
     }
   ],
   "apple-watch-ultra-3": [
@@ -4524,6 +5004,39 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact source Awesome Charcoal is the existing catalogue dark/black finish; RAM6GB128GB verified."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/samsung-galaxy-a27-6gb-128gb-awesome-charcoal.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:59.082Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "esim": false
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact A27 specification AwesomeCharcoal; maps to existing catalogue Black."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/samsung-galaxy-a27-6gb-128gb-awesome-charcoal.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:05:59.082Z",
+      "matchAxes": {
+        "ram": 6,
+        "storage": 128,
+        "esim": false,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact A27 specification AwesomeCharcoal; maps to existing catalogue Black."
     }
   ],
   "samsung-galaxy-active-2": [
@@ -4892,6 +5405,32 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected exact Sony SKU source title/technical table explicitly names this finish; missing from catalogue palette."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/sony-wf-c700n-gz-e.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:00.087Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact WFC700N/GZ E specification colour Կանաչ (Green)."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/sony-wf-c700n-gz-e.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:00.087Z",
+      "matchAxes": {
+        "color": "Green"
+      },
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact WFC700N/GZ E specification colour Կանաչ (Green)."
     }
   ],
   "sony-wh-1000xm5": [
@@ -5000,6 +5539,32 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact Sony LZ E source table states Blue; OUT OF STOCK, retain URL and hide unavailable price."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/en/sony-wi-c100-wz-e.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:01.026Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact WIC100/WZ E specification colour White."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/en/sony-wi-c100-wz-e.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:01.026Z",
+      "matchAxes": {
+        "color": "White"
+      },
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Zigzag exact WIC100/WZ E specification colour White."
     }
   ],
   "sony-pulse-3d-wireless-headset": [
@@ -5498,6 +6063,648 @@
           "name": "AMD Ryzen 7 8840HS"
         }
       }
+    }
+  ],
+  "lenovo-loq-15": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/laptop-lenovo-loq-15irx9-83dv009hrk",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:12.830Z",
+      "matchAxes": {
+        "color": "Luna Gray"
+      },
+      "offerAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "source": "https://psref.lenovo.com/Detail/LOQ_15IRX9?M=83DV009HRK",
+      "evidence": "Exact factory part83DV009HRK: LenovoPSREF2x8GBDDR5and512GBSSD. Shopmatchingpartnumber; noRAMguessedfromfamily."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/laptop-lenovo-loq-15irx9-83dv009hrk",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:12.830Z",
+      "matchAxes": {
+        "ram": 16,
+        "storage": 512,
+        "color": "Luna Gray"
+      },
+      "offerAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "source": "https://psref.lenovo.com/Detail/LOQ_15IRX9?M=83DV009HRK",
+      "evidence": "Exact factory part83DV009HRK: LenovoPSREF2x8GBDDR5and512GBSSD. Shopmatchingpartnumber; noRAMguessedfromfamily."
+    }
+  ],
+  "asus-vivobook-x1504va-nj451": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/asus-vivobook-x1504va-nj451/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:40.064Z",
+      "matchAxes": {
+        "storage": 256
+      },
+      "offerAxes": {
+        "ram": 8
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT X1504VA-NJ451 product table RAM8GB, Memory256GB."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/asus-vivobook-x1504va-nj451/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:01:40.064Z",
+      "matchAxes": {
+        "ram": 8,
+        "storage": 256
+      },
+      "offerAxes": {
+        "ram": 8
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT X1504VA-NJ451 product table RAM8GB, Memory256GB."
+    }
+  ],
+  "dyson-ht01-airstrait-straightener-plum": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/dyson-airstrait-straightener-ht01-nicel-copper/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:37.421Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Nickel/Copper"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact merchant product title and product description explicitly state this finish; it was omitted from catalogue palette."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/dyson-airstrait-ht01-nicelcopper",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:01.451Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Nickel/Copper"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact LikeMobile H1 DysonHT01 (Nicel/Copper); canonical Nickel/Copper."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/dyson-airstrait-straightener-ht01-nicel-copper/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:37.421Z",
+      "matchAxes": {
+        "color": "Nickel/Copper"
+      },
+      "offerAxes": {
+        "color": "Nickel/Copper"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact merchant product title and product description explicitly state this finish; it was omitted from catalogue palette."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/dyson-airstrait-ht01-nicelcopper",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:01.451Z",
+      "matchAxes": {
+        "color": "Nickel/Copper"
+      },
+      "offerAxes": {
+        "color": "Nickel/Copper"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact LikeMobile H1 DysonHT01 (Nicel/Copper); canonical Nickel/Copper."
+    }
+  ],
+  "jbl-live-flex": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-live-flex-rose/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:40.294Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Rose"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact merchant product title and product description explicitly state this finish; it was omitted from catalogue palette."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-live-flex-rose/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:40.294Z",
+      "matchAxes": {
+        "color": "Rose"
+      },
+      "offerAxes": {
+        "color": "Rose"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact merchant product title and product description explicitly state this finish; it was omitted from catalogue palette."
+    }
+  ],
+  "jbl-live-pro-2-tws": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-live-pro-2-twc-rose/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:40.661Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Rose"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact merchant product title and product description explicitly state this finish; it was omitted from catalogue palette."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-live-pro-2-twc-rose/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:06:40.661Z",
+      "matchAxes": {
+        "color": "Rose"
+      },
+      "offerAxes": {
+        "color": "Rose"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact merchant product title and product description explicitly state this finish; it was omitted from catalogue palette."
+    }
+  ],
+  "jbl-xtreme-3": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-xtreme-3-camouflage/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:34.027Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Black Camo"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT H1 Xtreme3Camouflage; matches catalogue BlackCamo finish."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-xtreme-3-camouflage/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:34.027Z",
+      "matchAxes": {
+        "color": "Black Camo"
+      },
+      "offerAxes": {
+        "color": "Black Camo"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT H1 Xtreme3Camouflage; matches catalogue BlackCamo finish."
+    }
+  ],
+  "jbl-xtreme-4": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-xtreme-4-squad/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:34.482Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Black Camo"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT H1 Xtreme4Squad; matches catalogue BlackCamo finish."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-xtreme-4-squad/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:34.482Z",
+      "matchAxes": {
+        "color": "Black Camo"
+      },
+      "offerAxes": {
+        "color": "Black Camo"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT H1 Xtreme4Squad; matches catalogue BlackCamo finish."
+    }
+  ],
+  "xiaomi-poco-f8-ultra": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-poco-f8-ultra-16-512/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:38.518Z",
+      "matchAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT product specification Color Black."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-poco-f8-ultra-16-512/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:38.518Z",
+      "matchAxes": {
+        "ram": 16,
+        "storage": 512,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iBOLIT product specification Color Black."
+    }
+  ],
+  "jbl-boombox-4": [
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/Boombox%204?color=45&variant=778_color_45",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:51.662Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Selected iStyle variant H1 Boombox4 (Black)."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/Boombox%204?color=68&variant=778_color_68",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:49.595Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Green and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/Boombox%204?color=45&variant=778_color_45",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:51.662Z",
+      "matchAxes": {
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Selected iStyle variant H1 Boombox4 (Black)."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/Boombox%204?color=140&variant=778_color_140",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:52.283Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Silver and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    }
+  ],
+  "jbl-tune-720-bt": [
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Tune%20720BT?color=96&variant=272",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:57.044Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Selected iStyle variant H1 Tune720BT (Blue)."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Tune%20720BT?color=97&variant=274",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:58.873Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Selected iStyle variant H1 Tune720BT (White)."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Tune%20720BT?color=96&variant=272",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:57.044Z",
+      "matchAxes": {
+        "color": "Blue"
+      },
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Selected iStyle variant H1 Tune720BT (Blue)."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Tune%20720BT?color=97&variant=274",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:58.873Z",
+      "matchAxes": {
+        "color": "White"
+      },
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Selected iStyle variant H1 Tune720BT (White)."
+    }
+  ],
+  "marshall-stanmore-3": [
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/marshall-stanmore-iii",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:10.041Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact LikeMobile product specification Color Black."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/marshall-stanmore-iii",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:10.041Z",
+      "matchAxes": {
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact LikeMobile product specification Color Black."
+    }
+  ],
+  "whoop-life": [
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/whoop-life-mg",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:14.741Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact LikeMobile product specification Color Black."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/whoop-life-mg",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:14.741Z",
+      "matchAxes": {
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact LikeMobile product specification Color Black."
+    }
+  ],
+  "jbl-charge-5": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://www.mobilecentre.am/product/jbl-charge-5-portable-wireless-speaker-_squad_/31840/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:47.406Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Camo"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 Charge5 (Squad); existing canonical Camo."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://www.mobilecentre.am/product/jbl-charge-5-portable-wireless-speaker-_squad_/31840/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:47.406Z",
+      "matchAxes": {
+        "color": "Camo"
+      },
+      "offerAxes": {
+        "color": "Camo"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 Charge5 (Squad); existing canonical Camo."
+    }
+  ],
+  "jbl-jr320bt": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/jbl-jr320-bluetooth-wireless-on-ear-headphone-_blue_/33919/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:50.226Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 JBLJR320 (Blue); catalogue omitted Blue."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/jbl-jr320-bluetooth-wireless-on-ear-headphone-_blue_/33919/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:50.226Z",
+      "matchAxes": {
+        "color": "Blue"
+      },
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 JBLJR320 (Blue); catalogue omitted Blue."
+    }
+  ],
+  "jbl-tune-110": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/jbl-headphone-t110-_red_/23467/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:51.654Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Red"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 JBLT110 (Red); catalogue omitted Red."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/jbl-headphone-t110-_red_/23467/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:51.654Z",
+      "matchAxes": {
+        "color": "Red"
+      },
+      "offerAxes": {
+        "color": "Red"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 JBLT110 (Red); catalogue omitted Red."
+    }
+  ],
+  "jbl-tune-215-tws": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/headphone-jbl-t215-tws-wireless-_pink_/23471/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:52.358Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Pink"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 JBLT215TWS (Pink); catalogue omitted Pink."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/headphone-jbl-t215-tws-wireless-_pink_/23471/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:52.358Z",
+      "matchAxes": {
+        "color": "Pink"
+      },
+      "offerAxes": {
+        "color": "Pink"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 JBLT215TWS (Pink); catalogue omitted Pink."
+    }
+  ],
+  "nokia-e3500": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_black_/23495/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:53.816Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 NokiaE3500 (Black); catalogue omitted Black."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/nokia-headphone-wireless-e3500-_black_/23495/",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:08:53.816Z",
+      "matchAxes": {
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact MobileCentre H1 NokiaE3500 (Black); catalogue omitted Black."
+    }
+  ],
+  "jbl-go-5": [
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Go%205?color=96&variant=776_color_96",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:52.893Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Blue and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Go%205?color=95&variant=776_color_95",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:54.525Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Red"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Red and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Go%205?color=68&variant=776_color_68",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:55.152Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Green and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Go%205?color=92&variant=776_color_92",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:55.803Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Pink"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Pink and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Go%205?color=140&variant=776_color_140",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:56.423Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Silver and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    }
+  ],
+  "jbl-xtreme-5": [
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/JBL%20Xtreme%205?color=68&variant=777_color_68",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T10:07:59.525Z",
+      "matchAxes": {},
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Manual exact merchant product-page review",
+      "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Green and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
     }
   ]
 }
