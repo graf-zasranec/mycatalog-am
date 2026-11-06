@@ -58,12 +58,7 @@
     {
       "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvq4sky-blue",
       "shop": "redstore",
-      "checked": "2026-11-03",
-      "matchAxes": {
-        "price": 689000,
-        "color": "Sky Blue",
-        "size": 15
-      },
+      "checked": "2026-11-06",
       "offerAxes": {
         "ram": 16,
         "storage": 512,
@@ -73,12 +68,7 @@
     {
       "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvh4midnight",
       "shop": "redstore",
-      "checked": "2026-11-03",
-      "matchAxes": {
-        "price": 689000,
-        "color": "Midnight",
-        "size": 15
-      },
+      "checked": "2026-11-06",
       "offerAxes": {
         "ram": 16,
         "storage": 512,
@@ -88,12 +78,7 @@
     {
       "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvd4starlight",
       "shop": "redstore",
-      "checked": "2026-11-03",
-      "matchAxes": {
-        "price": 689000,
-        "color": "Starlight",
-        "size": 15
-      },
+      "checked": "2026-11-06",
       "offerAxes": {
         "ram": 16,
         "storage": 512,
@@ -103,12 +88,7 @@
     {
       "url": "https://redstore.am/en/product/macbook-air-153-m5-mdv94silver",
       "shop": "redstore",
-      "checked": "2026-11-03",
-      "matchAxes": {
-        "price": 689000,
-        "color": "Silver",
-        "size": 15
-      },
+      "checked": "2026-11-06",
       "offerAxes": {
         "ram": 16,
         "storage": 512,
@@ -320,6 +300,54 @@
       },
       "source": "https://www.pixel.am/product/macbook-air-15-m5",
       "evidence": "Manually selected 24/512 ԳԲ / Արծաթագույն; Գինը: 805,000 AMD; stock available; 15.3inch source display."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvq4sky-blue",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:17:22.980Z",
+      "offerAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "source": "https://redstore.am/en/product/macbook-air-153-m5-mdvq4sky-blue",
+      "evidence": "Manual live source Air 15.3'' M5 MDVQ4(Sky Blue); verified {\"ram\":16,\"storage\":512}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvh4midnight",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:17:48.245Z",
+      "offerAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "source": "https://redstore.am/en/product/macbook-air-153-m5-mdvh4midnight",
+      "evidence": "Manual live source Air 15.3'' M5 MDVH4(Midnight); verified {\"ram\":16,\"storage\":512}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-air-153-m5-mdvd4starlight",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:17:48.994Z",
+      "offerAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "source": "https://redstore.am/en/product/macbook-air-153-m5-mdvd4starlight",
+      "evidence": "Manual live source Air 15.3'' M5 MDVD4(Starlight); verified {\"ram\":16,\"storage\":512}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/macbook-air-153-m5-mdv94silver",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:17:49.872Z",
+      "offerAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "source": "https://redstore.am/en/product/macbook-air-153-m5-mdv94silver",
+      "evidence": "Manual live source Air 15.3'' M5 MDV94(Silver); verified {\"ram\":16,\"storage\":512}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
     }
   ],
   "apple-macbook-air-13-m4": [
@@ -4847,6 +4875,102 @@
       },
       "source": "https://miarmenia.am/en/product/635/redmi-17-8gb-256gb",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:29:06.176Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 128,
+        "color": "Deep Blue"
+      },
+      "offerAxes": {
+        "color": "Deep Blue"
+      },
+      "source": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "evidence": "Manual selected Կապույտ/128 ԳԲ/4 ԳԲ; 79,900 ֏; each finish selected independently."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:29:06.296Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 128,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "evidence": "Manual selected Սև/128 ԳԲ/4 ԳԲ; 79,900 ֏; each finish selected independently."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:22:37.782Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 256,
+        "color": "Green"
+      },
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "evidence": "Manual selected Կանաչ/256 ԳԲ/4 ԳԲ; 104,900 ֏; each finish selected independently."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:22:38.814Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 256,
+        "color": "Deep Blue"
+      },
+      "offerAxes": {
+        "color": "Deep Blue"
+      },
+      "source": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "evidence": "Manual selected Կապույտ/256 ԳԲ/4 ԳԲ; 104,900 ֏; each finish selected independently."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:22:39.828Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 256,
+        "color": "Black"
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "evidence": "Manual selected Սև/256 ԳԲ/4 ԳԲ; 104,900 ֏; each finish selected independently."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:22:40.848Z",
+      "matchAxes": {
+        "ram": 4,
+        "storage": 256,
+        "color": "Purple"
+      },
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://shop.ucom.am/am/xiaomi-redmi-17.html",
+      "evidence": "Manual selected Մանուշակագույն/256 ԳԲ/4 ԳԲ; 104,900 ֏; each finish selected independently."
     }
   ],
   "huawei-matepad-t10": [
@@ -6297,13 +6421,8 @@
     {
       "shop": "yerevanmobile",
       "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-plus-wifi-x230.html",
-      "checked": "2026-11-05",
+      "checked": "2026-11-06",
       "checkedAt": "2026-11-05T22:16:14.541Z",
-      "matchAxes": {
-        "ram": 6,
-        "storage": 128,
-        "cell": false
-      },
       "offerAxes": {
         "color": "Gray",
         "ram": 6,
@@ -6311,6 +6430,19 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected source explicitly states Grey; spelling canonicalized to existing Gray."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-plus-wifi-x230.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:19:28.062Z",
+      "offerAxes": {
+        "ram": 6,
+        "storage": 128,
+        "color": "Gray"
+      },
+      "source": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-plus-wifi-x230.html",
+      "evidence": "Manual live source Samsung Galaxy Tab A11 Plus WiFi (X230); verified {\"ram\":6,\"storage\":128,\"color\":\"Gray\"}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
     }
   ],
   "samsung-galaxy-tab-s10-lite": [
@@ -15408,6 +15540,23 @@
       },
       "source": "https://redstore.am/en/product/xiaomi-redmi-buds-8-lite-blue",
       "evidence": "Shop title names the colour."
+    }
+  ],
+  "google-pixel-10-pro": [
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/google-pixel-10-pro.html",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:21:38.230Z",
+      "matchAxes": {
+        "ram": 16,
+        "storage": 128
+      },
+      "offerAxes": {
+        "color": "Obsidian"
+      },
+      "source": "https://www.yerevanmobile.am/en/google-pixel-10-pro.html",
+      "evidence": "Manual live source Google Pixel 10 Pro/Obsidian; verified {\"color\":\"Obsidian\"}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
     }
   ]
 }

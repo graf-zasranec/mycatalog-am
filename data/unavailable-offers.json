@@ -1371,6 +1371,51 @@
           "challenge": false
         }
       ]
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/google-pixel-10-pro.html",
+      "status": 200,
+      "reason": "exact_variant_sold_out",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:23:20.692Z",
+      "scope": {
+        "ram": 16,
+        "storage": 256
+      },
+      "stock": false,
+      "evidence": "All selectors unselected:256GB,512GB andGrey disabled; only128GB Black is offered.",
+      "evidenceFile": ".codex/reports/2026-11-06-manual-variants/resume2/"
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/google-pixel-10-pro.html",
+      "status": 200,
+      "reason": "exact_variant_sold_out",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:23:20.692Z",
+      "scope": {
+        "ram": 16,
+        "storage": 512
+      },
+      "stock": false,
+      "evidence": "All selectors unselected:256GB,512GB andGrey disabled; only128GB Black is offered.",
+      "evidenceFile": ".codex/reports/2026-11-06-manual-variants/resume2/"
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/honor-x9d.html",
+      "status": 200,
+      "reason": "exact_variant_sold_out",
+      "checked": "2026-11-06",
+      "checkedAt": "2026-11-06T21:25:30.726Z",
+      "scope": {
+        "ram": 12,
+        "storage": 512
+      },
+      "stock": false,
+      "evidence": "Only12GB RAM exists;512GB disabled for enabled Black andRed;Green andGold disabled.",
+      "evidenceFile": ".codex/reports/2026-11-06-manual-variants/resume2/"
     }
   ]
 }
