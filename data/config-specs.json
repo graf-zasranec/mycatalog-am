@@ -238,6 +238,66 @@
       },
       "source": "Manual configured merchant product page",
       "evidence": "MacBook Air 13 MDHG4 M5 Midnight (2026); RAM24GB/SSD1TB;795000; in stock"
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-air-13-m5-512gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-air-13-m5-512gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-air-15-m5-16gb-512gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-air-15-m5-16gb-512gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-air-13-m5-16gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-air-13-m5-16gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-air-15-m5-16gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-air-15-m5-16gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-air-13-m5-24gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-air-13-m5-24gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-air-15-m5-24gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-air-15-m5-24gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "apple-macbook-air-13-m4": [
@@ -545,6 +605,16 @@
       },
       "basis": "Merchant variant742 exposes eSIM and four finishes but omits memory in its payload. Explicit256GB picker selected in browser retains549000AMD; all finishes share the same variant742. No price/date overridden.",
       "specs": {}
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/iphone-18-pro",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://www.pixel.am/am/product/iphone-18-pro",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "apple-ipad-air-11-m4": [
@@ -1700,6 +1770,26 @@
       "matchAxes": {
         "ram": 12
       }
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi-cellular.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Gray"
+      },
+      "source": "https://www.yerevanmobile.am/en/apple-ipad-air-11-m4-wifi-cellular.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi-cellular.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Gray"
+      },
+      "source": "https://www.yerevanmobile.am/en/apple-ipad-air-13-m4-wifi-cellular.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "apple-macbook-pro-14-m5-pro": [
@@ -1800,6 +1890,26 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact MGDR4 retailer spec table explicitly states Space Black; RAM24GB/SSD1TB verified. Unrelated incorrect display spec not adopted."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-pro-14-m5-pro-24gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Black"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-pro-14-m5-pro-24gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-pro-14-m5-pro-24gb-2tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Black"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-pro-14-m5-pro-24gb-2tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "apple-macbook-pro-14-m5": [
@@ -1911,6 +2021,16 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact MDE64 source description explicitly says Color:Silver, RAM24GB and SSD1TB."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-pro-14-m5-24gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Black"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-pro-14-m5-24gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "honor-x6c": [
@@ -2029,6 +2149,16 @@
       "offerAxes": {
         "ram": 8
       }
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/520/poco-x8-pro-12-512-gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Mint Green"
+      },
+      "source": "https://miarmenia.am/en/product/520/poco-x8-pro-12-512-gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "honor-x9b": [
@@ -2042,6 +2172,16 @@
       "offerAxes": {
         "ram": 12
       }
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/honor-x9b-256gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Midnight Black"
+      },
+      "source": "https://ibolit.mobi/product/honor-x9b-256gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-galaxy-a17": [
@@ -2138,6 +2278,16 @@
       },
       "source": "https://ibolit.mobi/product/samsung-galaxy-a07-4-128gb-silver/",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/samsung-galaxy-a07",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://allsell.am/en/samsung-galaxy-a07",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "samsung-galaxy-a56": [
@@ -2151,6 +2301,16 @@
       "offerAxes": {
         "ram": 8
       }
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/samsung-galaxy-a56-3/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Awesome Graphite"
+      },
+      "source": "https://ibolit.mobi/product/samsung-galaxy-a56-3/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-galaxy-a37": [
@@ -2853,6 +3013,16 @@
       },
       "source": "https://mobilecentre.am/product/xiaomi-redmi-note-10s-128gb-_2021_-grey/16769/",
       "evidence": "Hand review 2026-11-06: colour stated by shop title or page."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/en/xiaomi-redmi-note-10s.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://shop.ucom.am/en/xiaomi-redmi-note-10s.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "xiaomi-redmi-10c": [
@@ -3341,6 +3511,16 @@
       },
       "source": "https://www.zigzag.am/am/xiaomi-redmi-note-17-4g-8gb-256gb-sky-teal.html",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/672/redmi-note-17-4g-6-256",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Sky Teal"
+      },
+      "source": "https://miarmenia.am/en/product/672/redmi-note-17-4g-6-256",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "apple-ipad-air-5-wi-fi-plus-cellular-2022": [
@@ -3770,6 +3950,16 @@
       "matchAxes": {
         "ram": 12
       }
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-s11-x730-1.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-s11-x730-1.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "lenovo-ideapad-1-15iru7": [
@@ -3950,6 +4140,16 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "The source lists one grey (Մոխրագույն) finish for this exact128GB tablet configuration."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-wifi-x133.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://www.yerevanmobile.am/en/samsung-galaxy-tab-a11-wifi-x133.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-galaxy-tab-s10-fe": [
@@ -4082,6 +4282,36 @@
       "offerAxes": {
         "ram": 8
       }
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/633/redmi-17-4gb-128gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://miarmenia.am/en/product/633/redmi-17-4gb-128gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/634/redmi-17-4gb-256gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/634/redmi-17-4gb-256gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/635/redmi-17-8gb-256gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://miarmenia.am/en/product/635/redmi-17-8gb-256gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "huawei-matepad-t10": [
@@ -4407,6 +4637,16 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected product title and URL explicitly identify Star/Starlight, not the generic Blue example in the description."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/ipad-mini-7-128gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Gray"
+      },
+      "source": "https://likemobile.am/en/ipad-mini-7-128gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "apple-iphone-18-pro-max": [
@@ -4521,6 +4761,16 @@
       "offerAxes": {
         "ram": 24
       }
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-pro-16-2-m4-pro-24gb-512gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Black"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-pro-16-2-m4-pro-24gb-512gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "lenovo-loq-15irx10": [
@@ -4867,6 +5117,16 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Exact iBOLIT selected product title AppleWatchSE3 40mmblack; previous44mm assignment contradicted source. Black maps to ApplecaseMidnight; source is case+bandblack."
+    },
+    {
+      "shop": "viva",
+      "url": "https://shop.viva.am/product/apple-watch-se-3-44mm/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Starlight"
+      },
+      "source": "https://shop.viva.am/product/apple-watch-se-3-44mm/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "apple-watch-series-11": [
@@ -5026,6 +5286,26 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Manually reviewed the selected SKU product photograph. Exact body finish matches the existing catalogue finish; strap, wallpaper and packaging colours are kept separate."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/apple-watch-ultra-3-49mm",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Natural Titanium"
+      },
+      "source": "https://notebookcentre.am/en/product/apple-watch-ultra-3-49mm",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/apple-watch-ultra-3.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Natural Titanium"
+      },
+      "source": "https://www.yerevanmobile.am/en/apple-watch-ultra-3.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-eo-ic100-usb-type-c": [
@@ -5147,6 +5427,16 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Zigzag exact A27 specification AwesomeCharcoal; maps to existing catalogue Black."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/samsung-galaxy-a27-5g/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Pink"
+      },
+      "source": "https://ibolit.mobi/product/samsung-galaxy-a27-5g/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-galaxy-active-2": [
@@ -5350,6 +5640,16 @@
       },
       "source": "https://shop.viva.am/en/product/samsung-galaxy-s26-fe-512gb-blueberry/",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "planet3d",
+      "url": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-fe",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite"
+      },
+      "source": "https://3dplanet.am/en/store/product/samsung-galaxy-s26-fe",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-galaxy-tab-a11-plus": [
@@ -5432,6 +5732,26 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact watch46mm specification explicitly states Black."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/samsung-galaxy-watch-8-classic-46mm-lte.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://shop.ucom.am/am/samsung-galaxy-watch-8-classic-46mm-lte.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/samsung-galaxy-watch-8-classic-46mm",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://allsell.am/en/samsung-galaxy-watch-8-classic-46mm",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "samsung-galaxy-z-flip-8": [
@@ -5481,6 +5801,26 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected rear-body photo visually matches existing Lavender finish; outer display wallpaper not used as colour evidence."
+    },
+    {
+      "shop": "planet3d",
+      "url": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Lavender"
+      },
+      "source": "https://3dplanet.am/en/store/product/samsung-galaxy-z-fold8",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/samsung-galaxy-z-fold-8",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Cream"
+      },
+      "source": "https://www.pixel.am/am/product/samsung-galaxy-z-fold-8",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "sony-ps5-slim": [
@@ -5579,6 +5919,26 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected exact Sony SKU source title/technical table explicitly names this finish; missing from catalogue palette."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/sony-wh-1000xm6-headphones-olive-grey",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Olive Grey"
+      },
+      "source": "https://redstore.am/en/product/sony-wh-1000xm6-headphones-olive-grey",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/sony-wh-1000xm6-headphones-sand-pink",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Sandstone"
+      },
+      "source": "https://redstore.am/en/product/sony-wh-1000xm6-headphones-sand-pink",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "sony-wh-ch520": [
@@ -6061,6 +6421,16 @@
       },
       "source": "Manual individual selected shop configuration",
       "evidence": "Both Armenian colour titles;12GB/256GB,512GB,1TB,2TB andeSIM selected individually."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/iphone-duo",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Night Sky"
+      },
+      "source": "https://allsell.am/en/iphone-duo",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "apple-watch-ultra-4-gps-plus-cellular-plus-band": [
@@ -6091,6 +6461,16 @@
       },
       "source": "Manual individual selected shop configuration",
       "evidence": "Black Titanium andNatural titanium separately selected,459000AMD each."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/apple-watch-ultra-4.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://www.yerevanmobile.am/en/apple-watch-ultra-4.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "dell-pro-16-pc16250": [
@@ -6539,6 +6919,16 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Exact iStyle colour/variant URL individually opened; selected H1 states Silver and displays matching price/InStock. Preserve merchant finish label without guessing a different canonical colour."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/jbl-boombox4squaduk.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Squad"
+      },
+      "source": "https://www.zigzag.am/am/jbl-boombox4squaduk.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "jbl-tune-720-bt": [
@@ -6669,6 +7059,26 @@
       },
       "source": "https://allsell.am/en/whoop-life-mg",
       "evidence": "Hand review 2026-11-06: colour stated by shop page colour field."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/whoop-life-mg-fitness-trackerws50",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://redstore.am/en/product/whoop-life-mg-fitness-trackerws50",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/whoop-life-mg/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/whoop-life-mg/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "jbl-charge-5": [
@@ -6773,6 +7183,16 @@
       },
       "source": "https://eldorado.am/en/jbl-t110-red",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-tune-110/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/jbl-tune-110/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "jbl-tune-215-tws": [
@@ -6979,6 +7399,46 @@
       },
       "source": "https://allsell.am/en/jbl-authentics-200-smart-home-speaker-with-wifi",
       "evidence": "Hand review 2026-11-06: colour stated by shop page colour field."
+    },
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/jbl-authentics-200",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://www.pixel.am/am/product/jbl-authentics-200",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/jbl-authentics-200",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://likemobile.am/en/jbl-authentics-200",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-authentics-200/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/jbl-authentics-200/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/jbl-authentics-200",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://eldorado.am/en/jbl-authentics-200",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "jbl-go-4": [
@@ -7003,6 +7463,16 @@
       },
       "source": "https://www.zigzag.am/am/jbl-tbeam2blk-t.html",
       "evidence": "Hand review 2026-11-06: colour stated by shop page colour field."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/jbl-tune-beam-blk",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://eldorado.am/en/jbl-tune-beam-blk",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "sennheiser-momentum-4": [
@@ -7037,6 +7507,36 @@
       },
       "source": "https://www.zigzag.am/am/yandex-smart-station-lite-yndx-00025-red.html",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/yandex-smart-station-lite/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Orange"
+      },
+      "source": "https://ibolit.mobi/product/yandex-smart-station-lite/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/598/yandex-smart-speaker-lite",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://miarmenia.am/en/product/598/yandex-smart-speaker-lite",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/jandeks-stancija-lajt-kapuchino-yndx-00025b",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Yellow"
+      },
+      "source": "https://eldorado.am/en/jandeks-stancija-lajt-kapuchino-yndx-00025b",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "yandex-station-max": [
@@ -7059,6 +7559,26 @@
       },
       "source": "https://www.zigzag.am/am/yandex-station-max-yndx-00053-tourquise.html",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/604/yandex-smart-speaker-max",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite"
+      },
+      "source": "https://miarmenia.am/en/product/604/yandex-smart-speaker-max",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/am/jandeks-yndx-00053z",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite"
+      },
+      "source": "https://eldorado.am/am/jandeks-yndx-00053z",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "yandex-station-midi": [
@@ -7101,6 +7621,26 @@
       },
       "source": "https://redstore.am/en/product/yandex-station-midi-crimson",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/yandex-station-midi-yndx-00054/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://ibolit.mobi/product/yandex-station-midi-yndx-00054/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/603/yandex-smart-speaker-midi",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/603/yandex-smart-speaker-midi",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "jbl-tour-one-m3": [
@@ -7353,6 +7893,16 @@
       },
       "source": "https://eldorado.am/en/beats-studio-pro-wireless-headphones-black-model-a2924",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/beats-studio-pro-wireless-headphones-deep-brown-model-a2924",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Navy"
+      },
+      "source": "https://eldorado.am/en/beats-studio-pro-wireless-headphones-deep-brown-model-a2924",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "google-fitbit-air": [
@@ -7377,6 +7927,26 @@
       },
       "source": "https://redstore.am/en/product/harman-kardon-onyx-studio-8-rose",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/harman-kardon-onyx-studio-8-",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://likemobile.am/en/harman-kardon-onyx-studio-8-",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/harman-kardon-onyx-studio-8/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/harman-kardon-onyx-studio-8/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "jbl-boombox-3": [
@@ -7477,6 +8047,16 @@
       },
       "source": "https://redstore.am/en/product/jbl-wave-buds-teal",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/jbl-wave-buds-mit",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Teal"
+      },
+      "source": "https://eldorado.am/en/jbl-wave-buds-mit",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "marshall-acton-iii": [
@@ -7489,6 +8069,16 @@
       },
       "source": "https://redstore.am/en/product/marshall-acton-iii-burgundy",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/marshall-acton-iii",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://likemobile.am/en/marshall-acton-iii",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "xiaomi-mi-smart-band-9": [
@@ -7511,6 +8101,16 @@
       },
       "source": "https://redstore.am/en/product/xiaomi-redmi-band-9-blue",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-mi-smart-band-9/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Pink"
+      },
+      "source": "https://ibolit.mobi/product/xiaomi-mi-smart-band-9/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "xiaomi-poco-x8-pro-max": [
@@ -7523,6 +8123,16 @@
       },
       "source": "https://redstore.am/en/product/xiaomi-poco-x8-pro-max-12gb256gb-white",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/521/poco-x8-pro-max-12-512-gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://miarmenia.am/en/product/521/poco-x8-pro-max-12-512-gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "xiaomi-redmi-8-active-bhr08jtgl": [
@@ -7535,6 +8145,16 @@
       },
       "source": "https://redstore.am/en/product/xiaomi-redmi-buds-8-active-blue",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/615/redmi-buds-8-active",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/615/redmi-buds-8-active",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "google-pixel-7-pro": [
@@ -7651,6 +8271,26 @@
       },
       "source": "https://allsell.am/en/whoop-peak-5-0",
       "evidence": "Hand review 2026-11-06: colour stated by shop page colour field."
+    },
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/hy/devices/whoop-peak/2729/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://www.telecomarmenia.am/eshop/hy/devices/whoop-peak/2729/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/whoop-peak/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/whoop-peak/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "harman-kardon-luna": [
@@ -7663,6 +8303,16 @@
       },
       "source": "https://eldorado.am/en/harman-kardon-luna-hklunagryeu",
       "evidence": "Hand review 2026-11-06: colour stated by shop model code."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/harman-kardon-luna-portable-wireless-bluetooth-speaker",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://allsell.am/en/harman-kardon-luna-portable-wireless-bluetooth-speaker",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "marshall-woburn-ii": [
@@ -7931,6 +8581,16 @@
       },
       "source": "https://eldorado.am/en/canon-eos-r50-bk-rfs-18-45-see",
       "evidence": "Hand review 2026-11-06: colour stated by shop model code."
+    },
+    {
+      "shop": "planet3d",
+      "url": "https://3dplanet.am/en/store/product/canon-eos-r50-bk-kit-rf-s-18-45mm",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://3dplanet.am/en/store/product/canon-eos-r50-bk-kit-rf-s-18-45mm",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "dyson-nural-hd16-strawberry": [
@@ -7963,6 +8623,16 @@
       },
       "source": "https://www.pixel.am/am/product/dyson-supersonic-nural-hair-dryer-red-velvet",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/hair-dryer-dyson-supersonic-nural-hd16-amber-silk",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Amber Silk"
+      },
+      "source": "https://eldorado.am/en/hair-dryer-dyson-supersonic-nural-hd16-amber-silk",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
     }
   ],
   "dyson-airwrap-hs09": [
@@ -7975,6 +8645,16 @@
       },
       "source": "https://istyle.am/en/product/Dyson%20Airwrap%20Co-anda2x%E2%84%A2%20HS09%20(Orange%20)?color=33&variant=730",
       "evidence": "Hand review 2026-11-06: colour stated by shop title."
+    },
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/en/devices/dyson-hs09-airwrap-coanda2x-ceramicpink/2549/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Jasper Plum"
+      },
+      "source": "https://www.telecomarmenia.am/eshop/en/devices/dyson-hs09-airwrap-coanda2x-ceramicpink/2549/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "samsung-galaxy-tab-a9plus-x210": [
@@ -8091,6 +8771,16 @@
       },
       "source": "https://www.zigzag.am/am/harman-kardon-luna2blkeu-t.html",
       "evidence": "Hand review 2026-11-06: colour stated by shop page colour field."
+    },
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/Harman%20Kardon%20%20LUNA%202?color=145&variant=775",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://istyle.am/en/product/Harman%20Kardon%20%20LUNA%202?color=145&variant=775",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "jbl-tune-buds-2": [
@@ -8158,6 +8848,16 @@
       },
       "source": "https://www.telecomarmenia.am/eshop/hy/smartphones/honor-200lite-8256-cynlak/1817/",
       "evidence": "Hand review 2026-11-06: colour stated by shop title or page."
+    },
+    {
+      "shop": "ucom",
+      "url": "https://shop.ucom.am/am/honor-200-lite-8gb.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Cyan Lake"
+      },
+      "source": "https://shop.ucom.am/am/honor-200-lite-8gb.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ],
   "xiaomi-redmi-note-12": [
@@ -8266,6 +8966,1102 @@
       },
       "source": "https://mobilecentre.am/product/samsung-headphone-galaxy-buds-pro-r190-_black_/16221/",
       "evidence": "Hand review 2026-11-06: colour stated by shop title or page."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/samsung-galaxy-buds-pro/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/samsung-galaxy-buds-pro/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "amazon-kindle-paperwhite-12": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/amazon-kindle-paperwhite-1216gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/amazon-kindle-paperwhite-1216gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "zigzag",
+      "url": "https://www.zigzag.am/am/amazon-kindle-paperwhite-kids-7-16gb-starfish.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Starfish"
+      },
+      "source": "https://www.zigzag.am/am/amazon-kindle-paperwhite-kids-7-16gb-starfish.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "apple-macbook-pro-14-m4-pro": [
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-pro-14-m4-pro-24gb-512gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Black"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-pro-14-m4-pro-24gb-512gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "appzone",
+      "url": "https://appzone.am/en/Assortment/macbook-pro-14-m4-pro-24gb-1tb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Space Black"
+      },
+      "source": "https://appzone.am/en/Assortment/macbook-pro-14-m4-pro-24gb-1tb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "asus-vivobook-go-15-e1504fa-oled": [
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/asus-vivobook-e1504fa-l1834-oled",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://www.pixel.am/am/product/asus-vivobook-e1504fa-l1834-oled",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/asus-vivobook-e1504fa-l1834-oled/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://ibolit.mobi/product/asus-vivobook-e1504fa-l1834-oled/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "beats-solo-true-wireless": [
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/beats-solo-buds-festive-special-edition",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Orange"
+      },
+      "source": "https://redstore.am/en/product/beats-solo-buds-festive-special-edition",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "bo-beosound-explore": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/bang-olufsen-beosound-explore",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Chestnut"
+      },
+      "source": "https://eldorado.am/en/bang-olufsen-beosound-explore",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "dji-mic-mini": [
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/dji-mic-mini-1tx-1rx",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://www.pixel.am/am/product/dji-mic-mini-1tx-1rx",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dji-mic-mini-sans-fil",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://redstore.am/en/product/dji-mic-mini-sans-fil",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/dji-mic-mini-sans-fil/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/dji-mic-mini-sans-fil/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/dji-mic-mini-2s",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://allsell.am/en/dji-mic-mini-2s",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "dyson-hs08-i-d": [
+    {
+      "shop": "telecom",
+      "url": "https://www.telecomarmenia.am/eshop/en/devices/dyson-hs08-airwrap-id-ceramicpink/2547/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Ceramic Pink"
+      },
+      "source": "https://www.telecomarmenia.am/eshop/en/devices/dyson-hs08-airwrap-id-ceramicpink/2547/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "garmin-venu-4-45-mm": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/garmin-venu-4-010-03014-00-45-mm",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://eldorado.am/en/garmin-venu-4-010-03014-00-45-mm",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "google-pixel-11-pro-xl": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/google-pixel-11-pro-xl",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Obsidian"
+      },
+      "source": "https://allsell.am/en/google-pixel-11-pro-xl",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "google-pixel-9a": [
+    {
+      "shop": "planet3d",
+      "url": "https://3dplanet.am/en/store/product/google-pixel-9a",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Obsidian"
+      },
+      "source": "https://3dplanet.am/en/store/product/google-pixel-9a",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "honor-magicbook-pro-16-ultra-5-125h-24-1-w11h-5301ajjg": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/honor-magicbook-pro-16-3k-core-ultra-5-125h-24gb-ram-1t-win11/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://ibolit.mobi/product/honor-magicbook-pro-16-3k-core-ultra-5-125h-24gb-ram-1t-win11/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "honor-x7e": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/honor-x7e",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://allsell.am/en/honor-x7e",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "jbl-partybox-club-120": [
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/jbl-partybox-120",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://likemobile.am/en/jbl-partybox-120",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/acoustic-system-jbl",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://eldorado.am/en/acoustic-system-jbl",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-partybox-120/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/jbl-partybox-120/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "jbl-partybox-stage-320": [
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/jbl-partybox-320",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://likemobile.am/en/jbl-partybox-320",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/48544",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://vlv.am/en/Product/48544",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-partybox-320/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/jbl-partybox-320/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "jbl-tune-520-bt": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/jbl-tune-520-bt/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/jbl-tune-520-bt/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "jbl-tune-flex": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/jbl-tflex-true-wireless-noise-cancelling-earbuds-jbltflexgwht/29842/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://mobilecentre.am/product/jbl-tflex-true-wireless-noise-cancelling-earbuds-jbltflexgwht/29842/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "marshall-major-v": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/marshall-major-v",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://notebookcentre.am/en/product/marshall-major-v",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "marshall-middleton": [
+    {
+      "shop": "planet3d",
+      "url": "https://3dplanet.am/en/store/product/marshall-middleton",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://3dplanet.am/en/store/product/marshall-middleton",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "marshall-uxbridge": [
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/marshall-uxbridge-voice-----",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://likemobile.am/en/marshall-uxbridge-voice-----",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/marshall-uxbridge/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://ibolit.mobi/product/marshall-uxbridge/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "marshall-woburn-iii": [
+    {
+      "shop": "likemobile",
+      "url": "https://likemobile.am/en/marshall-woburn-iii-",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://likemobile.am/en/marshall-woburn-iii-",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "poco-c81-pro": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/679/poco-c81-pro-4gb-128g",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://miarmenia.am/en/product/679/poco-c81-pro-4gb-128g",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/622/poco-c81-pro-4gb-256g",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/622/poco-c81-pro-4gb-256g",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-s25-edge": [
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-edge.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Titanium Silver"
+      },
+      "source": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-edge.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-s25-plus": [
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-s25+/31497/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Icyblue"
+      },
+      "source": "https://mobilecentre.am/product/samsung-galaxy-s25+/31497/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "mobilecentre",
+      "url": "https://mobilecentre.am/product/samsung-galaxy-s25+-512gb-_blue_/31497/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Icyblue"
+      },
+      "source": "https://mobilecentre.am/product/samsung-galaxy-s25+-512gb-_blue_/31497/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-s25-ultra": [
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-ultra.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Titanium Silverblue"
+      },
+      "source": "https://www.yerevanmobile.am/en/samsung-galaxy-s25-ultra.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-watch-7": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/samsung-galaxy-watch7",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Cream"
+      },
+      "source": "https://allsell.am/en/samsung-galaxy-watch7",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-watch-ultra-2": [
+    {
+      "shop": "istyle",
+      "url": "https://istyle.am/en/product/Galaxy%20Watch%20Ultra2?color=45&variant=740_color_45",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Titanium Gray"
+      },
+      "source": "https://istyle.am/en/product/Galaxy%20Watch%20Ultra2?color=45&variant=740_color_45",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xbox-series-s": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xbox-series-s/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://ibolit.mobi/product/xbox-series-s/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/xbox-series-s-512gb-ssd",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://redstore.am/en/product/xbox-series-s-512gb-ssd",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/xbox-series-s-512-gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://allsell.am/en/xbox-series-s-512-gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "xbox-series-x": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xbox-series-x/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/xbox-series-x/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-17t": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/556/xiaomi-17t-12-256-gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://miarmenia.am/en/product/556/xiaomi-17t-12-256-gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-17t-pro": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/558/xiaomi-17t-pro-12-256-gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Deep Blue"
+      },
+      "source": "https://miarmenia.am/en/product/558/xiaomi-17t-pro-12-256-gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-17t-pro-12-512gb/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Deep Violet"
+      },
+      "source": "https://ibolit.mobi/product/xiaomi-17t-pro-12-512gb/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/559/xiaomi-17t-pro-12-512-gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/559/xiaomi-17t-pro-12-512-gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-5": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-redmi-buds-5/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/xiaomi-redmi-buds-5/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-note-15-pro-plus-5g": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-redmi-note-15-pro-plus-5g-12-512/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/xiaomi-redmi-note-15-pro-plus-5g-12-512/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-note-17-5g": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/646/xiaomi-redmi-note-17-5g-6-128",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/646/xiaomi-redmi-note-17-5g-6-128",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/645/redmi-note-17-5g-6-256",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Teal"
+      },
+      "source": "https://miarmenia.am/en/product/645/redmi-note-17-5g-6-256",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-note-17-pro-5g": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/647/redmi-note-17-pro-5g-6-128",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://miarmenia.am/en/product/647/redmi-note-17-pro-5g-6-128",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/649/redmi-note-17-pro-5g-8-512",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://miarmenia.am/en/product/649/redmi-note-17-pro-5g-8-512",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-note-17-pro-max-5g": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/650/redmi-note-17-pro-max-5g-8-256",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://miarmenia.am/en/product/650/redmi-note-17-pro-max-5g-8-256",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-pad-2": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/481/redmi-pad-2-4-128gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://miarmenia.am/en/product/481/redmi-pad-2-4-128gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/383/redmi-pad-2-8-256gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://miarmenia.am/en/product/383/redmi-pad-2-8-256gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-pad-2-pro": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/xiaomi-redmi-pad-2-pro",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite Gray"
+      },
+      "source": "https://allsell.am/en/xiaomi-redmi-pad-2-pro",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    },
+    {
+      "shop": "yerevanmobile",
+      "url": "https://www.yerevanmobile.am/en/xiaomi-redmi-pad-2-pro-matte-glass-version.html",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite Gray"
+      },
+      "source": "https://www.yerevanmobile.am/en/xiaomi-redmi-pad-2-pro-matte-glass-version.html",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-smart-band-10": [
+    {
+      "shop": "pixel",
+      "url": "https://www.pixel.am/am/product/xiaomi-smart-band-10",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://www.pixel.am/am/product/xiaomi-smart-band-10",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "yandex-station-mini": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/yandex-station-mini/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/yandex-station-mini/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/600/yandex-smart-speaker-mini-2",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/600/yandex-smart-speaker-mini-2",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/jandeks-stancija-lajt-mjata-yndx-00025g",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "https://eldorado.am/en/jandeks-stancija-lajt-mjata-yndx-00025g",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "yandex-station-street": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/602/yandex-smart-station-street",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/602/yandex-smart-station-street",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-z-fold-6": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/samsung-galaxy-z-fold-6",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver Shadow"
+      },
+      "source": "https://allsell.am/en/samsung-galaxy-z-fold-6",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "apple-iphone-13": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/iphone-13",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Midnight"
+      },
+      "source": "https://allsell.am/en/iphone-13",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "xiaomi-poco-f9-pro": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/674/poco-f9-pro-12-256",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/674/poco-f9-pro-12-256",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-17-ultra": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/532/xiaomi-17-ultra-16-512gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/532/xiaomi-17-ultra-16-512gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/xiaomi-17-ultra-16-512/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://ibolit.mobi/product/xiaomi-17-ultra-16-512/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-pad-8": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/636/xiaomi-pad-8-8gb-256gb",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "https://miarmenia.am/en/product/636/xiaomi-pad-8-8gb-256gb",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "jbl-partybox-330": [
+    {
+      "shop": "vesta",
+      "url": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-partybox-330",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-partybox-330",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "marshall-stockwell-iii": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/marshall-stockwell-iii",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black Brass"
+      },
+      "source": "https://allsell.am/en/marshall-stockwell-iii",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "xiaomi-sound-outdoor-30w-speaker": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/554/xiaomi-sound-outdoor",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/554/xiaomi-sound-outdoor",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-smart-air-fryer-6-5l": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/142/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%B3%D5%A1%D6%80%D5%BA%D5%A1%D5%BB%D5%A5%D5%BC%D5%B8%D6%81-xiaomi-mi-smart-air-fryer-6%2C5-l",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/142/%D5%AD%D5%A5%D5%AC%D5%A1%D6%81%D5%AB-%D5%B3%D5%A1%D6%80%D5%BA%D5%A1%D5%BB%D5%A5%D5%BC%D5%B8%D6%81-xiaomi-mi-smart-air-fryer-6%2C5-l",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "harman-kardon-citation-200": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/harman-kardon-citation-200/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/harman-kardon-citation-200/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "yandex-station-mini-3": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/yandex-smart-station-mini-3-yndx-00027/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://ibolit.mobi/product/yandex-smart-station-mini-3-yndx-00027/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/601/yandex-smart-speaker-mini-3",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "https://miarmenia.am/en/product/601/yandex-smart-speaker-mini-3",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "roborock-qrevo-c-pro": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/657/roborock-qrevo-c-pro",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/657/roborock-qrevo-c-pro",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-watch-6": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/667/redmi-watch-6",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://miarmenia.am/en/product/667/redmi-watch-6",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "xiaomi-redmi-pad-2-9-7-4g": [
+    {
+      "shop": "miarmenia",
+      "url": "https://miarmenia.am/en/product/565/redmi-pad-2-9.7-4g",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite Gray"
+      },
+      "source": "https://miarmenia.am/en/product/565/redmi-pad-2-9.7-4g",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "samsung-galaxy-tab-s9-fe-plus": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/samsung-galaxy-tab-s9-fe-x610-wifi",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Light Green"
+      },
+      "source": "https://allsell.am/en/samsung-galaxy-tab-s9-fe-x610-wifi",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "yandex-station-lite-2": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/yandex-smart-station-lite-2-yndx-00026/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Coral"
+      },
+      "source": "https://ibolit.mobi/product/yandex-smart-station-lite-2-yndx-00026/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "dyson-ontrac": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/dyson-on-trac-wp02-headphones",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "CNC Aluminium"
+      },
+      "source": "https://allsell.am/en/dyson-on-trac-wp02-headphones",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "ninja-af140eu": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/ninja-pro-air-fryer-af140eu-eldorado-armenia",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://eldorado.am/en/ninja-pro-air-fryer-af140eu-eldorado-armenia",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "ariete-00c2869": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/ariete-vintage-1-7l-00c286903ar0",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Beige"
+      },
+      "source": "https://eldorado.am/en/ariete-vintage-1-7l-00c286903ar0",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "ariete-00c0583": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/ariete-00c058303ar0-1-5l-1000w",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Beige"
+      },
+      "source": "https://eldorado.am/en/ariete-00c058303ar0-1-5l-1000w",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "ariete-00c1548": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/hand-mixer-ariete-vintage-00c154804ar0",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "https://eldorado.am/en/hand-mixer-ariete-vintage-00c154804ar0",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "ariete-00c0155": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/toaster-ariete-2-slices-vintage-00c015513ar0",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Beige"
+      },
+      "source": "https://eldorado.am/en/toaster-ariete-2-slices-vintage-00c015513ar0",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "boneco-w400": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/boneco-w400",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "https://eldorado.am/en/boneco-w400",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "kenwood-kmx760a": [
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/18618",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://vlv.am/en/Product/18618",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "hisense-dt27dr4": [
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/hisense-dt27dr4",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "https://allsell.am/en/hisense-dt27dr4",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "hitachi-r-v660puc7-1": [
+    {
+      "shop": "eldorado",
+      "url": "https://eldorado.am/en/hitachi-rv660puc7-bsl-1",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Inox"
+      },
+      "source": "https://eldorado.am/en/hitachi-rv660puc7-bsl-1",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    },
+    {
+      "shop": "allsell",
+      "url": "https://allsell.am/en/hitachi-r-v660puc7-1-beg",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Inox"
+      },
+      "source": "https://allsell.am/en/hitachi-r-v660puc7-1-beg",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    }
+  ],
+  "logitech-zone-300": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/logitech-headset-zone-300-wireless/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "https://ibolit.mobi/product/logitech-headset-zone-300-wireless/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    }
+  ],
+  "logitech-zone-vibe-100": [
+    {
+      "shop": "ibolit",
+      "url": "https://ibolit.mobi/product/logitech-headset-zone-vibe-100-wireless/",
+      "checked": "2026-11-06",
+      "offerAxes": {
+        "color": "Graphite"
+      },
+      "source": "https://ibolit.mobi/product/logitech-headset-zone-vibe-100-wireless/",
+      "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
     }
   ]
 }
