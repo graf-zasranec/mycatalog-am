@@ -9153,7 +9153,10 @@
     },
     "body": {
       "weight": 294
-    }
+    },
+    "colors": [
+      "Gun Metal"
+    ]
   },
   {
     "id": "asus-tuf-gaming-h7-core-gun-metal",
@@ -9191,7 +9194,10 @@
     },
     "specNA": {
       "body.weight": "ASUS has taken the H7 Core spec page down (redirects to the series list); no maker figure"
-    }
+    },
+    "colors": [
+      "Gun Metal"
+    ]
   },
   {
     "id": "asus-tuf-h3-wireless",
@@ -15732,6 +15738,9 @@
     },
     "sources": [
       "https://www.dji.com/global/mavic-3-pro/specs"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -15761,6 +15770,9 @@
     ],
     "sources": [
       "https://www.dji.com/global/mic/specs"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -15793,6 +15805,9 @@
     ],
     "sources": [
       "https://www.dji.com/global/mic-2/specs"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -15831,6 +15846,9 @@
     },
     "sources": [
       "https://www.dji.com/global/mic-3/specs"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -15908,6 +15926,9 @@
     },
     "sources": [
       "https://www.dji.com/global/mic-mini-2/specs"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -15932,6 +15953,9 @@
     "summaryEn": "A 360-degree camera.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -16002,6 +16026,9 @@
     },
     "sources": [
       "https://www.dji.com/global/osmo-mobile-6/specs"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -16026,6 +16053,9 @@
     "summaryEn": "A motorised gimbal for a phone.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -16053,6 +16083,9 @@
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -16088,6 +16121,9 @@
     },
     "sources": [
       "https://www.dji.com/global/osmo-mobile-8/specs"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -16126,6 +16162,9 @@
     },
     "sources": [
       "https://www.dji.com/global/osmo-pocket-3/specs"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -16160,6 +16199,9 @@
     },
     "sources": [
       "https://www.dji.com/global/osmo-pocket-4/specs"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -21857,7 +21899,10 @@
     "unsure": [
       "popularity"
     ],
-    "colors": [],
+    "colors": [
+      "Midnight Black",
+      "Cyan Lake"
+    ],
     "os": "Android, MagicOS",
     "year": 2024,
     "chipset": {
@@ -22462,7 +22507,10 @@
     "year": 2020,
     "body": {
       "weight": 18
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "honor-choice-clip-mak-me01",
@@ -22551,6 +22599,9 @@
     "sources": [
       "https://www.honor.com/global/honor-choice/earbuds-x3/",
       "https://versus.com/"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -22595,7 +22646,10 @@
     ],
     "body": {
       "weight": 7.6
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "honor-choice-earbuds-x7e-ast-me00",
@@ -22826,6 +22880,9 @@
     "sources": [
       "https://www.honor.com/global/audio/honor-earbuds-x6/spec/",
       "https://versus.com/"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -23413,6 +23470,9 @@
     "released": "2022-07",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -23799,7 +23859,10 @@
     "year": 2021,
     "body": {
       "weight": 44
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "honor-x5b-plus",
@@ -27948,6 +28011,9 @@
     "released": "2020-09",
     "sources": [
       "kimovil"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -28519,6 +28585,9 @@
     },
     "sources": [
       "https://www.jbl.com/LIVE460NC-.html"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -29663,7 +29732,10 @@
     "summaryEn": "ANC and seventy hours, for the price of a decent wired pair.",
     "body": {
       "weight": 220
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-tune-720-bt",
@@ -36749,8 +36821,12 @@
       "Orange"
     ],
     "sources": [
-      "https://nothing.tech/products/cmf-watch-3-pro"
-    ]
+      "https://nothing.tech/products/cmf-watch-3-pro",
+      "https://m.gsmarena.com/nothing_cmf_watch_3_pro-14217.php"
+    ],
+    "body": {
+      "weight": 51
+    }
   },
   {
     "id": "nothing-ear-a",
@@ -40659,6 +40735,10 @@
     },
     "sources": [
       "https://web.archive.org/web/20230621000456/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-live-mystic-blue-sm-r180nzbaeua/"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {
@@ -40700,6 +40780,10 @@
     "summaryEn": "The 2021 Pro buds — still the only Galaxy Buds rated IPX7.",
     "sources": [
       "https://web.archive.org/web/20221024205724/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-pro-violet-sm-r190nzvaeua/"
+    ],
+    "colors": [
+      "Black",
+      "White"
     ]
   },
   {
@@ -46631,7 +46715,10 @@
     ],
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
-    }
+    },
+    "colors": [
+      "Beige"
+    ]
   },
   {
     "id": "sennheiser-hd-620s",
@@ -47496,6 +47583,9 @@
     "summaryEn": "Sony PlayStation VR2 Horizon.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -47521,6 +47611,9 @@
     "summaryEn": "Sony PS5 BackBone.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -47546,6 +47639,9 @@
     "summaryEn": "Sony PS5 Driving Force Hori Racing Wheel.",
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -48251,6 +48347,9 @@
     },
     "sources": [
       "https://helpguide.sony.net/mdr/295960/v1/en/contents/TP1000670455.html"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -50487,6 +50586,9 @@
     "sources": [
       "kimovil",
       "https://www.gsmarena.com/a-11292.php"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -50565,6 +50667,9 @@
       "https://www.gsmarena.com/a-12072.php",
       "https://shop.ucom.am/en/xiaomi-13-lite-8gb-128gb.html",
       "https://www.mi.com/global/product/xiaomi-13-lite/specs/"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -51657,6 +51762,9 @@
     "sources": [
       "kimovil",
       "https://www.gsmarena.com/a-11468.php"
+    ],
+    "colors": [
+      "Yellow"
     ]
   },
   {
@@ -52131,6 +52239,9 @@
       "https://www.gsmarena.com/a-12737.php",
       "https://shop.ucom.am/en/xiaomi-poco-m6-8gb.html",
       "https://www.mi.com/global/product/poco-m6/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -52704,6 +52815,9 @@
       "kimovil",
       "https://shop.ucom.am/en/xiaomi-poco-x5-pro-5g-8gb.html",
       "https://www.mi.com/global/product/poco-x5-pro-5g/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -53095,6 +53209,9 @@
       "https://www.gsmarena.com/a-11418.php",
       "https://shop.ucom.am/en/xiaomi-redmi-10c-64gb.html",
       "https://www.mi.com/co/product/redmi-10c/specs/"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -53796,7 +53913,10 @@
     ],
     "connectivity": {
       "bluetooth": "5.3"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-redmi-4-bhr-5846-gl",
@@ -53886,7 +54006,10 @@
     },
     "body": {
       "weight": 3.92
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-redmi-5",
@@ -54230,6 +54353,9 @@
     "sources": [
       "kimovil",
       "https://www.mi.com/global/product/redmi-a5/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -54619,6 +54745,10 @@
       "kimovil",
       "https://www.gsmarena.com/a-10769.php",
       "https://www.mi.com/uk/product/redmi-note-10s/buy/"
+    ],
+    "colors": [
+      "White",
+      "Gray"
     ]
   },
   {
@@ -54700,6 +54830,9 @@
       "https://www.gsmarena.com/a-11336.php",
       "https://shop.ucom.am/en/xiaomi-redmi-note-11-4gb.html",
       "https://www.mi.com/global/product/redmi-note-11/specs/"
+    ],
+    "colors": [
+      "Blue"
     ]
   },
   {
@@ -54778,6 +54911,9 @@
       "https://www.gsmarena.com/a-11333.php",
       "https://shop.ucom.am/en/xiaomi-redmi-note-11-pro-plus-5g.html",
       "https://www.mi.com/global/product/redmi-note-11-pro-plus-5g/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -54849,6 +54985,9 @@
     "sources": [
       "kimovil",
       "https://www.gsmarena.com/a-11335.php"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -54924,7 +55063,11 @@
       "bluetooth": "5.1",
       "wifi": "Wi-Fi 5",
       "nfc": true
-    }
+    },
+    "colors": [
+      "Onyx Gray",
+      "Mint Green"
+    ]
   },
   {
     "id": "xiaomi-redmi-note-13",
@@ -56471,6 +56614,9 @@
       "kimovil",
       "https://shop.ucom.am/am/xiaomi-redmi-pad-se-8gb.html",
       "https://www.mi.com/au/product/redmi-pad-se/specs/"
+    ],
+    "colors": [
+      "Gray"
     ]
   },
   {
@@ -57495,6 +57641,9 @@
     },
     "sources": [
       "https://www.mi.com/in/product/xiaomi-smart-speaker-ir-control/specs/"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -57573,7 +57722,10 @@
     ],
     "body": {
       "weight": 32
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-tv-s-65-2025-mled",
@@ -57644,7 +57796,10 @@
     ],
     "body": {
       "weight": 53
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-watch-s1-active",
@@ -57679,7 +57834,10 @@
     "year": 2022,
     "body": {
       "weight": 36
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "yandex-station-2",
@@ -59681,6 +59839,9 @@
     "os": "Android 14",
     "sources": [
       "https://www.gsmarena.com/a-12892.php"
+    ],
+    "colors": [
+      "Celadon Marble"
     ]
   },
   {
@@ -59745,7 +59906,10 @@
     "connectivity": {
       "bluetooth": "5.2"
     },
-    "os": "Android 12"
+    "os": "Android 12",
+    "colors": [
+      "Sorta Seafoam"
+    ]
   },
   {
     "id": "google-pixel-6-pro",
@@ -59810,7 +59974,10 @@
     "connectivity": {
       "bluetooth": "5.2"
     },
-    "os": "Android 12"
+    "os": "Android 12",
+    "colors": [
+      "Sorta Sunny"
+    ]
   },
   {
     "id": "apple-iphone-13",
@@ -61197,7 +61364,11 @@
       "network": "Wi-Fi"
     },
     "os": "Kindle OS",
-    "released": "2022"
+    "released": "2022",
+    "colors": [
+      "Space Whale",
+      "Unicorn Valley"
+    ]
   },
   {
     "id": "amazon-fire-hd-10-kids",
@@ -64551,7 +64722,10 @@
     },
     "body": {
       "weight": 460
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "sony-srs-xb13",
@@ -64745,6 +64919,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -64773,6 +64950,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -64801,6 +64981,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -64829,6 +65012,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -64857,6 +65043,9 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -66104,7 +66293,9 @@
       "chipset",
       "battery.capacity"
     ],
-    "colors": [],
+    "colors": [
+      "Black"
+    ],
     "audio": {
       "conn": "wireless",
       "form": "tws",
@@ -67634,7 +67825,13 @@
     },
     "specNA": {
       "connectivity.bluetooth": "several Honor Choice earbuds share this name with different Bluetooth versions; the shop does not say which (2026-10-03)"
-    }
+    },
+    "body": {
+      "weight": 47
+    },
+    "sources": [
+      "https://www.gadgetbytenepal.com/?p=90717"
+    ]
   },
   {
     "id": "jbl-quantum-100-m2-wired",
@@ -69960,7 +70157,10 @@
     "connectivity": {
       "bluetooth": "5.2"
     },
-    "os": "Android 15"
+    "os": "Android 15",
+    "colors": [
+      "Purple"
+    ]
   },
   {
     "id": "huawei-matebook-fold-ultimate-18",
@@ -70096,7 +70296,10 @@
       "main": "10 MP",
       "front": "12 MP"
     },
-    "released": "2025-05"
+    "released": "2025-05",
+    "colors": [
+      "Platinum"
+    ]
   },
   {
     "id": "acer-nitro-lite",
@@ -70176,7 +70379,9 @@
     "chipset": {
       "name": "Intel Core i7-1355U"
     },
-    "body": {}
+    "body": {
+      "weight": 1620
+    }
   },
   {
     "id": "asus-vivobook-16",
@@ -70248,7 +70453,9 @@
       "battery.capacity"
     ],
     "chipset": {},
-    "body": {},
+    "body": {
+      "weight": 1590
+    },
     "specNA": {
       "chipset.name": true
     }
@@ -71303,7 +71510,10 @@
     },
     "body": {
       "weight": 200
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-vacuum-cleaner-g20-lite",
@@ -78931,7 +79141,13 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11 Pro"
+    "os": "Windows 11 Pro",
+    "body": {
+      "weight": 1750
+    },
+    "sources": [
+      "https://www.pgrid.app/us/laptops/hp-probook-4-g1a-16in-clamshell"
+    ]
   },
   {
     "id": "hp-probook-440-g11-ultra-7-155u",
@@ -82701,7 +82917,10 @@
     "graphics": {
       "name": "AMD Radeon 890M",
       "type": "integrated"
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "lenovo-thinkbook-14-g8-irl-core",
@@ -84699,7 +84918,10 @@
     ],
     "body": {
       "weight": 5.3
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-router-ac1200",
@@ -85040,6 +85262,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -85942,7 +86167,10 @@
     ],
     "body": {
       "weight": 27.8
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-redmi-watch-6-active",
@@ -85983,6 +86211,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "White"
     ]
   },
   {
@@ -86024,7 +86255,10 @@
     ],
     "body": {
       "weight": 18
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "xiaomi-redmi-pad-2-9-7",
@@ -86911,7 +87145,10 @@
     },
     "body": {
       "weight": 370
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-soundgear-bta",
@@ -86948,7 +87185,10 @@
     },
     "body": {
       "weight": 350
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-soundbar-1300",
@@ -87185,7 +87425,10 @@
     },
     "body": {
       "weight": 1120
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-partybox-encore",
@@ -87406,7 +87649,10 @@
     },
     "body": {
       "weight": 1333
-    }
+    },
+    "colors": [
+      "Black"
+    ]
   },
   {
     "id": "jbl-jr-pop",
@@ -87525,6 +87771,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -87558,13 +87807,20 @@
     "summaryEn": "Razer Hammerhead HyperSpeed.",
     "sources": [
       "https://likemobile.am/en/razer-hammerhead-hyperspeed",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://memoryexpress.com/Products/MX00129318"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.2"
+    },
+    "colors": [
+      "White"
+    ],
+    "body": {
+      "weight": 53
     }
   },
   {
@@ -87595,6 +87851,9 @@
     ],
     "unsure": [
       "popularity"
+    ],
+    "colors": [
+      "Black"
     ]
   },
   {
@@ -91186,7 +91445,10 @@
     },
     "body": {
       "weight": 500
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "panasonic-rp-hje118-earphones",
@@ -94400,7 +94662,10 @@
     },
     "body": {
       "weight": 19
-    }
+    },
+    "colors": [
+      "White"
+    ]
   },
   {
     "id": "yandex-station-lite-2",
@@ -102630,7 +102895,8 @@
     },
     "summaryEn": "Xiaomi Mi True Wireless Earbuds Basic 2S.",
     "sources": [
-      "https://mobilecentre.am/product/xiaomi-mi-true-wireless-basic-2s-headphone-_black_/31314/"
+      "https://mobilecentre.am/product/xiaomi-mi-true-wireless-basic-2s-headphone-_black_/31314/",
+      "https://www.startech.com.bd/xiaomi-mi-twsej07ls-basic-2s-earbuds"
     ],
     "unsure": [
       "popularity"
@@ -102640,7 +102906,10 @@
     },
     "settled": [
       "notADuplicate"
-    ]
+    ],
+    "body": {
+      "weight": 4.1
+    }
   },
   {
     "id": "xiaomi-mi-true-wireless-earbuds-basic-2",
@@ -103808,13 +104077,17 @@
     },
     "summaryEn": "Beats Solo HD.",
     "sources": [
-      "https://mobilecentre.am/product/beats-headphone-solo-hd-on-ear-_pink_/23435/"
+      "https://mobilecentre.am/product/beats-headphone-solo-hd-on-ear-_pink_/23435/",
+      "https://www.productindetail.com/ps/beats-solo-hd"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
       "bluetooth": "none, wired 3.5 mm"
+    },
+    "body": {
+      "weight": 160
     }
   },
   {
@@ -104459,7 +104732,9 @@
     "connectivity": {
       "bluetooth": "5.3"
     },
-    "colors": [],
+    "colors": [
+      "Black"
+    ],
     "summaryEn": "Motorola's noise-cancelling earbuds with 12.4 mm drivers and Bluetooth 5.3.",
     "sources": [
       "https://shop.ucom.am/am/motorola-motobuds.html",
@@ -104506,7 +104781,9 @@
     "connectivity": {
       "bluetooth": "5.3"
     },
-    "colors": [],
+    "colors": [
+      "Black"
+    ],
     "summaryEn": "Bass-tuned Moto earbuds with 50 dB noise cancelling, LDAC and up to 41 hours with the case.",
     "sources": [
       "https://shop.ucom.am/am/motorola-moto-buds-bass.html",
@@ -152523,8 +152800,12 @@
     ],
     "summaryEn": "A 16-inch 2-in-1 laptop with Intel Core Ultra 7 256V.",
     "sources": [
-      "https://likemobile.am/en/hp-omnibook-7-flip"
-    ]
+      "https://likemobile.am/en/hp-omnibook-7-flip",
+      "https://www.pgrid.app/au/laptops/hp-omnibook-7-flip-16-au0000-16in-2_in_1"
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "hp-victus-15-fa2093dhp",
@@ -152812,8 +153093,12 @@
     ],
     "summaryEn": "JBL Tune 225TWS Ghost.",
     "sources": [
-      "https://news.jbl.com/en-CEU/192623-jbl-presents-a-striking-special-edition-of-the-tune-225tws"
-    ]
+      "https://news.jbl.com/en-CEU/192623-jbl-presents-a-striking-special-edition-of-the-tune-225tws",
+      "https://support.jbl.com/ca/en/headphones/headphones-bluetooth-wireless/TUNE225TWS-.html"
+    ],
+    "body": {
+      "weight": 9.8
+    }
   },
   {
     "id": "jbl-endurance-peak-2",
@@ -152858,8 +153143,12 @@
     ],
     "summaryEn": "JBL Endurance Peak II.",
     "sources": [
-      "https://www.amazon.com/dp/B08LQTJHLL"
-    ]
+      "https://www.amazon.com/dp/B08LQTJHLL",
+      "https://www.greentoe.com/product/JBL_Endurance_PEAK_II_True_Wireless_In-Ear_Sport_Headphones__Blue__JBLENDURPEAKIIBLAM"
+    ],
+    "body": {
+      "weight": 13
+    }
   },
   {
     "id": "nothing-ear-stick",
@@ -153803,8 +154092,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black",
@@ -153812,7 +154100,11 @@
       "Teal"
     ],
     "sources": [
-      "https://support.jbl.com/all-headphones/TUNE-BUDS-2.html"
-    ]
+      "https://support.jbl.com/all-headphones/TUNE-BUDS-2.html",
+      "https://audio46.com/blogs/headphones/jbl-tune-buds-2-review"
+    ],
+    "body": {
+      "weight": 5.5
+    }
   }
 ]

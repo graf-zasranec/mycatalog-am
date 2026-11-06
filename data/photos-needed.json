@@ -6,7 +6,7 @@
  "unmeasured": 0,
  "total": 3498,
  "missing": 0,
- "tooSmall": 295,
+ "tooSmall": 298,
  "products": [
   {
    "id": "sony-playstation-vr2",
@@ -1015,6 +1015,22 @@
    "visibleWidth": 433,
    "visibleHeight": 562,
    "visibleLong": 562
+  },
+  {
+   "id": "samsung-galaxy-buds-pro-r190",
+   "brand": "Samsung",
+   "name": "Galaxy Buds Pro",
+   "category": "headphones",
+   "shops": 2,
+   "query": "Samsung Galaxy Buds Pro",
+   "what": "too small",
+   "file": "images/cut/samsung-galaxy-buds-pro-r190__black.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 509,
+   "visibleHeight": 179,
+   "visibleLong": 509
   },
   {
    "id": "samsung-galaxy-tab-s12-plus",
@@ -3385,6 +3401,22 @@
    "visibleLong": 597
   },
   {
+   "id": "samsung-galaxy-buds-live",
+   "brand": "Samsung",
+   "name": "Galaxy Buds Live",
+   "category": "headphones",
+   "shops": 1,
+   "query": "Samsung Galaxy Buds Live",
+   "what": "too small",
+   "file": "images/cut/samsung-galaxy-buds-live__black.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 276,
+   "visibleHeight": 422,
+   "visibleLong": 422
+  },
+  {
    "id": "samsung-galaxy-z-fold-5",
    "brand": "Samsung",
    "name": "Galaxy Z Fold 5",
@@ -3847,6 +3879,22 @@
    "visibleWidth": 362,
    "visibleHeight": 412,
    "visibleLong": 412
+  },
+  {
+   "id": "xiaomi-redmi-note-12",
+   "brand": "Xiaomi",
+   "name": "Redmi Note 12",
+   "category": "phone",
+   "shops": 1,
+   "query": "Xiaomi Redmi Note 12",
+   "what": "too small",
+   "file": "images/cut/xiaomi-redmi-note-12__onyx-gray.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 338,
+   "visibleHeight": 456,
+   "visibleLong": 456
   },
   {
    "id": "xiaomi-router-ac1200",
