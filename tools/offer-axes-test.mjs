@@ -1,5 +1,8 @@
 import assert from 'node:assert/strict';
-import {attachVerifiedOfferAxes} from './offer-configs.mjs';
+import {attachVerifiedOfferAxes,attachOfferConfigs} from './offer-configs.mjs';
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
 const vlvBeige={'jbl-tune-530bt':[{shop:'vlv',url:'https://vlv.am/en/Product/44159',color:null,price:29900}]};
 attachVerifiedOfferAxes(vlvBeige);
 assert.equal(vlvBeige['jbl-tune-530bt'][0].color,'Beige','exact VLV title T530BT BEG supplies Beige');
@@ -27,3 +30,18 @@ const guarded={tablet:[{shop:'pixel',url:'https://example.test/tablet',checked:'
 attachVerifiedOfferAxes(matrix,guarded);assert.equal(matrix.tablet[0].storage,256);assert.equal(matrix.tablet[0].cell,true);assert.equal(matrix.tablet[0].size,15.6);assert.equal(matrix.tablet[0].price,100000,'a proof may never rewrite price');for(const o of matrix.tablet.slice(1)){assert.equal(o.storage,null);assert.equal(o.cell,false);assert.equal(o.size,16);}
 for(const scope of[{color:''},{price:0},{cell:'false'},{ram:'8'},{colour:'Blue'}]){const os={tablet:[{...matrix.tablet[1],storage:null}]};attachVerifiedOfferAxes(os,{tablet:[{...guarded.tablet[0],matchAxes:scope}]});assert.equal(os.tablet[0].storage,null);}
 console.log('VERIFIED_SELECTOR_AXES_PASS: exact finish/price/network guards, source size/cell corrections and price preservation');
+
+// OS is scalar text consumed by selectedProduct; hardware sections remain objects.
+const originalCwd=process.cwd(),fixtureDir=fs.mkdtempSync(path.join(os.tmpdir(),'better-config-os-'));
+try{
+ fs.mkdirSync(path.join(fixtureDir,'data/specs'),{recursive:true});
+ fs.writeFileSync(path.join(fixtureDir,'data/specs/shop-laptop.json'),'{}');
+ fs.writeFileSync(path.join(fixtureDir,'data/config-specs.json'),JSON.stringify({tablet:[{size:11,specs:{os:'Android 16, One UI 8',display:{refresh:90}}}]}));
+ process.chdir(fixtureDir);
+ const quotes={tablet:[{shop:'fixture',url:'https://example.test/tablet',size:11,price:109000,configSpecs:{display:{brightness:500}}},{shop:'fixture',url:'https://example.test/tablet',size:13,price:129000,configSpecs:{os:'Android 15'}}]};
+ attachOfferConfigs([{id:'tablet',category:'tablet'}],quotes);
+ assert.equal(quotes.tablet[0].configSpecs.os,'Android 16, One UI 8','OS must stay text rather than becoming a character-key object');
+ assert.deepEqual(quotes.tablet[0].configSpecs.display,{brightness:500,refresh:90},'partial hardware sections still merge');
+ assert.equal(quotes.tablet[1].configSpecs.os,'Android 15','a size-specific OS fact must not leak into a sibling configuration');
+ console.log('CONFIG_OS_TEXT_PASS');
+}finally{process.chdir(originalCwd);fs.rmSync(fixtureDir,{recursive:true,force:true});}

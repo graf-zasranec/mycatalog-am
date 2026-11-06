@@ -103,7 +103,13 @@ export function attachOfferConfigs(products, offers) {
       if (facts.url && facts.specs?.chipset?.name) o.cpu = facts.specs.chipset.name;
       const previous = o.configSpecs || {};
       o.configSpecs = { ...previous };
-      for (const [block, values] of Object.entries(facts.specs || {})) o.configSpecs[block] = { ...previous[block], ...values };
+      // Hardware sections merge, while scalar fields such as OS stay text.
+      // Spreading a string here turns it into a character-key object in the UI.
+      for (const [block, values] of Object.entries(facts.specs || {})) {
+        o.configSpecs[block] = values && typeof values === 'object' && !Array.isArray(values)
+          ? { ...previous[block], ...values }
+          : values;
+      }
       if (facts.allowedDisplayResolutions && !facts.allowedDisplayResolutions.includes(o.configSpecs.display?.resolution)) {
         o.configSpecs.display = { ...o.configSpecs.display, resolution: null, ppi: null };
       }
