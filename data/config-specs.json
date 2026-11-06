@@ -2973,6 +2973,26 @@
       "matchAxes": {
         "storage": 512
       }
+    },
+    {
+      "url": "https://allsell.am/en/dell-15-dc15250-core-i3-8gb-i-512gb",
+      "source": "https://allsell.am/en/dell-15-dc15250-core-i3-8gb-i-512gb",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i3, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i3"
+        }
+      }
+    },
+    {
+      "url": "https://allsell.am/en/dell-15-dc15250-core-i3-16gb-i-512gb",
+      "source": "https://allsell.am/en/dell-15-dc15250-core-i3-16gb-i-512gb",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i3, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i3"
+        }
+      }
     }
   ],
   "dell-alienware-18-area-51-32gb-rtx-5080": [
@@ -4095,6 +4115,16 @@
       "offerAxes": {
         "ram": 16
       }
+    },
+    {
+      "url": "https://allsell.am/en/lenovo-v15-g4-iru-core-i5-16gb-i-512gb-83a100abrm",
+      "source": "https://allsell.am/en/lenovo-v15-g4-iru-core-i5-16gb-i-512gb-83a100abrm",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i5, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i5"
+        }
+      }
     }
   ],
   "dell-vostro-3910": [
@@ -4126,7 +4156,13 @@
       },
       "offerAxes": {
         "ram": 8
-      }
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i5-13420H"
+        }
+      },
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i5-13420H, which differs from the product's default processor. Applies only to this page."
     },
     {
       "url": "https://vlv.am/en/Product/45699",
@@ -4138,6 +4174,32 @@
       },
       "offerAxes": {
         "ram": 16
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i5-13420H"
+        }
+      },
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i5-13420H, which differs from the product's default processor. Applies only to this page."
+    },
+    {
+      "url": "https://allsell.am/en/lenovo-v15-g4-amn-ryzen-3-16gb-i-512gb-83cq0025us",
+      "source": "https://allsell.am/en/lenovo-v15-g4-amn-ryzen-3-16gb-i-512gb-83cq0025us",
+      "verified": "2026-11-06: the shop's own title or page names AMD Ryzen 3, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "AMD Ryzen 3"
+        }
+      }
+    },
+    {
+      "url": "https://likemobile.am/en/lenovo-v15-g4",
+      "source": "https://likemobile.am/en/lenovo-v15-g4",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i5-13420H, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i5-13420H"
+        }
       }
     }
   ],
@@ -5344,6 +5406,98 @@
       },
       "source": "Manual individual selected shop configuration",
       "evidence": "Black Titanium andNatural titanium separately selected,459000AMD each."
+    }
+  ],
+  "dell-pro-16-pc16250": [
+    {
+      "url": "https://allsell.am/en/dell-pro-16-pc16250-i3-8gb-i-512gb",
+      "source": "https://allsell.am/en/dell-pro-16-pc16250-i3-8gb-i-512gb",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i3, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i3"
+        }
+      }
+    },
+    {
+      "url": "https://allsell.am/en/dell-pro-16-pc16250-i3-16gb-i-512gb",
+      "source": "https://allsell.am/en/dell-pro-16-pc16250-i3-16gb-i-512gb",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core i3, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core i3"
+        }
+      }
+    },
+    {
+      "url": "https://allsell.am/en/dell-pro-16-pc16250-ultra-5-225u-32gb-i-512gb",
+      "source": "https://allsell.am/en/dell-pro-16-pc16250-ultra-5-225u-32gb-i-512gb",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core Ultra 5 225U, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core Ultra 5 225U"
+        }
+      }
+    }
+  ],
+  "dell-inspiron-16": [
+    {
+      "url": "https://allsell.am/en/dell-inspiron-16-5640-i7-150u-16gb-i-1tb",
+      "source": "https://allsell.am/en/dell-inspiron-16-5640-i7-150u-16gb-i-1tb",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core 7 150U, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core 7 150U"
+        }
+      }
+    }
+  ],
+  "lenovo-yoga-7i-2-in-1-14iph11": [
+    {
+      "url": "https://allsell.am/en/lenovo-yoga-7-2-in-1-14iph11-core-ultra-5-16gb-i-512gb-83tc0003us",
+      "source": "https://allsell.am/en/lenovo-yoga-7-2-in-1-14iph11-core-ultra-5-16gb-i-512gb-83tc0003us",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core Ultra 5, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core Ultra 5"
+        }
+      }
+    }
+  ],
+  "lenovo-ideapad-5-14iru9": [
+    {
+      "url": "https://vlv.am/en/Product/38465",
+      "source": "https://vlv.am/en/Product/38465",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core 5 120U, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core 5 120U"
+        }
+      }
+    }
+  ],
+  "hp-elitebook-8-flip-g1i-13-3-ultra-5-225u-w11p-a37fyet": [
+    {
+      "url": "https://allsell.am/en/hp-elitebook-8-flip-g1i-ultra-7-255u-32gb-i-512gb-a37g0et",
+      "source": "https://allsell.am/en/hp-elitebook-8-flip-g1i-ultra-7-255u-32gb-i-512gb-a37g0et",
+      "verified": "2026-11-06: the shop's own title or page names Intel Core Ultra 7 255U, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "Intel Core Ultra 7 255U"
+        }
+      }
+    }
+  ],
+  "lenovo-ideapad-slim-3-15ahp10": [
+    {
+      "url": "https://allsell.am/en/lenovo-ideapad-slim-3-15ahp10-ryzen-7-8840hs-16gb-i-512gb-83ka000yrk",
+      "source": "https://allsell.am/en/lenovo-ideapad-slim-3-15ahp10-ryzen-7-8840hs-16gb-i-512gb-83ka000yrk",
+      "verified": "2026-11-06: the shop's own title or page names AMD Ryzen 7 8840HS, which differs from the product's default processor. Applies only to this page.",
+      "specs": {
+        "chipset": {
+          "name": "AMD Ryzen 7 8840HS"
+        }
+      }
     }
   ]
 }
