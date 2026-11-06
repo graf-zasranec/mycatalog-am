@@ -2449,6 +2449,530 @@
     ]
   },
   {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-airtag",
+    "category": "accessory",
+    "name": "AirTag (2nd generation)",
+    "aliases": [
+      "Apple AirTag",
+      "AirTag 1 Pack",
+      "APPLE AirTag (1 Pack)",
+      "AirTag (1 Pack)",
+      "Apple AirTag 1 pack",
+      "AirTag 2nd Generation",
+      "Apple AirTag (1 Pack), (2nd Generation)",
+      "AirTag 2"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {
+      "nfc": true
+    },
+    "body": {
+      "weight": 11.8,
+      "dimensions": "31.9 x 31.9 x 8 mm"
+    },
+    "summaryEn": "Apple's second-generation item tracker with a newer Ultra Wideband chip for longer-range Precision Finding.",
+    "sources": [
+      "https://www.apple.com/airtag/"
+    ],
+    "released": "2026"
+  },
+  {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-airtag-4-pack",
+    "category": "accessory",
+    "name": "AirTag (2nd generation, 4 pack)",
+    "aliases": [
+      "AirTag 4 Pack",
+      "Apple AirTag 4 Pack",
+      "APPLE AirTag (4 Pack)",
+      "AirTag (4 Pack)",
+      "AirTag 2nd Generation 4 Pack"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {
+      "nfc": true
+    },
+    "body": {
+      "weight": 11.8,
+      "dimensions": "31.9 x 31.9 x 8 mm"
+    },
+    "summaryEn": "Four AirTags in one box.",
+    "sources": [
+      "https://www.apple.com/airtag/"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "mid",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-pencil-pro",
+    "category": "accessory",
+    "name": "Apple Pencil Pro",
+    "aliases": [
+      "Apple Pencil Pro",
+      "Pencil Pro"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {},
+    "body": {},
+    "summaryEn": "Apple's top stylus: squeeze, barrel roll, haptics and Find My.",
+    "sources": [
+      "https://www.apple.com/apple-pencil/"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-pencil-usb-c",
+    "category": "accessory",
+    "name": "Apple Pencil (USB-C)",
+    "aliases": [
+      "Apple Pencil USB-C",
+      "Apple Pencil (USB-C)",
+      "APPLE Pencil (USB-C)",
+      "Pencil USB-C"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {},
+    "body": {},
+    "summaryEn": "The simpler Apple Pencil that pairs and charges over USB-C.",
+    "sources": [
+      "https://www.apple.com/apple-pencil/"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-pencil-2",
+    "category": "accessory",
+    "name": "Apple Pencil (2nd generation)",
+    "aliases": [
+      "Apple Pencil 2nd Generation",
+      "Apple Pencil (2nd Generation)",
+      "APPLE Pencil (2nd Generation)",
+      "Apple Pencil 2"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {},
+    "body": {},
+    "summaryEn": "Apple Pencil with magnetic pairing and charging and a double-tap gesture.",
+    "sources": [
+      "https://istore.am/product/689"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-magic-mouse",
+    "category": "accessory",
+    "name": "Magic Mouse (USB-C)",
+    "aliases": [
+      "Apple Magic Mouse",
+      "Magic Mouse",
+      "Magic Mouse USB-C",
+      "Apple Magic Mouse White",
+      "Apple Magic Mouse Black",
+      "Magic Mouse - Black Multi-Touch Surface",
+      "Magic Mouse - White Multi-Touch Surface"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "connectivity": {
+      "ports": "USB-C"
+    },
+    "body": {},
+    "summaryEn": "Apple's wireless Multi-Touch mouse, charged over USB-C.",
+    "sources": [
+      "https://www.zigzag.am/am/apple-magic-mouse-white-mxk53zm-a.html"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-magic-mouse-2",
+    "category": "accessory",
+    "name": "Magic Mouse 2 (Lightning)",
+    "aliases": [
+      "Apple Magic Mouse 2",
+      "APPLE Magic Mouse 2",
+      "Magic Mouse 2"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "connectivity": {
+      "ports": "Lightning"
+    },
+    "body": {},
+    "summaryEn": "The earlier Magic Mouse 2 that charges over Lightning.",
+    "sources": [
+      "https://istore.am/product/570"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-magic-keyboard",
+    "category": "accessory",
+    "name": "Magic Keyboard (USB-C)",
+    "aliases": [
+      "Apple Magic Keyboard",
+      "Magic Keyboard",
+      "Magic Keyboard USB-C",
+      "Magic Keyboard - International English",
+      "Magic Keyboard - US English"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {
+      "ports": "USB-C"
+    },
+    "body": {},
+    "summaryEn": "Apple's compact wireless keyboard for Mac, charged over USB-C.",
+    "sources": [
+      "https://istore.am/product/579"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "mid",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-magic-keyboard-touch-id",
+    "category": "accessory",
+    "name": "Magic Keyboard with Touch ID",
+    "aliases": [
+      "Magic Keyboard with Touch ID",
+      "Apple Magic Keyboard with Touch ID",
+      "Magic Keyboard Touch ID",
+      "Magic Keyboard with Touch ID for Mac"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "connectivity": {
+      "ports": "USB-C"
+    },
+    "body": {},
+    "summaryEn": "The compact Magic Keyboard with a Touch ID sensor for Macs with Apple silicon.",
+    "sources": [
+      "https://istore.am/product/551"
+    ]
+  },
+  {
+    "brand": "Apple",
+    "tier": "mid",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 35,
+    "accent": "#E8E8EA",
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "id": "apple-magic-keyboard-touch-id-numeric",
+    "category": "accessory",
+    "name": "Magic Keyboard with Touch ID and Numeric Keypad",
+    "aliases": [
+      "Magic Keyboard with Touch ID and Numeric Keypad",
+      "Apple Magic Keyboard Touch ID Numeric Keypad",
+      "Magic Keyboard Touch ID Numeric Keypad",
+      "Magic Keyboard with Touch ID and Numeric Keypad Black Keys"
+    ],
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "connectivity": {
+      "ports": "USB-C"
+    },
+    "body": {},
+    "summaryEn": "The full-size Magic Keyboard with Touch ID and a numeric keypad, in white or black keys.",
+    "sources": [
+      "https://istore.am/product/582"
+    ]
+  },
+  {
+    "id": "apple-magic-keyboard-numeric",
+    "category": "accessory",
+    "brand": "Apple",
+    "name": "Magic Keyboard with Numeric Keypad",
+    "aliases": [
+      "Magic Keyboard with Numeric Keypad",
+      "Apple Magic Keyboard with Numeric Keypad",
+      "Magic Keyboard with Numeric Keypad - Russian",
+      "Magic Keyboard with Numeric Keypad - International English"
+    ],
+    "tier": "budget",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 30,
+    "accent": "#E8E8EA",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "colors": [
+      "White"
+    ],
+    "connectivity": {
+      "ports": "Lightning"
+    },
+    "body": {},
+    "summaryEn": "The full-size Magic Keyboard with a numeric keypad, without Touch ID.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "sources": [
+      "https://istore.am/product/534"
+    ]
+  },
+  {
+    "id": "apple-vision-pro",
+    "category": "console",
+    "brand": "Apple",
+    "name": "Vision Pro",
+    "aliases": [
+      "Apple Vision Pro",
+      "Apple Vision Pro 256GB",
+      "Vision Pro 256GB",
+      "Apple Vision Pro 256GB White",
+      "A2117"
+    ],
+    "tier": "flagship",
+    "released": "2024-02",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 30,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": null
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": null
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": null
+      }
+    ],
+    "display": {
+      "type": "micro-OLED"
+    },
+    "battery": {},
+    "chipset": {
+      "name": "Apple M2 + R1"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 600
+    },
+    "os": "visionOS",
+    "colors": [
+      "White"
+    ],
+    "summaryEn": "Apple's spatial computer: micro-OLED displays, M2 and R1 chips, eye and hand tracking, 600–650 g.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "sources": [
+      "https://support.apple.com/en-us/117810",
+      "https://www.apple.com/newsroom/2023/06/introducing-apple-vision-pro/"
+    ]
+  },
+  {
     "id": "apple-homepod-mini",
     "category": "speaker",
     "brand": "Apple",
@@ -2498,6 +3022,60 @@
       "White",
       "Midnight",
       "Space Gray"
+    ]
+  },
+  {
+    "id": "apple-homepod-mini-2",
+    "category": "speaker",
+    "brand": "Apple",
+    "name": "HomePod mini 2",
+    "aliases": [
+      "HomePod mini 2",
+      "HomePod mini (2nd generation)",
+      "Apple HomePod mini 2",
+      "HomePod mini 2nd generation"
+    ],
+    "tier": "budget",
+    "released": "2026-10",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "os": "HomePod software",
+    "body": {
+      "weight": 335,
+      "height": 84.3,
+      "width": 97.9
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "6"
+    },
+    "colors": [
+      "White",
+      "Pink",
+      "Green",
+      "Blue",
+      "Midnight"
+    ],
+    "summaryEn": "The second-generation HomePod mini: Wi-Fi 6E, Bluetooth 6, Thread and Ultra Wideband, in five colours.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/homepod-mini/specs/",
+      "https://www.apple.com/newsroom/2026/10/apple-announces-the-next-generation-of-homepod-mini/"
     ]
   },
   {
@@ -3509,6 +4087,85 @@
       "Blue",
       "Purple",
       "Starlight"
+    ]
+  },
+  {
+    "id": "apple-ipad-mini-a20-pro",
+    "category": "tablet",
+    "brand": "Apple",
+    "name": "iPad mini (A20 Pro)",
+    "aliases": [
+      "iPad mini A20 Pro",
+      "iPad mini 8",
+      "iPad mini (A20 Pro)",
+      "iPad mini 2026",
+      "Apple iPad mini A20 Pro"
+    ],
+    "tier": "upper-mid",
+    "released": "2026-10",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 45,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": null
+      },
+      {
+        "ram": null,
+        "storage": 256,
+        "priceAmd": null
+      },
+      {
+        "ram": null,
+        "storage": 512,
+        "priceAmd": null
+      }
+    ],
+    "display": {
+      "size": 8.5,
+      "resolution": "2316x1512",
+      "ppi": 326,
+      "type": "Super Retina XDR OLED"
+    },
+    "battery": {},
+    "os": "iPadOS 27",
+    "year": 2026,
+    "chipset": {
+      "name": "Apple A20 Pro",
+      "gpu": "Apple 7-core GPU"
+    },
+    "body": {
+      "weight": 255,
+      "height": 195.3,
+      "width": 132.6,
+      "thickness": 5.4,
+      "materials": "Aluminium"
+    },
+    "connectivity": {
+      "bluetooth": "6",
+      "wifi": "Wi-Fi 7"
+    },
+    "cardSlot": false,
+    "camera": {
+      "main": "12 MP, f/1.8",
+      "front": "12 MP, f/2.0"
+    },
+    "colors": [
+      "Midnight",
+      "Starlight"
+    ],
+    "summaryEn": "The new iPad mini: 8.5-inch OLED display, A20 Pro chip, Wi-Fi 7 and Apple Pencil Pro support.",
+    "unsure": [
+      "popularity",
+      "priceAmd",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://www.apple.com/ipad-mini/specs/",
+      "https://www.apple.com/newsroom/2026/10/apple-gives-ipad-mini-its-biggest-update-ever/"
     ]
   },
   {
@@ -60699,6 +61356,513 @@
     ]
   },
   {
+    "id": "apple-mac-studio-m5-max",
+    "category": "desktop",
+    "brand": "Apple",
+    "name": "Mac Studio M5 Max",
+    "aliases": [
+      "Mac Studio Apple M5 Max",
+      "Apple Mac Studio M5 Max",
+      "Mac Studio M5 Max"
+    ],
+    "tier": "flagship",
+    "released": "2026-08",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 40,
+    "accent": "#D9DADE",
+    "display": {},
+    "chipset": {
+      "name": "Apple M5 Max",
+      "cpu": "18-core"
+    },
+    "graphics": {
+      "name": "Apple M5 Max 32- or 40-core GPU",
+      "cores": 40,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 36,
+        "storage": 512,
+        "priceAmd": null
+      }
+    ],
+    "body": {
+      "materials": "Aluminium",
+      "dimensions": "197 x 197 x 95 mm",
+      "weight": 2700
+    },
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "4x Thunderbolt 5, 2x USB-A, 2x USB-C, HDMI, 10Gb Ethernet, 3.5 mm"
+    },
+    "cardSlot": true,
+    "os": "macOS 27",
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "Apple's compact workstation with the M5 Max: 18-core CPU, up to 40 GPU cores.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/mac-studio/specs/"
+    ]
+  },
+  {
+    "id": "apple-mac-studio-m5-ultra",
+    "category": "desktop",
+    "brand": "Apple",
+    "name": "Mac Studio M5 Ultra",
+    "aliases": [
+      "Mac Studio Apple M5 Ultra",
+      "Apple Mac Studio M5 Ultra",
+      "Mac Studio M5 Ultra"
+    ],
+    "tier": "flagship",
+    "released": "2026-08",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 30,
+    "accent": "#D9DADE",
+    "display": {},
+    "chipset": {
+      "name": "Apple M5 Ultra",
+      "cpu": "30- or 36-core"
+    },
+    "graphics": {
+      "name": "Apple M5 Ultra 64- or 80-core GPU",
+      "cores": 80,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 96,
+        "storage": 1024,
+        "priceAmd": null
+      }
+    ],
+    "body": {
+      "materials": "Aluminium",
+      "dimensions": "197 x 197 x 95 mm",
+      "weight": 3600
+    },
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "6x Thunderbolt 5, 2x USB-A, HDMI, 10Gb Ethernet, 3.5 mm"
+    },
+    "cardSlot": true,
+    "os": "macOS 27",
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "The most powerful Mac Studio: M5 Ultra with up to 36 CPU and 80 GPU cores.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/mac-studio/specs/"
+    ]
+  },
+  {
+    "id": "apple-mac-mini-m5-pro",
+    "category": "desktop",
+    "brand": "Apple",
+    "name": "Mac mini M5 Pro",
+    "aliases": [
+      "Mac mini Apple M5 Pro",
+      "Apple Mac mini M5 Pro",
+      "Apple Mac Mini M5 Pro"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 45,
+    "accent": "#D9DADE",
+    "display": {},
+    "chipset": {
+      "name": "Apple M5 Pro",
+      "cpu": "15- or 18-core"
+    },
+    "graphics": {
+      "name": "Apple M5 Pro 16- or 20-core GPU",
+      "cores": 20,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": null
+      }
+    ],
+    "body": {
+      "dimensions": "127 x 127 x 50 mm",
+      "weight": 730
+    },
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "3x Thunderbolt 5, HDMI, 2x USB-C, 2.5Gb Ethernet, 3.5 mm"
+    },
+    "cardSlot": false,
+    "os": "macOS 27",
+    "colors": [
+      "Silver"
+    ],
+    "summaryEn": "The small Mac mini with the M5 Pro chip and Thunderbolt 5.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/mac-mini/specs/"
+    ]
+  },
+  {
+    "id": "apple-imac-24-m6",
+    "category": "desktop",
+    "brand": "Apple",
+    "name": "iMac M6",
+    "aliases": [
+      "iMac 24 M6",
+      "24-inch iMac M6",
+      "iMac 24-inch M6",
+      "Apple iMac M6",
+      "Apple iMac 24 M6"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 50,
+    "accent": "#7BA7D7",
+    "display": {
+      "size": 23.5,
+      "type": "4.5K Retina",
+      "resolution": "4480x2520",
+      "touch": false
+    },
+    "chipset": {
+      "name": "Apple M6",
+      "cpu": "10- or 12-core"
+    },
+    "graphics": {
+      "name": "Apple M6 10- or 12-core GPU",
+      "cores": 12,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": null
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": null
+      },
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": null
+      }
+    ],
+    "body": {
+      "materials": "Aluminium unibody",
+      "dimensions": "461 x 547 x 147 mm",
+      "weight": 4420
+    },
+    "battery": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "2x or 4x Thunderbolt, 3.5 mm, 2.5Gb Ethernet"
+    },
+    "cardSlot": false,
+    "os": "macOS 27",
+    "colors": [
+      "Blue",
+      "Purple",
+      "Pink",
+      "Orange",
+      "Yellow",
+      "Green",
+      "Silver"
+    ],
+    "summaryEn": "The 24-inch all-in-one iMac on the M6 chip, in seven colours.",
+    "unsure": [
+      "priceAmd",
+      "popularity",
+      "body.dimensions"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/imac/specs/"
+    ]
+  },
+  {
+    "id": "apple-macbook-pro-proled-m5-max",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro PROLED M5 Max",
+    "aliases": [
+      "MacBook Pro PROLED XDR M5 Max",
+      "MacBook Pro with PROLED XDR Display M5 Max",
+      "MacBook Pro 14 PROLED M5 Max",
+      "MacBook Pro 16 PROLED M5 Max",
+      "MacBook Pro 14-inch PROLED M5 Max",
+      "MacBook Pro 16-inch PROLED M5 Max",
+      "Apple MacBook Pro 14 PROLED M5 Max",
+      "Apple MacBook Pro 16 PROLED M5 Max"
+    ],
+    "tier": "flagship",
+    "released": "2026-10",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 45,
+    "accent": "#26262A",
+    "display": {
+      "size": 16.3,
+      "type": "Tandem OLED (PROLED XDR)",
+      "refresh": 120,
+      "touch": true,
+      "resolution": "3472x2266"
+    },
+    "chipset": {
+      "name": "Apple M5 Max",
+      "cpu": "18-core"
+    },
+    "graphics": {
+      "name": "Apple M5 Max 32- or 40-core GPU",
+      "cores": 40,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 36,
+        "storage": 2048,
+        "priceAmd": null,
+        "size": 16
+      },
+      {
+        "ram": 48,
+        "storage": 2048,
+        "priceAmd": null,
+        "size": 16
+      }
+    ],
+    "body": {
+      "materials": "Aluminium unibody",
+      "dimensions": "355.5 x 244.2 x 16.0 mm",
+      "weight": 1840
+    },
+    "battery": {
+      "capacity": 100
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "3x Thunderbolt 5, HDMI, MagSafe 3, 3.5 mm"
+    },
+    "cardSlot": true,
+    "os": "macOS 27",
+    "colors": [
+      "Silver",
+      "Space Black"
+    ],
+    "summaryEn": "The touch-screen MacBook Pro with the M5 Max: tandem OLED PROLED XDR display, up to 40 GPU cores.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/macbook-pro/proled-xdr-display/specs/",
+      "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/"
+    ]
+  },
+  {
+    "id": "apple-macbook-pro-proled-m5-pro",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro PROLED M5 Pro",
+    "aliases": [
+      "MacBook Pro PROLED XDR M5 Pro",
+      "MacBook Pro with PROLED XDR Display M5 Pro",
+      "MacBook Pro 14 PROLED M5 Pro",
+      "MacBook Pro 16 PROLED M5 Pro",
+      "MacBook Pro 14-inch PROLED M5 Pro",
+      "MacBook Pro 16-inch PROLED M5 Pro",
+      "Apple MacBook Pro 14 PROLED M5 Pro",
+      "Apple MacBook Pro 16 PROLED M5 Pro"
+    ],
+    "tier": "flagship",
+    "released": "2026-10",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 55,
+    "accent": "#26262A",
+    "display": {
+      "size": 14.2,
+      "type": "Tandem OLED (PROLED XDR)",
+      "refresh": 120,
+      "touch": true,
+      "resolution": "3024x1986"
+    },
+    "chipset": {
+      "name": "Apple M5 Pro",
+      "cpu": "15- or 18-core"
+    },
+    "graphics": {
+      "name": "Apple M5 Pro 16- or 20-core GPU",
+      "cores": 20,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 48,
+        "storage": 1024,
+        "priceAmd": null,
+        "size": 14
+      },
+      {
+        "ram": 24,
+        "storage": 1024,
+        "priceAmd": null,
+        "size": 16
+      },
+      {
+        "ram": 48,
+        "storage": 1024,
+        "priceAmd": null,
+        "size": 16
+      }
+    ],
+    "body": {
+      "materials": "Aluminium unibody",
+      "dimensions": "310.8 x 216.3 x 15.0 mm",
+      "weight": 1380
+    },
+    "battery": {
+      "capacity": 72.6
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "3x Thunderbolt 5, HDMI, MagSafe 3, 3.5 mm"
+    },
+    "cardSlot": true,
+    "os": "macOS 27",
+    "colors": [
+      "Silver",
+      "Space Black"
+    ],
+    "summaryEn": "The first touch-screen MacBook Pro: tandem OLED PROLED XDR display, M5 Pro, 14.2 or 16.3 inches.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/macbook-pro/proled-xdr-display/specs/",
+      "https://www.apple.com/newsroom/2026/10/apple-unveils-groundbreaking-macbook-pro-with-proled-xdr-display/"
+    ]
+  },
+  {
+    "id": "apple-macbook-pro-14-m6",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro M6",
+    "aliases": [
+      "MacBook Pro 14 M6",
+      "MacBook Pro 14-inch M6",
+      "MacBook Pro 14.2 M6",
+      "Apple Macbook Pro 14\"/M6",
+      "Apple MacBook Pro 14 M6",
+      "MacBook Pro Apple M6"
+    ],
+    "tier": "flagship",
+    "released": "2026-10",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 60,
+    "accent": "#26262A",
+    "display": {
+      "size": 14.2,
+      "type": "Liquid Retina XDR mini-LED",
+      "refresh": 120,
+      "touch": false,
+      "resolution": "3024x1964"
+    },
+    "chipset": {
+      "name": "Apple M6",
+      "cpu": "12-core"
+    },
+    "graphics": {
+      "name": "Apple M6 12-core GPU",
+      "cores": 12,
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": null
+      },
+      {
+        "ram": 24,
+        "storage": 1024,
+        "priceAmd": null
+      },
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": null
+      }
+    ],
+    "body": {
+      "materials": "Aluminium unibody",
+      "dimensions": "312.6 x 221.2 x 15.5 mm",
+      "weight": 1550
+    },
+    "battery": {
+      "capacity": 72.4
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "3x Thunderbolt 4, HDMI, MagSafe 3, 3.5 mm"
+    },
+    "cardSlot": true,
+    "os": "macOS 27",
+    "colors": [
+      "Silver",
+      "Space Black"
+    ],
+    "summaryEn": "The 14-inch MacBook Pro with the new M6 chip: 12-core CPU and GPU, mini-LED XDR screen.",
+    "unsure": [
+      "priceAmd",
+      "popularity"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/macbook-pro/specs/",
+      "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/"
+    ]
+  },
+  {
     "id": "xiaomi-15-ultra",
     "category": "phone",
     "brand": "Xiaomi",
@@ -79213,60 +80377,6 @@
     ]
   },
   {
-    "id": "apple-macbook-pro-16-inch-m5-max-mgee4",
-    "category": "laptop",
-    "brand": "Apple",
-    "name": "MacBook Pro 16 inch M5 Max MGEE4",
-    "aliases": [
-      "Apple MacBook Pro 16 inch M5 Max /2TB MGEE4 Space Black"
-    ],
-    "tier": "flagship",
-    "priceAmd": 2099500,
-    "priceAmdMax": 2099500,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 48,
-        "storage": 2048,
-        "priceAmd": 2099500
-      }
-    ],
-    "display": {
-      "size": 16.2,
-      "resolution": "3456x2234"
-    },
-    "battery": {
-      "capacity": 100
-    },
-    "summaryEn": "A 16.2-inch laptop with Apple M5 Max, 48 GB RAM and 2048 GB storage.",
-    "unsure": [
-      "popularity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "Apple M5 Max",
-      "cpu": "18-core"
-    },
-    "graphics": {
-      "name": "Apple M5 Max 32- or 40-core GPU",
-      "type": "integrated"
-    },
-    "colors": [
-      "Space Black"
-    ],
-    "os": "macOS",
-    "body": {
-      "weight": 2150
-    },
-    "sources": [
-      "https://www.apple.com/macbook-pro/specs/"
-    ],
-    "connectivity": {
-      "wifi": "Wi-Fi 7"
-    }
-  },
-  {
     "id": "asus-vivobook-14-flip-celeron-n4500-j1400ka-ds02t",
     "category": "laptop",
     "brand": "ASUS",
@@ -81086,60 +82196,6 @@
     ]
   },
   {
-    "id": "apple-macbook-pro-16-inch-m5-pro-mgec4",
-    "category": "laptop",
-    "brand": "Apple",
-    "name": "MacBook Pro 16 inch M5 Pro MGEC4",
-    "aliases": [
-      "MacBook Pro 16 inch M5 Pro /1TB MGEC4 Space Black"
-    ],
-    "tier": "flagship",
-    "priceAmd": 1549500,
-    "priceAmdMax": 1549500,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 48,
-        "storage": 1024,
-        "priceAmd": 1549500
-      }
-    ],
-    "display": {
-      "size": 16.2,
-      "resolution": "3456x2234"
-    },
-    "battery": {
-      "capacity": 100
-    },
-    "summaryEn": "A 16.2-inch laptop with Apple M5 Pro, 48 GB RAM and 1024 GB storage.",
-    "unsure": [
-      "popularity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "Apple M5 Pro",
-      "cpu": "18-core"
-    },
-    "graphics": {
-      "name": "Apple M5 Pro 16- or 20-core GPU",
-      "type": "integrated"
-    },
-    "colors": [
-      "Space Black"
-    ],
-    "os": "macOS",
-    "body": {
-      "weight": 2140
-    },
-    "sources": [
-      "https://www.apple.com/macbook-pro/specs/"
-    ],
-    "connectivity": {
-      "wifi": "Wi-Fi 7"
-    }
-  },
-  {
     "id": "xiaomi-pad-m1",
     "category": "tablet",
     "brand": "Xiaomi",
@@ -81613,6 +82669,62 @@
     ],
     "unsure": [
       "popularity"
+    ]
+  },
+  {
+    "id": "apple-tv-4k-4th-gen",
+    "category": "streamer",
+    "brand": "Apple",
+    "name": "TV 4K (4th generation)",
+    "aliases": [
+      "Apple TV 4K 4th generation",
+      "Apple TV 4K (4th generation)",
+      "Apple TV 4K 4th gen",
+      "Apple TV 4K 2026",
+      "Apple TV 4K A19"
+    ],
+    "tier": "mid",
+    "released": "2026-10",
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": 128,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "display": {},
+    "battery": {},
+    "chipset": {
+      "name": "Apple A19"
+    },
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6",
+      "ports": "HDMI 2.1; Gigabit Ethernet; Thread"
+    },
+    "body": {
+      "width": 93.24,
+      "height": 31,
+      "weight": 217,
+      "thickness": 93.24
+    },
+    "os": "tvOS",
+    "summaryEn": "The new Apple TV 4K with the A19 chip, Siri AI, Wi-Fi 7, Gigabit Ethernet and a home hub built in.",
+    "unsure": [
+      "popularity",
+      "priceAmd"
+    ],
+    "year": 2026,
+    "sources": [
+      "https://www.apple.com/apple-tv-4k/specs/",
+      "https://www.apple.com/newsroom/2026/10/apple-unveils-the-new-apple-tv-4k/"
     ]
   },
   {

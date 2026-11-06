@@ -4,9 +4,9 @@
  "measurement": "native visible product long edge, alpha > 128; SHA256-bound to cutout",
  "note": "Images below600px visible native long edge need a larger exact original, never enlargement. Unmeasured/stale cutouts need tools/thumbnails.py. Identity, finish and cutout quality still require visual review.",
  "unmeasured": 0,
- "total": 3498,
+ "total": 3518,
  "missing": 0,
- "tooSmall": 298,
+ "tooSmall": 299,
  "products": [
   {
    "id": "sony-playstation-vr2",
@@ -279,6 +279,22 @@
    "visibleWidth": 365,
    "visibleHeight": 560,
    "visibleLong": 560
+  },
+  {
+   "id": "apple-airtag",
+   "brand": "Apple",
+   "name": "AirTag (2nd generation)",
+   "category": "accessory",
+   "shops": 2,
+   "query": "Apple AirTag (2nd generation)",
+   "what": "too small",
+   "file": "images/cut/apple-airtag__white.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 483,
+   "visibleHeight": 483,
+   "visibleLong": 483
   },
   {
    "id": "babyliss-as960e",

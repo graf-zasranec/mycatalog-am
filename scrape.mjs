@@ -232,6 +232,11 @@ function tokenized(text) {
 function looksLikeAccessory(text) {
   // "Refrigerators (Top Mount)" names where the freezer sits, not a wall mount
   const h = tokenized(text).replace(/  +/g, ' ').replace(/ (top|bottom) mount /g, ' ');
+  // Owner, 2026-10-16: Apple's own Magic Mouse, Magic Keyboard, Apple Pencil and AirTag ARE
+  // carried. Only the device itself: a case, key ring, loop, tips, charger, an iPad keyboard
+  // folio or a bundle with an iPad/Mac still counts as an accessory and falls through below.
+  if (/ (magic mouse|magic keyboard|apple pencil|pencil pro|pencil usb c|airtag) /.test(h)
+      && !/ (case|cover|key ?ring|keyring|loop|holder|tips?|folio|charger|charging|strap|skin|sleeve|protector|grip|clip|cable|carabiner|battery|android|belkin|ipad|iphone|macbook|imac|mobee) /.test(h)) return false;
   if (ACCESSORY_WORDS.some(w => h.includes(' ' + w + ' '))) return true;
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
@@ -937,6 +942,24 @@ if (process.argv[2] === '--selftest') {
     [null,'AirPods Max 2 Type-C Pink'],
     [null,'Apple AirPods Max'],
     [null,'Case for AirPods Max 2'],
+    // Apple's own accessories are carried (owner 2026-10-16); things sold for them are not
+    ['apple-magic-mouse', 'Apple Magic Mouse White /MXK53ZM/A'],
+    ['apple-magic-keyboard-touch-id-numeric', 'Magic Keyboard with Touch ID and Numeric Keypad for Mac models with Apple silicon - Black Keys'],
+    ['apple-magic-keyboard-touch-id', 'Magic Keyboard with Touch ID for Mac computers with Apple silicon - Russian'],
+    ['apple-pencil-pro', 'Apple Pencil Pro A2538 /MX2D3'],
+    ['apple-airtag', 'Apple AirTag (1 Pack), (2nd Generation) /MFE94ZE/A'],
+    [null, 'AirTag FineWoven Key Ring - Black'],
+    [null, 'APPLE Leather Case for Apple Pencil'],
+    [null, 'Mobee Magic Charger for Apple Magic Mouse'],
+    [null, 'Apple Magic Keyboard iPad Pro 11 - RU Black /MWR23'],
+    // the PROLED MacBook Pro must not fall onto the mini-LED M5 Pro page, nor M6 onto M5
+    ['apple-macbook-pro-proled-m5-pro', 'Apple MacBook Pro 14 PROLED M5 Pro 18/20 48GB/1TB Silver /MMF54'],
+    ['apple-macbook-pro-proled-m5-max', 'Apple MacBook Pro 16 PROLED M5 Max 18/40 48GB/2TB Space Black /MJ334'],
+    ['apple-macbook-pro-14-m5-pro', 'Apple MacBook Pro 16 M5 Pro 18/20 48GB/1TB Space Black /MGEC4'],
+    ['apple-macbook-pro-14-m6', 'Apple MacBook Pro 14 M6 12/12 16GB/1TB Silver /MHWW4'],
+    ['apple-imac-24-m6', 'Apple iMac 24 M6 10/10 16GB/256GB Blue /MH094'],
+    ['apple-mac-studio-m5-ultra', 'Apple Mac Studio M5 Ultra 96GB 1TB'],
+    ['apple-mac-mini-m5-pro', 'Apple Mac Mini M5 Pro'],
     // the multi-brand shops reached beyond phones; these slugs must land on the right item
     // A bare key must not match when another product line precedes it. Xiaomi's "17 Pro Max"
     // sits inside "Redmi Note 17 Pro Max", which sold at a third of the flagship's price.
