@@ -54,7 +54,7 @@ for (const p of P) for (const [, defs] of app.GROUPS) for (const [k, get] of def
   if (v == null) continue;
   for (const lang of ['hy', 'ru']) {
     // product names that contain an ordinary word: Intel Core i7, Intel Arc Graphics, Center Stage
-    const out = app.tr(String(v), lang).replace(/\b(Intel )?Core (Ultra|i\d)\b|\b(Arc|UHD|Iris Xe|Radeon|Adreno|Iris)( \w+)? Graphics\b|\bCenter Stage\b|\bShield Glass\b|\bGorilla Glass\b|\bCrystal Glass\b|\bPrizm( [A-Z][a-z]+){1,2}\b/gi, ' ');
+    const out = app.tr(String(v), lang).replace(/\b(Intel )?Core (Ultra|i\d)\b|\b(Arc|UHD|Iris Xe|Radeon|Adreno|Iris)( \w+)? Graphics\b|\bCenter Stage\b|\bDIGIC( Accelerator| X)?\b|\bHEPA\b|\bShield Glass\b|\bGorilla Glass\b|\bCrystal Glass\b|\bPrizm( [A-Z][a-z]+){1,2}\b/gi, ' ');
     for (const w of out.match(/[A-Za-z][A-Za-z-]{2,}/g) || []) {
       const lw = w.toLowerCase();
       // a hyphen can carry an Armenian or Russian ending ("SIM-ով", "ANC-ом"): the empty part is not a word

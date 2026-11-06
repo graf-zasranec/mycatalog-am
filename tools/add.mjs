@@ -24,7 +24,9 @@ const BRANDS = [...new Set(phones.map(p => p.brand))]
            // approved by the owner 2026-10-30
            'Ariston', 'Mova', 'Gorenje', 'Gree', 'Wacom', 'Fujifilm',
            // 2026-10-31: the owner asked for a professional cameras section
-           'Canon', 'Nikon'])
+           'Canon', 'Nikon',
+           // approved by the owner 2026-11-06
+           'Sharp', 'AEG', 'Nivona'])
   // longest first, so "Bang & Olufsen" is not read as nothing at all
   .sort((a, b) => b.length - a.length);
 const reBrand = (b, flags) => new RegExp('(^|\\s)' + b.replace(/[+&()[\]{}.*?^$|\\]/g, '\\$&') + '(\\s|$)', flags);
