@@ -985,6 +985,7 @@ function emptyDiv(html, marker) {
 
 let shared = 0;
 const sitemapRows = [];
+const DEAL_LINK = { hy: 'Ինչն է էժանացել', ru: 'Что подешевело', en: 'What got cheaper' };
 const cats = [...new Set(phones.map(catOf))];
 for (const lang of LANGS) {
   // R: back up to the site root from a page two folders deep (three under ru/ and en/)
@@ -1043,7 +1044,8 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
       return t.facts(nameOf(c[0]), amd(bestOf(c[0])), nameOf(w), shopsOf(w), amd(bestOf(c[0])), amd(Math.max(...l.map(p => offersOf(p).at(-1).price))), new Set(l.flatMap(p => offersOf(p).map(o => o.shop))).size); };
     const R = '../'.repeat(path.split('/').length - 1 + (pre ? 1 : 0)), url = home + path;
     const desc = label + '. ' + t.cdesc(list.length, amd(Math.min(...list.map(bestOf))));
-    const page = HEAD({ title: t.ctitle(label), desc, url, img: SITE + SEO.img,
+    // people search "Kindle price", not "e-reader": 36 impressions a month at position 5 (Search Console, Nov 2026)
+    const page = HEAD({ title: t.ctitle(path === 'c/ereader/' ? `Kindle, ${label}` : label), desc, url, img: SITE + SEO.img,
       ld: [crumbs([['Better.am', SITE + app], ...trail.map(([n, u]) => [n, home + u]), [label, url]])], lang, path }) + `
 <header><a href="${R}${app}">Better.am</a></header>
 <nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › ${trail.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a> › `).join('')}<span>${esc(label)}</span></nav>
@@ -1054,6 +1056,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 ${others.length ? `<p>${t.others}${others.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
 <a class="go" href="${R}${app}#/${appHash}">${t.cgo}</a>
 ${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
+<p><a href="${R}${pre}deals/">${DEAL_LINK[lang]}</a></p>
 <h2>${t.models}</h2>
 <ul class="pl">${list.map(p => `<li><a href="${R}${pre}p/${p.id}/">${esc(nameOf(p))}</a><span>${t.from(amd(bestOf(p)))}</span></li>`).join('\n')}</ul>
 <p class="upd">${today.split('-').reverse().join('.')}</p>
@@ -1098,6 +1101,39 @@ const bodyHTML = list => {
   }
   return html + (inList ? '</ul>\n' : '');
 };
+// Price drops as a real page: the same strict DROPS as the front page, all of them, biggest first.
+// It is also a hub - every product on it gets a link from a page Google visits often.
+const DEAL_T = {
+  hy: { h1: 'Գների անկում', title: 'Գների անկում Հայաստանում. ինչն է էժանացել | Better.am',
+    lead: n => `${n} ապրանք, որոնց ամենացածր գինը իրականում իջել է։ Հաշվում ենք միայն առնվազն 5% անկումը, երբ գները համեմատվել են նույն թվով խանութներում առնվազն մեկ շաբաթ։`,
+    row: (f, pc, d) => `−${f} (−${pc}%), ${d}-ից`, link: 'Ինչն է էժանացել' },
+  ru: { h1: 'Снижение цен', title: 'Снижение цен в Армении: что подешевело | Better.am',
+    lead: n => `Товаров, чья минимальная цена действительно снизилась: ${n}. Считаем только падение от 5%, когда цены сравнивались в том же числе магазинов минимум неделю.`,
+    row: (f, pc, d) => `−${f} (−${pc}%), с ${d}`, link: 'Что подешевело' },
+  en: { h1: 'Price drops', title: 'Price drops in Armenia: what got cheaper | Better.am',
+    lead: n => `${n} products whose lowest price really fell. We count only falls of 5% or more, with prices compared across the same number of shops for at least a week.`,
+    row: (f, pc, d) => `−${f} (−${pc}%), since ${d}`, link: 'What got cheaper' },
+};
+const dealRows = DROPS.map(d => ({ ...d, p: phones.find(q => q.id === d.id), pct: d.fall / (d.lo + d.fall) }))
+  .filter(d => d.p).sort((a, b) => b.pct - a.pct);
+if (dealRows.length) for (const lang of LANGS) {
+  const t = DEAL_T[lang], pre = PRE[lang], home = SITE + pre, app = lang === 'hy' ? '' : `?lang=${lang}`, url = `${home}deals/`;
+  const R = pre ? '../../' : '../', shop = k => PRICES.shops?.[k]?.name || k;
+  const dmy = d => d.split('-').reverse().slice(0, 2).join('.');
+  fs.mkdirSync(`${pre}deals`, { recursive: true });
+  writePage(`${pre}deals/index.html`, HEAD({ title: t.title, desc: t.lead(dealRows.length), url, img: SITE + SEO.img,
+    ld: [crumbs([['Better.am', SITE + app], [t.h1, url]])], lang, path: 'deals/' }) + `
+<header><a href="${R}${app}">Better.am</a></header>
+<nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › <span>${t.h1}</span></nav>
+<main>
+<h1>${t.h1}</h1>
+<p class="lead">${esc(t.lead(dealRows.length))}</p>
+<ul class="pl">${dealRows.map(d => `<li><a href="${R}${pre}p/${d.id}/">${esc(nameOf(d.p))}</a><span>${amd(d.lo)} · ${esc(shop(d.loShop))} · ${t.row(amd(d.fall), Math.round(d.pct * 100), dmy(d.since))}</span></li>`).join('\n')}</ul>
+<p class="upd">${today.split('-').reverse().join('.')}</p>
+</main></body></html>
+`);
+  sitemapRows.push([url, today, 0.8]);
+}
 if (BLOG.length) for (const lang of LANGS) {
   const t = L[lang], pre = PRE[lang], home = SITE + pre, app = lang === 'hy' ? '' : `?lang=${lang}`;
   const R1 = pre ? '../../' : '../', R2 = '../' + R1;     // back to the root from b/ and from b/<id>/

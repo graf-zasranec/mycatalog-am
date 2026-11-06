@@ -3618,6 +3618,8 @@ function submitSearch() {
   const el = $('#q');
   if (el) el.blur();
   save();
+  // GA's automatic site search reads ?q= from the address; this search lives in the hash, so it never fired.
+  if (st.q) window.gtag?.('event', 'search', { search_term: String(st.q).slice(0, 100) });
   if (location.hash !== '#/search') location.hash = '#/search'; else render();
 }
 document.addEventListener('focusin',e=>{if(e.target.id==='q'&&!catalogueReady())ensureCatalogue().catch(()=>{})});
