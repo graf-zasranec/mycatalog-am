@@ -235,7 +235,7 @@ function looksLikeAccessory(text) {
   // Owner, 2026-10-16: Apple's own Magic Mouse, Magic Keyboard, Apple Pencil and AirTag ARE
   // carried. Only the device itself: a case, key ring, loop, tips, charger, an iPad keyboard
   // folio or a bundle with an iPad/Mac still counts as an accessory and falls through below.
-  if (/ (magic mouse|magic keyboard|apple pencil|pencil pro|pencil usb c|airtag) /.test(h)
+  if (/ (magic mouse|magic keyboard|magic trackpad|apple pencil|pencil pro|pencil usb c|airtag) /.test(h)
       && !/ (case|cover|key ?ring|keyring|loop|holder|tips?|folio|charger|charging|strap|skin|sleeve|protector|grip|clip|cable|carabiner|battery|android|belkin|ipad|iphone|macbook|imac|mobee) /.test(h)) return false;
   if (ACCESSORY_WORDS.some(w => h.includes(' ' + w + ' '))) return true;
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
