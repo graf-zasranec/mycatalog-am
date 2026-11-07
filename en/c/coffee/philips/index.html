@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,9 +35,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Coffee machines","item":"https://better.am/en/c/coffee/"},{"@type":"ListItem","position":3,"name":"Philips — Coffee machines","item":"https://better.am/en/c/coffee/philips/"}]}</script>
-<link rel="stylesheet" href="/fonts/fonts.css"><style>
+<script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script><link rel="stylesheet" href="/fonts/fonts.css"><style>
 :root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
-@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+:root[data-theme=dark]{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
 a{color:inherit}img{max-width:100%}
 .top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
@@ -62,6 +63,7 @@ ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repe
 .cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
 .cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+details.more{margin-top:16px}details.more summary{display:inline-flex;align-items:center;min-height:46px;padding:8px 20px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-weight:700;cursor:pointer}details.more ul{margin-top:12px}ul.pl a{min-width:0;overflow-wrap:anywhere}ul.pl span{flex:none;font-variant-numeric:tabular-nums}
 .upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
 .ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
 a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
@@ -82,6 +84,7 @@ a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 <ul class="pg"><li><a class="cd" href="../../../../en/p/philips-hd7462-20/"><span class="ph"><img src="/images/thumb/philips-hd7462-20__main-3ed25f371a64-320.webp" alt="Philips HD7462/20 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips HD7462/20 Coffee Maker</b><span class="pr">from 27 400 ֏</span></a></li>
 <li><a class="cd" href="../../../../en/p/philips-hd7459-20/"><span class="ph"><img src="/images/thumb/philips-hd7459-20__main-54cbcea44be7-320.webp" alt="Philips Drip Coffee Maker HD7459/20" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips Drip Coffee Maker HD7459/20</b><span class="pr">from 39 000 ֏</span></a></li>
 <li><a class="cd" href="../../../../en/p/philips-sm7580-00/"><span class="ph"><img src="/images/thumb/philips-sm7580-00__main-c8790ab12bb7-320.webp" alt="Philips SM7580/00 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips SM7580/00 Coffee Machine</b><span class="pr">from 459 900 ֏</span></a></li></ul>
+
 <p style="margin-top:22px">Cheapest: Philips HD7462/20 Coffee Maker at 27 400 ֏. Most widely sold: Philips HD7462/20 Coffee Maker (2 shops). Prices 27 400 ֏–459 900 ֏ across 3 shops.</p>
 <p class="upd">07.11.2026</p>
 </main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

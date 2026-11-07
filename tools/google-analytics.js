@@ -115,6 +115,15 @@
       actions.append(button);
     }
     if (!marketingEnabled) box.append(title,text);
+    // On a short phone the panel must not hide the page: the wording folds away, one tap from view.
+    if (phone && innerHeight < 720) {
+      const more = document.createElement('details'), summary = document.createElement('summary');
+      summary.textContent = ({hy:'Մանրամասն',ru:'Подробнее',en:'Details'})[document.documentElement.lang] || 'Details';
+      summary.style.cssText = 'min-height:32px;font-size:13px;cursor:pointer';
+      more.append(summary, ...[...box.children].filter(el => el !== title));
+      box.append(more);
+      if (innerHeight < 600 || innerWidth < 300) { box.style.top = '12px'; box.style.bottom = 'auto'; }
+    }
     box.append(actions); document.body.append(box);
   };
   document.addEventListener('click', e => { if (e.target.closest('[data-analytics-settings]')) showChoice(); });

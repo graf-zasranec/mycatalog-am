@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,9 +35,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Уход за волосами","item":"https://better.am/ru/c/haircare/"},{"@type":"ListItem","position":3,"name":"Dyson — Уход за волосами","item":"https://better.am/ru/c/haircare/dyson/"}]}</script>
-<link rel="stylesheet" href="/fonts/fonts.css"><style>
+<script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script><link rel="stylesheet" href="/fonts/fonts.css"><style>
 :root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
-@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+:root[data-theme=dark]{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
 a{color:inherit}img{max-width:100%}
 .top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
@@ -62,6 +63,7 @@ ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repe
 .cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
 .cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+details.more{margin-top:16px}details.more summary{display:inline-flex;align-items:center;min-height:46px;padding:8px 20px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-weight:700;cursor:pointer}details.more ul{margin-top:12px}ul.pl a{min-width:0;overflow-wrap:anywhere}ul.pl span{flex:none;font-variant-numeric:tabular-nums}
 .upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
 .ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
 a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
@@ -87,6 +89,7 @@ a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 <li><a class="cd" href="../../../../ru/p/dyson-multi-complete-long-hs05/"><span class="ph"><img src="/images/thumb/dyson-multi-complete-long-hs05__gold-ebb91af6c722-320.webp" alt="Dyson Airwrap Multi-styler Complete Long HS05" width="320" height="320" loading="lazy" decoding="async"></span><b>Dyson Airwrap Multi-styler Complete Long HS05</b><span class="pr">от 199 000 ֏</span></a></li>
 <li><a class="cd" href="../../../../ru/p/dyson-origin-hs05/"><span class="ph"><img src="/images/thumb/dyson-origin-hs05__main-6a10b507da9e-320.webp" alt="Dyson Airwrap Origin HS05" width="320" height="320" loading="lazy" decoding="async"></span><b>Dyson Airwrap Origin HS05</b><span class="pr">от 165 000 ֏</span></a></li>
 <li><a class="cd" href="../../../../ru/p/dyson-hd18-vinca-blue-topaz/"><span class="ph"><img src="/images/thumb/dyson-hd18-vinca-blue-topaz__main-1f785cc664b5-320.webp" alt="Dyson Supersonic HD18" width="320" height="320" loading="lazy" decoding="async"></span><b>Dyson Supersonic HD18</b><span class="pr">от 194 900 ֏</span></a></li></ul>
+
 <p style="margin-top:22px">Дешевле всего — Dyson Airstrait HT01, 136 900 ֏. Больше всего предложений у Dyson Airwrap i.d. HS08 (10 магазинах). Цены: 136 900 ֏–335 000 ֏, магазинов: 11.</p>
 <p class="upd">07.11.2026</p>
 </main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

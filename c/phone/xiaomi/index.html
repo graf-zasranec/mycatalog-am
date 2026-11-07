@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'sha256-F7KwRfFGWWr2KH4RkNfmdq9Z8/B5n71Jal3eSq81p8w=' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,9 +35,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/"},{"@type":"ListItem","position":2,"name":"Հեռախոսներ","item":"https://better.am/c/phone/"},{"@type":"ListItem","position":3,"name":"Xiaomi — Հեռախոսներ","item":"https://better.am/c/phone/xiaomi/"}]}</script>
-<link rel="stylesheet" href="/fonts/fonts.css"><style>
+<script>try{var _t=JSON.parse(localStorage.getItem('better.v2')||localStorage.getItem('mycatalog.v2')||'{}').theme;if(_t&&_t!=='auto')document.documentElement.dataset.theme=_t}catch(e){}</script><link rel="stylesheet" href="/fonts/fonts.css"><style>
 :root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
-@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+:root[data-theme=dark]{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
 a{color:inherit}img{max-width:100%}
 .top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
@@ -62,6 +63,7 @@ ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repe
 .cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
 .cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+details.more{margin-top:16px}details.more summary{display:inline-flex;align-items:center;min-height:46px;padding:8px 20px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-weight:700;cursor:pointer}details.more ul{margin-top:12px}ul.pl a{min-width:0;overflow-wrap:anywhere}ul.pl span{flex:none;font-variant-numeric:tabular-nums}
 .upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
 .ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
 a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
@@ -126,36 +128,36 @@ a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 <li><a class="cd" href="../../../p/xiaomi-poco-f5/"><span class="ph"><img src="/images/thumb/xiaomi-poco-f5__black-c5cfe54d6685-320.webp" alt="Xiaomi Poco F5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco F5</b><span class="pr">134 900 ֏-ից</span></a></li>
 <li><a class="cd" href="../../../p/xiaomi-redmi-note-10-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-10-pro__black-f238556a1f32-320.webp" alt="Xiaomi Redmi Note 10 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 10 Pro</b><span class="pr">139 900 ֏-ից</span></a></li>
 <li><a class="cd" href="../../../p/xiaomi-poco-f4/"><span class="ph"><img src="/images/thumb/xiaomi-poco-f4__black-064ffcd6e4e5-320.webp" alt="Xiaomi Poco F4" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco F4</b><span class="pr">164 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-15t-pro/"><span class="ph"><img src="/images/thumb/xiaomi-15t-pro__black-af8b76ca394f-320.webp" alt="Xiaomi 15T Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 15T Pro</b><span class="pr">289 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-17/"><span class="ph"><img src="/images/thumb/xiaomi-17__black-7a4af595ef9e-320.webp" alt="Xiaomi 17" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 17</b><span class="pr">365 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-15-ultra/"><span class="ph"><img src="/images/thumb/xiaomi-15-ultra__silver-42e842d02605-320.webp" alt="Xiaomi 15 Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 15 Ultra</b><span class="pr">449 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-a5/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-a5__main-1d11fe6df1ff-320.webp" alt="Xiaomi Redmi A5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi A5</b><span class="pr">37 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-10a/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-10a__black-cf72f0cb3df9-320.webp" alt="Xiaomi Redmi 10A" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi 10A</b><span class="pr">40 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/poco-c71/"><span class="ph"><img src="/images/thumb/poco-c71__black-c225c341f2ef-320.webp" alt="Xiaomi POCO C71" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi POCO C71</b><span class="pr">49 700 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-10c/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-10c__main-8a0847dc4c0c-320.webp" alt="Xiaomi Redmi 10C" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi 10C</b><span class="pr">52 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-c40/"><span class="ph"><img src="/images/thumb/xiaomi-poco-c40__main-f92935cb986c-320.webp" alt="Xiaomi Poco C40" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco C40</b><span class="pr">55 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/poco-c75/"><span class="ph"><img src="/images/thumb/poco-c75__black-8ba9039f66a3-320.webp" alt="Xiaomi POCO C75" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi POCO C75</b><span class="pr">57 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-note-12/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-12__onyx-gray-81e2b1c23ea7-320.webp" alt="Xiaomi Redmi Note 12" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 12</b><span class="pr">57 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-13/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-13__main-c36e1686e1dc-320.webp" alt="Xiaomi Redmi 13" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi 13</b><span class="pr">69 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-m6/"><span class="ph"><img src="/images/thumb/xiaomi-poco-m6__main-f0f7f42d21fd-320.webp" alt="Xiaomi Poco M6" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco M6</b><span class="pr">75 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-note-11/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-11__main-7281ee899699-320.webp" alt="Xiaomi Redmi Note 11" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 11</b><span class="pr">76 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-m6-pro/"><span class="ph"><img src="/images/thumb/xiaomi-poco-m6-pro__main-213d4d6a6533-320.webp" alt="Xiaomi Poco M6 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco M6 Pro</b><span class="pr">89 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-x5-5g/"><span class="ph"><img src="/images/thumb/xiaomi-poco-x5-5g__blue-cbcdcda531d4-320.webp" alt="Xiaomi Poco X5 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco X5 5G</b><span class="pr">97 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-note-11s/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-11s__main-44fc8ef5d3ac-320.webp" alt="Xiaomi Redmi Note 11S" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 11S</b><span class="pr">99 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-17-5g/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-17-5g__black-c7f4887ebedd-320.webp" alt="Xiaomi Redmi 17 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi 17 5G</b><span class="pr">104 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-note-13-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-13-pro__midnight-black-49986a319c09-320.webp" alt="Xiaomi Redmi Note 13 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 13 Pro</b><span class="pr">127 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-12-lite/"><span class="ph"><img src="/images/thumb/xiaomi-12-lite__main-0ac1f4827164-320.webp" alt="Xiaomi 12 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 12 Lite</b><span class="pr">143 500 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-note-13-pro-plus/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-13-pro-plus__midnight-black-c6fa4be9ace1-320.webp" alt="Xiaomi Redmi Note 13 Pro+ 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 13 Pro+ 5G</b><span class="pr">151 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-x5-pro-5g/"><span class="ph"><img src="/images/thumb/xiaomi-poco-x5-pro-5g__main-c28588b8cd4b-320.webp" alt="Xiaomi Poco X5 Pro 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco X5 Pro 5G</b><span class="pr">173 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-redmi-note-11-proplus-5g/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-note-11-proplus-5g__main-ce6cf7ef688c-320.webp" alt="Xiaomi Redmi Note 11 Pro+ 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Note 11 Pro+ 5G</b><span class="pr">175 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-14t/"><span class="ph"><img src="/images/thumb/xiaomi-14t__gray-3c6975b8bc55-320.webp" alt="Xiaomi 14T" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 14T</b><span class="pr">179 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-13-lite/"><span class="ph"><img src="/images/thumb/xiaomi-13-lite__main-2844b1887184-320.webp" alt="Xiaomi 13 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 13 Lite</b><span class="pr">189 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-f6/"><span class="ph"><img src="/images/thumb/xiaomi-poco-f6__black-151d397df07c-320.webp" alt="Xiaomi Poco F6" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco F6</b><span class="pr">192 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-14t-pro/"><span class="ph"><img src="/images/thumb/xiaomi-14t-pro__titan-blue-82a917c4b812-320.webp" alt="Xiaomi 14T Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 14T Pro</b><span class="pr">225 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-poco-f6-pro/"><span class="ph"><img src="/images/thumb/xiaomi-poco-f6-pro__black-82b21902f9db-320.webp" alt="Xiaomi Poco F6 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco F6 Pro</b><span class="pr">236 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-12x/"><span class="ph"><img src="/images/thumb/xiaomi-12x__main-8e44612f8c92-320.webp" alt="Xiaomi 12X" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 12X</b><span class="pr">239 900 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-12-pro/"><span class="ph"><img src="/images/thumb/xiaomi-12-pro__black-4fa5d5601587-320.webp" alt="Xiaomi 12 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 12 Pro</b><span class="pr">349 000 ֏-ից</span></a></li>
-<li><a class="cd" href="../../../p/xiaomi-12s-ultra/"><span class="ph"><img src="/images/thumb/xiaomi-12s-ultra__main-cef6e6c2745d-320.webp" alt="Xiaomi 12S Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 12S Ultra</b><span class="pr">419 000 ֏-ից</span></a></li></ul>
+<li><a class="cd" href="../../../p/xiaomi-15t-pro/"><span class="ph"><img src="/images/thumb/xiaomi-15t-pro__black-af8b76ca394f-320.webp" alt="Xiaomi 15T Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 15T Pro</b><span class="pr">289 000 ֏-ից</span></a></li></ul>
+<details class="more"><summary>Ցույց տալ բոլոր 77 մոդելները</summary><ul class="pl"><li><a href="../../../p/xiaomi-17/">Xiaomi 17</a><span>365 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-15-ultra/">Xiaomi 15 Ultra</a><span>449 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-a5/">Xiaomi Redmi A5</a><span>37 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-10a/">Xiaomi Redmi 10A</a><span>40 000 ֏-ից</span></li>
+<li><a href="../../../p/poco-c71/">Xiaomi POCO C71</a><span>49 700 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-10c/">Xiaomi Redmi 10C</a><span>52 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-c40/">Xiaomi Poco C40</a><span>55 900 ֏-ից</span></li>
+<li><a href="../../../p/poco-c75/">Xiaomi POCO C75</a><span>57 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-note-12/">Xiaomi Redmi Note 12</a><span>57 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-13/">Xiaomi Redmi 13</a><span>69 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-m6/">Xiaomi Poco M6</a><span>75 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-note-11/">Xiaomi Redmi Note 11</a><span>76 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-m6-pro/">Xiaomi Poco M6 Pro</a><span>89 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-x5-5g/">Xiaomi Poco X5 5G</a><span>97 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-note-11s/">Xiaomi Redmi Note 11S</a><span>99 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-17-5g/">Xiaomi Redmi 17 5G</a><span>104 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-note-13-pro/">Xiaomi Redmi Note 13 Pro</a><span>127 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-12-lite/">Xiaomi 12 Lite</a><span>143 500 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-note-13-pro-plus/">Xiaomi Redmi Note 13 Pro+ 5G</a><span>151 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-x5-pro-5g/">Xiaomi Poco X5 Pro 5G</a><span>173 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-redmi-note-11-proplus-5g/">Xiaomi Redmi Note 11 Pro+ 5G</a><span>175 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-14t/">Xiaomi 14T</a><span>179 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-13-lite/">Xiaomi 13 Lite</a><span>189 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-f6/">Xiaomi Poco F6</a><span>192 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-14t-pro/">Xiaomi 14T Pro</a><span>225 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-poco-f6-pro/">Xiaomi Poco F6 Pro</a><span>236 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-12x/">Xiaomi 12X</a><span>239 900 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-12-pro/">Xiaomi 12 Pro</a><span>349 000 ֏-ից</span></li>
+<li><a href="../../../p/xiaomi-12s-ultra/">Xiaomi 12S Ultra</a><span>419 000 ֏-ից</span></li></ul></details>
 <p style="margin-top:22px">Ամենաէժանը՝ Xiaomi Redmi A5՝ 37 000 ֏։ Ամենաշատ խանութներում՝ Xiaomi Redmi 17 (11 խանութ)։ Գները՝ 37 000 ֏–595 000 ֏, 18 խանութ։</p>
 <p class="upd">07.11.2026</p>
 </main><footer class="ft"><div><a href="/c/laptop/">Նոութբուքեր</a><a href="/c/ereader/">Էլ. ընթերցիչներ</a><a href="/c/monitor/">Մոնիտորներ</a><a href="/c/headphones/">Ականջակալներ</a><a href="/c/speaker/">Բարձրախոսներ</a><a href="/c/accessory/">Apple աքսեսուարներ</a><a href="/c/console/">Խաղային կոնսոլներ</a><a href="/c/desktop/">Համակարգիչներ</a><a href="/c/tablet/">Պլանշետներ</a><a href="/c/phone/">Հեռախոսներ</a><a href="/c/watch/">Խելացի ժամացույցներ</a><a href="/c/component/">Մասնագործեր</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></div></footer></body></html>

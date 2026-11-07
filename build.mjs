@@ -872,9 +872,10 @@ const specRows = (p, l) => {
     })),
   ].filter(([, v]) => v);
 };
-const STYLE = `<link rel="stylesheet" href="/fonts/fonts.css"><style>
+const STYLE = `<script>${THEME_JS}</script><link rel="stylesheet" href="/fonts/fonts.css"><style>
 :root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
-@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+:root[data-theme=dark]{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
 a{color:inherit}img{max-width:100%}
 .top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
@@ -899,6 +900,7 @@ ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repe
 .cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
 .cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+details.more{margin-top:16px}details.more summary{display:inline-flex;align-items:center;min-height:46px;padding:8px 20px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-weight:700;cursor:pointer}details.more ul{margin-top:12px}ul.pl a{min-width:0;overflow-wrap:anywhere}ul.pl span{flex:none;font-variant-numeric:tabular-nums}
 .upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
 .ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
 a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
@@ -911,6 +913,10 @@ const CHROME = {
   en: { catalog: 'Catalogue', deals: 'Price drops', blog: 'Blog' },
 };
 const LANG_NAMES = { hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' };
+// A section can hold 445 products. The most popular get cards; the rest fold into one plain list,
+// which stays in the page so every product keeps its link from here.
+const CARD_LIMIT = 48;
+const SHOW_ALL = { hy: n => `Ցույց տալ բոլոր ${n} մոդելները`, ru: n => `Показать все модели: ${n}`, en: n => `Show all ${n} models` };
 const TOP = (lang, path) => {
   const pre = PRE[lang], c = CHROME[lang], app = lang === 'hy' ? '/' : `/?lang=${lang}`;
   return `<div class="bar"><header class="top"><a class="wm" href="${app}" aria-label="Better.am">better<em>.</em></a>
@@ -936,7 +942,7 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' ${sha(THEME_JS)}${COUNTER.script.map(h => ' ' + h).join('')}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -1102,7 +1108,8 @@ ${TOP(lang, path)}
 ${others.length ? `<p class="lead" style="margin:18px 0 0">${t.others}</p><ul class="pills" style="margin-top:6px">${others.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}</ul>` : ''}
 <ul class="pills">${brands.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}<li><a href="${R}${pre}deals/">${DEAL_LINK[lang]}</a></li></ul>
 <h2>${t.models}</h2>
-<ul class="pg">${list.map(p => `<li><a class="cd" href="${R}${pre}p/${p.id}/">${cardImg(p)}<b>${esc(nameOf(p))}</b><span class="pr">${t.from(amd(bestOf(p)))}</span></a></li>`).join('\n')}</ul>
+<ul class="pg">${list.slice(0, CARD_LIMIT).map(p => `<li><a class="cd" href="${R}${pre}p/${p.id}/">${cardImg(p)}<b>${esc(nameOf(p))}</b><span class="pr">${t.from(amd(bestOf(p)))}</span></a></li>`).join('\n')}</ul>
+${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](list.length)}</summary><ul class="pl">${list.slice(CARD_LIMIT).map(p => `<li><a href="${R}${pre}p/${p.id}/">${esc(nameOf(p))}</a><span>${t.from(amd(bestOf(p)))}</span></li>`).join('\n')}</ul></details>` : ''}
 <p style="margin-top:22px">${esc(factsOf(list))}</p>
 <p class="upd">${today.split('-').reverse().join('.')}</p>
 </main>${FOOT(lang)}</body></html>
