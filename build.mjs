@@ -766,8 +766,8 @@ function writePage(file, html) {
 //
 // These colours are literals because a standalone page cannot read the CSS variables in
 // _shell.html. They mirror the tokens as of 2026-09-20: #F7F3EC --bg, #FFFFFF --surface,
-// #161C28 --text, #4A5262 --body, #626974 --muted, #9E2B25 --brand, and for dark #12151D --bg,
-// #1A1E29 --surface, #F2EEE7 --text, #B3BBC9 --body, #9E2B25 --brand (burgundy, 2026-11-08). A palette change has to
+// #161C28 --text, #4A5262 --body, #626974 --muted, #6E2433 --brand, and for dark #12151D --bg,
+// #1A1E29 --surface, #F2EEE7 --text, #B3BBC9 --body, #6E2433 --brand (burgundy, 2026-11-08). A palette change has to
 // be made here too.
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const nameOf = p => p.name.toLowerCase().startsWith(p.brand.toLowerCase()) ? p.name : p.brand + ' ' + p.name;
@@ -888,9 +888,9 @@ const specRows = (p, l) => {
   ].filter(([, v]) => v);
 };
 const STYLE = `<script>${THEME_JS}</script><link rel="stylesheet" href="/fonts/fonts.css"><style>
-:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#9E2B25;--brand-ink:#fffdfa;--brand-soft:#F6E4E1;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
-@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#9E2B25;--brand-ink:#fffdfa;--brand-soft:#3A1E1C;--good:#87d7b0;--good-soft:#19382c}}
-:root[data-theme=dark]{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#9E2B25;--brand-ink:#fffdfa;--brand-soft:#3A1E1C;--good:#87d7b0;--good-soft:#19382c}
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#6E2433;--brand-ink:#fffdfa;--brand-soft:#EFE1E3;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#7A2A3A;--brand-ink:#fffdfa;--brand-soft:#33191F;--good:#87d7b0;--good-soft:#19382c}}
+:root[data-theme=dark]{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#7A2A3A;--brand-ink:#fffdfa;--brand-soft:#33191F;--good:#87d7b0;--good-soft:#19382c}
 *{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
 a{color:inherit}img{max-width:100%}
 .top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
@@ -1281,8 +1281,8 @@ ${COUNTER.tag}
 <style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
 display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px;text-align:center}
 h1{font-size:26px;margin:0 0 6px}p{margin:0 0 20px;color:#4A5262}
-a{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:12px 22px;border-radius:50px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}p{color:#B3BBC9}a{background:#9E2B25;color:#fff}}</style>
+a{display:inline-block;background:#6E2433;color:#fff;text-decoration:none;padding:12px 22px;border-radius:50px}
+@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}p{color:#B3BBC9}a{background:#7A2A3A;color:#fff}}</style>
 </head><body><div>
 <h1>Էջը չի գտնվել</h1>
 <p>Հնարավոր է՝ այս ապրանքը այլևս կատալոգում չէ։</p>
