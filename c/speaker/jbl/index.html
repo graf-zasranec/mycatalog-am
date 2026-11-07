@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,87 +35,106 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/"},{"@type":"ListItem","position":2,"name":"Բարձրախոսներ","item":"https://better.am/c/speaker/"},{"@type":"ListItem","position":3,"name":"JBL — Բարձրախոսներ","item":"https://better.am/c/speaker/jbl/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/">Կատալոգ</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></nav>
+<div class="lg"><span aria-current="true">ՀԱՅ</span><a href="/ru/c/speaker/jbl/" hreflang="ru">РУС</a><a href="/en/c/speaker/jbl/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../">Better.am</a> › <a href="../../../c/speaker/">Բարձրախոսներ</a> › <span>JBL — Բարձրախոսներ</span></nav>
 <main>
 <h1>JBL — Բարձրախոսներ</h1>
 <p class="lead">JBL — Բարձրախոսներ. 56 մոդել, 15 000 ֏-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։</p>
-<p>Ամենաէժանը՝ JBL Go 3՝ 15 000 ֏։ Ամենաշատ խանութներում՝ JBL Clip 5 (9 խանութ)։ Գները՝ 15 000 ֏–649 900 ֏, 12 խանութ։</p>
-<p>Այլ ապրանքանիշեր՝ <a href="../../../c/speaker/marshall/">Marshall</a> · <a href="../../../c/speaker/samsung/">Samsung</a> · <a href="../../../c/speaker/harman-kardon/">Harman Kardon</a> · <a href="../../../c/speaker/sony/">Sony</a> · <a href="../../../c/speaker/yandex/">Yandex</a> · <a href="../../../c/speaker/xiaomi/">Xiaomi</a> · <a href="../../../c/speaker/bose/">Bose</a> · <a href="../../../c/speaker/bang-olufsen/">Bang &amp; Olufsen</a> · <a href="../../../c/speaker/hisense/">Hisense</a> · <a href="../../../c/speaker/panasonic/">Panasonic</a></p>
 <a class="go" href="../../../#/c/speaker">Զտել և համեմատել Better.am-ում</a>
-
-<p><a href="../../../deals/">Ինչն է էժանացել</a></p>
+<p class="lead" style="margin:18px 0 0">Այլ ապրանքանիշեր՝ </p><ul class="pills" style="margin-top:6px"><li><a href="../../../c/speaker/marshall/">Marshall</a></li><li><a href="../../../c/speaker/samsung/">Samsung</a></li><li><a href="../../../c/speaker/harman-kardon/">Harman Kardon</a></li><li><a href="../../../c/speaker/sony/">Sony</a></li><li><a href="../../../c/speaker/yandex/">Yandex</a></li><li><a href="../../../c/speaker/xiaomi/">Xiaomi</a></li><li><a href="../../../c/speaker/bose/">Bose</a></li><li><a href="../../../c/speaker/bang-olufsen/">Bang &amp; Olufsen</a></li><li><a href="../../../c/speaker/hisense/">Hisense</a></li><li><a href="../../../c/speaker/panasonic/">Panasonic</a></li></ul>
+<ul class="pills"><li><a href="../../../deals/">Ինչն է էժանացել</a></li></ul>
 <h2>Մոդելներ և գներ</h2>
-<ul class="pl"><li><a href="../../../p/jbl-charge-5/">JBL Charge 5</a><span>54 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-flip-7/">JBL Flip 7</a><span>45 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-boombox-2/">JBL Boombox 2</a><span>152 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-encore-essential/">JBL PartyBox Encore Essential</a><span>129 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-clip-5/">JBL Clip 5</a><span>21 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-authentics-500/">JBL Authentics 500</a><span>199 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-authentics-200/">JBL Authentics 200</a><span>129 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-go-4/">JBL Go 4</a><span>15 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-flip-6/">JBL Flip 6</a><span>39 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-xtreme-4/">JBL Xtreme 4</a><span>119 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-ultimate/">JBL PartyBox Ultimate</a><span>539 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-charge-6/">JBL Charge 6</a><span>61 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-authentics-300/">JBL Authentics 300</a><span>169 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-on-the-go/">JBL PartyBox On-The-Go</a><span>129 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-club-120/">JBL PartyBox Club 120</a><span>155 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-130/">JBL PartyBox 130</a><span>169 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-stage-320/">JBL PartyBox Stage 320</a><span>205 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-boombox-4/">JBL BoomBox 4</a><span>209 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-710/">JBL PartyBox 710</a><span>285 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-go-5/">JBL Go 5</a><span>17 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-pulse-5/">JBL Pulse 5</a><span>89 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-boombox-3/">JBL Boombox 3</a><span>145 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-go-3/">JBL Go 3</a><span>15 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-clip-4/">JBL Clip 4</a><span>18 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-xtreme-3/">JBL Xtreme 3</a><span>99 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-xtreme-5/">JBL Xtreme 5</a><span>159 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-310/">JBL PartyBox 310</a><span>179 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-520/">JBL PartyBox 520</a><span>255 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-330/">JBL PartyBox 330</a><span>289 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-1000/">JBL PartyBox 1000</a><span>415 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-wind-3/">JBL Wind 3</a><span>24 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-flip-essential-2/">JBL Flip Essential 2</a><span>55 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-horizon-3/">JBL Horizon 3</a><span>64 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-charge-essential-2/">JBL Charge Essential 2</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-110/">JBL PartyBox 110</a><span>142 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-encore-2/">JBL PartyBox Encore 2</a><span>149 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-on-the-go-2/">JBL PartyBox On-The-Go 2</a><span>155 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-720/">JBL PartyBox 720</a><span>339 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-jr-pop/">JBL JR POP</a><span>20 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-wind-2/">JBL Wind 2</a><span>29 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-horizon-speaker/">JBL Horizon Speaker</a><span>55 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundgear-bta/">JBL Soundgear BTA</a><span>89 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-playlist/">JBL Playlist</a><span>89 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-sb550/">JBL SoundBar SB550</a><span>104 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-sb270/">JBL SoundBar SB270</a><span>109 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-partybox-encore/">JBL PartyBox Encore</a><span>129 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-sb580/">JBL SoundBar SB580</a><span>159 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-500/">JBL SoundBar 500</a><span>214 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-boombox-3-wi-fi/">JBL Boombox 3 Wi-Fi</a><span>249 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-bar-500-mk2/">JBL Bar 500 MK2</a><span>269 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-800/">JBL SoundBar 800</a><span>329 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-bar-800-mk2/">JBL Bar 800 MK2</a><span>409 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-1000/">JBL SoundBar 1000</a><span>419 000 ֏-ից</span></li>
-<li><a href="../../../p/jbl-bar-1000-pro/">JBL Bar 1000 Pro</a><span>449 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-bar-1000-mk2/">JBL Bar 1000 MK2</a><span>499 900 ֏-ից</span></li>
-<li><a href="../../../p/jbl-soundbar-1300/">JBL SoundBar 1300</a><span>529 000 ֏-ից</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../p/jbl-charge-5/"><span class="ph"><img src="/images/thumb/jbl-charge-5__forest-green-45a3830e76fc-320.webp" alt="JBL Charge 5" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Charge 5</b><span class="pr">54 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-flip-7/"><span class="ph"><img src="/images/thumb/jbl-flip-7__red-73af64f6991f-320.webp" alt="JBL Flip 7" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Flip 7</b><span class="pr">45 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-boombox-2/"><span class="ph"><img src="/images/thumb/jbl-boombox-2__main-3b182322743b-320.webp" alt="JBL Boombox 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Boombox 2</b><span class="pr">152 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-encore-essential/"><span class="ph"><img src="/images/thumb/jbl-partybox-encore-essential__black-29895d776d1c-320.webp" alt="JBL PartyBox Encore Essential" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox Encore Essential</b><span class="pr">129 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-clip-5/"><span class="ph"><img src="/images/thumb/jbl-clip-5__white-15e9421cef51-320.webp" alt="JBL Clip 5" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Clip 5</b><span class="pr">21 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-authentics-500/"><span class="ph"><img src="/images/thumb/jbl-authentics-500__main-58cd4f9b9b55-320.webp" alt="JBL Authentics 500" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Authentics 500</b><span class="pr">199 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-authentics-200/"><span class="ph"><img src="/images/thumb/jbl-authentics-200__black-bcda3290ad22-320.webp" alt="JBL Authentics 200" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Authentics 200</b><span class="pr">129 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-go-4/"><span class="ph"><img src="/images/thumb/jbl-go-4__black-17c1326cbe79-320.webp" alt="JBL Go 4" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Go 4</b><span class="pr">15 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-flip-6/"><span class="ph"><img src="/images/thumb/jbl-flip-6__red-72af994067a6-320.webp" alt="JBL Flip 6" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Flip 6</b><span class="pr">39 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-xtreme-4/"><span class="ph"><img src="/images/thumb/jbl-xtreme-4__black-857023569821-320.webp" alt="JBL Xtreme 4" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Xtreme 4</b><span class="pr">119 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-ultimate/"><span class="ph"><img src="/images/thumb/jbl-partybox-ultimate__black-62ab7ec1ce41-320.webp" alt="JBL PartyBox Ultimate" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox Ultimate</b><span class="pr">539 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-charge-6/"><span class="ph"><img src="/images/thumb/jbl-charge-6__white-7567f1f4f7d8-320.webp" alt="JBL Charge 6" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Charge 6</b><span class="pr">61 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-authentics-300/"><span class="ph"><img src="/images/thumb/jbl-authentics-300__black-1fd2bbcd692e-320.webp" alt="JBL Authentics 300" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Authentics 300</b><span class="pr">169 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-on-the-go/"><span class="ph"><img src="/images/thumb/jbl-partybox-on-the-go__black-559b78249ba5-320.webp" alt="JBL PartyBox On-The-Go" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox On-The-Go</b><span class="pr">129 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-club-120/"><span class="ph"><img src="/images/thumb/jbl-partybox-club-120__black-7f92ad162970-320.webp" alt="JBL PartyBox Club 120" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox Club 120</b><span class="pr">155 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-130/"><span class="ph"><img src="/images/thumb/jbl-partybox-130__black-1086a7dc2b15-320.webp" alt="JBL PartyBox 130" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 130</b><span class="pr">169 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-stage-320/"><span class="ph"><img src="/images/thumb/jbl-partybox-stage-320__black-41deb8912921-320.webp" alt="JBL PartyBox Stage 320" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox Stage 320</b><span class="pr">205 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-boombox-4/"><span class="ph"><img src="/images/thumb/jbl-boombox-4__blue-d8141650a6f9-320.webp" alt="JBL BoomBox 4" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL BoomBox 4</b><span class="pr">209 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-710/"><span class="ph"><img src="/images/thumb/jbl-partybox-710__black-b8ba48f9c007-320.webp" alt="JBL PartyBox 710" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 710</b><span class="pr">285 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-go-5/"><span class="ph"><img src="/images/thumb/jbl-go-5__purple-2d3d2a5dd9d8-320.webp" alt="JBL Go 5" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Go 5</b><span class="pr">17 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-pulse-5/"><span class="ph"><img src="/images/thumb/jbl-pulse-5__black-854be9ff9969-320.webp" alt="JBL Pulse 5" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Pulse 5</b><span class="pr">89 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-boombox-3/"><span class="ph"><img src="/images/thumb/jbl-boombox-3__black-camo-f483498e56d4-320.webp" alt="JBL Boombox 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Boombox 3</b><span class="pr">145 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-go-3/"><span class="ph"><img src="/images/thumb/jbl-go-3__red-213141765030-320.webp" alt="JBL Go 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Go 3</b><span class="pr">15 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-clip-4/"><span class="ph"><img src="/images/thumb/jbl-clip-4__black-65647d630601-320.webp" alt="JBL Clip 4" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Clip 4</b><span class="pr">18 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-xtreme-3/"><span class="ph"><img src="/images/thumb/jbl-xtreme-3__black-a154d8f9a989-320.webp" alt="JBL Xtreme 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Xtreme 3</b><span class="pr">99 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-xtreme-5/"><span class="ph"><img src="/images/thumb/jbl-xtreme-5__squad-8f70804f83ce-320.webp" alt="JBL Xtreme 5" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Xtreme 5</b><span class="pr">159 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-310/"><span class="ph"><img src="/images/thumb/jbl-partybox-310__main-ba13e998f45e-320.webp" alt="JBL PartyBox 310" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 310</b><span class="pr">179 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-520/"><span class="ph"><img src="/images/thumb/jbl-partybox-520__black-3f261f76f20a-320.webp" alt="JBL PartyBox 520" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 520</b><span class="pr">255 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-330/"><span class="ph"><img src="/images/thumb/jbl-partybox-330__black-24e89022e8cf-320.webp" alt="JBL PartyBox 330" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 330</b><span class="pr">289 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-1000/"><span class="ph"><img src="/images/thumb/jbl-partybox-1000__black-d41beefdde6f-320.webp" alt="JBL PartyBox 1000" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 1000</b><span class="pr">415 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-wind-3/"><span class="ph"><img src="/images/thumb/jbl-wind-3__black-ff9ba8ba0875-320.webp" alt="JBL Wind 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Wind 3</b><span class="pr">24 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-flip-essential-2/"><span class="ph"><img src="/images/thumb/jbl-flip-essential-2__gray-d814a310d62f-320.webp" alt="JBL Flip Essential 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Flip Essential 2</b><span class="pr">55 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-horizon-3/"><span class="ph"><img src="/images/thumb/jbl-horizon-3__gray-01bc88ea578f-320.webp" alt="JBL Horizon 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Horizon 3</b><span class="pr">64 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-charge-essential-2/"><span class="ph"><img src="/images/thumb/jbl-charge-essential-2__blue-821c7ace5ab8-320.webp" alt="JBL Charge Essential 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Charge Essential 2</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-110/"><span class="ph"><img src="/images/thumb/jbl-partybox-110__main-851141050e3a-320.webp" alt="JBL PartyBox 110" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 110</b><span class="pr">142 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-encore-2/"><span class="ph"><img src="/images/thumb/jbl-partybox-encore-2__black-ac3e844037f5-320.webp" alt="JBL PartyBox Encore 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox Encore 2</b><span class="pr">149 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-on-the-go-2/"><span class="ph"><img src="/images/thumb/jbl-partybox-on-the-go-2__main-749c8cbc04e2-320.webp" alt="JBL PartyBox On-The-Go 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox On-The-Go 2</b><span class="pr">155 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-720/"><span class="ph"><img src="/images/thumb/jbl-partybox-720__main-197c6e06985a-320.webp" alt="JBL PartyBox 720" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox 720</b><span class="pr">339 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-jr-pop/"><span class="ph"><img src="/images/thumb/jbl-jr-pop__main-f826f7a94a81-320.webp" alt="JBL JR POP" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR POP</b><span class="pr">20 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-wind-2/"><span class="ph"><img src="/images/thumb/jbl-wind-2__main-29bdda1911c0-320.webp" alt="JBL Wind 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Wind 2</b><span class="pr">29 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-horizon-speaker/"><span class="ph"><img src="/images/thumb/jbl-horizon-speaker__gray-61e348ab4be1-320.webp" alt="JBL Horizon Speaker" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Horizon Speaker</b><span class="pr">55 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundgear-bta/"><span class="ph"><img src="/images/thumb/jbl-soundgear-bta__main-3b73693a72c8-320.webp" alt="JBL Soundgear BTA" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Soundgear BTA</b><span class="pr">89 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-playlist/"><span class="ph"><img src="/images/thumb/jbl-playlist__main-7849e33aa585-320.webp" alt="JBL Playlist" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Playlist</b><span class="pr">89 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-sb550/"><span class="ph"><img src="/images/thumb/jbl-soundbar-sb550__black-1aa68b9ce746-320.webp" alt="JBL SoundBar SB550" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar SB550</b><span class="pr">104 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-sb270/"><span class="ph"><img src="/images/thumb/jbl-soundbar-sb270__main-76d40a6100c7-320.webp" alt="JBL SoundBar SB270" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar SB270</b><span class="pr">109 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-partybox-encore/"><span class="ph"><img src="/images/thumb/jbl-partybox-encore__main-5fe90caacbf0-320.webp" alt="JBL PartyBox Encore" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL PartyBox Encore</b><span class="pr">129 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-sb580/"><span class="ph"><img src="/images/thumb/jbl-soundbar-sb580__main-c3e05e68663b-320.webp" alt="JBL SoundBar SB580" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar SB580</b><span class="pr">159 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-500/"><span class="ph"><img src="/images/thumb/jbl-soundbar-500__main-38a4111ce83e-320.webp" alt="JBL SoundBar 500" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar 500</b><span class="pr">214 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-boombox-3-wi-fi/"><span class="ph"><img src="/images/thumb/jbl-boombox-3-wi-fi__main-5106971b402f-320.webp" alt="JBL Boombox 3 Wi-Fi" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Boombox 3 Wi-Fi</b><span class="pr">249 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-bar-500-mk2/"><span class="ph"><img src="/images/thumb/jbl-bar-500-mk2__main-1a52bf2d6145-320.webp" alt="JBL Bar 500 MK2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Bar 500 MK2</b><span class="pr">269 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-800/"><span class="ph"><img src="/images/thumb/jbl-soundbar-800__main-49b7212b8ff6-320.webp" alt="JBL SoundBar 800" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar 800</b><span class="pr">329 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-bar-800-mk2/"><span class="ph"><img src="/images/thumb/jbl-bar-800-mk2__main-66a4ecb00267-320.webp" alt="JBL Bar 800 MK2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Bar 800 MK2</b><span class="pr">409 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-1000/"><span class="ph"><img src="/images/thumb/jbl-soundbar-1000__main-1ebc25cb349f-320.webp" alt="JBL SoundBar 1000" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar 1000</b><span class="pr">419 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-bar-1000-pro/"><span class="ph"><img src="/images/thumb/jbl-bar-1000-pro__main-4b6383933201-320.webp" alt="JBL Bar 1000 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Bar 1000 Pro</b><span class="pr">449 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-bar-1000-mk2/"><span class="ph"><img src="/images/thumb/jbl-bar-1000-mk2__main-134d47090d21-320.webp" alt="JBL Bar 1000 MK2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Bar 1000 MK2</b><span class="pr">499 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/jbl-soundbar-1300/"><span class="ph"><img src="/images/thumb/jbl-soundbar-1300__main-a16366e41cdb-320.webp" alt="JBL SoundBar 1300" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL SoundBar 1300</b><span class="pr">529 000 ֏-ից</span></a></li></ul>
+<p style="margin-top:22px">Ամենաէժանը՝ JBL Go 3՝ 15 000 ֏։ Ամենաշատ խանութներում՝ JBL Clip 5 (9 խանութ)։ Գները՝ 15 000 ֏–649 900 ֏, 12 խանութ։</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/c/laptop/">Նոութբուքեր</a><a href="/c/ereader/">Էլ. ընթերցիչներ</a><a href="/c/monitor/">Մոնիտորներ</a><a href="/c/headphones/">Ականջակալներ</a><a href="/c/speaker/">Բարձրախոսներ</a><a href="/c/accessory/">Apple աքսեսուարներ</a><a href="/c/console/">Խաղային կոնսոլներ</a><a href="/c/desktop/">Համակարգիչներ</a><a href="/c/tablet/">Պլանշետներ</a><a href="/c/phone/">Հեռախոսներ</a><a href="/c/watch/">Խելացի ժամացույցներ</a><a href="/c/component/">Մասնագործեր</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></div></footer></body></html>

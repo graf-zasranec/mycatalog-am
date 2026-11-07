@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,46 +35,65 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Колонки","item":"https://better.am/ru/c/speaker/"},{"@type":"ListItem","position":3,"name":"Harman Kardon — Колонки","item":"https://better.am/ru/c/speaker/harman-kardon/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/speaker/harman-kardon/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/speaker/harman-kardon/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=ru">Better.am</a> › <a href="../../../../ru/c/speaker/">Колонки</a> › <span>Harman Kardon — Колонки</span></nav>
 <main>
 <h1>Harman Kardon — Колонки</h1>
 <p class="lead">Harman Kardon — Колонки. Моделей: 15, от 57 900 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — Harman Kardon Luna, 57 900 ֏. Больше всего предложений у Harman Kardon Studio 8 (6 магазинах). Цены: 57 900 ֏–469 000 ֏, магазинов: 11.</p>
-<p>Другие бренды: <a href="../../../../ru/c/speaker/jbl/">JBL</a> · <a href="../../../../ru/c/speaker/marshall/">Marshall</a> · <a href="../../../../ru/c/speaker/samsung/">Samsung</a> · <a href="../../../../ru/c/speaker/sony/">Sony</a> · <a href="../../../../ru/c/speaker/yandex/">Yandex</a> · <a href="../../../../ru/c/speaker/xiaomi/">Xiaomi</a> · <a href="../../../../ru/c/speaker/bose/">Bose</a> · <a href="../../../../ru/c/speaker/bang-olufsen/">Bang &amp; Olufsen</a> · <a href="../../../../ru/c/speaker/hisense/">Hisense</a> · <a href="../../../../ru/c/speaker/panasonic/">Panasonic</a></p>
 <a class="go" href="../../../../?lang=ru#/c/speaker">Фильтровать и сравнивать на Better.am</a>
-
-<p><a href="../../../../ru/deals/">Что подешевело</a></p>
+<p class="lead" style="margin:18px 0 0">Другие бренды: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../ru/c/speaker/jbl/">JBL</a></li><li><a href="../../../../ru/c/speaker/marshall/">Marshall</a></li><li><a href="../../../../ru/c/speaker/samsung/">Samsung</a></li><li><a href="../../../../ru/c/speaker/sony/">Sony</a></li><li><a href="../../../../ru/c/speaker/yandex/">Yandex</a></li><li><a href="../../../../ru/c/speaker/xiaomi/">Xiaomi</a></li><li><a href="../../../../ru/c/speaker/bose/">Bose</a></li><li><a href="../../../../ru/c/speaker/bang-olufsen/">Bang &amp; Olufsen</a></li><li><a href="../../../../ru/c/speaker/hisense/">Hisense</a></li><li><a href="../../../../ru/c/speaker/panasonic/">Panasonic</a></li></ul>
+<ul class="pills"><li><a href="../../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../../ru/p/harman-kardon-onyx-studio-7/">Harman Kardon Onyx Studio 7</a><span>от 79 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-aura-studio-4/">Harman Kardon Aura Studio 4</a><span>от 139 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-luna/">Harman Kardon Luna</a><span>от 57 900 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-studio-8/">Harman Kardon Studio 8</a><span>от 97 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-studio-9/">Harman Kardon Studio 9</a><span>от 115 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-luna-2/">Harman Kardon Luna 2</a><span>от 62 900 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-citation-200/">Harman Kardon Citation 200</a><span>от 119 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-aura-studio-5/">Harman Kardon Aura Studio 5</a><span>от 149 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-soundsticks-4/">Harman Kardon Soundsticks 4</a><span>от 139 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-omni-10-plus/">Harman Kardon Omni 10+</a><span>от 89 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-citation-one-mk3/">Harman Kardon Citation One MK3</a><span>от 116 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-goplus-play-3/">Harman Kardon Go+ Play 3</a><span>от 134 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-soundsticks-5/">Harman Kardon Soundsticks 5</a><span>от 145 500 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-citation-surround/">Harman Kardon Citation Surround</a><span>от 249 000 ֏</span></li>
-<li><a href="../../../../ru/p/harman-kardon-citation-sub/">Harman Kardon Citation Sub</a><span>от 469 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../ru/p/harman-kardon-onyx-studio-7/"><span class="ph"><img src="/images/thumb/harman-kardon-onyx-studio-7__black-254101fe9bef-320.webp" alt="Harman Kardon Onyx Studio 7" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Onyx Studio 7</b><span class="pr">от 79 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-aura-studio-4/"><span class="ph"><img src="/images/thumb/harman-kardon-aura-studio-4__main-25233ae79baa-320.webp" alt="Harman Kardon Aura Studio 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Aura Studio 4</b><span class="pr">от 139 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-luna/"><span class="ph"><img src="/images/thumb/harman-kardon-luna__sand-576410d0ba42-320.webp" alt="Harman Kardon Luna" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Luna</b><span class="pr">от 57 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-studio-8/"><span class="ph"><img src="/images/thumb/harman-kardon-studio-8__champagne-f4afd4bb48de-320.webp" alt="Harman Kardon Studio 8" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Studio 8</b><span class="pr">от 97 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-studio-9/"><span class="ph"><img src="/images/thumb/harman-kardon-studio-9__black-2052f20f7f71-320.webp" alt="Harman Kardon Studio 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Studio 9</b><span class="pr">от 115 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-luna-2/"><span class="ph"><img src="/images/thumb/harman-kardon-luna-2__black-2a3310c815ea-320.webp" alt="Harman Kardon Luna 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Luna 2</b><span class="pr">от 62 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-citation-200/"><span class="ph"><img src="/images/thumb/harman-kardon-citation-200__grey-c516dd6c5b7a-320.webp" alt="Harman Kardon Citation 200" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Citation 200</b><span class="pr">от 119 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-aura-studio-5/"><span class="ph"><img src="/images/thumb/harman-kardon-aura-studio-5__black-bd3e3bbc31e4-320.webp" alt="Harman Kardon Aura Studio 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Aura Studio 5</b><span class="pr">от 149 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-soundsticks-4/"><span class="ph"><img src="/images/thumb/harman-kardon-soundsticks-4__white-fc2f91099626-320.webp" alt="Harman Kardon Soundsticks 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Soundsticks 4</b><span class="pr">от 139 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-omni-10-plus/"><span class="ph"><img src="/images/thumb/harman-kardon-omni-10-plus__main-a8d49ca4b9cc-320.webp" alt="Harman Kardon Omni 10+" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Omni 10+</b><span class="pr">от 89 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-citation-one-mk3/"><span class="ph"><img src="/images/thumb/harman-kardon-citation-one-mk3__black-7ac96937ab83-320.webp" alt="Harman Kardon Citation One MK3" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Citation One MK3</b><span class="pr">от 116 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-goplus-play-3/"><span class="ph"><img src="/images/thumb/harman-kardon-goplus-play-3__gray-27fc2c146d5b-320.webp" alt="Harman Kardon Go+ Play 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Go+ Play 3</b><span class="pr">от 134 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-soundsticks-5/"><span class="ph"><img src="/images/thumb/harman-kardon-soundsticks-5__white-ca03efd99da3-320.webp" alt="Harman Kardon Soundsticks 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Soundsticks 5</b><span class="pr">от 145 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-citation-surround/"><span class="ph"><img src="/images/thumb/harman-kardon-citation-surround__grey-1fc605dd832a-320.webp" alt="Harman Kardon Citation Surround" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Citation Surround</b><span class="pr">от 249 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/harman-kardon-citation-sub/"><span class="ph"><img src="/images/thumb/harman-kardon-citation-sub__grey-b7f147b49869-320.webp" alt="Harman Kardon Citation Sub" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Citation Sub</b><span class="pr">от 469 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — Harman Kardon Luna, 57 900 ֏. Больше всего предложений у Harman Kardon Studio 8 (6 магазинах). Цены: 57 900 ֏–469 000 ֏, магазинов: 11.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

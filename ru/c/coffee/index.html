@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,111 +35,130 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Кофемашины","item":"https://better.am/ru/c/coffee/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/coffee/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/coffee/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../?lang=ru">Better.am</a> › <span>Кофемашины</span></nav>
 <main>
 <h1>Кофемашины</h1>
 <p class="lead">Кофемашины. Моделей: 80, от 13 400 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — Gorenje TCM350W Coffee Machine, 13 400 ֏. Больше всего предложений у De'Longhi ECAM450.65.G (5 магазинах). Цены: 13 400 ֏–1 039 000 ֏, магазинов: 8.</p>
-
 <a class="go" href="../../../?lang=ru#/c/coffee">Фильтровать и сравнивать на Better.am</a>
-<p class="lead"><a href="../../../ru/c/coffee/de-longhi/">De'Longhi</a> · <a href="../../../ru/c/coffee/nivona/">Nivona</a> · <a href="../../../ru/c/coffee/braun/">Braun</a> · <a href="../../../ru/c/coffee/gorenje/">Gorenje</a> · <a href="../../../ru/c/coffee/philips/">Philips</a></p>
-<p><a href="../../../ru/deals/">Что подешевело</a></p>
+
+<ul class="pills"><li><a href="../../../ru/c/coffee/de-longhi/">De'Longhi</a></li><li><a href="../../../ru/c/coffee/nivona/">Nivona</a></li><li><a href="../../../ru/c/coffee/braun/">Braun</a></li><li><a href="../../../ru/c/coffee/gorenje/">Gorenje</a></li><li><a href="../../../ru/c/coffee/philips/">Philips</a></li><li><a href="../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../ru/p/de-longhi-ecam450-65-g/">De'Longhi ECAM450.65.G</a><span>от 359 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam380-95/">De'Longhi ECAM380.95 Coffee Machine</a><span>от 398 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam290-61/">De'Longhi ECAM290.61 Coffee Machine</a><span>от 211 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam290-85/">De'Longhi ECAM290.85 Coffee Machine</a><span>от 251 000 ֏</span></li>
-<li><a href="../../../ru/p/gorenje-tcm350w-coffee-machine/">Gorenje TCM350W Coffee Machine</a><span>от 13 400 ֏</span></li>
-<li><a href="../../../ru/p/braun-kf7020-bk/">Braun KF7020.BK Coffee Maker</a><span>от 39 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec230/">De'Longhi EC230 Coffee Maker</a><span>от 51 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecp31-21/">De'Longhi ECP31.21 Coffee Maker</a><span>от 63 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec685/">De'Longhi EC685 Coffee Maker</a><span>от 78 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-exam440-55/">De'Longhi EXAM440.55 Coffee Machine</a><span>от 343 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam450-86/">De'Longhi ECAM450.86 Coffee Machine</a><span>от 399 000 ֏</span></li>
-<li><a href="../../../ru/p/philips-hd7462-20/">Philips HD7462/20 Coffee Maker</a><span>от 27 400 ֏</span></li>
-<li><a href="../../../ru/p/braun-kf3100/">Braun KF3100 Coffee Maker</a><span>от 28 700 ֏</span></li>
-<li><a href="../../../ru/p/gorenje-atcm730t-coffee-machine/">Gorenje ATCM730T Coffee Machine</a><span>от 39 000 ֏</span></li>
-<li><a href="../../../ru/p/braun-kf7120bk/">Braun KF7120BK</a><span>от 39 900 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-mijia-capsule-coffee-machine/">Xiaomi Mijia Capsule Coffee Machine</a><span>от 45 900 ֏</span></li>
-<li><a href="../../../ru/p/bosch-tka4m233/">Bosch TKA4M233 Coffee Maker</a><span>от 49 100 ֏</span></li>
-<li><a href="../../../ru/p/gorenje-escm15cd-coffee-machine/">Gorenje ESCM15CD Coffee Machine</a><span>от 53 000 ֏</span></li>
-<li><a href="../../../ru/p/hisense-hescm15dbk/">Hisense HESCM15DBK Coffee Maker</a><span>от 65 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam22-110/">De'Longhi ECAM22.110 Coffee Machine</a><span>от 159 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam22-114/">De'Longhi ECAM22.114 Coffee Machine</a><span>от 159 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam220-22/">De'Longhi ECAM220.22 Coffee Machine</a><span>от 183 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec9255/">De'Longhi EC9255 Coffee Machine</a><span>от 247 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam320-60/">De'Longhi ECAM320.60 Coffee Machine</a><span>от 319 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam320-70/">De'Longhi ECAM320.70 Coffee Machine</a><span>от 327 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec9555/">De'Longhi EC9555 Coffee Machine</a><span>от 343 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam380-85/">De'Longhi ECAM380.85 Coffee Machine</a><span>от 382 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam610-55/">De'Longhi ECAM610.55 Coffee Machine</a><span>от 395 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam630-55/">De'Longhi ECAM630.55 Coffee Machine</a><span>от 543 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam650-85/">De'Longhi ECAM650.85 Coffee Machine</a><span>от 575 000 ֏</span></li>
-<li><a href="../../../ru/p/braun-kf1100/">Braun KF1100 Coffee Maker</a><span>от 18 300 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-icm15210-1/">De'Longhi ICM15210.1 Coffee Maker</a><span>от 21 500 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-icm16210/">De'Longhi ICM16210 Coffee Maker</a><span>от 28 700 ֏</span></li>
-<li><a href="../../../ru/p/braun-kf3120/">Braun KF3120 Coffee Maker</a><span>от 29 500 ֏</span></li>
-<li><a href="../../../ru/p/bosch-tka6a041/">Bosch TKA6A041 Coffee Maker</a><span>от 38 000 ֏</span></li>
-<li><a href="../../../ru/p/philips-hd7459-20/">Philips Drip Coffee Maker HD7459/20</a><span>от 39 000 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-semi-automatic-espresso-machine-bhr9798eu/">Xiaomi Semi-automatic Espresso Machine BHR9798EU</a><span>от 47 900 ֏</span></li>
-<li><a href="../../../ru/p/gorenje-escm15dbk-coffee-machine/">Gorenje ESCM15DBK Coffee Machine</a><span>от 49 000 ֏</span></li>
-<li><a href="../../../ru/p/ariete-00m1399/">Ariete Coffee Machine 00M1399</a><span>от 49 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec235-bk/">De'Longhi EC235.BK</a><span>от 53 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-icm17210/">De'Longhi ICM17210 Coffee Maker</a><span>от 55 900 ֏</span></li>
-<li><a href="../../../ru/p/ariete-00m1301/">Ariete Coffee Machine 00M1301</a><span>от 55 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-essenza-en85-b/">De'Longhi Essenza EN85.B</a><span>от 62 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec885/">De'Longhi EC885 Coffee Maker</a><span>от 73 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-eci341/">De'Longhi ECI341 Coffee Maker</a><span>от 74 400 ֏</span></li>
-<li><a href="../../../ru/p/hisense-hescm20lp/">Hisense HESCM20LP Coffee Maker</a><span>от 75 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec890/">De'Longhi EC890 Coffee Maker</a><span>от 99 900 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-555/">Nivona CafeRomatica NICR 555</a><span>от 169 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam220-21/">De'Longhi ECAM220.21 Coffee Machine</a><span>от 183 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam290-21/">De'Longhi ECAM290.21 Coffee Machine</a><span>от 187 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam220-31/">De'Longhi ECAM220.31 Coffee Machine</a><span>от 191 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam220-50/">De'Longhi ECAM220.50 Coffee Machine</a><span>от 191 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam220-51/">De'Longhi ECAM220.51 Coffee Machine</a><span>от 191 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam290-31/">De'Longhi ECAM290.31 Coffee Machine</a><span>от 191 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec9155/">De'Longhi EC9155 Coffee Machine</a><span>от 223 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-560/">Nivona CafeRomatica NICR 560</a><span>от 225 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam290-81/">De'Longhi ECAM290.81 Coffee Machine</a><span>от 231 000 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ec9455/">De'Longhi EC9455 Coffee Machine</a><span>от 263 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-756/">Nivona CafeRomatica NICR 756</a><span>от 279 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-exam420-55-wxl/">De'Longhi EXAM420.55.WXL Coffee Machine</a><span>от 303 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-795/">Nivona CafeRomatica NICR 795</a><span>от 329 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-exam441-55/">De'Longhi EXAM441.55 Coffee Machine</a><span>от 343 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-796/">Nivona CafeRomatica NICR 796</a><span>от 359 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam610-74/">De'Longhi ECAM610.74 Coffee Machine</a><span>от 399 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-799/">Nivona CafeRomatica NICR 799</a><span>от 399 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam470-85/">De'Longhi ECAM470.85 Coffee Machine</a><span>от 415 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-825/">Nivona CafeRomatica NICR 825</a><span>от 419 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam550-65/">De'Longhi ECAM550.65 Coffee Machine</a><span>от 423 000 ֏</span></li>
-<li><a href="../../../ru/p/philips-sm7580-00/">Philips SM7580/00 Coffee Machine</a><span>от 459 900 ֏</span></li>
-<li><a href="../../../ru/p/smeg-bcc02/">SMEG BCC02 Coffee Machine</a><span>от 459 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam650-55/">De'Longhi ECAM650.55 Coffee Machine</a><span>от 499 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nivo-8103/">Nivona CafeRomatica NIVO 8103</a><span>от 519 900 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nivo-8107/">Nivona CafeRomatica NIVO 8107</a><span>от 527 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam650-75/">De'Longhi ECAM650.75 Coffee Machine</a><span>от 550 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nivo-8112/">Nivona CafeRomatica NIVO 8112</a><span>от 551 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-ecam630-75/">De'Longhi ECAM630.75 Coffee Machine</a><span>от 559 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-930/">Nivona CafeRomatica NICR 930</a><span>от 559 000 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-960/">Nivona CafeRomatica NICR 960</a><span>от 567 900 ֏</span></li>
-<li><a href="../../../ru/p/nivona-nicr-970/">Nivona CafeRomatica NICR 970</a><span>от 599 900 ֏</span></li>
-<li><a href="../../../ru/p/de-longhi-epam960-75glm/">De'Longhi EPAM960.75GLM Coffee Machine</a><span>от 1 039 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../ru/p/de-longhi-ecam450-65-g/"><span class="ph"><img src="/images/thumb/de-longhi-ecam450-65-g__main-e04328280f82-320.webp" alt="De'Longhi ECAM450.65.G" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM450.65.G</b><span class="pr">от 359 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam380-95/"><span class="ph"><img src="/images/thumb/de-longhi-ecam380-95__main-75a496545a1a-320.webp" alt="De'Longhi ECAM380.95 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM380.95 Coffee Machine</b><span class="pr">от 398 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam290-61/"><span class="ph"><img src="/images/thumb/de-longhi-ecam290-61__black-701fc961c530-320.webp" alt="De'Longhi ECAM290.61 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM290.61 Coffee Machine</b><span class="pr">от 211 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam290-85/"><span class="ph"><img src="/images/thumb/de-longhi-ecam290-85__main-61530ce4f52e-320.webp" alt="De'Longhi ECAM290.85 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM290.85 Coffee Machine</b><span class="pr">от 251 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/gorenje-tcm350w-coffee-machine/"><span class="ph"><img src="/images/thumb/gorenje-tcm350w-coffee-machine__main-ff62bb302048-320.webp" alt="Gorenje TCM350W Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Gorenje TCM350W Coffee Machine</b><span class="pr">от 13 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/braun-kf7020-bk/"><span class="ph"><img src="/images/thumb/braun-kf7020-bk__main-bb10a136a034-320.webp" alt="Braun KF7020.BK Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Braun KF7020.BK Coffee Maker</b><span class="pr">от 39 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec230/"><span class="ph"><img src="/images/thumb/de-longhi-ec230__main-1bf28bbdcf89-320.webp" alt="De'Longhi EC230 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC230 Coffee Maker</b><span class="pr">от 51 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecp31-21/"><span class="ph"><img src="/images/thumb/de-longhi-ecp31-21__main-c467a46085a5-320.webp" alt="De'Longhi ECP31.21 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECP31.21 Coffee Maker</b><span class="pr">от 63 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec685/"><span class="ph"><img src="/images/thumb/de-longhi-ec685__black-044a5d381d32-320.webp" alt="De'Longhi EC685 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC685 Coffee Maker</b><span class="pr">от 78 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-exam440-55/"><span class="ph"><img src="/images/thumb/de-longhi-exam440-55__black-d7e427c2b87f-320.webp" alt="De'Longhi EXAM440.55 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EXAM440.55 Coffee Machine</b><span class="pr">от 343 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam450-86/"><span class="ph"><img src="/images/thumb/de-longhi-ecam450-86__main-96add202106b-320.webp" alt="De'Longhi ECAM450.86 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM450.86 Coffee Machine</b><span class="pr">от 399 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/philips-hd7462-20/"><span class="ph"><img src="/images/thumb/philips-hd7462-20__main-3ed25f371a64-320.webp" alt="Philips HD7462/20 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips HD7462/20 Coffee Maker</b><span class="pr">от 27 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/braun-kf3100/"><span class="ph"><img src="/images/thumb/braun-kf3100__main-1d880359f0cb-320.webp" alt="Braun KF3100 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Braun KF3100 Coffee Maker</b><span class="pr">от 28 700 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/gorenje-atcm730t-coffee-machine/"><span class="ph"><img src="/images/thumb/gorenje-atcm730t-coffee-machine__main-6b68a3ff2c85-320.webp" alt="Gorenje ATCM730T Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Gorenje ATCM730T Coffee Machine</b><span class="pr">от 39 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/braun-kf7120bk/"><span class="ph"><img src="/images/thumb/braun-kf7120bk__main-b78bb88eeffd-320.webp" alt="Braun KF7120BK" width="320" height="320" loading="lazy" decoding="async"></span><b>Braun KF7120BK</b><span class="pr">от 39 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-mijia-capsule-coffee-machine/"><span class="ph"><img src="/images/thumb/xiaomi-mijia-capsule-coffee-machine__main-ab0c62a900d5-320.webp" alt="Xiaomi Mijia Capsule Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Mijia Capsule Coffee Machine</b><span class="pr">от 45 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/bosch-tka4m233/"><span class="ph"><img src="/images/thumb/bosch-tka4m233__main-b3bcea524928-320.webp" alt="Bosch TKA4M233 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch TKA4M233 Coffee Maker</b><span class="pr">от 49 100 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/gorenje-escm15cd-coffee-machine/"><span class="ph"><img src="/images/thumb/gorenje-escm15cd-coffee-machine__main-612a98057615-320.webp" alt="Gorenje ESCM15CD Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Gorenje ESCM15CD Coffee Machine</b><span class="pr">от 53 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-hescm15dbk/"><span class="ph"><img src="/images/thumb/hisense-hescm15dbk__main-93dd787c1f50-320.webp" alt="Hisense HESCM15DBK Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense HESCM15DBK Coffee Maker</b><span class="pr">от 65 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam22-110/"><span class="ph"><img src="/images/thumb/de-longhi-ecam22-110__main-5e7d06794442-320.webp" alt="De'Longhi ECAM22.110 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM22.110 Coffee Machine</b><span class="pr">от 159 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam22-114/"><span class="ph"><img src="/images/thumb/de-longhi-ecam22-114__main-43693efd33de-320.webp" alt="De'Longhi ECAM22.114 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM22.114 Coffee Machine</b><span class="pr">от 159 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam220-22/"><span class="ph"><img src="/images/thumb/de-longhi-ecam220-22__main-d0ed95becc39-320.webp" alt="De'Longhi ECAM220.22 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM220.22 Coffee Machine</b><span class="pr">от 183 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec9255/"><span class="ph"><img src="/images/thumb/de-longhi-ec9255__metal-23828a534bc3-320.webp" alt="De'Longhi EC9255 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC9255 Coffee Machine</b><span class="pr">от 247 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam320-60/"><span class="ph"><img src="/images/thumb/de-longhi-ecam320-60__black-7bade2d57850-320.webp" alt="De'Longhi ECAM320.60 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM320.60 Coffee Machine</b><span class="pr">от 319 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam320-70/"><span class="ph"><img src="/images/thumb/de-longhi-ecam320-70__main-e92937c9d892-320.webp" alt="De'Longhi ECAM320.70 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM320.70 Coffee Machine</b><span class="pr">от 327 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec9555/"><span class="ph"><img src="/images/thumb/de-longhi-ec9555__black-d0961df479fe-320.webp" alt="De'Longhi EC9555 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC9555 Coffee Machine</b><span class="pr">от 343 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam380-85/"><span class="ph"><img src="/images/thumb/de-longhi-ecam380-85__main-41c5d641ce80-320.webp" alt="De'Longhi ECAM380.85 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM380.85 Coffee Machine</b><span class="pr">от 382 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam610-55/"><span class="ph"><img src="/images/thumb/de-longhi-ecam610-55__main-423e5e78089b-320.webp" alt="De'Longhi ECAM610.55 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM610.55 Coffee Machine</b><span class="pr">от 395 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam630-55/"><span class="ph"><img src="/images/thumb/de-longhi-ecam630-55__main-7897ce2fa6da-320.webp" alt="De'Longhi ECAM630.55 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM630.55 Coffee Machine</b><span class="pr">от 543 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam650-85/"><span class="ph"><img src="/images/thumb/de-longhi-ecam650-85__main-f5fda539300f-320.webp" alt="De'Longhi ECAM650.85 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM650.85 Coffee Machine</b><span class="pr">от 575 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/braun-kf1100/"><span class="ph"><img src="/images/thumb/braun-kf1100__black-3d15848508b5-320.webp" alt="Braun KF1100 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Braun KF1100 Coffee Maker</b><span class="pr">от 18 300 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-icm15210-1/"><span class="ph"><img src="/images/thumb/de-longhi-icm15210-1__main-c1a0c2a240d8-320.webp" alt="De'Longhi ICM15210.1 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ICM15210.1 Coffee Maker</b><span class="pr">от 21 500 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-icm16210/"><span class="ph"><img src="/images/thumb/de-longhi-icm16210__main-20d608c70864-320.webp" alt="De'Longhi ICM16210 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ICM16210 Coffee Maker</b><span class="pr">от 28 700 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/braun-kf3120/"><span class="ph"><img src="/images/thumb/braun-kf3120__main-e7b6728cc2f9-320.webp" alt="Braun KF3120 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Braun KF3120 Coffee Maker</b><span class="pr">от 29 500 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/bosch-tka6a041/"><span class="ph"><img src="/images/thumb/bosch-tka6a041__main-29ae1d197c80-320.webp" alt="Bosch TKA6A041 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch TKA6A041 Coffee Maker</b><span class="pr">от 38 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/philips-hd7459-20/"><span class="ph"><img src="/images/thumb/philips-hd7459-20__main-54cbcea44be7-320.webp" alt="Philips Drip Coffee Maker HD7459/20" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips Drip Coffee Maker HD7459/20</b><span class="pr">от 39 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-semi-automatic-espresso-machine-bhr9798eu/"><span class="ph"><img src="/images/thumb/xiaomi-semi-automatic-espresso-machine-bhr9798eu__main-a6e54e2056d2-320.webp" alt="Xiaomi Semi-automatic Espresso Machine BHR9798EU" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Semi-automatic Espresso Machine BHR9798EU</b><span class="pr">от 47 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/gorenje-escm15dbk-coffee-machine/"><span class="ph"><img src="/images/thumb/gorenje-escm15dbk-coffee-machine__main-60cbd39ba512-320.webp" alt="Gorenje ESCM15DBK Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Gorenje ESCM15DBK Coffee Machine</b><span class="pr">от 49 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/ariete-00m1399/"><span class="ph"><img src="/images/thumb/ariete-00m1399__main-cee27dc6d8f4-320.webp" alt="Ariete Coffee Machine 00M1399" width="320" height="320" loading="lazy" decoding="async"></span><b>Ariete Coffee Machine 00M1399</b><span class="pr">от 49 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec235-bk/"><span class="ph"><img src="/images/thumb/de-longhi-ec235-bk__main-7148df0b4baf-320.webp" alt="De'Longhi EC235.BK" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC235.BK</b><span class="pr">от 53 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-icm17210/"><span class="ph"><img src="/images/thumb/de-longhi-icm17210__main-3a6069becaf6-320.webp" alt="De'Longhi ICM17210 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ICM17210 Coffee Maker</b><span class="pr">от 55 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/ariete-00m1301/"><span class="ph"><img src="/images/thumb/ariete-00m1301__main-a97035d656fa-320.webp" alt="Ariete Coffee Machine 00M1301" width="320" height="320" loading="lazy" decoding="async"></span><b>Ariete Coffee Machine 00M1301</b><span class="pr">от 55 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-essenza-en85-b/"><span class="ph"><img src="/images/thumb/de-longhi-essenza-en85-b__main-3eae031db84d-320.webp" alt="De'Longhi Essenza EN85.B" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi Essenza EN85.B</b><span class="pr">от 62 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec885/"><span class="ph"><img src="/images/thumb/de-longhi-ec885__beige-5118a6aafcf1-320.webp" alt="De'Longhi EC885 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC885 Coffee Maker</b><span class="pr">от 73 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-eci341/"><span class="ph"><img src="/images/thumb/de-longhi-eci341__main-e563e7bceedf-320.webp" alt="De'Longhi ECI341 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECI341 Coffee Maker</b><span class="pr">от 74 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-hescm20lp/"><span class="ph"><img src="/images/thumb/hisense-hescm20lp__main-502738db564d-320.webp" alt="Hisense HESCM20LP Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense HESCM20LP Coffee Maker</b><span class="pr">от 75 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec890/"><span class="ph"><img src="/images/thumb/de-longhi-ec890__main-e1ab266a21c1-320.webp" alt="De'Longhi EC890 Coffee Maker" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC890 Coffee Maker</b><span class="pr">от 99 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-555/"><span class="ph"><img src="/images/thumb/nivona-nicr-555__main-b1b89afd0d38-320.webp" alt="Nivona CafeRomatica NICR 555" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 555</b><span class="pr">от 169 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam220-21/"><span class="ph"><img src="/images/thumb/de-longhi-ecam220-21__main-fbc61dc77b50-320.webp" alt="De'Longhi ECAM220.21 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM220.21 Coffee Machine</b><span class="pr">от 183 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam290-21/"><span class="ph"><img src="/images/thumb/de-longhi-ecam290-21__main-df32e3e84359-320.webp" alt="De'Longhi ECAM290.21 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM290.21 Coffee Machine</b><span class="pr">от 187 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam220-31/"><span class="ph"><img src="/images/thumb/de-longhi-ecam220-31__main-05a51cc4725c-320.webp" alt="De'Longhi ECAM220.31 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM220.31 Coffee Machine</b><span class="pr">от 191 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam220-50/"><span class="ph"><img src="/images/thumb/de-longhi-ecam220-50__beige-b9e772d54c2e-320.webp" alt="De'Longhi ECAM220.50 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM220.50 Coffee Machine</b><span class="pr">от 191 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam220-51/"><span class="ph"><img src="/images/thumb/de-longhi-ecam220-51__main-dad9223633eb-320.webp" alt="De'Longhi ECAM220.51 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM220.51 Coffee Machine</b><span class="pr">от 191 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam290-31/"><span class="ph"><img src="/images/thumb/de-longhi-ecam290-31__main-9f13291250c3-320.webp" alt="De'Longhi ECAM290.31 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM290.31 Coffee Machine</b><span class="pr">от 191 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec9155/"><span class="ph"><img src="/images/thumb/de-longhi-ec9155__main-9d464fcfe5ab-320.webp" alt="De'Longhi EC9155 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC9155 Coffee Machine</b><span class="pr">от 223 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-560/"><span class="ph"><img src="/images/thumb/nivona-nicr-560__main-6d7add8c604c-320.webp" alt="Nivona CafeRomatica NICR 560" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 560</b><span class="pr">от 225 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam290-81/"><span class="ph"><img src="/images/thumb/de-longhi-ecam290-81__main-3ae15bd73002-320.webp" alt="De'Longhi ECAM290.81 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM290.81 Coffee Machine</b><span class="pr">от 231 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ec9455/"><span class="ph"><img src="/images/thumb/de-longhi-ec9455__main-a88dae034a73-320.webp" alt="De'Longhi EC9455 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC9455 Coffee Machine</b><span class="pr">от 263 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-756/"><span class="ph"><img src="/images/thumb/nivona-nicr-756__main-5942c6948e66-320.webp" alt="Nivona CafeRomatica NICR 756" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 756</b><span class="pr">от 279 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-exam420-55-wxl/"><span class="ph"><img src="/images/thumb/de-longhi-exam420-55-wxl__main-81fe91ac160e-320.webp" alt="De'Longhi EXAM420.55.WXL Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EXAM420.55.WXL Coffee Machine</b><span class="pr">от 303 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-795/"><span class="ph"><img src="/images/thumb/nivona-nicr-795__main-0ab4a04054fb-320.webp" alt="Nivona CafeRomatica NICR 795" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 795</b><span class="pr">от 329 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-exam441-55/"><span class="ph"><img src="/images/thumb/de-longhi-exam441-55__main-9e04d3cf8cb7-320.webp" alt="De'Longhi EXAM441.55 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EXAM441.55 Coffee Machine</b><span class="pr">от 343 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-796/"><span class="ph"><img src="/images/thumb/nivona-nicr-796__main-940de5f96b19-320.webp" alt="Nivona CafeRomatica NICR 796" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 796</b><span class="pr">от 359 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam610-74/"><span class="ph"><img src="/images/thumb/de-longhi-ecam610-74__main-89bee4a736bd-320.webp" alt="De'Longhi ECAM610.74 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM610.74 Coffee Machine</b><span class="pr">от 399 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-799/"><span class="ph"><img src="/images/thumb/nivona-nicr-799__main-e4ae20168d53-320.webp" alt="Nivona CafeRomatica NICR 799" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 799</b><span class="pr">от 399 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam470-85/"><span class="ph"><img src="/images/thumb/de-longhi-ecam470-85__main-301c797d7648-320.webp" alt="De'Longhi ECAM470.85 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM470.85 Coffee Machine</b><span class="pr">от 415 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-825/"><span class="ph"><img src="/images/thumb/nivona-nicr-825__main-3fdde352faa2-320.webp" alt="Nivona CafeRomatica NICR 825" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 825</b><span class="pr">от 419 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam550-65/"><span class="ph"><img src="/images/thumb/de-longhi-ecam550-65__main-123255482abf-320.webp" alt="De'Longhi ECAM550.65 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM550.65 Coffee Machine</b><span class="pr">от 423 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/philips-sm7580-00/"><span class="ph"><img src="/images/thumb/philips-sm7580-00__main-c8790ab12bb7-320.webp" alt="Philips SM7580/00 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips SM7580/00 Coffee Machine</b><span class="pr">от 459 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/smeg-bcc02/"><span class="ph"><img src="/images/thumb/smeg-bcc02__red-300ba0e55508-320.webp" alt="SMEG BCC02 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>SMEG BCC02 Coffee Machine</b><span class="pr">от 459 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam650-55/"><span class="ph"><img src="/images/thumb/de-longhi-ecam650-55__main-53bf9d8698a8-320.webp" alt="De'Longhi ECAM650.55 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM650.55 Coffee Machine</b><span class="pr">от 499 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nivo-8103/"><span class="ph"><img src="/images/thumb/nivona-nivo-8103__main-2b1b2b03bc07-320.webp" alt="Nivona CafeRomatica NIVO 8103" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NIVO 8103</b><span class="pr">от 519 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nivo-8107/"><span class="ph"><img src="/images/thumb/nivona-nivo-8107__main-9928e5e73892-320.webp" alt="Nivona CafeRomatica NIVO 8107" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NIVO 8107</b><span class="pr">от 527 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam650-75/"><span class="ph"><img src="/images/thumb/de-longhi-ecam650-75__main-a17714036cd1-320.webp" alt="De'Longhi ECAM650.75 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM650.75 Coffee Machine</b><span class="pr">от 550 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nivo-8112/"><span class="ph"><img src="/images/thumb/nivona-nivo-8112__main-dbcebf46dc5c-320.webp" alt="Nivona CafeRomatica NIVO 8112" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NIVO 8112</b><span class="pr">от 551 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-ecam630-75/"><span class="ph"><img src="/images/thumb/de-longhi-ecam630-75__main-d3cf40d4b67a-320.webp" alt="De'Longhi ECAM630.75 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM630.75 Coffee Machine</b><span class="pr">от 559 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-930/"><span class="ph"><img src="/images/thumb/nivona-nicr-930__main-e9c838b44319-320.webp" alt="Nivona CafeRomatica NICR 930" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 930</b><span class="pr">от 559 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-960/"><span class="ph"><img src="/images/thumb/nivona-nicr-960__main-e5f3183d1415-320.webp" alt="Nivona CafeRomatica NICR 960" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 960</b><span class="pr">от 567 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/nivona-nicr-970/"><span class="ph"><img src="/images/thumb/nivona-nicr-970__main-0bd43be5d248-320.webp" alt="Nivona CafeRomatica NICR 970" width="320" height="320" loading="lazy" decoding="async"></span><b>Nivona CafeRomatica NICR 970</b><span class="pr">от 599 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/de-longhi-epam960-75glm/"><span class="ph"><img src="/images/thumb/de-longhi-epam960-75glm__main-52745947f980-320.webp" alt="De'Longhi EPAM960.75GLM Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EPAM960.75GLM Coffee Machine</b><span class="pr">от 1 039 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — Gorenje TCM350W Coffee Machine, 13 400 ֏. Больше всего предложений у De'Longhi ECAM450.65.G (5 магазинах). Цены: 13 400 ֏–1 039 000 ֏, магазинов: 8.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,55 +35,74 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Headphones","item":"https://better.am/en/c/headphones/"},{"@type":"ListItem","position":3,"name":"Sony — Headphones","item":"https://better.am/en/c/headphones/sony/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/headphones/sony/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/headphones/sony/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=en">Better.am</a> › <a href="../../../../en/c/headphones/">Headphones</a> › <span>Sony — Headphones</span></nav>
 <main>
 <h1>Sony — Headphones</h1>
 <p class="lead">Sony — Headphones. 24 models, from 6 500 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Sony MDR-ZX110 at 6 500 ֏. Most widely sold: Sony WH-CH520 (6 shops). Prices 6 500 ֏–221 900 ֏ across 10 shops.</p>
-<p>Other brands: <a href="../../../../en/c/headphones/jbl/">JBL</a> · <a href="../../../../en/c/headphones/xiaomi/">Xiaomi</a> · <a href="../../../../en/c/headphones/samsung/">Samsung</a> · <a href="../../../../en/c/headphones/beats/">Beats</a> · <a href="../../../../en/c/headphones/apple/">Apple</a> · <a href="../../../../en/c/headphones/bose/">Bose</a> · <a href="../../../../en/c/headphones/realme/">Realme</a> · <a href="../../../../en/c/headphones/marshall/">Marshall</a> · <a href="../../../../en/c/headphones/sennheiser/">Sennheiser</a> · <a href="../../../../en/c/headphones/honor/">Honor</a> · <a href="../../../../en/c/headphones/asus/">ASUS</a> · <a href="../../../../en/c/headphones/oneplus/">OnePlus</a> · <a href="../../../../en/c/headphones/nothing/">Nothing</a> · <a href="../../../../en/c/headphones/bang-olufsen/">Bang &amp; Olufsen</a></p>
 <a class="go" href="../../../../?lang=en#/c/headphones">Filter and compare on Better.am</a>
-
-<p><a href="../../../../en/deals/">What got cheaper</a></p>
+<p class="lead" style="margin:18px 0 0">Other brands: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../en/c/headphones/jbl/">JBL</a></li><li><a href="../../../../en/c/headphones/xiaomi/">Xiaomi</a></li><li><a href="../../../../en/c/headphones/samsung/">Samsung</a></li><li><a href="../../../../en/c/headphones/beats/">Beats</a></li><li><a href="../../../../en/c/headphones/apple/">Apple</a></li><li><a href="../../../../en/c/headphones/bose/">Bose</a></li><li><a href="../../../../en/c/headphones/realme/">Realme</a></li><li><a href="../../../../en/c/headphones/marshall/">Marshall</a></li><li><a href="../../../../en/c/headphones/sennheiser/">Sennheiser</a></li><li><a href="../../../../en/c/headphones/honor/">Honor</a></li><li><a href="../../../../en/c/headphones/asus/">ASUS</a></li><li><a href="../../../../en/c/headphones/oneplus/">OnePlus</a></li><li><a href="../../../../en/c/headphones/nothing/">Nothing</a></li><li><a href="../../../../en/c/headphones/bang-olufsen/">Bang &amp; Olufsen</a></li></ul>
+<ul class="pills"><li><a href="../../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../../en/p/sony-wh-ch720n/">Sony WH-CH720N</a><span>from 35 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-c710n/">Sony WF-C710N</a><span>from 52 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wh-ch520/">Sony WH-CH520</a><span>from 13 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-ps5-pulse-elite-wireless/">Sony PULSE Elite Wireless Headset</a><span>from 69 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-pulse-3d-wireless-headset/">Sony PULSE 3D Wireless Headset</a><span>from 49 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-pulse-explore/">Sony PULSE Explore</a><span>from 69 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wh-1000xm5/">Sony WH-1000XM5</a><span>from 119 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wh-1000xm6/">Sony WH-1000XM6</a><span>from 179 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-c510-yc/">Sony WF-C510</a><span>from 29 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-mdr-zx110/">Sony MDR-ZX110</a><span>from 6 500 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-c500-true-wireless/">Sony WF-C500</a><span>from 28 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-c700n-gz-e/">Sony WF-C700N</a><span>from 44 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wh-ult900n/">Sony WH-ULT900N</a><span>from 65 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-1000xm5-wireless-headphones/">Sony WF-1000XM5</a><span>from 139 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wi-c200/">Sony WI-C200</a><span>from 8 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wi-c100/">Sony WI-C100</a><span>from 11 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-mdr-xb450ap/">Sony MDR-XB450AP</a><span>from 19 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-mdr-g300/">Sony MDR-G300</a><span>from 34 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-1000xm3/">Sony WF-1000XM3</a><span>from 59 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-ps4-gold-wireless-headset/">Sony PS4 Gold Wireless Headset</a><span>from 59 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-sp800n/">Sony WF-SP800N</a><span>from 79 000 ֏</span></li>
-<li><a href="../../../../en/p/sony-inzone-h5/">Sony Inzone H5</a><span>from 82 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wh-g900n-wz-e/">Sony WH-G900N</a><span>from 151 900 ֏</span></li>
-<li><a href="../../../../en/p/sony-wf-1000xm6/">Sony WF-1000XM6</a><span>from 159 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../en/p/sony-wh-ch720n/"><span class="ph"><img src="/images/thumb/sony-wh-ch720n__black-04c1a8af0313-320.webp" alt="Sony WH-CH720N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-CH720N</b><span class="pr">from 35 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-c710n/"><span class="ph"><img src="/images/thumb/sony-wf-c710n__main-2ca919c838d3-320.webp" alt="Sony WF-C710N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C710N</b><span class="pr">from 52 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wh-ch520/"><span class="ph"><img src="/images/thumb/sony-wh-ch520__black-95e109cc428d-320.webp" alt="Sony WH-CH520" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-CH520</b><span class="pr">from 13 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-ps5-pulse-elite-wireless/"><span class="ph"><img src="/images/thumb/sony-ps5-pulse-elite-wireless__main-26ab7d502aad-320.webp" alt="Sony PULSE Elite Wireless Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PULSE Elite Wireless Headset</b><span class="pr">from 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-pulse-3d-wireless-headset/"><span class="ph"><img src="/images/thumb/sony-pulse-3d-wireless-headset__black-5bc5295826cb-320.webp" alt="Sony PULSE 3D Wireless Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PULSE 3D Wireless Headset</b><span class="pr">from 49 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-pulse-explore/"><span class="ph"><img src="/images/thumb/sony-pulse-explore__main-41ff0dabc3e2-320.webp" alt="Sony PULSE Explore" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PULSE Explore</b><span class="pr">from 69 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wh-1000xm5/"><span class="ph"><img src="/images/thumb/sony-wh-1000xm5__silver-51021b729899-320.webp" alt="Sony WH-1000XM5" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-1000XM5</b><span class="pr">from 119 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wh-1000xm6/"><span class="ph"><img src="/images/thumb/sony-wh-1000xm6__black-3d03d13384f7-320.webp" alt="Sony WH-1000XM6" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-1000XM6</b><span class="pr">from 179 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-c510-yc/"><span class="ph"><img src="/images/thumb/sony-wf-c510-yc__blue-e8cbd1d8bf01-320.webp" alt="Sony WF-C510" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C510</b><span class="pr">from 29 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-mdr-zx110/"><span class="ph"><img src="/images/thumb/sony-mdr-zx110__white-86731a456b85-320.webp" alt="Sony MDR-ZX110" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony MDR-ZX110</b><span class="pr">from 6 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-c500-true-wireless/"><span class="ph"><img src="/images/thumb/sony-wf-c500-true-wireless__main-045baedc8f2e-320.webp" alt="Sony WF-C500" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C500</b><span class="pr">from 28 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-c700n-gz-e/"><span class="ph"><img src="/images/thumb/sony-wf-c700n-gz-e__lavender-99135ea070ac-320.webp" alt="Sony WF-C700N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C700N</b><span class="pr">from 44 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wh-ult900n/"><span class="ph"><img src="/images/thumb/sony-wh-ult900n__white-043103320fbb-320.webp" alt="Sony WH-ULT900N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-ULT900N</b><span class="pr">from 65 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-1000xm5-wireless-headphones/"><span class="ph"><img src="/images/thumb/sony-wf-1000xm5-wireless-headphones__main-b896cea5a065-320.webp" alt="Sony WF-1000XM5" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-1000XM5</b><span class="pr">from 139 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wi-c200/"><span class="ph"><img src="/images/thumb/sony-wi-c200__main-0963b352f16e-320.webp" alt="Sony WI-C200" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WI-C200</b><span class="pr">from 8 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wi-c100/"><span class="ph"><img src="/images/thumb/sony-wi-c100__black-18dd67e02d9f-320.webp" alt="Sony WI-C100" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WI-C100</b><span class="pr">from 11 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-mdr-xb450ap/"><span class="ph"><img src="/images/thumb/sony-mdr-xb450ap__red-841aff325a4c-320.webp" alt="Sony MDR-XB450AP" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony MDR-XB450AP</b><span class="pr">from 19 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-mdr-g300/"><span class="ph"><img src="/images/thumb/sony-mdr-g300__white-7ed898e10e4f-320.webp" alt="Sony MDR-G300" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony MDR-G300</b><span class="pr">from 34 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-1000xm3/"><span class="ph"><img src="/images/thumb/sony-wf-1000xm3__silver-1ae57722ba73-320.webp" alt="Sony WF-1000XM3" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-1000XM3</b><span class="pr">from 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-ps4-gold-wireless-headset/"><span class="ph"><img src="/images/thumb/sony-ps4-gold-wireless-headset__gold-a60f664f2384-320.webp" alt="Sony PS4 Gold Wireless Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS4 Gold Wireless Headset</b><span class="pr">from 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-sp800n/"><span class="ph"><img src="/images/thumb/sony-wf-sp800n__blue-f3d8ac95bae4-320.webp" alt="Sony WF-SP800N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-SP800N</b><span class="pr">from 79 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-inzone-h5/"><span class="ph"><img src="/images/thumb/sony-inzone-h5__main-e5816f460146-320.webp" alt="Sony Inzone H5" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony Inzone H5</b><span class="pr">from 82 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wh-g900n-wz-e/"><span class="ph"><img src="/images/thumb/sony-wh-g900n-wz-e__main-a1f8a1759169-320.webp" alt="Sony WH-G900N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-G900N</b><span class="pr">from 151 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/sony-wf-1000xm6/"><span class="ph"><img src="/images/thumb/sony-wf-1000xm6__silver-d73e2b42c378-320.webp" alt="Sony WF-1000XM6" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-1000XM6</b><span class="pr">from 159 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Sony MDR-ZX110 at 6 500 ֏. Most widely sold: Sony WH-CH520 (6 shops). Prices 6 500 ֏–221 900 ֏ across 10 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

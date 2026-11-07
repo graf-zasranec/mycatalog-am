@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,60 +35,79 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Пылесосы","item":"https://better.am/ru/c/vacuum/"},{"@type":"ListItem","position":3,"name":"Dreame — Пылесосы","item":"https://better.am/ru/c/vacuum/dreame/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/vacuum/dreame/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/vacuum/dreame/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=ru">Better.am</a> › <a href="../../../../ru/c/vacuum/">Пылесосы</a> › <span>Dreame — Пылесосы</span></nav>
 <main>
 <h1>Dreame — Пылесосы</h1>
 <p class="lead">Dreame — Пылесосы. Моделей: 29, от 79 000 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — Dreame M1 Robot Vacuum (RPM1GA), 79 000 ֏. Больше всего предложений у Dreame X50 Master (4 магазинах). Цены: 79 000 ֏–919 900 ֏, магазинов: 7.</p>
-<p>Другие бренды: <a href="../../../../ru/c/vacuum/karcher/">Karcher</a> · <a href="../../../../ru/c/vacuum/samsung/">Samsung</a> · <a href="../../../../ru/c/vacuum/xiaomi/">Xiaomi</a> · <a href="../../../../ru/c/vacuum/hisense/">Hisense</a> · <a href="../../../../ru/c/vacuum/panasonic/">Panasonic</a> · <a href="../../../../ru/c/vacuum/roborock/">Roborock</a> · <a href="../../../../ru/c/vacuum/lg/">LG</a> · <a href="../../../../ru/c/vacuum/philips/">Philips</a> · <a href="../../../../ru/c/vacuum/mova/">Mova</a> · <a href="../../../../ru/c/vacuum/dyson/">Dyson</a> · <a href="../../../../ru/c/vacuum/irobot/">iRobot</a> · <a href="../../../../ru/c/vacuum/toshiba/">Toshiba</a></p>
 <a class="go" href="../../../../?lang=ru#/c/vacuum">Фильтровать и сравнивать на Better.am</a>
-
-<p><a href="../../../../ru/deals/">Что подешевело</a></p>
+<p class="lead" style="margin:18px 0 0">Другие бренды: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../ru/c/vacuum/karcher/">Karcher</a></li><li><a href="../../../../ru/c/vacuum/samsung/">Samsung</a></li><li><a href="../../../../ru/c/vacuum/xiaomi/">Xiaomi</a></li><li><a href="../../../../ru/c/vacuum/hisense/">Hisense</a></li><li><a href="../../../../ru/c/vacuum/panasonic/">Panasonic</a></li><li><a href="../../../../ru/c/vacuum/roborock/">Roborock</a></li><li><a href="../../../../ru/c/vacuum/lg/">LG</a></li><li><a href="../../../../ru/c/vacuum/philips/">Philips</a></li><li><a href="../../../../ru/c/vacuum/mova/">Mova</a></li><li><a href="../../../../ru/c/vacuum/dyson/">Dyson</a></li><li><a href="../../../../ru/c/vacuum/irobot/">iRobot</a></li><li><a href="../../../../ru/c/vacuum/toshiba/">Toshiba</a></li></ul>
+<ul class="pills"><li><a href="../../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../../ru/p/dreame-x50-master/">Dreame X50 Master</a><span>от 619 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-l50-ultra/">Dreame L50 Ultra Robot Vacuum</a><span>от 409 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-g10-pro/">Dreame G10 Pro Wet and Dry Vacuum</a><span>от 119 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-l40-eub/">Dreame Vacuum L40 EUB</a><span>от 149 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-r10-pro-aqua-vzv15a/">Dreame R10 Pro Aqua (VZV15A) Cordless Vacuum</a><span>от 159 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-r20-ultra-aquacycle/">Dreame R20 Ultra AquaCycle</a><span>от 255 990 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-h15-pro-heat/">Dreame H15 Pro Heat Wet and Dry Vacuum</a><span>от 299 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-h15-mix/">Dreame H15 Mix Wet and Dry Vacuum</a><span>от 389 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-z40-station-vzv33a/">Dreame Z40 Station (VZV33A) Cordless Vacuum</a><span>от 399 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-m1-robot-vacuum-rpm1ga/">Dreame M1 Robot Vacuum (RPM1GA)</a><span>от 79 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-h11-core/">Dreame H11 Core</a><span>от 107 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-r10s/">Dreame R10S Cordless Vacuum</a><span>от 107 990 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-r10s-pro-vzv23a/">Dreame R10s Pro (VZV23A) Cordless Vacuum</a><span>от 134 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-d10s-rls3l/">Dreame D10s (RLS3L)</a><span>от 179 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-r20-ultra-vrv57f/">Dreame R20 Ultra (VRV57F) Cordless Vacuum</a><span>от 189 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-h12-dual/">Dreame H12 Dual Wet and Dry</a><span>от 307 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-d30-ultra-eua/">Dreame Vacuum D30 Ultra EUA</a><span>от 309 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-h15s/">Dreame H15S Wet and Dry Vacuum</a><span>от 329 000 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-l40-ultra-ae/">Dreame Vacuum L40 Ultra AE</a><span>от 399 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-l50-ultra-ae-eua/">Dreame Vacuum L50 Ultra AE EUA</a><span>от 409 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-l50-ultra-ae/">Dreame L50 Ultra AE Robot Vacuum</a><span>от 409 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-l40s-pro-ultra/">Dreame Vacuum L40s Pro Ultra</a><span>от 479 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-l50s-pro-ultra-eua/">Dreame Vacuum L50s Pro Ultra EUA</a><span>от 489 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-l60-ultra/">Dreame Vacuum L60 Ultra</a><span>от 549 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-x60-ultra-complete/">Dreame Vacuum X60 Ultra Complete</a><span>от 699 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-x50-ultra-complete/">Dreame X50 Ultra Complete (RLX85CE-4)</a><span>от 699 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-ultra-roller-complete-eua/">Dreame Vacuum Aqua10 Ultra Roller Complete EUA</a><span>от 789 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-matrix10-ultra-eua/">Dreame Vacuum MatriX10 Ultra EUA</a><span>от 919 900 ֏</span></li>
-<li><a href="../../../../ru/p/dreame-vacuum-x60-pro-master/">Dreame Vacuum X60 Pro Master</a><span>от 919 900 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../ru/p/dreame-x50-master/"><span class="ph"><img src="/images/thumb/dreame-x50-master__main-11bbf2f77612-320.webp" alt="Dreame X50 Master" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame X50 Master</b><span class="pr">от 619 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-l50-ultra/"><span class="ph"><img src="/images/thumb/dreame-l50-ultra__main-22a9553c8b9d-320.webp" alt="Dreame L50 Ultra Robot Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame L50 Ultra Robot Vacuum</b><span class="pr">от 409 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-g10-pro/"><span class="ph"><img src="/images/thumb/dreame-g10-pro__main-8e29999c988c-320.webp" alt="Dreame G10 Pro Wet and Dry Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame G10 Pro Wet and Dry Vacuum</b><span class="pr">от 119 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-l40-eub/"><span class="ph"><img src="/images/thumb/dreame-vacuum-l40-eub__main-247b9bc1c112-320.webp" alt="Dreame Vacuum L40 EUB" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum L40 EUB</b><span class="pr">от 149 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-r10-pro-aqua-vzv15a/"><span class="ph"><img src="/images/thumb/dreame-r10-pro-aqua-vzv15a__main-9e6f061f68d7-320.webp" alt="Dreame R10 Pro Aqua (VZV15A) Cordless Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame R10 Pro Aqua (VZV15A) Cordless Vacuum</b><span class="pr">от 159 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-r20-ultra-aquacycle/"><span class="ph"><img src="/images/thumb/dreame-r20-ultra-aquacycle__main-5d8c2ab1cb57-320.webp" alt="Dreame R20 Ultra AquaCycle" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame R20 Ultra AquaCycle</b><span class="pr">от 255 990 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-h15-pro-heat/"><span class="ph"><img src="/images/thumb/dreame-h15-pro-heat__main-e7665fd71bfe-320.webp" alt="Dreame H15 Pro Heat Wet and Dry Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame H15 Pro Heat Wet and Dry Vacuum</b><span class="pr">от 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-h15-mix/"><span class="ph"><img src="/images/thumb/dreame-h15-mix__main-0aa8dacbf142-320.webp" alt="Dreame H15 Mix Wet and Dry Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame H15 Mix Wet and Dry Vacuum</b><span class="pr">от 389 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-z40-station-vzv33a/"><span class="ph"><img src="/images/thumb/dreame-z40-station-vzv33a__main-9db922028a1f-320.webp" alt="Dreame Z40 Station (VZV33A) Cordless Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Z40 Station (VZV33A) Cordless Vacuum</b><span class="pr">от 399 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-m1-robot-vacuum-rpm1ga/"><span class="ph"><img src="/images/thumb/dreame-m1-robot-vacuum-rpm1ga__main-5f180a441f33-320.webp" alt="Dreame M1 Robot Vacuum (RPM1GA)" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame M1 Robot Vacuum (RPM1GA)</b><span class="pr">от 79 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-h11-core/"><span class="ph"><img src="/images/thumb/dreame-h11-core__gray-f644926b1a0c-320.webp" alt="Dreame H11 Core" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame H11 Core</b><span class="pr">от 107 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-r10s/"><span class="ph"><img src="/images/thumb/dreame-r10s__main-f015352c40b5-320.webp" alt="Dreame R10S Cordless Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame R10S Cordless Vacuum</b><span class="pr">от 107 990 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-r10s-pro-vzv23a/"><span class="ph"><img src="/images/thumb/dreame-r10s-pro-vzv23a__main-9e8023ad9c03-320.webp" alt="Dreame R10s Pro (VZV23A) Cordless Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame R10s Pro (VZV23A) Cordless Vacuum</b><span class="pr">от 134 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-d10s-rls3l/"><span class="ph"><img src="/images/thumb/dreame-d10s-rls3l__main-3fdf6cad2bdc-320.webp" alt="Dreame D10s (RLS3L)" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame D10s (RLS3L)</b><span class="pr">от 179 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-r20-ultra-vrv57f/"><span class="ph"><img src="/images/thumb/dreame-r20-ultra-vrv57f__main-fd3d4675ddea-320.webp" alt="Dreame R20 Ultra (VRV57F) Cordless Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame R20 Ultra (VRV57F) Cordless Vacuum</b><span class="pr">от 189 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-h12-dual/"><span class="ph"><img src="/images/thumb/dreame-h12-dual__main-1a4a9ede596b-320.webp" alt="Dreame H12 Dual Wet and Dry" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame H12 Dual Wet and Dry</b><span class="pr">от 307 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-d30-ultra-eua/"><span class="ph"><img src="/images/thumb/dreame-vacuum-d30-ultra-eua__black-af34c64f3727-320.webp" alt="Dreame Vacuum D30 Ultra EUA" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum D30 Ultra EUA</b><span class="pr">от 309 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-h15s/"><span class="ph"><img src="/images/thumb/dreame-h15s__main-d861a9b53674-320.webp" alt="Dreame H15S Wet and Dry Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame H15S Wet and Dry Vacuum</b><span class="pr">от 329 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-l40-ultra-ae/"><span class="ph"><img src="/images/thumb/dreame-vacuum-l40-ultra-ae__black-03888713b42b-320.webp" alt="Dreame Vacuum L40 Ultra AE" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum L40 Ultra AE</b><span class="pr">от 399 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-l50-ultra-ae-eua/"><span class="ph"><img src="/images/thumb/dreame-vacuum-l50-ultra-ae-eua__black-97732d15ed56-320.webp" alt="Dreame Vacuum L50 Ultra AE EUA" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum L50 Ultra AE EUA</b><span class="pr">от 409 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-l50-ultra-ae/"><span class="ph"><img src="/images/thumb/dreame-l50-ultra-ae__white-56dfa310a3fd-320.webp" alt="Dreame L50 Ultra AE Robot Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame L50 Ultra AE Robot Vacuum</b><span class="pr">от 409 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-l40s-pro-ultra/"><span class="ph"><img src="/images/thumb/dreame-vacuum-l40s-pro-ultra__black-f2e231d70bba-320.webp" alt="Dreame Vacuum L40s Pro Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum L40s Pro Ultra</b><span class="pr">от 479 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-l50s-pro-ultra-eua/"><span class="ph"><img src="/images/thumb/dreame-vacuum-l50s-pro-ultra-eua__black-5787b091fde5-320.webp" alt="Dreame Vacuum L50s Pro Ultra EUA" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum L50s Pro Ultra EUA</b><span class="pr">от 489 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-l60-ultra/"><span class="ph"><img src="/images/thumb/dreame-vacuum-l60-ultra__black-bc3f284e0abb-320.webp" alt="Dreame Vacuum L60 Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum L60 Ultra</b><span class="pr">от 549 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-x60-ultra-complete/"><span class="ph"><img src="/images/thumb/dreame-vacuum-x60-ultra-complete__black-a428b0193b6d-320.webp" alt="Dreame Vacuum X60 Ultra Complete" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum X60 Ultra Complete</b><span class="pr">от 699 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-x50-ultra-complete/"><span class="ph"><img src="/images/thumb/dreame-x50-ultra-complete__main-6c62210e4628-320.webp" alt="Dreame X50 Ultra Complete (RLX85CE-4)" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame X50 Ultra Complete (RLX85CE-4)</b><span class="pr">от 699 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-ultra-roller-complete-eua/"><span class="ph"><img src="/images/thumb/dreame-vacuum-ultra-roller-complete-eua__black-34fb08d65d49-320.webp" alt="Dreame Vacuum Aqua10 Ultra Roller Complete EUA" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum Aqua10 Ultra Roller Complete EUA</b><span class="pr">от 789 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-matrix10-ultra-eua/"><span class="ph"><img src="/images/thumb/dreame-vacuum-matrix10-ultra-eua__main-6dff6260ce65-320.webp" alt="Dreame Vacuum MatriX10 Ultra EUA" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum MatriX10 Ultra EUA</b><span class="pr">от 919 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/dreame-vacuum-x60-pro-master/"><span class="ph"><img src="/images/thumb/dreame-vacuum-x60-pro-master__main-513cee60463e-320.webp" alt="Dreame Vacuum X60 Pro Master" width="320" height="320" loading="lazy" decoding="async"></span><b>Dreame Vacuum X60 Pro Master</b><span class="pr">от 919 900 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — Dreame M1 Robot Vacuum (RPM1GA), 79 000 ֏. Больше всего предложений у Dreame X50 Master (4 магазинах). Цены: 79 000 ֏–919 900 ֏, магазинов: 7.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

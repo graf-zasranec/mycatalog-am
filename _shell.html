@@ -1726,6 +1726,30 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 .bx-filter-actions .bx-apply{order:0}
 .bx-filter-actions button{min-height:36px}
 .bx-more-filters>summary{min-height:34px}
+
+/* Audit 2026-11-07. Category titles: the tile's own width sets the size, and the decorative icon
+   gives up its corner - "Ժամացույցներ" broke with one letter on a second line under it. */
+@media (min-width:801px){
+  .bx-category{container-type:inline-size}
+  .bx-category h2{font-size:clamp(17px,11cqi,30px);overflow-wrap:normal}
+  .bx-category .bx-type{display:none}
+}
+@media (min-width:801px) and (max-width:1100px){.bx-category h2{font-size:clamp(15px,8.2cqi,26px)}}
+/* Nothing a visitor reads below 12 px; Armenian letters need it most. */
+.sc>*,.bx-category p,.bx-count,.bx-config,.bx-baseline,#langs [data-lang]{font-size:12px}
+.bx-chip span{min-height:27px}
+@media (pointer:coarse){.bx-chip span,.bx-more summary{min-height:38px}}
+/* Phones: title, a shorter photo, then the price, so the price is on the first screen. Options and
+   the buttons follow. */
+@media (max-width:900px){
+  .pgrid{display:flex;flex-direction:column}
+  .pside{display:contents}
+  .pshotwrap{order:1;width:100%;height:min(280px,36svh)}
+  .pprice2{order:2;margin-top:0;padding-top:0;border-top:0}
+  .pside>.og{order:3}
+  .pcta{order:4;margin-top:0}
+  .pprice2 .shopn{display:none}
+}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>

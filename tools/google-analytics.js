@@ -68,12 +68,14 @@
       ru:'Разрешить статистические cookie Google Analytics для улучшения сайта? Рекламные cookie необязательны.',
       en:'Allow Google Analytics cookies to help improve the website? Advertising cookies are optional.'
     })[document.documentElement.lang] || 'Allow optional analytics cookies?' : copy[1];
-    text.style.cssText = 'margin:8px 0 12px;font-size:14px;line-height:1.45';
+    const phone = innerWidth < 600;
+    if (phone) box.style.padding = '12px';
+    text.style.cssText = `margin:6px 0 ${phone ? 8 : 12}px;font-size:${phone ? 13 : 14}px;line-height:1.4`;
     const actions = document.createElement('div'); actions.style.cssText = 'display:flex;flex-wrap:wrap;gap:10px';
     let marketing;
     if (marketingEnabled) {
       const label = document.createElement('label');
-      label.style.cssText = 'display:flex;align-items:center;gap:10px;min-height:44px;margin:8px 0;font-size:14px;line-height:1.45;cursor:pointer';
+      label.style.cssText = `display:flex;align-items:center;gap:10px;min-height:44px;margin:${phone ? 4 : 8}px 0;font-size:${phone ? 13 : 14}px;line-height:1.4;cursor:pointer`;
       marketing = document.createElement('input'); marketing.type = 'checkbox';
       marketing.checked = marketingChoice === 'granted';
       const description = document.createElement('span');

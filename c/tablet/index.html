@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,87 +35,106 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/"},{"@type":"ListItem","position":2,"name":"Պլանշետներ","item":"https://better.am/c/tablet/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/">Կատալոգ</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></nav>
+<div class="lg"><span aria-current="true">ՀԱՅ</span><a href="/ru/c/tablet/" hreflang="ru">РУС</a><a href="/en/c/tablet/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <span>Պլանշետներ</span></nav>
 <main>
 <h1>Պլանշետներ</h1>
 <p class="lead">Պլանշետներ. 56 մոդել, 49 000 ֏-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։</p>
-<p>Ամենաէժանը՝ Samsung Galaxy Tab A11՝ 49 000 ֏։ Ամենաշատ խանութներում՝ Apple iPad A16 (16 խանութ)։ Գները՝ 49 000 ֏–899 000 ֏, 22 խանութ։</p>
-
 <a class="go" href="../../#/c/tablet">Զտել և համեմատել Better.am-ում</a>
-<p class="lead"><a href="../../c/tablet/samsung/">Samsung</a> · <a href="../../c/tablet/xiaomi/">Xiaomi</a> · <a href="../../c/tablet/apple/">Apple</a> · <a href="../../c/tablet/honor/">Honor</a></p>
-<p><a href="../../deals/">Ինչն է էժանացել</a></p>
+
+<ul class="pills"><li><a href="../../c/tablet/samsung/">Samsung</a></li><li><a href="../../c/tablet/xiaomi/">Xiaomi</a></li><li><a href="../../c/tablet/apple/">Apple</a></li><li><a href="../../c/tablet/honor/">Honor</a></li><li><a href="../../deals/">Ինչն է էժանացել</a></li></ul>
 <h2>Մոդելներ և գներ</h2>
-<ul class="pl"><li><a href="../../p/apple-ipad-a16/">Apple iPad A16</a><span>189 000 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-pro-11-m5/">Apple iPad Pro M5</a><span>459 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-a11/">Samsung Galaxy Tab A11</a><span>49 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-2/">Xiaomi Redmi Pad 2</a><span>74 900 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-air-11-m4/">Apple iPad Air M4</a><span>319 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-a11-plus/">Samsung Galaxy Tab A11+</a><span>99 600 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-pad-7/">Xiaomi Pad 7</a><span>155 000 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-mini-7/">Apple iPad Mini 7</a><span>189 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-pad-7-pro/">Xiaomi Pad 7 Pro</a><span>229 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s10-fe/">Samsung Galaxy Tab S10 FE</a><span>169 600 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-pro-11-m4/">Apple iPad Pro M4</a><span>419 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-2-pro/">Xiaomi Redmi Pad 2 Pro</a><span>92 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-se-8-7-4g/">Xiaomi Redmi Pad SE 8.7 4G</a><span>67 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-2-9-7/">Xiaomi Redmi Pad 2 9.7&quot;</a><span>72 900 ֏-ից</span></li>
-<li><a href="../../p/honor-pad-10-5g/">Honor Pad 10 5G</a><span>189 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-pad-8/">Xiaomi Pad 8</a><span>197 900 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-air-11-wi-fi-2024/">Apple iPad Air M2</a><span>277 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s11/">Samsung Galaxy Tab S11</a><span>287 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s11-ultra/">Samsung Galaxy Tab S11 Ultra</a><span>446 900 ֏-ից</span></li>
-<li><a href="../../p/honor-pad-x7-lte-jms-l09/">Honor Pad X7 LTE JMS-L09</a><span>64 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-2-9-7-4g/">Xiaomi Redmi Pad 2 9.7&quot; 4G</a><span>83 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad/">Xiaomi Redmi Pad</a><span>89 900 ֏-ից</span></li>
-<li><a href="../../p/honor-pad-x8b-ndl2-w09/">Honor Pad X8b</a><span>94 900 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-9/">Apple iPad 9</a><span>114 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s10-lite/">Samsung Galaxy Tab S10 Lite</a><span>135 900 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-mini-6/">Apple iPad Mini 6</a><span>209 000 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-air-5-wi-fi-plus-cellular-2022/">Apple iPad Air 5</a><span>219 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-pad-8-pro/">Xiaomi Pad 8 Pro</a><span>239 000 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-air-11-m3/">Apple iPad Air M3</a><span>264 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s8/">Samsung Galaxy Tab S8</a><span>289 000 ֏-ից</span></li>
-<li><a href="../../p/honor-pad-x7-jms-w09/">Honor Pad X7 JMS-W09</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-pad-m1/">Xiaomi POCO Pad M1</a><span>127 700 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-pro-5g/">Xiaomi Redmi Pad Pro 5G</a><span>134 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-pad-5/">Xiaomi Pad 5</a><span>169 000 ֏-ից</span></li>
-<li><a href="../../p/honor-pad-x9a/">Honor Pad X9a</a><span>169 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s9-fe-plus/">Samsung Galaxy Tab S9 FE+</a><span>196 600 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a/">Apple iPad 10</a><span>199 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s9-plus/">Samsung Galaxy Tab S9+</a><span>359 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s8-plus/">Samsung Galaxy Tab S8+</a><span>379 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s9-ultra/">Samsung Galaxy Tab S9 Ultra</a><span>386 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s12-plus/">Samsung Galaxy Tab S12+</a><span>499 000 ֏-ից</span></li>
-<li><a href="../../p/apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a/">Apple iPad Pro M2</a><span>505 400 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s12-ultra/">Samsung Galaxy Tab S12 Ultra</a><span>589 000 ֏-ից</span></li>
-<li><a href="../../p/amazon-fire-hd-10-kids/">Amazon Fire HD 10 Kids</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/lenovo-tab-m9-tb310xu-acc-zac50096ru/">Lenovo Tab M9 TB310XU ACC ZAC50096RU</a><span>74 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-a8-10-5-x200/">Samsung Galaxy Tab A8</a><span>77 000 ֏-ից</span></li>
-<li><a href="../../p/huawei-matepad-t10/">Huawei MatePad T10</a><span>99 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-pad-se/">Xiaomi Redmi Pad SE</a><span>99 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-a9plus-x210/">Samsung Galaxy Tab A9+</a><span>102 900 ֏-ից</span></li>
-<li><a href="../../p/honor-pad-8/">Honor Pad 8</a><span>119 900 ֏-ից</span></li>
-<li><a href="../../p/lenovo-tab-p11-tb-j606l/">Lenovo Tab P11 (TB-J606L)</a><span>139 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-poco-pad-x1/">Xiaomi Poco Pad X1</a><span>179 000 ֏-ից</span></li>
-<li><a href="../../p/oneplus-pad/">OnePlus Pad</a><span>259 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s9/">Samsung Galaxy Tab S9</a><span>359 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-tab-s10-plus/">Samsung Galaxy Tab S10+</a><span>413 900 ֏-ից</span></li>
-<li><a href="../../p/microsoft-surface-pro-12/">Microsoft Surface Pro 12</a><span>469 000 ֏-ից</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../p/apple-ipad-a16/"><span class="ph"><img src="/images/thumb/apple-ipad-a16__silver-73eff11079be-320.webp" alt="Apple iPad A16" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad A16</b><span class="pr">189 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-pro-11-m5/"><span class="ph"><img src="/images/thumb/apple-ipad-pro-11-m5__silver-8ff5ceb3eace-320.webp" alt="Apple iPad Pro M5" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Pro M5</b><span class="pr">459 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-a11/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-a11__silver-813a42d7ca10-320.webp" alt="Samsung Galaxy Tab A11" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab A11</b><span class="pr">49 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-2/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-2__gray-e1d6c959974b-320.webp" alt="Xiaomi Redmi Pad 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad 2</b><span class="pr">74 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-air-11-m4/"><span class="ph"><img src="/images/thumb/apple-ipad-air-11-m4__blue-2f2199ffaa17-320.webp" alt="Apple iPad Air M4" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Air M4</b><span class="pr">319 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-a11-plus/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-a11-plus__silver-2002879ffd0c-320.webp" alt="Samsung Galaxy Tab A11+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab A11+</b><span class="pr">99 600 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-pad-7/"><span class="ph"><img src="/images/thumb/xiaomi-pad-7__gray-6ea2963f5982-320.webp" alt="Xiaomi Pad 7" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Pad 7</b><span class="pr">155 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-mini-7/"><span class="ph"><img src="/images/thumb/apple-ipad-mini-7__space-gray-09df4252f002-320.webp" alt="Apple iPad Mini 7" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Mini 7</b><span class="pr">189 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-pad-7-pro/"><span class="ph"><img src="/images/thumb/xiaomi-pad-7-pro__gray-3ce307dce459-320.webp" alt="Xiaomi Pad 7 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Pad 7 Pro</b><span class="pr">229 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s10-fe/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s10-fe__gray-3d41ca28b96b-320.webp" alt="Samsung Galaxy Tab S10 FE" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S10 FE</b><span class="pr">169 600 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-pro-11-m4/"><span class="ph"><img src="/images/thumb/apple-ipad-pro-11-m4__space-black-2b93976bbaea-320.webp" alt="Apple iPad Pro M4" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Pro M4</b><span class="pr">419 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-2-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-2-pro__graphite-gray-442aedf8a49d-320.webp" alt="Xiaomi Redmi Pad 2 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad 2 Pro</b><span class="pr">92 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-se-8-7-4g/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-se-8-7-4g__graphite-gray-8bada298edb9-320.webp" alt="Xiaomi Redmi Pad SE 8.7 4G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad SE 8.7 4G</b><span class="pr">67 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-2-9-7/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-2-9-7__main-40aa8f307db3-320.webp" alt="Xiaomi Redmi Pad 2 9.7&quot;" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad 2 9.7&quot;</b><span class="pr">72 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-pad-10-5g/"><span class="ph"><img src="/images/thumb/honor-pad-10-5g__main-040e6fa67027-320.webp" alt="Honor Pad 10 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Pad 10 5G</b><span class="pr">189 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-pad-8/"><span class="ph"><img src="/images/thumb/xiaomi-pad-8__gray-79df0a99d9a3-320.webp" alt="Xiaomi Pad 8" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Pad 8</b><span class="pr">197 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-air-11-wi-fi-2024/"><span class="ph"><img src="/images/thumb/apple-ipad-air-11-wi-fi-2024__purple-8219b6bd3197-320.webp" alt="Apple iPad Air M2" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Air M2</b><span class="pr">277 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s11/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s11__gray-47fcc8026668-320.webp" alt="Samsung Galaxy Tab S11" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S11</b><span class="pr">287 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s11-ultra/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s11-ultra__gray-ab0c9d4de60a-320.webp" alt="Samsung Galaxy Tab S11 Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S11 Ultra</b><span class="pr">446 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-pad-x7-lte-jms-l09/"><span class="ph"><img src="/images/thumb/honor-pad-x7-lte-jms-l09__main-2da4f6bc823f-320.webp" alt="Honor Pad X7 LTE JMS-L09" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Pad X7 LTE JMS-L09</b><span class="pr">64 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-2-9-7-4g/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-2-9-7-4g__graphite-gray-f012a40f284f-320.webp" alt="Xiaomi Redmi Pad 2 9.7&quot; 4G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad 2 9.7&quot; 4G</b><span class="pr">83 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad__main-1c11a496c780-320.webp" alt="Xiaomi Redmi Pad" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad</b><span class="pr">89 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-pad-x8b-ndl2-w09/"><span class="ph"><img src="/images/thumb/honor-pad-x8b-ndl2-w09__main-d7dbb25c69a6-320.webp" alt="Honor Pad X8b" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Pad X8b</b><span class="pr">94 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-9/"><span class="ph"><img src="/images/thumb/apple-ipad-9__space-gray-d03fe9bef93d-320.webp" alt="Apple iPad 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad 9</b><span class="pr">114 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s10-lite/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s10-lite__gray-4b1752f23fc0-320.webp" alt="Samsung Galaxy Tab S10 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S10 Lite</b><span class="pr">135 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-mini-6/"><span class="ph"><img src="/images/thumb/apple-ipad-mini-6__space-gray-a0db89e7a047-320.webp" alt="Apple iPad Mini 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Mini 6</b><span class="pr">209 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-air-5-wi-fi-plus-cellular-2022/"><span class="ph"><img src="/images/thumb/apple-ipad-air-5-wi-fi-plus-cellular-2022__purple-32599f364fa7-320.webp" alt="Apple iPad Air 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Air 5</b><span class="pr">219 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-pad-8-pro/"><span class="ph"><img src="/images/thumb/xiaomi-pad-8-pro__main-bc4abebe0129-320.webp" alt="Xiaomi Pad 8 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Pad 8 Pro</b><span class="pr">239 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-air-11-m3/"><span class="ph"><img src="/images/thumb/apple-ipad-air-11-m3__blue-db78a6943b0f-320.webp" alt="Apple iPad Air M3" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Air M3</b><span class="pr">264 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s8/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s8__graphite-23f870b08b53-320.webp" alt="Samsung Galaxy Tab S8" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S8</b><span class="pr">289 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-pad-x7-jms-w09/"><span class="ph"><img src="/images/thumb/honor-pad-x7-jms-w09__main-ad4c7200ee4d-320.webp" alt="Honor Pad X7 JMS-W09" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Pad X7 JMS-W09</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-pad-m1/"><span class="ph"><img src="/images/thumb/xiaomi-pad-m1__gray-014a10800f00-320.webp" alt="Xiaomi POCO Pad M1" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi POCO Pad M1</b><span class="pr">127 700 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-pro-5g/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-pro-5g__main-7b6fe09ffb6a-320.webp" alt="Xiaomi Redmi Pad Pro 5G" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad Pro 5G</b><span class="pr">134 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-pad-5/"><span class="ph"><img src="/images/thumb/xiaomi-pad-5__pearl-white-a34dd8478e07-320.webp" alt="Xiaomi Pad 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Pad 5</b><span class="pr">169 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-pad-x9a/"><span class="ph"><img src="/images/thumb/honor-pad-x9a__main-1ddfbc082758-320.webp" alt="Honor Pad X9a" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Pad X9a</b><span class="pr">169 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s9-fe-plus/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s9-fe-plus__light-green-992c08d999b2-320.webp" alt="Samsung Galaxy Tab S9 FE+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S9 FE+</b><span class="pr">196 600 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a/"><span class="ph"><img src="/images/thumb/apple-ipad-10-9-wi-fi-a14-mpqa3rk-a__silver-ad6ada98669b-320.webp" alt="Apple iPad 10" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad 10</b><span class="pr">199 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s9-plus/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s9-plus__graphite-fd89bba064b2-320.webp" alt="Samsung Galaxy Tab S9+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S9+</b><span class="pr">359 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s8-plus/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s8-plus__graphite-891a276aa549-320.webp" alt="Samsung Galaxy Tab S8+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S8+</b><span class="pr">379 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s9-ultra/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s9-ultra__graphite-8e69535e0261-320.webp" alt="Samsung Galaxy Tab S9 Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S9 Ultra</b><span class="pr">386 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s12-plus/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s12-plus__gray-00711b901305-320.webp" alt="Samsung Galaxy Tab S12+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S12+</b><span class="pr">499 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a/"><span class="ph"><img src="/images/thumb/apple-ipad-11-pro-wi-fi-m2-mnxg3rk-a__gray-b6d99226fa2f-320.webp" alt="Apple iPad Pro M2" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPad Pro M2</b><span class="pr">505 400 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s12-ultra/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s12-ultra__gray-601bf2f069d8-320.webp" alt="Samsung Galaxy Tab S12 Ultra" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S12 Ultra</b><span class="pr">589 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/amazon-fire-hd-10-kids/"><span class="ph"><img src="/images/thumb/amazon-fire-hd-10-kids__pink-2535ad3c0833-320.webp" alt="Amazon Fire HD 10 Kids" width="320" height="320" loading="lazy" decoding="async"></span><b>Amazon Fire HD 10 Kids</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/lenovo-tab-m9-tb310xu-acc-zac50096ru/"><span class="ph"><img src="/images/thumb/lenovo-tab-m9-tb310xu-acc-zac50096ru__main-3899ccb2b88a-320.webp" alt="Lenovo Tab M9 TB310XU ACC ZAC50096RU" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo Tab M9 TB310XU ACC ZAC50096RU</b><span class="pr">74 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-a8-10-5-x200/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-a8-10-5-x200__gray-9518142e97ab-320.webp" alt="Samsung Galaxy Tab A8" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab A8</b><span class="pr">77 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/huawei-matepad-t10/"><span class="ph"><img src="/images/thumb/huawei-matepad-t10__main-67098dde953d-320.webp" alt="Huawei MatePad T10" width="320" height="320" loading="lazy" decoding="async"></span><b>Huawei MatePad T10</b><span class="pr">99 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-pad-se/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-pad-se__main-f46483413492-320.webp" alt="Xiaomi Redmi Pad SE" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Pad SE</b><span class="pr">99 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-a9plus-x210/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-a9plus-x210__graphite-0a527efec894-320.webp" alt="Samsung Galaxy Tab A9+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab A9+</b><span class="pr">102 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-pad-8/"><span class="ph"><img src="/images/thumb/honor-pad-8__main-2ccf31662263-320.webp" alt="Honor Pad 8" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Pad 8</b><span class="pr">119 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/lenovo-tab-p11-tb-j606l/"><span class="ph"><img src="/images/thumb/lenovo-tab-p11-tb-j606l__main-00f7d2adf034-320.webp" alt="Lenovo Tab P11 (TB-J606L)" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo Tab P11 (TB-J606L)</b><span class="pr">139 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-poco-pad-x1/"><span class="ph"><img src="/images/thumb/xiaomi-poco-pad-x1__gray-efc98391c10e-320.webp" alt="Xiaomi Poco Pad X1" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Poco Pad X1</b><span class="pr">179 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-pad/"><span class="ph"><img src="/images/thumb/oneplus-pad__main-f6dcf7188eb2-320.webp" alt="OnePlus Pad" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Pad</b><span class="pr">259 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s9/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s9__graphite-e9b80b3f6b27-320.webp" alt="Samsung Galaxy Tab S9" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S9</b><span class="pr">359 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-tab-s10-plus/"><span class="ph"><img src="/images/thumb/samsung-galaxy-tab-s10-plus__silver-739a247350b5-320.webp" alt="Samsung Galaxy Tab S10+" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Tab S10+</b><span class="pr">413 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/microsoft-surface-pro-12/"><span class="ph"><img src="/images/thumb/microsoft-surface-pro-12__main-ca0eb449ac69-320.webp" alt="Microsoft Surface Pro 12" width="320" height="320" loading="lazy" decoding="async"></span><b>Microsoft Surface Pro 12</b><span class="pr">469 000 ֏-ից</span></a></li></ul>
+<p style="margin-top:22px">Ամենաէժանը՝ Samsung Galaxy Tab A11՝ 49 000 ֏։ Ամենաշատ խանութներում՝ Apple iPad A16 (16 խանութ)։ Գները՝ 49 000 ֏–899 000 ֏, 22 խանութ։</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/c/laptop/">Նոութբուքեր</a><a href="/c/ereader/">Էլ. ընթերցիչներ</a><a href="/c/monitor/">Մոնիտորներ</a><a href="/c/headphones/">Ականջակալներ</a><a href="/c/speaker/">Բարձրախոսներ</a><a href="/c/accessory/">Apple աքսեսուարներ</a><a href="/c/console/">Խաղային կոնսոլներ</a><a href="/c/desktop/">Համակարգիչներ</a><a href="/c/tablet/">Պլանշետներ</a><a href="/c/phone/">Հեռախոսներ</a><a href="/c/watch/">Խելացի ժամացույցներ</a><a href="/c/component/">Մասնագործեր</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></div></footer></body></html>

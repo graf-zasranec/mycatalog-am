@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,124 +35,143 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Smartwatches","item":"https://better.am/en/c/watch/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/watch/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/watch/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../?lang=en">Better.am</a> › <span>Smartwatches</span></nav>
 <main>
 <h1>Smartwatches</h1>
 <p class="lead">Smartwatches. 93 models, from 9 900 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Xiaomi Smart Band 8 at 9 900 ֏. Most widely sold: Apple Watch Series 11 (12 shops). Prices 9 900 ֏–637 000 ֏ across 20 shops.</p>
-
 <a class="go" href="../../../?lang=en#/c/watch">Filter and compare on Better.am</a>
-<p class="lead"><a href="../../../en/c/watch/garmin/">Garmin</a> · <a href="../../../en/c/watch/xiaomi/">Xiaomi</a> · <a href="../../../en/c/watch/samsung/">Samsung</a> · <a href="../../../en/c/watch/apple/">Apple</a> · <a href="../../../en/c/watch/honor/">Honor</a> · <a href="../../../en/c/watch/nothing/">Nothing</a> · <a href="../../../en/c/watch/amazfit/">Amazfit</a></p>
-<p><a href="../../../en/deals/">What got cheaper</a></p>
+
+<ul class="pills"><li><a href="../../../en/c/watch/garmin/">Garmin</a></li><li><a href="../../../en/c/watch/xiaomi/">Xiaomi</a></li><li><a href="../../../en/c/watch/samsung/">Samsung</a></li><li><a href="../../../en/c/watch/apple/">Apple</a></li><li><a href="../../../en/c/watch/honor/">Honor</a></li><li><a href="../../../en/c/watch/nothing/">Nothing</a></li><li><a href="../../../en/c/watch/amazfit/">Amazfit</a></li><li><a href="../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../en/p/xiaomi-smart-band-10/">Xiaomi Smart Band 10</a><span>from 19 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-series-11/">Apple Watch Series 11</a><span>from 153 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-se-3/">Apple Watch SE Gen.3</a><span>from 109 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-watch-8/">Samsung Galaxy Watch 8</a><span>from 84 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-5-lite/">Xiaomi Redmi Watch 5 Lite</a><span>from 18 900 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-watch-8-classic/">Samsung Galaxy Watch8 Classic</a><span>from 119 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-series-12-gps-42mm/">Apple Watch Series 12 GPS</a><span>from 189 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-ultra-3/">Apple Watch Ultra 3</a><span>from 299 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-ultra-4-gps-plus-cellular-plus-band/">Apple Watch Ultra 4 GPS + Cellular</a><span>from 359 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-9-44mm/">Samsung Galaxy Watch 9</a><span>from 118 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-watch-ultra-2/">Samsung Galaxy Watch Ultra 2</a><span>from 205 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-fit-3/">Samsung Galaxy Fit 3</a><span>from 17 900 ֏</span></li>
-<li><a href="../../../en/p/whoop-peak/">Whoop Peak</a><span>from 125 000 ֏</span></li>
-<li><a href="../../../en/p/whoop-life/">Whoop Life</a><span>from 159 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-band-11-active/">Xiaomi Smart Band 11 Active</a><span>from 19 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-6-active/">Xiaomi Redmi Watch 6 Active</a><span>from 22 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-6-lite/">Xiaomi Redmi Watch 6 Lite</a><span>from 33 900 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-watch-7/">Samsung Galaxy Watch 7</a><span>from 88 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-ultra-47mm-2024/">Samsung Galaxy Watch Ultra 2024</a><span>from 151 600 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-band-7/">Xiaomi Smart Band 7</a><span>from 11 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-5-active/">Xiaomi Redmi Watch 5 Active</a><span>from 14 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-mi-smart-band-9/">Xiaomi Smart Band 9</a><span>from 15 900 ֏</span></li>
-<li><a href="../../../en/p/honor-choice-infowear-2i-kch-wb01/">Honor Choice Watch 2i</a><span>from 19 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-6/">Xiaomi Redmi Watch 6</a><span>from 51 900 ֏</span></li>
-<li><a href="../../../en/p/google-fitbit-air/">Google Fitbit Air</a><span>from 69 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-se-2/">Apple Watch SE 2</a><span>from 89 000 ֏</span></li>
-<li><a href="../../../en/p/apple-watch-series-10/">Apple Watch Series 10</a><span>from 149 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-band-8-champagne-bhr7166gl/">Xiaomi Smart Band 8</a><span>from 9 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-smart-band-2/">Xiaomi Redmi Smart Band 2</a><span>from 13 500 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-band-7-pro/">Xiaomi Smart Band 7 Pro</a><span>from 18 900 ֏</span></li>
-<li><a href="../../../en/p/nothing-cmf-pro-2/">Nothing CMF Watch Pro 2</a><span>from 29 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-band-10-pro/">Xiaomi Smart Band 10 Pro</a><span>from 45 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-active-2/">Samsung Galaxy Watch Active 2</a><span>from 49 900 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-watch-3-41mm/">Samsung Galaxy Watch 3</a><span>from 54 900 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-6-classic-43mm-r950/">Samsung Galaxy Watch 6 Classic</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../en/p/garmin-cirqa-smart-band-mauve-s-m/">Garmin CIRQA Smart Band</a><span>from 89 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-vivoactive-5/">Garmin Vivoactive 5</a><span>from 121 500 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-ultra-47mm-2025/">Samsung Galaxy Watch Ultra 2025</a><span>from 155 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-instinct-3-50mm-amoled/">Garmin Instinct 3, AMOLED</a><span>from 158 400 ֏</span></li>
-<li><a href="../../../en/p/garmin-venu-3-with-leather/">Garmin Venu 3</a><span>from 199 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-forerunner-965-black-powder/">Garmin Forerunner 965</a><span>from 229 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-venu-4-45-mm/">Garmin Venu 4</a><span>from 239 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-venu-x1-gps/">Garmin Venu X1</a><span>from 269 100 ֏</span></li>
-<li><a href="../../../en/p/apple-ultra-2/">Apple Watch Ultra 2</a><span>from 279 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-forerunner-970/">Garmin Forerunner 970</a><span>from 299 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-epix-pro-sapphire-edition-51-mm/">Garmin epix Pro – Sapphire Edition</a><span>from 345 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-band-8-active/">Xiaomi Smart Band 8 Active</a><span>from 11 400 ֏</span></li>
-<li><a href="../../../en/p/honor-band-9/">Honor Band 9</a><span>from 17 500 ֏</span></li>
-<li><a href="../../../en/p/huawei-band-9/">Huawei Band 9</a><span>from 19 900 ֏</span></li>
-<li><a href="../../../en/p/honor-band-6/">Honor Band 6</a><span>from 24 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-band-9-pro/">Xiaomi Smart Band 9 Pro</a><span>from 29 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-2-lite/">Xiaomi Redmi Watch 2 Lite</a><span>from 33 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-mi-band-8-pro/">Xiaomi Smart Band 8 Pro</a><span>from 34 400 ֏</span></li>
-<li><a href="../../../en/p/oneplus-nord-smart-watch/">OnePlus Nord Smart Watch</a><span>from 39 000 ֏</span></li>
-<li><a href="../../../en/p/honor-watch-gs-3-rubber/">Honor Watch GS 3 Rubber</a><span>from 39 900 ֏</span></li>
-<li><a href="../../../en/p/nothing-cmf-watch-pro/">Nothing CMF Watch Pro</a><span>from 49 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-watch4-40-mm/">Samsung Galaxy Watch4</a><span>from 49 900 ֏</span></li>
-<li><a href="../../../en/p/nothing-cmf-3-pro-6974434225312/">Nothing CMF Watch 3 Pro</a><span>from 55 000 ֏</span></li>
-<li><a href="../../../en/p/nothing-cmf-watch-3-pro/">Nothing CMF Watch 3 Pro</a><span>from 59 000 ֏</span></li>
-<li><a href="../../../en/p/samsung-galaxy-fe/">Samsung Galaxy Watch FE</a><span>from 62 000 ֏</span></li>
-<li><a href="../../../en/p/honor-5-stl-b19-5502abgj/">Honor Watch 5</a><span>from 64 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-redmi-watch-5/">Xiaomi Redmi Watch 5</a><span>from 69 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-watch-s1-active/">Xiaomi Watch S1 Active</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../en/p/amazfit-gtr-42mm/">Amazfit GTR 42mm</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../en/p/amazfit-gtr-47mm/">Amazfit GTR 47mm</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../en/p/amazfit-gts/">Amazfit GTS</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../en/p/amazfit-t-rex/">Amazfit T-Rex</a><span>from 89 900 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-watch-s5-46mm/">Xiaomi Watch S5 46mm</a><span>from 99 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-smart-watch-70mai-saphir/">Xiaomi Smart Watch 70mai Saphir</a><span>from 99 900 ֏</span></li>
-<li><a href="../../../en/p/garmin-forerunner-70/">Garmin Forerunner 70</a><span>from 109 000 ֏</span></li>
-<li><a href="../../../en/p/xiaomi-watch-s1/">Xiaomi Watch S1</a><span>from 109 900 ֏</span></li>
-<li><a href="../../../en/p/garmin-forerunner-170/">Garmin Forerunner 170</a><span>from 129 000 ֏</span></li>
-<li><a href="../../../en/p/huawei-watch-gt-5-46mm/">Huawei Watch GT 5 46mm</a><span>from 139 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-vivoactive-6/">Garmin vivoactive 6</a><span>from 144 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-forerunner-170-music/">Garmin Forerunner 170 Music</a><span>from 159 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-instinct-3-50mm-solar/">Garmin Instinct 3, Solar</a><span>from 159 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-instinct-2x-solar-tactical-edition/">Garmin Instinct 2X Solar – Tactical Edition</a><span>from 166 440 ֏</span></li>
-<li><a href="../../../en/p/google-pixel-watch-2/">Google Pixel Watch 2</a><span>from 169 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-instinct-2x-solar/">Garmin Instinct 2X Solar</a><span>from 169 150 ֏</span></li>
-<li><a href="../../../en/p/garmin-venu-3s-french/">Garmin Venu 3s</a><span>from 189 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-forerunner-570/">Garmin Forerunner 570</a><span>from 219 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-7-pro-sapphire-solar/">Garmin Fenix 7 Pro Sapphire Solar</a><span>from 299 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-epix-pro-standard-edition-47mm/">Garmin epix Pro – Standard Edition</a><span>from 327 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-epix-pro-sapphire-edition-47-mm/">Garmin epix Pro – Sapphire Edition | 47 mm</a><span>from 327 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-7x-pro-sapphire-solar-edition/">Garmin Fenix 7X Pro – Sapphire Solar Edition</a><span>from 329 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-8-47-mm-amoled/">Garmin Fenix 8, AMOLED</a><span>from 348 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-8-47-mm-amoled-sapphire-carbon/">Garmin Fenix 8 AMOLED Sapphire</a><span>from 386 280 ֏</span></li>
-<li><a href="../../../en/p/garmin-enduro-3/">Garmin Enduro 3</a><span>from 396 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-8-pro-47-mm-amoled/">Garmin Fenix 8 Pro, AMOLED</a><span>from 434 130 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-9-51mm-carbon-dlc-band/">Garmin Fenix 9 Carbon DLC</a><span>from 489 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-fenix-9-pro-47mm-amoled-carbon-dlc/">Garmin Fenix 9 Pro, AMOLED, Carbon DLC</a><span>from 489 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-tactix-8-47-mm-amoled/">Garmin Tactix 8 – 47 mm, AMOLED</a><span>from 595 000 ֏</span></li>
-<li><a href="../../../en/p/garmin-tactix-8-51-mm-amoled/">Garmin Tactix 8 – 51 mm, AMOLED</a><span>from 637 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../en/p/xiaomi-smart-band-10/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-10__black-cb08d602746e-320.webp" alt="Xiaomi Smart Band 10" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 10</b><span class="pr">from 19 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-series-11/"><span class="ph"><img src="/images/thumb/apple-watch-series-11__jet-black-9567a247bec5-320.webp" alt="Apple Watch Series 11" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Series 11</b><span class="pr">from 153 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-se-3/"><span class="ph"><img src="/images/thumb/apple-watch-se-3__midnight-25d35616124d-320.webp" alt="Apple Watch SE Gen.3" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch SE Gen.3</b><span class="pr">from 109 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-watch-8/"><span class="ph"><img src="/images/thumb/samsung-galaxy-watch-8__graphite-ef73cd2ec19c-320.webp" alt="Samsung Galaxy Watch 8" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch 8</b><span class="pr">from 84 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-5-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-5-lite__black-3ce8ba1bff0b-320.webp" alt="Xiaomi Redmi Watch 5 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 5 Lite</b><span class="pr">from 18 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-watch-8-classic/"><span class="ph"><img src="/images/thumb/samsung-galaxy-watch-8-classic__black-41917c3240e7-320.webp" alt="Samsung Galaxy Watch8 Classic" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch8 Classic</b><span class="pr">from 119 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-series-12-gps-42mm/"><span class="ph"><img src="/images/thumb/apple-watch-series-12-gps-42mm__black-e14e29dd819c-320.webp" alt="Apple Watch Series 12 GPS" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Series 12 GPS</b><span class="pr">from 189 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-ultra-3/"><span class="ph"><img src="/images/thumb/apple-watch-ultra-3__black-titanium-fbdca2e7c983-320.webp" alt="Apple Watch Ultra 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Ultra 3</b><span class="pr">from 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-ultra-4-gps-plus-cellular-plus-band/"><span class="ph"><img src="/images/thumb/apple-watch-ultra-4-gps-plus-cellular-plus-band__natural-a6aa8ad0f08b-320.webp" alt="Apple Watch Ultra 4 GPS + Cellular" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Ultra 4 GPS + Cellular</b><span class="pr">from 359 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-9-44mm/"><span class="ph"><img src="/images/thumb/samsung-galaxy-9-44mm__cream-0ca05b1caff5-320.webp" alt="Samsung Galaxy Watch 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch 9</b><span class="pr">from 118 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-watch-ultra-2/"><span class="ph"><img src="/images/thumb/samsung-galaxy-watch-ultra-2__titanium-gray-147739398cf1-320.webp" alt="Samsung Galaxy Watch Ultra 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch Ultra 2</b><span class="pr">from 205 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-fit-3/"><span class="ph"><img src="/images/thumb/samsung-galaxy-fit-3__pink-gold-584704829bd2-320.webp" alt="Samsung Galaxy Fit 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Fit 3</b><span class="pr">from 17 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/whoop-peak/"><span class="ph"><img src="/images/thumb/whoop-peak__white-3df7dc50c7a5-320.webp" alt="Whoop Peak" width="320" height="320" loading="lazy" decoding="async"></span><b>Whoop Peak</b><span class="pr">from 125 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/whoop-life/"><span class="ph"><img src="/images/thumb/whoop-life__black-e3b7777a2dd6-320.webp" alt="Whoop Life" width="320" height="320" loading="lazy" decoding="async"></span><b>Whoop Life</b><span class="pr">from 159 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-band-11-active/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-11-active__main-477cc80748ca-320.webp" alt="Xiaomi Smart Band 11 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 11 Active</b><span class="pr">from 19 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-6-active/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-6-active__main-7b73a45bb7ca-320.webp" alt="Xiaomi Redmi Watch 6 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 6 Active</b><span class="pr">from 22 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-6-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-6-lite__main-b30493e4340e-320.webp" alt="Xiaomi Redmi Watch 6 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 6 Lite</b><span class="pr">from 33 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-watch-7/"><span class="ph"><img src="/images/thumb/samsung-galaxy-watch-7__cream-c227293da111-320.webp" alt="Samsung Galaxy Watch 7" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch 7</b><span class="pr">from 88 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-ultra-47mm-2024/"><span class="ph"><img src="/images/thumb/samsung-galaxy-ultra-47mm-2024__titanium-white-4c026c2ae68f-320.webp" alt="Samsung Galaxy Watch Ultra 2024" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch Ultra 2024</b><span class="pr">from 151 600 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-band-7/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-7__main-8418c210f309-320.webp" alt="Xiaomi Smart Band 7" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 7</b><span class="pr">from 11 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-5-active/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-5-active__midnight-black-bfde8a84cda8-320.webp" alt="Xiaomi Redmi Watch 5 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 5 Active</b><span class="pr">from 14 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-mi-smart-band-9/"><span class="ph"><img src="/images/thumb/xiaomi-mi-smart-band-9__white-cd3204254b18-320.webp" alt="Xiaomi Smart Band 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 9</b><span class="pr">from 15 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/honor-choice-infowear-2i-kch-wb01/"><span class="ph"><img src="/images/thumb/honor-choice-infowear-2i-kch-wb01__black-c1ad6baa4758-320.webp" alt="Honor Choice Watch 2i" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Watch 2i</b><span class="pr">from 19 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-6/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-6__black-2e02627537f8-320.webp" alt="Xiaomi Redmi Watch 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 6</b><span class="pr">from 51 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/google-fitbit-air/"><span class="ph"><img src="/images/thumb/google-fitbit-air__obsidian-7720587c20eb-320.webp" alt="Google Fitbit Air" width="320" height="320" loading="lazy" decoding="async"></span><b>Google Fitbit Air</b><span class="pr">from 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-se-2/"><span class="ph"><img src="/images/thumb/apple-watch-se-2__midnight-5913ddb3f688-320.webp" alt="Apple Watch SE 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch SE 2</b><span class="pr">from 89 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-watch-series-10/"><span class="ph"><img src="/images/thumb/apple-watch-series-10__jet-black-d6a3cf2c7f7c-320.webp" alt="Apple Watch Series 10" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Series 10</b><span class="pr">from 149 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-band-8-champagne-bhr7166gl/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-8-champagne-bhr7166gl__sand-b4945f82ad77-320.webp" alt="Xiaomi Smart Band 8" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 8</b><span class="pr">from 9 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-smart-band-2/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-smart-band-2__main-292169ebb111-320.webp" alt="Xiaomi Redmi Smart Band 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Smart Band 2</b><span class="pr">from 13 500 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-band-7-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-7-pro__black-c6d11a609571-320.webp" alt="Xiaomi Smart Band 7 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 7 Pro</b><span class="pr">from 18 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/nothing-cmf-pro-2/"><span class="ph"><img src="/images/thumb/nothing-cmf-pro-2__blue-6735422beb70-320.webp" alt="Nothing CMF Watch Pro 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing CMF Watch Pro 2</b><span class="pr">from 29 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-band-10-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-10-pro__black-558cbf9a502b-320.webp" alt="Xiaomi Smart Band 10 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 10 Pro</b><span class="pr">from 45 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-active-2/"><span class="ph"><img src="/images/thumb/samsung-galaxy-active-2__black-c72ed449904c-320.webp" alt="Samsung Galaxy Watch Active 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch Active 2</b><span class="pr">from 49 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-watch-3-41mm/"><span class="ph"><img src="/images/thumb/samsung-galaxy-watch-3-41mm__main-29b1c70420d7-320.webp" alt="Samsung Galaxy Watch 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch 3</b><span class="pr">from 54 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-6-classic-43mm-r950/"><span class="ph"><img src="/images/thumb/samsung-galaxy-6-classic-43mm-r950__black-8e0581b07ec1-320.webp" alt="Samsung Galaxy Watch 6 Classic" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch 6 Classic</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-cirqa-smart-band-mauve-s-m/"><span class="ph"><img src="/images/thumb/garmin-cirqa-smart-band-mauve-s-m__blue-ee0fac33560a-320.webp" alt="Garmin CIRQA Smart Band" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin CIRQA Smart Band</b><span class="pr">from 89 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-vivoactive-5/"><span class="ph"><img src="/images/thumb/garmin-vivoactive-5__black-2cc476a6f82c-320.webp" alt="Garmin Vivoactive 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Vivoactive 5</b><span class="pr">from 121 500 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-ultra-47mm-2025/"><span class="ph"><img src="/images/thumb/samsung-galaxy-ultra-47mm-2025__titanium-gray-5884ae9e2738-320.webp" alt="Samsung Galaxy Watch Ultra 2025" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch Ultra 2025</b><span class="pr">from 155 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-instinct-3-50mm-amoled/"><span class="ph"><img src="/images/thumb/garmin-instinct-3-50mm-amoled__main-0e9f771378e6-320.webp" alt="Garmin Instinct 3, AMOLED" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Instinct 3, AMOLED</b><span class="pr">from 158 400 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-venu-3-with-leather/"><span class="ph"><img src="/images/thumb/garmin-venu-3-with-leather__main-8f1e8fe14926-320.webp" alt="Garmin Venu 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Venu 3</b><span class="pr">from 199 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-forerunner-965-black-powder/"><span class="ph"><img src="/images/thumb/garmin-forerunner-965-black-powder__main-3550d49b2490-320.webp" alt="Garmin Forerunner 965" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Forerunner 965</b><span class="pr">from 229 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-venu-4-45-mm/"><span class="ph"><img src="/images/thumb/garmin-venu-4-45-mm__black-490763822bbd-320.webp" alt="Garmin Venu 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Venu 4</b><span class="pr">from 239 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-venu-x1-gps/"><span class="ph"><img src="/images/thumb/garmin-venu-x1-gps__main-7c1b2714414e-320.webp" alt="Garmin Venu X1" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Venu X1</b><span class="pr">from 269 100 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/apple-ultra-2/"><span class="ph"><img src="/images/thumb/apple-ultra-2__natural-25ff0c8380bb-320.webp" alt="Apple Watch Ultra 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Ultra 2</b><span class="pr">from 279 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-forerunner-970/"><span class="ph"><img src="/images/thumb/garmin-forerunner-970__main-228f6f4ead39-320.webp" alt="Garmin Forerunner 970" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Forerunner 970</b><span class="pr">from 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-epix-pro-sapphire-edition-51-mm/"><span class="ph"><img src="/images/thumb/garmin-epix-pro-sapphire-edition-51-mm__main-70b889e5e3b6-320.webp" alt="Garmin epix Pro – Sapphire Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin epix Pro – Sapphire Edition</b><span class="pr">from 345 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-band-8-active/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-8-active__pink-2cc8f1a6be4f-320.webp" alt="Xiaomi Smart Band 8 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 8 Active</b><span class="pr">from 11 400 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/honor-band-9/"><span class="ph"><img src="/images/thumb/honor-band-9__black-7b4145d905bb-320.webp" alt="Honor Band 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Band 9</b><span class="pr">from 17 500 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/huawei-band-9/"><span class="ph"><img src="/images/thumb/huawei-band-9__white-416447973370-320.webp" alt="Huawei Band 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Huawei Band 9</b><span class="pr">from 19 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/honor-band-6/"><span class="ph"><img src="/images/thumb/honor-band-6__main-54d95791086c-320.webp" alt="Honor Band 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Band 6</b><span class="pr">from 24 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-band-9-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-band-9-pro__silver-c23b0810eef8-320.webp" alt="Xiaomi Smart Band 9 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 9 Pro</b><span class="pr">from 29 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-2-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-2-lite__main-8cf434377ce3-320.webp" alt="Xiaomi Redmi Watch 2 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 2 Lite</b><span class="pr">from 33 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-mi-band-8-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-mi-band-8-pro__main-46e277429edf-320.webp" alt="Xiaomi Smart Band 8 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 8 Pro</b><span class="pr">from 34 400 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/oneplus-nord-smart-watch/"><span class="ph"><img src="/images/thumb/oneplus-nord-smart-watch__deep-blue-9b1e89310f8a-320.webp" alt="OnePlus Nord Smart Watch" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Nord Smart Watch</b><span class="pr">from 39 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/honor-watch-gs-3-rubber/"><span class="ph"><img src="/images/thumb/honor-watch-gs-3-rubber__main-64e1cdd1061f-320.webp" alt="Honor Watch GS 3 Rubber" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Watch GS 3 Rubber</b><span class="pr">from 39 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/nothing-cmf-watch-pro/"><span class="ph"><img src="/images/thumb/nothing-cmf-watch-pro__gray-78f3ae03a22b-320.webp" alt="Nothing CMF Watch Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing CMF Watch Pro</b><span class="pr">from 49 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-watch4-40-mm/"><span class="ph"><img src="/images/thumb/samsung-galaxy-watch4-40-mm__black-eebcbc7558e9-320.webp" alt="Samsung Galaxy Watch4" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch4</b><span class="pr">from 49 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/nothing-cmf-3-pro-6974434225312/"><span class="ph"><img src="/images/thumb/nothing-cmf-3-pro-6974434225312__dark-082e4f1831aa-320.webp" alt="Nothing CMF Watch 3 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing CMF Watch 3 Pro</b><span class="pr">from 55 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/nothing-cmf-watch-3-pro/"><span class="ph"><img src="/images/thumb/nothing-cmf-watch-3-pro__dark-gray-92df88790e8c-320.webp" alt="Nothing CMF Watch 3 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing CMF Watch 3 Pro</b><span class="pr">from 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/samsung-galaxy-fe/"><span class="ph"><img src="/images/thumb/samsung-galaxy-fe__blue-0232d5cbd57e-320.webp" alt="Samsung Galaxy Watch FE" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Watch FE</b><span class="pr">from 62 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/honor-5-stl-b19-5502abgj/"><span class="ph"><img src="/images/thumb/honor-5-stl-b19-5502abgj__green-14263dfb2c98-320.webp" alt="Honor Watch 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Watch 5</b><span class="pr">from 64 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-redmi-watch-5/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-5__purple-959e24d54da6-320.webp" alt="Xiaomi Redmi Watch 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 5</b><span class="pr">from 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-watch-s1-active/"><span class="ph"><img src="/images/thumb/xiaomi-watch-s1-active__main-6a9b94967dfa-320.webp" alt="Xiaomi Watch S1 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Watch S1 Active</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/amazfit-gtr-42mm/"><span class="ph"><img src="/images/thumb/amazfit-gtr-42mm__red-6d356df9ca7b-320.webp" alt="Amazfit GTR 42mm" width="320" height="320" loading="lazy" decoding="async"></span><b>Amazfit GTR 42mm</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/amazfit-gtr-47mm/"><span class="ph"><img src="/images/thumb/amazfit-gtr-47mm__space-grey-0a54ec47228c-320.webp" alt="Amazfit GTR 47mm" width="320" height="320" loading="lazy" decoding="async"></span><b>Amazfit GTR 47mm</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/amazfit-gts/"><span class="ph"><img src="/images/thumb/amazfit-gts__pink-23e749df5b36-320.webp" alt="Amazfit GTS" width="320" height="320" loading="lazy" decoding="async"></span><b>Amazfit GTS</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/amazfit-t-rex/"><span class="ph"><img src="/images/thumb/amazfit-t-rex__black-67502f05d216-320.webp" alt="Amazfit T-Rex" width="320" height="320" loading="lazy" decoding="async"></span><b>Amazfit T-Rex</b><span class="pr">from 89 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-watch-s5-46mm/"><span class="ph"><img src="/images/thumb/xiaomi-watch-s5-46mm__black-f77e5e9a5228-320.webp" alt="Xiaomi Watch S5 46mm" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Watch S5 46mm</b><span class="pr">from 99 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-smart-watch-70mai-saphir/"><span class="ph"><img src="/images/thumb/xiaomi-smart-watch-70mai-saphir__main-8ddfbe6d7a07-320.webp" alt="Xiaomi Smart Watch 70mai Saphir" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Watch 70mai Saphir</b><span class="pr">from 99 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-forerunner-70/"><span class="ph"><img src="/images/thumb/garmin-forerunner-70__main-23794deb8e5c-320.webp" alt="Garmin Forerunner 70" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Forerunner 70</b><span class="pr">from 109 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/xiaomi-watch-s1/"><span class="ph"><img src="/images/thumb/xiaomi-watch-s1__main-03e6107c594d-320.webp" alt="Xiaomi Watch S1" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Watch S1</b><span class="pr">from 109 900 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-forerunner-170/"><span class="ph"><img src="/images/thumb/garmin-forerunner-170__main-4d7304951e34-320.webp" alt="Garmin Forerunner 170" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Forerunner 170</b><span class="pr">from 129 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/huawei-watch-gt-5-46mm/"><span class="ph"><img src="/images/thumb/huawei-watch-gt-5-46mm__blue-c985443cffab-320.webp" alt="Huawei Watch GT 5 46mm" width="320" height="320" loading="lazy" decoding="async"></span><b>Huawei Watch GT 5 46mm</b><span class="pr">from 139 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-vivoactive-6/"><span class="ph"><img src="/images/thumb/garmin-vivoactive-6__black-f5cbfa6ffa01-320.webp" alt="Garmin vivoactive 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin vivoactive 6</b><span class="pr">from 144 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-forerunner-170-music/"><span class="ph"><img src="/images/thumb/garmin-forerunner-170-music__main-4d7304951e34-320.webp" alt="Garmin Forerunner 170 Music" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Forerunner 170 Music</b><span class="pr">from 159 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-instinct-3-50mm-solar/"><span class="ph"><img src="/images/thumb/garmin-instinct-3-50mm-solar__main-305f90b6da13-320.webp" alt="Garmin Instinct 3, Solar" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Instinct 3, Solar</b><span class="pr">from 159 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-instinct-2x-solar-tactical-edition/"><span class="ph"><img src="/images/thumb/garmin-instinct-2x-solar-tactical-edition__main-4200ef0398c1-320.webp" alt="Garmin Instinct 2X Solar – Tactical Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Instinct 2X Solar – Tactical Edition</b><span class="pr">from 166 440 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/google-pixel-watch-2/"><span class="ph"><img src="/images/thumb/google-pixel-watch-2__black-a23fdc9e4dcc-320.webp" alt="Google Pixel Watch 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Google Pixel Watch 2</b><span class="pr">from 169 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-instinct-2x-solar/"><span class="ph"><img src="/images/thumb/garmin-instinct-2x-solar__main-d475c5188801-320.webp" alt="Garmin Instinct 2X Solar" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Instinct 2X Solar</b><span class="pr">from 169 150 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-venu-3s-french/"><span class="ph"><img src="/images/thumb/garmin-venu-3s-french__main-60062e06b9bd-320.webp" alt="Garmin Venu 3s" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Venu 3s</b><span class="pr">from 189 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-forerunner-570/"><span class="ph"><img src="/images/thumb/garmin-forerunner-570__main-2b71c3ed1380-320.webp" alt="Garmin Forerunner 570" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Forerunner 570</b><span class="pr">from 219 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-7-pro-sapphire-solar/"><span class="ph"><img src="/images/thumb/garmin-fenix-7-pro-sapphire-solar__main-e091063561fc-320.webp" alt="Garmin Fenix 7 Pro Sapphire Solar" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 7 Pro Sapphire Solar</b><span class="pr">from 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-epix-pro-standard-edition-47mm/"><span class="ph"><img src="/images/thumb/garmin-epix-pro-standard-edition-47mm__main-4d7b67942fea-320.webp" alt="Garmin epix Pro – Standard Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin epix Pro – Standard Edition</b><span class="pr">from 327 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-epix-pro-sapphire-edition-47-mm/"><span class="ph"><img src="/images/thumb/garmin-epix-pro-sapphire-edition-47-mm__main-d305a6ebbe7d-320.webp" alt="Garmin epix Pro – Sapphire Edition | 47 mm" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin epix Pro – Sapphire Edition | 47 mm</b><span class="pr">from 327 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-7x-pro-sapphire-solar-edition/"><span class="ph"><img src="/images/thumb/garmin-fenix-7x-pro-sapphire-solar-edition__main-2b733ad6f4ee-320.webp" alt="Garmin Fenix 7X Pro – Sapphire Solar Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 7X Pro – Sapphire Solar Edition</b><span class="pr">from 329 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-8-47-mm-amoled/"><span class="ph"><img src="/images/thumb/garmin-fenix-8-47-mm-amoled__slate-gray-446324925ecc-320.webp" alt="Garmin Fenix 8, AMOLED" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 8, AMOLED</b><span class="pr">from 348 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-8-47-mm-amoled-sapphire-carbon/"><span class="ph"><img src="/images/thumb/garmin-fenix-8-47-mm-amoled-sapphire-carbon__gray-titanium-0141ea19ec84-320.webp" alt="Garmin Fenix 8 AMOLED Sapphire" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 8 AMOLED Sapphire</b><span class="pr">from 386 280 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-enduro-3/"><span class="ph"><img src="/images/thumb/garmin-enduro-3__main-1205316cbcad-320.webp" alt="Garmin Enduro 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Enduro 3</b><span class="pr">from 396 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-8-pro-47-mm-amoled/"><span class="ph"><img src="/images/thumb/garmin-fenix-8-pro-47-mm-amoled__main-bc729d2f8a3c-320.webp" alt="Garmin Fenix 8 Pro, AMOLED" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 8 Pro, AMOLED</b><span class="pr">from 434 130 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-9-51mm-carbon-dlc-band/"><span class="ph"><img src="/images/thumb/garmin-fenix-9-51mm-carbon-dlc-band__main-9e892edf690a-320.webp" alt="Garmin Fenix 9 Carbon DLC" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 9 Carbon DLC</b><span class="pr">from 489 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-fenix-9-pro-47mm-amoled-carbon-dlc/"><span class="ph"><img src="/images/thumb/garmin-fenix-9-pro-47mm-amoled-carbon-dlc__main-4f2ab8754dbe-320.webp" alt="Garmin Fenix 9 Pro, AMOLED, Carbon DLC" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Fenix 9 Pro, AMOLED, Carbon DLC</b><span class="pr">from 489 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-tactix-8-47-mm-amoled/"><span class="ph"><img src="/images/thumb/garmin-tactix-8-47-mm-amoled__main-fd262b8bab1a-320.webp" alt="Garmin Tactix 8 – 47 mm, AMOLED" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Tactix 8 – 47 mm, AMOLED</b><span class="pr">from 595 000 ֏</span></a></li>
+<li><a class="cd" href="../../../en/p/garmin-tactix-8-51-mm-amoled/"><span class="ph"><img src="/images/thumb/garmin-tactix-8-51-mm-amoled__main-d77a25e71534-320.webp" alt="Garmin Tactix 8 – 51 mm, AMOLED" width="320" height="320" loading="lazy" decoding="async"></span><b>Garmin Tactix 8 – 51 mm, AMOLED</b><span class="pr">from 637 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Xiaomi Smart Band 8 at 9 900 ֏. Most widely sold: Apple Watch Series 11 (12 shops). Prices 9 900 ֏–637 000 ֏ across 20 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

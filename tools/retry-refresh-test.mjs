@@ -4,15 +4,16 @@ fs.writeFileSync(path.join(root,'event.json'),JSON.stringify({repository:{full_n
 const stub=path.join(root,'stub.mjs');fs.writeFileSync(stub,`import fs from'node:fs';const responses=JSON.parse(fs.readFileSync(process.env.RETRY_FIXTURE));const timer=globalThis.setTimeout;globalThis.setTimeout=(fn,ms,...args)=>timer(fn,Math.min(ms,1),...args);globalThis.fetch=async(url,options)=>{fs.appendFileSync(process.env.RETRY_CALLS,JSON.stringify({url,method:options.method})+'\\n');const row=responses.shift();if(!row)throw Error('Unexpected extra API request');if(row.network)throw TypeError('simulated connection reset');return new Response(row.status===204?null:JSON.stringify(row.body||{}),{status:row.status,headers:row.headers||{}})};`);
 let caseId=0;function check(sequence){const id=caseId++,fixture=path.join(root,id+'.json'),calls=path.join(root,id+'.jsonl');fs.writeFileSync(fixture,JSON.stringify(sequence));const r=spawnSync(process.execPath,['--import',stub,'tools/retry-refresh.mjs'],{cwd:process.cwd(),encoding:'utf8',env:{...process.env,GITHUB_EVENT_PATH:path.join(root,'event.json'),GITHUB_REPOSITORY:repo,GITHUB_TOKEN:'unit-test-placeholder',RETRY_FIXTURE:fixture,RETRY_CALLS:calls}});return{...r,calls:fs.existsSync(calls)?fs.readFileSync(calls,'utf8').trim().split('\n').map(JSON.parse):[]};}
 try{
- const ok=[{status:200,body:run},{status:200,body:{workflow_runs:[run]}},{status:204}];
- let r=check([{status:502},...ok]);assert.equal(r.status,0,'transient GET 502 must recover: '+r.stderr);assert.equal(r.calls.length,4);assert.equal(r.calls.filter(c=>c.method==='POST').length,1);
+ const jobs={status:200,body:{jobs:[]}},ok=[{status:200,body:run},{status:200,body:{workflow_runs:[run]}},jobs,{status:204}];
+ let r=check([{status:502},...ok]);assert.equal(r.status,0,'transient GET 502 must recover: '+r.stderr);assert.equal(r.calls.length,5);assert.equal(r.calls.filter(c=>c.method==='POST').length,1);
  r=check([{network:true},...ok]);assert.equal(r.status,0,'read-only network errors recover');
- r=check([{status:200,body:run},{status:503},{status:200,body:{workflow_runs:[run]}},{status:204}]);assert.equal(r.status,0,'second GET recovers independently');
+ r=check([{status:200,body:run},{status:503},{status:200,body:{workflow_runs:[run]}},jobs,{status:204}]);assert.equal(r.status,0,'second GET recovers independently');
  r=check([{status:401},...ok]);assert.notEqual(r.status,0);assert.equal(r.calls.length,1,'authentication errors must not be retried');
  r=check(Array.from({length:8},()=>({status:502})));assert.notEqual(r.status,0);assert.equal(r.calls.length,4,'GET failure must be bounded');
- r=check([...ok.slice(0,2),{status:502},{status:204}]);assert.notEqual(r.status,0);assert.equal(r.calls.filter(c=>c.method==='POST').length,1,'ambiguous rerun request must never be blindly repeated');
+ r=check([...ok.slice(0,3),{status:502},{status:204}]);assert.notEqual(r.status,0);assert.equal(r.calls.filter(c=>c.method==='POST').length,1,'ambiguous rerun request must never be blindly repeated');
  r=check([{status:429,headers:{'Retry-After':'1'}},...ok]);assert.equal(r.status,0,'brief rate-limit response recovers');
  r=check([{status:429,headers:{'Retry-After':'600'}},...ok]);assert.notEqual(r.status,0);assert.equal(r.calls.length,1,'long rate limit must fail visibly, not retry early');
  r=check([{status:200,body:{...run,run_attempt:2}},{status:200,body:{workflow_runs:[run]}}]);assert.equal(r.status,0);assert.equal(r.calls.length,2,'existing single-refresh-attempt guard remains intact');
+ r=check([{status:200,body:run},{status:200,body:{workflow_runs:[run]}},{status:200,body:{jobs:[{steps:[{name:'Commit refreshed prices and history',conclusion:'failure'}]}]}}]);assert.equal(r.status,0);assert.equal(r.calls.filter(c=>c.method==='POST').length,0,'a publish conflict must not be replayed');
  console.log('RETRY_API_PASS: transient read recovery, bounded failure, rate limits, authentication and one POST only');
 }finally{fs.rmSync(root,{recursive:true,force:true});}

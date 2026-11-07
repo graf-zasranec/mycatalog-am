@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,114 +35,133 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Мониторы","item":"https://better.am/ru/c/monitor/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/monitor/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/monitor/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../?lang=ru">Better.am</a> › <span>Мониторы</span></nav>
 <main>
 <h1>Мониторы</h1>
 <p class="lead">Мониторы. Моделей: 83, от 37 000 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — Xiaomi Monitor 1C, 37 000 ֏. Больше всего предложений у Xiaomi A27Qi (4 магазинах). Цены: 37 000 ֏–1 999 000 ֏, магазинов: 7.</p>
-
 <a class="go" href="../../../?lang=ru#/c/monitor">Фильтровать и сравнивать на Better.am</a>
-<p class="lead"><a href="../../../ru/c/monitor/asus/">ASUS</a> · <a href="../../../ru/c/monitor/xiaomi/">Xiaomi</a> · <a href="../../../ru/c/monitor/samsung/">Samsung</a> · <a href="../../../ru/c/monitor/hp/">HP</a> · <a href="../../../ru/c/monitor/hisense/">Hisense</a> · <a href="../../../ru/c/monitor/dell/">Dell</a> · <a href="../../../ru/c/monitor/lg/">LG</a> · <a href="../../../ru/c/monitor/lenovo/">Lenovo</a> · <a href="../../../ru/c/monitor/dahua/">Dahua</a> · <a href="../../../ru/c/monitor/aoc/">AOC</a></p>
-<p><a href="../../../ru/deals/">Что подешевело</a></p>
+
+<ul class="pills"><li><a href="../../../ru/c/monitor/asus/">ASUS</a></li><li><a href="../../../ru/c/monitor/xiaomi/">Xiaomi</a></li><li><a href="../../../ru/c/monitor/samsung/">Samsung</a></li><li><a href="../../../ru/c/monitor/hp/">HP</a></li><li><a href="../../../ru/c/monitor/hisense/">Hisense</a></li><li><a href="../../../ru/c/monitor/dell/">Dell</a></li><li><a href="../../../ru/c/monitor/lg/">LG</a></li><li><a href="../../../ru/c/monitor/lenovo/">Lenovo</a></li><li><a href="../../../ru/c/monitor/dahua/">Dahua</a></li><li><a href="../../../ru/c/monitor/aoc/">AOC</a></li><li><a href="../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../ru/p/xiaomi-a27qi/">Xiaomi A27Qi</a><span>от 67 000 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-a24i/">Xiaomi A24i</a><span>от 41 400 ֏</span></li>
-<li><a href="../../../ru/p/dahua-dhi-lm24-a221y/">Dahua DHI-LM24-A221Y</a><span>от 37 400 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-a27i-2026/">Xiaomi A27i 2026</a><span>от 46 400 ֏</span></li>
-<li><a href="../../../ru/p/asus-vy249hf-w/">ASUS VY249HF-W</a><span>от 48 400 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-gaming-monitor-g24i/">Xiaomi Gaming Monitor G24i</a><span>от 52 000 ֏</span></li>
-<li><a href="../../../ru/p/hisense-27n3g-pro/">Hisense 27N3G-PRO</a><span>от 56 400 ֏</span></li>
-<li><a href="../../../ru/p/asus-vy279hf-w-90lm06d2-b02170/">ASUS VY279HF-W 90LM06D2-B02170</a><span>от 60 400 ֏</span></li>
-<li><a href="../../../ru/p/philips-271v8/">Philips 271V8</a><span>от 62 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-vp247hae/">ASUS VP247HAE</a><span>от 65 000 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-2k-gaming-g27qi-2026/">Xiaomi 2K Gaming G27Qi 2026</a><span>от 83 400 ֏</span></li>
-<li><a href="../../../ru/p/asus-vg279q3a-90lm0990-b01170/">ASUS VG279Q3A 90LM0990-B01170</a><span>от 95 400 ֏</span></li>
-<li><a href="../../../ru/p/asus-tuf-gaming-24-vg248q1b/">ASUS TUF Gaming VG248Q1B</a><span>от 101 000 ֏</span></li>
-<li><a href="../../../ru/p/lg-27sr50f-w/">LG 27SR50F-W</a><span>от 115 000 ֏</span></li>
-<li><a href="../../../ru/p/lg-27us550-w/">LG 27US550-W</a><span>от 142 400 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-curved-gaming-g34wqi/">Xiaomi Curved Gaming Monitor G34WQi</a><span>от 145 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-gaming-25-vg258qr/">ASUS TUF Gaming VG258QR</a><span>от 170 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-32-vg32vq1br/">ASUS VG32VQ1BR</a><span>от 237 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-32-cg32uq/">ASUS CG32UQ</a><span>от 338 400 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-1c-23-8/">Xiaomi Monitor 1C</a><span>от 37 000 ֏</span></li>
-<li><a href="../../../ru/p/dahua-dhi-lm24-a200y/">Dahua DHI-LM24-A200Y</a><span>от 37 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-22-vp228de/">ASUS VP228DE</a><span>от 48 000 ֏</span></li>
-<li><a href="../../../ru/p/dell-se2425hm/">Dell SE2425HM</a><span>от 48 400 ֏</span></li>
-<li><a href="../../../ru/p/lg-24u411a-b/">LG 24U411A-B</a><span>от 50 400 ֏</span></li>
-<li><a href="../../../ru/p/hisense-24n3g-pro/">Hisense 24N3G-PRO</a><span>от 51 900 ֏</span></li>
-<li><a href="../../../ru/p/philips-223v5lhsb2/">Philips 223V5LHSB2</a><span>от 57 900 ֏</span></li>
-<li><a href="../../../ru/p/aoc-22b2hn/">AOC 22B2HN</a><span>от 59 000 ֏</span></li>
-<li><a href="../../../ru/p/aoc-24b30h2/">AOC 24B30H2</a><span>от 59 000 ֏</span></li>
-<li><a href="../../../ru/p/dell-led-e2020h/">Dell LED E2020H</a><span>от 59 000 ֏</span></li>
-<li><a href="../../../ru/p/hp-21-5-led-m22f/">HP M22f</a><span>от 59 000 ֏</span></li>
-<li><a href="../../../ru/p/samsung-ls22a330nhm/">Samsung LS22A330NHM</a><span>от 59 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-vz24ehf-w/">ASUS VZ24EHF-W</a><span>от 59 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-vz27ehf-90lm07b0-b01470/">ASUS VZ27EHF</a><span>от 68 900 ֏</span></li>
-<li><a href="../../../ru/p/aoc-24v2q/">AOC 24V2Q</a><span>от 69 000 ֏</span></li>
-<li><a href="../../../ru/p/hp-21-5-led-22fw/">HP 22fw</a><span>от 69 000 ֏</span></li>
-<li><a href="../../../ru/p/hp-24-led-m24fw/">HP M24fw</a><span>от 69 000 ֏</span></li>
-<li><a href="../../../ru/p/huawei-led-23-8-ad80hw/">Huawei AD80HW</a><span>от 69 000 ֏</span></li>
-<li><a href="../../../ru/p/lenovo-d27-40/">Lenovo D27-40</a><span>от 69 900 ֏</span></li>
-<li><a href="../../../ru/p/samsung-lc24f396fhixci/">Samsung C24F396FHI</a><span>от 69 900 ֏</span></li>
-<li><a href="../../../ru/p/samsung-lf24t350fhixci/">Samsung F24T350FHI</a><span>от 69 900 ֏</span></li>
-<li><a href="../../../ru/p/samsung-odyssey-g3-24-s24ag304nr/">Samsung Odyssey G3 S24AG304NR</a><span>от 72 000 ֏</span></li>
-<li><a href="../../../ru/p/dell-se2422h/">Dell SE2422H</a><span>от 74 900 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-gaming-g25i-2026/">Xiaomi Gaming G25i 2026</a><span>от 75 900 ֏</span></li>
-<li><a href="../../../ru/p/dahua-dhi-lm27-a200f/">Dahua DHI-LM27-A200F</a><span>от 79 000 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-gaming-g27i/">Xiaomi Gaming G27i</a><span>от 83 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-24-vz239he-w/">ASUS VZ239HE-W</a><span>от 85 000 ֏</span></li>
-<li><a href="../../../ru/p/hp-omen-24/">HP OMEN 24</a><span>от 87 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-27-va279hae/">ASUS VA279HAE</a><span>от 88 000 ֏</span></li>
-<li><a href="../../../ru/p/hp-527sf/">HP 527SF</a><span>от 89 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-vg249q3a-90lm09b0-b01170/">ASUS VG249Q3A 90LM09B0-B01170</a><span>от 92 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-vu279hfi-w/">ASUS VU279HFI-W</a><span>от 98 900 ֏</span></li>
-<li><a href="../../../ru/p/dell-27-e2723h/">Dell E2723H</a><span>от 98 900 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-gaming-g27qi/">Xiaomi Gaming G27Qi</a><span>от 99 000 ֏</span></li>
-<li><a href="../../../ru/p/lenovo-d32-40/">Lenovo D32-40</a><span>от 109 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-va27dqsb-w/">ASUS VA27DQSB-W</a><span>от 113 900 ֏</span></li>
-<li><a href="../../../ru/p/hp-omen-25i/">HP OMEN 25i</a><span>от 119 400 ֏</span></li>
-<li><a href="../../../ru/p/hisense-27g6k-pro/">Hisense 27G6K-PRO</a><span>от 125 900 ֏</span></li>
-<li><a href="../../../ru/p/lenovo-l27q-4a/">Lenovo L27q-4A</a><span>от 125 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-vg245q/">ASUS VG245Q</a><span>от 129 000 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-4k-a27ui/">Xiaomi 4K A27Ui</a><span>от 129 000 ֏</span></li>
-<li><a href="../../../ru/p/hisense-34g6k-pro/">Hisense 34G6K-PRO</a><span>от 145 900 ֏</span></li>
-<li><a href="../../../ru/p/samsung-m5-ls24am506nm/">Samsung M5 LS24AM506NM</a><span>от 149 000 ֏</span></li>
-<li><a href="../../../ru/p/xiaomi-gaming-monitor-g-pro-27i/">Xiaomi Gaming Monitor G Pro 27i</a><span>от 158 000 ֏</span></li>
-<li><a href="../../../ru/p/benq-el2870u/">BenQ EL2870U</a><span>от 159 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-va27uqsb/">ASUS VA27UQSB</a><span>от 159 900 ֏</span></li>
-<li><a href="../../../ru/p/lg-32sr50f-w/">LG 32SR50F-W</a><span>от 168 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-tuf-gaming-27-vg279q1a/">ASUS TUF Gaming VG279Q1A</a><span>от 175 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-tuf-gaming-27-vg279ql1a/">ASUS TUF Gaming VG279QL1A</a><span>от 175 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-zenscreen-mb16aht-touch-screen/">ASUS ZenScreen MB16AHT Touch Screen</a><span>от 175 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-zenscreen-mb16ahv-touch-screen/">ASUS ZenScreen MB16AHV Touch Screen</a><span>от 175 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-22-vt229h-touch/">ASUS VT229H</a><span>от 185 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-vg32aqa1a-90lm07l0-b02370/">ASUS VG32AQA1A 90LM07L0-B02370</a><span>от 189 900 ֏</span></li>
-<li><a href="../../../ru/p/samsung-ls32ag520pixci/">Samsung Odyssey G5 S32AG520PI</a><span>от 189 900 ֏</span></li>
-<li><a href="../../../ru/p/lenovo-32p-30/">Lenovo 32p-30</a><span>от 209 900 ֏</span></li>
-<li><a href="../../../ru/p/dell-p2723qe/">Dell P2723QE</a><span>от 219 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-proart-studio-24-pa248cnv/">ASUS ProArt PA248CNV</a><span>от 239 000 ֏</span></li>
-<li><a href="../../../ru/p/asus-tuf-gaming-34-vg34vqel1a/">ASUS TUF Gaming VG34VQEL1A</a><span>от 245 000 ֏</span></li>
-<li><a href="../../../ru/p/hisense-27g7k-pro/">Hisense 27G7K-PRO</a><span>от 259 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-proart-display-32-pa329cv/">ASUS ProArt PA329CV</a><span>от 455 000 ֏</span></li>
-<li><a href="../../../ru/p/samsung-odyssey-g8-oled-34-s34bg850su/">Samsung Odyssey G8 OLED S34BG850SU</a><span>от 499 000 ֏</span></li>
-<li><a href="../../../ru/p/apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4/">Apple Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4</a><span>от 860 900 ֏</span></li>
-<li><a href="../../../ru/p/samsung-odyssey-ark-55-ls55cg97wnixci/">Samsung Odyssey Ark LS55CG97WNIXCI</a><span>от 1 240 000 ֏</span></li>
-<li><a href="../../../ru/p/apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4/">Apple Studio Display XDR</a><span>от 1 999 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../ru/p/xiaomi-a27qi/"><span class="ph"><img src="/images/thumb/xiaomi-a27qi__main-a00ce7c89973-320.webp" alt="Xiaomi A27Qi" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi A27Qi</b><span class="pr">от 67 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-a24i/"><span class="ph"><img src="/images/thumb/xiaomi-a24i__main-8c281dfe1ced-320.webp" alt="Xiaomi A24i" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi A24i</b><span class="pr">от 41 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dahua-dhi-lm24-a221y/"><span class="ph"><img src="/images/thumb/dahua-dhi-lm24-a221y__main-610de153aefd-320.webp" alt="Dahua DHI-LM24-A221Y" width="320" height="320" loading="lazy" decoding="async"></span><b>Dahua DHI-LM24-A221Y</b><span class="pr">от 37 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-a27i-2026/"><span class="ph"><img src="/images/thumb/xiaomi-a27i-2026__main-3daff8802df0-320.webp" alt="Xiaomi A27i 2026" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi A27i 2026</b><span class="pr">от 46 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vy249hf-w/"><span class="ph"><img src="/images/thumb/asus-vy249hf-w__main-8f02a4db01f0-320.webp" alt="ASUS VY249HF-W" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VY249HF-W</b><span class="pr">от 48 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-gaming-monitor-g24i/"><span class="ph"><img src="/images/thumb/xiaomi-gaming-monitor-g24i__main-00ce30f78752-320.webp" alt="Xiaomi Gaming Monitor G24i" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Gaming Monitor G24i</b><span class="pr">от 52 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-27n3g-pro/"><span class="ph"><img src="/images/thumb/hisense-27n3g-pro__main-3dc359115e6b-320.webp" alt="Hisense 27N3G-PRO" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense 27N3G-PRO</b><span class="pr">от 56 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vy279hf-w-90lm06d2-b02170/"><span class="ph"><img src="/images/thumb/asus-vy279hf-w-90lm06d2-b02170__main-1d58e9989d39-320.webp" alt="ASUS VY279HF-W 90LM06D2-B02170" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VY279HF-W 90LM06D2-B02170</b><span class="pr">от 60 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/philips-271v8/"><span class="ph"><img src="/images/thumb/philips-271v8__main-fcd8b434adc7-320.webp" alt="Philips 271V8" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips 271V8</b><span class="pr">от 62 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vp247hae/"><span class="ph"><img src="/images/thumb/asus-vp247hae__main-a4c67b626106-320.webp" alt="ASUS VP247HAE" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VP247HAE</b><span class="pr">от 65 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-2k-gaming-g27qi-2026/"><span class="ph"><img src="/images/thumb/xiaomi-2k-gaming-g27qi-2026__main-58cd8e1958c8-320.webp" alt="Xiaomi 2K Gaming G27Qi 2026" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 2K Gaming G27Qi 2026</b><span class="pr">от 83 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vg279q3a-90lm0990-b01170/"><span class="ph"><img src="/images/thumb/asus-vg279q3a-90lm0990-b01170__main-0c4eea52f2ff-320.webp" alt="ASUS VG279Q3A 90LM0990-B01170" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VG279Q3A 90LM0990-B01170</b><span class="pr">от 95 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-tuf-gaming-24-vg248q1b/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-24-vg248q1b__main-e732de879d85-320.webp" alt="ASUS TUF Gaming VG248Q1B" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming VG248Q1B</b><span class="pr">от 101 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lg-27sr50f-w/"><span class="ph"><img src="/images/thumb/lg-27sr50f-w__main-3caacaa6efca-320.webp" alt="LG 27SR50F-W" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 27SR50F-W</b><span class="pr">от 115 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lg-27us550-w/"><span class="ph"><img src="/images/thumb/lg-27us550-w__main-be1bb3868cfe-320.webp" alt="LG 27US550-W" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 27US550-W</b><span class="pr">от 142 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-curved-gaming-g34wqi/"><span class="ph"><img src="/images/thumb/xiaomi-curved-gaming-g34wqi__main-cd04d1bdcc33-320.webp" alt="Xiaomi Curved Gaming Monitor G34WQi" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Curved Gaming Monitor G34WQi</b><span class="pr">от 145 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-gaming-25-vg258qr/"><span class="ph"><img src="/images/thumb/asus-gaming-25-vg258qr__main-3531df7e45b3-320.webp" alt="ASUS TUF Gaming VG258QR" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming VG258QR</b><span class="pr">от 170 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-32-vg32vq1br/"><span class="ph"><img src="/images/thumb/asus-32-vg32vq1br__main-6cf3c6bdb3a5-320.webp" alt="ASUS VG32VQ1BR" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VG32VQ1BR</b><span class="pr">от 237 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-32-cg32uq/"><span class="ph"><img src="/images/thumb/asus-32-cg32uq__main-2771fdcf4d6f-320.webp" alt="ASUS CG32UQ" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS CG32UQ</b><span class="pr">от 338 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-1c-23-8/"><span class="ph"><img src="/images/thumb/xiaomi-1c-23-8__main-06bbdeabfe79-320.webp" alt="Xiaomi Monitor 1C" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Monitor 1C</b><span class="pr">от 37 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dahua-dhi-lm24-a200y/"><span class="ph"><img src="/images/thumb/dahua-dhi-lm24-a200y__main-38940b37cccd-320.webp" alt="Dahua DHI-LM24-A200Y" width="320" height="320" loading="lazy" decoding="async"></span><b>Dahua DHI-LM24-A200Y</b><span class="pr">от 37 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-22-vp228de/"><span class="ph"><img src="/images/thumb/asus-22-vp228de__main-3d7b828b5d27-320.webp" alt="ASUS VP228DE" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VP228DE</b><span class="pr">от 48 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dell-se2425hm/"><span class="ph"><img src="/images/thumb/dell-se2425hm__main-3daed5591937-320.webp" alt="Dell SE2425HM" width="320" height="320" loading="lazy" decoding="async"></span><b>Dell SE2425HM</b><span class="pr">от 48 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lg-24u411a-b/"><span class="ph"><img src="/images/thumb/lg-24u411a-b__main-7e146c69e2f8-320.webp" alt="LG 24U411A-B" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 24U411A-B</b><span class="pr">от 50 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-24n3g-pro/"><span class="ph"><img src="/images/thumb/hisense-24n3g-pro__main-1d43132ae5e6-320.webp" alt="Hisense 24N3G-PRO" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense 24N3G-PRO</b><span class="pr">от 51 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/philips-223v5lhsb2/"><span class="ph"><img src="/images/thumb/philips-223v5lhsb2__main-0098f3b9f2e7-320.webp" alt="Philips 223V5LHSB2" width="320" height="320" loading="lazy" decoding="async"></span><b>Philips 223V5LHSB2</b><span class="pr">от 57 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/aoc-22b2hn/"><span class="ph"><img src="/images/thumb/aoc-22b2hn__main-520a8c99ce3d-320.webp" alt="AOC 22B2HN" width="320" height="320" loading="lazy" decoding="async"></span><b>AOC 22B2HN</b><span class="pr">от 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/aoc-24b30h2/"><span class="ph"><img src="/images/thumb/aoc-24b30h2__main-b63b58c0846e-320.webp" alt="AOC 24B30H2" width="320" height="320" loading="lazy" decoding="async"></span><b>AOC 24B30H2</b><span class="pr">от 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dell-led-e2020h/"><span class="ph"><img src="/images/thumb/dell-led-e2020h__main-df2767999c1a-320.webp" alt="Dell LED E2020H" width="320" height="320" loading="lazy" decoding="async"></span><b>Dell LED E2020H</b><span class="pr">от 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hp-21-5-led-m22f/"><span class="ph"><img src="/images/thumb/hp-21-5-led-m22f__main-6334c33223b6-320.webp" alt="HP M22f" width="320" height="320" loading="lazy" decoding="async"></span><b>HP M22f</b><span class="pr">от 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-ls22a330nhm/"><span class="ph"><img src="/images/thumb/samsung-ls22a330nhm__main-cedb414361de-320.webp" alt="Samsung LS22A330NHM" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung LS22A330NHM</b><span class="pr">от 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vz24ehf-w/"><span class="ph"><img src="/images/thumb/asus-vz24ehf-w__main-5605f0eb008f-320.webp" alt="ASUS VZ24EHF-W" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VZ24EHF-W</b><span class="pr">от 59 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vz27ehf-90lm07b0-b01470/"><span class="ph"><img src="/images/thumb/asus-vz27ehf-90lm07b0-b01470__main-d1580598ad62-320.webp" alt="ASUS VZ27EHF" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VZ27EHF</b><span class="pr">от 68 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/aoc-24v2q/"><span class="ph"><img src="/images/thumb/aoc-24v2q__main-b05cd39adf50-320.webp" alt="AOC 24V2Q" width="320" height="320" loading="lazy" decoding="async"></span><b>AOC 24V2Q</b><span class="pr">от 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hp-21-5-led-22fw/"><span class="ph"><img src="/images/thumb/hp-21-5-led-22fw__main-5893de639771-320.webp" alt="HP 22fw" width="320" height="320" loading="lazy" decoding="async"></span><b>HP 22fw</b><span class="pr">от 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hp-24-led-m24fw/"><span class="ph"><img src="/images/thumb/hp-24-led-m24fw__main-4e2617b9375b-320.webp" alt="HP M24fw" width="320" height="320" loading="lazy" decoding="async"></span><b>HP M24fw</b><span class="pr">от 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/huawei-led-23-8-ad80hw/"><span class="ph"><img src="/images/thumb/huawei-led-23-8-ad80hw__main-372ef8f561c2-320.webp" alt="Huawei AD80HW" width="320" height="320" loading="lazy" decoding="async"></span><b>Huawei AD80HW</b><span class="pr">от 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lenovo-d27-40/"><span class="ph"><img src="/images/thumb/lenovo-d27-40__main-cdd40f576aee-320.webp" alt="Lenovo D27-40" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo D27-40</b><span class="pr">от 69 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-lc24f396fhixci/"><span class="ph"><img src="/images/thumb/samsung-lc24f396fhixci__main-bc9a4cfb74f5-320.webp" alt="Samsung C24F396FHI" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung C24F396FHI</b><span class="pr">от 69 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-lf24t350fhixci/"><span class="ph"><img src="/images/thumb/samsung-lf24t350fhixci__main-49d2197dc459-320.webp" alt="Samsung F24T350FHI" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung F24T350FHI</b><span class="pr">от 69 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-odyssey-g3-24-s24ag304nr/"><span class="ph"><img src="/images/thumb/samsung-odyssey-g3-24-s24ag304nr__main-1d51fe6480e5-320.webp" alt="Samsung Odyssey G3 S24AG304NR" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Odyssey G3 S24AG304NR</b><span class="pr">от 72 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dell-se2422h/"><span class="ph"><img src="/images/thumb/dell-se2422h__main-ac6d77bb9a45-320.webp" alt="Dell SE2422H" width="320" height="320" loading="lazy" decoding="async"></span><b>Dell SE2422H</b><span class="pr">от 74 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-gaming-g25i-2026/"><span class="ph"><img src="/images/thumb/xiaomi-gaming-g25i-2026__main-fe1a59bb6e7f-320.webp" alt="Xiaomi Gaming G25i 2026" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Gaming G25i 2026</b><span class="pr">от 75 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dahua-dhi-lm27-a200f/"><span class="ph"><img src="/images/thumb/dahua-dhi-lm27-a200f__main-63ff874a1d1e-320.webp" alt="Dahua DHI-LM27-A200F" width="320" height="320" loading="lazy" decoding="async"></span><b>Dahua DHI-LM27-A200F</b><span class="pr">от 79 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-gaming-g27i/"><span class="ph"><img src="/images/thumb/xiaomi-gaming-g27i__main-24578af0b704-320.webp" alt="Xiaomi Gaming G27i" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Gaming G27i</b><span class="pr">от 83 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-24-vz239he-w/"><span class="ph"><img src="/images/thumb/asus-24-vz239he-w__main-319358559480-320.webp" alt="ASUS VZ239HE-W" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VZ239HE-W</b><span class="pr">от 85 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hp-omen-24/"><span class="ph"><img src="/images/thumb/hp-omen-24__main-a1cd8e208c90-320.webp" alt="HP OMEN 24" width="320" height="320" loading="lazy" decoding="async"></span><b>HP OMEN 24</b><span class="pr">от 87 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-27-va279hae/"><span class="ph"><img src="/images/thumb/asus-27-va279hae__main-c7f129c30c69-320.webp" alt="ASUS VA279HAE" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VA279HAE</b><span class="pr">от 88 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hp-527sf/"><span class="ph"><img src="/images/thumb/hp-527sf__main-179f51beba64-320.webp" alt="HP 527SF" width="320" height="320" loading="lazy" decoding="async"></span><b>HP 527SF</b><span class="pr">от 89 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vg249q3a-90lm09b0-b01170/"><span class="ph"><img src="/images/thumb/asus-vg249q3a-90lm09b0-b01170__main-fc80ac2d94cf-320.webp" alt="ASUS VG249Q3A 90LM09B0-B01170" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VG249Q3A 90LM09B0-B01170</b><span class="pr">от 92 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vu279hfi-w/"><span class="ph"><img src="/images/thumb/asus-vu279hfi-w__main-d785da880762-320.webp" alt="ASUS VU279HFI-W" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VU279HFI-W</b><span class="pr">от 98 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dell-27-e2723h/"><span class="ph"><img src="/images/thumb/dell-27-e2723h__main-3ead62fbb6bd-320.webp" alt="Dell E2723H" width="320" height="320" loading="lazy" decoding="async"></span><b>Dell E2723H</b><span class="pr">от 98 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-gaming-g27qi/"><span class="ph"><img src="/images/thumb/xiaomi-gaming-g27qi__main-272679e8f06b-320.webp" alt="Xiaomi Gaming G27Qi" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Gaming G27Qi</b><span class="pr">от 99 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lenovo-d32-40/"><span class="ph"><img src="/images/thumb/lenovo-d32-40__main-a21edb1219e8-320.webp" alt="Lenovo D32-40" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo D32-40</b><span class="pr">от 109 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-va27dqsb-w/"><span class="ph"><img src="/images/thumb/asus-va27dqsb-w__main-85e6ca9abc22-320.webp" alt="ASUS VA27DQSB-W" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VA27DQSB-W</b><span class="pr">от 113 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hp-omen-25i/"><span class="ph"><img src="/images/thumb/hp-omen-25i__main-330d4430a0ff-320.webp" alt="HP OMEN 25i" width="320" height="320" loading="lazy" decoding="async"></span><b>HP OMEN 25i</b><span class="pr">от 119 400 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-27g6k-pro/"><span class="ph"><img src="/images/thumb/hisense-27g6k-pro__main-b9740918beea-320.webp" alt="Hisense 27G6K-PRO" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense 27G6K-PRO</b><span class="pr">от 125 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lenovo-l27q-4a/"><span class="ph"><img src="/images/thumb/lenovo-l27q-4a__main-1295e4f46154-320.webp" alt="Lenovo L27q-4A" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo L27q-4A</b><span class="pr">от 125 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vg245q/"><span class="ph"><img src="/images/thumb/asus-vg245q__main-a48e33a00ded-320.webp" alt="ASUS VG245Q" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VG245Q</b><span class="pr">от 129 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-4k-a27ui/"><span class="ph"><img src="/images/thumb/xiaomi-4k-a27ui__main-e227b4a5b6c2-320.webp" alt="Xiaomi 4K A27Ui" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 4K A27Ui</b><span class="pr">от 129 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-34g6k-pro/"><span class="ph"><img src="/images/thumb/hisense-34g6k-pro__main-9addf91c0e81-320.webp" alt="Hisense 34G6K-PRO" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense 34G6K-PRO</b><span class="pr">от 145 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-m5-ls24am506nm/"><span class="ph"><img src="/images/thumb/samsung-m5-ls24am506nm__main-54b4c7c3cb8d-320.webp" alt="Samsung M5 LS24AM506NM" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung M5 LS24AM506NM</b><span class="pr">от 149 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xiaomi-gaming-monitor-g-pro-27i/"><span class="ph"><img src="/images/thumb/xiaomi-gaming-monitor-g-pro-27i__main-d09e4df2f294-320.webp" alt="Xiaomi Gaming Monitor G Pro 27i" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Gaming Monitor G Pro 27i</b><span class="pr">от 158 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/benq-el2870u/"><span class="ph"><img src="/images/thumb/benq-el2870u__main-215b8d5e399f-320.webp" alt="BenQ EL2870U" width="320" height="320" loading="lazy" decoding="async"></span><b>BenQ EL2870U</b><span class="pr">от 159 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-va27uqsb/"><span class="ph"><img src="/images/thumb/asus-va27uqsb__main-d160304607b8-320.webp" alt="ASUS VA27UQSB" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VA27UQSB</b><span class="pr">от 159 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lg-32sr50f-w/"><span class="ph"><img src="/images/thumb/lg-32sr50f-w__main-35ea0a797756-320.webp" alt="LG 32SR50F-W" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 32SR50F-W</b><span class="pr">от 168 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-tuf-gaming-27-vg279q1a/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-27-vg279q1a__main-a91b83ec242e-320.webp" alt="ASUS TUF Gaming VG279Q1A" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming VG279Q1A</b><span class="pr">от 175 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-tuf-gaming-27-vg279ql1a/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-27-vg279ql1a__main-437e6cb18b54-320.webp" alt="ASUS TUF Gaming VG279QL1A" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming VG279QL1A</b><span class="pr">от 175 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-zenscreen-mb16aht-touch-screen/"><span class="ph"><img src="/images/thumb/asus-zenscreen-mb16aht-touch-screen__main-afe70bf29e8a-320.webp" alt="ASUS ZenScreen MB16AHT Touch Screen" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ZenScreen MB16AHT Touch Screen</b><span class="pr">от 175 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-zenscreen-mb16ahv-touch-screen/"><span class="ph"><img src="/images/thumb/asus-zenscreen-mb16ahv-touch-screen__main-997457cc17f5-320.webp" alt="ASUS ZenScreen MB16AHV Touch Screen" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ZenScreen MB16AHV Touch Screen</b><span class="pr">от 175 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-22-vt229h-touch/"><span class="ph"><img src="/images/thumb/asus-22-vt229h-touch__main-175bb80e054e-320.webp" alt="ASUS VT229H" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VT229H</b><span class="pr">от 185 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-vg32aqa1a-90lm07l0-b02370/"><span class="ph"><img src="/images/thumb/asus-vg32aqa1a-90lm07l0-b02370__main-6cf3c6bdb3a5-320.webp" alt="ASUS VG32AQA1A 90LM07L0-B02370" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VG32AQA1A 90LM07L0-B02370</b><span class="pr">от 189 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-ls32ag520pixci/"><span class="ph"><img src="/images/thumb/samsung-ls32ag520pixci__main-2ecc86946ef2-320.webp" alt="Samsung Odyssey G5 S32AG520PI" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Odyssey G5 S32AG520PI</b><span class="pr">от 189 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lenovo-32p-30/"><span class="ph"><img src="/images/thumb/lenovo-32p-30__main-068c4f3f81e9-320.webp" alt="Lenovo 32p-30" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo 32p-30</b><span class="pr">от 209 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/dell-p2723qe/"><span class="ph"><img src="/images/thumb/dell-p2723qe__main-dabd58c8f567-320.webp" alt="Dell P2723QE" width="320" height="320" loading="lazy" decoding="async"></span><b>Dell P2723QE</b><span class="pr">от 219 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-proart-studio-24-pa248cnv/"><span class="ph"><img src="/images/thumb/asus-proart-studio-24-pa248cnv__main-9e1b649d26ee-320.webp" alt="ASUS ProArt PA248CNV" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ProArt PA248CNV</b><span class="pr">от 239 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-tuf-gaming-34-vg34vqel1a/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-34-vg34vqel1a__main-1aec06e9cf27-320.webp" alt="ASUS TUF Gaming VG34VQEL1A" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming VG34VQEL1A</b><span class="pr">от 245 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hisense-27g7k-pro/"><span class="ph"><img src="/images/thumb/hisense-27g7k-pro__main-5506c79405f5-320.webp" alt="Hisense 27G7K-PRO" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense 27G7K-PRO</b><span class="pr">от 259 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-proart-display-32-pa329cv/"><span class="ph"><img src="/images/thumb/asus-proart-display-32-pa329cv__main-f2ddfeac05ad-320.webp" alt="ASUS ProArt PA329CV" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ProArt PA329CV</b><span class="pr">от 455 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-odyssey-g8-oled-34-s34bg850su/"><span class="ph"><img src="/images/thumb/samsung-odyssey-g8-oled-34-s34bg850su__main-31f499f7adfb-320.webp" alt="Samsung Odyssey G8 OLED S34BG850SU" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Odyssey G8 OLED S34BG850SU</b><span class="pr">от 499 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4/"><span class="ph"><img src="/images/thumb/apple-studio-display-2026-standard-glass-tilt-adjustable-stand-mfex4__main-80623276fa17-320.webp" alt="Apple Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Studio Display 2026 -Standard glass - Tilt-adjustable stand /MFEX4</b><span class="pr">от 860 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/samsung-odyssey-ark-55-ls55cg97wnixci/"><span class="ph"><img src="/images/thumb/samsung-odyssey-ark-55-ls55cg97wnixci__main-77ea3bfb3f24-320.webp" alt="Samsung Odyssey Ark LS55CG97WNIXCI" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Odyssey Ark LS55CG97WNIXCI</b><span class="pr">от 1 240 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4/"><span class="ph"><img src="/images/thumb/apple-studio-display-xdr-2026-tilt-height-adjustable-mfel4__main-1a99682e3129-320.webp" alt="Apple Studio Display XDR" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Studio Display XDR</b><span class="pr">от 1 999 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — Xiaomi Monitor 1C, 37 000 ֏. Больше всего предложений у Xiaomi A27Qi (4 магазинах). Цены: 37 000 ֏–1 999 000 ֏, магазинов: 7.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

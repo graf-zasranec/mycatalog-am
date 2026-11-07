@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,63 +35,82 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Телевизоры","item":"https://better.am/ru/c/tv/"},{"@type":"ListItem","position":3,"name":"LG — Телевизоры","item":"https://better.am/ru/c/tv/lg/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/tv/lg/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/tv/lg/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=ru">Better.am</a> › <a href="../../../../ru/c/tv/">Телевизоры</a> › <span>LG — Телевизоры</span></nav>
 <main>
 <h1>LG — Телевизоры</h1>
 <p class="lead">LG — Телевизоры. Моделей: 32, от 137 000 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — LG 32LM637BPVA, 137 000 ֏. Больше всего предложений у LG 50NANO75VPA (2 магазинах). Цены: 137 000 ֏–1 599 000 ֏, магазинов: 7.</p>
-<p>Другие бренды: <a href="../../../../ru/c/tv/samsung/">Samsung</a> · <a href="../../../../ru/c/tv/hisense/">Hisense</a> · <a href="../../../../ru/c/tv/toshiba/">Toshiba</a> · <a href="../../../../ru/c/tv/sony/">Sony</a> · <a href="../../../../ru/c/tv/tcl/">TCL</a> · <a href="../../../../ru/c/tv/xiaomi/">Xiaomi</a> · <a href="../../../../ru/c/tv/panasonic/">Panasonic</a></p>
 <a class="go" href="../../../../?lang=ru#/c/tv">Фильтровать и сравнивать на Better.am</a>
-
-<p><a href="../../../../ru/deals/">Что подешевело</a></p>
+<p class="lead" style="margin:18px 0 0">Другие бренды: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../ru/c/tv/samsung/">Samsung</a></li><li><a href="../../../../ru/c/tv/hisense/">Hisense</a></li><li><a href="../../../../ru/c/tv/toshiba/">Toshiba</a></li><li><a href="../../../../ru/c/tv/sony/">Sony</a></li><li><a href="../../../../ru/c/tv/tcl/">TCL</a></li><li><a href="../../../../ru/c/tv/xiaomi/">Xiaomi</a></li><li><a href="../../../../ru/c/tv/panasonic/">Panasonic</a></li></ul>
+<ul class="pills"><li><a href="../../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../../ru/p/lg-50nano75vpa/">LG 50NANO75VPA</a><span>от 233 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-50qned80a6a/">LG 50QNED80A6A</a><span>от 269 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55qned86a6a/">LG 55QNED86A6A</a><span>от 419 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled55c6rla/">LG OLED55C6RLA</a><span>от 969 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-32lm637bpva/">LG 32LM637BPVA</a><span>от 137 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-43nu850b6la/">LG 43NU850B6LA</a><span>от 168 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-32lq630b6la/">LG 32LQ630B6LA</a><span>от 169 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-50nu850b6la/">LG 50NU850B6LA</a><span>от 233 700 ֏</span></li>
-<li><a href="../../../../ru/p/lg-43ut81006la/">LG 43UT81006LA</a><span>от 239 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-43uq81006lb/">LG 43UQ81006LB</a><span>от 269 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-50ur78006lk/">LG 50UR78006LK</a><span>от 279 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-43nano766qa/">LG 43NANO766QA</a><span>от 289 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55ur78006lk/">LG 55UR78006LK</a><span>от 299 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-43nano796pc/">LG 43NANO796PC</a><span>от 309 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-65ua75009la/">LG 65UA75009LA</a><span>от 325 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55nano80t6a/">LG 55NANO80T6A</a><span>от 329 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-65nu850b6la/">LG 65NU850B6LA</a><span>от 346 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55ur81006lj/">LG 55UR81006LJ</a><span>от 349 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55nano80vpa/">LG 55NANO80VPA</a><span>от 389 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55nano766qa/">LG 55NANO766QA</a><span>от 389 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55nano86vna/">LG 55NANO86VNA</a><span>от 459 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55qned70a6a/">LG 55QNED70A6A</a><span>от 479 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-65nano766qa/">LG 65NANO766QA</a><span>от 529 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled55a26la/">LG OLED55A26LA</a><span>от 539 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55qned816ra/">LG 55QNED816RA</a><span>от 569 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-55nano816na/">LG 55NANO816NA</a><span>от 589 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled55b4rla/">LG OLED55B4RLA</a><span>от 899 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled55c5rla/">LG OLED55C5RLA</a><span>от 1 189 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled65b4rla/">LG OLED65B4RLA</a><span>от 1 299 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled65g46la/">LG OLED65G46LA</a><span>от 1 299 000 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled65c6rla/">LG OLED65C6RLA</a><span>от 1 529 900 ֏</span></li>
-<li><a href="../../../../ru/p/lg-oled77c46la/">LG OLED77C46LA</a><span>от 1 599 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../ru/p/lg-50nano75vpa/"><span class="ph"><img src="/images/thumb/lg-50nano75vpa__main-39ec57adbc3e-320.webp" alt="LG 50NANO75VPA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 50NANO75VPA</b><span class="pr">от 233 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-50qned80a6a/"><span class="ph"><img src="/images/thumb/lg-50qned80a6a__main-410a91b9a2e4-320.webp" alt="LG 50QNED80A6A" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 50QNED80A6A</b><span class="pr">от 269 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55qned86a6a/"><span class="ph"><img src="/images/thumb/lg-55qned86a6a__main-2f1a14e01cdf-320.webp" alt="LG 55QNED86A6A" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55QNED86A6A</b><span class="pr">от 419 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled55c6rla/"><span class="ph"><img src="/images/thumb/lg-oled55c6rla__main-7849882d0fea-320.webp" alt="LG OLED55C6RLA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED55C6RLA</b><span class="pr">от 969 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-32lm637bpva/"><span class="ph"><img src="/images/thumb/lg-32lm637bpva__main-4158db1ca318-320.webp" alt="LG 32LM637BPVA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 32LM637BPVA</b><span class="pr">от 137 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-43nu850b6la/"><span class="ph"><img src="/images/thumb/lg-43nu850b6la__main-0209fe775dd1-320.webp" alt="LG 43NU850B6LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 43NU850B6LA</b><span class="pr">от 168 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-32lq630b6la/"><span class="ph"><img src="/images/thumb/lg-32lq630b6la__main-7795d0612679-320.webp" alt="LG 32LQ630B6LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 32LQ630B6LA</b><span class="pr">от 169 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-50nu850b6la/"><span class="ph"><img src="/images/thumb/lg-50nu850b6la__main-46f542975fe4-320.webp" alt="LG 50NU850B6LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 50NU850B6LA</b><span class="pr">от 233 700 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-43ut81006la/"><span class="ph"><img src="/images/thumb/lg-43ut81006la__main-0a3c12848205-320.webp" alt="LG 43UT81006LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 43UT81006LA</b><span class="pr">от 239 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-43uq81006lb/"><span class="ph"><img src="/images/thumb/lg-43uq81006lb__main-4d248da7473a-320.webp" alt="LG 43UQ81006LB" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 43UQ81006LB</b><span class="pr">от 269 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-50ur78006lk/"><span class="ph"><img src="/images/thumb/lg-50ur78006lk__main-291317858827-320.webp" alt="LG 50UR78006LK" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 50UR78006LK</b><span class="pr">от 279 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-43nano766qa/"><span class="ph"><img src="/images/thumb/lg-43nano766qa__main-9b36b5d5c8e8-320.webp" alt="LG 43NANO766QA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 43NANO766QA</b><span class="pr">от 289 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55ur78006lk/"><span class="ph"><img src="/images/thumb/lg-55ur78006lk__main-6bbf59d88028-320.webp" alt="LG 55UR78006LK" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55UR78006LK</b><span class="pr">от 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-43nano796pc/"><span class="ph"><img src="/images/thumb/lg-43nano796pc__main-9d3d7356b3a4-320.webp" alt="LG 43NANO796PC" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 43NANO796PC</b><span class="pr">от 309 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-65ua75009la/"><span class="ph"><img src="/images/thumb/lg-65ua75009la__main-2cfb323784a8-320.webp" alt="LG 65UA75009LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 65UA75009LA</b><span class="pr">от 325 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55nano80t6a/"><span class="ph"><img src="/images/thumb/lg-55nano80t6a__main-cd70852c3a9c-320.webp" alt="LG 55NANO80T6A" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55NANO80T6A</b><span class="pr">от 329 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-65nu850b6la/"><span class="ph"><img src="/images/thumb/lg-65nu850b6la__main-6fc4e1eec888-320.webp" alt="LG 65NU850B6LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 65NU850B6LA</b><span class="pr">от 346 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55ur81006lj/"><span class="ph"><img src="/images/thumb/lg-55ur81006lj__main-b3827c699c3d-320.webp" alt="LG 55UR81006LJ" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55UR81006LJ</b><span class="pr">от 349 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55nano80vpa/"><span class="ph"><img src="/images/thumb/lg-55nano80vpa__main-706b690af41b-320.webp" alt="LG 55NANO80VPA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55NANO80VPA</b><span class="pr">от 389 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55nano766qa/"><span class="ph"><img src="/images/thumb/lg-55nano766qa__main-e1ef93f779a6-320.webp" alt="LG 55NANO766QA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55NANO766QA</b><span class="pr">от 389 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55nano86vna/"><span class="ph"><img src="/images/thumb/lg-55nano86vna__main-943dbc4d1361-320.webp" alt="LG 55NANO86VNA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55NANO86VNA</b><span class="pr">от 459 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55qned70a6a/"><span class="ph"><img src="/images/thumb/lg-55qned70a6a__main-7bd93d50361e-320.webp" alt="LG 55QNED70A6A" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55QNED70A6A</b><span class="pr">от 479 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-65nano766qa/"><span class="ph"><img src="/images/thumb/lg-65nano766qa__main-43db4e056cff-320.webp" alt="LG 65NANO766QA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 65NANO766QA</b><span class="pr">от 529 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled55a26la/"><span class="ph"><img src="/images/thumb/lg-oled55a26la__main-d1fbd3d222ce-320.webp" alt="LG OLED55A26LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED55A26LA</b><span class="pr">от 539 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55qned816ra/"><span class="ph"><img src="/images/thumb/lg-55qned816ra__main-72e21e441916-320.webp" alt="LG 55QNED816RA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55QNED816RA</b><span class="pr">от 569 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-55nano816na/"><span class="ph"><img src="/images/thumb/lg-55nano816na__main-fd4b48ae1790-320.webp" alt="LG 55NANO816NA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG 55NANO816NA</b><span class="pr">от 589 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled55b4rla/"><span class="ph"><img src="/images/thumb/lg-oled55b4rla__main-9da3a07a943c-320.webp" alt="LG OLED55B4RLA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED55B4RLA</b><span class="pr">от 899 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled55c5rla/"><span class="ph"><img src="/images/thumb/lg-oled55c5rla__main-949db4add7e9-320.webp" alt="LG OLED55C5RLA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED55C5RLA</b><span class="pr">от 1 189 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled65b4rla/"><span class="ph"><img src="/images/thumb/lg-oled65b4rla__main-1522830672d5-320.webp" alt="LG OLED65B4RLA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED65B4RLA</b><span class="pr">от 1 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled65g46la/"><span class="ph"><img src="/images/thumb/lg-oled65g46la__main-5087956534c7-320.webp" alt="LG OLED65G46LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED65G46LA</b><span class="pr">от 1 299 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled65c6rla/"><span class="ph"><img src="/images/thumb/lg-oled65c6rla__main-e5fcaf1b5fc7-320.webp" alt="LG OLED65C6RLA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED65C6RLA</b><span class="pr">от 1 529 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/lg-oled77c46la/"><span class="ph"><img src="/images/thumb/lg-oled77c46la__main-feab892ec8ba-320.webp" alt="LG OLED77C46LA" width="320" height="320" loading="lazy" decoding="async"></span><b>LG OLED77C46LA</b><span class="pr">от 1 599 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — LG 32LM637BPVA, 137 000 ֏. Больше всего предложений у LG 50NANO75VPA (2 магазинах). Цены: 137 000 ֏–1 599 000 ֏, магазинов: 7.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

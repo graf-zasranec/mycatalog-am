@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,53 +35,72 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Smartwatches","item":"https://better.am/en/c/watch/"},{"@type":"ListItem","position":3,"name":"Xiaomi — Smartwatches","item":"https://better.am/en/c/watch/xiaomi/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/watch/xiaomi/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/watch/xiaomi/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=en">Better.am</a> › <a href="../../../../en/c/watch/">Smartwatches</a> › <span>Xiaomi — Smartwatches</span></nav>
 <main>
 <h1>Xiaomi — Smartwatches</h1>
 <p class="lead">Xiaomi — Smartwatches. 22 models, from 9 900 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Xiaomi Smart Band 8 at 9 900 ֏. Most widely sold: Xiaomi Smart Band 10 (4 shops). Prices 9 900 ֏–109 900 ֏ across 8 shops.</p>
-<p>Other brands: <a href="../../../../en/c/watch/garmin/">Garmin</a> · <a href="../../../../en/c/watch/samsung/">Samsung</a> · <a href="../../../../en/c/watch/apple/">Apple</a> · <a href="../../../../en/c/watch/honor/">Honor</a> · <a href="../../../../en/c/watch/nothing/">Nothing</a> · <a href="../../../../en/c/watch/amazfit/">Amazfit</a></p>
 <a class="go" href="../../../../?lang=en#/c/watch">Filter and compare on Better.am</a>
-
-<p><a href="../../../../en/deals/">What got cheaper</a></p>
+<p class="lead" style="margin:18px 0 0">Other brands: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../en/c/watch/garmin/">Garmin</a></li><li><a href="../../../../en/c/watch/samsung/">Samsung</a></li><li><a href="../../../../en/c/watch/apple/">Apple</a></li><li><a href="../../../../en/c/watch/honor/">Honor</a></li><li><a href="../../../../en/c/watch/nothing/">Nothing</a></li><li><a href="../../../../en/c/watch/amazfit/">Amazfit</a></li></ul>
+<ul class="pills"><li><a href="../../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../../en/p/xiaomi-smart-band-10/">Xiaomi Smart Band 10</a><span>from 19 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-5-lite/">Xiaomi Redmi Watch 5 Lite</a><span>from 18 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-band-11-active/">Xiaomi Smart Band 11 Active</a><span>from 19 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-6-active/">Xiaomi Redmi Watch 6 Active</a><span>from 22 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-6-lite/">Xiaomi Redmi Watch 6 Lite</a><span>from 33 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-band-7/">Xiaomi Smart Band 7</a><span>from 11 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-5-active/">Xiaomi Redmi Watch 5 Active</a><span>from 14 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-mi-smart-band-9/">Xiaomi Smart Band 9</a><span>from 15 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-6/">Xiaomi Redmi Watch 6</a><span>from 51 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-band-8-champagne-bhr7166gl/">Xiaomi Smart Band 8</a><span>from 9 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-smart-band-2/">Xiaomi Redmi Smart Band 2</a><span>from 13 500 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-band-7-pro/">Xiaomi Smart Band 7 Pro</a><span>from 18 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-band-10-pro/">Xiaomi Smart Band 10 Pro</a><span>from 45 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-band-8-active/">Xiaomi Smart Band 8 Active</a><span>from 11 400 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-band-9-pro/">Xiaomi Smart Band 9 Pro</a><span>from 29 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-2-lite/">Xiaomi Redmi Watch 2 Lite</a><span>from 33 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-mi-band-8-pro/">Xiaomi Smart Band 8 Pro</a><span>from 34 400 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-redmi-watch-5/">Xiaomi Redmi Watch 5</a><span>from 69 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-watch-s1-active/">Xiaomi Watch S1 Active</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-watch-s5-46mm/">Xiaomi Watch S5 46mm</a><span>from 99 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-smart-watch-70mai-saphir/">Xiaomi Smart Watch 70mai Saphir</a><span>from 99 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-watch-s1/">Xiaomi Watch S1</a><span>from 109 900 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../en/p/xiaomi-smart-band-10/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-10__black-cb08d602746e-320.webp" alt="Xiaomi Smart Band 10" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 10</b><span class="pr">from 19 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-5-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-5-lite__black-3ce8ba1bff0b-320.webp" alt="Xiaomi Redmi Watch 5 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 5 Lite</b><span class="pr">from 18 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-band-11-active/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-11-active__main-477cc80748ca-320.webp" alt="Xiaomi Smart Band 11 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 11 Active</b><span class="pr">from 19 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-6-active/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-6-active__main-7b73a45bb7ca-320.webp" alt="Xiaomi Redmi Watch 6 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 6 Active</b><span class="pr">from 22 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-6-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-6-lite__main-b30493e4340e-320.webp" alt="Xiaomi Redmi Watch 6 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 6 Lite</b><span class="pr">from 33 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-band-7/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-7__main-8418c210f309-320.webp" alt="Xiaomi Smart Band 7" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 7</b><span class="pr">from 11 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-5-active/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-5-active__midnight-black-bfde8a84cda8-320.webp" alt="Xiaomi Redmi Watch 5 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 5 Active</b><span class="pr">from 14 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-mi-smart-band-9/"><span class="ph"><img src="/images/thumb/xiaomi-mi-smart-band-9__white-cd3204254b18-320.webp" alt="Xiaomi Smart Band 9" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 9</b><span class="pr">from 15 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-6/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-6__black-2e02627537f8-320.webp" alt="Xiaomi Redmi Watch 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 6</b><span class="pr">from 51 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-band-8-champagne-bhr7166gl/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-8-champagne-bhr7166gl__sand-b4945f82ad77-320.webp" alt="Xiaomi Smart Band 8" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 8</b><span class="pr">from 9 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-smart-band-2/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-smart-band-2__main-292169ebb111-320.webp" alt="Xiaomi Redmi Smart Band 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Smart Band 2</b><span class="pr">from 13 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-band-7-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-7-pro__black-c6d11a609571-320.webp" alt="Xiaomi Smart Band 7 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 7 Pro</b><span class="pr">from 18 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-band-10-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-10-pro__black-558cbf9a502b-320.webp" alt="Xiaomi Smart Band 10 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 10 Pro</b><span class="pr">from 45 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-band-8-active/"><span class="ph"><img src="/images/thumb/xiaomi-smart-band-8-active__pink-2cc8f1a6be4f-320.webp" alt="Xiaomi Smart Band 8 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 8 Active</b><span class="pr">from 11 400 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-band-9-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-band-9-pro__silver-c23b0810eef8-320.webp" alt="Xiaomi Smart Band 9 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 9 Pro</b><span class="pr">from 29 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-2-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-2-lite__main-8cf434377ce3-320.webp" alt="Xiaomi Redmi Watch 2 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 2 Lite</b><span class="pr">from 33 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-mi-band-8-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-mi-band-8-pro__main-46e277429edf-320.webp" alt="Xiaomi Smart Band 8 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Band 8 Pro</b><span class="pr">from 34 400 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-redmi-watch-5/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-watch-5__purple-959e24d54da6-320.webp" alt="Xiaomi Redmi Watch 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Watch 5</b><span class="pr">from 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-watch-s1-active/"><span class="ph"><img src="/images/thumb/xiaomi-watch-s1-active__main-6a9b94967dfa-320.webp" alt="Xiaomi Watch S1 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Watch S1 Active</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-watch-s5-46mm/"><span class="ph"><img src="/images/thumb/xiaomi-watch-s5-46mm__black-f77e5e9a5228-320.webp" alt="Xiaomi Watch S5 46mm" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Watch S5 46mm</b><span class="pr">from 99 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-smart-watch-70mai-saphir/"><span class="ph"><img src="/images/thumb/xiaomi-smart-watch-70mai-saphir__main-8ddfbe6d7a07-320.webp" alt="Xiaomi Smart Watch 70mai Saphir" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Watch 70mai Saphir</b><span class="pr">from 99 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-watch-s1/"><span class="ph"><img src="/images/thumb/xiaomi-watch-s1__main-03e6107c594d-320.webp" alt="Xiaomi Watch S1" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Watch S1</b><span class="pr">from 109 900 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Xiaomi Smart Band 8 at 9 900 ֏. Most widely sold: Xiaomi Smart Band 10 (4 shops). Prices 9 900 ֏–109 900 ֏ across 8 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

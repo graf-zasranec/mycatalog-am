@@ -34,7 +34,14 @@ jobs:
     steps:
       # pinned to the commit, not the tag: a tag can be moved to point at new code,
       # and this job has contents:write on the repository it is checking out.
+      # ref: main, not the commit that queued this run. A run waits hours behind the stock check in
+      # the "refresh" group; starting from the old commit made every push made during that wait
+      # read as a concurrent source update, and the run threw away a full crawl (5-7 Nov 2026).
+      # A retry stays on the run's commit: its checkpoint carries source files from that crawl, and
+      # restoring them over a newer main would undo whatever was published since.
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+        with:
+          ref: ${{ github.run_attempt == 1 && 'main' || github.sha }}
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4
         with:

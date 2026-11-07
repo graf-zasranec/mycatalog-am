@@ -9,6 +9,7 @@ assert(!resumablePartial(partial,'2026-10-16',false,now));assert(resumablePartia
 assert(!resumablePartial({...partial,savedAt:'2026-10-15T00:00:00Z'},'2026-10-16',true,now));
 const repo='graf-zasranec/mycatalog-am',run={id:1,head_repository:{full_name:repo},head_branch:'main',name:'Better — refresh prices',status:'completed',conclusion:'cancelled',run_attempt:1,created_at:'2026-10-16T00:00:00Z'};
 assert.equal(retryDecision(run,[],repo),null);
+assert.equal(retryDecision(run,[],repo,[{steps:[{name:'Commit refreshed prices and history',conclusion:'failure'}]}]),'publish conflict, next refresh starts from main');assert.equal(retryDecision(run,[],repo,[{steps:[{name:'Refresh caches, hand rows, shop prices and build',conclusion:'failure'}]}]),null);
 assert(retryDecision({...run,run_attempt:2},[],repo));assert(retryDecision({...run,conclusion:'success'},[],repo));assert(retryDecision({...run,head_repository:{full_name:'fork/repo'}},[],repo));
 assert(retryDecision(run,[{...run,id:2,created_at:'2026-10-16T01:00:00Z'}],repo));assert(retryDecision(run,[{...run,id:2,created_at:'2026-10-15T00:00:00Z',status:'in_progress'}],repo));
 console.log('REFRESH_RECOVERY_PASS: one retry, overlap protection, scoped checkpoint expiry and unchanged source dates');

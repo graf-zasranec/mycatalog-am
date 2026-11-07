@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,34 +35,53 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Kitchen","item":"https://better.am/en/c/kitchen/"},{"@type":"ListItem","position":3,"name":"Panasonic — Kitchen","item":"https://better.am/en/c/kitchen/panasonic/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/kitchen/panasonic/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/kitchen/panasonic/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=en">Better.am</a> › <a href="../../../../en/c/kitchen/">Kitchen</a> › <span>Panasonic — Kitchen</span></nav>
 <main>
 <h1>Panasonic — Kitchen</h1>
 <p class="lead">Panasonic — Kitchen. 3 models, from 74 900 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Panasonic NF-CC500SXE Air Fryer at 74 900 ֏. Most widely sold: Panasonic NF-CC500SXE Air Fryer (2 shops). Prices 74 900 ֏–99 000 ֏ across 2 shops.</p>
-<p>Other brands: <a href="../../../../en/c/kitchen/kenwood/">Kenwood</a> · <a href="../../../../en/c/kitchen/ariete/">Ariete</a> · <a href="../../../../en/c/kitchen/gorenje/">Gorenje</a> · <a href="../../../../en/c/kitchen/philips/">Philips</a> · <a href="../../../../en/c/kitchen/midea/">Midea</a> · <a href="../../../../en/c/kitchen/xiaomi/">Xiaomi</a> · <a href="../../../../en/c/kitchen/braun/">Braun</a> · <a href="../../../../en/c/kitchen/bosch/">Bosch</a> · <a href="../../../../en/c/kitchen/ninja/">Ninja</a> · <a href="../../../../en/c/kitchen/hisense/">Hisense</a> · <a href="../../../../en/c/kitchen/mova/">Mova</a></p>
 <a class="go" href="../../../../?lang=en#/c/kitchen">Filter and compare on Better.am</a>
-
-<p><a href="../../../../en/deals/">What got cheaper</a></p>
+<p class="lead" style="margin:18px 0 0">Other brands: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../en/c/kitchen/kenwood/">Kenwood</a></li><li><a href="../../../../en/c/kitchen/ariete/">Ariete</a></li><li><a href="../../../../en/c/kitchen/gorenje/">Gorenje</a></li><li><a href="../../../../en/c/kitchen/philips/">Philips</a></li><li><a href="../../../../en/c/kitchen/midea/">Midea</a></li><li><a href="../../../../en/c/kitchen/xiaomi/">Xiaomi</a></li><li><a href="../../../../en/c/kitchen/braun/">Braun</a></li><li><a href="../../../../en/c/kitchen/bosch/">Bosch</a></li><li><a href="../../../../en/c/kitchen/ninja/">Ninja</a></li><li><a href="../../../../en/c/kitchen/hisense/">Hisense</a></li><li><a href="../../../../en/c/kitchen/mova/">Mova</a></li></ul>
+<ul class="pills"><li><a href="../../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../../en/p/panasonic-nf-cc500sxe/">Panasonic NF-CC500SXE Air Fryer</a><span>from 74 900 ֏</span></li>
-<li><a href="../../../../en/p/panasonic-nf-cc600ats/">Panasonic NF-CC600ATS Air Fryer</a><span>from 89 900 ֏</span></li>
-<li><a href="../../../../en/p/panasonic-nf-bc1000kxe/">Panasonic NF-BC1000KXE Air Fryer</a><span>from 99 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../en/p/panasonic-nf-cc500sxe/"><span class="ph"><img src="/images/thumb/panasonic-nf-cc500sxe__main-d4adade3460b-320.webp" alt="Panasonic NF-CC500SXE Air Fryer" width="320" height="320" loading="lazy" decoding="async"></span><b>Panasonic NF-CC500SXE Air Fryer</b><span class="pr">from 74 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/panasonic-nf-cc600ats/"><span class="ph"><img src="/images/thumb/panasonic-nf-cc600ats__main-c7e9554e9e4a-320.webp" alt="Panasonic NF-CC600ATS Air Fryer" width="320" height="320" loading="lazy" decoding="async"></span><b>Panasonic NF-CC600ATS Air Fryer</b><span class="pr">from 89 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/panasonic-nf-bc1000kxe/"><span class="ph"><img src="/images/thumb/panasonic-nf-bc1000kxe__main-482d6d21d7e6-320.webp" alt="Panasonic NF-BC1000KXE Air Fryer" width="320" height="320" loading="lazy" decoding="async"></span><b>Panasonic NF-BC1000KXE Air Fryer</b><span class="pr">from 99 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Panasonic NF-CC500SXE Air Fryer at 74 900 ֏. Most widely sold: Panasonic NF-CC500SXE Air Fryer (2 shops). Prices 74 900 ֏–99 000 ֏ across 2 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

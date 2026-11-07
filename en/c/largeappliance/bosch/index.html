@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,58 +35,77 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Large appliances","item":"https://better.am/en/c/largeappliance/"},{"@type":"ListItem","position":3,"name":"Bosch — Large appliances","item":"https://better.am/en/c/largeappliance/bosch/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/largeappliance/bosch/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/largeappliance/bosch/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=en">Better.am</a> › <a href="../../../../en/c/largeappliance/">Large appliances</a> › <span>Bosch — Large appliances</span></nav>
 <main>
 <h1>Bosch — Large appliances</h1>
 <p class="lead">Bosch — Large appliances. 27 models, from 179 000 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Bosch Washing Machine WAJ2006EPL at 179 000 ֏. Most widely sold: Bosch Fridge KGN49LBE0T 438 L (3 shops). Prices 179 000 ֏–1 230 000 ֏ across 3 shops.</p>
-<p>Other brands: <a href="../../../../en/c/largeappliance/hisense/">Hisense</a> · <a href="../../../../en/c/largeappliance/samsung/">Samsung</a> · <a href="../../../../en/c/largeappliance/toshiba/">Toshiba</a> · <a href="../../../../en/c/largeappliance/electrolux/">Electrolux</a> · <a href="../../../../en/c/largeappliance/lg/">LG</a> · <a href="../../../../en/c/largeappliance/hitachi/">Hitachi</a> · <a href="../../../../en/c/largeappliance/midea/">Midea</a> · <a href="../../../../en/c/largeappliance/sharp/">Sharp</a> · <a href="../../../../en/c/largeappliance/gorenje/">Gorenje</a> · <a href="../../../../en/c/largeappliance/aeg/">AEG</a></p>
 <a class="go" href="../../../../?lang=en#/c/largeappliance">Filter and compare on Better.am</a>
-
-<p><a href="../../../../en/deals/">What got cheaper</a></p>
+<p class="lead" style="margin:18px 0 0">Other brands: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../en/c/largeappliance/hisense/">Hisense</a></li><li><a href="../../../../en/c/largeappliance/samsung/">Samsung</a></li><li><a href="../../../../en/c/largeappliance/toshiba/">Toshiba</a></li><li><a href="../../../../en/c/largeappliance/electrolux/">Electrolux</a></li><li><a href="../../../../en/c/largeappliance/lg/">LG</a></li><li><a href="../../../../en/c/largeappliance/hitachi/">Hitachi</a></li><li><a href="../../../../en/c/largeappliance/midea/">Midea</a></li><li><a href="../../../../en/c/largeappliance/sharp/">Sharp</a></li><li><a href="../../../../en/c/largeappliance/gorenje/">Gorenje</a></li><li><a href="../../../../en/c/largeappliance/aeg/">AEG</a></li></ul>
+<ul class="pills"><li><a href="../../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../../en/p/bosch-kgn49lbe0t/">Bosch Fridge KGN49LBE0T 438 L</a><span>from 695 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-smv6ecx08e/">Bosch Dishwasher SMV6ECX08E 14 place settings</a><span>from 620 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn56cx30u/">Bosch Refrigerator KGN56CX30U</a><span>from 639 900 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn49xl306/">Bosch Fridge KGN49XL306 435 L</a><span>from 640 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-waj2006epl/">Bosch Washing Machine WAJ2006EPL</a><span>from 179 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wan2417epl/">Bosch Washing Machine WAN2417EPL</a><span>from 189 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-waj24064by/">Bosch Washing Machine WAJ24064BY</a><span>from 189 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wan2407epl/">Bosch Washing Machine WAN2407EPL</a><span>from 205 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wan282eepl/">Bosch Washing Machine WAN282EEPL</a><span>from 229 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-sps25dw03r/">Bosch Dishwasher SPS25DW03R</a><span>from 247 500 ֏</span></li>
-<li><a href="../../../../en/p/bosch-smv4hmx25q/">Bosch Dishwasher SMV4HMX25Q 13 place settings</a><span>from 319 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-sps2hmi54q/">Bosch Dishwasher SPS2HMI54Q 10 place settings</a><span>from 349 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wan28201me/">Bosch Washing Machine WAN28201ME 8 kg</a><span>from 415 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wtm85251by/">Bosch Dryer WTM85251BY</a><span>from 439 900 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn39ijea/">Bosch Refrigerator KGN39IJEA</a><span>from 455 900 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn36xi30u/">Bosch Fridge KGN36XI30U 324 L</a><span>from 462 500 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn49xw30u/">Bosch Fridge KGN49XW30U 435 L</a><span>from 514 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wgk244zxme/">Bosch Washing Machine WGK244ZXME 9 kg</a><span>from 520 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wgk264zxme/">Bosch Washing Machine WGK264ZXME</a><span>from 561 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn49xl30u/">Bosch Fridge KGN49XL30U 435 L</a><span>from 582 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgd86ai31u/">Bosch Refrigerator KGD86AI31U</a><span>from 595 900 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn39lb316/">Bosch Refrigerator KGN39LB316</a><span>from 625 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn49aibt/">Bosch Refrigerator KGN49AIBT</a><span>from 699 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-wqb245bxme/">Bosch Dryer WQB245BXME</a><span>from 745 000 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kgn39lr3ar/">Bosch Refrigerator KGN39LR3AR</a><span>from 765 900 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kan90vi20r/">Bosch Refrigerator KAN90VI20R</a><span>from 981 400 ֏</span></li>
-<li><a href="../../../../en/p/bosch-kfn96vpea/">Bosch Fridge KFN96VPEA 605 L</a><span>from 1 230 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../en/p/bosch-kgn49lbe0t/"><span class="ph"><img src="/images/thumb/bosch-kgn49lbe0t__black-2981609eea3f-320.webp" alt="Bosch Fridge KGN49LBE0T 438 L" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Fridge KGN49LBE0T 438 L</b><span class="pr">from 695 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-smv6ecx08e/"><span class="ph"><img src="/images/thumb/bosch-smv6ecx08e__main-323b32575acf-320.webp" alt="Bosch Dishwasher SMV6ECX08E 14 place settings" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Dishwasher SMV6ECX08E 14 place settings</b><span class="pr">from 620 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn56cx30u/"><span class="ph"><img src="/images/thumb/bosch-kgn56cx30u__main-cd023e7d6cb1-320.webp" alt="Bosch Refrigerator KGN56CX30U" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KGN56CX30U</b><span class="pr">from 639 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn49xl306/"><span class="ph"><img src="/images/thumb/bosch-kgn49xl306__inox-a47d7cd35ec1-320.webp" alt="Bosch Fridge KGN49XL306 435 L" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Fridge KGN49XL306 435 L</b><span class="pr">from 640 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-waj2006epl/"><span class="ph"><img src="/images/thumb/bosch-waj2006epl__main-ccb57859b77d-320.webp" alt="Bosch Washing Machine WAJ2006EPL" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WAJ2006EPL</b><span class="pr">from 179 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wan2417epl/"><span class="ph"><img src="/images/thumb/bosch-wan2417epl__main-b8ab25429bd5-320.webp" alt="Bosch Washing Machine WAN2417EPL" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WAN2417EPL</b><span class="pr">from 189 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-waj24064by/"><span class="ph"><img src="/images/thumb/bosch-waj24064by__main-51cf41f27e5c-320.webp" alt="Bosch Washing Machine WAJ24064BY" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WAJ24064BY</b><span class="pr">from 189 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wan2407epl/"><span class="ph"><img src="/images/thumb/bosch-wan2407epl__main-962405bee739-320.webp" alt="Bosch Washing Machine WAN2407EPL" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WAN2407EPL</b><span class="pr">from 205 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wan282eepl/"><span class="ph"><img src="/images/thumb/bosch-wan282eepl__main-50843c1548f2-320.webp" alt="Bosch Washing Machine WAN282EEPL" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WAN282EEPL</b><span class="pr">from 229 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-sps25dw03r/"><span class="ph"><img src="/images/thumb/bosch-sps25dw03r__main-257222f9c7c2-320.webp" alt="Bosch Dishwasher SPS25DW03R" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Dishwasher SPS25DW03R</b><span class="pr">from 247 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-smv4hmx25q/"><span class="ph"><img src="/images/thumb/bosch-smv4hmx25q__main-043010697fdc-320.webp" alt="Bosch Dishwasher SMV4HMX25Q 13 place settings" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Dishwasher SMV4HMX25Q 13 place settings</b><span class="pr">from 319 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-sps2hmi54q/"><span class="ph"><img src="/images/thumb/bosch-sps2hmi54q__main-7f34095920a2-320.webp" alt="Bosch Dishwasher SPS2HMI54Q 10 place settings" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Dishwasher SPS2HMI54Q 10 place settings</b><span class="pr">from 349 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wan28201me/"><span class="ph"><img src="/images/thumb/bosch-wan28201me__white-923ad6c45313-320.webp" alt="Bosch Washing Machine WAN28201ME 8 kg" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WAN28201ME 8 kg</b><span class="pr">from 415 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wtm85251by/"><span class="ph"><img src="/images/thumb/bosch-wtm85251by__main-a46a1fd042e2-320.webp" alt="Bosch Dryer WTM85251BY" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Dryer WTM85251BY</b><span class="pr">from 439 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn39ijea/"><span class="ph"><img src="/images/thumb/bosch-kgn39ijea__main-f830be9ebcca-320.webp" alt="Bosch Refrigerator KGN39IJEA" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KGN39IJEA</b><span class="pr">from 455 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn36xi30u/"><span class="ph"><img src="/images/thumb/bosch-kgn36xi30u__inox-a3d05115bde3-320.webp" alt="Bosch Fridge KGN36XI30U 324 L" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Fridge KGN36XI30U 324 L</b><span class="pr">from 462 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn49xw30u/"><span class="ph"><img src="/images/thumb/bosch-kgn49xw30u__white-b05ab27a6e4b-320.webp" alt="Bosch Fridge KGN49XW30U 435 L" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Fridge KGN49XW30U 435 L</b><span class="pr">from 514 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wgk244zxme/"><span class="ph"><img src="/images/thumb/bosch-wgk244zxme__main-1e9967b1881e-320.webp" alt="Bosch Washing Machine WGK244ZXME 9 kg" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WGK244ZXME 9 kg</b><span class="pr">from 520 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wgk264zxme/"><span class="ph"><img src="/images/thumb/bosch-wgk264zxme__main-3730df861ad7-320.webp" alt="Bosch Washing Machine WGK264ZXME" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Washing Machine WGK264ZXME</b><span class="pr">from 561 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn49xl30u/"><span class="ph"><img src="/images/thumb/bosch-kgn49xl30u__inox-6dfd8437bf29-320.webp" alt="Bosch Fridge KGN49XL30U 435 L" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Fridge KGN49XL30U 435 L</b><span class="pr">from 582 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgd86ai31u/"><span class="ph"><img src="/images/thumb/bosch-kgd86ai31u__main-8a152234acee-320.webp" alt="Bosch Refrigerator KGD86AI31U" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KGD86AI31U</b><span class="pr">from 595 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn39lb316/"><span class="ph"><img src="/images/thumb/bosch-kgn39lb316__main-c4a12dd0c59d-320.webp" alt="Bosch Refrigerator KGN39LB316" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KGN39LB316</b><span class="pr">from 625 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn49aibt/"><span class="ph"><img src="/images/thumb/bosch-kgn49aibt__main-b86b980c3eb5-320.webp" alt="Bosch Refrigerator KGN49AIBT" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KGN49AIBT</b><span class="pr">from 699 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-wqb245bxme/"><span class="ph"><img src="/images/thumb/bosch-wqb245bxme__main-45b3da675553-320.webp" alt="Bosch Dryer WQB245BXME" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Dryer WQB245BXME</b><span class="pr">from 745 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kgn39lr3ar/"><span class="ph"><img src="/images/thumb/bosch-kgn39lr3ar__main-ecab9bd6c47f-320.webp" alt="Bosch Refrigerator KGN39LR3AR" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KGN39LR3AR</b><span class="pr">from 765 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kan90vi20r/"><span class="ph"><img src="/images/thumb/bosch-kan90vi20r__main-8470eb228543-320.webp" alt="Bosch Refrigerator KAN90VI20R" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Refrigerator KAN90VI20R</b><span class="pr">from 981 400 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/bosch-kfn96vpea/"><span class="ph"><img src="/images/thumb/bosch-kfn96vpea__main-fce5dacd9e5c-320.webp" alt="Bosch Fridge KFN96VPEA 605 L" width="320" height="320" loading="lazy" decoding="async"></span><b>Bosch Fridge KFN96VPEA 605 L</b><span class="pr">from 1 230 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Bosch Washing Machine WAJ2006EPL at 179 000 ֏. Most widely sold: Bosch Fridge KGN49LBE0T 438 L (3 shops). Prices 179 000 ֏–1 230 000 ֏ across 3 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

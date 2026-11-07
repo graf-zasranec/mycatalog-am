@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,74 +35,93 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Large appliances","item":"https://better.am/en/c/largeappliance/"},{"@type":"ListItem","position":3,"name":"Electrolux — Large appliances","item":"https://better.am/en/c/largeappliance/electrolux/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/largeappliance/electrolux/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/largeappliance/electrolux/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=en">Better.am</a> › <a href="../../../../en/c/largeappliance/">Large appliances</a> › <span>Electrolux — Large appliances</span></nav>
 <main>
 <h1>Electrolux — Large appliances</h1>
 <p class="lead">Electrolux — Large appliances. 43 models, from 121 900 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Electrolux Washing Machine EWS6426BE at 121 900 ֏. Most widely sold: Electrolux Washing Machine EW6SM327DE (2 shops). Prices 121 900 ֏–454 900 ֏ across 2 shops.</p>
-<p>Other brands: <a href="../../../../en/c/largeappliance/hisense/">Hisense</a> · <a href="../../../../en/c/largeappliance/samsung/">Samsung</a> · <a href="../../../../en/c/largeappliance/toshiba/">Toshiba</a> · <a href="../../../../en/c/largeappliance/lg/">LG</a> · <a href="../../../../en/c/largeappliance/bosch/">Bosch</a> · <a href="../../../../en/c/largeappliance/hitachi/">Hitachi</a> · <a href="../../../../en/c/largeappliance/midea/">Midea</a> · <a href="../../../../en/c/largeappliance/sharp/">Sharp</a> · <a href="../../../../en/c/largeappliance/gorenje/">Gorenje</a> · <a href="../../../../en/c/largeappliance/aeg/">AEG</a></p>
 <a class="go" href="../../../../?lang=en#/c/largeappliance">Filter and compare on Better.am</a>
-
-<p><a href="../../../../en/deals/">What got cheaper</a></p>
+<p class="lead" style="margin:18px 0 0">Other brands: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../en/c/largeappliance/hisense/">Hisense</a></li><li><a href="../../../../en/c/largeappliance/samsung/">Samsung</a></li><li><a href="../../../../en/c/largeappliance/toshiba/">Toshiba</a></li><li><a href="../../../../en/c/largeappliance/lg/">LG</a></li><li><a href="../../../../en/c/largeappliance/bosch/">Bosch</a></li><li><a href="../../../../en/c/largeappliance/hitachi/">Hitachi</a></li><li><a href="../../../../en/c/largeappliance/midea/">Midea</a></li><li><a href="../../../../en/c/largeappliance/sharp/">Sharp</a></li><li><a href="../../../../en/c/largeappliance/gorenje/">Gorenje</a></li><li><a href="../../../../en/c/largeappliance/aeg/">AEG</a></li></ul>
+<ul class="pills"><li><a href="../../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../../en/p/electrolux-ew6sm327de/">Electrolux Washing Machine EW6SM327DE</a><span>from 190 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ews6426be/">Electrolux Washing Machine EWS6426BE</a><span>from 121 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6s4r06w/">Electrolux Washing Machine EW6S4R06W</a><span>from 128 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6sm426we/">Electrolux Washing Machine EW6SM426WE</a><span>from 142 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ews6307be/">Electrolux Washing Machine EWS6307BE</a><span>from 151 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6ms406b/">Electrolux Washing Machine EW6MS406B</a><span>from 158 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-esf2400os/">Electrolux Dishwasher ESF2400OS</a><span>from 166 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6s3r26s/">Electrolux Washing Machine EW6S3R26S</a><span>from 166 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ews6326dxe/">Electrolux Washing Machine EWS6326DXE</a><span>from 166 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-lxb1af15w0/">Electrolux Refrigerator LXB1AF15W0</a><span>from 174 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6s4r27bx/">Electrolux Washing Machine EW6S4R27BX</a><span>from 181 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6s4r27w/">Electrolux Washing Machine EW6S4R27W</a><span>from 189 000 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ews6327dxe/">Electrolux Washing Machine EWS6327DXE</a><span>from 190 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6s4r27bi/">Electrolux Washing Machine EW6S4R27BI</a><span>from 204 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-sea94720sw/">Electrolux Dishwasher SEA94720SW</a><span>from 211 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6f2281e/">Electrolux Washing Machine EW6F2281E</a><span>from 222 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6f9482e/">Electrolux Washing Machine EW6F9482E</a><span>from 222 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-esa47210/">Electrolux Dishwasher ESA47210</a><span>from 223 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ses42201sx/">Electrolux Dishwasher SES42201SX</a><span>from 234 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6t4rf061/">Electrolux Washing Machine EW6T4RF061</a><span>from 234 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-e62sd200sw/">Electrolux Dishwasher E62SD200SW</a><span>from 270 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6f3414ue/">Electrolux Washing Machine EW6F3414UE</a><span>from 270 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-sem94830/">Electrolux Dishwasher SEM94830</a><span>from 270 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-esm48310sw/">Electrolux Dishwasher ESM48310SW</a><span>from 278 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6f9452e/">Electrolux Washing Machine EW6F9452E</a><span>from 278 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6cr428w/">Electrolux Dryer EW6CR428W</a><span>from 279 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6d283ye/">Electrolux Dryer EW6D283YE</a><span>from 279 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-esm64831sx/">Electrolux Dishwasher ESM64831SX</a><span>from 294 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6d18cwje/">Electrolux Dryer EW6D18CWJE</a><span>from 299 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew6f3494ace/">Electrolux Washing Machine EW6F3494ACE</a><span>from 302 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-e62sc200sx/">Electrolux Dishwasher E62SC200SX</a><span>from 309 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew7fg4492ude/">Electrolux Washing Machine EW7FG4492UDE</a><span>from 338 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew7w2492/">Electrolux Washer-Dryer EW7W2492</a><span>from 348 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew8fg5602cde/">Electrolux Washing Machine EW8FG5602CDE</a><span>from 364 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-rrc5me38x2/">Electrolux Refrigerator RRC5ME38X2</a><span>from 371 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew7w4602e/">Electrolux Washer-Dryer EW7W4602E</a><span>from 379 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew9f7607wce/">Electrolux Washing Machine EW9F7607WCE</a><span>from 386 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-rnt7me34g1/">Electrolux Refrigerator RNT7ME34G1</a><span>from 394 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-lnt7me36k2/">Electrolux Refrigerator LNT7ME36K2</a><span>from 394 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew9f1r61b/">Electrolux Washing Machine EW9F1R61B</a><span>from 402 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew7wr361s/">Electrolux Washer-Dryer EW7WR361S</a><span>from 415 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-en-3889mfw/">Electrolux Refrigerator EN-3889MFW</a><span>from 444 900 ֏</span></li>
-<li><a href="../../../../en/p/electrolux-ew7d495ude/">Electrolux Dryer EW7D495UDE</a><span>from 454 900 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../en/p/electrolux-ew6sm327de/"><span class="ph"><img src="/images/thumb/electrolux-ew6sm327de__main-8aac5b5b23f3-320.webp" alt="Electrolux Washing Machine EW6SM327DE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6SM327DE</b><span class="pr">from 190 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ews6426be/"><span class="ph"><img src="/images/thumb/electrolux-ews6426be__main-a50ed73d9811-320.webp" alt="Electrolux Washing Machine EWS6426BE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EWS6426BE</b><span class="pr">from 121 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6s4r06w/"><span class="ph"><img src="/images/thumb/electrolux-ew6s4r06w__main-75c25be2b817-320.webp" alt="Electrolux Washing Machine EW6S4R06W" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6S4R06W</b><span class="pr">from 128 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6sm426we/"><span class="ph"><img src="/images/thumb/electrolux-ew6sm426we__main-87d51fa54c6a-320.webp" alt="Electrolux Washing Machine EW6SM426WE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6SM426WE</b><span class="pr">from 142 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ews6307be/"><span class="ph"><img src="/images/thumb/electrolux-ews6307be__main-2b5f88a1bf57-320.webp" alt="Electrolux Washing Machine EWS6307BE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EWS6307BE</b><span class="pr">from 151 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6ms406b/"><span class="ph"><img src="/images/thumb/electrolux-ew6ms406b__main-bf604eaf4bc6-320.webp" alt="Electrolux Washing Machine EW6MS406B" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6MS406B</b><span class="pr">from 158 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-esf2400os/"><span class="ph"><img src="/images/thumb/electrolux-esf2400os__main-ac8afc3932f7-320.webp" alt="Electrolux Dishwasher ESF2400OS" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher ESF2400OS</b><span class="pr">from 166 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6s3r26s/"><span class="ph"><img src="/images/thumb/electrolux-ew6s3r26s__main-68264445269f-320.webp" alt="Electrolux Washing Machine EW6S3R26S" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6S3R26S</b><span class="pr">from 166 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ews6326dxe/"><span class="ph"><img src="/images/thumb/electrolux-ews6326dxe__main-b0fd796a5787-320.webp" alt="Electrolux Washing Machine EWS6326DXE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EWS6326DXE</b><span class="pr">from 166 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-lxb1af15w0/"><span class="ph"><img src="/images/thumb/electrolux-lxb1af15w0__main-426ec996ec6d-320.webp" alt="Electrolux Refrigerator LXB1AF15W0" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Refrigerator LXB1AF15W0</b><span class="pr">from 174 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6s4r27bx/"><span class="ph"><img src="/images/thumb/electrolux-ew6s4r27bx__main-a0197a4be5d6-320.webp" alt="Electrolux Washing Machine EW6S4R27BX" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6S4R27BX</b><span class="pr">from 181 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6s4r27w/"><span class="ph"><img src="/images/thumb/electrolux-ew6s4r27w__main-527025011dd2-320.webp" alt="Electrolux Washing Machine EW6S4R27W" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6S4R27W</b><span class="pr">from 189 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ews6327dxe/"><span class="ph"><img src="/images/thumb/electrolux-ews6327dxe__main-67b643234ba0-320.webp" alt="Electrolux Washing Machine EWS6327DXE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EWS6327DXE</b><span class="pr">from 190 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6s4r27bi/"><span class="ph"><img src="/images/thumb/electrolux-ew6s4r27bi__main-7408588e0c12-320.webp" alt="Electrolux Washing Machine EW6S4R27BI" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6S4R27BI</b><span class="pr">from 204 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-sea94720sw/"><span class="ph"><img src="/images/thumb/electrolux-sea94720sw__main-a76ad7b91f69-320.webp" alt="Electrolux Dishwasher SEA94720SW" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher SEA94720SW</b><span class="pr">from 211 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6f2281e/"><span class="ph"><img src="/images/thumb/electrolux-ew6f2281e__main-aa07ca897952-320.webp" alt="Electrolux Washing Machine EW6F2281E" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6F2281E</b><span class="pr">from 222 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6f9482e/"><span class="ph"><img src="/images/thumb/electrolux-ew6f9482e__main-155a3f877bfe-320.webp" alt="Electrolux Washing Machine EW6F9482E" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6F9482E</b><span class="pr">from 222 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-esa47210/"><span class="ph"><img src="/images/thumb/electrolux-esa47210__white-5deef81245e5-320.webp" alt="Electrolux Dishwasher ESA47210" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher ESA47210</b><span class="pr">from 223 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ses42201sx/"><span class="ph"><img src="/images/thumb/electrolux-ses42201sx__main-d85b380d1f17-320.webp" alt="Electrolux Dishwasher SES42201SX" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher SES42201SX</b><span class="pr">from 234 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6t4rf061/"><span class="ph"><img src="/images/thumb/electrolux-ew6t4rf061__main-3869845eba30-320.webp" alt="Electrolux Washing Machine EW6T4RF061" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6T4RF061</b><span class="pr">from 234 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-e62sd200sw/"><span class="ph"><img src="/images/thumb/electrolux-e62sd200sw__main-3bb9da374c03-320.webp" alt="Electrolux Dishwasher E62SD200SW" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher E62SD200SW</b><span class="pr">from 270 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6f3414ue/"><span class="ph"><img src="/images/thumb/electrolux-ew6f3414ue__main-995e4677f688-320.webp" alt="Electrolux Washing Machine EW6F3414UE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6F3414UE</b><span class="pr">from 270 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-sem94830/"><span class="ph"><img src="/images/thumb/electrolux-sem94830__white-695e591652da-320.webp" alt="Electrolux Dishwasher SEM94830" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher SEM94830</b><span class="pr">from 270 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-esm48310sw/"><span class="ph"><img src="/images/thumb/electrolux-esm48310sw__main-0b1ffa667c6b-320.webp" alt="Electrolux Dishwasher ESM48310SW" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher ESM48310SW</b><span class="pr">from 278 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6f9452e/"><span class="ph"><img src="/images/thumb/electrolux-ew6f9452e__main-cfc8c7527a24-320.webp" alt="Electrolux Washing Machine EW6F9452E" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6F9452E</b><span class="pr">from 278 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6cr428w/"><span class="ph"><img src="/images/thumb/electrolux-ew6cr428w__main-e1bc16d6a1f1-320.webp" alt="Electrolux Dryer EW6CR428W" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dryer EW6CR428W</b><span class="pr">from 279 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6d283ye/"><span class="ph"><img src="/images/thumb/electrolux-ew6d283ye__main-ebfb7c7253f0-320.webp" alt="Electrolux Dryer EW6D283YE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dryer EW6D283YE</b><span class="pr">from 279 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-esm64831sx/"><span class="ph"><img src="/images/thumb/electrolux-esm64831sx__main-3ba401bc9211-320.webp" alt="Electrolux Dishwasher ESM64831SX" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher ESM64831SX</b><span class="pr">from 294 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6d18cwje/"><span class="ph"><img src="/images/thumb/electrolux-ew6d18cwje__main-6be2ea88b473-320.webp" alt="Electrolux Dryer EW6D18CWJE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dryer EW6D18CWJE</b><span class="pr">from 299 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew6f3494ace/"><span class="ph"><img src="/images/thumb/electrolux-ew6f3494ace__main-53ae0228954b-320.webp" alt="Electrolux Washing Machine EW6F3494ACE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW6F3494ACE</b><span class="pr">from 302 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-e62sc200sx/"><span class="ph"><img src="/images/thumb/electrolux-e62sc200sx__main-ef41e11410a7-320.webp" alt="Electrolux Dishwasher E62SC200SX" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dishwasher E62SC200SX</b><span class="pr">from 309 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew7fg4492ude/"><span class="ph"><img src="/images/thumb/electrolux-ew7fg4492ude__main-37ac777a9ad9-320.webp" alt="Electrolux Washing Machine EW7FG4492UDE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW7FG4492UDE</b><span class="pr">from 338 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew7w2492/"><span class="ph"><img src="/images/thumb/electrolux-ew7w2492__main-d07812eb023a-320.webp" alt="Electrolux Washer-Dryer EW7W2492" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washer-Dryer EW7W2492</b><span class="pr">from 348 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew8fg5602cde/"><span class="ph"><img src="/images/thumb/electrolux-ew8fg5602cde__main-fc3cb1dca586-320.webp" alt="Electrolux Washing Machine EW8FG5602CDE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW8FG5602CDE</b><span class="pr">from 364 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-rrc5me38x2/"><span class="ph"><img src="/images/thumb/electrolux-rrc5me38x2__main-4708237dc58a-320.webp" alt="Electrolux Refrigerator RRC5ME38X2" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Refrigerator RRC5ME38X2</b><span class="pr">from 371 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew7w4602e/"><span class="ph"><img src="/images/thumb/electrolux-ew7w4602e__main-d47be4b7ed1b-320.webp" alt="Electrolux Washer-Dryer EW7W4602E" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washer-Dryer EW7W4602E</b><span class="pr">from 379 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew9f7607wce/"><span class="ph"><img src="/images/thumb/electrolux-ew9f7607wce__main-3967f0df88db-320.webp" alt="Electrolux Washing Machine EW9F7607WCE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW9F7607WCE</b><span class="pr">from 386 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-rnt7me34g1/"><span class="ph"><img src="/images/thumb/electrolux-rnt7me34g1__main-0a6d9c52ac52-320.webp" alt="Electrolux Refrigerator RNT7ME34G1" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Refrigerator RNT7ME34G1</b><span class="pr">from 394 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-lnt7me36k2/"><span class="ph"><img src="/images/thumb/electrolux-lnt7me36k2__main-ebc562eff4bc-320.webp" alt="Electrolux Refrigerator LNT7ME36K2" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Refrigerator LNT7ME36K2</b><span class="pr">from 394 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew9f1r61b/"><span class="ph"><img src="/images/thumb/electrolux-ew9f1r61b__main-8ffe757e67d2-320.webp" alt="Electrolux Washing Machine EW9F1R61B" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washing Machine EW9F1R61B</b><span class="pr">from 402 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew7wr361s/"><span class="ph"><img src="/images/thumb/electrolux-ew7wr361s__main-323dbbb96de2-320.webp" alt="Electrolux Washer-Dryer EW7WR361S" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Washer-Dryer EW7WR361S</b><span class="pr">from 415 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-en-3889mfw/"><span class="ph"><img src="/images/thumb/electrolux-en-3889mfw__main-f68e72c3f3cf-320.webp" alt="Electrolux Refrigerator EN-3889MFW" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Refrigerator EN-3889MFW</b><span class="pr">from 444 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/electrolux-ew7d495ude/"><span class="ph"><img src="/images/thumb/electrolux-ew7d495ude__main-1b59debe4d26-320.webp" alt="Electrolux Dryer EW7D495UDE" width="320" height="320" loading="lazy" decoding="async"></span><b>Electrolux Dryer EW7D495UDE</b><span class="pr">from 454 900 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Electrolux Washing Machine EWS6426BE at 121 900 ֏. Most widely sold: Electrolux Washing Machine EW6SM327DE (2 shops). Prices 121 900 ֏–454 900 ֏ across 2 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

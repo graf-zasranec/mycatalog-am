@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,60 +35,79 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Игровые консоли","item":"https://better.am/ru/c/console/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/console/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/console/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../?lang=ru">Better.am</a> › <span>Игровые консоли</span></nav>
 <main>
 <h1>Игровые консоли</h1>
 <p class="lead">Игровые консоли. Моделей: 29, от 22 000 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — Logitech F710 Wireless Gamepad, 22 000 ֏. Больше всего предложений у Sony PlayStation 5 Slim (Disc) (9 магазинах). Цены: 22 000 ֏–1 679 400 ֏, магазинов: 12.</p>
-
 <a class="go" href="../../../?lang=ru#/c/console">Фильтровать и сравнивать на Better.am</a>
-<p class="lead"><a href="../../../ru/c/console/sony/">Sony</a> · <a href="../../../ru/c/console/microsoft/">Microsoft</a> · <a href="../../../ru/c/console/logitech/">Logitech</a></p>
-<p><a href="../../../ru/deals/">Что подешевело</a></p>
+
+<ul class="pills"><li><a href="../../../ru/c/console/sony/">Sony</a></li><li><a href="../../../ru/c/console/microsoft/">Microsoft</a></li><li><a href="../../../ru/c/console/logitech/">Logitech</a></li><li><a href="../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../ru/p/sony-ps5-slim/">Sony PlayStation 5 Slim (Disc)</a><span>от 309 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-pro/">Sony PlayStation 5 Pro</a><span>от 529 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-playstation-portal/">Sony PlayStation Portal</a><span>от 109 900 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-slim-digital/">Sony PlayStation 5 Slim Digital Edition</a><span>от 278 500 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense/">Sony DualSense Wireless Controller</a><span>от 34 900 ֏</span></li>
-<li><a href="../../../ru/p/sony-playstation-vr2/">Sony PlayStation VR2</a><span>от 219 000 ֏</span></li>
-<li><a href="../../../ru/p/microsoft-xbox-controller/">Microsoft Xbox Wireless Controller</a><span>от 31 900 ֏</span></li>
-<li><a href="../../../ru/p/xbox-series-s/">Microsoft Xbox Series S</a><span>от 151 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-edge/">Sony PS5 DualSense Edge</a><span>от 99 000 ֏</span></li>
-<li><a href="../../../ru/p/xbox-series-x/">Microsoft Xbox Series X</a><span>от 235 000 ֏</span></li>
-<li><a href="../../../ru/p/logitech-f710/">Logitech F710 Wireless Gamepad</a><span>от 22 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-genshin-impact-edition/">Sony PS5 DualSense Genshin Impact Edition</a><span>от 58 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-rog-ally-x/">ASUS ROG Ally X</a><span>от 559 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-hd-camera/">Sony PS5 HD Camera</a><span>от 28 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-backbone/">Sony PS5 BackBone</a><span>от 55 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-hyperpop-collection-remix/">Sony PS5 DualSense Hyperpop Collection Remix</a><span>от 55 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-hyperpop-collection-rhythm/">Sony PS5 DualSense Hyperpop Collection Rhythm</a><span>от 55 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-hyperpop-collection-techno/">Sony PS5 DualSense Hyperpop Collection Techno</a><span>от 55 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-god-of-war-20th-anniversary-edition/">Sony PS5 DualSense God of War 20TH Anniversary Edition</a><span>от 59 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-astro-bot/">Sony PS5 DualSense Astro Bot</a><span>от 69 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-driving-force-hori-racing-wheel/">Sony PS5 Driving Force Hori Racing Wheel</a><span>от 78 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-ps5-dualsense-death-stranding-2-edition/">Sony PS5 DualSense Death Stranding 2 Edition</a><span>от 79 000 ֏</span></li>
-<li><a href="../../../ru/p/hori-rwa-racing-wheel-apex-for-ps5/">Hori RWA Racing Wheel Apex for PS5</a><span>от 86 000 ֏</span></li>
-<li><a href="../../../ru/p/logitech-g29-driving-force-racing-wheel/">Logitech G29 Driving Force Racing Wheel (PS5/PS4/PC)</a><span>от 119 000 ֏</span></li>
-<li><a href="../../../ru/p/logitech-g923-trueforce-racing-wheel/">Logitech G923 TrueForce Racing Wheel (PS5/PC)</a><span>от 147 000 ֏</span></li>
-<li><a href="../../../ru/p/sony-playstation-vr2-horizon/">Sony PlayStation VR2 Horizon</a><span>от 289 900 ֏</span></li>
-<li><a href="../../../ru/p/asus-rog-ally-7/">ASUS ROG Ally</a><span>от 345 000 ֏</span></li>
-<li><a href="../../../ru/p/lenovo-legion-go-2/">Lenovo LEGION GO 2</a><span>от 899 900 ֏</span></li>
-<li><a href="../../../ru/p/apple-vision-pro/">Apple Vision Pro</a><span>от 1 679 400 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../ru/p/sony-ps5-slim/"><span class="ph"><img src="/images/thumb/sony-ps5-slim__white-ff56163dcf7a-320.webp" alt="Sony PlayStation 5 Slim (Disc)" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PlayStation 5 Slim (Disc)</b><span class="pr">от 309 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-pro/"><span class="ph"><img src="/images/thumb/sony-ps5-pro__white-def29b3a5cef-320.webp" alt="Sony PlayStation 5 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PlayStation 5 Pro</b><span class="pr">от 529 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-playstation-portal/"><span class="ph"><img src="/images/thumb/sony-playstation-portal__white-6251c07e9897-320.webp" alt="Sony PlayStation Portal" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PlayStation Portal</b><span class="pr">от 109 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-slim-digital/"><span class="ph"><img src="/images/thumb/sony-ps5-slim-digital__main-f7c3f88d4d07-320.webp" alt="Sony PlayStation 5 Slim Digital Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PlayStation 5 Slim Digital Edition</b><span class="pr">от 278 500 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense__alpine-green-8eafdbe2d33a-320.webp" alt="Sony DualSense Wireless Controller" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony DualSense Wireless Controller</b><span class="pr">от 34 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-playstation-vr2/"><span class="ph"><img src="/images/thumb/sony-playstation-vr2__main-055f5c32fe2b-320.webp" alt="Sony PlayStation VR2" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PlayStation VR2</b><span class="pr">от 219 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/microsoft-xbox-controller/"><span class="ph"><img src="/images/thumb/microsoft-xbox-controller__carbon-black-df9a61e3a042-320.webp" alt="Microsoft Xbox Wireless Controller" width="320" height="320" loading="lazy" decoding="async"></span><b>Microsoft Xbox Wireless Controller</b><span class="pr">от 31 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xbox-series-s/"><span class="ph"><img src="/images/thumb/xbox-series-s__white-164cd65cf4b4-320.webp" alt="Microsoft Xbox Series S" width="320" height="320" loading="lazy" decoding="async"></span><b>Microsoft Xbox Series S</b><span class="pr">от 151 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-edge/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-edge__black-80c5640268fe-320.webp" alt="Sony PS5 DualSense Edge" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Edge</b><span class="pr">от 99 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/xbox-series-x/"><span class="ph"><img src="/images/thumb/xbox-series-x__black-bd5a94eefe95-320.webp" alt="Microsoft Xbox Series X" width="320" height="320" loading="lazy" decoding="async"></span><b>Microsoft Xbox Series X</b><span class="pr">от 235 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/logitech-f710/"><span class="ph"><img src="/images/thumb/logitech-f710__silver-1836eeb2d381-320.webp" alt="Logitech F710 Wireless Gamepad" width="320" height="320" loading="lazy" decoding="async"></span><b>Logitech F710 Wireless Gamepad</b><span class="pr">от 22 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-genshin-impact-edition/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-genshin-impact-edition__main-50540ed0d30c-320.webp" alt="Sony PS5 DualSense Genshin Impact Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Genshin Impact Edition</b><span class="pr">от 58 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-rog-ally-x/"><span class="ph"><img src="/images/thumb/asus-rog-ally-x__main-69993aa2843f-320.webp" alt="ASUS ROG Ally X" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ROG Ally X</b><span class="pr">от 559 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-hd-camera/"><span class="ph"><img src="/images/thumb/sony-ps5-hd-camera__main-a6e0c1be5ef4-320.webp" alt="Sony PS5 HD Camera" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 HD Camera</b><span class="pr">от 28 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-backbone/"><span class="ph"><img src="/images/thumb/sony-ps5-backbone__main-e0edc655babb-320.webp" alt="Sony PS5 BackBone" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 BackBone</b><span class="pr">от 55 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-hyperpop-collection-remix/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-hyperpop-collection-remix__green-06df279a118a-320.webp" alt="Sony PS5 DualSense Hyperpop Collection Remix" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Hyperpop Collection Remix</b><span class="pr">от 55 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-hyperpop-collection-rhythm/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-hyperpop-collection-rhythm__blue-268fd10bec8f-320.webp" alt="Sony PS5 DualSense Hyperpop Collection Rhythm" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Hyperpop Collection Rhythm</b><span class="pr">от 55 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-hyperpop-collection-techno/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-hyperpop-collection-techno__red-6b3942e658d1-320.webp" alt="Sony PS5 DualSense Hyperpop Collection Techno" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Hyperpop Collection Techno</b><span class="pr">от 55 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-god-of-war-20th-anniversary-edition/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-god-of-war-20th-anniversary-edition__main-67fbb280b7df-320.webp" alt="Sony PS5 DualSense God of War 20TH Anniversary Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense God of War 20TH Anniversary Edition</b><span class="pr">от 59 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-astro-bot/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-astro-bot__main-92a7b4a072dd-320.webp" alt="Sony PS5 DualSense Astro Bot" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Astro Bot</b><span class="pr">от 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-driving-force-hori-racing-wheel/"><span class="ph"><img src="/images/thumb/sony-ps5-driving-force-hori-racing-wheel__main-369b3371b319-320.webp" alt="Sony PS5 Driving Force Hori Racing Wheel" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 Driving Force Hori Racing Wheel</b><span class="pr">от 78 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-ps5-dualsense-death-stranding-2-edition/"><span class="ph"><img src="/images/thumb/sony-ps5-dualsense-death-stranding-2-edition__main-d131771d7a7e-320.webp" alt="Sony PS5 DualSense Death Stranding 2 Edition" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS5 DualSense Death Stranding 2 Edition</b><span class="pr">от 79 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/hori-rwa-racing-wheel-apex-for-ps5/"><span class="ph"><img src="/images/thumb/hori-rwa-racing-wheel-apex-for-ps5__main-5d514ec8128f-320.webp" alt="Hori RWA Racing Wheel Apex for PS5" width="320" height="320" loading="lazy" decoding="async"></span><b>Hori RWA Racing Wheel Apex for PS5</b><span class="pr">от 86 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/logitech-g29-driving-force-racing-wheel/"><span class="ph"><img src="/images/thumb/logitech-g29-driving-force-racing-wheel__main-2c8fee586cfd-320.webp" alt="Logitech G29 Driving Force Racing Wheel (PS5/PS4/PC)" width="320" height="320" loading="lazy" decoding="async"></span><b>Logitech G29 Driving Force Racing Wheel (PS5/PS4/PC)</b><span class="pr">от 119 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/logitech-g923-trueforce-racing-wheel/"><span class="ph"><img src="/images/thumb/logitech-g923-trueforce-racing-wheel__main-eb3e5ac6d1e0-320.webp" alt="Logitech G923 TrueForce Racing Wheel (PS5/PC)" width="320" height="320" loading="lazy" decoding="async"></span><b>Logitech G923 TrueForce Racing Wheel (PS5/PC)</b><span class="pr">от 147 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/sony-playstation-vr2-horizon/"><span class="ph"><img src="/images/thumb/sony-playstation-vr2-horizon__main-c8104d287549-320.webp" alt="Sony PlayStation VR2 Horizon" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PlayStation VR2 Horizon</b><span class="pr">от 289 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/asus-rog-ally-7/"><span class="ph"><img src="/images/thumb/asus-rog-ally-7__main-96670ba38222-320.webp" alt="ASUS ROG Ally" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ROG Ally</b><span class="pr">от 345 000 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/lenovo-legion-go-2/"><span class="ph"><img src="/images/thumb/lenovo-legion-go-2__main-7981a9230228-320.webp" alt="Lenovo LEGION GO 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Lenovo LEGION GO 2</b><span class="pr">от 899 900 ֏</span></a></li>
+<li><a class="cd" href="../../../ru/p/apple-vision-pro/"><span class="ph"><img src="/images/thumb/apple-vision-pro__white-f081d5f64324-320.webp" alt="Apple Vision Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Vision Pro</b><span class="pr">от 1 679 400 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — Logitech F710 Wireless Gamepad, 22 000 ֏. Больше всего предложений у Sony PlayStation 5 Slim (Disc) (9 магазинах). Цены: 22 000 ֏–1 679 400 ֏, магазинов: 12.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

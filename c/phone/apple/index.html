@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,50 +35,69 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/"},{"@type":"ListItem","position":2,"name":"Հեռախոսներ","item":"https://better.am/c/phone/"},{"@type":"ListItem","position":3,"name":"Apple — Հեռախոսներ","item":"https://better.am/c/phone/apple/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/">Կատալոգ</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></nav>
+<div class="lg"><span aria-current="true">ՀԱՅ</span><a href="/ru/c/phone/apple/" hreflang="ru">РУС</a><a href="/en/c/phone/apple/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../">Better.am</a> › <a href="../../../c/phone/">Հեռախոսներ</a> › <span>Apple — Հեռախոսներ</span></nav>
 <main>
 <h1>Apple — Հեռախոսներ</h1>
 <p class="lead">Apple — Հեռախոսներ. 19 մոդել, 199 900 ֏-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։</p>
-<p>Ամենաէժանը՝ Apple iPhone 13՝ 199 900 ֏։ Ամենաշատ խանութներում՝ Apple iPhone 17 Pro (21 խանութ)։ Գները՝ 199 900 ֏–2 499 000 ֏, 22 խանութ։</p>
-<p>Այլ ապրանքանիշեր՝ <a href="../../../c/phone/xiaomi/">Xiaomi</a> · <a href="../../../c/phone/samsung/">Samsung</a> · <a href="../../../c/phone/honor/">Honor</a> · <a href="../../../c/phone/google/">Google</a> · <a href="../../../c/phone/nothing/">Nothing</a> · <a href="../../../c/phone/oppo/">OPPO</a> · <a href="../../../c/phone/oneplus/">OnePlus</a> · <a href="../../../c/phone/realme/">Realme</a></p>
 <a class="go" href="../../../#/c/phone">Զտել և համեմատել Better.am-ում</a>
-
-<p><a href="../../../deals/">Ինչն է էժանացել</a></p>
+<p class="lead" style="margin:18px 0 0">Այլ ապրանքանիշեր՝ </p><ul class="pills" style="margin-top:6px"><li><a href="../../../c/phone/xiaomi/">Xiaomi</a></li><li><a href="../../../c/phone/samsung/">Samsung</a></li><li><a href="../../../c/phone/honor/">Honor</a></li><li><a href="../../../c/phone/google/">Google</a></li><li><a href="../../../c/phone/nothing/">Nothing</a></li><li><a href="../../../c/phone/oppo/">OPPO</a></li><li><a href="../../../c/phone/oneplus/">OnePlus</a></li><li><a href="../../../c/phone/realme/">Realme</a></li></ul>
+<ul class="pills"><li><a href="../../../deals/">Ինչն է էժանացել</a></li></ul>
 <h2>Մոդելներ և գներ</h2>
-<ul class="pl"><li><a href="../../../p/apple-iphone-duo/">Apple iPhone Duo</a><span>979 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-18-pro/">Apple iPhone 18 Pro</a><span>529 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-18-pro-max/">Apple iPhone 18 Pro Max</a><span>639 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-17-pro-max/">Apple iPhone 17 Pro Max</a><span>485 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-16/">Apple iPhone 16</a><span>299 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-17/">Apple iPhone 17</a><span>354 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-17-pro/">Apple iPhone 17 Pro</a><span>455 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-15/">Apple iPhone 15</a><span>268 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-17e/">Apple iPhone 17e</a><span>269 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-air/">Apple iPhone Air</a><span>369 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-13/">Apple iPhone 13</a><span>199 900 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-16-plus/">Apple iPhone 16 Plus</a><span>319 900 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-16-pro/">Apple iPhone 16 Pro</a><span>399 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-14/">Apple iPhone 14</a><span>249 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-16-pro-max/">Apple iPhone 16 Pro Max</a><span>379 900 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-14-plus/">Apple iPhone 14 Plus</a><span>219 900 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-16e/">Apple iPhone 16e</a><span>235 000 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-14-pro-max/">Apple iPhone 14 Pro Max</a><span>269 900 ֏-ից</span></li>
-<li><a href="../../../p/apple-iphone-15-pro/">Apple iPhone 15 Pro</a><span>575 900 ֏-ից</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../p/apple-iphone-duo/"><span class="ph"><img src="/images/thumb/apple-iphone-duo__night-sky-dd69552abfa1-320.webp" alt="Apple iPhone Duo" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone Duo</b><span class="pr">979 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-18-pro/"><span class="ph"><img src="/images/thumb/apple-iphone-18-pro__burgundy-4bcee6120892-320.webp" alt="Apple iPhone 18 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 18 Pro</b><span class="pr">529 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-18-pro-max/"><span class="ph"><img src="/images/thumb/apple-iphone-18-pro-max__burgundy-4bcee6120892-320.webp" alt="Apple iPhone 18 Pro Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 18 Pro Max</b><span class="pr">639 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-17-pro-max/"><span class="ph"><img src="/images/thumb/apple-iphone-17-pro-max__cosmic-orange-0df781e6189b-320.webp" alt="Apple iPhone 17 Pro Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 17 Pro Max</b><span class="pr">485 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-16/"><span class="ph"><img src="/images/thumb/apple-iphone-16__ultramarine-11553c06358d-320.webp" alt="Apple iPhone 16" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16</b><span class="pr">299 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-17/"><span class="ph"><img src="/images/thumb/apple-iphone-17__black-067ef07b0685-320.webp" alt="Apple iPhone 17" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 17</b><span class="pr">354 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-17-pro/"><span class="ph"><img src="/images/thumb/apple-iphone-17-pro__cosmic-orange-896355dbe026-320.webp" alt="Apple iPhone 17 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 17 Pro</b><span class="pr">455 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-15/"><span class="ph"><img src="/images/thumb/apple-iphone-15__pink-7cdc029bfc2a-320.webp" alt="Apple iPhone 15" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 15</b><span class="pr">268 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-17e/"><span class="ph"><img src="/images/thumb/apple-iphone-17e__black-92e449029a77-320.webp" alt="Apple iPhone 17e" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 17e</b><span class="pr">269 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-air/"><span class="ph"><img src="/images/thumb/apple-iphone-air__space-black-af830d565422-320.webp" alt="Apple iPhone Air" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone Air</b><span class="pr">369 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-13/"><span class="ph"><img src="/images/thumb/apple-iphone-13__blue-49624b20e308-320.webp" alt="Apple iPhone 13" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 13</b><span class="pr">199 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-16-plus/"><span class="ph"><img src="/images/thumb/apple-iphone-16-plus__black-8b93ba944171-320.webp" alt="Apple iPhone 16 Plus" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16 Plus</b><span class="pr">319 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-16-pro/"><span class="ph"><img src="/images/thumb/apple-iphone-16-pro__black-titanium-bf6bd1711e0b-320.webp" alt="Apple iPhone 16 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16 Pro</b><span class="pr">399 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-14/"><span class="ph"><img src="/images/thumb/apple-iphone-14__midnight-b3101b386b4c-320.webp" alt="Apple iPhone 14" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 14</b><span class="pr">249 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-16-pro-max/"><span class="ph"><img src="/images/thumb/apple-iphone-16-pro-max__black-titanium-5373129aeac9-320.webp" alt="Apple iPhone 16 Pro Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16 Pro Max</b><span class="pr">379 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-14-plus/"><span class="ph"><img src="/images/thumb/apple-iphone-14-plus__midnight-83189ede4b2f-320.webp" alt="Apple iPhone 14 Plus" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 14 Plus</b><span class="pr">219 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-16e/"><span class="ph"><img src="/images/thumb/apple-iphone-16e__black-887f39abb512-320.webp" alt="Apple iPhone 16e" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16e</b><span class="pr">235 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-14-pro-max/"><span class="ph"><img src="/images/thumb/apple-iphone-14-pro-max__space-black-1d415c832354-320.webp" alt="Apple iPhone 14 Pro Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 14 Pro Max</b><span class="pr">269 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../../p/apple-iphone-15-pro/"><span class="ph"><img src="/images/thumb/apple-iphone-15-pro__natural-titanium-d57b69ebd665-320.webp" alt="Apple iPhone 15 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 15 Pro</b><span class="pr">575 900 ֏-ից</span></a></li></ul>
+<p style="margin-top:22px">Ամենաէժանը՝ Apple iPhone 13՝ 199 900 ֏։ Ամենաշատ խանութներում՝ Apple iPhone 17 Pro (21 խանութ)։ Գները՝ 199 900 ֏–2 499 000 ֏, 22 խանութ։</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/c/laptop/">Նոութբուքեր</a><a href="/c/ereader/">Էլ. ընթերցիչներ</a><a href="/c/monitor/">Մոնիտորներ</a><a href="/c/headphones/">Ականջակալներ</a><a href="/c/speaker/">Բարձրախոսներ</a><a href="/c/accessory/">Apple աքսեսուարներ</a><a href="/c/console/">Խաղային կոնսոլներ</a><a href="/c/desktop/">Համակարգիչներ</a><a href="/c/tablet/">Պլանշետներ</a><a href="/c/phone/">Հեռախոսներ</a><a href="/c/watch/">Խելացի ժամացույցներ</a><a href="/c/component/">Մասնագործեր</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></div></footer></body></html>

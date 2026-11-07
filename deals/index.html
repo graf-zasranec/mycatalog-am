@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,52 +35,72 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/"},{"@type":"ListItem","position":2,"name":"Գների անկում","item":"https://better.am/deals/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/">Կատալոգ</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></nav>
+<div class="lg"><span aria-current="true">ՀԱՅ</span><a href="/ru/deals/" hreflang="ru">РУС</a><a href="/en/deals/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../">Better.am</a> › <span>Գների անկում</span></nav>
 <main>
 <h1>Գների անկում</h1>
 <p class="lead">27 ապրանք, որոնց ամենացածր գինը իրականում իջել է։ Հաշվում ենք միայն առնվազն 5% անկումը, երբ գները համեմատվել են նույն թվով խանութներում առնվազն մեկ շաբաթ։</p>
-<ul class="pl"><li><a href="../p/de-longhi-ecam650-85/">De'Longhi ECAM650.85 Coffee Machine</a><span>575 000 ֏ · VLV · −364 000 ֏ (−39%), 01.11-ից</span></li>
-<li><a href="../p/apple-iphone-16-pro-max/">Apple iPhone 16 Pro Max</a><span>379 900 ֏ · Mobile Centre · −140 000 ֏ (−27%), 03.11-ից</span></li>
-<li><a href="../p/toshiba-43c350le/">Toshiba 43C350LE</a><span>129 900 ֏ · VLV · −45 100 ֏ (−26%), 03.11-ից</span></li>
-<li><a href="../p/de-longhi-ec9255/">De'Longhi EC9255 Coffee Machine</a><span>247 000 ֏ · VLV · −62 000 ֏ (−20%), 01.11-ից</span></li>
-<li><a href="../p/de-longhi-ecam320-60/">De'Longhi ECAM320.60 Coffee Machine</a><span>319 000 ֏ · VLV · −80 000 ֏ (−20%), 01.11-ից</span></li>
-<li><a href="../p/de-longhi-ecam320-70/">De'Longhi ECAM320.70 Coffee Machine</a><span>327 000 ֏ · VLV · −82 000 ֏ (−20%), 01.11-ից</span></li>
-<li><a href="../p/de-longhi-ec9555/">De'Longhi EC9555 Coffee Machine</a><span>343 000 ֏ · VLV · −86 000 ֏ (−20%), 01.11-ից</span></li>
-<li><a href="../p/de-longhi-ecam630-55/">De'Longhi ECAM630.55 Coffee Machine</a><span>543 000 ֏ · VLV · −136 000 ֏ (−20%), 01.11-ից</span></li>
-<li><a href="../p/braun-kf7120bk/">Braun KF7120BK</a><span>39 900 ֏ · Zigzag · −9 100 ֏ (−19%), 01.11-ից</span></li>
-<li><a href="../p/xiaomi-smart-kettle-2-pro/">Xiaomi Smart Kettle 2 Pro</a><span>23 900 ֏ · VLV · −5 000 ֏ (−17%), 03.11-ից</span></li>
-<li><a href="../p/google-pixel-11/">Google Pixel 11</a><span>369 000 ֏ · REDstore · −56 000 ֏ (−13%), 02.11-ից</span></li>
-<li><a href="../p/harman-kardon-soundsticks-4/">Harman Kardon Soundsticks 4</a><span>139 000 ֏ · REDstore · −20 900 ֏ (−13%), 14.10-ից</span></li>
-<li><a href="../p/xiaomi-17-pro-max/">Xiaomi 17 Pro Max</a><span>439 000 ֏ · Yerevan Mobile · −60 000 ֏ (−12%), 23.10-ից</span></li>
-<li><a href="../p/samsung-galaxy-buds-3-pro/">Samsung Galaxy Buds 3 Pro</a><span>54 000 ֏ · 3DPlanet · −5 000 ֏ (−8%), 15.10-ից</span></li>
-<li><a href="../p/xiaomi-body-composition-scale-s400/">Xiaomi Body Composition Scale S400</a><span>10 900 ֏ · VLV · −1 000 ֏ (−8%), 03.11-ից</span></li>
-<li><a href="../p/amazon-kindle-kids/">Amazon Kindle Kids</a><span>89 000 ֏ · REDstore · −8 000 ֏ (−8%), 31.10-ից</span></li>
-<li><a href="../p/sony-kd-65x85l/">Sony KD-65X85L</a><span>479 900 ֏ · Zigzag · −43 000 ֏ (−8%), 15.10-ից</span></li>
-<li><a href="../p/xiaomi-vacuum-6-max/">Xiaomi Vacuum 6 Max</a><span>469 900 ֏ · Vesta · −40 000 ֏ (−8%), 31.10-ից</span></li>
-<li><a href="../p/xiaomi-pad-8-pro/">Xiaomi Pad 8 Pro</a><span>239 000 ֏ · Yerevan Mobile · −20 000 ֏ (−8%), 23.10-ից</span></li>
-<li><a href="../p/apple-macbook-air-13-m4/">Apple MacBook Air M4</a><span>435 000 ֏ · iBolit · −34 000 ֏ (−7%), 30.10-ից</span></li>
-<li><a href="../p/apple-iphone-16-pro/">Apple iPhone 16 Pro</a><span>399 000 ֏ · LikeMobile · −30 000 ֏ (−7%), 21.10-ից</span></li>
-<li><a href="../p/hisense-32a4q/">Hisense 32A4Q</a><span>92 900 ֏ · VLV · −6 100 ֏ (−6%), 03.11-ից</span></li>
-<li><a href="../p/jbl-horizon-3/">JBL Horizon 3</a><span>64 900 ֏ · VLV · −4 100 ֏ (−6%), 03.11-ից</span></li>
-<li><a href="../p/apple-watch-series-10/">Apple Watch Series 10</a><span>149 900 ֏ · Ucom · −9 100 ֏ (−6%), 02.11-ից</span></li>
-<li><a href="../p/apple-iphone-16-plus/">Apple iPhone 16 Plus</a><span>319 900 ֏ · Mobile Centre · −19 100 ֏ (−6%), 03.11-ից</span></li>
-<li><a href="../p/asus-vivobook-x1404va-i38128/">ASUS VivoBook X1404VA-I38128</a><span>179 000 ֏ · REDstore · −10 000 ֏ (−5%), 21.10-ից</span></li>
-<li><a href="../p/sony-kd-55x85l/">Sony KD-55X85L</a><span>379 900 ֏ · Zigzag · −20 000 ֏ (−5%), 15.10-ից</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../p/de-longhi-ecam650-85/"><span class="ph"><img src="/images/thumb/de-longhi-ecam650-85__main-f5fda539300f-320.webp" alt="De'Longhi ECAM650.85 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM650.85 Coffee Machine</b><span class="dp">−364 000 ֏ (−39%)</span><span class="pr">575 000 ֏</span><span class="sh">VLV · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/apple-iphone-16-pro-max/"><span class="ph"><img src="/images/thumb/apple-iphone-16-pro-max__black-titanium-5373129aeac9-320.webp" alt="Apple iPhone 16 Pro Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16 Pro Max</b><span class="dp">−140 000 ֏ (−27%)</span><span class="pr">379 900 ֏</span><span class="sh">Mobile Centre · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/toshiba-43c350le/"><span class="ph"><img src="/images/thumb/toshiba-43c350le__main-d3563a631157-320.webp" alt="Toshiba 43C350LE" width="320" height="320" loading="lazy" decoding="async"></span><b>Toshiba 43C350LE</b><span class="dp">−45 100 ֏ (−26%)</span><span class="pr">129 900 ֏</span><span class="sh">VLV · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/de-longhi-ec9255/"><span class="ph"><img src="/images/thumb/de-longhi-ec9255__metal-23828a534bc3-320.webp" alt="De'Longhi EC9255 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC9255 Coffee Machine</b><span class="dp">−62 000 ֏ (−20%)</span><span class="pr">247 000 ֏</span><span class="sh">VLV · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/de-longhi-ecam320-60/"><span class="ph"><img src="/images/thumb/de-longhi-ecam320-60__black-7bade2d57850-320.webp" alt="De'Longhi ECAM320.60 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM320.60 Coffee Machine</b><span class="dp">−80 000 ֏ (−20%)</span><span class="pr">319 000 ֏</span><span class="sh">VLV · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/de-longhi-ecam320-70/"><span class="ph"><img src="/images/thumb/de-longhi-ecam320-70__main-e92937c9d892-320.webp" alt="De'Longhi ECAM320.70 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM320.70 Coffee Machine</b><span class="dp">−82 000 ֏ (−20%)</span><span class="pr">327 000 ֏</span><span class="sh">VLV · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/de-longhi-ec9555/"><span class="ph"><img src="/images/thumb/de-longhi-ec9555__black-d0961df479fe-320.webp" alt="De'Longhi EC9555 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi EC9555 Coffee Machine</b><span class="dp">−86 000 ֏ (−20%)</span><span class="pr">343 000 ֏</span><span class="sh">VLV · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/de-longhi-ecam630-55/"><span class="ph"><img src="/images/thumb/de-longhi-ecam630-55__main-7897ce2fa6da-320.webp" alt="De'Longhi ECAM630.55 Coffee Machine" width="320" height="320" loading="lazy" decoding="async"></span><b>De'Longhi ECAM630.55 Coffee Machine</b><span class="dp">−136 000 ֏ (−20%)</span><span class="pr">543 000 ֏</span><span class="sh">VLV · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/braun-kf7120bk/"><span class="ph"><img src="/images/thumb/braun-kf7120bk__main-b78bb88eeffd-320.webp" alt="Braun KF7120BK" width="320" height="320" loading="lazy" decoding="async"></span><b>Braun KF7120BK</b><span class="dp">−9 100 ֏ (−19%)</span><span class="pr">39 900 ֏</span><span class="sh">Zigzag · 01.11-ից</span></a></li>
+<li><a class="cd" href="../p/xiaomi-smart-kettle-2-pro/"><span class="ph"><img src="/images/thumb/xiaomi-smart-kettle-2-pro__main-0e10f434a4b3-320.webp" alt="Xiaomi Smart Kettle 2 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Smart Kettle 2 Pro</b><span class="dp">−5 000 ֏ (−17%)</span><span class="pr">23 900 ֏</span><span class="sh">VLV · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/google-pixel-11/"><span class="ph"><img src="/images/thumb/google-pixel-11__obsidian-37cdb950dfdb-320.webp" alt="Google Pixel 11" width="320" height="320" loading="lazy" decoding="async"></span><b>Google Pixel 11</b><span class="dp">−56 000 ֏ (−13%)</span><span class="pr">369 000 ֏</span><span class="sh">REDstore · 02.11-ից</span></a></li>
+<li><a class="cd" href="../p/harman-kardon-soundsticks-4/"><span class="ph"><img src="/images/thumb/harman-kardon-soundsticks-4__white-fc2f91099626-320.webp" alt="Harman Kardon Soundsticks 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Harman Kardon Soundsticks 4</b><span class="dp">−20 900 ֏ (−13%)</span><span class="pr">139 000 ֏</span><span class="sh">REDstore · 14.10-ից</span></a></li>
+<li><a class="cd" href="../p/xiaomi-17-pro-max/"><span class="ph"><img src="/images/thumb/xiaomi-17-pro-max__green-9bf981e3428a-320.webp" alt="Xiaomi 17 Pro Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi 17 Pro Max</b><span class="dp">−60 000 ֏ (−12%)</span><span class="pr">439 000 ֏</span><span class="sh">Yerevan Mobile · 23.10-ից</span></a></li>
+<li><a class="cd" href="../p/samsung-galaxy-buds-3-pro/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-3-pro__white-8fc82eb08189-320.webp" alt="Samsung Galaxy Buds 3 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 3 Pro</b><span class="dp">−5 000 ֏ (−8%)</span><span class="pr">54 000 ֏</span><span class="sh">3DPlanet · 15.10-ից</span></a></li>
+<li><a class="cd" href="../p/xiaomi-body-composition-scale-s400/"><span class="ph"><img src="/images/thumb/xiaomi-body-composition-scale-s400__main-db47866efb93-320.webp" alt="Xiaomi Body Composition Scale S400" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Body Composition Scale S400</b><span class="dp">−1 000 ֏ (−8%)</span><span class="pr">10 900 ֏</span><span class="sh">VLV · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/amazon-kindle-kids/"><span class="ph"><img src="/images/thumb/amazon-kindle-kids__space-whale-1dad1cf4e6de-320.webp" alt="Amazon Kindle Kids" width="320" height="320" loading="lazy" decoding="async"></span><b>Amazon Kindle Kids</b><span class="dp">−8 000 ֏ (−8%)</span><span class="pr">89 000 ֏</span><span class="sh">REDstore · 31.10-ից</span></a></li>
+<li><a class="cd" href="../p/sony-kd-65x85l/"><span class="ph"><img src="/images/thumb/sony-kd-65x85l__main-53f9b6eb19ab-320.webp" alt="Sony KD-65X85L" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony KD-65X85L</b><span class="dp">−43 000 ֏ (−8%)</span><span class="pr">479 900 ֏</span><span class="sh">Zigzag · 15.10-ից</span></a></li>
+<li><a class="cd" href="../p/xiaomi-vacuum-6-max/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-6-max__dark-gray-silver-90e97b9ba7b3-320.webp" alt="Xiaomi Vacuum 6 Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum 6 Max</b><span class="dp">−40 000 ֏ (−8%)</span><span class="pr">469 900 ֏</span><span class="sh">Vesta · 31.10-ից</span></a></li>
+<li><a class="cd" href="../p/xiaomi-pad-8-pro/"><span class="ph"><img src="/images/thumb/xiaomi-pad-8-pro__main-bc4abebe0129-320.webp" alt="Xiaomi Pad 8 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Pad 8 Pro</b><span class="dp">−20 000 ֏ (−8%)</span><span class="pr">239 000 ֏</span><span class="sh">Yerevan Mobile · 23.10-ից</span></a></li>
+<li><a class="cd" href="../p/apple-macbook-air-13-m4/"><span class="ph"><img src="/images/thumb/apple-macbook-air-13-m4__sky-blue-964d5014dfe6-320.webp" alt="Apple MacBook Air M4" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple MacBook Air M4</b><span class="dp">−34 000 ֏ (−7%)</span><span class="pr">435 000 ֏</span><span class="sh">iBolit · 30.10-ից</span></a></li>
+<li><a class="cd" href="../p/apple-iphone-16-pro/"><span class="ph"><img src="/images/thumb/apple-iphone-16-pro__black-titanium-bf6bd1711e0b-320.webp" alt="Apple iPhone 16 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16 Pro</b><span class="dp">−30 000 ֏ (−7%)</span><span class="pr">399 000 ֏</span><span class="sh">LikeMobile · 21.10-ից</span></a></li>
+<li><a class="cd" href="../p/hisense-32a4q/"><span class="ph"><img src="/images/thumb/hisense-32a4q__main-581885363c77-320.webp" alt="Hisense 32A4Q" width="320" height="320" loading="lazy" decoding="async"></span><b>Hisense 32A4Q</b><span class="dp">−6 100 ֏ (−6%)</span><span class="pr">92 900 ֏</span><span class="sh">VLV · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/jbl-horizon-3/"><span class="ph"><img src="/images/thumb/jbl-horizon-3__gray-01bc88ea578f-320.webp" alt="JBL Horizon 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Horizon 3</b><span class="dp">−4 100 ֏ (−6%)</span><span class="pr">64 900 ֏</span><span class="sh">VLV · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/apple-watch-series-10/"><span class="ph"><img src="/images/thumb/apple-watch-series-10__jet-black-d6a3cf2c7f7c-320.webp" alt="Apple Watch Series 10" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple Watch Series 10</b><span class="dp">−9 100 ֏ (−6%)</span><span class="pr">149 900 ֏</span><span class="sh">Ucom · 02.11-ից</span></a></li>
+<li><a class="cd" href="../p/apple-iphone-16-plus/"><span class="ph"><img src="/images/thumb/apple-iphone-16-plus__black-8b93ba944171-320.webp" alt="Apple iPhone 16 Plus" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple iPhone 16 Plus</b><span class="dp">−19 100 ֏ (−6%)</span><span class="pr">319 900 ֏</span><span class="sh">Mobile Centre · 03.11-ից</span></a></li>
+<li><a class="cd" href="../p/asus-vivobook-x1404va-i38128/"><span class="ph"><img src="/images/thumb/asus-vivobook-x1404va-i38128__main-976a58f01e68-320.webp" alt="ASUS VivoBook X1404VA-I38128" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS VivoBook X1404VA-I38128</b><span class="dp">−10 000 ֏ (−5%)</span><span class="pr">179 000 ֏</span><span class="sh">REDstore · 21.10-ից</span></a></li>
+<li><a class="cd" href="../p/sony-kd-55x85l/"><span class="ph"><img src="/images/thumb/sony-kd-55x85l__main-6f3b03542ba6-320.webp" alt="Sony KD-55X85L" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony KD-55X85L</b><span class="dp">−20 000 ֏ (−5%)</span><span class="pr">379 900 ֏</span><span class="sh">Zigzag · 15.10-ից</span></a></li></ul>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/c/laptop/">Նոութբուքեր</a><a href="/c/ereader/">Էլ. ընթերցիչներ</a><a href="/c/monitor/">Մոնիտորներ</a><a href="/c/headphones/">Ականջակալներ</a><a href="/c/speaker/">Բարձրախոսներ</a><a href="/c/accessory/">Apple աքսեսուարներ</a><a href="/c/console/">Խաղային կոնսոլներ</a><a href="/c/desktop/">Համակարգիչներ</a><a href="/c/tablet/">Պլանշետներ</a><a href="/c/phone/">Հեռախոսներ</a><a href="/c/watch/">Խելացի ժամացույցներ</a><a href="/c/component/">Մասնագործեր</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></div></footer></body></html>

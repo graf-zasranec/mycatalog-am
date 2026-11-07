@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ru"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,76 +35,95 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=ru"},{"@type":"ListItem","position":2,"name":"Кухонная техника","item":"https://better.am/ru/c/kitchen/"},{"@type":"ListItem","position":3,"name":"Kenwood — Кухонная техника","item":"https://better.am/ru/c/kitchen/kenwood/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=ru">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=ru" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=ru">Каталог</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></nav>
+<div class="lg"><a href="/c/kitchen/kenwood/" hreflang="hy">ՀԱՅ</a><span aria-current="true">РУС</span><a href="/en/c/kitchen/kenwood/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=ru">Better.am</a> › <a href="../../../../ru/c/kitchen/">Кухонная техника</a> › <span>Kenwood — Кухонная техника</span></nav>
 <main>
 <h1>Kenwood — Кухонная техника</h1>
 <p class="lead">Kenwood — Кухонная техника. Моделей: 45, от 9 900 ֏. Сравните цены в магазинах Армении на Better.am.</p>
-<p>Дешевле всего — Kenwood Citrus Juicer JE280A, 9 900 ֏. Больше всего предложений у Kenwood Hand Mixer HMP30 (3 магазинах). Цены: 9 900 ֏–183 000 ֏, магазинов: 4.</p>
-<p>Другие бренды: <a href="../../../../ru/c/kitchen/ariete/">Ariete</a> · <a href="../../../../ru/c/kitchen/gorenje/">Gorenje</a> · <a href="../../../../ru/c/kitchen/philips/">Philips</a> · <a href="../../../../ru/c/kitchen/midea/">Midea</a> · <a href="../../../../ru/c/kitchen/xiaomi/">Xiaomi</a> · <a href="../../../../ru/c/kitchen/braun/">Braun</a> · <a href="../../../../ru/c/kitchen/bosch/">Bosch</a> · <a href="../../../../ru/c/kitchen/ninja/">Ninja</a> · <a href="../../../../ru/c/kitchen/hisense/">Hisense</a> · <a href="../../../../ru/c/kitchen/mova/">Mova</a> · <a href="../../../../ru/c/kitchen/panasonic/">Panasonic</a></p>
 <a class="go" href="../../../../?lang=ru#/c/kitchen">Фильтровать и сравнивать на Better.am</a>
-
-<p><a href="../../../../ru/deals/">Что подешевело</a></p>
+<p class="lead" style="margin:18px 0 0">Другие бренды: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../ru/c/kitchen/ariete/">Ariete</a></li><li><a href="../../../../ru/c/kitchen/gorenje/">Gorenje</a></li><li><a href="../../../../ru/c/kitchen/philips/">Philips</a></li><li><a href="../../../../ru/c/kitchen/midea/">Midea</a></li><li><a href="../../../../ru/c/kitchen/xiaomi/">Xiaomi</a></li><li><a href="../../../../ru/c/kitchen/braun/">Braun</a></li><li><a href="../../../../ru/c/kitchen/bosch/">Bosch</a></li><li><a href="../../../../ru/c/kitchen/ninja/">Ninja</a></li><li><a href="../../../../ru/c/kitchen/hisense/">Hisense</a></li><li><a href="../../../../ru/c/kitchen/mova/">Mova</a></li><li><a href="../../../../ru/c/kitchen/panasonic/">Panasonic</a></li></ul>
+<ul class="pills"><li><a href="../../../../ru/deals/">Что подешевело</a></li></ul>
 <h2>Модели и цены</h2>
-<ul class="pl"><li><a href="../../../../ru/p/kenwood-hmp30/">Kenwood Hand Mixer HMP30</a><span>от 12 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-hmp32-a0wh/">Kenwood Mixer with Bowl HMP32.A0WH</a><span>от 20 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-fdp22-000gy/">Kenwood Food Processor FDP22.000GY</a><span>от 27 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-jmp601si/">Kenwood Juicer JMP601SI</a><span>от 92 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc29a-x0si/">Kenwood Food Processor KHC29A.X0SI</a><span>от 150 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-je280a/">Kenwood Citrus Juicer JE280A</a><span>от 9 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-hmp10-000wh/">Kenwood Hand Mixer HMP10.000WH</a><span>от 10 200 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-sjm490/">Kenwood Kettle SJM490</a><span>от 22 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-zjg112cl/">Kenwood Kettle ZJG112CL</a><span>от 31 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-chp80-000si/">Kenwood Food Chopper CHP80.000SI</a><span>от 33 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-fdm301ss/">Kenwood Food Processor FDM301SS</a><span>от 52 700 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-jmp400wh/">Kenwood Juicer JMP400WH</a><span>от 63 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-jmp85-000si/">Kenwood Juicer JMP85.000SI</a><span>от 95 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc30-070gy/">Kenwood Kitchen Machine KHC30.070GY</a><span>от 103 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-mg700/">Kenwood Meat Grinder MG700</a><span>от 111 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-sb055wg/">Kenwood Blender SB055WG</a><span>от 16 700 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-chp61-100wh/">Kenwood Food Chopper CHP61.100WH</a><span>от 17 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-chp61-000wh/">Kenwood Food Chopper CHP61.000WH</a><span>от 17 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-zjp04-a0gy/">Kenwood Kettle ZJP04.A0GY</a><span>от 17 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-hmp40-000/">Kenwood Hand Mixer HMP40.000</a><span>от 20 700 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-blp41-a0wh/">Kenwood Blender BLP41.A0WH</a><span>от 23 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-blp300wh12/">Kenwood Blender BLP300WH12</a><span>от 27 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-blp41-c0wh/">Kenwood Blender BLP41.C0WH</a><span>от 27 100 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-zjx650rd/">Kenwood Kettle ZJX650RD</a><span>от 28 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-sjm110/">Kenwood Kettle SJM110</a><span>от 29 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-tcx751rd/">Kenwood Toaster TCX751RD</a><span>от 31 200 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-fdp22-130/">Kenwood Food Processor FDP22.130</a><span>от 35 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-fdp23-140/">Kenwood Food Processor FDP23.140</a><span>от 35 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-zjm810rd/">Kenwood Kettle ZJM810RD</a><span>от 39 100 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-hmp54-000si/">Kenwood Mixer with Bowl HMP54.000SI</a><span>от 41 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-fdp23-380/">Kenwood Food Processor FDP23.380</a><span>от 43 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-fdm100ba/">Kenwood Food Processor FDM100BA</a><span>от 52 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-mg360/">Kenwood Meat Grinder MG360</a><span>от 57 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc30-000wh/">Kenwood Kitchen Machine KHC30.000WH</a><span>от 67 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-mg515/">Kenwood Meat Grinder MG515</a><span>от 67 200 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-mg510/">Kenwood Meat Grinder MG510</a><span>от 67 200 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-mg520/">Kenwood Meat Grinder MG520</a><span>от 67 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-mg516/">Kenwood Meat Grinder MG516</a><span>от 79 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc30-050gy/">Kenwood Kitchen Machine KHC30.050GY</a><span>от 92 500 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-kzm35-000/">Kenwood Kitchen Machine KZM35.000</a><span>от 103 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc29a-j0wh/">Kenwood Kitchen Machine KHC29A.J0WH</a><span>от 103 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-cbl30-000cp/">Kenwood Soup Maker Blender CBL30.000CP</a><span>от 111 900 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc29a-m0si/">Kenwood Kitchen Machine KHC29A.M0SI</a><span>от 127 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-khc29a-r0si/">Kenwood Kitchen Machine KHC29A.R0SI</a><span>от 143 000 ֏</span></li>
-<li><a href="../../../../ru/p/kenwood-kmx760a/">Kenwood Kitchen Machine KMX760A</a><span>от 183 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../ru/p/kenwood-hmp30/"><span class="ph"><img src="/images/thumb/kenwood-hmp30__black-7540e550f98f-320.webp" alt="Kenwood Hand Mixer HMP30" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Hand Mixer HMP30</b><span class="pr">от 12 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-hmp32-a0wh/"><span class="ph"><img src="/images/thumb/kenwood-hmp32-a0wh__main-280b100f8df9-320.webp" alt="Kenwood Mixer with Bowl HMP32.A0WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Mixer with Bowl HMP32.A0WH</b><span class="pr">от 20 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-fdp22-000gy/"><span class="ph"><img src="/images/thumb/kenwood-fdp22-000gy__main-9d3e5acc306b-320.webp" alt="Kenwood Food Processor FDP22.000GY" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor FDP22.000GY</b><span class="pr">от 27 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-jmp601si/"><span class="ph"><img src="/images/thumb/kenwood-jmp601si__main-106d13c657e4-320.webp" alt="Kenwood Juicer JMP601SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Juicer JMP601SI</b><span class="pr">от 92 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc29a-x0si/"><span class="ph"><img src="/images/thumb/kenwood-khc29a-x0si__main-fae5a0da49fb-320.webp" alt="Kenwood Food Processor KHC29A.X0SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor KHC29A.X0SI</b><span class="pr">от 150 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-je280a/"><span class="ph"><img src="/images/thumb/kenwood-je280a__main-b720b329d4a6-320.webp" alt="Kenwood Citrus Juicer JE280A" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Citrus Juicer JE280A</b><span class="pr">от 9 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-hmp10-000wh/"><span class="ph"><img src="/images/thumb/kenwood-hmp10-000wh__main-3e8b594d9f0c-320.webp" alt="Kenwood Hand Mixer HMP10.000WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Hand Mixer HMP10.000WH</b><span class="pr">от 10 200 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-sjm490/"><span class="ph"><img src="/images/thumb/kenwood-sjm490__main-5c690603c5ca-320.webp" alt="Kenwood Kettle SJM490" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kettle SJM490</b><span class="pr">от 22 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-zjg112cl/"><span class="ph"><img src="/images/thumb/kenwood-zjg112cl__main-80e6b44456f1-320.webp" alt="Kenwood Kettle ZJG112CL" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kettle ZJG112CL</b><span class="pr">от 31 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-chp80-000si/"><span class="ph"><img src="/images/thumb/kenwood-chp80-000si__main-a7db449ce1be-320.webp" alt="Kenwood Food Chopper CHP80.000SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Chopper CHP80.000SI</b><span class="pr">от 33 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-fdm301ss/"><span class="ph"><img src="/images/thumb/kenwood-fdm301ss__silver-35c7106beed6-320.webp" alt="Kenwood Food Processor FDM301SS" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor FDM301SS</b><span class="pr">от 52 700 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-jmp400wh/"><span class="ph"><img src="/images/thumb/kenwood-jmp400wh__main-65a0b1ce3e87-320.webp" alt="Kenwood Juicer JMP400WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Juicer JMP400WH</b><span class="pr">от 63 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-jmp85-000si/"><span class="ph"><img src="/images/thumb/kenwood-jmp85-000si__main-028fcc147c3c-320.webp" alt="Kenwood Juicer JMP85.000SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Juicer JMP85.000SI</b><span class="pr">от 95 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc30-070gy/"><span class="ph"><img src="/images/thumb/kenwood-khc30-070gy__main-e7b0da52c147-320.webp" alt="Kenwood Kitchen Machine KHC30.070GY" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KHC30.070GY</b><span class="pr">от 103 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-mg700/"><span class="ph"><img src="/images/thumb/kenwood-mg700__main-1157ac2d80cc-320.webp" alt="Kenwood Meat Grinder MG700" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Meat Grinder MG700</b><span class="pr">от 111 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-sb055wg/"><span class="ph"><img src="/images/thumb/kenwood-sb055wg__main-f9ec250bd2ea-320.webp" alt="Kenwood Blender SB055WG" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Blender SB055WG</b><span class="pr">от 16 700 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-chp61-100wh/"><span class="ph"><img src="/images/thumb/kenwood-chp61-100wh__main-382c2018f5eb-320.webp" alt="Kenwood Food Chopper CHP61.100WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Chopper CHP61.100WH</b><span class="pr">от 17 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-chp61-000wh/"><span class="ph"><img src="/images/thumb/kenwood-chp61-000wh__main-75067bb98df4-320.webp" alt="Kenwood Food Chopper CHP61.000WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Chopper CHP61.000WH</b><span class="pr">от 17 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-zjp04-a0gy/"><span class="ph"><img src="/images/thumb/kenwood-zjp04-a0gy__main-1e0ad40d8e1e-320.webp" alt="Kenwood Kettle ZJP04.A0GY" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kettle ZJP04.A0GY</b><span class="pr">от 17 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-hmp40-000/"><span class="ph"><img src="/images/thumb/kenwood-hmp40-000__light-blue-0b90314f2c6d-320.webp" alt="Kenwood Hand Mixer HMP40.000" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Hand Mixer HMP40.000</b><span class="pr">от 20 700 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-blp41-a0wh/"><span class="ph"><img src="/images/thumb/kenwood-blp41-a0wh__white-0f9b9c257791-320.webp" alt="Kenwood Blender BLP41.A0WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Blender BLP41.A0WH</b><span class="pr">от 23 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-blp300wh12/"><span class="ph"><img src="/images/thumb/kenwood-blp300wh12__main-376396d1ff61-320.webp" alt="Kenwood Blender BLP300WH12" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Blender BLP300WH12</b><span class="pr">от 27 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-blp41-c0wh/"><span class="ph"><img src="/images/thumb/kenwood-blp41-c0wh__main-811d2a4f8991-320.webp" alt="Kenwood Blender BLP41.C0WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Blender BLP41.C0WH</b><span class="pr">от 27 100 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-zjx650rd/"><span class="ph"><img src="/images/thumb/kenwood-zjx650rd__main-64d905e29bf8-320.webp" alt="Kenwood Kettle ZJX650RD" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kettle ZJX650RD</b><span class="pr">от 28 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-sjm110/"><span class="ph"><img src="/images/thumb/kenwood-sjm110__main-1693d6853a4f-320.webp" alt="Kenwood Kettle SJM110" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kettle SJM110</b><span class="pr">от 29 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-tcx751rd/"><span class="ph"><img src="/images/thumb/kenwood-tcx751rd__main-bf08e65509bb-320.webp" alt="Kenwood Toaster TCX751RD" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Toaster TCX751RD</b><span class="pr">от 31 200 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-fdp22-130/"><span class="ph"><img src="/images/thumb/kenwood-fdp22-130__blue-8677d4304e02-320.webp" alt="Kenwood Food Processor FDP22.130" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor FDP22.130</b><span class="pr">от 35 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-fdp23-140/"><span class="ph"><img src="/images/thumb/kenwood-fdp23-140__blue-8e3f44a4edea-320.webp" alt="Kenwood Food Processor FDP23.140" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor FDP23.140</b><span class="pr">от 35 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-zjm810rd/"><span class="ph"><img src="/images/thumb/kenwood-zjm810rd__red-8cc55b28eb4a-320.webp" alt="Kenwood Kettle ZJM810RD" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kettle ZJM810RD</b><span class="pr">от 39 100 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-hmp54-000si/"><span class="ph"><img src="/images/thumb/kenwood-hmp54-000si__main-8ebb0733d03c-320.webp" alt="Kenwood Mixer with Bowl HMP54.000SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Mixer with Bowl HMP54.000SI</b><span class="pr">от 41 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-fdp23-380/"><span class="ph"><img src="/images/thumb/kenwood-fdp23-380__blue-8e3f44a4edea-320.webp" alt="Kenwood Food Processor FDP23.380" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor FDP23.380</b><span class="pr">от 43 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-fdm100ba/"><span class="ph"><img src="/images/thumb/kenwood-fdm100ba__main-a51be3a3d4be-320.webp" alt="Kenwood Food Processor FDM100BA" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Food Processor FDM100BA</b><span class="pr">от 52 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-mg360/"><span class="ph"><img src="/images/thumb/kenwood-mg360__main-2e3e3dd2e6f7-320.webp" alt="Kenwood Meat Grinder MG360" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Meat Grinder MG360</b><span class="pr">от 57 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc30-000wh/"><span class="ph"><img src="/images/thumb/kenwood-khc30-000wh__main-940c17875b32-320.webp" alt="Kenwood Kitchen Machine KHC30.000WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KHC30.000WH</b><span class="pr">от 67 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-mg515/"><span class="ph"><img src="/images/thumb/kenwood-mg515__main-d644e84b3726-320.webp" alt="Kenwood Meat Grinder MG515" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Meat Grinder MG515</b><span class="pr">от 67 200 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-mg510/"><span class="ph"><img src="/images/thumb/kenwood-mg510__main-55ed61433652-320.webp" alt="Kenwood Meat Grinder MG510" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Meat Grinder MG510</b><span class="pr">от 67 200 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-mg520/"><span class="ph"><img src="/images/thumb/kenwood-mg520__main-764fd5403ff5-320.webp" alt="Kenwood Meat Grinder MG520" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Meat Grinder MG520</b><span class="pr">от 67 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-mg516/"><span class="ph"><img src="/images/thumb/kenwood-mg516__main-cf327a8c2a0b-320.webp" alt="Kenwood Meat Grinder MG516" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Meat Grinder MG516</b><span class="pr">от 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc30-050gy/"><span class="ph"><img src="/images/thumb/kenwood-khc30-050gy__main-74298d81cb8a-320.webp" alt="Kenwood Kitchen Machine KHC30.050GY" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KHC30.050GY</b><span class="pr">от 92 500 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-kzm35-000/"><span class="ph"><img src="/images/thumb/kenwood-kzm35-000__blue-2e1b970171fa-320.webp" alt="Kenwood Kitchen Machine KZM35.000" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KZM35.000</b><span class="pr">от 103 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc29a-j0wh/"><span class="ph"><img src="/images/thumb/kenwood-khc29a-j0wh__main-bc201bb92940-320.webp" alt="Kenwood Kitchen Machine KHC29A.J0WH" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KHC29A.J0WH</b><span class="pr">от 103 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-cbl30-000cp/"><span class="ph"><img src="/images/thumb/kenwood-cbl30-000cp__main-093962a4af07-320.webp" alt="Kenwood Soup Maker Blender CBL30.000CP" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Soup Maker Blender CBL30.000CP</b><span class="pr">от 111 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc29a-m0si/"><span class="ph"><img src="/images/thumb/kenwood-khc29a-m0si__main-b2e7bd2f9300-320.webp" alt="Kenwood Kitchen Machine KHC29A.M0SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KHC29A.M0SI</b><span class="pr">от 127 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-khc29a-r0si/"><span class="ph"><img src="/images/thumb/kenwood-khc29a-r0si__main-c637befb35ea-320.webp" alt="Kenwood Kitchen Machine KHC29A.R0SI" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KHC29A.R0SI</b><span class="pr">от 143 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../ru/p/kenwood-kmx760a/"><span class="ph"><img src="/images/thumb/kenwood-kmx760a__black-2293111bea26-320.webp" alt="Kenwood Kitchen Machine KMX760A" width="320" height="320" loading="lazy" decoding="async"></span><b>Kenwood Kitchen Machine KMX760A</b><span class="pr">от 183 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Дешевле всего — Kenwood Citrus Juicer JE280A, 9 900 ֏. Больше всего предложений у Kenwood Hand Mixer HMP30 (3 магазинах). Цены: 9 900 ֏–183 000 ֏, магазинов: 4.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/ru/c/laptop/">Ноутбуки</a><a href="/ru/c/ereader/">Электронные книги</a><a href="/ru/c/monitor/">Мониторы</a><a href="/ru/c/headphones/">Наушники</a><a href="/ru/c/speaker/">Колонки</a><a href="/ru/c/accessory/">Аксессуары Apple</a><a href="/ru/c/console/">Игровые консоли</a><a href="/ru/c/desktop/">Компьютеры</a><a href="/ru/c/tablet/">Планшеты</a><a href="/ru/c/phone/">Смартфоны</a><a href="/ru/c/watch/">Смарт-часы</a><a href="/ru/c/component/">Комплектующие</a><a href="/ru/deals/">Снижение цен</a><a href="/ru/b/">Блог</a></div></footer></body></html>

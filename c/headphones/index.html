@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,269 +35,288 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/"},{"@type":"ListItem","position":2,"name":"Ականջակալներ","item":"https://better.am/c/headphones/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/">Կատալոգ</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></nav>
+<div class="lg"><span aria-current="true">ՀԱՅ</span><a href="/ru/c/headphones/" hreflang="ru">РУС</a><a href="/en/c/headphones/" hreflang="en">ENG</a></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../">Better.am</a> › <span>Ականջակալներ</span></nav>
 <main>
 <h1>Ականջակալներ</h1>
 <p class="lead">Ականջակալներ. 238 մոդել, 3 900 ֏-ից։ Համեմատիր գները Հայաստանի խանութներում Better.am-ում։</p>
-<p>Ամենաէժանը՝ JBL Tune 110՝ 3 900 ֏։ Ամենաշատ խանութներում՝ Apple AirPods 4 (17 խանութ)։ Գները՝ 3 900 ֏–509 000 ֏, 22 խանութ։</p>
-
 <a class="go" href="../../#/c/headphones">Զտել և համեմատել Better.am-ում</a>
-<p class="lead"><a href="../../c/headphones/jbl/">JBL</a> · <a href="../../c/headphones/sony/">Sony</a> · <a href="../../c/headphones/xiaomi/">Xiaomi</a> · <a href="../../c/headphones/samsung/">Samsung</a> · <a href="../../c/headphones/beats/">Beats</a> · <a href="../../c/headphones/apple/">Apple</a> · <a href="../../c/headphones/bose/">Bose</a> · <a href="../../c/headphones/realme/">Realme</a> · <a href="../../c/headphones/marshall/">Marshall</a> · <a href="../../c/headphones/sennheiser/">Sennheiser</a> · <a href="../../c/headphones/honor/">Honor</a> · <a href="../../c/headphones/asus/">ASUS</a> · <a href="../../c/headphones/oneplus/">OnePlus</a> · <a href="../../c/headphones/nothing/">Nothing</a> · <a href="../../c/headphones/bang-olufsen/">Bang &amp; Olufsen</a></p>
-<p><a href="../../deals/">Ինչն է էժանացել</a></p>
+
+<ul class="pills"><li><a href="../../c/headphones/jbl/">JBL</a></li><li><a href="../../c/headphones/sony/">Sony</a></li><li><a href="../../c/headphones/xiaomi/">Xiaomi</a></li><li><a href="../../c/headphones/samsung/">Samsung</a></li><li><a href="../../c/headphones/beats/">Beats</a></li><li><a href="../../c/headphones/apple/">Apple</a></li><li><a href="../../c/headphones/bose/">Bose</a></li><li><a href="../../c/headphones/realme/">Realme</a></li><li><a href="../../c/headphones/marshall/">Marshall</a></li><li><a href="../../c/headphones/sennheiser/">Sennheiser</a></li><li><a href="../../c/headphones/honor/">Honor</a></li><li><a href="../../c/headphones/asus/">ASUS</a></li><li><a href="../../c/headphones/oneplus/">OnePlus</a></li><li><a href="../../c/headphones/nothing/">Nothing</a></li><li><a href="../../c/headphones/bang-olufsen/">Bang &amp; Olufsen</a></li><li><a href="../../deals/">Ինչն է էժանացել</a></li></ul>
 <h2>Մոդելներ և գներ</h2>
-<ul class="pl"><li><a href="../../p/apple-airpods-pro-3/">Apple AirPods Pro 3</a><span>94 000 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-4/">Apple AirPods 4</a><span>50 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-4/">Samsung Galaxy Buds 4</a><span>45 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-core/">Samsung Galaxy Buds Core</a><span>19 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-buds-6-lite/">Xiaomi Redmi Buds 6 Lite</a><span>10 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-4-pro/">Samsung Galaxy Buds 4 Pro</a><span>65 000 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-4-anc/">Apple AirPods 4 with Active Noise Cancellation</a><span>69 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-3-pro/">Samsung Galaxy Buds 3 Pro</a><span>54 000 ֏-ից</span></li>
-<li><a href="../../p/sonos-ace/">Sonos Ace</a><span>219 900 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-pro-2/">Apple AirPods Pro 2</a><span>83 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wh-ch720n/">Sony WH-CH720N</a><span>35 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-c710n/">Sony WF-C710N</a><span>52 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-fe/">Samsung Galaxy Buds FE</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/marshall-major-iv/">Marshall Major IV</a><span>39 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wh-ch520/">Sony WH-CH520</a><span>13 900 ֏-ից</span></li>
-<li><a href="../../p/marshall-major-v/">Marshall Major V</a><span>46 500 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-5/">Apple AirPods 5</a><span>68 900 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-max-usb-c-2024/">Apple AirPods Max (USB-C, 2024)</a><span>190 000 ֏-ից</span></li>
-<li><a href="../../p/apple-earpods-usb-c/">Apple EarPods (USB-C)</a><span>10 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-680nc/">JBL Tune 680NC</a><span>38 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-buds-6-play/">Xiaomi Redmi Buds 6 Play</a><span>5 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-3/">Samsung Galaxy Buds 3</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-max-2/">Apple AirPods Max 2</a><span>229 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-530bt/">JBL Tune 530BT</a><span>24 500 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-pro-r190/">Samsung Galaxy Buds Pro</a><span>51 800 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-8-active-bhr08jtgl/">Xiaomi Redmi Buds 8 Active</a><span>8 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-8-lite/">Xiaomi Redmi Buds 8 Lite</a><span>10 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-125bt/">JBL Tune 125BT</a><span>11 900 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-max-lightning-2020/">Apple AirPods Max (Lightning, 2020)</a><span>189 000 ֏-ից</span></li>
-<li><a href="../../p/apple-earpods-lightning/">Apple EarPods (Lightning)</a><span>10 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-110/">JBL Tune 110</a><span>3 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-670nc/">JBL Live 670NC</a><span>32 900 ֏-ից</span></li>
-<li><a href="../../p/beats-studio/">Beats Studio Buds</a><span>49 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-770-nc/">JBL Live 770 NC</a><span>55 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-flex-3/">JBL Live Flex 3</a><span>64 900 ֏-ից</span></li>
-<li><a href="../../p/sony-ps5-pulse-elite-wireless/">Sony PULSE Elite Wireless Headset</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/apple-airpods-5-wireless-charging-case/">Apple AirPods 5 with Wireless Charging Case</a><span>79 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-310c/">JBL Tune 310C</a><span>7 500 ֏-ից</span></li>
-<li><a href="../../p/honor-choice-x7-lite/">Honor Choice Earbuds X7 Lite</a><span>8 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-jr310/">JBL JR310</a><span>8 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-500-wired/">JBL Tune 500 Wired</a><span>9 800 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-520c/">JBL Tune 520C</a><span>11 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-730bt/">JBL Tune 730BT</a><span>26 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-endurance-peak-3/">JBL Endurance Peak 3</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-770nc/">JBL Tune 770NC</a><span>37 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-flex/">JBL Tune Flex</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/marshall-minor-iii/">Marshall Minor III</a><span>43 900 ֏-ից</span></li>
-<li><a href="../../p/sony-pulse-3d-wireless-headset/">Sony PULSE 3D Wireless Headset</a><span>49 000 ֏-ից</span></li>
-<li><a href="../../p/sony-pulse-explore/">Sony PULSE Explore</a><span>69 900 ֏-ից</span></li>
-<li><a href="../../p/beats-fit-pro/">Beats Fit Pro</a><span>84 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wh-1000xm5/">Sony WH-1000XM5</a><span>119 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wh-1000xm6/">Sony WH-1000XM6</a><span>179 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-305c/">JBL Tune 305C</a><span>6 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-eo-ic100-usb-type-c/">Samsung Type-C Earphones</a><span>8 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-4-bhr-5846-gl/">Xiaomi Redmi Buds 4</a><span>9 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-100-m2-wired/">JBL Quantum 100 M2 Wired</a><span>16 900 ֏-ից</span></li>
-<li><a href="../../p/honor-choice-ros-me01/">Honor Choice Headphones ROS-ME01</a><span>17 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-wave/">JBL Wave Buds</a><span>19 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-720-bt/">JBL Tune 720 BT</a><span>25 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-headphones-neo/">Xiaomi Redmi Headphones Neo</a><span>25 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-670-nc/">JBL Tune 670 NC</a><span>28 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-c510-yc/">Sony WF-C510</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-t220/">JBL T220</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-jr460nc/">JBL JR460NC</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-beam/">JBL Tune Beam 2</a><span>32 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-3-fe/">Samsung Galaxy Buds 3 FE</a><span>33 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-2/">Samsung Galaxy Buds 2</a><span>35 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-350-wireless/">JBL Quantum 350 Wireless</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-2-pro/">Samsung Galaxy Buds 2 Pro</a><span>46 900 ֏-ից</span></li>
-<li><a href="../../p/apple-tws-bluetooth-headsets-3rd-generation/">Apple AirPods (3rd generation)</a><span>49 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-660-nc/">JBL Live 660 NC</a><span>49 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-flex/">JBL Live Flex</a><span>49 900 ֏-ից</span></li>
-<li><a href="../../p/logitech-zone-vibe-100/">Logitech Zone Vibe 100</a><span>58 000 ֏-ից</span></li>
-<li><a href="../../p/beats-studio-buds-plus/">Beats Studio Buds +</a><span>74 000 ֏-ից</span></li>
-<li><a href="../../p/marshall-motif-ii-anc/">Marshall Motif II ANC</a><span>74 900 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-earbuds-ii/">Bose QuietComfort Earbuds II</a><span>99 000 ֏-ից</span></li>
-<li><a href="../../p/bose-noise-cancelling-700/">Bose Noise Cancelling 700</a><span>129 000 ֏-ից</span></li>
-<li><a href="../../p/sony-mdr-zx110/">Sony MDR-ZX110</a><span>6 500 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-4-active/">Xiaomi Redmi Buds 4 Active</a><span>11 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-buds-3-lite/">Xiaomi Redmi Buds 3 Lite</a><span>11 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-jr320/">JBL JR320</a><span>12 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-520-bt/">JBL Tune 520 BT</a><span>14 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-jr310bt/">JBL JR310BT</a><span>16 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-jr320bt/">JBL JR320BT</a><span>18 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-300/">JBL Quantum 300</a><span>22 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-230-nc-tws/">JBL Tune 230NC TWS</a><span>22 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-c500-true-wireless/">Sony WF-C500</a><span>28 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-wave-300-tws/">JBL Wave 300 TWS</a><span>31 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-buds-2/">JBL Tune Buds 2</a><span>34 000 ֏-ից</span></li>
-<li><a href="../../p/beats-solo-true-wireless/">Beats Solo Buds</a><span>34 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune/">JBL Tune Buds</a><span>35 800 ֏-ից</span></li>
-<li><a href="../../p/asus-tuf-gaming-h1/">ASUS TUF Gaming H1</a><span>36 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-760-nc/">JBL Tune 760 NC</a><span>37 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-sense-lite/">JBL Sense Lite</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-buds-8-pro/">Xiaomi Redmi Buds 8 Pro</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-215-tws/">JBL Tune 215 TWS</a><span>44 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-c700n-gz-e/">Sony WF-C700N</a><span>44 900 ֏-ից</span></li>
-<li><a href="../../p/marshall-minor-iv/">Marshall Minor IV</a><span>47 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-780nc/">JBL Tune 780NC</a><span>49 000 ֏-ից</span></li>
-<li><a href="../../p/logitech-zone-300/">Logitech Zone 300</a><span>49 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-soundgear-clips-earclips/">JBL Soundgear Clips Earclips</a><span>49 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-hd-450bt/">Sennheiser HD 450BT</a><span>54 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-buds-3/">JBL Live Buds 3</a><span>57 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-soundgear-sense/">JBL Soundgear Sense</a><span>59 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-pro-2-tws/">JBL Live Pro 2 TWS</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-one-nc/">JBL Quantum ONE NC</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-beam-3/">JBL Live Beam 3</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wh-ult900n/">Sony WH-ULT900N</a><span>65 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-610/">JBL Quantum 610</a><span>65 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-hd-599/">Sennheiser HD 599</a><span>68 900 ֏-ից</span></li>
-<li><a href="../../p/bose-sport/">Bose Sport</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/nothing-ear-open-b182/">Nothing Ear Open B182</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/razer-hammerhead-hyperspeed/">Razer Hammerhead HyperSpeed</a><span>72 900 ֏-ից</span></li>
-<li><a href="../../p/beats-solo-3/">Beats Solo 3</a><span>79 000 ֏-ից</span></li>
-<li><a href="../../p/beats-powerbeats-pro/">Beats PowerBeats Pro</a><span>84 000 ֏-ից</span></li>
-<li><a href="../../p/marshall-milton-anc/">Marshall Milton A.N.C.</a><span>84 900 ֏-ից</span></li>
-<li><a href="../../p/beats-solo4-onear/">Beats Solo 4</a><span>88 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tour-pro-2-tws/">JBL Tour Pro 2 TWS</a><span>95 500 ֏-ից</span></li>
-<li><a href="../../p/beats-studio3-wireless/">Beats Studio3 Wireless</a><span>104 000 ֏-ից</span></li>
-<li><a href="../../p/beats-powerbeats-fit/">Beats PowerBeats Fit</a><span>109 900 ֏-ից</span></li>
-<li><a href="../../p/dyson-zone/">Dyson Zone</a><span>119 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-momentum-4/">Sennheiser Momentum 4 Wireless</a><span>127 900 ֏-ից</span></li>
-<li><a href="../../p/beats-studio-pro-wireless/">Beats Studio Pro</a><span>129 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-1000xm5-wireless-headphones/">Sony WF-1000XM5</a><span>139 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tour-one-m3/">JBL Tour One M3</a><span>175 000 ֏-ից</span></li>
-<li><a href="../../p/dyson-ontrac/">Dyson OnTrac</a><span>219 000 ֏-ից</span></li>
-<li><a href="../../p/honor-choice-earbuds-x7e-ast-me00/">Honor Choice Earbuds X7e AST-ME00</a><span>8 900 ֏-ից</span></li>
-<li><a href="../../p/sony-wi-c200/">Sony WI-C200</a><span>8 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-mi-true-wireless-earbuds-basic-2/">Xiaomi Mi True Wireless Earbuds Basic 2</a><span>9 900 ֏-ից</span></li>
-<li><a href="../../p/apple-earpods-3-5mm/">Apple EarPods (3.5 mm)</a><span>10 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-4-lite/">Xiaomi Redmi Buds 4 Lite</a><span>11 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wi-c100/">Sony WI-C100</a><span>11 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-mi-true-wireless-earbuds-basic-2s/">Xiaomi Mi True Wireless Earbuds Basic 2S</a><span>11 900 ֏-ից</span></li>
-<li><a href="../../p/honor-earbuds-x6/">Honor Earbuds X6</a><span>12 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-530c/">JBL Tune 530C</a><span>13 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-t110/">Realme Buds T110</a><span>13 900 ֏-ից</span></li>
-<li><a href="../../p/realme-techlife-buds-t100/">Realme TechLife Buds T100</a><span>13 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-210/">JBL Tune 210</a><span>13 900 ֏-ից</span></li>
-<li><a href="../../p/honor-choice-earbuds-x5/">Honor Choice Earbuds X5</a><span>14 900 ֏-ից</span></li>
-<li><a href="../../p/anker-soundcore-p2i/">Anker Soundcore P2i</a><span>14 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-205/">JBL Tune 205</a><span>14 900 ֏-ից</span></li>
-<li><a href="../../p/google-pixel-usb-c-earbuds/">Google Pixel USB-C Earbuds</a><span>15 900 ֏-ից</span></li>
-<li><a href="../../p/motorola-moto-buds-bass/">Motorola Moto Buds Bass</a><span>15 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-50-wired/">JBL Quantum 50 Wired</a><span>16 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-q2/">Realme Buds Q2</a><span>16 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-100p/">JBL Quantum 100P</a><span>16 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-100/">JBL Quantum 100</a><span>17 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-endurance-run-2-bt/">JBL Endurance Run 2 BT</a><span>17 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-t310/">Realme Buds T310</a><span>17 900 ֏-ից</span></li>
-<li><a href="../../p/oneplus-bullets-wireless-z-2/">OnePlus Bullets Wireless Z 2</a><span>19 000 ֏-ից</span></li>
-<li><a href="../../p/sony-mdr-xb450ap/">Sony MDR-XB450AP</a><span>19 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-5/">Xiaomi Redmi Buds 5</a><span>19 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-buds-6/">Xiaomi Redmi Buds 6</a><span>19 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-gear-circle/">Samsung Gear Circle</a><span>19 900 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds/">Samsung Galaxy Buds</a><span>19 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-vibe-buds-2/">JBL Vibe Buds 2</a><span>21 900 ֏-ից</span></li>
-<li><a href="../../p/honor-choice-earbuds-x3/">Honor Choice Earbuds X3</a><span>22 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-air-5/">Realme Buds Air 5</a><span>22 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-buds-3/">Xiaomi Redmi Buds 3</a><span>23 900 ֏-ից</span></li>
-<li><a href="../../p/honor-choice-clip-mak-me01/">Honor Choice Earbuds Clip MAK-ME01</a><span>25 900 ֏-ից</span></li>
-<li><a href="../../p/oneplus-nord-buds-2/">OnePlus Nord Buds 2</a><span>25 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-vibe-beam-2/">JBL Vibe Beam 2</a><span>25 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-200-wired/">JBL Quantum 200 Wired</a><span>26 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-air-6/">Realme Buds Air 6</a><span>26 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-endurance-race/">JBL Endurance Race</a><span>29 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-130-tws/">JBL Tune 130 TWS</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-reflect-contour-2/">JBL Reflect Contour 2</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-everest-110/">JBL Everest 110</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-400/">JBL Quantum 400</a><span>29 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-endurance-race-2/">JBL Endurance Race 2</a><span>31 900 ֏-ից</span></li>
-<li><a href="../../p/beats-flex-all-day/">Beats Flex</a><span>33 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-air-3/">Realme Buds Air 3</a><span>33 900 ֏-ից</span></li>
-<li><a href="../../p/microsoft-modern-usb/">Microsoft Modern USB Headset</a><span>34 900 ֏-ից</span></li>
-<li><a href="../../p/sony-mdr-g300/">Sony MDR-G300</a><span>34 900 ֏-ից</span></li>
-<li><a href="../../p/motorola-moto-buds/">Motorola Moto Buds</a><span>35 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-air-5-pro/">Realme Buds Air 5 Pro</a><span>36 900 ֏-ից</span></li>
-<li><a href="../../p/asus-rog-strix-go-core/">ASUS ROG Strix Go Core</a><span>37 800 ֏-ից</span></li>
-<li><a href="../../p/asus-tuf-gaming-h3-gun-metal/">ASUS TUF Gaming H3</a><span>37 800 ֏-ից</span></li>
-<li><a href="../../p/asus-tuf-gaming-h7-core-gun-metal/">ASUS TUF Gaming H7 Core</a><span>37 800 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-air-6-pro/">Realme Buds Air 6 Pro</a><span>38 900 ֏-ից</span></li>
-<li><a href="../../p/asus-tuf-h3-wireless/">ASUS TUF H3 Wireless</a><span>39 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-jr470nc/">JBL JR470NC</a><span>39 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-460-nc/">JBL Live 460 NC</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-redmi-buds-3-pro/">Xiaomi Redmi Buds 3 Pro</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/realme-buds-air-pro/">Realme Buds Air Pro</a><span>39 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-under-armour-earbuds/">JBL Under Armour Earbuds</a><span>44 900 ֏-ից</span></li>
-<li><a href="../../p/asus-rog-delta-s/">ASUS ROG Delta S</a><span>45 000 ֏-ից</span></li>
-<li><a href="../../p/oneplus-buds-3/">OnePlus Buds 3</a><span>45 900 ֏-ից</span></li>
-<li><a href="../../p/oneplus-buds-pro/">OnePlus Buds Pro</a><span>47 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tune-125-tws/">JBL Tune 125 TWS</a><span>49 900 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-buds-3/">Xiaomi Buds 3</a><span>49 900 ֏-ից</span></li>
-<li><a href="../../p/nokia-e3500/">Nokia E3500</a><span>49 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-endurance-peak-4/">JBL Endurance Peak 4</a><span>55 000 ֏-ից</span></li>
-<li><a href="../../p/oneplus-buds-4/">OnePlus Buds 4</a><span>55 000 ֏-ից</span></li>
-<li><a href="../../p/oneplus-buds-pro-2/">OnePlus Buds Pro 2</a><span>57 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-tour-pro-plus/">JBL Tour Pro Plus</a><span>59 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-1000xm3/">Sony WF-1000XM3</a><span>59 000 ֏-ից</span></li>
-<li><a href="../../p/sony-ps4-gold-wireless-headset/">Sony PS4 Gold Wireless Headset</a><span>59 000 ֏-ից</span></li>
-<li><a href="../../p/nothing-cmf-headphone-pro/">Nothing CMF Headphone Pro</a><span>59 000 ֏-ից</span></li>
-<li><a href="../../p/samsung-galaxy-buds-live/">Samsung Galaxy Buds Live</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-free-ncplus/">JBL Live Free NC+</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-pro-tws/">JBL Live Pro+ TWS</a><span>59 900 ֏-ից</span></li>
-<li><a href="../../p/asus-rog-strix-go-2-4/">ASUS ROG Strix Go 2.4</a><span>61 000 ֏-ից</span></li>
-<li><a href="../../p/beats-solo-hd/">Beats Solo HD</a><span>64 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-accentum-wireless-acaebt/">Sennheiser Accentum Wireless</a><span>68 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-680nc/">JBL Live 680NC</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/oneplus-buds-pro-3/">OnePlus Buds Pro 3</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-soundgear-frames/">JBL Soundgear Frames</a><span>69 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-quantum-810/">JBL Quantum 810 Wireless</a><span>69 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-accentum/">Sennheiser ACCENTUM</a><span>76 200 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-accentum-true-wireless-atw1/">Sennheiser Accentum True Wireless ATW1</a><span>77 900 ֏-ից</span></li>
-<li><a href="../../p/jbl-live-780nc/">JBL Live 780NC</a><span>79 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-sp800n/">Sony WF-SP800N</a><span>79 000 ֏-ից</span></li>
-<li><a href="../../p/xiaomi-flipbuds-pro/">Xiaomi FlipBuds Pro</a><span>79 000 ֏-ից</span></li>
-<li><a href="../../p/sony-inzone-h5/">Sony Inzone H5</a><span>82 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-accentum-plus/">Sennheiser Accentum Plus</a><span>88 900 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-earbuds/">Bose QuietComfort Earbuds</a><span>98 000 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-45-acoustic/">Bose QuietComfort 45 Acoustic</a><span>109 000 ֏-ից</span></li>
-<li><a href="../../p/jbl-tour-one-m2/">JBL Tour One M2</a><span>114 900 ֏-ից</span></li>
-<li><a href="../../p/sennheiser-momentum-sport-msport1/">Sennheiser Momentum Sport MSPORT1</a><span>118 900 ֏-ից</span></li>
-<li><a href="../../p/beats-powerbeats-pro-2/">Beats Powerbeats Pro 2</a><span>119 000 ֏-ից</span></li>
-<li><a href="../../p/marshall-monitor-ii-anc/">Marshall Monitor II A.N.C.</a><span>129 000 ֏-ից</span></li>
-<li><a href="../../p/bowers-wilkins-pi6/">Bowers &amp; Wilkins Pi6</a><span>134 300 ֏-ից</span></li>
-<li><a href="../../p/jbl-tour-pro-3-tws/">JBL Tour Pro 3 TWS</a><span>139 000 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort/">Bose QuietComfort Headphones</a><span>139 900 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-se-wireless/">Bose QuietComfort SE Wireless</a><span>139 900 ֏-ից</span></li>
-<li><a href="../../p/marshall-monitor-iii/">Marshall Monitor III</a><span>149 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wh-g900n-wz-e/">Sony WH-G900N</a><span>151 900 ֏-ից</span></li>
-<li><a href="../../p/nothing-6974434224179/">Nothing Headphone (1)</a><span>157 000 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-ultra/">Bose QuietComfort Ultra Headphones</a><span>159 000 ֏-ից</span></li>
-<li><a href="../../p/sony-wf-1000xm6/">Sony WF-1000XM6</a><span>159 000 ֏-ից</span></li>
-<li><a href="../../p/beats-studio-wireless/">Beats Studio Wireless</a><span>159 900 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-ultra-earbuds/">Bose QuietComfort Ultra Earbuds</a><span>189 000 ֏-ից</span></li>
-<li><a href="../../p/bo-beoplay-ex/">Bang &amp; Olufsen Beoplay EX</a><span>209 000 ֏-ից</span></li>
-<li><a href="../../p/bose-quietcomfort-ultra-headphones-2nd-gen/">Bose QuietComfort Ultra Headphones 2nd Gen</a><span>209 000 ֏-ից</span></li>
-<li><a href="../../p/bo-beoplay-hx/">Bang &amp; Olufsen Beoplay HX</a><span>259 000 ֏-ից</span></li>
-<li><a href="../../p/bowers-wilkins-px8/">Bowers &amp; Wilkins PX8</a><span>263 400 ֏-ից</span></li>
-<li><a href="../../p/bo-beoplay-h95/">Bang &amp; Olufsen Beoplay H95</a><span>509 000 ֏-ից</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../p/apple-airpods-pro-3/"><span class="ph"><img src="/images/thumb/apple-airpods-pro-3__white-1e5de74588df-320.webp" alt="Apple AirPods Pro 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods Pro 3</b><span class="pr">94 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-4/"><span class="ph"><img src="/images/thumb/apple-airpods-4__white-4dbeb1cd10f1-320.webp" alt="Apple AirPods 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods 4</b><span class="pr">50 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-4/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-4__white-c8a995580382-320.webp" alt="Samsung Galaxy Buds 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 4</b><span class="pr">45 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-core/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-core__black-822270a1b35b-320.webp" alt="Samsung Galaxy Buds Core" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds Core</b><span class="pr">19 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-buds-6-lite/"><span class="ph"><img src="/images/thumb/xiaomi-buds-6-lite__black-92f5ba4a0048-320.webp" alt="Xiaomi Redmi Buds 6 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 6 Lite</b><span class="pr">10 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-4-pro/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-4-pro__white-b0b05fcc700c-320.webp" alt="Samsung Galaxy Buds 4 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 4 Pro</b><span class="pr">65 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-4-anc/"><span class="ph"><img src="/images/thumb/apple-airpods-4-anc__white-fd71a198a5db-320.webp" alt="Apple AirPods 4 with Active Noise Cancellation" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods 4 with Active Noise Cancellation</b><span class="pr">69 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-3-pro/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-3-pro__white-8fc82eb08189-320.webp" alt="Samsung Galaxy Buds 3 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 3 Pro</b><span class="pr">54 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sonos-ace/"><span class="ph"><img src="/images/thumb/sonos-ace__white-98f375d425d7-320.webp" alt="Sonos Ace" width="320" height="320" loading="lazy" decoding="async"></span><b>Sonos Ace</b><span class="pr">219 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-pro-2/"><span class="ph"><img src="/images/thumb/apple-airpods-pro-2__white-0b1439178b6b-320.webp" alt="Apple AirPods Pro 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods Pro 2</b><span class="pr">83 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wh-ch720n/"><span class="ph"><img src="/images/thumb/sony-wh-ch720n__black-04c1a8af0313-320.webp" alt="Sony WH-CH720N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-CH720N</b><span class="pr">35 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-c710n/"><span class="ph"><img src="/images/thumb/sony-wf-c710n__main-2ca919c838d3-320.webp" alt="Sony WF-C710N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C710N</b><span class="pr">52 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-fe/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-fe__white-4f2c409158b0-320.webp" alt="Samsung Galaxy Buds FE" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds FE</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-major-iv/"><span class="ph"><img src="/images/thumb/marshall-major-iv__black-3197592eb6eb-320.webp" alt="Marshall Major IV" width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Major IV</b><span class="pr">39 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wh-ch520/"><span class="ph"><img src="/images/thumb/sony-wh-ch520__black-95e109cc428d-320.webp" alt="Sony WH-CH520" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-CH520</b><span class="pr">13 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-major-v/"><span class="ph"><img src="/images/thumb/marshall-major-v__black-193be33b33b0-320.webp" alt="Marshall Major V" width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Major V</b><span class="pr">46 500 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-5/"><span class="ph"><img src="/images/thumb/apple-airpods-5__main-23f7df539b6d-320.webp" alt="Apple AirPods 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods 5</b><span class="pr">68 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-max-usb-c-2024/"><span class="ph"><img src="/images/thumb/apple-airpods-max-usb-c-2024__starlight-b80b2dcdbf71-320.webp" alt="Apple AirPods Max (USB-C, 2024)" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods Max (USB-C, 2024)</b><span class="pr">190 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-earpods-usb-c/"><span class="ph"><img src="/images/thumb/apple-earpods-usb-c__main-50fda1f2fcea-320.webp" alt="Apple EarPods (USB-C)" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple EarPods (USB-C)</b><span class="pr">10 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-680nc/"><span class="ph"><img src="/images/thumb/jbl-tune-680nc__black-16814cf5f460-320.webp" alt="JBL Tune 680NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 680NC</b><span class="pr">38 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-buds-6-play/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-buds-6-play__black-b1062d8dfa57-320.webp" alt="Xiaomi Redmi Buds 6 Play" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 6 Play</b><span class="pr">5 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-3/"><span class="ph"><img src="/images/thumb/samsung-galaxy-3__silver-4adc290f47f1-320.webp" alt="Samsung Galaxy Buds 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 3</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-max-2/"><span class="ph"><img src="/images/thumb/apple-airpods-max-2__midnight-e5faac2f0443-320.webp" alt="Apple AirPods Max 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods Max 2</b><span class="pr">229 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-530bt/"><span class="ph"><img src="/images/thumb/jbl-tune-530bt__white-e10acbe99224-320.webp" alt="JBL Tune 530BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 530BT</b><span class="pr">24 500 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-pro-r190/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-pro-r190__black-bf300be7efb7-320.webp" alt="Samsung Galaxy Buds Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds Pro</b><span class="pr">51 800 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-8-active-bhr08jtgl/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-8-active-bhr08jtgl__white-8cbfb3420b63-320.webp" alt="Xiaomi Redmi Buds 8 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 8 Active</b><span class="pr">8 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-8-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-8-lite__black-81bdf4c6e600-320.webp" alt="Xiaomi Redmi Buds 8 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 8 Lite</b><span class="pr">10 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-125bt/"><span class="ph"><img src="/images/thumb/jbl-tune-125bt__coral-c85888c99c28-320.webp" alt="JBL Tune 125BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 125BT</b><span class="pr">11 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-max-lightning-2020/"><span class="ph"><img src="/images/thumb/apple-airpods-max-lightning-2020__space-gray-2c98db2f727b-320.webp" alt="Apple AirPods Max (Lightning, 2020)" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods Max (Lightning, 2020)</b><span class="pr">189 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-earpods-lightning/"><span class="ph"><img src="/images/thumb/apple-earpods-lightning__main-34f69d0f0246-320.webp" alt="Apple EarPods (Lightning)" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple EarPods (Lightning)</b><span class="pr">10 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-110/"><span class="ph"><img src="/images/thumb/jbl-tune-110__black-737572efcc00-320.webp" alt="JBL Tune 110" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 110</b><span class="pr">3 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-670nc/"><span class="ph"><img src="/images/thumb/jbl-live-670nc__blue-0941ddc9b1e9-320.webp" alt="JBL Live 670NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live 670NC</b><span class="pr">32 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-studio/"><span class="ph"><img src="/images/thumb/beats-studio__blue-549785569e39-320.webp" alt="Beats Studio Buds" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Studio Buds</b><span class="pr">49 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-770-nc/"><span class="ph"><img src="/images/thumb/jbl-live-770-nc__blue-ce81f9ed2ae8-320.webp" alt="JBL Live 770 NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live 770 NC</b><span class="pr">55 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-flex-3/"><span class="ph"><img src="/images/thumb/jbl-live-flex-3__black-fc4734ef56dc-320.webp" alt="JBL Live Flex 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Flex 3</b><span class="pr">64 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-ps5-pulse-elite-wireless/"><span class="ph"><img src="/images/thumb/sony-ps5-pulse-elite-wireless__main-26ab7d502aad-320.webp" alt="Sony PULSE Elite Wireless Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PULSE Elite Wireless Headset</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-airpods-5-wireless-charging-case/"><span class="ph"><img src="/images/thumb/apple-airpods-5-wireless-charging-case__white-f7efcb7122eb-320.webp" alt="Apple AirPods 5 with Wireless Charging Case" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods 5 with Wireless Charging Case</b><span class="pr">79 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-310c/"><span class="ph"><img src="/images/thumb/jbl-tune-310c__main-e6484501f8f9-320.webp" alt="JBL Tune 310C" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 310C</b><span class="pr">7 500 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-choice-x7-lite/"><span class="ph"><img src="/images/thumb/honor-choice-x7-lite__main-5bf6cc52baaf-320.webp" alt="Honor Choice Earbuds X7 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Earbuds X7 Lite</b><span class="pr">8 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-jr310/"><span class="ph"><img src="/images/thumb/jbl-jr310__blue-b5907a2082ec-320.webp" alt="JBL JR310" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR310</b><span class="pr">8 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-500-wired/"><span class="ph"><img src="/images/thumb/jbl-tune-500-wired__white-721108f83edf-320.webp" alt="JBL Tune 500 Wired" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 500 Wired</b><span class="pr">9 800 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-520c/"><span class="ph"><img src="/images/thumb/jbl-tune-520c__black-5c34b725f223-320.webp" alt="JBL Tune 520C" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 520C</b><span class="pr">11 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-730bt/"><span class="ph"><img src="/images/thumb/jbl-tune-730bt__white-be164e5d5c2c-320.webp" alt="JBL Tune 730BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 730BT</b><span class="pr">26 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-endurance-peak-3/"><span class="ph"><img src="/images/thumb/jbl-endurance-peak-3__black-e1e2b4e8b46a-320.webp" alt="JBL Endurance Peak 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Endurance Peak 3</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-770nc/"><span class="ph"><img src="/images/thumb/jbl-tune-770nc__black-d527844522c8-320.webp" alt="JBL Tune 770NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 770NC</b><span class="pr">37 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-flex/"><span class="ph"><img src="/images/thumb/jbl-tune-flex__white-ecaa165bbb0f-320.webp" alt="JBL Tune Flex" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune Flex</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-minor-iii/"><span class="ph"><img src="/images/thumb/marshall-minor-iii__black-830e376bc9d5-320.webp" alt="Marshall Minor III" width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Minor III</b><span class="pr">43 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-pulse-3d-wireless-headset/"><span class="ph"><img src="/images/thumb/sony-pulse-3d-wireless-headset__black-5bc5295826cb-320.webp" alt="Sony PULSE 3D Wireless Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PULSE 3D Wireless Headset</b><span class="pr">49 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-pulse-explore/"><span class="ph"><img src="/images/thumb/sony-pulse-explore__main-41ff0dabc3e2-320.webp" alt="Sony PULSE Explore" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PULSE Explore</b><span class="pr">69 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-fit-pro/"><span class="ph"><img src="/images/thumb/beats-fit-pro__black-4d20a0d1d312-320.webp" alt="Beats Fit Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Fit Pro</b><span class="pr">84 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wh-1000xm5/"><span class="ph"><img src="/images/thumb/sony-wh-1000xm5__silver-51021b729899-320.webp" alt="Sony WH-1000XM5" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-1000XM5</b><span class="pr">119 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wh-1000xm6/"><span class="ph"><img src="/images/thumb/sony-wh-1000xm6__black-3d03d13384f7-320.webp" alt="Sony WH-1000XM6" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-1000XM6</b><span class="pr">179 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-305c/"><span class="ph"><img src="/images/thumb/jbl-tune-305c__white-5804293c4610-320.webp" alt="JBL Tune 305C" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 305C</b><span class="pr">6 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-eo-ic100-usb-type-c/"><span class="ph"><img src="/images/thumb/samsung-eo-ic100-usb-type-c__black-7528303c78fa-320.webp" alt="Samsung Type-C Earphones" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Type-C Earphones</b><span class="pr">8 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-4-bhr-5846-gl/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-4-bhr-5846-gl__main-9259114e19b3-320.webp" alt="Xiaomi Redmi Buds 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 4</b><span class="pr">9 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-100-m2-wired/"><span class="ph"><img src="/images/thumb/jbl-quantum-100-m2-wired__white-abbc8db6c9da-320.webp" alt="JBL Quantum 100 M2 Wired" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 100 M2 Wired</b><span class="pr">16 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-choice-ros-me01/"><span class="ph"><img src="/images/thumb/honor-choice-ros-me01__white-c777714a99d3-320.webp" alt="Honor Choice Headphones ROS-ME01" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Headphones ROS-ME01</b><span class="pr">17 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-wave/"><span class="ph"><img src="/images/thumb/jbl-wave__white-27281c2d135b-320.webp" alt="JBL Wave Buds" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Wave Buds</b><span class="pr">19 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-720-bt/"><span class="ph"><img src="/images/thumb/jbl-tune-720-bt__black-5c9c804f4e56-320.webp" alt="JBL Tune 720 BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 720 BT</b><span class="pr">25 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-headphones-neo/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-headphones-neo__sand-white-0ad7d97bd920-320.webp" alt="Xiaomi Redmi Headphones Neo" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Headphones Neo</b><span class="pr">25 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-670-nc/"><span class="ph"><img src="/images/thumb/jbl-tune-670-nc__black-2a9c966d7c5f-320.webp" alt="JBL Tune 670 NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 670 NC</b><span class="pr">28 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-c510-yc/"><span class="ph"><img src="/images/thumb/sony-wf-c510-yc__blue-e8cbd1d8bf01-320.webp" alt="Sony WF-C510" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C510</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-t220/"><span class="ph"><img src="/images/thumb/jbl-t220__green-89fa8e53bf4d-320.webp" alt="JBL T220" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL T220</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-jr460nc/"><span class="ph"><img src="/images/thumb/jbl-jr460nc__Pink-452af269aba9-320.webp" alt="JBL JR460NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR460NC</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-beam/"><span class="ph"><img src="/images/thumb/jbl-tune-beam__purple-1ba8a11a5b15-320.webp" alt="JBL Tune Beam 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune Beam 2</b><span class="pr">32 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-3-fe/"><span class="ph"><img src="/images/thumb/samsung-galaxy-3-fe__gray-d86e1991e8fd-320.webp" alt="Samsung Galaxy Buds 3 FE" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 3 FE</b><span class="pr">33 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-2/"><span class="ph"><img src="/images/thumb/samsung-galaxy-2__graphite-0b30c0c6f8b1-320.webp" alt="Samsung Galaxy Buds 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 2</b><span class="pr">35 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-350-wireless/"><span class="ph"><img src="/images/thumb/jbl-quantum-350-wireless__black-4153254d5159-320.webp" alt="JBL Quantum 350 Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 350 Wireless</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-2-pro/"><span class="ph"><img src="/images/thumb/samsung-galaxy-2-pro__purple-b67c735dc8d7-320.webp" alt="Samsung Galaxy Buds 2 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds 2 Pro</b><span class="pr">46 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-tws-bluetooth-headsets-3rd-generation/"><span class="ph"><img src="/images/thumb/apple-tws-bluetooth-headsets-3rd-generation__main-7dded20b857d-320.webp" alt="Apple AirPods (3rd generation)" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple AirPods (3rd generation)</b><span class="pr">49 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-660-nc/"><span class="ph"><img src="/images/thumb/jbl-live-660-nc__white-326bdf9ce0d4-320.webp" alt="JBL Live 660 NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live 660 NC</b><span class="pr">49 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-flex/"><span class="ph"><img src="/images/thumb/jbl-live-flex__silver-70cf0d36716e-320.webp" alt="JBL Live Flex" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Flex</b><span class="pr">49 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/logitech-zone-vibe-100/"><span class="ph"><img src="/images/thumb/logitech-zone-vibe-100__graphite-1628bd2d3038-320.webp" alt="Logitech Zone Vibe 100" width="320" height="320" loading="lazy" decoding="async"></span><b>Logitech Zone Vibe 100</b><span class="pr">58 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-studio-buds-plus/"><span class="ph"><img src="/images/thumb/beats-studio-buds-plus__black-gold-093f24a27f15-320.webp" alt="Beats Studio Buds +" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Studio Buds +</b><span class="pr">74 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-motif-ii-anc/"><span class="ph"><img src="/images/thumb/marshall-motif-ii-anc__main-e7dc57595110-320.webp" alt="Marshall Motif II ANC" width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Motif II ANC</b><span class="pr">74 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-earbuds-ii/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-earbuds-ii__soapstone-b0fc3ed11866-320.webp" alt="Bose QuietComfort Earbuds II" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort Earbuds II</b><span class="pr">99 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-noise-cancelling-700/"><span class="ph"><img src="/images/thumb/bose-noise-cancelling-700__white-151a94cdda70-320.webp" alt="Bose Noise Cancelling 700" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose Noise Cancelling 700</b><span class="pr">129 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-mdr-zx110/"><span class="ph"><img src="/images/thumb/sony-mdr-zx110__white-86731a456b85-320.webp" alt="Sony MDR-ZX110" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony MDR-ZX110</b><span class="pr">6 500 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-4-active/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-4-active__main-709058288806-320.webp" alt="Xiaomi Redmi Buds 4 Active" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 4 Active</b><span class="pr">11 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-buds-3-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-buds-3-lite__main-7c36227e9ca4-320.webp" alt="Xiaomi Redmi Buds 3 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 3 Lite</b><span class="pr">11 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-jr320/"><span class="ph"><img src="/images/thumb/jbl-jr320__pink-435742f7aac3-320.webp" alt="JBL JR320" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR320</b><span class="pr">12 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-520-bt/"><span class="ph"><img src="/images/thumb/jbl-tune-520-bt__black-240a59ad24c1-320.webp" alt="JBL Tune 520 BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 520 BT</b><span class="pr">14 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-jr310bt/"><span class="ph"><img src="/images/thumb/jbl-jr310bt__Blue-e2889e46e205-320.webp" alt="JBL JR310BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR310BT</b><span class="pr">16 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-jr320bt/"><span class="ph"><img src="/images/thumb/jbl-jr320bt__purple-06f1328006ff-320.webp" alt="JBL JR320BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR320BT</b><span class="pr">18 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-300/"><span class="ph"><img src="/images/thumb/jbl-quantum-300__main-c73d4e635ddf-320.webp" alt="JBL Quantum 300" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 300</b><span class="pr">22 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-230-nc-tws/"><span class="ph"><img src="/images/thumb/jbl-tune-230-nc-tws__main-6644f1843e67-320.webp" alt="JBL Tune 230NC TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 230NC TWS</b><span class="pr">22 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-c500-true-wireless/"><span class="ph"><img src="/images/thumb/sony-wf-c500-true-wireless__main-045baedc8f2e-320.webp" alt="Sony WF-C500" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C500</b><span class="pr">28 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-wave-300-tws/"><span class="ph"><img src="/images/thumb/jbl-wave-300-tws__Pink-03050da63c78-320.webp" alt="JBL Wave 300 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Wave 300 TWS</b><span class="pr">31 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-buds-2/"><span class="ph"><img src="/images/thumb/jbl-tune-buds-2__black-b6c2f5d191e1-320.webp" alt="JBL Tune Buds 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune Buds 2</b><span class="pr">34 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-solo-true-wireless/"><span class="ph"><img src="/images/thumb/beats-solo-true-wireless__red-c9e6620a780b-320.webp" alt="Beats Solo Buds" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Solo Buds</b><span class="pr">34 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune/"><span class="ph"><img src="/images/thumb/jbl-tune__ghost-3101197a9b63-320.webp" alt="JBL Tune Buds" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune Buds</b><span class="pr">35 800 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-tuf-gaming-h1/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-h1__main-f31deba6d578-320.webp" alt="ASUS TUF Gaming H1" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming H1</b><span class="pr">36 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-760-nc/"><span class="ph"><img src="/images/thumb/jbl-tune-760-nc__main-579feede63ab-320.webp" alt="JBL Tune 760 NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 760 NC</b><span class="pr">37 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-sense-lite/"><span class="ph"><img src="/images/thumb/jbl-sense-lite__purple-d38a4ea7576e-320.webp" alt="JBL Sense Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Sense Lite</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-buds-8-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-buds-8-pro__main-fbc0b1c82f19-320.webp" alt="Xiaomi Redmi Buds 8 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 8 Pro</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-215-tws/"><span class="ph"><img src="/images/thumb/jbl-tune-215-tws__green-3e95ca609da4-320.webp" alt="JBL Tune 215 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 215 TWS</b><span class="pr">44 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-c700n-gz-e/"><span class="ph"><img src="/images/thumb/sony-wf-c700n-gz-e__lavender-99135ea070ac-320.webp" alt="Sony WF-C700N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-C700N</b><span class="pr">44 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-minor-iv/"><span class="ph"><img src="/images/thumb/marshall-minor-iv__cream-1b0478d6498b-320.webp" alt="Marshall Minor IV" width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Minor IV</b><span class="pr">47 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-780nc/"><span class="ph"><img src="/images/thumb/jbl-tune-780nc__white-d1003a8d192e-320.webp" alt="JBL Tune 780NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 780NC</b><span class="pr">49 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/logitech-zone-300/"><span class="ph"><img src="/images/thumb/logitech-zone-300__black-d2eccf0cfb68-320.webp" alt="Logitech Zone 300" width="320" height="320" loading="lazy" decoding="async"></span><b>Logitech Zone 300</b><span class="pr">49 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-soundgear-clips-earclips/"><span class="ph"><img src="/images/thumb/jbl-soundgear-clips-earclips__purple-155a1cc459c8-320.webp" alt="JBL Soundgear Clips Earclips" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Soundgear Clips Earclips</b><span class="pr">49 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-hd-450bt/"><span class="ph"><img src="/images/thumb/sennheiser-hd-450bt__main-81132941664a-320.webp" alt="Sennheiser HD 450BT" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser HD 450BT</b><span class="pr">54 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-buds-3/"><span class="ph"><img src="/images/thumb/jbl-live-buds-3__purple-fe4f0870df61-320.webp" alt="JBL Live Buds 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Buds 3</b><span class="pr">57 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-soundgear-sense/"><span class="ph"><img src="/images/thumb/jbl-soundgear-sense__black-3e5d7a927572-320.webp" alt="JBL Soundgear Sense" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Soundgear Sense</b><span class="pr">59 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-pro-2-tws/"><span class="ph"><img src="/images/thumb/jbl-live-pro-2-tws__blue-a2e94cb42c9d-320.webp" alt="JBL Live Pro 2 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Pro 2 TWS</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-one-nc/"><span class="ph"><img src="/images/thumb/jbl-quantum-one-nc__black-c86a94c6b707-320.webp" alt="JBL Quantum ONE NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum ONE NC</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-beam-3/"><span class="ph"><img src="/images/thumb/jbl-live-beam-3__purple-0d21756ff48a-320.webp" alt="JBL Live Beam 3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Beam 3</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wh-ult900n/"><span class="ph"><img src="/images/thumb/sony-wh-ult900n__white-043103320fbb-320.webp" alt="Sony WH-ULT900N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-ULT900N</b><span class="pr">65 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-610/"><span class="ph"><img src="/images/thumb/jbl-quantum-610__black-0f9b20977df6-320.webp" alt="JBL Quantum 610" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 610</b><span class="pr">65 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-hd-599/"><span class="ph"><img src="/images/thumb/sennheiser-hd-599__main-01b036db97fe-320.webp" alt="Sennheiser HD 599" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser HD 599</b><span class="pr">68 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-sport/"><span class="ph"><img src="/images/thumb/bose-sport__black-39edee57cc37-320.webp" alt="Bose Sport" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose Sport</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/nothing-ear-open-b182/"><span class="ph"><img src="/images/thumb/nothing-ear-open-b182__main-d4568af8a071-320.webp" alt="Nothing Ear Open B182" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing Ear Open B182</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/razer-hammerhead-hyperspeed/"><span class="ph"><img src="/images/thumb/razer-hammerhead-hyperspeed__main-7a644b6f5869-320.webp" alt="Razer Hammerhead HyperSpeed" width="320" height="320" loading="lazy" decoding="async"></span><b>Razer Hammerhead HyperSpeed</b><span class="pr">72 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-solo-3/"><span class="ph"><img src="/images/thumb/beats-solo-3__gold-d5d90c303310-320.webp" alt="Beats Solo 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Solo 3</b><span class="pr">79 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-powerbeats-pro/"><span class="ph"><img src="/images/thumb/beats-powerbeats-pro__black-59b91803bd48-320.webp" alt="Beats PowerBeats Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats PowerBeats Pro</b><span class="pr">84 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-milton-anc/"><span class="ph"><img src="/images/thumb/marshall-milton-anc__black-fe93968070e7-320.webp" alt="Marshall Milton A.N.C." width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Milton A.N.C.</b><span class="pr">84 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-solo4-onear/"><span class="ph"><img src="/images/thumb/beats-solo4-onear__black-6260204ee8f2-320.webp" alt="Beats Solo 4" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Solo 4</b><span class="pr">88 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tour-pro-2-tws/"><span class="ph"><img src="/images/thumb/jbl-tour-pro-2-tws__champagne-e508e6530fc2-320.webp" alt="JBL Tour Pro 2 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tour Pro 2 TWS</b><span class="pr">95 500 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-studio3-wireless/"><span class="ph"><img src="/images/thumb/beats-studio3-wireless__red-58be70641651-320.webp" alt="Beats Studio3 Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Studio3 Wireless</b><span class="pr">104 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-powerbeats-fit/"><span class="ph"><img src="/images/thumb/beats-powerbeats-fit__power-pink-5ffc2da5935a-320.webp" alt="Beats PowerBeats Fit" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats PowerBeats Fit</b><span class="pr">109 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/dyson-zone/"><span class="ph"><img src="/images/thumb/dyson-zone__main-a92cc2804345-320.webp" alt="Dyson Zone" width="320" height="320" loading="lazy" decoding="async"></span><b>Dyson Zone</b><span class="pr">119 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-momentum-4/"><span class="ph"><img src="/images/thumb/sennheiser-momentum-4__black-70623d5d05d4-320.webp" alt="Sennheiser Momentum 4 Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser Momentum 4 Wireless</b><span class="pr">127 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-studio-pro-wireless/"><span class="ph"><img src="/images/thumb/beats-studio-pro-wireless__sandstone-330603035c5d-320.webp" alt="Beats Studio Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Studio Pro</b><span class="pr">129 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-1000xm5-wireless-headphones/"><span class="ph"><img src="/images/thumb/sony-wf-1000xm5-wireless-headphones__main-b896cea5a065-320.webp" alt="Sony WF-1000XM5" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-1000XM5</b><span class="pr">139 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tour-one-m3/"><span class="ph"><img src="/images/thumb/jbl-tour-one-m3__light-mocha-043bb39b20ea-320.webp" alt="JBL Tour One M3" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tour One M3</b><span class="pr">175 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/dyson-ontrac/"><span class="ph"><img src="/images/thumb/dyson-ontrac__cnc-aluminium-66e8b0011c36-320.webp" alt="Dyson OnTrac" width="320" height="320" loading="lazy" decoding="async"></span><b>Dyson OnTrac</b><span class="pr">219 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-choice-earbuds-x7e-ast-me00/"><span class="ph"><img src="/images/thumb/honor-choice-earbuds-x7e-ast-me00__main-8035cbedf1a2-320.webp" alt="Honor Choice Earbuds X7e AST-ME00" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Earbuds X7e AST-ME00</b><span class="pr">8 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wi-c200/"><span class="ph"><img src="/images/thumb/sony-wi-c200__main-0963b352f16e-320.webp" alt="Sony WI-C200" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WI-C200</b><span class="pr">8 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-mi-true-wireless-earbuds-basic-2/"><span class="ph"><img src="/images/thumb/xiaomi-mi-true-wireless-earbuds-basic-2__Black-23cfc4dcb6a0-320.webp" alt="Xiaomi Mi True Wireless Earbuds Basic 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Mi True Wireless Earbuds Basic 2</b><span class="pr">9 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/apple-earpods-3-5mm/"><span class="ph"><img src="/images/thumb/apple-earpods-3-5mm__main-8586ac753bf9-320.webp" alt="Apple EarPods (3.5 mm)" width="320" height="320" loading="lazy" decoding="async"></span><b>Apple EarPods (3.5 mm)</b><span class="pr">10 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-4-lite/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-4-lite__main-d3ab7f9fe141-320.webp" alt="Xiaomi Redmi Buds 4 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 4 Lite</b><span class="pr">11 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wi-c100/"><span class="ph"><img src="/images/thumb/sony-wi-c100__black-18dd67e02d9f-320.webp" alt="Sony WI-C100" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WI-C100</b><span class="pr">11 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-mi-true-wireless-earbuds-basic-2s/"><span class="ph"><img src="/images/thumb/xiaomi-mi-true-wireless-earbuds-basic-2s__Black-53324ba76a6e-320.webp" alt="Xiaomi Mi True Wireless Earbuds Basic 2S" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Mi True Wireless Earbuds Basic 2S</b><span class="pr">11 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-earbuds-x6/"><span class="ph"><img src="/images/thumb/honor-earbuds-x6__main-18b9ea868aab-320.webp" alt="Honor Earbuds X6" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Earbuds X6</b><span class="pr">12 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-530c/"><span class="ph"><img src="/images/thumb/jbl-tune-530c__black-07d993b30a3e-320.webp" alt="JBL Tune 530C" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 530C</b><span class="pr">13 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-t110/"><span class="ph"><img src="/images/thumb/realme-buds-t110__Black-73fb0dadf3a5-320.webp" alt="Realme Buds T110" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds T110</b><span class="pr">13 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-techlife-buds-t100/"><span class="ph"><img src="/images/thumb/realme-techlife-buds-t100__White-2e5c96418a8e-320.webp" alt="Realme TechLife Buds T100" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme TechLife Buds T100</b><span class="pr">13 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-210/"><span class="ph"><img src="/images/thumb/jbl-tune-210__White-4664382faace-320.webp" alt="JBL Tune 210" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 210</b><span class="pr">13 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-choice-earbuds-x5/"><span class="ph"><img src="/images/thumb/honor-choice-earbuds-x5__main-7d03dcd65313-320.webp" alt="Honor Choice Earbuds X5" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Earbuds X5</b><span class="pr">14 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/anker-soundcore-p2i/"><span class="ph"><img src="/images/thumb/anker-soundcore-p2i__Black-c44a0b5e74c2-320.webp" alt="Anker Soundcore P2i" width="320" height="320" loading="lazy" decoding="async"></span><b>Anker Soundcore P2i</b><span class="pr">14 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-205/"><span class="ph"><img src="/images/thumb/jbl-tune-205__white-rose-gold-858a3e0a4bd0-320.webp" alt="JBL Tune 205" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 205</b><span class="pr">14 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/google-pixel-usb-c-earbuds/"><span class="ph"><img src="/images/thumb/google-pixel-usb-c-earbuds__white-8f9cb71f1f37-320.webp" alt="Google Pixel USB-C Earbuds" width="320" height="320" loading="lazy" decoding="async"></span><b>Google Pixel USB-C Earbuds</b><span class="pr">15 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/motorola-moto-buds-bass/"><span class="ph"><img src="/images/thumb/motorola-moto-buds-bass__main-aaec67261883-320.webp" alt="Motorola Moto Buds Bass" width="320" height="320" loading="lazy" decoding="async"></span><b>Motorola Moto Buds Bass</b><span class="pr">15 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-50-wired/"><span class="ph"><img src="/images/thumb/jbl-quantum-50-wired__black-b0aed6923efe-320.webp" alt="JBL Quantum 50 Wired" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 50 Wired</b><span class="pr">16 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-q2/"><span class="ph"><img src="/images/thumb/realme-buds-q2__blue-11d80e0f4170-320.webp" alt="Realme Buds Q2" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Q2</b><span class="pr">16 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-100p/"><span class="ph"><img src="/images/thumb/jbl-quantum-100p__white-58e484ac3fad-320.webp" alt="JBL Quantum 100P" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 100P</b><span class="pr">16 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-100/"><span class="ph"><img src="/images/thumb/jbl-quantum-100__black-da4645bb3d6b-320.webp" alt="JBL Quantum 100" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 100</b><span class="pr">17 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-endurance-run-2-bt/"><span class="ph"><img src="/images/thumb/jbl-endurance-run-2-bt__main-a38da3c48d62-320.webp" alt="JBL Endurance Run 2 BT" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Endurance Run 2 BT</b><span class="pr">17 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-t310/"><span class="ph"><img src="/images/thumb/realme-buds-t310__White-1df668f12635-320.webp" alt="Realme Buds T310" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds T310</b><span class="pr">17 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-bullets-wireless-z-2/"><span class="ph"><img src="/images/thumb/oneplus-bullets-wireless-z-2__black-6e83587ff340-320.webp" alt="OnePlus Bullets Wireless Z 2" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Bullets Wireless Z 2</b><span class="pr">19 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-mdr-xb450ap/"><span class="ph"><img src="/images/thumb/sony-mdr-xb450ap__red-841aff325a4c-320.webp" alt="Sony MDR-XB450AP" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony MDR-XB450AP</b><span class="pr">19 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-5/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-5__black-86fab5777e4d-320.webp" alt="Xiaomi Redmi Buds 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 5</b><span class="pr">19 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-buds-6/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-buds-6__black-1f9a602cc458-320.webp" alt="Xiaomi Redmi Buds 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 6</b><span class="pr">19 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-gear-circle/"><span class="ph"><img src="/images/thumb/samsung-gear-circle__White-62246fe9378d-320.webp" alt="Samsung Gear Circle" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Gear Circle</b><span class="pr">19 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds__Yellow-6b622c732b38-320.webp" alt="Samsung Galaxy Buds" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds</b><span class="pr">19 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-vibe-buds-2/"><span class="ph"><img src="/images/thumb/jbl-vibe-buds-2__black-78107ebedf8e-320.webp" alt="JBL Vibe Buds 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Vibe Buds 2</b><span class="pr">21 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-choice-earbuds-x3/"><span class="ph"><img src="/images/thumb/honor-choice-earbuds-x3__main-d64053252eeb-320.webp" alt="Honor Choice Earbuds X3" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Earbuds X3</b><span class="pr">22 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-air-5/"><span class="ph"><img src="/images/thumb/realme-buds-air-5__White-a51b00f818f1-320.webp" alt="Realme Buds Air 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Air 5</b><span class="pr">22 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-buds-3/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-buds-3__White-10f5f3ec3489-320.webp" alt="Xiaomi Redmi Buds 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 3</b><span class="pr">23 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/honor-choice-clip-mak-me01/"><span class="ph"><img src="/images/thumb/honor-choice-clip-mak-me01__black-c70686794085-320.webp" alt="Honor Choice Earbuds Clip MAK-ME01" width="320" height="320" loading="lazy" decoding="async"></span><b>Honor Choice Earbuds Clip MAK-ME01</b><span class="pr">25 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-nord-buds-2/"><span class="ph"><img src="/images/thumb/oneplus-nord-buds-2__white-b1fc49aec888-320.webp" alt="OnePlus Nord Buds 2" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Nord Buds 2</b><span class="pr">25 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-vibe-beam-2/"><span class="ph"><img src="/images/thumb/jbl-vibe-beam-2__black-184b4763e3c5-320.webp" alt="JBL Vibe Beam 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Vibe Beam 2</b><span class="pr">25 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-200-wired/"><span class="ph"><img src="/images/thumb/jbl-quantum-200-wired__main-44ca1a7f626b-320.webp" alt="JBL Quantum 200 Wired" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 200 Wired</b><span class="pr">26 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-air-6/"><span class="ph"><img src="/images/thumb/realme-buds-air-6__Green-afcb558b581d-320.webp" alt="Realme Buds Air 6" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Air 6</b><span class="pr">26 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-endurance-race/"><span class="ph"><img src="/images/thumb/jbl-endurance-race__black-7e2c0ae9398c-320.webp" alt="JBL Endurance Race" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Endurance Race</b><span class="pr">29 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-130-tws/"><span class="ph"><img src="/images/thumb/jbl-tune-130-tws__main-c3a248fca461-320.webp" alt="JBL Tune 130 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 130 TWS</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-reflect-contour-2/"><span class="ph"><img src="/images/thumb/jbl-reflect-contour-2__black-edea5ec06d79-320.webp" alt="JBL Reflect Contour 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Reflect Contour 2</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-everest-110/"><span class="ph"><img src="/images/thumb/jbl-everest-110__Gunmetal-1ea9f3dff4b1-320.webp" alt="JBL Everest 110" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Everest 110</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-400/"><span class="ph"><img src="/images/thumb/jbl-quantum-400__black-d67771b9d59b-320.webp" alt="JBL Quantum 400" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 400</b><span class="pr">29 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-endurance-race-2/"><span class="ph"><img src="/images/thumb/jbl-endurance-race-2__main-28d355cf038f-320.webp" alt="JBL Endurance Race 2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Endurance Race 2</b><span class="pr">31 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-flex-all-day/"><span class="ph"><img src="/images/thumb/beats-flex-all-day__yellow-d8e4b94fe867-320.webp" alt="Beats Flex" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Flex</b><span class="pr">33 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-air-3/"><span class="ph"><img src="/images/thumb/realme-buds-air-3__dark-blue-567ffae47e37-320.webp" alt="Realme Buds Air 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Air 3</b><span class="pr">33 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/microsoft-modern-usb/"><span class="ph"><img src="/images/thumb/microsoft-modern-usb__main-b37b0a1a618e-320.webp" alt="Microsoft Modern USB Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Microsoft Modern USB Headset</b><span class="pr">34 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-mdr-g300/"><span class="ph"><img src="/images/thumb/sony-mdr-g300__white-7ed898e10e4f-320.webp" alt="Sony MDR-G300" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony MDR-G300</b><span class="pr">34 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/motorola-moto-buds/"><span class="ph"><img src="/images/thumb/motorola-moto-buds__main-721651542294-320.webp" alt="Motorola Moto Buds" width="320" height="320" loading="lazy" decoding="async"></span><b>Motorola Moto Buds</b><span class="pr">35 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-air-5-pro/"><span class="ph"><img src="/images/thumb/realme-buds-air-5-pro__sunrise-beige-7b3d69d7079d-320.webp" alt="Realme Buds Air 5 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Air 5 Pro</b><span class="pr">36 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-rog-strix-go-core/"><span class="ph"><img src="/images/thumb/asus-rog-strix-go-core__main-9d43e6e43953-320.webp" alt="ASUS ROG Strix Go Core" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ROG Strix Go Core</b><span class="pr">37 800 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-tuf-gaming-h3-gun-metal/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-h3-gun-metal__main-924289126af5-320.webp" alt="ASUS TUF Gaming H3" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming H3</b><span class="pr">37 800 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-tuf-gaming-h7-core-gun-metal/"><span class="ph"><img src="/images/thumb/asus-tuf-gaming-h7-core-gun-metal__main-f04915024652-320.webp" alt="ASUS TUF Gaming H7 Core" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF Gaming H7 Core</b><span class="pr">37 800 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-air-6-pro/"><span class="ph"><img src="/images/thumb/realme-buds-air-6-pro__Blue-620bb949f668-320.webp" alt="Realme Buds Air 6 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Air 6 Pro</b><span class="pr">38 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-tuf-h3-wireless/"><span class="ph"><img src="/images/thumb/asus-tuf-h3-wireless__main-0362dcc5713a-320.webp" alt="ASUS TUF H3 Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS TUF H3 Wireless</b><span class="pr">39 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-jr470nc/"><span class="ph"><img src="/images/thumb/jbl-jr470nc__pink-94994b7ab621-320.webp" alt="JBL JR470NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL JR470NC</b><span class="pr">39 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-460-nc/"><span class="ph"><img src="/images/thumb/jbl-live-460-nc__main-669f255f97a8-320.webp" alt="JBL Live 460 NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live 460 NC</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-redmi-buds-3-pro/"><span class="ph"><img src="/images/thumb/xiaomi-redmi-buds-3-pro__graphite-black-6503147e9071-320.webp" alt="Xiaomi Redmi Buds 3 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Redmi Buds 3 Pro</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/realme-buds-air-pro/"><span class="ph"><img src="/images/thumb/realme-buds-air-pro__white-95f27aa676b4-320.webp" alt="Realme Buds Air Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Realme Buds Air Pro</b><span class="pr">39 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-under-armour-earbuds/"><span class="ph"><img src="/images/thumb/jbl-under-armour-earbuds__white-3e051b2a1d38-320.webp" alt="JBL Under Armour Earbuds" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Under Armour Earbuds</b><span class="pr">44 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-rog-delta-s/"><span class="ph"><img src="/images/thumb/asus-rog-delta-s__main-e1cc6a1d7234-320.webp" alt="ASUS ROG Delta S" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ROG Delta S</b><span class="pr">45 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-buds-3/"><span class="ph"><img src="/images/thumb/oneplus-buds-3__gray-78ffd4489708-320.webp" alt="OnePlus Buds 3" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Buds 3</b><span class="pr">45 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-buds-pro/"><span class="ph"><img src="/images/thumb/oneplus-buds-pro__matte-black-fec185af7507-320.webp" alt="OnePlus Buds Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Buds Pro</b><span class="pr">47 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tune-125-tws/"><span class="ph"><img src="/images/thumb/jbl-tune-125-tws__blue-be6afda5c749-320.webp" alt="JBL Tune 125 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tune 125 TWS</b><span class="pr">49 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-buds-3/"><span class="ph"><img src="/images/thumb/xiaomi-buds-3__carbon-black-735e8bf1e939-320.webp" alt="Xiaomi Buds 3" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Buds 3</b><span class="pr">49 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/nokia-e3500/"><span class="ph"><img src="/images/thumb/nokia-e3500__white-aba656dd1e80-320.webp" alt="Nokia E3500" width="320" height="320" loading="lazy" decoding="async"></span><b>Nokia E3500</b><span class="pr">49 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-endurance-peak-4/"><span class="ph"><img src="/images/thumb/jbl-endurance-peak-4__purple-d19e488fe90b-320.webp" alt="JBL Endurance Peak 4" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Endurance Peak 4</b><span class="pr">55 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-buds-4/"><span class="ph"><img src="/images/thumb/oneplus-buds-4__storm-gray-77bc4c07215e-320.webp" alt="OnePlus Buds 4" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Buds 4</b><span class="pr">55 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-buds-pro-2/"><span class="ph"><img src="/images/thumb/oneplus-buds-pro-2__black-49c980abe2f6-320.webp" alt="OnePlus Buds Pro 2" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Buds Pro 2</b><span class="pr">57 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tour-pro-plus/"><span class="ph"><img src="/images/thumb/jbl-tour-pro-plus__black-6782196562fc-320.webp" alt="JBL Tour Pro Plus" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tour Pro Plus</b><span class="pr">59 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-1000xm3/"><span class="ph"><img src="/images/thumb/sony-wf-1000xm3__silver-1ae57722ba73-320.webp" alt="Sony WF-1000XM3" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-1000XM3</b><span class="pr">59 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-ps4-gold-wireless-headset/"><span class="ph"><img src="/images/thumb/sony-ps4-gold-wireless-headset__gold-a60f664f2384-320.webp" alt="Sony PS4 Gold Wireless Headset" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony PS4 Gold Wireless Headset</b><span class="pr">59 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/nothing-cmf-headphone-pro/"><span class="ph"><img src="/images/thumb/nothing-cmf-headphone-pro__light-green-de569ff7fbaa-320.webp" alt="Nothing CMF Headphone Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing CMF Headphone Pro</b><span class="pr">59 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/samsung-galaxy-buds-live/"><span class="ph"><img src="/images/thumb/samsung-galaxy-buds-live__black-95b656fb9e89-320.webp" alt="Samsung Galaxy Buds Live" width="320" height="320" loading="lazy" decoding="async"></span><b>Samsung Galaxy Buds Live</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-free-ncplus/"><span class="ph"><img src="/images/thumb/jbl-live-free-ncplus__white-ddd640c141ed-320.webp" alt="JBL Live Free NC+" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Free NC+</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-pro-tws/"><span class="ph"><img src="/images/thumb/jbl-live-pro-tws__White-49c89e29da57-320.webp" alt="JBL Live Pro+ TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live Pro+ TWS</b><span class="pr">59 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/asus-rog-strix-go-2-4/"><span class="ph"><img src="/images/thumb/asus-rog-strix-go-2-4__main-b7b54bdac297-320.webp" alt="ASUS ROG Strix Go 2.4" width="320" height="320" loading="lazy" decoding="async"></span><b>ASUS ROG Strix Go 2.4</b><span class="pr">61 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-solo-hd/"><span class="ph"><img src="/images/thumb/beats-solo-hd__Pink-e28b4921b81c-320.webp" alt="Beats Solo HD" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Solo HD</b><span class="pr">64 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-accentum-wireless-acaebt/"><span class="ph"><img src="/images/thumb/sennheiser-accentum-wireless-acaebt__black-61d74d2a9192-320.webp" alt="Sennheiser Accentum Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser Accentum Wireless</b><span class="pr">68 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-680nc/"><span class="ph"><img src="/images/thumb/jbl-live-680nc__white-5d6f896be5bf-320.webp" alt="JBL Live 680NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live 680NC</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/oneplus-buds-pro-3/"><span class="ph"><img src="/images/thumb/oneplus-buds-pro-3__lunar-radiance-7a6f30c143ee-320.webp" alt="OnePlus Buds Pro 3" width="320" height="320" loading="lazy" decoding="async"></span><b>OnePlus Buds Pro 3</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-soundgear-frames/"><span class="ph"><img src="/images/thumb/jbl-soundgear-frames__main-684a75a9e26d-320.webp" alt="JBL Soundgear Frames" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Soundgear Frames</b><span class="pr">69 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-quantum-810/"><span class="ph"><img src="/images/thumb/jbl-quantum-810__black-535891c7356a-320.webp" alt="JBL Quantum 810 Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Quantum 810 Wireless</b><span class="pr">69 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-accentum/"><span class="ph"><img src="/images/thumb/sennheiser-accentum__main-aca8c4265606-320.webp" alt="Sennheiser ACCENTUM" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser ACCENTUM</b><span class="pr">76 200 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-accentum-true-wireless-atw1/"><span class="ph"><img src="/images/thumb/sennheiser-accentum-true-wireless-atw1__white-1d9f33e6be3a-320.webp" alt="Sennheiser Accentum True Wireless ATW1" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser Accentum True Wireless ATW1</b><span class="pr">77 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-live-780nc/"><span class="ph"><img src="/images/thumb/jbl-live-780nc__white-c0950f22a131-320.webp" alt="JBL Live 780NC" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Live 780NC</b><span class="pr">79 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-sp800n/"><span class="ph"><img src="/images/thumb/sony-wf-sp800n__blue-f3d8ac95bae4-320.webp" alt="Sony WF-SP800N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-SP800N</b><span class="pr">79 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/xiaomi-flipbuds-pro/"><span class="ph"><img src="/images/thumb/xiaomi-flipbuds-pro__main-8ef1e0fdc0e5-320.webp" alt="Xiaomi FlipBuds Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi FlipBuds Pro</b><span class="pr">79 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-inzone-h5/"><span class="ph"><img src="/images/thumb/sony-inzone-h5__main-e5816f460146-320.webp" alt="Sony Inzone H5" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony Inzone H5</b><span class="pr">82 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-accentum-plus/"><span class="ph"><img src="/images/thumb/sennheiser-accentum-plus__black-c5cf32ac505e-320.webp" alt="Sennheiser Accentum Plus" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser Accentum Plus</b><span class="pr">88 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-earbuds/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-earbuds__white-82d6f8d0a004-320.webp" alt="Bose QuietComfort Earbuds" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort Earbuds</b><span class="pr">98 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-45-acoustic/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-45-acoustic__black-e4b906c3c5eb-320.webp" alt="Bose QuietComfort 45 Acoustic" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort 45 Acoustic</b><span class="pr">109 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tour-one-m2/"><span class="ph"><img src="/images/thumb/jbl-tour-one-m2__champagne-9cf6760f4830-320.webp" alt="JBL Tour One M2" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tour One M2</b><span class="pr">114 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sennheiser-momentum-sport-msport1/"><span class="ph"><img src="/images/thumb/sennheiser-momentum-sport-msport1__black-b2521f507b5c-320.webp" alt="Sennheiser Momentum Sport MSPORT1" width="320" height="320" loading="lazy" decoding="async"></span><b>Sennheiser Momentum Sport MSPORT1</b><span class="pr">118 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-powerbeats-pro-2/"><span class="ph"><img src="/images/thumb/beats-powerbeats-pro-2__electric-orange-04f9ace78718-320.webp" alt="Beats Powerbeats Pro 2" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Powerbeats Pro 2</b><span class="pr">119 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-monitor-ii-anc/"><span class="ph"><img src="/images/thumb/marshall-monitor-ii-anc__main-2d570141e809-320.webp" alt="Marshall Monitor II A.N.C." width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Monitor II A.N.C.</b><span class="pr">129 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bowers-wilkins-pi6/"><span class="ph"><img src="/images/thumb/bowers-wilkins-pi6__storm-grey-0d4fed1ec391-320.webp" alt="Bowers &amp; Wilkins Pi6" width="320" height="320" loading="lazy" decoding="async"></span><b>Bowers &amp; Wilkins Pi6</b><span class="pr">134 300 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/jbl-tour-pro-3-tws/"><span class="ph"><img src="/images/thumb/jbl-tour-pro-3-tws__black-7d5d428ce65f-320.webp" alt="JBL Tour Pro 3 TWS" width="320" height="320" loading="lazy" decoding="async"></span><b>JBL Tour Pro 3 TWS</b><span class="pr">139 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort/"><span class="ph"><img src="/images/thumb/bose-quietcomfort__white-d450f510bdba-320.webp" alt="Bose QuietComfort Headphones" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort Headphones</b><span class="pr">139 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-se-wireless/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-se-wireless__black-3e2d0cf23481-320.webp" alt="Bose QuietComfort SE Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort SE Wireless</b><span class="pr">139 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/marshall-monitor-iii/"><span class="ph"><img src="/images/thumb/marshall-monitor-iii__black-fdcb433a589e-320.webp" alt="Marshall Monitor III" width="320" height="320" loading="lazy" decoding="async"></span><b>Marshall Monitor III</b><span class="pr">149 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wh-g900n-wz-e/"><span class="ph"><img src="/images/thumb/sony-wh-g900n-wz-e__main-a1f8a1759169-320.webp" alt="Sony WH-G900N" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WH-G900N</b><span class="pr">151 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/nothing-6974434224179/"><span class="ph"><img src="/images/thumb/nothing-6974434224179__main-df9b3808845a-320.webp" alt="Nothing Headphone (1)" width="320" height="320" loading="lazy" decoding="async"></span><b>Nothing Headphone (1)</b><span class="pr">157 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-ultra/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-ultra__deep-plum-21dcff342151-320.webp" alt="Bose QuietComfort Ultra Headphones" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort Ultra Headphones</b><span class="pr">159 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/sony-wf-1000xm6/"><span class="ph"><img src="/images/thumb/sony-wf-1000xm6__silver-d73e2b42c378-320.webp" alt="Sony WF-1000XM6" width="320" height="320" loading="lazy" decoding="async"></span><b>Sony WF-1000XM6</b><span class="pr">159 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/beats-studio-wireless/"><span class="ph"><img src="/images/thumb/beats-studio-wireless__Red-372143bada6a-320.webp" alt="Beats Studio Wireless" width="320" height="320" loading="lazy" decoding="async"></span><b>Beats Studio Wireless</b><span class="pr">159 900 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-ultra-earbuds/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-ultra-earbuds__black-bd884bc9791a-320.webp" alt="Bose QuietComfort Ultra Earbuds" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort Ultra Earbuds</b><span class="pr">189 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bo-beoplay-ex/"><span class="ph"><img src="/images/thumb/bo-beoplay-ex__black-anthracite-73bb788260c5-320.webp" alt="Bang &amp; Olufsen Beoplay EX" width="320" height="320" loading="lazy" decoding="async"></span><b>Bang &amp; Olufsen Beoplay EX</b><span class="pr">209 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bose-quietcomfort-ultra-headphones-2nd-gen/"><span class="ph"><img src="/images/thumb/bose-quietcomfort-ultra-headphones-2nd-gen__white-65a361e89b54-320.webp" alt="Bose QuietComfort Ultra Headphones 2nd Gen" width="320" height="320" loading="lazy" decoding="async"></span><b>Bose QuietComfort Ultra Headphones 2nd Gen</b><span class="pr">209 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bo-beoplay-hx/"><span class="ph"><img src="/images/thumb/bo-beoplay-hx__black-anthracite-e7cfa05ae39c-320.webp" alt="Bang &amp; Olufsen Beoplay HX" width="320" height="320" loading="lazy" decoding="async"></span><b>Bang &amp; Olufsen Beoplay HX</b><span class="pr">259 000 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bowers-wilkins-px8/"><span class="ph"><img src="/images/thumb/bowers-wilkins-px8__tan-01b02e37835f-320.webp" alt="Bowers &amp; Wilkins PX8" width="320" height="320" loading="lazy" decoding="async"></span><b>Bowers &amp; Wilkins PX8</b><span class="pr">263 400 ֏-ից</span></a></li>
+<li><a class="cd" href="../../p/bo-beoplay-h95/"><span class="ph"><img src="/images/thumb/bo-beoplay-h95__black-d2896c9ee8d2-320.webp" alt="Bang &amp; Olufsen Beoplay H95" width="320" height="320" loading="lazy" decoding="async"></span><b>Bang &amp; Olufsen Beoplay H95</b><span class="pr">509 000 ֏-ից</span></a></li></ul>
+<p style="margin-top:22px">Ամենաէժանը՝ JBL Tune 110՝ 3 900 ֏։ Ամենաշատ խանութներում՝ Apple AirPods 4 (17 խանութ)։ Գները՝ 3 900 ֏–509 000 ֏, 22 խանութ։</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/c/laptop/">Նոութբուքեր</a><a href="/c/ereader/">Էլ. ընթերցիչներ</a><a href="/c/monitor/">Մոնիտորներ</a><a href="/c/headphones/">Ականջակալներ</a><a href="/c/speaker/">Բարձրախոսներ</a><a href="/c/accessory/">Apple աքսեսուարներ</a><a href="/c/console/">Խաղային կոնսոլներ</a><a href="/c/desktop/">Համակարգիչներ</a><a href="/c/tablet/">Պլանշետներ</a><a href="/c/phone/">Հեռախոսներ</a><a href="/c/watch/">Խելացի ժամացույցներ</a><a href="/c/component/">Մասնագործեր</a><a href="/deals/">Գների անկում</a><a href="/b/">Բլոգ</a></div></footer></body></html>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'unsafe-inline'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data: https://grafzasranec.goatcounter.com https://www.googletagmanager.com https://*.google-analytics.com https://www.facebook.com; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' https://gc.zgo.at https://www.googletagmanager.com https://connect.facebook.net; connect-src https://grafzasranec.goatcounter.com https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com https://www.facebook.com;  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -35,50 +35,69 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://better.am/images/social/better-am.jpg">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Better.am","item":"https://better.am/?lang=en"},{"@type":"ListItem","position":2,"name":"Vacuum cleaners","item":"https://better.am/en/c/vacuum/"},{"@type":"ListItem","position":3,"name":"Xiaomi — Vacuum cleaners","item":"https://better.am/en/c/vacuum/xiaomi/"}]}</script>
-<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>
 </head><body>
-<header><a href="../../../../?lang=en">Better.am</a></header>
+<div class="bar"><header class="top"><a class="wm" href="/?lang=en" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="/?lang=en">Catalogue</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></nav>
+<div class="lg"><a href="/c/vacuum/xiaomi/" hreflang="hy">ՀԱՅ</a><a href="/ru/c/vacuum/xiaomi/" hreflang="ru">РУС</a><span aria-current="true">ENG</span></div>
+</header></div>
 <nav class="bc" aria-label="Breadcrumb"><a href="../../../../?lang=en">Better.am</a> › <a href="../../../../en/c/vacuum/">Vacuum cleaners</a> › <span>Xiaomi — Vacuum cleaners</span></nav>
 <main>
 <h1>Xiaomi — Vacuum cleaners</h1>
 <p class="lead">Xiaomi — Vacuum cleaners. 19 models, from 30 900 ֏. Compare prices in Armenian shops on Better.am.</p>
-<p>Cheapest: Xiaomi Vacuum Cleaner P30 at 30 900 ֏. Most widely sold: Xiaomi Vacuum Cleaner G20 Lite (5 shops). Prices 30 900 ֏–547 900 ֏ across 9 shops.</p>
-<p>Other brands: <a href="../../../../en/c/vacuum/dreame/">Dreame</a> · <a href="../../../../en/c/vacuum/karcher/">Karcher</a> · <a href="../../../../en/c/vacuum/samsung/">Samsung</a> · <a href="../../../../en/c/vacuum/hisense/">Hisense</a> · <a href="../../../../en/c/vacuum/panasonic/">Panasonic</a> · <a href="../../../../en/c/vacuum/roborock/">Roborock</a> · <a href="../../../../en/c/vacuum/lg/">LG</a> · <a href="../../../../en/c/vacuum/philips/">Philips</a> · <a href="../../../../en/c/vacuum/mova/">Mova</a> · <a href="../../../../en/c/vacuum/dyson/">Dyson</a> · <a href="../../../../en/c/vacuum/irobot/">iRobot</a> · <a href="../../../../en/c/vacuum/toshiba/">Toshiba</a></p>
 <a class="go" href="../../../../?lang=en#/c/vacuum">Filter and compare on Better.am</a>
-
-<p><a href="../../../../en/deals/">What got cheaper</a></p>
+<p class="lead" style="margin:18px 0 0">Other brands: </p><ul class="pills" style="margin-top:6px"><li><a href="../../../../en/c/vacuum/dreame/">Dreame</a></li><li><a href="../../../../en/c/vacuum/karcher/">Karcher</a></li><li><a href="../../../../en/c/vacuum/samsung/">Samsung</a></li><li><a href="../../../../en/c/vacuum/hisense/">Hisense</a></li><li><a href="../../../../en/c/vacuum/panasonic/">Panasonic</a></li><li><a href="../../../../en/c/vacuum/roborock/">Roborock</a></li><li><a href="../../../../en/c/vacuum/lg/">LG</a></li><li><a href="../../../../en/c/vacuum/philips/">Philips</a></li><li><a href="../../../../en/c/vacuum/mova/">Mova</a></li><li><a href="../../../../en/c/vacuum/dyson/">Dyson</a></li><li><a href="../../../../en/c/vacuum/irobot/">iRobot</a></li><li><a href="../../../../en/c/vacuum/toshiba/">Toshiba</a></li></ul>
+<ul class="pills"><li><a href="../../../../en/deals/">What got cheaper</a></li></ul>
 <h2>Models and prices</h2>
-<ul class="pl"><li><a href="../../../../en/p/xiaomi-vacuum-cleaner-g20-lite/">Xiaomi Vacuum Cleaner G20 Lite</a><span>from 44 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-cleaner-g20/">Xiaomi Vacuum Cleaner G20</a><span>from 84 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-cleaner-g20-max/">Xiaomi Vacuum Cleaner G20 Max</a><span>from 109 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-truclean-w30-pro/">Xiaomi Truclean W30 Pro Wet Dry Vacuum</a><span>from 129 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-robot-vacuum-s40-pro/">Xiaomi Robot Vacuum S40 Pro</a><span>from 137 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-h50-bhr08gueu/">Xiaomi Robot Vacuum H50</a><span>from 159 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-h50-pro-bhr089neu/">Xiaomi Robot Vacuum H50 Pro</a><span>from 209 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-cleaner-p30/">Xiaomi Vacuum Cleaner P30</a><span>from 30 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-robot-vacuum-5/">Xiaomi Robot Vacuum 5</a><span>from 279 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-s40c-bhr9664eu/">Xiaomi Vacuum S40C BHR9664EU</a><span>from 59 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-s40-bhr084aeu/">Xiaomi Vacuum S40 BHR084AEU</a><span>from 69 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-truclean-w20-wet-dry-vacuum/">Xiaomi Truclean W20 Wet Dry Vacuum</a><span>from 79 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-h40-bhr07xbeu/">Xiaomi Robot Vacuum H40 BHR07XBEU</a><span>from 109 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-robot-vacuum-x20-pro/">Xiaomi Robot Vacuum X20 Pro</a><span>from 224 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-vacuum-6-max/">Xiaomi Vacuum 6 Max</a><span>from 469 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-handheld-vacuum-g30-max/">Xiaomi Handheld Vacuum Cleaner G30 Max</a><span>from 187 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-robot-vacuum-x20-plus-bhr8124eu/">Xiaomi Robot Vacuum X20+ (BHR8124EU)</a><span>from 249 000 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-robot-vacuum-5-pro/">Xiaomi Robot Vacuum 5 Pro</a><span>from 279 900 ֏</span></li>
-<li><a href="../../../../en/p/xiaomi-robot-vacuum-x20-max/">Xiaomi Robot Vacuum X20 Max</a><span>from 280 000 ֏</span></li></ul>
-<p class="upd">06.11.2026</p>
-</main></body></html>
+<ul class="pg"><li><a class="cd" href="../../../../en/p/xiaomi-vacuum-cleaner-g20-lite/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-cleaner-g20-lite__main-a6926d94c92a-320.webp" alt="Xiaomi Vacuum Cleaner G20 Lite" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum Cleaner G20 Lite</b><span class="pr">from 44 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-cleaner-g20/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-cleaner-g20__main-427c20349682-320.webp" alt="Xiaomi Vacuum Cleaner G20" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum Cleaner G20</b><span class="pr">from 84 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-cleaner-g20-max/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-cleaner-g20-max__main-5c1000be69fa-320.webp" alt="Xiaomi Vacuum Cleaner G20 Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum Cleaner G20 Max</b><span class="pr">from 109 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-truclean-w30-pro/"><span class="ph"><img src="/images/thumb/xiaomi-truclean-w30-pro__main-f5052a2b9474-320.webp" alt="Xiaomi Truclean W30 Pro Wet Dry Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Truclean W30 Pro Wet Dry Vacuum</b><span class="pr">from 129 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-robot-vacuum-s40-pro/"><span class="ph"><img src="/images/thumb/xiaomi-robot-vacuum-s40-pro__main-8fac403aeb76-320.webp" alt="Xiaomi Robot Vacuum S40 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum S40 Pro</b><span class="pr">from 137 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-h50-bhr08gueu/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-h50-bhr08gueu__white-a46a8a06e8a1-320.webp" alt="Xiaomi Robot Vacuum H50" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum H50</b><span class="pr">from 159 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-h50-pro-bhr089neu/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-h50-pro-bhr089neu__white-db6168620f62-320.webp" alt="Xiaomi Robot Vacuum H50 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum H50 Pro</b><span class="pr">from 209 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-cleaner-p30/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-cleaner-p30__white-cd5428128ba7-320.webp" alt="Xiaomi Vacuum Cleaner P30" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum Cleaner P30</b><span class="pr">from 30 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-robot-vacuum-5/"><span class="ph"><img src="/images/thumb/xiaomi-robot-vacuum-5__main-cdb4a8e0b800-320.webp" alt="Xiaomi Robot Vacuum 5" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum 5</b><span class="pr">from 279 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-s40c-bhr9664eu/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-s40c-bhr9664eu__main-7d81a532515a-320.webp" alt="Xiaomi Vacuum S40C BHR9664EU" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum S40C BHR9664EU</b><span class="pr">from 59 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-s40-bhr084aeu/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-s40-bhr084aeu__white-fdda04c62e98-320.webp" alt="Xiaomi Vacuum S40 BHR084AEU" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum S40 BHR084AEU</b><span class="pr">from 69 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-truclean-w20-wet-dry-vacuum/"><span class="ph"><img src="/images/thumb/xiaomi-truclean-w20-wet-dry-vacuum__white-5b8eceb31c03-320.webp" alt="Xiaomi Truclean W20 Wet Dry Vacuum" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Truclean W20 Wet Dry Vacuum</b><span class="pr">from 79 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-h40-bhr07xbeu/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-h40-bhr07xbeu__main-b4fc6459caf7-320.webp" alt="Xiaomi Robot Vacuum H40 BHR07XBEU" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum H40 BHR07XBEU</b><span class="pr">from 109 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-robot-vacuum-x20-pro/"><span class="ph"><img src="/images/thumb/xiaomi-robot-vacuum-x20-pro__main-1ba639bf5b29-320.webp" alt="Xiaomi Robot Vacuum X20 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum X20 Pro</b><span class="pr">from 224 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-vacuum-6-max/"><span class="ph"><img src="/images/thumb/xiaomi-vacuum-6-max__dark-gray-silver-90e97b9ba7b3-320.webp" alt="Xiaomi Vacuum 6 Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Vacuum 6 Max</b><span class="pr">from 469 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-handheld-vacuum-g30-max/"><span class="ph"><img src="/images/thumb/xiaomi-handheld-vacuum-g30-max__main-594607a337a5-320.webp" alt="Xiaomi Handheld Vacuum Cleaner G30 Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Handheld Vacuum Cleaner G30 Max</b><span class="pr">from 187 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-robot-vacuum-x20-plus-bhr8124eu/"><span class="ph"><img src="/images/thumb/xiaomi-robot-vacuum-x20-plus-bhr8124eu__main-7469cd37fb8d-320.webp" alt="Xiaomi Robot Vacuum X20+ (BHR8124EU)" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum X20+ (BHR8124EU)</b><span class="pr">from 249 000 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-robot-vacuum-5-pro/"><span class="ph"><img src="/images/thumb/xiaomi-robot-vacuum-5-pro__main-19796cfeee8b-320.webp" alt="Xiaomi Robot Vacuum 5 Pro" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum 5 Pro</b><span class="pr">from 279 900 ֏</span></a></li>
+<li><a class="cd" href="../../../../en/p/xiaomi-robot-vacuum-x20-max/"><span class="ph"><img src="/images/thumb/xiaomi-robot-vacuum-x20-max__main-33ef780b99c9-320.webp" alt="Xiaomi Robot Vacuum X20 Max" width="320" height="320" loading="lazy" decoding="async"></span><b>Xiaomi Robot Vacuum X20 Max</b><span class="pr">from 280 000 ֏</span></a></li></ul>
+<p style="margin-top:22px">Cheapest: Xiaomi Vacuum Cleaner P30 at 30 900 ֏. Most widely sold: Xiaomi Vacuum Cleaner G20 Lite (5 shops). Prices 30 900 ֏–547 900 ֏ across 9 shops.</p>
+<p class="upd">07.11.2026</p>
+</main><footer class="ft"><div><a href="/en/c/laptop/">Laptops</a><a href="/en/c/ereader/">E-readers</a><a href="/en/c/monitor/">Monitors</a><a href="/en/c/headphones/">Headphones</a><a href="/en/c/speaker/">Speakers</a><a href="/en/c/accessory/">Apple accessories</a><a href="/en/c/console/">Consoles</a><a href="/en/c/desktop/">Desktops</a><a href="/en/c/tablet/">Tablets</a><a href="/en/c/phone/">Phones</a><a href="/en/c/watch/">Smartwatches</a><a href="/en/c/component/">Components</a><a href="/en/deals/">Price drops</a><a href="/en/b/">Blog</a></div></footer></body></html>

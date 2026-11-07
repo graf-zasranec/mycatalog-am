@@ -872,20 +872,62 @@ const specRows = (p, l) => {
     })),
   ].filter(([, v]) => v);
 };
-const STYLE = `<style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28}
-main,header,nav.bc{max-width:860px;margin:0 auto;padding:0 16px}header{padding-top:18px}
-header a{font-weight:800;font-size:20px;color:#9E2B25;text-decoration:none}
-nav.bc{font-size:14px;color:#626974;margin-top:10px}nav.bc a{color:#4A5262}
-h1{font-size:28px;line-height:1.2;margin:10px 0 6px}h2{font-size:19px;margin:28px 0 8px}
-.lead{color:#4A5262;margin:0 0 14px}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
-a.go{display:inline-block;background:#9E2B25;color:#fff;text-decoration:none;padding:11px 20px;border-radius:50px;font-weight:600}
-table{width:100%;border-collapse:collapse;background:#FFFFFF;font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid #E4DDD2;text-align:left}
+const STYLE = `<link rel="stylesheet" href="/fonts/fonts.css"><style>
+:root{--bg:#f1ede8;--surface:#fffdfa;--surface2:#e8e1dc;--text:#1d1b20;--body:#554f59;--muted:#6a636e;--line:#d9d0cc;--brand:#a21c49;--brand-ink:#fffdfa;--brand-soft:#f1d5df;--good:#1f6b49;--good-soft:#d9eee3;--ui:Manrope,'Noto Sans Armenian',system-ui,sans-serif;--wordmark:Fraunces,'Noto Serif Armenian',Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#111217;--surface:#1b1c24;--surface2:#252630;--text:#f5f0ec;--body:#c2bdca;--muted:#aaa5b3;--line:#30303c;--brand:#d2356b;--brand-soft:#3c1e2d;--good:#87d7b0;--good-soft:#19382c}}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 var(--ui);background:var(--bg);color:var(--text)}
+a{color:inherit}img{max-width:100%}
+.top,main,nav.bc,.ft>div{max-width:1200px;margin:0 auto;padding-inline:16px}
+.bar{background:var(--bg);border-bottom:1px solid var(--line)}@media (min-width:700px){.bar{position:sticky;top:0;z-index:5}}
+.top{display:flex;align-items:center;flex-wrap:wrap;gap:4px 18px;min-height:64px;padding-block:8px}
+.wm{font:800 30px/1 var(--wordmark);letter-spacing:-.03em;text-decoration:none;color:var(--text);margin-right:8px}.wm em{font-style:normal;color:var(--brand)}
+.tn{display:flex;flex-wrap:wrap;gap:0 16px;font-size:14px;font-weight:600}.tn a{display:inline-flex;align-items:center;min-height:44px;color:var(--body);text-decoration:none}.tn a:hover{color:var(--text)}
+.lg{display:flex;gap:8px;margin-left:auto;font-size:12px;font-weight:700}.lg a,.lg span{display:inline-flex;align-items:center;min-height:44px;padding-inline:4px;color:var(--muted);text-decoration:none}.lg span{color:var(--text);box-shadow:inset 0 -2px 0 var(--brand)}
+nav.bc{font-size:13px;color:var(--muted);margin-top:14px}nav.bc a{color:var(--body)}
+h1{font-size:clamp(28px,4.4vw,44px);font-weight:800;letter-spacing:-.025em;line-height:1.12;margin:10px 0 8px;overflow-wrap:break-word}h2{font-size:21px;font-weight:800;letter-spacing:-.015em;line-height:1.25;margin:32px 0 12px}
+.lead{color:var(--body);margin:0 0 14px;max-width:70ch}main>p{max-width:70ch}.shot{display:block;max-width:min(360px,100%);height:auto;margin:14px 0}
+a.go{display:inline-flex;align-items:center;min-height:46px;background:var(--brand);color:var(--brand-ink);text-decoration:none;padding:8px 22px;border-radius:50px;font-weight:700}a.go:hover{filter:brightness(1.08)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;padding:0;list-style:none}.pills a{display:inline-flex;align-items:center;min-height:36px;padding:4px 13px;border:1px solid var(--line);border-radius:50px;background:var(--surface);font-size:14px;font-weight:600;text-decoration:none}.pills a:hover{border-color:var(--text)}
+table{width:100%;border-collapse:collapse;background:var(--surface);font-size:15px}th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left}
 td.n,th.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.tw{overflow-x:auto}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:#626974}dd{margin:0}
-ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #E4DDD2}
-ul.pl a{color:#161C28}.upd{font-size:13px;color:#626974;margin:18px 0 40px}
-@media (prefers-color-scheme:dark){body{background:#12151D;color:#F2EEE7}a,.lead,nav.bc a{color:#B3BBC9}header a{color:#E4574F}nav.bc,dt,.upd{color:#9AA3B2}
-a.go{background:#E4574F;color:#12151D}table{background:#1A1E29}th,td,ul.pl li{border-color:#2A3040}ul.pl a{color:#F2EEE7}}</style>`;
+dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;margin:0}dt{color:var(--muted)}dd{margin:0}
+ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
+@media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
+.cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
+.cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
+.cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
+.upd{font-size:13px;color:var(--muted);margin:18px 0 40px}
+.ft{border-top:1px solid var(--line);margin-top:40px;padding-block:22px;font-size:14px;color:var(--muted)}.ft>div{display:flex;flex-wrap:wrap;gap:0 18px}.ft a{display:inline-flex;align-items:center;min-height:40px;color:var(--body);text-decoration:none}.ft a:hover{color:var(--text)}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){.cd{transition:none}.cd:hover{transform:none}}</style>`;
+// The same logo, menu, languages and footer as the app. A visitor from Google lands on these pages,
+// and they used to look like a different site with no way onward (audit, 2026-11-07).
+const CHROME = {
+  hy: { catalog: 'Կատալոգ', deals: 'Գների անկում', blog: 'Բլոգ' },
+  ru: { catalog: 'Каталог', deals: 'Снижение цен', blog: 'Блог' },
+  en: { catalog: 'Catalogue', deals: 'Price drops', blog: 'Blog' },
+};
+const LANG_NAMES = { hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' };
+const TOP = (lang, path) => {
+  const pre = PRE[lang], c = CHROME[lang], app = lang === 'hy' ? '/' : `/?lang=${lang}`;
+  return `<div class="bar"><header class="top"><a class="wm" href="${app}" aria-label="Better.am">better<em>.</em></a>
+<nav class="tn"><a href="${app}">${c.catalog}</a><a href="/${pre}deals/">${c.deals}</a><a href="/${pre}b/">${c.blog}</a></nav>
+<div class="lg">${LANGS.map(l => l === lang ? `<span aria-current="true">${LANG_NAMES[l]}</span>` : `<a href="/${PRE[l]}${path}" hreflang="${l}">${LANG_NAMES[l]}</a>`).join('')}</div>
+</header></div>`;
+};
+const FOOT = lang => {
+  const pre = PRE[lang], c = CHROME[lang];
+  return `<footer class="ft"><div>${[...new Set(phones.map(catOf))].slice(0, 12).map(k => `<a href="/${pre}c/${k}/">${esc(catLabel(k, lang))}</a>`).join('')}<a href="/${pre}deals/">${c.deals}</a><a href="/${pre}b/">${c.blog}</a></div></footer>`;
+};
+const THUMBS = fs.existsSync('data/thumbnails.json') ? JSON.parse(rd('data/thumbnails.json')) : {};
+const cardImg = p => {
+  const hero = productImage(p), t = hero && THUMBS[hero], small = t && t.replace(/\.webp$/, '-320.webp');
+  const src = small && fs.existsSync(small) ? small : t || hero;
+  return `<span class="ph">${src ? `<img src="/${src}" alt="${esc(nameOf(p))}" width="320" height="320" loading="lazy" decoding="async">` : ''}</span>`;
+};
 // path: the page's place under the site root ('p/apple-iphone-17/'), the same in every language
 const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')
   + `\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
@@ -894,7 +936,7 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'unsafe-inline'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'${COUNTER.script.length ? "; script-src 'self' " + COUNTER.script.join(' ') : ''}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -1051,20 +1093,19 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
     // people search "Kindle price", not "e-reader": 36 impressions a month at position 5 (Search Console, Nov 2026)
     const page = HEAD({ title: t.ctitle(path === 'c/ereader/' ? `Kindle, ${label}` : label), desc, url, img: SITE + SEO.img,
       ld: [crumbs([['Better.am', SITE + app], ...trail.map(([n, u]) => [n, home + u]), [label, url]])], lang, path }) + `
-<header><a href="${R}${app}">Better.am</a></header>
+${TOP(lang, path)}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › ${trail.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a> › `).join('')}<span>${esc(label)}</span></nav>
 <main>
 <h1>${esc(label)}</h1>
 <p class="lead">${esc(desc)}</p>
-<p>${esc(factsOf(list))}</p>
-${others.length ? `<p>${t.others}${others.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
 <a class="go" href="${R}${app}#/${appHash}">${t.cgo}</a>
-${brands.length ? `<p class="lead">${brands.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a>`).join(' · ')}</p>` : ''}
-<p><a href="${R}${pre}deals/">${DEAL_LINK[lang]}</a></p>
+${others.length ? `<p class="lead" style="margin:18px 0 0">${t.others}</p><ul class="pills" style="margin-top:6px">${others.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}</ul>` : ''}
+<ul class="pills">${brands.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}<li><a href="${R}${pre}deals/">${DEAL_LINK[lang]}</a></li></ul>
 <h2>${t.models}</h2>
-<ul class="pl">${list.map(p => `<li><a href="${R}${pre}p/${p.id}/">${esc(nameOf(p))}</a><span>${t.from(amd(bestOf(p)))}</span></li>`).join('\n')}</ul>
+<ul class="pg">${list.map(p => `<li><a class="cd" href="${R}${pre}p/${p.id}/">${cardImg(p)}<b>${esc(nameOf(p))}</b><span class="pr">${t.from(amd(bestOf(p)))}</span></a></li>`).join('\n')}</ul>
+<p style="margin-top:22px">${esc(factsOf(list))}</p>
 <p class="upd">${today.split('-').reverse().join('.')}</p>
-</main></body></html>
+</main>${FOOT(lang)}</body></html>
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, page);
@@ -1110,13 +1151,13 @@ const bodyHTML = list => {
 const DEAL_T = {
   hy: { h1: 'Գների անկում', title: 'Գների անկում Հայաստանում. ինչն է էժանացել | Better.am',
     lead: n => `${n} ապրանք, որոնց ամենացածր գինը իրականում իջել է։ Հաշվում ենք միայն առնվազն 5% անկումը, երբ գները համեմատվել են նույն թվով խանութներում առնվազն մեկ շաբաթ։`,
-    row: (f, pc, d) => `−${f} (−${pc}%), ${d}-ից`, link: 'Ինչն է էժանացել' },
+    since: d => `${d}-ից`, link: 'Ինչն է էժանացել' },
   ru: { h1: 'Снижение цен', title: 'Снижение цен в Армении: что подешевело | Better.am',
     lead: n => `Товаров, чья минимальная цена действительно снизилась: ${n}. Считаем только падение от 5%, когда цены сравнивались в том же числе магазинов минимум неделю.`,
-    row: (f, pc, d) => `−${f} (−${pc}%), с ${d}`, link: 'Что подешевело' },
+    since: d => `с ${d}`, link: 'Что подешевело' },
   en: { h1: 'Price drops', title: 'Price drops in Armenia: what got cheaper | Better.am',
     lead: n => `${n} products whose lowest price really fell. We count only falls of 5% or more, with prices compared across the same number of shops for at least a week.`,
-    row: (f, pc, d) => `−${f} (−${pc}%), since ${d}`, link: 'What got cheaper' },
+    since: d => `since ${d}`, link: 'What got cheaper' },
 };
 const dealRows = DROPS.map(d => ({ ...d, p: phones.find(q => q.id === d.id), pct: d.fall / (d.lo + d.fall) }))
   .filter(d => d.p).sort((a, b) => b.pct - a.pct);
@@ -1127,14 +1168,14 @@ if (dealRows.length) for (const lang of LANGS) {
   fs.mkdirSync(`${pre}deals`, { recursive: true });
   writePage(`${pre}deals/index.html`, HEAD({ title: t.title, desc: t.lead(dealRows.length), url, img: SITE + SEO.img,
     ld: [crumbs([['Better.am', SITE + app], [t.h1, url]])], lang, path: 'deals/' }) + `
-<header><a href="${R}${app}">Better.am</a></header>
+${TOP(lang, 'deals/')}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › <span>${t.h1}</span></nav>
 <main>
 <h1>${t.h1}</h1>
 <p class="lead">${esc(t.lead(dealRows.length))}</p>
-<ul class="pl">${dealRows.map(d => `<li><a href="${R}${pre}p/${d.id}/">${esc(nameOf(d.p))}</a><span>${amd(d.lo)} · ${esc(shop(d.loShop))} · ${t.row(amd(d.fall), Math.round(d.pct * 100), dmy(d.since))}</span></li>`).join('\n')}</ul>
+<ul class="pg">${dealRows.map(d => `<li><a class="cd" href="${R}${pre}p/${d.id}/">${cardImg(d.p)}<b>${esc(nameOf(d.p))}</b><span class="dp">−${amd(d.fall)} (−${Math.round(d.pct * 100)}%)</span><span class="pr">${amd(d.lo)}</span><span class="sh">${esc(shop(d.loShop))} · ${t.since(dmy(d.since))}</span></a></li>`).join('\n')}</ul>
 <p class="upd">${today.split('-').reverse().join('.')}</p>
-</main></body></html>
+</main>${FOOT(lang)}</body></html>
 `);
   sitemapRows.push([url, today, 0.8]);
 }
@@ -1145,12 +1186,12 @@ if (BLOG.length) for (const lang of LANGS) {
   fs.mkdirSync(`${pre}b`, { recursive: true });
   writePage(`${pre}b/index.html`, HEAD({ title: `${t.blog} | Better.am`, desc: t.bdesc, url: bUrl, img: SITE + SEO.img,
     ld: [crumbs([['Better.am', SITE + app], [t.blog, bUrl]])], lang, path: 'b/' }) + `
-<header><a href="${R1}${app}">Better.am</a></header>
+${TOP(lang, 'b/')}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R1}${app}">Better.am</a> › <span>${t.blog}</span></nav>
 <main>
 <h1>${t.blog}</h1>
 <ul class="pl">${BLOG.map(a => `<li><a href="${a.id}/">${esc(a[lang].title)}</a><span>${a.date.split('-').reverse().join('.')}</span></li>`).join('\n')}</ul>
-</main></body></html>
+</main>${FOOT(lang)}</body></html>
 `);
   sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
   // an article taken out of data/blog.json takes its page with it, or the old url stays live
@@ -1169,7 +1210,7 @@ if (BLOG.length) for (const lang of LANGS) {
     // bodyHTML writes figure paths for a page two folders deep
     const body = bodyHTML(A.body).replaceAll('src="../../', `src="${R2}`);
     writePage(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: SITE + (articleImage || SEO.img), ld, lang, path: `b/${a.id}/` }) + `
-<header><a href="${R2}${app}">Better.am</a></header>
+${TOP(lang, `b/${a.id}/`)}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R2}${app}">Better.am</a> › <a href="../">${t.blog}</a> › <span>${esc(A.title)}</span></nav>
 <main>
 <h1>${esc(A.title)}</h1>
@@ -1179,7 +1220,7 @@ ${body}
 ${(a.sources || []).length ? `<p class="upd">${t.sources}${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s => `<a href="${esc(s.url)}" rel="nofollow noopener">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
 <p><a class="go" href="${R2}${app}#/blog/${a.id}">${t.read}</a></p>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
-</main></body></html>
+</main>${FOOT(lang)}</body></html>
 `);
     sitemapRows.push([url, a.date, 0.6]);
   }
