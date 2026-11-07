@@ -1,7 +1,7 @@
 name: Better — refresh prices
 
-# Pages is set to "Deploy from a branch" (main / root), so pushing the rebuilt
-# files here is the deploy. This job only re-scrapes and commits.
+# This job only re-scrapes, rebuilds and commits. When it finishes, pages.yml publishes main
+# (photos to Cloudflare R2, the rest to Pages) - since 2026-11-07, see DEPLOY.md.
 
 on:
   schedule:

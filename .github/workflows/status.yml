@@ -1,0 +1,47 @@
+name: Better — morning status
+
+# A read-only summary each morning: price age per shop, last runs, site and photo host, R2 usage.
+# It turns red (and GitHub emails the owner) only when something needs a person.
+on:
+  schedule:
+    - cron: '30 5 * * *'     # 09:30 Yerevan, after the nightly refresh
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+        with:
+          ref: main
+          sparse-checkout: |
+            data/prices.json
+            tools/status-report.mjs
+          sparse-checkout-cone-mode: false
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4
+        with:
+          node-version: '22'
+
+      - name: Install rclone
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq rclone
+
+      - name: Report
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_ENDPOINT: https://6ca2b81b161112ae6e43682626aa0196.r2.cloudflarestorage.com
+        run: |
+          # about 31 list calls a day against the free million a month
+          size=$(rclone size r2:better-images --json 2>/dev/null || echo '{}')
+          bytes=$(echo "$size" | jq -r '.bytes // empty'); count=$(echo "$size" | jq -r '.count // empty')
+          node tools/status-report.mjs ${bytes:+--r2-bytes $bytes --r2-objects $count}

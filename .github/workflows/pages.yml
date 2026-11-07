@@ -1,0 +1,91 @@
+name: Better — publish site
+
+# better.am is published from here since 2026-11-07 (Pages source: GitHub Actions).
+# The branch deploy uploaded the whole repository, 1.2 GB, and timed out three times in a row.
+# Product photos, thumbnails and share cards (about 900 MB) now live in Cloudflare R2 behind
+# img.better.am: this job copies any new ones there first, then publishes the rest to Pages.
+# Nothing is deleted from R2 here - a visitor's cached page may still ask for an older file.
+#
+# Cloudflare free-plan limits (AGENTS.md, "Cloudflare limits"): one run lists the bucket
+# (about 30 list calls) and uploads only the files that changed, far below 1M writes a month.
+
+on:
+  push:
+    branches: [main]
+  # Commits made by the refresh and stock jobs use GITHUB_TOKEN, and those pushes do not start
+  # other workflows, so their completion starts the publish instead.
+  workflow_run:
+    workflows: ['Better — refresh prices', 'Better — stock check', 'Better — retry interrupted refresh']
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
+        with:
+          ref: main
+
+      # A page built before the move points at better.am/images/, which this artifact no longer
+      # carries. Refuse it and keep the live site as it is until a current build lands.
+      - name: Check the build points at img.better.am
+        run: |
+          for f in index.html p/apple-iphone-17/index.html; do
+            grep -q 'https://img.better.am' "$f" || { echo "::error::$f was built before the R2 move; not publishing"; exit 1; }
+          done
+
+      - name: Install rclone
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq rclone
+
+      - name: Copy new photos to R2
+        env:
+          RCLONE_CONFIG_R2_TYPE: s3
+          RCLONE_CONFIG_R2_PROVIDER: Cloudflare
+          RCLONE_CONFIG_R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          RCLONE_CONFIG_R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          RCLONE_CONFIG_R2_ENDPOINT: https://6ca2b81b161112ae6e43682626aa0196.r2.cloudflarestorage.com
+          RCLONE_CONFIG_R2_NO_CHECK_BUCKET: 'true'
+        run: |
+          set -euo pipefail
+          # thumbnails carry a hash of their photo in the name, so they never change
+          rclone copy images/thumb r2:better-images/images/thumb --checksum --transfers 32 --checkers 32 \
+            --header-upload 'Cache-Control: public, max-age=31536000, immutable' --stats-one-line -v 2>&1 | tail -3
+          # photos and share cards keep their name when replaced: an hour in browsers, six at the edge
+          for d in cut social; do
+            rclone copy images/$d r2:better-images/images/$d --checksum --transfers 32 --checkers 32 \
+              --header-upload 'Cache-Control: public, max-age=3600, s-maxage=21600' --stats-one-line -v 2>&1 | tail -3
+          done
+
+      - name: Assemble the site without the R2 photos
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          tar --exclude=./.git --exclude=./.github --exclude=./_site --exclude=./node_modules \
+              --exclude=./images/cut --exclude=./images/thumb --exclude=./images/social \
+              --exclude=./images/_src --exclude=./images/_cand -cf - . | tar -xf - -C _site
+          # the site-wide share card is linked from better.am itself
+          mkdir -p _site/images/social && cp images/social/better-am.jpg _site/images/social/
+          touch _site/.nojekyll
+          du -sh _site | cut -f1
+
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
+        with:
+          path: _site
+
+      - id: deploy
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1

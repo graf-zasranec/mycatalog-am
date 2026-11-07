@@ -24,7 +24,18 @@ import {categorySeed,productSeedSource,fullCatalogueSource}from'./tools/product-
 const rd = f => fs.readFileSync(f, 'utf8');
 const phones = JSON.parse(rd('data/phones.json'));
 assertCaseStableBrands(phones);
-const heroPreviews = fs.existsSync('data/photo-previews.json') ? JSON.parse(rd('data/photo-previews.json')) : {};
+// Product photos, thumbnails and share cards live in Cloudflare R2 behind img.better.am (2026-11-07):
+// together they were 900 MB of the 1.2 GB Pages upload, which kept timing out. They stay in git
+// (the build reads them) and .github/workflows/pages.yml copies new ones to R2 before each deploy.
+// IMG_HOST= (empty) keeps every path local, for a build opened straight from disk.
+const IMG_HOST = process.env.IMG_HOST ?? 'https://img.better.am/';
+const ON_R2 = /^\/?images\/(?:cut|thumb|social)\//;
+const pub = s => typeof s === 'string' && IMG_HOST && ON_R2.test(s) ? IMG_HOST + s.replace(/^\//, '') : s;
+// an image path as a page writes it: on R2 it is absolute, otherwise from the site root
+const imgUrl = s => { const u = pub(s); return /^https?:/.test(u) ? u : '/' + String(u).replace(/^\//, ''); };
+const IMG_ORIGIN = IMG_HOST ? ' ' + new URL(IMG_HOST).origin : '';
+const heroPreviews = Object.fromEntries(Object.entries(fs.existsSync('data/photo-previews.json') ? JSON.parse(rd('data/photo-previews.json')) : {})
+  .map(([file, v]) => [pub(file), { ...v, src: pub(v.src) }]));
 const STR = { hy: {}, ru: {}, en: {} };
 for (const s of JSON.parse(rd('data/strings.json'))) { STR.hy[s.key] = s.hy; STR.ru[s.key] = s.ru; STR.en[s.key] = s.en; }
 // real shop offers from scrape.mjs; optional, the site falls back to estimates without it
@@ -413,7 +424,7 @@ const FAVICON = '/images/favicon-96.png';
 const HEAD_OPEN = appJs => `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(ROUTE_START_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${sha(THEME_JS)} ${sha(ROUTE_START_JS)} ${sha(appJs)}${COUNTER.script.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:${IMG_ORIGIN}${COUNTER.img.map(h => ' ' + h).join('')}; connect-src ${["'self'", ...COUNTER.connect].join(' ')};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
@@ -533,6 +544,10 @@ function build({ inline, standalone }) {
     // would add 7 MB to a file nobody downloads over a network, so there it keeps one size and
     // THUMB() falls through to IMG().
 
+  }
+  if (!inline) {
+    for (const t of [main, thumb]) for (const k in t) t[k] = pub(t[k]);
+    for (const t of [colors, colorThumbs]) for (const id in t) for (const c in t[id]) t[id][c] = pub(t[id][c]);
   }
   let imgdata = `const IMGDATA=${JSON.stringify(main)};\nconst THUMBDATA=${JSON.stringify(thumb)};\n`
     + `const COLORIMG=${JSON.stringify(colors)};\nconst COLORTHUMB=${JSON.stringify(colorThumbs)};\n`;
@@ -932,7 +947,7 @@ const THUMBS = fs.existsSync('data/thumbnails.json') ? JSON.parse(rd('data/thumb
 const cardImg = p => {
   const hero = productImage(p), t = hero && THUMBS[hero], small = t && t.replace(/\.webp$/, '-320.webp');
   const src = small && fs.existsSync(small) ? small : t || hero;
-  return `<span class="ph">${src ? `<img src="/${src}" alt="${esc(nameOf(p))}" width="320" height="320" loading="lazy" decoding="async">` : ''}</span>`;
+  return `<span class="ph">${src ? `<img src="${imgUrl(src)}" alt="${esc(nameOf(p))}" width="320" height="320" loading="lazy" decoding="async">` : ''}</span>`;
 };
 // path: the page's place under the site root ('p/apple-iphone-17/'), the same in every language
 const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')
@@ -942,7 +957,7 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' ${sha(THEME_JS)}${COUNTER.script.map(h => ' ' + h).join('')}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self' data:${IMG_ORIGIN}${COUNTER.img.map(h => ' ' + h).join('')}; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' ${sha(THEME_JS)}${COUNTER.script.map(h => ' ' + h).join('')}${COUNTER.connect.length ? '; connect-src ' + COUNTER.connect.join(' ') : ''};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#F7F3EC" media="(prefers-color-scheme: light)">
@@ -965,7 +980,7 @@ ${path != null ? alts(path) : ''}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${img}${img.endsWith('.jpg') && fs.existsSync(img.replace(SITE, '')) ? '?v=' + crypto.createHash('sha256').update(fs.readFileSync(img.replace(SITE, ''))).digest('hex').slice(0, 12) : ''}">
+<meta property="og:image" content="${img}${img.endsWith('.jpg') && fs.existsSync(img.replace(SITE, '').replace(IMG_HOST || SITE, '')) ? '?v=' + crypto.createHash('sha256').update(fs.readFileSync(img.replace(SITE, '').replace(IMG_HOST || SITE, ''))).digest('hex').slice(0, 12) : ''}">
 ${img.includes('/images/social/') ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:type" content="image/jpeg">' : ''}
 <meta property="og:image:alt" content="${esc(title)}">
 <meta name="twitter:card" content="summary_large_image">
@@ -997,7 +1012,7 @@ function interactiveProduct(page, lang, product, relLinks = '') {
   const photo = image?.match(/src="([^"]+)"/)?.[1];
   const set = image?.match(/srcset="([^"]+)"/)?.[1];
   const sizes = image?.match(/sizes="([^"]+)"/)?.[1];
-  const preload = photo ? `<link rel="preload" as="image" href="/${photo}"${set ? ` imagesrcset="${set}" imagesizes="${sizes}"` : ''} fetchpriority="high">` : '';
+  const preload = photo ? `<link rel="preload" as="image" href="${imgUrl(photo)}"${set ? ` imagesrcset="${set}" imagesizes="${sizes}"` : ''} fetchpriority="high">` : '';
   const detailUrl = detailUrlsById.get(product.id);
   const detailPreload = detailUrl ? `<link rel="preload" as="script" href="/${detailUrl}" fetchpriority="low">` : '';
   const seoTags = /<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
@@ -1046,7 +1061,7 @@ for (const lang of LANGS) {
   for (const p of phones) {
     const card = `images/social/${p.id}.jpg`;
     const hero = productImage(p);
-    const img = SITE + (fs.existsSync(card) ? card : hero || SEO.img);
+    const src = fs.existsSync(card) ? card : hero || SEO.img, img = ON_R2.test(src) && IMG_HOST ? pub(src) : SITE + src;
     const path = `p/${p.id}/`, url = home + path, cat = catOf(p), catUrl = `${home}c/${cat}/`;
     const offs = offersOf(p), lo = offs.length ? offs[0].price : null, hi = offs.length ? offs[offs.length - 1].price : null;
     const low = low30(p), seen = offs.map(o => o.seen).filter(Boolean).sort().pop();
@@ -1216,7 +1231,7 @@ ${TOP(lang, 'b/')}
     const og = `images/blog/${a.id}.jpg`;
     // bodyHTML writes figure paths for a page two folders deep
     const body = bodyHTML(A.body).replaceAll('src="../../', `src="${R2}`);
-    writePage(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: SITE + (articleImage || SEO.img), ld, lang, path: `b/${a.id}/` }) + `
+    writePage(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: articleImage && ON_R2.test(articleImage) && IMG_HOST ? pub(articleImage) : SITE + (articleImage || SEO.img), ld, lang, path: `b/${a.id}/` }) + `
 ${TOP(lang, `b/${a.id}/`)}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R2}${app}">Better.am</a> › <a href="../">${t.blog}</a> › <span>${esc(A.title)}</span></nav>
 <main>
@@ -1241,7 +1256,7 @@ for (const lang of LANGS) for (const [from, to] of Object.entries(MERGED)) {
   fs.mkdirSync(`${pre}p/${from}`, { recursive: true });
   writePage(`${pre}p/${from}/index.html`, `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self'${IMG_ORIGIN} ${COUNTER.img.join(' ')};  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
 <meta http-equiv="refresh" content="0;url=../${to}/">
 <link rel="canonical" href="${SITE}${pre}p/${to}/">
@@ -1259,7 +1274,7 @@ console.log(`${shared} product page(s) under p/, ${cats.length} section page(s) 
 fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self' ${COUNTER.img.join(' ')}; style-src 'unsafe-inline';  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self'${IMG_ORIGIN} ${COUNTER.img.join(' ')}; style-src 'unsafe-inline';  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
 <title>Էջը չի գտնվել | Better.am</title>
 <meta name="robots" content="noindex">

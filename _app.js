@@ -50,7 +50,7 @@ function productImageSet(src) {
 }
 function thumbSet(id, sizes) {
   const src = THUMB(id);
-  return /^images\/thumb\/.+\.webp$/.test(src)
+  return /(?:^|\/)images\/thumb\/.+\.webp$/.test(src)
     ? `srcset="${esc(src.replace(/\.webp$/, '-240.webp'))} 240w, ${esc(src.replace(/\.webp$/, '-320.webp'))} 320w, ${esc(src)} 480w" sizes="${esc(sizes)}"` : '';
 }
 const CARD_IMAGE_SIZE = '(max-width:520px) 140px, 190px';
@@ -2339,7 +2339,7 @@ function cardShow(btn) {
   shot.querySelectorAll('.cdot').forEach(b => b.setAttribute('aria-pressed', b === btn));
   const card = btn.closest('.pcard'), name = card && card.querySelector('h2 a');
   const want = btn.dataset.cdot, pre = new Image();
-  if (/^images\/thumb\/.+\.webp$/.test(want)) {
+  if (/(?:^|\/)images\/thumb\/.+\.webp$/.test(want)) {
     pre.srcset = `${want.replace(/\.webp$/, '-240.webp')} 240w, ${want} 480w`;
     pre.sizes = CARD_IMAGE_SIZE;
   }
@@ -2348,7 +2348,7 @@ function cardShow(btn) {
   const swap = () => { if (img.dataset.cur !== want) return;
     // Change responsive candidates together with the colour, otherwise the browser
     // can keep displaying the previous colour from its old srcset.
-    if (/^images\/thumb\/.+\.webp$/.test(want)) {
+    if (/(?:^|\/)images\/thumb\/.+\.webp$/.test(want)) {
       img.srcset = `${want.replace(/\.webp$/, '-240.webp')} 240w, ${want} 480w`;
       img.sizes = CARD_IMAGE_SIZE;
     } else { img.removeAttribute('srcset'); img.removeAttribute('sizes'); }

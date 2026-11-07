@@ -17,3 +17,11 @@ assert.deepEqual(restoreCatalogue({paths:1,rows:[[{id:'sample'}, {IMGDATA:'\u000
 const pathMaps={IMGDATA:{'phone-one':'images/cut/phone-one__main.webp'},COLORIMG:{'phone-one':{blue:'images/thumb/phone-one__blue-123.webp',literal:'\u0001keep',zero:'\u0000keep',two:'\u0002keep'}},PBOX:{'phone-one':[0,999]}};
 assert.deepEqual(restoreCatalogue(unpack(pack(groupCatalogue(products,pathMaps)))),{DATA:products,...pathMaps},'image path transport preserves literal marker characters and numeric boxes');
 console.log('COMPACT DATA: lossless catalogue, prices, blog, photos and edge cases');
+{ // photos on another host keep the short form and come back absolute
+  const host='https://img.better.am/', ps=[{id:'x1'},{id:'x2'}];
+  const m={IMGDATA:{x1:host+'images/cut/x1__main.webp',x2:'images/cut/x2__main.webp'},THUMBDATA:{x1:host+'images/thumb/x1__main-abc.webp'},COLORIMG:{x1:{black:host+'images/cut/x1__black.webp'}}};
+  const g=groupCatalogue(ps,m);
+  assert.equal(g.paths,host,'host prefix detected');
+  assert.ok(!JSON.stringify(g.rows).includes('img.better.am'),'host not repeated per photo');
+  assert.deepEqual(restoreCatalogue(unpack(pack(g))),{DATA:ps,...m},'absolute photo paths round-trip');
+}

@@ -38,10 +38,16 @@ export const unpackSource = `const betterUnpack=${unpack.toString()};\n`;
 // filenames within its dictionary window instead of receiving distant maps.
 export function groupCatalogue(products, maps) {
   const ids = new Set(products.map(p => p.id));
+  // Photos served from another host (img.better.am, 2026-11-07) share one absolute prefix.
+  let base = '';
+  for (const map of Object.values(maps)) for (const v of Object.values(map)) for (const s of [v].flat(Infinity).flatMap(x => x && typeof x === 'object' ? Object.values(x) : [x])) {
+    const m = typeof s === 'string' && /^(https:\/\/[^/]+\/)images\/(?:cut|thumb)\//.exec(s);
+    if (m && !base) base = m[1];
+  }
   const encode = (value, id) => {
     if (typeof value === 'string') {
-      if (value.startsWith('images/cut/' + id)) return '\u0001' + value.slice(('images/cut/' + id).length);
-      if (value.startsWith('images/thumb/' + id)) return '\u0002' + value.slice(('images/thumb/' + id).length);
+      if (value.startsWith(base + 'images/cut/' + id)) return '\u0001' + value.slice((base + 'images/cut/' + id).length);
+      if (value.startsWith(base + 'images/thumb/' + id)) return '\u0002' + value.slice((base + 'images/thumb/' + id).length);
       return /^[\u0000-\u0002]/.test(value) ? '\u0000' + value : value;
     }
     if (Array.isArray(value)) return value.map(v => encode(v, id));
@@ -49,7 +55,7 @@ export function groupCatalogue(products, maps) {
       ? Object.fromEntries(Object.entries(value).map(([k,v]) => [k,encode(v,id)])) : value;
   };
   return {
-    paths: 1,
+    paths: base || 1,
     rows: products.map(p => [p, Object.fromEntries(Object.entries(maps)
       .filter(([, map]) => Object.hasOwn(map, p.id)).map(([key, map]) => [key, encode(map[p.id],p.id)]))]),
     extra: Object.fromEntries(Object.entries(maps).map(([key, map]) =>
@@ -58,11 +64,12 @@ export function groupCatalogue(products, maps) {
 }
 
 export function restoreCatalogue({rows, extra, paths}) {
+  const base = typeof paths === 'string' ? paths : '';
   const decode = (value, id) => {
     if (typeof value === 'string') {
       if (value[0] === '\u0000') return value.slice(1);
-      if (value[0] === '\u0001') return 'images/cut/' + id + value.slice(1);
-      if (value[0] === '\u0002') return 'images/thumb/' + id + value.slice(1);
+      if (value[0] === '\u0001') return base + 'images/cut/' + id + value.slice(1);
+      if (value[0] === '\u0002') return base + 'images/thumb/' + id + value.slice(1);
       return value;
     }
     if (Array.isArray(value)) return value.map(v => decode(v, id));

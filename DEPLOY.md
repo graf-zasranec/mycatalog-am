@@ -3,6 +3,13 @@
 The site is plain static files. There is no server, no database, no build step at request
 time — so it can be hosted free, almost anywhere.
 
+> **Since 2026-11-07:** product photos (`images/cut`), thumbnails (`images/thumb`) and share cards
+> (`images/social`) are served from Cloudflare R2 at `https://img.better.am/`. They stay in git
+> because the build reads them; `.github/workflows/pages.yml` copies new ones to the bucket
+> `better-images` and then publishes everything else to Pages (source: GitHub Actions). The repo
+> secrets `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` hold the upload key. `IMG_HOST= node build.mjs`
+> builds with local photo paths. Stay inside the free limits in AGENTS.md ("Cloudflare limits").
+
 ## What you actually have
 
 | File | What it is | Use it when |
