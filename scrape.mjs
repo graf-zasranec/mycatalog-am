@@ -2130,22 +2130,37 @@ const SHOPS = {
       // the catalogue actually carries; accessories, memory and connectivity are left out.
       const CATS = ['smartphones', 'notebooks-and-tablets', 'smart-watches', 'audio',
                     'devices', 'game-pad'];
+      // Each category is paged (?page=2, 3...; smartphones had six pages on 2026-11-08) and this
+      // used to read page 1 only, so most of the shop was never seen. A listing also shows ONE
+      // colour per memory size: the other colours are linked only from the product page's colour
+      // buttons (iPhone Duo Star White), so links found on a product page join the queue too.
       const seen = new Set();
+      const links = (html, key) => {
+        const found = [];
+        for (let at = html.indexOf(D + 'https://www.telecomarmenia.am' + key); at >= 0;
+             at = html.indexOf(D + 'https://www.telecomarmenia.am' + key, at + 1)) {
+          const u = html.slice(at + 1, html.indexOf(D, at + 1));
+          if (u.length > key.length + 40 && /\/\d+\/$/.test(u) && !seen.has(u)) { seen.add(u); found.push(u); }
+        }
+        return found;
+      };
       for (const cat of CATS) {
-        const list = await get(`https://www.telecomarmenia.am/eshop/hy/${cat}/`);
-        await sleep(DELAY_MS);
-        if (!list) continue;
         const key = `/eshop/hy/${cat}/`;
         const urls = [];
-        for (let at = list.indexOf(D + 'https://www.telecomarmenia.am' + key); at >= 0;
-             at = list.indexOf(D + 'https://www.telecomarmenia.am' + key, at + 1)) {
-          const u = list.slice(at + 1, list.indexOf(D, at + 1));
-          if (u.length > key.length + 40 && !seen.has(u)) { seen.add(u); urls.push(u); }
+        for (let page = 1; page <= 40; page++) {
+          const list = await get(`https://www.telecomarmenia.am/eshop/hy/${cat}/` + (page > 1 ? `?page=${page}` : ''));
+          await sleep(DELAY_MS);
+          if (!list) break;
+          const fresh = links(list, key);
+          if (!fresh.length) break;                     // past the last page
+          urls.push(...fresh);
         }
-        for (const u of urls) {
+        for (let i = 0; i < urls.length; i++) {
+          const u = urls[i];
           if (!matchPhone(u)) continue;                 // only fetch pages that can match
           const h = await get(u); await sleep(DELAY_MS);
           if (!h) continue;
+          urls.push(...links(h, key));                  // the other colours of this model
           const title = clean((h.match(/<title>([^<|]*)/) || [])[1] || '');
           const price = priceAfter(h, 'e-shop__main-price');
           const id = matchPhone(title + ' ' + u);
@@ -2827,7 +2842,7 @@ if (process.argv.includes('--probe')) {
   const key = process.argv[process.argv.indexOf('--probe') + 1];
   const got = await LANE.run({ shop: key, status: 0 }, () => SHOPS[key].run());
   console.log(`\n${key}: ${got.length} offers, ${new Set(got.map(o => o.id)).size} models`);
-  for (const o of got.slice(0, 40)) console.log(`  ${o.id} | ${o.price} | ${o.storage ?? ''} | ${o.inStock} | ${o.url}`);
+  for (const o of got.slice(0, process.argv.includes("--all") ? 1e6 : 40)) console.log(`  ${o.id} | ${o.price} | ${o.storage ?? ''} | ${o.inStock} | ${o.url}`);
   process.exit(0);
 }
 const sourceUnavailable = new Set();

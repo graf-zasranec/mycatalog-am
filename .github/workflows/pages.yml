@@ -77,7 +77,14 @@ jobs:
           mkdir -p _site
           tar --exclude=./.git --exclude=./.github --exclude=./_site --exclude=./node_modules \
               --exclude=./images/cut --exclude=./images/thumb --exclude=./images/social \
-              --exclude=./images/_src --exclude=./images/_cand -cf - . | tar -xf - -C _site
+              --exclude=./images/_src --exclude=./images/_cand \
+              --exclude=./tools --exclude=./docs --exclude=./graphify-out --exclude=./.codex \
+              --exclude='./*.md' --exclude='./images/*.txt' --exclude='./*.mjs' --exclude=./refresh.cmd \
+              --exclude=./package.json --exclude=./package-lock.json --exclude=./_app.js --exclude=./_shell.html \
+              --exclude=./.gitignore --exclude=./.gitattributes -cf - . | tar -xf - -C _site
+          # nothing the site loads may have been left out
+          for f in index.html sw.js site.webmanifest robots.txt data/history.json; do test -s "_site/$f" || { echo "::error::$f missing"; exit 1; }; done
+          ! grep -rqE '"/?(tools|docs)/' _site/index.html || { echo "::error::index.html links into an excluded folder"; exit 1; }
           # the site-wide share card is linked from better.am itself
           mkdir -p _site/images/social && cp images/social/better-am.jpg _site/images/social/
           touch _site/.nojekyll
