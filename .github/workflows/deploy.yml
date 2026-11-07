@@ -26,7 +26,25 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # The Mac crawler (tools/mac-refresh.sh) sets MAC_CRAWLER_AT when it starts. While that is under
+  # six hours old a scheduled run stands aside; when the Mac is asleep or away this one still runs.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.mac.outputs.skip }}
+    steps:
+      - id: mac
+        env:
+          MAC_AT: ${{ vars.MAC_CRAWLER_AT }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          skip=false
+          if [ "$EVENT" = schedule ] && [ -n "$MAC_AT" ] && [ $(( $(date +%s) - MAC_AT )) -lt 21600 ]; then skip=true; fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+
   refresh:
+    needs: gate
+    if: needs.gate.outputs.skip != 'true'
     runs-on: ubuntu-latest
     # 120 was hit on every run from 2026-10-06 (Eldorado's 7 s crawl delay alone is ~17 min);
     # hosted runners allow 360, and a public repository's minutes are free

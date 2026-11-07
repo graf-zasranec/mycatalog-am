@@ -119,15 +119,19 @@ async function get(url, tries = 2, ua = UA) {
 }
 async function plainGet(url, tries = 2, ua = UA) {
   setStatus(0);
+  let wait = 15;
   for (let i = 0; i < tries; i++) {
     try {
       return await timed(async signal => {
         const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal, redirect: 'follow' });
         setStatus(r.status);
+        if (r.status === 429) wait = Math.min(+r.headers.get('retry-after') || wait, 60);
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.text();
       });
     } catch (e) {
+      // "Too many requests" asks for a pause, not a lost page: Ucom's second pages went missing nightly.
+      if (lastStatus() === 429 && i < tries - 1) { await sleep(wait * 1000); continue; }
       // A 404 is an answer. Asking again wastes a request and the wait in front of it.
       if (lastStatus() >= 400 && lastStatus() < 500) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }
       if (i === tries - 1) { console.warn('    ! ' + url.slice(0, 90) + ' -> ' + e.message); return ''; }

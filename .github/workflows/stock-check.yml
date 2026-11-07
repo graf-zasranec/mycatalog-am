@@ -18,7 +18,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # The Mac crawler checks stock in the same run, so this stands aside as deploy.yml does.
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      skip: ${{ steps.mac.outputs.skip }}
+    steps:
+      - id: mac
+        env:
+          MAC_AT: ${{ vars.MAC_CRAWLER_AT }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          skip=false
+          if [ "$EVENT" = schedule ] && [ -n "$MAC_AT" ] && [ $(( $(date +%s) - MAC_AT )) -lt 86400 ]; then skip=true; fi
+          echo "skip=$skip" >> "$GITHUB_OUTPUT"
+
   stock:
+    needs: gate
+    if: needs.gate.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
