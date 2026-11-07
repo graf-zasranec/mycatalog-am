@@ -24,33 +24,19 @@ try {
   fs.writeFileSync(path.join(root,'data/startup/catalogue.aaaaaaaaaa.js'),'global'.repeat(250000));fs.writeFileSync(path.join(root,'data/startup/category-phone.bbbbbbbbbb.js'),'seed');
   assert.equal(releaseAssets(root).length,7);
   assert.throws(()=>releaseAssets(root,{staged:true}), /not staged/);
-  // Run real generated-asset staging command in a disposable Git index.
-  // Price changes write new hashes and fallback JSON, so stale staged versions fail.
-  const staging=fs.readFileSync('.github/workflows/deploy.yml','utf8').split('\n').map(s=>s.trim()).filter(s=>s.startsWith("git add 'data/site-*.js'"));
-  assert.equal(staging.length,1);
-  fs.writeFileSync(path.join(root,'data/photo-native-metrics.json'),'{"native":"sha-bound measurements"}');
-  execFileSync('git',['init','--quiet'],{cwd:root});
-  for(const command of staging){
-    const args=command.slice(8).match(/'[^']+'|\S+/g).map(token=>token.replace(/^'|'$/g,''));
-    for(const token of args){
-      const file=token.replaceAll('*','fixture');
-      const full=path.join(root,file);
-      if(fs.existsSync(full))continue;
-      if(!path.extname(file)){fs.mkdirSync(full,{recursive:true});fs.writeFileSync(path.join(full,'fixture.txt'),'fixture');}
-      else{fs.mkdirSync(path.dirname(full),{recursive:true});fs.writeFileSync(full,'fixture');}
-    }
-    execFileSync('git',['read-tree','--empty'],{cwd:root});
-    execFileSync('git',['add',...args],{cwd:root});
-    assert.equal(releaseAssets(root,{staged:true}).length,7,'the publication command stages every current payload');
-    assert.equal(execFileSync('git',['show',':data/photo-native-metrics.json'],{cwd:root,encoding:'utf8',stdio:['ignore','pipe','pipe']}),'{"native":"sha-bound measurements"}','publication preserves native measurements instead of resetting all photos to unmeasured');
-  }
+  // Since 2026-11-08 the crawl commits inputs only; pages and bundles are built at publish time.
+  const workflowText=fs.readFileSync('.github/workflows/deploy.yml','utf8');
+  assert.ok(!/git add[^\n]*(?:'data\/site-\*\.js'|\bindex\.html\b|\bp c b deals\b)/.test(workflowText),'the crawl no longer commits generated pages or bundles');
+  const derivatives=workflowText.split('\n').map(s=>s.trim()).filter(s=>s.startsWith('git add data/thumbnails.json'));
+  assert.equal(derivatives.length,1,'the crawl still commits the photo derivatives the build reads');
+  assert.match(derivatives[0],/data\/photo-native-metrics\.json/,'publication preserves native measurements instead of resetting all photos to unmeasured');
   console.log('RELEASE_ASSETS_TEST_PASS: omitted index/detail assets and unstaged files rejected');
 } finally { fs.rmSync(root,{recursive:true,force:true}); }
 
 // A completed crawl can fail while committing; its data must still be recoverable.
 const workflow=fs.readFileSync('.github/workflows/deploy.yml','utf8');
-assert.match(workflow, /source_commit=\$\(git rev-parse HEAD\)/, 'save a source-only commit before staging generated pages');
-assert.match(workflow, /git reset --keep "\$source_commit"\s+git rebase -X ours origin\/main/, 'drop the generated commit before replaying source changes');
+assert.match(workflow, /source_commit=\$\(git rev-parse HEAD\)/, 'save a source-only commit before staging the photo derivatives');
+assert.match(workflow, /git reset --keep "\$source_commit"\s+git rebase -X ours origin\/main/, 'drop the derivatives commit before replaying source changes');
 const checkpoint=workflow.indexOf('- name: Save interrupted refresh checkpoint');
 assert.ok(checkpoint>workflow.indexOf('- name: Commit refreshed prices and history'),'save checkpoint after the commit step so publication failures are captured');
 assert.match(workflow.slice(checkpoint),/if:.*always\(\).*failure\(\)/,'a successful crawl followed by failed publication must save a checkpoint');
@@ -90,25 +76,21 @@ try {
   for (const producer of ['photo-box','thumbnails','social']) {
     put(crawl,`tools/${producer}.py`,`from pathlib import Path\nPath('images/thumb/${producer}.txt').write_text('rebuilt')\n`);
   }
-  put(crawl,'build.mjs',`import fs from 'node:fs'; fs.writeFileSync('index.html',fs.readFileSync('data/prices.json','utf8')+fs.readFileSync('data/phones.json','utf8'));`);
   commit(crawl,'initial files');
   git(crawl,'push','-u','origin','main');
   git(raceRoot,'clone',remote,owner);
   put(owner,'data/phones.json','owner catalogue edit\n');
-  put(owner,'c/index.html','owner category edit\n');
   commit(owner,'concurrent owner update');
   git(owner,'push');
   put(crawl,'data/prices.json','fresh price\n');
-  put(crawl,'index.html','stale generated page\n');
-  fs.unlinkSync(path.join(crawl,'c/index.html'));
   execFileSync('bash',['-e','-c',publish],{cwd:crawl,stdio:['ignore','pipe','pipe']});
-  assert.equal(fs.readFileSync(path.join(crawl,'index.html'),'utf8'),'fresh price\nowner catalogue edit\n');
-  assert.equal(fs.readFileSync(path.join(crawl,'c/index.html'),'utf8'),'owner category edit\n');
+  assert.equal(git(crawl,'show','origin/main:data/prices.json'),'fresh price');
+  assert.equal(git(crawl,'show','origin/main:data/phones.json'),'owner catalogue edit');
   for (const producer of ['photo-box','thumbnails','social']) {
     assert.equal(fs.readFileSync(path.join(crawl,`images/thumb/${producer}.txt`),'utf8'),'rebuilt');
   }
   assert.equal(git(crawl,'rev-parse','HEAD'),git(crawl,'ls-remote','origin','refs/heads/main').split(/\s/)[0]);
-  console.log('PUBLISH_RACE_PASS: fresh data and concurrent owner edits preserved, generated pages rebuilt');
+  console.log('PUBLISH_RACE_PASS: fresh prices and concurrent owner edits preserved, photo derivatives rebuilt');
   git(owner,'pull','--ff-only');
   put(owner,'data/prices.json','owner verified prices\n');
   commit(owner,'concurrent verified price update');

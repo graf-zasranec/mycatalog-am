@@ -9,6 +9,13 @@ time — so it can be hosted free, almost anywhere.
 > `better-images` and then publishes everything else to Pages (source: GitHub Actions). The repo
 > secrets `R2_ACCESS_KEY_ID` / `R2_SECRET_ACCESS_KEY` hold the upload key. `IMG_HOST= node build.mjs`
 > builds with local photo paths. Stay inside the free limits in AGENTS.md ("Cloudflare limits").
+>
+> **Since 2026-11-08:** the built site (`index.html`, `p/`, `c/`, `b/`, `deals/`, `en/`, `ru/`,
+> sitemaps, `data/site-*`, `data/startup/`, `data/details/` and the build manifests) is in
+> `.gitignore`. `pages.yml` runs `node build.mjs` on every publish, checks every referenced
+> bundle exists, and copies the live release's bundles across (`tools/keep-live-bundles.mjs`) so
+> an open older page keeps working. Commit inputs only: code, prices, history, photos and their
+> derivative data. `node build.mjs` locally is still how you preview and test.
 
 ## What you actually have
 

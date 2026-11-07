@@ -31,6 +31,9 @@ jobs:
         run: |
           npm ci
           npx playwright install --with-deps chromium firefox webkit
+      # the pages are built at publish time, not committed (2026-11-08)
+      - name: Build the site
+        run: node build.mjs | tail -3
       - name: Check every route in Chromium, Firefox and WebKit
         env:
           PW: ${{ github.workspace }}/node_modules/playwright

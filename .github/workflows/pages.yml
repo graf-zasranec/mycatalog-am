@@ -1,6 +1,7 @@
 name: Better — publish site
 
-# better.am is published from here since 2026-11-07 (Pages source: GitHub Actions).
+# better.am is published from here since 2026-11-07 (Pages source: GitHub Actions), and built
+# here since 2026-11-08: the generated pages are no longer committed (.gitignore).
 # The branch deploy uploaded the whole repository, 1.2 GB, and timed out three times in a row.
 # Product photos, thumbnails and share cards (about 900 MB) now live in Cloudflare R2 behind
 # img.better.am: this job copies any new ones there first, then publishes the rest to Pages.
@@ -41,8 +42,23 @@ jobs:
         with:
           ref: main
 
-      # A page built before the move points at better.am/images/, which this artifact no longer
-      # carries. Refuse it and keep the live site as it is until a current build lands.
+      # Since 2026-11-08 the pages are not in git: they are built here from the committed inputs.
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020  # v4
+        with:
+          node-version: '22'
+
+      - name: Build the site
+        run: |
+          npm ci --ignore-scripts
+          node build.mjs | tail -4
+          # every bundle a built page names must exist
+          node tools/release-assets.mjs
+
+      # Visitors holding the previous page still ask for its bundles.
+      - name: Carry over the live release's bundles
+        run: node tools/keep-live-bundles.mjs .
+
+      # The photos are served from img.better.am; a page pointing at better.am/images/ would break.
       - name: Check the build points at img.better.am
         run: |
           for f in index.html p/apple-iphone-17/index.html; do

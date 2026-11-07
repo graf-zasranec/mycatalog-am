@@ -1,7 +1,7 @@
 name: Better — refresh prices
 
-# This job only re-scrapes, rebuilds and commits. When it finishes, pages.yml publishes main
-# (photos to Cloudflare R2, the rest to Pages) - since 2026-11-07, see DEPLOY.md.
+# This job only re-scrapes and commits the new prices. When it finishes, pages.yml builds the
+# site from main and publishes it (photos to Cloudflare R2, the rest to Pages) - see DEPLOY.md.
 
 on:
   schedule:
@@ -118,8 +118,9 @@ jobs:
         run: |
           git config user.name  "mycatalog-bot"
           git config user.email "actions@users.noreply.github.com"
-          # Only source data is replayed after a concurrent publish. Generated
-          # pages and hashed bundles must come from a build of the merged inputs.
+          # Only inputs are committed: prices, history and the photo derivatives. The pages are
+          # built by pages.yml when this run finishes (2026-11-08), so a concurrent publish no
+          # longer means rebuilding and re-committing 11,000 generated files.
           crawl_base=$(git rev-parse HEAD)
           git add data/prices.json data/history.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json
           if ! git diff --cached --quiet; then
@@ -127,11 +128,9 @@ jobs:
           fi
           source_commit=$(git rev-parse HEAD)
           for attempt in 1 2 3; do
-            node tools/prune-bundles.mjs
-            git add 'data/site-*.js' 'data/site-ui*.css' data/details data/startup data/startup-manifest.json data/product-extras.json data/thumbnails.json data/photo-native-metrics.json data/photos-needed.json images/thumb images/social data/page-manifest.json index.html p c b deals ru en 'sitemap*.xml'
-            node tools/release-assets.mjs --staged
+            git add data/thumbnails.json data/photo-native-metrics.json images/thumb images/social
             if ! git diff --cached --quiet; then
-              git commit -m "Build refreshed catalogue"
+              git commit -m "Refresh photo derivatives"
             fi
             git push && exit 0
             if [ "$attempt" -eq 3 ]; then exit 1; fi
@@ -149,11 +148,10 @@ jobs:
             git rebase -X ours origin/main || { git rebase --abort; exit 1; }
             crawl_base=$(git rev-parse origin/main)
             source_commit=$(git rev-parse HEAD)
-            # Match refresh.mjs: regenerate photo derivatives before the site.
+            # Match refresh.mjs: regenerate the photo derivatives from the merged photos.
             for producer in photo-box thumbnails social; do
               python3 "tools/$producer.py" || echo "::warning::Could not regenerate $producer"
             done
-            node build.mjs
           done
 
       - name: Save interrupted refresh checkpoint

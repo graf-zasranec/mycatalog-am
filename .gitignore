@@ -96,3 +96,30 @@ node_modules/
 .playwright-cli/
 .playwright/
 images/social/*.source
+
+# Local shared assistant context (private paths and audit context are not site assets).
+**/graphify-out/
+.hallmark/
+
+# Everything build.mjs writes (owner, 2026-11-08). The site is built by
+# .github/workflows/pages.yml at publish time; committing ~11,000 rebuilt pages on every
+# release made the repository 3.6 GB and made writers collide. Inputs stay committed:
+# prices, history, photos, thumbnails and their data files.
+/index.html
+/404.html
+/robots.txt
+/sitemap*.xml
+/p/
+/c/
+/b/
+/deals/
+/en/
+/ru/
+/data/site-*.js
+/data/site-*.css
+/data/startup/
+/data/details/
+/data/startup-manifest.json
+/data/page-manifest.json
+/data/product-extras.json
+/data/photos-needed.json
