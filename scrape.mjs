@@ -2128,42 +2128,54 @@ const SHOPS = {
       // monthly instalment. Reading the wrong one would list a phone at a fiftieth of its price.
       // Two of the seventeen categories their own eshop links. The four added here are the ones
       // the catalogue actually carries; accessories, memory and connectivity are left out.
+      // 'other' holds the Dyson Airwraps; 'smart-home' the robot vacuums and air purifiers.
       const CATS = ['smartphones', 'notebooks-and-tablets', 'smart-watches', 'audio',
-                    'devices', 'game-pad'];
+                    'devices', 'game-pad', 'other', 'smart-home'];
       // Each category is paged (?page=2, 3...; smartphones had six pages on 2026-11-08) and this
       // used to read page 1 only, so most of the shop was never seen. A listing also shows ONE
       // colour per memory size: the other colours are linked only from the product page's colour
       // buttons (iPhone Duo Star White), so links found on a product page join the queue too.
       const seen = new Set();
-      const links = (html, key) => {
+      // A product's address need not sit under the category that lists it: the smart-watches page
+      // links /eshop/hy/accessories/apple-watch-.../2857/ and game-pad links /devices/..., so
+      // every watch was skipped until 2026-11-08. Any product address on the page counts.
+      const PRODUCT = /^https:\/\/www\.telecomarmenia\.am\/eshop\/hy\/[a-z0-9-]+\/[a-z0-9-]{8,}\/\d+\/$/;
+      const links = html => {
         const found = [];
-        for (let at = html.indexOf(D + 'https://www.telecomarmenia.am' + key); at >= 0;
-             at = html.indexOf(D + 'https://www.telecomarmenia.am' + key, at + 1)) {
-          const u = html.slice(at + 1, html.indexOf(D, at + 1));
-          if (u.length > key.length + 40 && /\/\d+\/$/.test(u) && !seen.has(u)) { seen.add(u); found.push(u); }
+        for (const m of html.matchAll(/"(https:\/\/www\.telecomarmenia\.am\/eshop\/hy\/[^"]+)"/g)) {
+          const u = m[1];
+          if (PRODUCT.test(u) && !seen.has(u)) { seen.add(u); found.push(u); }
         }
         return found;
       };
       for (const cat of CATS) {
-        const key = `/eshop/hy/${cat}/`;
         const urls = [];
         for (let page = 1; page <= 40; page++) {
           const list = await get(`https://www.telecomarmenia.am/eshop/hy/${cat}/` + (page > 1 ? `?page=${page}` : ''));
           await sleep(DELAY_MS);
           if (!list) break;
-          const fresh = links(list, key);
+          const fresh = links(list);
           if (!fresh.length) break;                     // past the last page
           urls.push(...fresh);
         }
         for (let i = 0; i < urls.length; i++) {
           const u = urls[i];
-          if (!matchPhone(u)) continue;                 // only fetch pages that can match
+          // Every product page is opened (about 300): judging by the address first threw away
+          // AirPods Max 2, Pixel 10 Pro and Galaxy A55, whose addresses are spelled differently.
+          // Addresses that are plainly not a product we carry are still skipped.
+          if (/aqara|araqa|beacon|router|sim-card|number/.test(u)) continue;
           const h = await get(u); await sleep(DELAY_MS);
           if (!h) continue;
-          urls.push(...links(h, key));                  // the other colours of this model
+          urls.push(...links(h));                       // the other colours of this model
           const title = clean((h.match(/<title>([^<|]*)/) || [])[1] || '');
           const price = priceAfter(h, 'e-shop__main-price');
-          const id = matchPhone(title + ' ' + u);
+          // Title and address together first, as before; then the title alone, without the band an
+          // Apple Watch title appends ("... Case with Dark Bronze Milanese Loop"), which reads as
+          // an accessory. A colour in the address (iphone-16-plus-white-128gb) could also block it.
+          let id = matchPhone(title + ' ' + u) || matchPhone(title.replace(/\s+Case with\b.*$/i, ''));
+          // A 46 mm watch is not the 42 mm model the catalogue carries (Series 12, 2026-11-08).
+          const mm = title.match(/\b(\d{2})\s?mm\b/i)?.[1], idMm = id?.match(/-(\d{2})mm\b/)?.[1];
+          if (mm && idMm && mm !== idMm) id = null;
           if (!id || !price || price < 5000 || !safeUrl(u)) continue;
           const img = (h.match(/property="og:image" content="([^"]+)"/) || [])[1];
           out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u,
