@@ -1827,20 +1827,41 @@ const SHOPS = {
   vega: {
     name: 'Vega', site: 'https://vega.am', note: 'electronics retailer',
     async run() {
-      const out = [];
-      for (let page = 1; page <= 6; page++) {
+      // Every section the catalogue has a category for (owner, 2026-11-08). The reader opened only
+      // the first 6 pages of smartphones, while Vega lists ~2,700 products in these sections: 886
+      // of them catalogue models (235 in stock) and we priced 7.
+      const SECTIONS = ['audio-video-and-photo/tv', 'audio-video-and-photo/smart-speaker', 'audio-video-and-photo/projectors',
+        'audio-video-and-photo/soundbars', 'audio-video-and-photo/hi-fi-systems', 'audio-video-and-photo/bluetooth-speakers',
+        'audio-video-and-photo/digital-photo-cameras', 'computers-and-accessories/computers', 'computers-and-accessories/computers-all-in-one',
+        'computers-and-accessories/notebooks', 'computers-and-accessories/monitors', 'computers-and-accessories/network-devices',
+        'phones-and-gadgets/smart-phones', 'phones-and-gadgets/tablets', 'phones-and-gadgets/tws-wireless-headphones',
+        'phones-and-gadgets/smart-watches', 'phones-and-gadgets/power-banks', 'major-home-appliances/refrigerators',
+        'major-home-appliances/washing-machines', 'major-home-appliances/tumble-dryers', 'major-home-appliances/dishwashers',
+        'major-home-appliances/microwave-ovens', 'major-home-appliances/freezers', 'built-in-appliances/built-in-coffee-machines',
+        'built-in-appliances/dishwashers-built-in', 'cooling-heating/air-conditioners', 'cooling-heating/air-humidifiers',
+        'cooling-heating/air-purifiers', 'cooling-heating/air-dehumidifiers', 'kitchen-house/air-fryers',
+        'kitchen-house/coffee-machines-automatic', 'kitchen-house/coffee-machines-semi-automatic', 'kitchen-house/coffee-machines-capsular',
+        'kitchen-house/coffee-machines-filter', 'kitchen-house/kitchen-machines', 'kitchen-house/blenders', 'kitchen-house/food-processors',
+        'domestic-appliances/vacuum-cleaners', 'domestic-appliances/vacuum-cleaners-wireless', 'domestic-appliances/vacuum-cleaners-robot',
+        'domestic-appliances/steamers', 'personal-care/hair-dryers', 'personal-care/hair-stylers', 'personal-care/shavers',
+        'personal-care/hair-clippers-trimmers', 'personal-care/tooth-care-and-irrigators', 'game-systems/playstation',
+        'game-systems/game-controllers'];
+      const out = [], seen = new Set();
+      for (const section of SECTIONS) for (let page = 1; page <= 40; page++) {
         // robots.txt disallows limit/sort/order/search params — page is allowed
-        const html = await get(`https://vega.am/home-appliances/phones-and-gadgets/smart-phones${page > 1 ? '?page=' + page : ''}`);
+        const html = await get(`https://vega.am/home-appliances/${section}${page > 1 ? '?page=' + page : ''}`);
         await sleep(DELAY_MS);
         if (!html) break;
         const blocks = html.split('class="product-thumb').slice(1);
         if (!blocks.length) break;
+        let fresh = 0;
         for (const b of blocks) {
           const url = (b.match(/href="(https:\/\/vega\.am\/[^"]*\.html)"/) || [])[1];
           const title = clean((b.match(/alt="([^"]{10,})"/) || [])[1] || '');
           const price = Number((b.match(/data-price-value="(\d+)"/) || [])[1]);
-          if (!url || !title || !price || !safeUrl(url)) continue;
-          const id = matchPhone(title + ' ' + url);
+          if (!url || !title || !price || !safeUrl(url) || seen.has(url)) continue;
+          seen.add(url); fresh++;
+          const id = matchPhone(title + ' ' + url, { price, url }) || matchPhone(title, { price, url });
           if (!id) continue;
           // the listing serves 250x250; the same path also serves 500x500 (and 1500x1500)
           const thumb = (b.match(/src="(https:\/\/vega\.am\/image\/cache\/catalog\/[^"]+?\.jpg)"/) || [])[1];
@@ -1853,7 +1874,8 @@ const SHOPS = {
             inStock: stock ? stock === 'instock' : undefined,
             image: thumb ? thumb.replace(/-250x250\.jpg$/, '-500x500.jpg') : null });
         }
-        if (blocks.length < 5) break;
+        // past the last page Vega serves the last one again: nothing new means done
+        if (!fresh || blocks.length < 5) break;
       }
       return out;
     }
