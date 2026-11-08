@@ -1618,7 +1618,7 @@ if (process.argv[2] === '--selftest') {
 
 // Shared by the two JSON-LD shops: filter candidate URLs by matchPhone first so only pages that
 // can be one of our products are fetched, then read name/price/stock out of the Product block.
-async function crawlLd(urls, cap = 6) {
+async function crawlLd(urls, cap = 6, names = {}) {
   const out = [], per = {};
   // How many of these urls this will actually ask for, said before it starts asking. REDstore's
   // sitemap lists 7,200 products; matchPhone refuses most of them without a request and the cap
@@ -1629,8 +1629,11 @@ async function crawlLd(urls, cap = 6) {
   const capOf = id => /^(apple|samsung)$/i.test((phoneById[id] || {}).brand || '') ? Math.max(cap, 48) : cap;
   const want = [];
   const seen = {};
+  // names: the shop's own product name for a url, where it publishes one. A page is judged by its
+  // address OR its name, so a model the slug spells differently is still read.
+  const idOf = u => matchPhone(u) || (names[u] ? matchPhone(names[u]) : null);
   for (const u of urls) {
-    const id = matchPhone(u);
+    const id = idOf(u);
     if (!id) continue;
     seen[id] = (seen[id] || 0) + 1;
     if (seen[id] <= capOf(id)) want.push(u);
@@ -1640,7 +1643,7 @@ async function crawlLd(urls, cap = 6) {
   ${want.length} page(s) to read of ${urls.length} listed, about ${Math.round(want.length * (DELAY_MS + 600) / 60000)} min: `);
   let done = 0;
   for (const u of urls) {
-    const urlId = matchPhone(u);
+    const urlId = idOf(u);
     if (!urlId) continue;
     per[urlId] = (per[urlId] || 0) + 1;
     if (per[urlId] > capOf(urlId)) continue;     // cap requests per model
@@ -2524,7 +2527,16 @@ const SHOPS = {
       }
       // 16 pages a model, not 6: iBolit gives each colour its own page - the JBL Clip 4 has 13,
       // the Charge 5 and Redmi Note 15 Pro 10 - and 6 left those colours out (2026-11-08).
-      return crawlLd(urls, 16);
+      // WooCommerce's public product list gives every product's own name, 100 a request: 17 catalogue
+      // models (Z Fold 8 Ultra, iPhone 18 Pro, iPad Air 11 M4...) have slugs the matcher cannot read.
+      const names = {};
+      for (let page = 1; page <= 100; page++) {
+        const json = await get(`https://ibolit.mobi/wp-json/wc/store/v1/products?per_page=100&page=${page}`); await sleep(DELAY_MS);
+        let list = []; try { list = JSON.parse(json || '[]'); } catch { }
+        if (!Array.isArray(list) || !list.length) break;
+        for (const x of list) if (x.permalink && x.name) names[x.permalink] = clean(x.name);
+      }
+      return crawlLd(urls, 16, names);
     }
   },
 
