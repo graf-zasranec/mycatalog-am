@@ -66,11 +66,17 @@ if (!process.argv.includes('--resume-prices') && !prepared) {
 // on them one after another). Each shop is still read at its own pace. Notebook Centre and the
 // hand check both write data/listings.csv, so they never overlap each other; the hand check also
 // reads the fresh Eldorado and Zigzag caches, so it goes last.
+// The shops that need no cache are read at the same time (2026-11-08): they used to wait for
+// the ZigZag cache (101 min) before starting their own 73 minutes. Each one lands in today's
+// checkpoint, and the pass after the hand check reads only Eldorado and ZigZag from their fresh
+// caches and writes prices and history once.
+const CACHE_FED = 'eldorado,zigzag';
 await Promise.all([
   runAsync(python, ['tools/eldorado-fetch.py']),
   runAsync(process.execPath, ['tools/zigzag-sitemap.mjs']).then(() => runAsync(python, ['tools/zigzag-fetch.py'])),
   runAsync(process.execPath, ['tools/nbc-import.mjs', '--fetch', '--write'])
     .then(() => process.env.CI ? null : runAsync(python, ['tools/check-links.py', '--all'])),
+  runAsync(process.execPath, ['scrape.mjs', '--fresh', '--skip', CACHE_FED]),
 ]);
 const limit = process.env.BETTER_ROW_LIMIT;
 run(process.execPath, ['tools/confirm-hand.mjs', '--recheck', '1', ...(limit ? ['--limit', limit] : []), '--hide-gone']);
@@ -79,7 +85,9 @@ run(process.execPath, ['tools/confirm-hand.mjs', '--recheck', '1', ...(limit ? [
 // GitHub runs it in its own job (stock-check.yml): the refresh there is already close to 6 hours.
 if (!process.argv.includes('--plan')) fs.writeFileSync('.refresh-prepared.json',JSON.stringify({scope:'all',preparedAt:new Date().toISOString()}));
 }
-run(process.execPath, ['scrape.mjs', ...(prepared ? ['--resume-checkpoint'] : ['--fresh'])], true);
+// Every other shop was read above into today's checkpoint, so this pass fetches only the
+// cache-fed shops (or, after an interrupted run, whatever the checkpoint still lacks).
+run(process.execPath, ['scrape.mjs', '--resume-checkpoint'], true);
 run(process.execPath, ['tools/audio.mjs', '--write'], true);
 run(process.execPath, ['tools/links.mjs'], true);
 for (const category of ['laptop', 'monitor', 'headphones', 'speaker', 'watch', 'tv'])
