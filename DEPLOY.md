@@ -16,6 +16,8 @@ time — so it can be hosted free, almost anywhere.
 > bundle exists, and copies the live release's bundles across (`tools/keep-live-bundles.mjs`) so
 > an open older page keeps working. Commit inputs only: code, prices, history, photos and their
 > derivative data. `node build.mjs` locally is still how you preview and test.
+> The publish job also makes the photo derivatives (photo box, thumbnails, share cards) and runs
+> `npm test`: a failing test stops a code change from going live, and only warns after a crawl.
 
 ## What you actually have
 

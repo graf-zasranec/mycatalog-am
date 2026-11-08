@@ -33,7 +33,7 @@ jobs:
   publish:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
@@ -47,12 +47,36 @@ jobs:
         with:
           node-version: '22'
 
+      # A committed photo gets its box, thumbnails and share card here (2026-11-08), so adding a
+      # photo is just committing it. The tools are deterministic: unchanged photos give
+      # byte-identical files, so R2 only receives what really changed.
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+
+      - name: Photo derivatives
+        run: |
+          python -m pip install -q 'pillow==12.3.0'
+          for producer in photo-box thumbnails social; do
+            python3 "tools/$producer.py" | tail -1 || echo "::warning::$producer failed; publishing the committed files"
+          done
+
       - name: Build the site
         run: |
           npm ci --ignore-scripts
           node build.mjs | tail -4
           # every bundle a built page names must exist
           node tools/release-assets.mjs
+
+      # The tests used to run on the owner's Mac before every push. A failing test stops a code
+      # change from going live; after a crawl it only warns, so a data quirk never freezes prices.
+      - name: Tests
+        continue-on-error: ${{ github.event_name == 'workflow_run' }}
+        run: |
+          npm test > test.log 2>&1 || { tail -30 test.log; exit 1; }
+          tail -2 test.log
+          node tools/terms-gaps.mjs --check | tail -1 || echo "::warning::untranslated spec terms"
+          node tools/spec-gaps.mjs --check | tail -1 || echo "::warning::missing specs"
 
       # Visitors holding the previous page still ask for its bundles.
       - name: Carry over the live release's bundles
