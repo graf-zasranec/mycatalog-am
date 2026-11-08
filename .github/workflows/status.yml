@@ -21,6 +21,7 @@ jobs:
           ref: main
           sparse-checkout: |
             data/prices.json
+            data/phones.json
             tools/status-report.mjs
           sparse-checkout-cone-mode: false
 
@@ -44,4 +45,10 @@ jobs:
           # about 31 list calls a day against the free million a month
           size=$(rclone size r2:better-images --json 2>/dev/null || echo '{}')
           bytes=$(echo "$size" | jq -r '.bytes // empty'); count=$(echo "$size" | jq -r '.count // empty')
-          node tools/status-report.mjs ${bytes:+--r2-bytes $bytes --r2-objects $count}
+          # last week's prices from git, and what the last crawl saw but could not match
+          old=$(gh api "repos/$GH_REPO/commits?path=data/prices.json&until=$(date -u -d '7 days ago' +%FT%TZ)&per_page=1" -q '.[0].sha' || true)
+          [ -n "$old" ] && gh api "repos/$GH_REPO/contents/data/prices.json?ref=$old" -H 'Accept: application/vnd.github.raw' > week-ago.json || true
+          run=$(gh run list -w 'Better — refresh prices' -s success -L 1 --json databaseId -q '.[0].databaseId' || true)
+          [ -n "$run" ] && gh run download "$run" -n unmatched -D unmatched || true
+          node tools/status-report.mjs ${bytes:+--r2-bytes $bytes --r2-objects $count} \
+            $( [ -s week-ago.json ] && echo --week-ago week-ago.json ) $( [ -s unmatched/unmatched.json ] && echo --unmatched unmatched/unmatched.json )
