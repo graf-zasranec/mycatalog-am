@@ -25,6 +25,22 @@
    "visibleLong": 579
   },
   {
+   "id": "apple-airtag",
+   "brand": "Apple",
+   "name": "AirTag (2nd generation)",
+   "category": "accessory",
+   "shops": 5,
+   "query": "Apple AirTag (2nd generation)",
+   "what": "too small",
+   "file": "images/cut/apple-airtag__white.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 484,
+   "visibleHeight": 484,
+   "visibleLong": 484
+  },
+  {
    "id": "hitachi-r-v660puc7-1",
    "brand": "Hitachi",
    "name": "Fridge R-V660PUC7-1 550 L",
@@ -55,22 +71,6 @@
    "visibleWidth": 592,
    "visibleHeight": 564,
    "visibleLong": 592
-  },
-  {
-   "id": "apple-airtag",
-   "brand": "Apple",
-   "name": "AirTag (2nd generation)",
-   "category": "accessory",
-   "shops": 3,
-   "query": "Apple AirTag (2nd generation)",
-   "what": "too small",
-   "file": "images/cut/apple-airtag__white.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 484,
-   "visibleHeight": 484,
-   "visibleLong": 484
   },
   {
    "id": "babyliss-6713de",
@@ -2281,22 +2281,6 @@
    "visibleLong": 538
   },
   {
-   "id": "dyson-ds60-piston-animal-submarine-2969",
-   "brand": "Dyson",
-   "name": "DS60 Piston Animal Submarine (2969) Cordless Vacuum",
-   "category": "vacuum",
-   "shops": 1,
-   "query": "Dyson DS60 Piston Animal Submarine (2969) Cordless Vacuum",
-   "what": "too small",
-   "file": "images/cut/dyson-ds60-piston-animal-submarine-2969__main.webp",
-   "state": "too small",
-   "width": 700,
-   "height": 700,
-   "visibleWidth": 317,
-   "visibleHeight": 535,
-   "visibleLong": 535
-  },
-  {
    "id": "electrolux-eacm-12-gt-n6",
    "brand": "Electrolux",
    "name": "Portable Air Conditioner EACM-12 GT/N6",
@@ -2503,6 +2487,22 @@
    "visibleWidth": 414,
    "visibleHeight": 581,
    "visibleLong": 581
+  },
+  {
+   "id": "electrolux-ewh100-centurio-iq-3-0-water-heater",
+   "brand": "Electrolux",
+   "name": "EWH100 CENTURIO IQ 3.0 Water Heater",
+   "category": "climate",
+   "shops": 1,
+   "query": "Electrolux EWH100 CENTURIO IQ 3.0 Water Heater",
+   "what": "too small",
+   "file": "images/cut/electrolux-ewh100-centurio-iq-3-0-water-heater__main.webp",
+   "state": "too small",
+   "width": 700,
+   "height": 700,
+   "visibleWidth": 239,
+   "visibleHeight": 504,
+   "visibleLong": 504
   },
   {
    "id": "electrolux-ewh80-centurio-iq-3-0-water-heater",
@@ -4617,20 +4617,20 @@
    "visibleLong": 584
   },
   {
-   "id": "electrolux-ewh100-centurio-iq-3-0-water-heater",
-   "brand": "Electrolux",
-   "name": "EWH100 CENTURIO IQ 3.0 Water Heater",
-   "category": "climate",
+   "id": "dyson-ds60-piston-animal-submarine-2969",
+   "brand": "Dyson",
+   "name": "DS60 Piston Animal Submarine (2969) Cordless Vacuum",
+   "category": "vacuum",
    "shops": 0,
-   "query": "Electrolux EWH100 CENTURIO IQ 3.0 Water Heater",
+   "query": "Dyson DS60 Piston Animal Submarine (2969) Cordless Vacuum",
    "what": "too small",
-   "file": "images/cut/electrolux-ewh100-centurio-iq-3-0-water-heater__main.webp",
+   "file": "images/cut/dyson-ds60-piston-animal-submarine-2969__main.webp",
    "state": "too small",
    "width": 700,
    "height": 700,
-   "visibleWidth": 239,
-   "visibleHeight": 504,
-   "visibleLong": 504
+   "visibleWidth": 317,
+   "visibleHeight": 535,
+   "visibleLong": 535
   },
   {
    "id": "electrolux-rapid-dig-invertor-ech-ri2000-heater",
