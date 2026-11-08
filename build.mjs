@@ -53,6 +53,14 @@ const MERGED = fs.existsSync('data/merged.json') ? JSON.parse(rd('data/merged.js
 // articles, newest first; data/blog.json holds each in hy, ru and en
 const BLOG = (fs.existsSync('data/blog.json') ? JSON.parse(rd('data/blog.json')) : []).sort((a, b) => b.date.localeCompare(a.date));
 const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.json')) : { shops: {}, offers: {} };
+// Shops whose offers are not shown, whatever the crawl kept (owner, 2026-11-08). AppZone's hosting
+// account is suspended - every link opens "Account Suspended" - so its prices are hidden until its
+// site works again; then remove it here. (scrape.mjs also drops a suspended shop on its own.)
+const HIDDEN_SHOPS = new Set(['appzone']);
+for (const [id, list] of Object.entries(PRICES.offers || {})) {
+  const kept = list.filter(o => !HIDDEN_SHOPS.has(o.shop));
+  if (kept.length !== list.length) PRICES.offers[id] = kept;
+}
 assertPriceSnapshot(PRICES);
 assertCatalogueData(phones, PRICES.offers);
 attachOfferConfigs(phones, PRICES.offers || {});
