@@ -16,7 +16,9 @@ on:
   # Commits made by the refresh and stock jobs use GITHUB_TOKEN, and those pushes do not start
   # other workflows, so their completion starts the publish instead.
   workflow_run:
-    workflows: ['Better — refresh prices', 'Better — stock check', 'Better — retry interrupted refresh']
+    # (not the retry workflow: it commits nothing, and its 'skipped' ending once cancelled a real
+    # publish - 8 Nov 2026)
+    workflows: ['Better — refresh prices', 'Better — stock check']
     types: [completed]
   workflow_dispatch:
 
@@ -25,9 +27,10 @@ permissions:
   pages: write
   id-token: write
 
+# Queue, never cancel: a run that ends up skipped must not cancel the publish ahead of it.
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   publish:
