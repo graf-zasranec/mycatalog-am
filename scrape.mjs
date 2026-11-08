@@ -246,6 +246,26 @@ function looksLikeAccessory(text) {
     if (!/ (case|cover|key ?ring|keyring|loop|holder|tips?|folio|charger|charging|strap|skin|sleeve|protector|grip|clip|cable|carabiner|battery|android|belkin|ipad|iphone|macbook|imac|mobee) /.test(own)
         && !ACCESSORY_WORDS.some(w => !APPLE_OWN_WORDS.includes(w) && h.includes(' ' + w + ' '))) return false;
   }
+  // Products whose own name carries an accessory word (2026-11-08, found reading Viva and
+  // Telecom): AirPods are sold "with (MagSafe / Wireless) Charging Case", an Apple Watch is "...
+  // Case with Sand Sport Band", and the catalogue's power banks say "power bank". A case FOR AirPods,
+  // a band FOR a watch, or a power bank FOR a phone is still an accessory.
+  const forSomething = / (for|для) /.test(h);
+  const covering = / (silicone|leather|cover|protective|skin|strap|clear|shockproof|hook|keychain|lanyard|tpu|bumper|sleeve|holder|stand|mount) /;
+  if (!forSomething && / airpods /.test(h) && / (charging case|magsafe charging case|wireless charging case|case usb c|usb c case) /.test(h)
+      && !covering.test(h)) {
+    const rest = h.replace(/ (with )?(magsafe |wireless )?charging case( usb c)?/g, ' ').replace(/ usb c case /g, ' ');
+    if (!ACCESSORY_WORDS.some(w => rest.includes(' ' + w + ' '))) return false;
+  }
+  if (!forSomething && / apple watch /.test(h) && / case with /.test(h) && / (band|loop|bracelet) /.test(h)) {
+    const body = h.slice(0, h.indexOf(' case with ') + 1);
+    if (!ACCESSORY_WORDS.some(w => body.includes(' ' + w + ' '))) return false;
+  }
+  if (!forSomething && / (power bank|powerbank) /.test(h) && / \d+ ?mah /.test(h.replace(/(\d) mah/g, '$1mah'))
+      && !/ (iphone|galaxy|pixel|redmi note|ipad|macbook) /.test(h)) {
+    const rest = h.replace(/ (power bank|powerbank) /g, ' ').replace(/ (magnetic|magsafe|wireless) /g, ' ');
+    if (!ACCESSORY_WORDS.some(w => rest.includes(' ' + w + ' '))) return false;
+  }
   if (ACCESSORY_WORDS.some(w => h.includes(' ' + w + ' '))) return true;
   if (FOR_WORDS.some(w => h.includes(w + ' '))) return true;
   return false;
@@ -938,6 +958,19 @@ if (process.argv[2] === '--selftest') {
     [null, 'JBL Tune 570BT'],
     [null, 'Dyson Supersonic HD16 hair dryer Red Velvet/Gold - outlet'],
     ['apple-airpods-4-anc', 'AirPods 4 NC'],
+    // 2026-11-08: products whose own name carries an accessory word, and the accessories beside them
+    ['apple-airpods-5-wireless-charging-case', 'AirPods 5 with Wireless Charging Case'],
+    ['apple-airpods-pro-3', 'AirPods Pro 3 with MagSafe Charging Case'],
+    ['apple-watch-series-12-gps-42mm', 'Apple Watch Series 12 GPS 42mm Light Gold Aluminium Case with Sand Sport Band - M/L'],
+    ['apple-watch-ultra-4-gps-plus-cellular-plus-band', 'Apple Watch Ultra 4 GPS + Cellular 49mm Natural Titanium Case with Black Ocean Band'],
+    ['xiaomi-ultra-slim-power-bank-5000', 'Xiaomi Ultra Slim Power Bank 5000mAh'],
+    [null, 'Silicone Case for AirPods Pro 3'],
+    [null, 'AirPods Pro 3 Case'],
+    [null, 'Sport Band for Apple Watch 46mm'],
+    [null, 'Apple Watch 46mm Sport Loop band'],
+    [null, 'Power bank for iPhone 17 5000mAh'],
+    [null, 'Magnetic power bank 10000mAh for iPhone'],
+    [null, 'Clear Case with MagSafe for iPhone 17 Pro'],
     ['apple-ipad-9', 'iPad 10.2 Wi-Fi 64GB (2021) (Space Grey)'],
     [null, 'iPad 10.2 Wi-Fi 128GB (2020) (Gold)'],
     [null, 'iPad 10.2 Wi-Fi+Cellular 32GB (2021) Gold'],
