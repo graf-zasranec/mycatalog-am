@@ -56,7 +56,22 @@ const KINDS = [
 ];
 // A shop's own section is a better witness than a word that is not there: a row scraped off
 // .../smartphones/... is a phone even when its title only says "Samsung A07".
-const SECTIONS = [[/smartphone|\/phones?\//i, 'phone'], [/tablet/i, 'tablet'],
+const SECTIONS = [
+  // Vega's own sections (2026-11-08): its titles open with an Armenian kind word ("Սառնարան LG ...")
+  // that the table above does not know, but the address names the aisle exactly.
+  [/\/(soundbars|hi-fi-systems|bluetooth-speakers|smart-speaker)\//i, 'speaker'],
+  [/\/tws-wireless-headphones\//i, 'headphones'],
+  [/\/(refrigerators|washing-machines|tumble-dryers|dishwashers|dishwashers-built-in|freezers|microwave-ovens)\//i, 'largeappliance'],
+  [/\/(coffee-machines-[a-z-]+|built-in-coffee-machines)\//i, 'coffee'],
+  [/\/(air-fryers|blenders|kitchen-machines|food-processors)\//i, 'kitchen'],
+  [/\/(air-conditioners|air-humidifiers|air-dehumidifiers)\//i, 'climate'],
+  [/\/air-purifiers\//i, 'purifier'],
+  [/\/(hair-dryers|hair-stylers)\//i, 'haircare'],
+  [/\/(shavers|hair-clippers-trimmers|tooth-care-and-irrigators)\//i, 'grooming'],
+  [/\/(vacuum-cleaners[a-z-]*)\//i, 'vacuum'],
+  [/\/steamers\//i, 'appliance'],
+  [/\/(power-banks)\//i, 'powerbank'],
+  [/smartphone|\/phones?\//i, 'phone'], [/tablet/i, 'tablet'],
   [/laptop|notebook/i, 'laptop'], [/watch/i, 'watch'], [/headphone|audio/i, 'headphones'],
   [/monitor/i, 'monitor'], [/[/-]tv(-\d+)?\b|\btelevision/i, 'tv'], [/speaker|acoustic/i, 'speaker']];
 
