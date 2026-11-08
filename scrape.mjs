@@ -2522,7 +2522,9 @@ const SHOPS = {
         const xml = await get(m); await sleep(DELAY_MS);
         urls.push(...[...xml.matchAll(/<loc>(https:\/\/ibolit\.mobi\/product\/[^<]+)<\/loc>/g)].map(a => a[1]));
       }
-      return crawlLd(urls);
+      // 16 pages a model, not 6: iBolit gives each colour its own page - the JBL Clip 4 has 13,
+      // the Charge 5 and Redmi Note 15 Pro 10 - and 6 left those colours out (2026-11-08).
+      return crawlLd(urls, 16);
     }
   },
 
@@ -3341,11 +3343,17 @@ for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
 if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tray was priced at or below the eSIM)`);
 
 // What makes two offers the same offer: product, capacity, colour, SIM build.
+function HAS_SIM_ID(id) { return (phoneById[id] || {}).category === 'phone'; }
 function offerKey(o) {
   // Wi-Fi vs cellular for the same reason as the SIM build: a tablet's cellular build is a dearer
   // product, and without it here Pixel's Tab S9 Ultra Cellular lost to its own Wi-Fi row every time.
+  // The build may not be decided yet when this runs (the shop-by-shop "keep the cheaper" pass comes
+  // before the final SIM pass), so read it from the shop's own words here too. Without that
+  // iBolit's ".../1tb-sim-black" and ".../1tb-esim-black" shared one key and the cheaper eSIM row
+  // erased every physical-SIM iPhone it sells (2026-11-08).
+  const esim = o.esim ?? (HAS_SIM_ID(o.id) ? simBuild(`${o.title || ''} ${o.url || ''}`) : undefined);
   return [o.id, o.ram ?? '?', o.storage ?? '?', o.size ?? '?', o.band ?? '?', o.color ?? '?',
-    o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell === true ? 'c' : o.cell === false ? 'w' : '?'].join('|');
+    esim === true ? 'e' : esim === false ? 'n' : '?', o.cell === true ? 'c' : o.cell === false ? 'w' : '?'].join('|');
 }
 // A shop that parses to NOTHING is caught above and carried forward whole. One that answers some
 // pages and refuses the rest parses to FEWER offers, and slipped straight past that: on 2026-09-21
