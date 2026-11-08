@@ -2725,6 +2725,20 @@ const SHOPS = {
   }
 };
 
+// A shop whose hosting account is suspended (AppZone, 2026-11-08: every page redirected to
+// name.am's "Account Suspended") is not a shop having a bad night. Keeping its last offers
+// listed sends every click to that page, so a closed shop's offers are dropped. Only the host's
+// own suspension or expiry page counts; any other failure keeps the previous offers as before.
+async function shopSuspended(key) {
+  const site = SHOPS[key]?.site;
+  if (!site) return false;
+  try {
+    const r = await fetch(site, { redirect: 'follow', signal: AbortSignal.timeout(20000), headers: { 'User-Agent': UA } });
+    const head = (await r.text()).slice(0, 4000);
+    return /suspendedpage\.cgi/i.test(r.url) || /<title>[^<]*(?:account suspended|domain (?:has )?expired)[^<]*<\/title>/i.test(head);
+  } catch { return false; }
+}
+
 /* ---------- run ---------- */
 // One shop or several: a whole run takes hours and the shops that matter for one question are
 // usually two or three of them.
@@ -2893,6 +2907,11 @@ for (const key of names) {
   let got = [], threw = false;
   const f = fetched.get(key) || {};
   if (f.error) { threw = true; console.warn('adapter failed:', f.error.message); } else got = f.got || [];
+  if (threw && await shopSuspended(key)) {
+    console.log('the shop\'s site is suspended - its offers are dropped until it returns');
+    report.push({ shop: key, offers: 0, models: 0, suspended: true });
+    continue;
+  }
   if (threw) {
     // keep what this shop had last night rather than dropping every one of its prices
     const kept = Object.values(prev.offers || {}).flat().filter(o => o.shop === key);
@@ -2938,6 +2957,11 @@ for (const key of names) {
   // that read as "COLLAPSED from 104" every single night. Comparing a crawl against a crawl is
   // the only comparison that means anything, and it is what makes a real collapse visible.
   const had = Object.values(prev.offers || {}).flat().filter(o => o.shop === key && !o.seeded);
+  if (!best.size && had.length && await shopSuspended(key)) {
+    console.log(`parsed 0 - the shop's site is suspended: dropped its ${had.length} previous offer(s)`);
+    report.push({ shop: key, offers: 0, models: 0, suspended: true });
+    continue;
+  }
   if (!best.size && had.length) {
     for (const o of had) (offers[o.id] ||= []).push(o);
     console.log(`parsed 0 - kept ${had.length} offer(s) from the previous run`);
@@ -2991,7 +3015,9 @@ try {
   CURSHOP_SEQ = null;
   const shared = new Map(), dropped = [];
   for (const r of raw) if (r.url) shared.set(r.url, (shared.get(r.url) || 0) + 1);
-  const rows = raw.filter(r => r.inStock !== 'link-hidden')
+  // a shop found suspended this run sells nothing, hand rows included
+  const suspended = new Set(report.filter(r => r.suspended).map(r => r.shop));
+  const rows = raw.filter(r => r.inStock !== 'link-hidden' && !suspended.has(r.shop))
     // A hand row's url is read ONLY when somebody pinned it AND no other row names that same
     // url. Pixel's DJI mic kits say "Charging case" in their titles, the accessory filter threw
     // all four out, and the pin written to overrule that was keyed by url and so was never
