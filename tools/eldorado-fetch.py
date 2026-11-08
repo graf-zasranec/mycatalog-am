@@ -181,6 +181,7 @@ def main():
     report = dict(started=now.isoformat(), checked=[], changed=[], unavailable=[], failed=[])
     for url, old in known.items():
         cached.setdefault(url, old)
+    listing_pages = 0
     if not args.offers_only:
         for cat in CATEGORIES:
             seen = set()
@@ -191,6 +192,7 @@ def main():
                 if not html:
                     report['failed'].append(dict(url=url, reason='Category request failed; retained cache'))
                     break
+                listing_pages += 1
                 found = 0
                 for row in category_rows(html):
                     if row['url'] in seen:
@@ -207,6 +209,11 @@ def main():
             # checkpoint each aisle: a run cut short (the Mac sleeping, a closed session) keeps
             # what it has read instead of losing two hours of listings
             save(OUT, list(cached.values()))
+    if not args.offers_only and not listing_pages:
+        # every aisle refused its first page: blocked, so the product pages would be refused too
+        print('Eldorado: every category page was refused - blocked; previous cache retained', flush=True)
+        save(ROOT / 'data/eldorado-refresh-report.json', report)
+        return 1
     targets = []
     for url in known:
         parsed = urlparse(url)
@@ -252,6 +259,12 @@ def main():
         save(OUT, list(cached.values()))
         save(ROOT / 'data/eldorado-refresh-report.json', report)
         print(f'Eldorado {index}/{len(targets)}: {len(report["changed"])} changed; {len(report["failed"])} unresolved', flush=True)
+        # Eldorado refuses GitHub's servers (Cloudflare, since 2026-10-30): a night spent 152
+        # minutes on 452 refused pages. Forty refusals in a row with nothing read means blocked;
+        # the cache and its dates stay as they are, and the browser reads keep them current.
+        if index >= 40 and not report['checked']:
+            print(f'Eldorado: the first {index} pages were all refused - blocked, stopping; previous cache retained', flush=True)
+            break
         time.sleep(DELAY)
     if not cached:
         print('No verified listings: retained previous cache', file=sys.stderr)
