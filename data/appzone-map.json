@@ -742,5 +742,558 @@
     "id": "hp-elitebook-655-g10",
     "reviewed": "2026-11-06",
     "method": "Product page read and photo checked"
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-air-11-m4-wifi-cellular/": {
+    "id": "apple-ipad-air-11-m4",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Space Gray",
+      "blue": "Blue",
+      "purple": "Purple"
+    },
+    "cell": true
+  },
+  "https://appzone.am/en/Assortment/ipad-air-13-m4-wi-fi-cellular/": {
+    "id": "apple-ipad-air-11-m4",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Blue",
+      "gray": "Space Gray"
+    },
+    "cell": true
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-pro-11-m5-wifi/": {
+    "id": "apple-ipad-pro-11-m5",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Space Black"
+    },
+    "cell": false
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-pro-13-m5-wifi-cellular/": {
+    "id": "apple-ipad-pro-11-m5",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Space Black"
+    },
+    "cell": true
+  },
+  "https://appzone.am/en/Assortment/dji-mic-mini-2/": {
+    "id": "dji-mic-mini-2",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/dji-osmo-pocket-4/": {
+    "id": "dji-osmo-pocket-4",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-buds-4/": {
+    "id": "samsung-galaxy-buds-4",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "white": "White"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-buds-4-pro/": {
+    "id": "samsung-galaxy-buds-4-pro",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "white": "White"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-watch-ultra2/": {
+    "id": "samsung-galaxy-watch-ultra-2",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Titanium Gray"
+    },
+    "storage": 47
+  },
+  "https://appzone.am/en/Assortment/iphone-duo/": {
+    "id": "apple-iphone-duo",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "white": "Star White",
+      "black": "Night Sky"
+    }
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-x1504va-core7-150u/": {
+    "id": "asus-vivobook-x1504va",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/hp-omnibook-5-ai-16-cn0004ci-dr9v5ea/": {
+    "id": "hp-omnibook-5-ai-16-cn0004ci",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/hp-omnibook-5-14-fp0024ci-c0ee4ea/": {
+    "id": "hp-omnibook-5-14-fp0024ci",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/hp-omnibook-5-flip-14-fp0020ci-by9h3ea/": {
+    "id": "hp-omnibook-5-flip-14-fp0020ci",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/asus-rog-strix-g16-g614fr-s5022w/": {
+    "id": "asus-rog-strix-g16",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/asus-rog-zephyrus-gu605cp-g16-u95070/": {
+    "id": "asus-rog-zephyrus-gu605cp-g16",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-15-f1504va-bq338/": {
+    "id": "asus-vivobook-15-core-f1504va-bq338",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/lenovo-legion-pro-7-16afr10h/": {
+    "id": "lenovo-legion-pro-7-16afr10h",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-s16-flip-x360-2in1/": {
+    "id": "asus-vivobook-s16-flip-x360-2in1",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/hp-omnibook-5-16-ai/": {
+    "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/hp-omnibook-5-16-ag1017cl/": {
+    "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-note-15-pro-plus-5g/": {
+    "id": "xiaomi-redmi-note-15-pro-plus-5g",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "lightblue": "Blue",
+      "brown": "Brown",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-15/": {
+    "id": "xiaomi-redmi-15",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "purple": "Purple",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-17-4g/": {
+    "id": "xiaomi-redmi-17",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "blue": "Deep Blue",
+      "purple": "Purple",
+      "green": "Green"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-poco-x8-pro/": {
+    "id": "poco-x8-pro-5g",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "white": "White",
+      "black": "Black",
+      "green": "Green"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-poco-f9-ultra/": {
+    "id": "xiaomi-poco-f9-ultra",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-17-ultra/": {
+    "id": "xiaomi-17-ultra",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "green": "Starry Green",
+      "black": "Black",
+      "white": "White"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-poco-f8-ultra/": {
+    "id": "xiaomi-poco-f8-ultra",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Denim Blue",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-poco-m8-pro/": {
+    "id": "xiaomi-poco-m8-pro-5g",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-poco-x8-pro-max/": {
+    "id": "xiaomi-poco-x8-pro-max",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "orange": "Orange",
+      "black": "Black",
+      "white": "White"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-note-15-4g/": {
+    "id": "xiaomi-redmi-note-15",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "lightsteelblue": "Blue",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-poco-f9-pro/": {
+    "id": "xiaomi-poco-f9-pro",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "white": "White"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-17t-pro/": {
+    "id": "xiaomi-17t-pro",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Deep Blue",
+      "black": "Black",
+      "pink": "Pink"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-17t/": {
+    "id": "xiaomi-17t",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "lightblue": "Blue",
+      "purple": "Purple",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-17-pro-max/": {
+    "id": "xiaomi-17-pro-max",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "white": "White",
+      "black": "Black",
+      "purple": "Purple",
+      "green": "Green"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a37/": {
+    "id": "samsung-galaxy-a37",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "white": "White",
+      "black": "Black",
+      "purple": "Purple",
+      "green": "Awesome Green"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a57/": {
+    "id": "samsung-galaxy-a57",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Awesome Gray"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-note-17-pro-max/": {
+    "id": "xiaomi-redmi-note-17-pro-max-5g",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "purple": "Purple",
+      "green": "Green"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-note-17-pro/": {
+    "id": "xiaomi-redmi-note-17-pro-5g",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "purple": "Purple",
+      "blue": "Sky Blue"
+    }
+  },
+  "https://appzone.am/en/Assortment/xiaomi-redmi-note-17/": {
+    "id": "xiaomi-redmi-note-17-5g",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "purple": "Purple",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a08/": {
+    "id": "samsung-galaxy-a08",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "green": "Green",
+      "blue": "Dark Blue"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a18-8gb-256gb/": {
+    "id": "samsung-galaxy-a18",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Light Blue",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-a18-128gb/": {
+    "id": "samsung-galaxy-a18",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Light Blue",
+      "black": "Black"
+    }
+  },
+  "https://appzone.am/en/Assortment/apple-watch-ultra-4-gps-cellular-49mm/": {
+    "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black"
+    },
+    "storage": 49
+  },
+  "https://appzone.am/en/Assortment/apple-watch-series-12-46mm/": {
+    "id": "apple-watch-series-12-gps-42mm",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Space Gray",
+      "black": "Black"
+    },
+    "storage": 46
+  },
+  "https://appzone.am/en/Assortment/apple-watch-series-12-42mm/": {
+    "id": "apple-watch-series-12-gps-42mm",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Space Gray",
+      "black": "Black"
+    },
+    "storage": 42
+  },
+  "https://appzone.am/en/Assortment/apple-watch-series-11-46mm/": {
+    "id": "apple-watch-series-11",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Space Gray",
+      "black": "Jet Black"
+    },
+    "storage": 46
+  },
+  "https://appzone.am/en/Assortment/apple-watch-series-11-42mm/": {
+    "id": "apple-watch-series-11",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "gray": "Space Gray",
+      "black": "Jet Black"
+    },
+    "storage": 42
+  },
+  "https://appzone.am/en/Assortment/apple-watch-se-3-44mm/": {
+    "id": "apple-watch-se-3",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Midnight",
+      "white": "Starlight"
+    },
+    "storage": 44
+  },
+  "https://appzone.am/en/Assortment/apple-watch-se-3-40mm/": {
+    "id": "apple-watch-se-3",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Midnight",
+      "white": "Starlight"
+    },
+    "storage": 40
+  },
+  "https://appzone.am/en/Assortment/hp-omnibook-5-16-ag1017ci/": {
+    "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/samsung-galaxy-s25/": {
+    "id": "samsung-galaxy-s25",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Icy Blue"
+    }
+  },
+  "https://appzone.am/en/Assortment/iphone-air/": {
+    "id": "apple-iphone-air",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Space Black",
+      "blue": "Sky Blue",
+      "white": "Cloud White"
+    }
+  },
+  "https://appzone.am/en/Assortment/iphone-17e/": {
+    "id": "apple-iphone-17e",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "white": "White",
+      "pink": "Soft Pink"
+    }
+  },
+  "https://appzone.am/en/Assortment/iphone-17/": {
+    "id": "apple-iphone-17",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Mist Blue",
+      "black": "Black",
+      "white": "White"
+    }
+  },
+  "https://appzone.am/en/Assortment/iphone-17-pro-max/": {
+    "id": "apple-iphone-17-pro-max",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "orange": "Cosmic Orange",
+      "blue": "Deep Blue",
+      "white": "Silver"
+    }
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-pro-13-m5-wifi/": {
+    "id": "apple-ipad-pro-11-m5",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Space Black"
+    },
+    "cell": false
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-air-11-m4-wifi/": {
+    "id": "apple-ipad-air-11-m4",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "blue": "Blue",
+      "purple": "Purple",
+      "gray": "Space Gray"
+    },
+    "cell": false
+  },
+  "https://appzone.am/en/Assortment/apple-ipad-pro-11-m5-wifi-cellular/": {
+    "id": "apple-ipad-pro-11-m5",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Space Black"
+    },
+    "cell": true
+  },
+  "https://appzone.am/en/Assortment/apple-iphone-18-pro-esim/": {
+    "id": "apple-iphone-18-pro",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "silver": "Silver",
+      "maroon": "Burgundy",
+      "lightsteelblue": "Glacier"
+    }
+  },
+  "https://appzone.am/en/Assortment/asus-vivobook-s14-s5406sa-qd086w-oled/": {
+    "id": "asus-vivobook-s14-s5406sa-qd086w-oled-core-ultra",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/lenovo-v14-g4-iru/": {
+    "id": "lenovo-v14-g4-iru",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/acer-aspire-go-15-ag15-32p-39r2/": {
+    "id": "acer-aspire-go-15-ag15-32p-39r2",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {}
+  },
+  "https://appzone.am/en/Assortment/iphone-16/": {
+    "id": "apple-iphone-16",
+    "reviewed": "2026-11-09",
+    "method": "Store API listing, catalogue title match and exact colour names (Claude)",
+    "colors": {
+      "black": "Black",
+      "white": "White",
+      "pink": "Pink"
+    }
   }
 }

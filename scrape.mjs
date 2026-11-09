@@ -2934,6 +2934,12 @@ if (!fresh && fs.existsSync(PARTIAL)) {
   } catch { }
 }
 
+// node scrape.mjs --match < titles.txt : print the catalogue id each shop title matches (coverage checks).
+if (process.argv.includes('--match')) {
+  const fs = await import('node:fs');
+  for (const t of fs.readFileSync(0, 'utf8').split('\n').filter(Boolean)) console.log(`${matchPhone(t) || '-'}\t${t}`);
+  process.exit(0);
+}
 // node scrape.mjs --probe <shop> : run one shop's reader, print what it found, write nothing.
 if (process.argv.includes('--probe')) {
   const key = process.argv[process.argv.indexOf('--probe') + 1];
