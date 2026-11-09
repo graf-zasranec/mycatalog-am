@@ -56,7 +56,7 @@ const PRICES = fs.existsSync('data/prices.json') ? JSON.parse(rd('data/prices.js
 // Shops whose offers are not shown, whatever the crawl kept (owner, 2026-11-08). AppZone's hosting
 // account is suspended - every link opens "Account Suspended" - so its prices are hidden until its
 // site works again; then remove it here. (scrape.mjs also drops a suspended shop on its own.)
-const HIDDEN_SHOPS = new Set(['appzone']);
+const HIDDEN_SHOPS = new Set([]);
 for (const [id, list] of Object.entries(PRICES.offers || {})) {
   const kept = list.filter(o => !HIDDEN_SHOPS.has(o.shop));
   if (kept.length !== list.length) PRICES.offers[id] = kept;
