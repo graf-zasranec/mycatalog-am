@@ -41,6 +41,13 @@ export function asbcMatchName(p) {
     // Screen size remains a configuration, not part of model matching.
     if (chip && !/mini/i.test(family)) return `Apple iPad${family?' '+family:''} ${chip}`;
   }
+  const mac=name.match(/\b(MacBook Air|MacBook Pro|MacBook Neo|iMac|Mac mini|Mac Studio)\b/i)?.[1];
+  if (mac) {
+    const inch=name.match(/\b(\d{2})-inch\b/)?.[1]||'';
+    const chip=(name.match(/\b(M\d)\s*(?:chip\s*)?(Pro|Max|Ultra)?\b/i)||[]).slice(1).filter(Boolean)
+      .map(w=>w[0].toUpperCase()+w.slice(1).toLowerCase()).join(' ');
+    return `Apple ${mac} ${inch} ${chip}`.replace(/\s+/g,' ').trim();
+  }
   if (/AirPods/i.test(name)) return 'Apple '+name.split(/,?\s*Model\b/i)[0].trim();
   return 'Apple '+name.replace(/^Apple\s+/i,'');
 }
@@ -53,11 +60,16 @@ export function asbcOffer(p) {
   let color=text(f.EXTERNAL_COLOR).replace(/\s+Alumini?um$/i,'') ||
     title.match(/\b(?:Glacier|Burgundy|Black|Silver|White|Pink|Blue|Green)\b/i)?.[0] || null;
   if (/Watch Ultra 3/i.test(title) && /^(Black|Natural)$/i.test(color||'')) color+=' Titanium';
-  const ram=Number(String(f.RAM_SIZE||f.RAM||'').match(/^(\d+)\s*GB$/i)?.[1])||null;
+  const mac=/\b(MacBook|iMac|Mac mini|Mac Studio)\b/i.test(title);
+  // Mac Studio titles list "36GB, 512GB" with no SSD word: memory first, storage last.
+  const sizes=[...title.matchAll(/\b(\d+)\s*(GB|TB)\b(?!\/s)/gi)];
+  const ram=Number(String(f.RAM_SIZE||f.RAM||(mac&&f.MEMORY_CAPACITY)||'').match(/^(\d+)\s*GB$/i)?.[1])||
+    (mac?Number(title.match(/\b(\d+)\s*GB unified memory/i)?.[1]||(sizes.length>=2&&sizes[0][1]))||null:null);
+  const ssd=title.match(/\b(\d+)\s*(GB|TB)\s*SSD/i)||(mac&&sizes.length>=2?sizes.at(-1):null), macStorage=ssd?(+ssd[1])*(/TB/i.test(ssd[2])?1024:1):null;
   const image=p.variations?.find(v=>v.sku===p.sku)?.images?.[0];
   const band=watch ? title.match(/\b(Milanese Loop|Trail Loop|Alpine Loop|Ocean Band|Sport Band|Sport Loop)\b/i)?.[0]||null:null;
   return {title,url:`https://catalog.asbc.am/en/product/${p.slug}`,sku:p.sku,price:Math.round(price),
-    storage:watch?size:storageGB(f.INTERNAL_MEMORY_SIZE||f.STORAGE_CAPACITY)||storageGB(title.match(/\b\d+\s*(?:GB|TB)\b/i)?.[0]),
+    storage:watch?size:mac?macStorage:storageGB(f.INTERNAL_MEMORY_SIZE||f.STORAGE_CAPACITY)||storageGB(title.match(/\b\d+\s*(?:GB|TB)\b/i)?.[0]),
     ram,size,color,band,...(tablet?{cell:/Cellular/i.test(title)}:{}),
     image:image?`https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3:/${image}`:null,
     inStock:Number.isFinite(p.real_stock)&&p.real_stock>0&&p.available_action==='add_to_cart'&&
@@ -65,7 +77,7 @@ export function asbcOffer(p) {
 }
 export async function collectAsbc({get,match,pause}) {
   const out=[], seen=new Set();
-  for (const category of ['iphone','ipad','apple-watch','airpods']) {
+  for (const category of ['iphone','ipad','apple-watch','airpods','mac','apple-tv']) {
     let count=0, total=Infinity;
     for(let page=1;count<total&&page<=30;page++) {
       const url=`https://catalog.asbc.am/en/category/${category}?limit=100&page=${page}`;
