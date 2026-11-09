@@ -120,7 +120,7 @@ is(app.hayMatch(fold8, 'ＳＡＭＳＵＮＧ fold'), true, 'Unicode equivalent 
 // The model code is one identity: the c in Qualcomm cannot turn X8d into X8c.
 is(app.hayMatch(phones.find(p => p.id === 'honor-x8d'), 'honor x8c'), false, 'alphanumeric model suffix cannot come from chipset text');
 is(app.suggestFor('honor x8b')[0]?.id, 'honor-x8b', 'exact X8b model ranks first');
-is(app.suggestFor('honor x8c').length, 0, 'unavailable exact model cannot be replaced by another suffix');
+is(app.suggestFor('honor x8z').length, 0, 'unavailable exact model cannot be replaced by another suffix');
 is(app.hayMatch(phones.find(p => p.id === 'apple-iphone-18-pro'), 'iphone18 pro'), true, 'joined model name and number stay searchable');
 is(app.hayMatch(phones.find(p => p.id === 'honor-x8b'), 'hnoor x8b'), true, 'brand typo correction preserves exact model code');
 
