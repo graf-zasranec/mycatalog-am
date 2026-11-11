@@ -2318,7 +2318,7 @@ const SHOPS = {
         const id = matchPhone(u);
         if (!id) continue;
         perPhone[id] = (perPhone[id] || 0) + 1;
-        if (perPhone[id] > 6) continue;               // cap requests per model
+        if (perPhone[id] > 30) continue;              // cap requests per model (6 cut off most builds: 23 MacBook Air M5 pages)
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
         // data-price-amount is Magento's machine-readable final price, the same marker Ucom uses;
