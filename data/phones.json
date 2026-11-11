@@ -2572,8 +2572,12 @@
     "colors": [
       "White"
     ],
-    "connectivity": {},
-    "body": {},
+    "connectivity": {
+      "bluetooth": "yes"
+    },
+    "body": {
+      "weight": 19.15
+    },
     "summaryEn": "Apple's top stylus: squeeze, barrel roll, haptics and Find My.",
     "sources": [
       "https://www.apple.com/apple-pencil/"
@@ -2611,8 +2615,12 @@
     "colors": [
       "White"
     ],
-    "connectivity": {},
-    "body": {},
+    "connectivity": {
+      "usb": "USB-C"
+    },
+    "body": {
+      "weight": 20.5
+    },
     "summaryEn": "The simpler Apple Pencil that pairs and charges over USB-C.",
     "sources": [
       "https://www.apple.com/apple-pencil/"
@@ -2650,11 +2658,16 @@
     "colors": [
       "White"
     ],
-    "connectivity": {},
-    "body": {},
+    "connectivity": {
+      "bluetooth": "yes"
+    },
+    "body": {
+      "weight": 20.7
+    },
     "summaryEn": "Apple Pencil with magnetic pairing and charging and a double-tap gesture.",
     "sources": [
-      "https://istore.am/product/689"
+      "https://istore.am/product/689",
+      "https://www.apple.com/apple-pencil/"
     ]
   },
   {
@@ -2694,12 +2707,17 @@
       "Black"
     ],
     "connectivity": {
-      "ports": "USB-C"
+      "ports": "USB-C",
+      "bluetooth": "yes",
+      "usb": "USB-C"
     },
-    "body": {},
+    "body": {
+      "weight": 99
+    },
     "summaryEn": "Apple's wireless Multi-Touch mouse, charged over USB-C.",
     "sources": [
-      "https://www.zigzag.am/am/apple-magic-mouse-white-mxk53zm-a.html"
+      "https://www.zigzag.am/am/apple-magic-mouse-white-mxk53zm-a.html",
+      "https://www.apple.com/shop/product/MXK53AM/A/magic-mouse-white-multi-touch-surface"
     ]
   },
   {
@@ -2777,12 +2795,17 @@
       "White"
     ],
     "connectivity": {
-      "ports": "USB-C"
+      "ports": "USB-C",
+      "bluetooth": "yes",
+      "usb": "USB-C"
     },
-    "body": {},
+    "body": {
+      "weight": 239
+    },
     "summaryEn": "Apple's compact wireless keyboard for Mac, charged over USB-C.",
     "sources": [
-      "https://istore.am/product/579"
+      "https://istore.am/product/579",
+      "https://www.apple.com/shop/mac/accessories/mice-keyboards"
     ]
   },
   {
@@ -2941,15 +2964,21 @@
       "White",
       "Black"
     ],
-    "connectivity": {},
-    "body": {},
+    "connectivity": {
+      "bluetooth": "yes",
+      "usb": "USB-C"
+    },
+    "body": {
+      "weight": 231
+    },
     "summaryEn": "Apple's wireless Multi-Touch trackpad with Force Touch, in white or black.",
     "unsure": [
       "popularity",
       "priceAmd"
     ],
     "sources": [
-      "https://www.zigzag.am/am/apple-magic-trackpad-mk2d3zm-a.html"
+      "https://www.zigzag.am/am/apple-magic-trackpad-mk2d3zm-a.html",
+      "https://www.apple.com/shop/product/MXK93AM/A/magic-trackpad-white-multi-touch-surface"
     ]
   },
   {
@@ -17168,13 +17197,21 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1950
+    },
     "summaryEn": "A 360-degree camera.",
     "unsure": [
       "popularity"
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 183
+    },
+    "sources": [
+      "https://www.dji.com/osmo-360/specs"
     ]
   },
   {
@@ -17268,13 +17305,24 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 h"
+    },
     "summaryEn": "A motorised gimbal for a phone.",
     "unsure": [
       "popularity"
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 300
+    },
+    "connectivity": {
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.dji.com/osmo-mobile-7-series/specs"
     ]
   },
   {
@@ -17295,7 +17343,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "10 h"
+    },
     "summaryEn": "A motorised gimbal for a phone.",
     "unsure": [
       "popularity"
@@ -17305,6 +17355,15 @@
     ],
     "colors": [
       "Gray"
+    ],
+    "body": {
+      "weight": 368
+    },
+    "connectivity": {
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.dji.com/osmo-mobile-7-series/specs"
     ]
   },
   {
@@ -37772,10 +37831,20 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "type": "2x AA"
+    },
     "summaryEn": "Microsoft Xbox Wireless Controller for Xbox Series X|S.",
     "unsure": [
       "popularity"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0",
+      "usb": "USB-C",
+      "wireless": "Xbox Wireless"
+    },
+    "sources": [
+      "https://www.xbox.com/en-US/accessories/controllers/xbox-wireless-controller"
     ]
   },
   {
@@ -49525,7 +49594,11 @@
         "priceAmd": 229000
       }
     ],
-    "display": {},
+    "display": {
+      "type": "OLED",
+      "resolution": "2000x2040 per eye",
+      "refresh": 120
+    },
     "battery": {},
     "summaryEn": "Sony PlayStation VR2.",
     "unsure": [
@@ -49533,6 +49606,15 @@
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 560
+    },
+    "connectivity": {
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/ps-vr2/ps-vr2-tech-specs/"
     ]
   },
   {
@@ -60627,6 +60709,13 @@
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 1100,
+      "dimensions": "298.5 x 259 x 38.5 mm"
+    },
+    "sources": [
+      "https://www.starlink.com/specifications?spec=5"
     ]
   },
   {
@@ -67684,7 +67773,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1050
+    },
     "summaryEn": "Sony PS5 DualSense Edge.",
     "unsure": [
       "popularity",
@@ -67695,6 +67786,16 @@
     "colors": [
       "Black",
       "White"
+    ],
+    "body": {
+      "weight": 325
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-edge-wireless-controller/"
     ]
   },
   {
@@ -67716,7 +67817,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense Death Stranding 2 Edition.",
     "unsure": [
       "popularity",
@@ -67726,6 +67829,16 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67757,6 +67870,16 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 1400
+    },
+    "connectivity": {
+      "usb": "USB-A (wired)"
+    },
+    "rotation": 270,
+    "sources": [
+      "https://www.techradar.com/gaming/gaming-accessories/hori-racing-wheel-apex-for-playstation-review"
     ]
   },
   {
@@ -67778,7 +67901,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense Astro Bot.",
     "unsure": [
       "popularity",
@@ -67788,6 +67913,16 @@
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67809,7 +67944,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense Genshin Impact Edition.",
     "unsure": [
       "popularity",
@@ -67819,6 +67956,16 @@
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67840,7 +67987,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense God of War 20TH Anniversary Edition.",
     "unsure": [
       "popularity",
@@ -67850,6 +67999,16 @@
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67871,7 +68030,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense Hyperpop Collection Remix.",
     "unsure": [
       "popularity",
@@ -67881,6 +68042,16 @@
     ],
     "colors": [
       "Green"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67902,7 +68073,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense Hyperpop Collection Rhythm.",
     "unsure": [
       "popularity",
@@ -67912,6 +68085,16 @@
     ],
     "colors": [
       "Blue"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67933,7 +68116,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense Hyperpop Collection Techno.",
     "unsure": [
       "popularity",
@@ -67943,6 +68128,16 @@
     ],
     "colors": [
       "Red"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -67968,7 +68163,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 1560
+    },
     "summaryEn": "Sony PS5 DualSense.",
     "unsure": [
       "popularity",
@@ -67990,6 +68187,16 @@
       "Sterling Silver",
       "Chroma Indigo",
       "Chroma Pearl"
+    ],
+    "body": {
+      "weight": 280
+    },
+    "connectivity": {
+      "bluetooth": "5.1",
+      "usb": "USB-C"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/dualsense-wireless-controller/"
     ]
   },
   {
@@ -91115,14 +91322,19 @@
     "battery": {},
     "summaryEn": "Logitech G923 TrueForce Racing Wheel (PS5/PC).",
     "sources": [
-      "https://likemobile.am/en/sony-ps5-trueforce-racing-logitech-g923"
+      "https://likemobile.am/en/sony-ps5-trueforce-racing-logitech-g923",
+      "https://www.logitechg.com/en-us/products/driving/driving-force-racing-wheel.html"
     ],
     "unsure": [
       "popularity"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "rotation": 900,
+    "connectivity": {
+      "usb": "USB (wired)"
+    }
   },
   {
     "id": "razer-hammerhead-hyperspeed",
@@ -91195,14 +91407,19 @@
     "battery": {},
     "summaryEn": "Logitech G29 Driving Force Racing Wheel (PS5/PS4/PC).",
     "sources": [
-      "https://likemobile.am/en/sony-playstation-5-driving-force-logitech-g29"
+      "https://likemobile.am/en/sony-playstation-5-driving-force-logitech-g29",
+      "https://www.logitechg.com/en-us/products/driving/driving-force-racing-wheel.html"
     ],
     "unsure": [
       "popularity"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "rotation": 900,
+    "connectivity": {
+      "usb": "USB (wired)"
+    }
   },
   {
     "id": "sony-ps4-gold-wireless-headset",
@@ -159561,7 +159778,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "type": "mains only"
+    },
     "summaryEn": "Yandex Mini 3.",
     "unsure": [
       "popularity",
@@ -159571,7 +159790,17 @@
     ],
     "connectivity": {
       "bluetooth": "Yes (Vega states no version)"
-    }
+    },
+    "body": {
+      "weight": 326,
+      "dimensions": "102 x 60.5 mm"
+    },
+    "audio": {
+      "power": "12 W"
+    },
+    "sources": [
+      "https://alice.yandex.ru/support/ru/station/meet/characteristics-mini3"
+    ]
   },
   {
     "id": "yandex-mini-plus",
