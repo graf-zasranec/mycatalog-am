@@ -123,7 +123,10 @@ async function plainGet(url, tries = 2, ua = UA) {
   for (let i = 0; i < tries; i++) {
     try {
       return await timed(async signal => {
-        const r = await fetch(url, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal, redirect: 'follow' });
+        // BETTER_FETCH_PROXY: a local relay that fetches through the owner's browser (ego), for shops
+        // whose firewall refuses plain requests (Pixel, 2026-11-11). Unset in CI.
+        const via = process.env.BETTER_FETCH_PROXY ? process.env.BETTER_FETCH_PROXY + '?u=' + encodeURIComponent(url) : url;
+        const r = await fetch(via, { headers: { 'user-agent': ua, accept: 'text/html,application/xhtml+xml,*/*' }, signal, redirect: 'follow' });
         setStatus(r.status);
         if (r.status === 429) wait = Math.min(+r.headers.get('retry-after') || wait, 60);
         if (!r.ok) throw new Error('HTTP ' + r.status);
