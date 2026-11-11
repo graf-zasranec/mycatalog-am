@@ -1967,6 +1967,9 @@ document.addEventListener('click', e => {
   const { shop, pid, price } = a.dataset;
   try {
     window.gtag?.('event', 'shop_click', { shop, product_id: pid, value: +price || undefined, currency: 'AMD', link_url: a.href, transport_type: 'beacon' });
+    // Meta gets the same click as a Lead, so ads can optimise for people who reach a shop (owner,
+    // 2026-11-11). fbq exists only when the visitor allowed advertising cookies.
+    window.fbq?.('track', 'Lead', { content_ids: [pid], content_name: shop, value: +price || undefined, currency: 'AMD' });
     if (!(navigator.globalPrivacyControl || navigator.doNotTrack === '1' || window.doNotTrack === '1'))
       window.goatcounter?.count?.({ path: `shop-click/${shop}/${pid}`, title: `${shop} · ${pid}`, event: true });
   } catch (err) { }
@@ -3626,9 +3629,12 @@ function submitSearch() {
   if (el) el.blur();
   save();
   // GA's automatic site search reads ?q= from the address; this search lives in the hash, so it never fired.
-  if (st.q) window.gtag?.('event', 'search', { search_term: String(st.q).slice(0, 100) });
+  // view_search_results is the event GA's site-search report reads (2026-11-11: it listed no terms)
+  if (st.q) window.gtag?.('event', 'view_search_results', { search_term: String(st.q).slice(0, 100) });
   if (location.hash !== '#/search') location.hash = '#/search'; else render();
 }
+// Most people tap a suggestion instead of pressing Enter, so the search is reported there too.
+document.addEventListener('click', e => { const a = e.target.closest?.('a.sg-i'); if (a && st.q) window.gtag?.('event', 'view_search_results', { search_term: String(st.q).slice(0, 100), product_id: (a.getAttribute('href') || '').replace('#/p/', '') }); }, true);
 document.addEventListener('focusin',e=>{if(e.target.id==='q'&&!catalogueReady())ensureCatalogue().catch(()=>{})});
 document.addEventListener('click',e=>{if(e.target.closest('[data-catalogue-search-retry]')){$('#q')?.focus();paintSuggest()}});
 document.addEventListener('input', e => {
