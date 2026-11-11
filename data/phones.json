@@ -2841,12 +2841,17 @@
       "White"
     ],
     "connectivity": {
-      "ports": "USB-C"
+      "ports": "USB-C",
+      "bluetooth": "yes",
+      "usb": "USB-C"
     },
-    "body": {},
+    "body": {
+      "weight": 243
+    },
     "summaryEn": "The compact Magic Keyboard with a Touch ID sensor for Macs with Apple silicon.",
     "sources": [
-      "https://istore.am/product/551"
+      "https://istore.am/product/551",
+      "https://support.apple.com/en-us/121954"
     ]
   },
   {
@@ -49734,6 +49739,16 @@
     ],
     "colors": [
       "White"
+    ],
+    "camera": {
+      "video": "1080p, dual lens",
+      "fov": "83.2°"
+    },
+    "connectivity": {
+      "usb": "USB-A"
+    },
+    "sources": [
+      "https://www.playstation.com/en-us/accessories/hd-camera/"
     ]
   },
   {
@@ -88525,18 +88540,23 @@
     "display": {},
     "battery": {},
     "connectivity": {
-      "wifi": "Wi-Fi 5, 2.4/5 GHz, 1167 Mbps, 4 antennas"
+      "wifi": "Wi-Fi 5 (AC1200: 300 + 867 Mbps)",
+      "ports": "3 x 100 Mbit"
     },
     "summaryEn": "Xiaomi Router 4A.",
     "sources": [
-      "https://miarmenia.am/en/product/463/wi-fi-%D5%A5%D6%80%D5%A9%D5%B8%D6%82%D5%B2%D5%AB%D5%B9-xiaomi-router-4a"
+      "https://miarmenia.am/en/product/463/wi-fi-%D5%A5%D6%80%D5%A9%D5%B8%D6%82%D5%B2%D5%AB%D5%B9-xiaomi-router-4a",
+      "https://www.mi.com/global/product/mi-router-4a/specs/"
     ],
     "unsure": [
       "popularity"
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "chipset": {
+      "name": "MediaTek MT7628DA"
+    }
   },
   {
     "id": "xiaomi-mijia-capsule-coffee-machine",
@@ -149428,13 +149448,17 @@
     ],
     "sources": [
       "https://eldorado.am/en/logitech-f710-wireless-gamepad-silver",
-      "https://www.logitechg.com/en-us/shop/p/f710-wireless-gamepad.940-000117"
+      "https://www.logitechg.com/en-us/shop/p/f710-wireless-gamepad.940-000117",
+      "https://www.logitechg.com/en-us/shop/p/f710-wireless-gamepad"
     ],
     "unsure": [
       "popularity"
     ],
     "connectivity": {
-      "wireless": "2.4 GHz USB nano receiver"
+      "wireless": "2.4 GHz (USB receiver)"
+    },
+    "battery": {
+      "type": "2x AA"
     }
   },
   {
