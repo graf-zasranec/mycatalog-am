@@ -167638,25 +167638,24 @@
     "id": "liebherr-cnbdc-573i",
     "category": "largeappliance",
     "brand": "Liebherr",
-    "name": "Fridge-Freezer CNbdc 573i 383 L",
+    "name": "Fridge-Freezer CNbdc 573i 371 L",
     "tier": "flagship",
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "volume": 383,
-      "noise": "37 dB",
-      "fridgeVolume": 277,
-      "freezerVolume": 106,
+      "volume": 371,
+      "noise": "35 dB",
       "nofrost": true
     },
     "battery": {},
     "body": {
       "weight": 78000
     },
-    "summaryEn": "Liebherr fridge-freezer CNbdc 573i, 383 L.",
+    "summaryEn": "Liebherr fridge-freezer CNbdc 573i, 371 L.",
     "sources": [
-      "https://www.zigzag.am/en/liebherr-cnbdc-573i.html"
+      "https://www.zigzag.am/en/liebherr-cnbdc-573i.html",
+      "https://www.liebherr.com/de-at/p/cnbdc-573i-2224628"
     ],
     "unsure": [
       "popularity"
@@ -167670,7 +167669,9 @@
         "priceAmd": null
       }
     ],
-    "colors": [],
+    "colors": [
+      "Blacksteel"
+    ],
     "aliases": [
       "Liebherr CNbdc 573i",
       "Liebherr CNbdc 573i"
@@ -167893,24 +167894,26 @@
     "id": "liebherr-icbndi-5123",
     "category": "largeappliance",
     "brand": "Liebherr",
-    "name": "Fridge ICBNdi 5123 190 L",
+    "name": "Fridge-Freezer ICBNdi 5123 244 L",
     "tier": "flagship",
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
-      "volume": 190,
-      "noise": "36 dB",
-      "fridgeVolume": 190,
-      "nofrost": false
+      "volume": 244,
+      "noise": "34 dB",
+      "fridgeVolume": 174,
+      "freezerVolume": 70,
+      "nofrost": true
     },
     "battery": {},
     "body": {
       "weight": 64000
     },
-    "summaryEn": "Liebherr fridge ICBNdi 5123, 190 L.",
+    "summaryEn": "Liebherr fridge-freezer ICBNdi 5123, 244 L.",
     "sources": [
-      "https://www.zigzag.am/en/liebherr-icbndi-5123.html"
+      "https://www.zigzag.am/en/liebherr-icbndi-5123.html",
+      "https://assets-cdn.liebherr.com/versions/5ac8c922-9edb-47f4-ab5f-ed04555f5a25/original/SP_ICBNdi5123_001_22.pdf"
     ],
     "unsure": [
       "popularity"
@@ -168068,8 +168071,6 @@
       "type": "fridge",
       "volume": 423,
       "noise": "34 dB",
-      "fridgeVolume": 423,
-      "freezerVolume": 138,
       "nofrost": false
     },
     "battery": {},
@@ -168078,7 +168079,8 @@
     },
     "summaryEn": "Liebherr fridge-freezer CBNsdc 765i, 423 L.",
     "sources": [
-      "https://www.zigzag.am/en/liebherr-cbnsdc-765i.html"
+      "https://www.zigzag.am/en/liebherr-cbnsdc-765i.html",
+      "https://www.liebherr.com/en-ie/p/cbnsdc-765i-2742328"
     ],
     "unsure": [
       "popularity"
@@ -168357,7 +168359,6 @@
       "type": "fridge",
       "volume": 104,
       "noise": "34 dB",
-      "fridgeVolume": 87,
       "nofrost": false
     },
     "battery": {},
@@ -168613,8 +168614,6 @@
       "type": "fridge",
       "volume": 522,
       "noise": "42 dB",
-      "fridgeVolume": 289,
-      "freezerVolume": 114,
       "nofrost": true
     },
     "battery": {},
@@ -168624,7 +168623,8 @@
     },
     "summaryEn": "Liebherr fridge-freezer CBNes 6256, 522 L.",
     "sources": [
-      "https://www.zigzag.am/en/liebherr-cbnes-6256.html"
+      "https://www.zigzag.am/en/liebherr-cbnes-6256.html",
+      "https://www.liebherr.com/en-ie/p/cbnes-6256-2742328"
     ],
     "unsure": [
       "popularity"
