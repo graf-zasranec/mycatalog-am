@@ -188,6 +188,11 @@ for (const k of ['brands', 'cmp', 'cpus', 'gpus', 'shops', 'hforms', 'hconns', '
 if (!Array.isArray(st.bounds) || st.bounds.length !== 2) st.bounds = null;
 if (!st.cmpConfigs || typeof st.cmpConfigs !== 'object' || Array.isArray(st.cmpConfigs)) st.cmpConfigs = {};
 // ?lang=ru from the Russian/English static pages opens the app in that language
+// A first visit to the Armenian home page from a Russian-language browser opens in Russian: 58% of
+// visitors' browsers are Russian (GoatCounter, Nov 2026). A saved choice or ?lang= always wins.
+{ let saved = null; try { saved = localStorage.getItem(LS) || localStorage.getItem('mycatalog.v2'); } catch (e) { }
+  if (!saved && /^\/?$/.test(location.pathname || '') && !/[?&]lang=/.test(location.search) &&
+      /^ru\b/i.test((navigator.languages && navigator.languages[0]) || navigator.language || '')) st.lang = 'ru'; }
 { const q = new URLSearchParams(location.search).get('lang'); if (q) st.lang = q; }
 { const home=(location.pathname||'').match(/^\/(en|ru)\/?$/);if(home)st.lang=home[1]; }
 // Direct canonical product links hydrate the same interactive view as catalogue clicks.
@@ -1711,6 +1716,15 @@ const shopRows = (p, n) => {
   for (const o of catalogOffers(p)) if (!seen.has(o.shop)) seen.set(o.shop, o.price);
   return [...seen].slice(0, n);
 };
+// "Good deal" on a card: the cheapest shop is at least 10% under the median of at least three shops
+// selling the SAME configuration (owner, 2026-11-11). Different storage never counts as a saving.
+function dealPct(p) {
+  const all = catalogOffers(p), c = all[0]; if (!c) return 0;
+  const same = new Map(); for (const o of all) if (o.storage === c.storage && o.ram === c.ram && !same.has(o.shop)) same.set(o.shop, o.price);
+  const v = [...same.values()].sort((a, b) => a - b); if (v.length < 3) return 0;
+  const med = v.length % 2 ? v[v.length >> 1] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2;
+  const pct = Math.round((1 - c.price / med) * 100); return pct >= 10 && pct < 60 ? pct : 0;
+}
 function card(p) {
   // A card used to say "3 shops" and stop there, which is the one thing a price-comparison
   // card must not do: it names a spread without showing it. Now the big number carries the shop
@@ -1724,6 +1738,7 @@ function card(p) {
   return `<article class="pcard" data-id="${esc(p.id)}">
     <div class="pshot">
       ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
+        : dealPct(p) ? `<span class="badge deal" title="${esc(({hy:'խանութների միջնագնի համեմատ',ru:'относительно медианной цены магазинов',en:'vs median shop price'})[st.lang])}">−${dealPct(p)}%</span>`
         : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
@@ -3630,7 +3645,10 @@ function submitSearch() {
   save();
   // GA's automatic site search reads ?q= from the address; this search lives in the hash, so it never fired.
   // view_search_results is the event GA's site-search report reads (2026-11-11: it listed no terms)
-  if (st.q) window.gtag?.('event', 'view_search_results', { search_term: String(st.q).slice(0, 100) });
+  if (st.q) { const term = String(st.q).slice(0, 100), found = catalogueReady() ? searchMatches(st.q).hits.size : undefined;
+    window.gtag?.('event', 'view_search_results', { search_term: term, results: found });
+    // what people look for and we do not carry: the list of products to add next
+    if (found === 0) window.gtag?.('event', 'search_no_results', { search_term: term }); }
   if (location.hash !== '#/search') location.hash = '#/search'; else render();
 }
 // Most people tap a suggestion instead of pressing Enter, so the search is reported there too.
