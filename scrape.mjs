@@ -1963,7 +1963,9 @@ const SHOPS = {
         // is the difference between one iPhone 17 Pro and the eighteen this shop actually sells.
         const seenU = new Set(hits.map(h => h.url));
         const queue = hits.slice();
-        for (let qi = 0; qi < queue.length && qi < 800; qi++) {
+        // 2500, not 800: with the extra categories (2026-11-11) the 800 ran out before the queued
+        // sibling builds and 122 phone offers quietly dropped.
+        for (let qi = 0; qi < queue.length && qi < 2500; qi++) {
           const h = queue[qi];
           const page = await get(h.url); await sleep(DELAY_MS);
           const og = page && clean((page.match(/property="og:title" content="([^"]+)"/) || [])[1] || "");
@@ -2386,6 +2388,18 @@ const SHOPS = {
           else if (pages.size < 40) pages.add(m[1]);
         }
       }
+      // A category shows its first page only; the rest come from ?page=N&ajax=1 as JSON (owner
+      // approved crawling every shop, 2026-10-10). Without them 78 matched products went unread.
+      for (const page of [...pages].filter(p => !p.endsWith('/store'))) {
+        for (let n = 2; n <= 40; n++) {
+          const before = prods.size;
+          const raw = await get(`${page}?page=${n}&ajax=1`); await sleep(DELAY_MS);
+          let html = ''; try { html = JSON.parse(raw || '{}').html || ''; } catch { break; }
+          for (const m of html.matchAll(/(?:href|data-url)="((?:https:\/\/3dplanet\.am)?\/en\/store\/product\/[^"?]+)"/g))
+            prods.add(m[1].startsWith('http') ? m[1] : 'https://3dplanet.am' + m[1]);
+          if (prods.size === before) break;
+        }
+      }
       const out = [...reviewed];
       for (const u of prods) {
         if (reviewedUrls.has(u.replace('www.', '').replace(/\/$/, ''))) continue;
@@ -2601,7 +2615,10 @@ const SHOPS = {
       // rules and nothing about AI at all; product pages are allowed. "Disallow: /*?" rules out
       // pagination, so as with Ucom the breadth has to come from categories rather than pages.
       // Accessories is left out: the catalogue does not carry them.
-      const CATS = ['phones', 'tablets', 'watches', 'computers'];
+      // Accessories itself is left out, but these sub-sections hold devices the catalogue carries
+      // (earphones, AirTag, Apple keyboard/mouse/Pencil, power banks) - 2026-11-11 coverage check.
+      const CATS = ['phones', 'tablets', 'watches', 'computers', 'accessories/earphones', 'accessories/airtag',
+        'accessories/keyboards', 'accessories/mouses', 'accessories/pencils', 'accessories/power-bank'];
       const out = [];
       for (const cat of CATS) for await (const html of catPages(`https://www.yerevanmobile.am/en/electronics/${cat}.html`, /https:\/\/www\.yerevanmobile\.am\/en\/[a-z0-9-]+\.html/g)) {
         // Magento product grid. Ucom's index-scanning does not transfer: here the anchor writes

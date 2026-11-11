@@ -8866,5 +8866,555 @@
     "reviewed": "2026-11-05",
     "source": "Exact existing-family SKU or separately verified manufacturer model; source title, table and product photo reviewed",
     "sourceSHA256": "cd5efa1e02b0e25d0f0ab8134372db69e080d4fd513909be9cfd9b91cd97cb82"
+  },
+  {
+    "id": "samsung-dw60a6092fs-wt",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/aman-lvalu-meqena/standart-spasq-lvacox/samsung-dw60a6092fs-wt",
+    "title": "SAMSUNG DW60A6092FS/WT",
+    "productId": "78687",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "braun-gs5011pu",
+    "kind": "appliance",
+    "url": "https://vesta.am/manr-kencax/arduk/braun-gs5011pu",
+    "title": "BRAUN GS5011PU",
+    "productId": "99758",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-sth3010-76",
+    "kind": "appliance",
+    "url": "https://vesta.am/manr-kencax/arduk/philips-sth3010-76",
+    "title": "PHILIPS STH3010/76",
+    "productId": "94587",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-dst7040-86",
+    "kind": "appliance",
+    "url": "https://vesta.am/manr-kencax/arduk/philips-dst7040-86",
+    "title": "PHILIPS DST7040/86",
+    "productId": "94800",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "braun-jb3100bk",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/braun-jb3100bk",
+    "title": "BRAUN JB3100BK",
+    "productId": "63990",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "braun-jb3100wh",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/braun-jb3100wh",
+    "title": "BRAUN JB3100WH",
+    "productId": "70276",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "braun-jb3150wh",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/braun-jb3150wh",
+    "title": "BRAUN JB3150WH",
+    "productId": "14866",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "braun-jb7550bk",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/braun-jb7550bk",
+    "title": "BRAUN JB7550BK",
+    "productId": "90573",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "electrolux-e6tb1-6st",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/electrolux-e6tb1-6st",
+    "title": "ELECTROLUX E6TB1-6ST",
+    "productId": "73699",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "electrolux-e4tb1-6st",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/electrolux-e4tb1-6st",
+    "title": "ELECTROLUX E4TB1-6ST",
+    "productId": "73700",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "bosch-mmb6172s",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/bosch-mmb6172s",
+    "title": "BOSCH MMB6172S",
+    "productId": "92449",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "braun-jb3150bk",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/braun-jb3150bk",
+    "title": "BRAUN JB3150BK",
+    "productId": "44386",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "electrolux-e3tb1-4gg",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/blenderner/electrolux-e3tb1-4gg",
+    "title": "ELECTROLUX E3TB1-4GG",
+    "productId": "73697",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "kenwood-khc30-070gy",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/harich/kenwood-khc30-070gy",
+    "title": "KENWOOD KHC30.070GY",
+    "productId": "106333",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "kenwood-khc29a-x0si",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/harich/kenwood-khc29a.x0si",
+    "title": "KENWOOD KHC29A.X0SI",
+    "productId": "99804",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "kenwood-khc29a-j0wh",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/harich/kenwood-khc29a-j0wh",
+    "title": "KENWOOD KHC29A.J0WH",
+    "productId": "88119",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "electrolux-e5km1-4bpt",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/harich/electrolux-e5km1-4bpt",
+    "title": "ELECTROLUX E5KM1-4BPT",
+    "productId": "73737",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "kenwood-khc29a-m0si",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/harich/krcher-khc29a-m0si",
+    "title": "KENWOOD KHC29A.M0SI",
+    "productId": "92702",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "gorenje-mo23a3bh",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/gorenje-mo23a3bh",
+    "title": "GORENJE MO23A3BH",
+    "productId": "75786",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-ms23k3513as-bw",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/samsung-ms23k3513as-bw",
+    "title": "SAMSUNG MS23K3513AS/BW",
+    "productId": "93763",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-ms23k3513ak-bw",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/samsung-ms23k3513ak-bw",
+    "title": "SAMSUNG MS23K3513AK/BW",
+    "productId": "10555",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-ms23t5018ac-bw",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/samsung-ms23t5018ac-bw",
+    "title": "SAMSUNG MS23T5018AC/BW",
+    "productId": "13463",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "bosch-bfl524ms0",
+    "kind": "kitchen",
+    "url": "https://vesta.am/manr-kencax/mikroaliqayin-vararan/bosch-bfl524ms0",
+    "title": "BOSCH BFL524MS0",
+    "productId": "102404",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "de-longhi-ecam22-110",
+    "kind": "coffee",
+    "url": "https://vesta.am/manr-kencax/srchepner/delonghi-ecam22-110-sb",
+    "title": "DELONGHI ECAM22.110.SB",
+    "productId": "83587",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "de-longhi-ecam290-31",
+    "kind": "coffee",
+    "url": "https://vesta.am/manr-kencax/srchepner/delonghi-ecam290.31.sb",
+    "title": "DELONGHI ECAM290.31.SB",
+    "productId": "67554",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "de-longhi-ecam290-81",
+    "kind": "coffee",
+    "url": "https://vesta.am/manr-kencax/srchepner/delonghi-ecam290-81-tb",
+    "title": "DELONGHI ECAM290.81.TB",
+    "productId": "102889",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "de-longhi-ecam450-86",
+    "kind": "coffee",
+    "url": "https://vesta.am/manr-kencax/srchepner/delonghi-ecam450-86-t",
+    "title": "DELONGHI ECAM450.86.T",
+    "productId": "85298",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "de-longhi-ecam380-85",
+    "kind": "coffee",
+    "url": "https://vesta.am/manr-kencax/srchepner/delongthi-ecam380-85-sb",
+    "title": "DELONGHI ECAM380.85.SB",
+    "productId": "87044",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-vc20m2589jd-ev",
+    "kind": "vacuum",
+    "url": "https://vesta.am/manr-kencax/poshekulner/samsung-vc20m2589jd-ev",
+    "title": "SAMSUNG VC20M2589JD/EV",
+    "productId": "67365",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "lg-vc5320nntr",
+    "kind": "vacuum",
+    "url": "https://vesta.am/manr-kencax/poshekulner/lg-vc5320nntr",
+    "title": "LG VC5320NNTR",
+    "productId": "94753",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-fc9351-61",
+    "kind": "vacuum",
+    "url": "https://vesta.am/manr-kencax/poshekulner/philips-fc9351-61",
+    "title": "PHILIPS FC9351/61",
+    "productId": "99717",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "electrolux-ehu-3815d",
+    "kind": "climate",
+    "url": "https://vesta.am/manr-kencax/ody-xonavacnox/electrolux-ehu-3815d",
+    "title": "ELECTROLUX EHU-3815D",
+    "productId": "95968",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "lg-lbb509emyw",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/lg-lbb509emyw",
+    "title": "LG LBB509EMYW",
+    "productId": "105056",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "lg-gr-f589blcm",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/lg-gr-f589blcm",
+    "title": "LG GR-F589BLCM",
+    "productId": "90657",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-rb53dg703eb1wr",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/samsung-rb53dg703eb1wr",
+    "title": "SAMSUNG RB53DG703EB1WR",
+    "productId": "89989",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "lg-gr-b589bqcm",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/sarnaranner-sarcaranner/erkdrnani-sarnaran/lg-gr-b589bqcm",
+    "title": "LG GR-B589BQCM",
+    "productId": "93445",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "sharp-sj-ex98f-sl",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/sarnaranner-sarcaranner/mec-sarnaran/sharp-sj-ex98f-sl",
+    "title": "SHARP SJ-EX98F-SL",
+    "productId": "86083",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "sharp-sj-gx98p-bk",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/sarnaranner-sarcaranner/mec-sarnaran/sharp-sj-gx98p-bk",
+    "title": "SHARP SJ-GX98P-BK",
+    "productId": "86085",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "gorenje-wg2ps72a12s-c",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/gorenje-wg2ps72a12s-c",
+    "title": "GORENJE WG2PS72A12S/C",
+    "productId": "105486",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-ww65ag4s20cxlp",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/samsung-ww65ag4s20cxlp",
+    "title": "SAMSUNG WW65AG4S20CXLP",
+    "productId": "76311",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "lg-f0z9dfpk4",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/lvacqi-meqenaner-choranocner/lvacqi-meqenaner/lg-f0z9dfpk4",
+    "title": "LG F0Z9DFPK4",
+    "productId": "103132",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-dv90t5240at-lp",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/lvacqi-meqenaner-choranocner/choranoc/samsung-dv90t5240at-lp",
+    "title": "SAMSUNG DV90T5240AT/LP",
+    "productId": "19833",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-dv90t6240lx-lp",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/lvacqi-meqenaner-choranocner/choranoc/samsung-dv90t6240lx-lp",
+    "title": "SAMSUNG DV90T6240LX/LP",
+    "productId": "19834",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-dw60m6050bb-wt",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/nerkarucvogh-texnika/nerkarucvox-spasq-lvacox-meqena/samsung-dw60m6050bb-wt",
+    "title": "SAMSUNG DW60M6050BB/WT",
+    "productId": "14736",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-dw50r4050bb-wt",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/nerkarucvogh-texnika/nerkarucvox-spasq-lvacox-meqena/samsung-dw50r4050bb-wt",
+    "title": "SAMSUNG DW50R4050BB/WT",
+    "productId": "12864",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-dw50r4070bb-wt",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/nerkarucvogh-texnika/nerkarucvox-spasq-lvacox-meqena/samsung-dw50r4070bb-wt",
+    "title": "SAMSUNG DW50R4070BB/WT",
+    "productId": "80038",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "samsung-dw60a6092bb-wt",
+    "kind": "largeappliance",
+    "url": "https://vesta.am/nerkarucvogh-texnika/nerkarucvox-spasq-lvacox-meqena/samsung-dw60a6092bb-wt",
+    "title": "SAMSUNG DW60A6092BB/WT",
+    "productId": "83272",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "bosch-bfl524ms0",
+    "kind": "kitchen",
+    "url": "https://vesta.am/nerkarucvogh-texnika/nerkarucvogh-mikro/bosch-bfl524ms0",
+    "title": "BOSCH BFL524MS0",
+    "productId": "102404",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-bhd321-50",
+    "kind": "haircare",
+    "url": "https://vesta.am/xnamqi-paraganer/varsahardarich/philips-bhd321-50",
+    "title": "PHILIPS BHD321/50",
+    "productId": "98933",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-x3001-00",
+    "kind": "grooming",
+    "url": "https://vesta.am/xnamqi-paraganer/aceliner/philips-x3001-00",
+    "title": "PHILIPS X3001/00",
+    "productId": "82347",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-mg3940-15",
+    "kind": "grooming",
+    "url": "https://vesta.am/xnamqi-paraganer/maz-ktrelu-sarq/philips-mg3940-15",
+    "title": "PHILIPS MG3940/15",
+    "productId": "93753",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-mg5921-15",
+    "kind": "grooming",
+    "url": "https://vesta.am/xnamqi-paraganer/maz-ktrelu-sarq/philips-mg5921-15",
+    "title": "PHILIPS MG5921/15",
+    "productId": "93756",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-mg5941-15",
+    "kind": "grooming",
+    "url": "https://vesta.am/xnamqi-paraganer/maz-ktrelu-sarq/philips-mg5941-15",
+    "title": "PHILIPS MG5941/15",
+    "productId": "98929",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-bg7470-15",
+    "kind": "grooming",
+    "url": "https://vesta.am/xnamqi-paraganer/maz-ktrelu-sarq/philips-bg7470-15",
+    "title": "PHILIPS BG7470/15",
+    "productId": "93752",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
+  },
+  {
+    "id": "philips-hx4022-01",
+    "kind": "grooming",
+    "url": "https://vesta.am/xnamqi-paraganer/atami-elektrakan-xozanak/philips-hx4022-01",
+    "title": "PHILIPS HX4022/01",
+    "productId": "100649",
+    "axes": {},
+    "reviewed": "2026-11-11",
+    "sourceWorkbook": "coverage-check-2026-11-11"
   }
 ]
