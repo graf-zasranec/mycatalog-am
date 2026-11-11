@@ -166053,5 +166053,1369 @@
     "appliance": {
       "type": "capsule_coffee"
     }
+  },
+  {
+    "id": "laurastar-lift",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "Lift Steam Generator",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar",
+      "tank": "1.1 L"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar Lift Steam Generator.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-lift-pure-white/000-0103-511.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White",
+      "Red"
+    ],
+    "aliases": [
+      "Laurastar Lift",
+      "Laurastar Lift Pure White",
+      "Laurastar Lift Original Red",
+      "LauraStar Lift EU Pure White",
+      "Steam generator Laurastar Lift Pure white",
+      "Steam generator Laurastar Lift Original Red"
+    ],
+    "body": {
+      "weight": 5300,
+      "dimensions": "45 x 28 x 28 cm"
+    }
+  },
+  {
+    "id": "laurastar-lift-plus",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "Lift Plus Steam Generator",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar",
+      "tank": "1.1 L"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar Lift Plus Steam Generator.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-lift-plus-ultimate-black/000-0101-520.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black",
+      "Pinky Pop"
+    ],
+    "aliases": [
+      "Laurastar Lift Plus",
+      "Laurastar Lift Plus EU black",
+      "LAURASTAR LIFT PLUS EU PINKY POP",
+      "Steam generator Laurastar Lift Plus EU black"
+    ]
+  },
+  {
+    "id": "laurastar-lift-xtra",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "Lift Xtra Steam Generator",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar",
+      "tank": "1.1 L"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar Lift Xtra Steam Generator.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-lift-xtra-titan/000-0125-540.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Titan",
+      "Aluminium",
+      "Midnight Blue"
+    ],
+    "aliases": [
+      "Laurastar Lift Xtra",
+      "LauraStar Lift Xtra Titan EU",
+      "Laurastar Lift Xtra Titan",
+      "Laurastar LIFT XTRA ALUMINIUM EU",
+      "Laurastar Lift Xtra Midnight Blue EU"
+    ],
+    "body": {
+      "weight": 5500
+    }
+  },
+  {
+    "id": "laurastar-smart-u",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "Smart U Ironing System",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar Smart U Ironing System.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-smart-u/000-0101-800.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Laurastar Smart U",
+      "LauraStar Smart U Black",
+      "Ironing system Laurastar Smart U black"
+    ]
+  },
+  {
+    "id": "laurastar-smart-i",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "Smart I Ironing System",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar Smart I Ironing System.",
+    "sources": [
+      "https://www.laurastar.com/all-in-one-en"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Laurastar Smart I",
+      "Ironing system Laurastar Smart I white"
+    ]
+  },
+  {
+    "id": "laurastar-smart-m",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "Smart M Ironing System",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar Smart M Ironing System.",
+    "sources": [
+      "https://www.laurastar.com/all-in-one-en"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Laurastar Smart M",
+      "LauraStar steam generator LS SMART M",
+      "Ironing system Laurastar SMART M black"
+    ]
+  },
+  {
+    "id": "laurastar-s-pure",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "S Pure Ironing System",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar S Pure Ironing System.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-s-pure/000-0133-756.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Laurastar S Pure",
+      "LauraStar S PURE - EU",
+      "Ironing system Laurastar S Pure white"
+    ],
+    "body": {
+      "weight": 19000
+    }
+  },
+  {
+    "id": "laurastar-s-pure-plus",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "S Pure Plus Ironing System",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar S Pure Plus Ironing System.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-s-pure-plus/000-0133-769.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Laurastar S Pure Plus",
+      "Ironing system Laurastar S PURE PLUS - EU"
+    ]
+  },
+  {
+    "id": "laurastar-s-pure-xtra",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "S Pure Xtra Ironing System",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator",
+      "power": 2200,
+      "pressure": "3.5 bar"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar S Pure Xtra Ironing System.",
+    "sources": [
+      "https://www.laurastar.com/laurastar-s-pure-xtra/000-0133-779.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Laurastar S Pure Xtra",
+      "Ironing system Laurastar S Pure Xtra white"
+    ]
+  },
+  {
+    "id": "laurastar-izzi-plus",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "IZZI Plus Steam Generator",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "steam_generator"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar IZZI Plus Steam Generator.",
+    "sources": [
+      "https://www.laurastar.com/steam-generators-en"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Laurastar IZZI Plus",
+      "Steam generator Laurastar IZZI Plus",
+      "LauraStar Steamer Izzi PL"
+    ]
+  },
+  {
+    "id": "laurastar-iggi",
+    "category": "appliance",
+    "brand": "Laurastar",
+    "name": "IGGI Handheld Steamer",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "garment_steamer"
+    },
+    "battery": {},
+    "summaryEn": "Laurastar IGGI Handheld Steamer.",
+    "sources": [
+      "https://www.laurastar.com/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White",
+      "Red"
+    ],
+    "aliases": [
+      "Laurastar IGGI",
+      "Steam cleaner LAURASTAR IGGI EU white",
+      "Steam cleaner LAURASTAR IGGI EU RED"
+    ]
+  },
+  {
+    "id": "miele-triflex-hx1",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Triflex HX1 Cordless Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Triflex HX1 Cordless Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-triflex-hx1-lotus-white.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Lotus White"
+    ],
+    "aliases": [
+      "Miele Triflex HX1/Lotus white"
+    ]
+  },
+  {
+    "id": "miele-triflex-hx2-pro",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Triflex HX2 Pro Cordless Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Triflex HX2 Pro Cordless Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-triflex-hx2-pro-power-line-infinity-grey.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Infinity Grey"
+    ],
+    "aliases": [
+      "Miele Triflex HX2 Pro Power Line/Infinity Grey"
+    ]
+  },
+  {
+    "id": "miele-triflex-hx3",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Triflex HX3 Cordless Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Triflex HX3 Cordless Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-triflex-hx3-powerline-brilliant-white.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Brilliant White"
+    ],
+    "aliases": [
+      "Miele Triflex HX3 PowerLine/Brilliant white"
+    ]
+  },
+  {
+    "id": "miele-triflex-hx3-aqua",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Triflex HX3 Aqua Cordless Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Triflex HX3 Aqua Cordless Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-triflex-hx3-aqua-obsidian-black.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Obsidian Black"
+    ],
+    "aliases": [
+      "Miele Triflex HX3 Aqua/Obsidian black"
+    ]
+  },
+  {
+    "id": "miele-guard-s1",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Guard S1 Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Guard S1 Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-guard-s1-powerline-nordic-blue.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Nordic Blue"
+    ],
+    "aliases": [
+      "Miele Guard S1 PowerLine/Nordic blue"
+    ]
+  },
+  {
+    "id": "miele-guard-m1-flex",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Guard M1 Flex Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Guard M1 Flex Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-guard-m1-flex-powerline-nordic-blue.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Nordic Blue"
+    ],
+    "aliases": [
+      "Miele Guard M1 Flex PowerLine/Nordic blue"
+    ]
+  },
+  {
+    "id": "miele-guard-m1-parquet-flex",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Guard M1 Parquet Flex Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Guard M1 Parquet Flex Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-guard-m1-parquet-flex-powerline-brilliant-white.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Brilliant White"
+    ],
+    "aliases": [
+      "Miele Guard M1 Parquet Flex PowerLine/Brilliant white"
+    ]
+  },
+  {
+    "id": "miele-guard-l1-comfort-xl",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Guard L1 Comfort XL Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Guard L1 Comfort XL Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-guard-l1-comfort-xl-powerline-titanium-pearl.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Titanium Pearl"
+    ],
+    "aliases": [
+      "Miele Guard L1 Comfort XL PowerLine/Titanium Pearl"
+    ]
+  },
+  {
+    "id": "miele-guard-l1-allfloor",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Guard L1 AllFloor Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Guard L1 AllFloor Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-guard-l1-allfloor-powerline-obsidian-black.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Obsidian Black"
+    ],
+    "aliases": [
+      "Miele Guard L1 AllFloor PowerLine/Obsidian black"
+    ]
+  },
+  {
+    "id": "miele-blizzard-cx1-excellence",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Blizzard CX1 Excellence Bagless Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Blizzard CX1 Excellence Bagless Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-blizzard-cx1-excellence-lotus-white.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Lotus White"
+    ],
+    "aliases": [
+      "Miele Blizzard CX1 Excellence/Lotus white"
+    ]
+  },
+  {
+    "id": "miele-blizzard-cx1-comfort",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Blizzard CX1 Comfort Bagless Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "canister_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Blizzard CX1 Comfort Bagless Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-blizzard-cx1-comfort-obsidian-black.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Obsidian Black"
+    ],
+    "aliases": [
+      "Miele Blizzard CX1 Comfort/Obsidian black"
+    ]
+  },
+  {
+    "id": "miele-scout-rx3-home-vision",
+    "category": "vacuum",
+    "brand": "Miele",
+    "name": "Scout RX3 Home Vision Robot Vacuum",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "robot_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Miele Scout RX3 Home Vision Robot Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/miele-scout-rx3-home-vision-rose-gold.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Rose Gold"
+    ],
+    "aliases": [
+      "Miele Scout RX3 Home Vision/Rose Gold"
+    ]
+  },
+  {
+    "id": "cecotec-conga-rockstar-animal",
+    "category": "vacuum",
+    "brand": "Cecotec",
+    "name": "Conga Rockstar 25.2V Animal Hand Vacuum",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Conga Rockstar 25.2V Animal Hand Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-a01-eu01-115420-rockstar-conga-25-2v-animal-hand-vacuum-cleaner.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Cecotec A01_EU01_115420 Rockstar Conga 25.2V Animal hand vacuum cleaner"
+    ]
+  },
+  {
+    "id": "cecotec-conga-micro-plus",
+    "category": "vacuum",
+    "brand": "Cecotec",
+    "name": "Conga Micro+ Handheld Vacuum",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Conga Micro+ Handheld Vacuum.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-08381-cecotec-conga-micro-plus-handheld-vacuum-cleaner-with-200-w.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Cecotec 08381 Cecotec Conga Micro+ handheld vacuum cleaner with 200 W"
+    ]
+  },
+  {
+    "id": "cecotec-ironhero-v1500-essential",
+    "category": "appliance",
+    "brand": "Cecotec",
+    "name": "IronHero V-1500 Essential Garment Steamer",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "garment_steamer",
+      "power": 1500
+    },
+    "battery": {},
+    "summaryEn": "Cecotec IronHero V-1500 Essential Garment Steamer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-a01-eu01-104315-ironhero-v-1500-steamer-essential-green.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Green"
+    ],
+    "aliases": [
+      "Cecotec A01_EU01_104315 Ironhero V-1500 Steamer Essential Green"
+    ]
+  },
+  {
+    "id": "cecotec-ironhero-1800-force",
+    "category": "appliance",
+    "brand": "Cecotec",
+    "name": "IronHero 1800 Force Vertical Steamer",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "garment_steamer",
+      "power": 1800
+    },
+    "battery": {},
+    "summaryEn": "Cecotec IronHero 1800 Force Vertical Steamer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-08508-ironhero-1800-force-vertical-steamer.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Cecotec 08508 IronHero 1800 Force Vertical steamer"
+    ]
+  },
+  {
+    "id": "cecotec-ironhero-1800-vital",
+    "category": "appliance",
+    "brand": "Cecotec",
+    "name": "IronHero 1800 Vital Vertical Steamer",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "garment_steamer",
+      "power": 1800
+    },
+    "battery": {},
+    "summaryEn": "Cecotec IronHero 1800 Vital Vertical Steamer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-08510-ironhero-1800-vital-vertical-steamer.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Cecotec 08510 IronHero 1800 Vital Vertical steamer"
+    ]
+  },
+  {
+    "id": "cecotec-4050-x-treme-ultra",
+    "category": "appliance",
+    "brand": "Cecotec",
+    "name": "4050 X-Treme Ultra Garment Steamer",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "garment_steamer"
+    },
+    "battery": {},
+    "summaryEn": "Cecotec 4050 X-Treme Ultra Garment Steamer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-05519-4050-x-treme-ultra-garment-steamer.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Cecotec 05519 4050 X-Treme Ultra garment steamer"
+    ]
+  },
+  {
+    "id": "cecotec-fast-furious-4000-travel",
+    "category": "appliance",
+    "brand": "Cecotec",
+    "name": "Fast&Furious 4000 Travel Iron",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "iron"
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Fast&Furious 4000 Travel Iron.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-05538-fast-furious-4000-travel-travel-iron.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Cecotec 05538 Fast&Furious 4000 Travel travel iron"
+    ]
+  },
+  {
+    "id": "cecotec-bolero-coolmarket-chest-99",
+    "category": "largeappliance",
+    "brand": "Cecotec",
+    "name": "Bolero CoolMarket Chest 99 Freezer",
+    "tier": "mid",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "freezer",
+      "volume": 99
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Bolero CoolMarket Chest 99 Freezer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-02152-bolero-coolmarket-chest-99-black-e.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Cecotec 02152 Bolero CoolMarket Chest 99 Black E"
+    ]
+  },
+  {
+    "id": "cecotec-bolero-coolmarket-chest-142",
+    "category": "largeappliance",
+    "brand": "Cecotec",
+    "name": "Bolero CoolMarket Chest 142 Freezer",
+    "tier": "mid",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "freezer",
+      "volume": 142
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Bolero CoolMarket Chest 142 Freezer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-02153-bolero-coolmarket-chest-142-black-e.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Cecotec 02153 Bolero CoolMarket Chest 142 Black E"
+    ]
+  },
+  {
+    "id": "cecotec-bolero-coolmarket-chest-199",
+    "category": "largeappliance",
+    "brand": "Cecotec",
+    "name": "Bolero CoolMarket Chest 199 Freezer",
+    "tier": "mid",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "freezer",
+      "volume": 199
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Bolero CoolMarket Chest 199 Freezer.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-02154-bolero-coolmarket-chest-199-black-e.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Cecotec 02154 Bolero CoolMarket Chest 199 Black E"
+    ]
+  },
+  {
+    "id": "cecotec-bolero-minicooling-25l",
+    "category": "largeappliance",
+    "brand": "Cecotec",
+    "name": "Bolero MiniCooling 25L Mini Fridge",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 25
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Bolero MiniCooling 25L Mini Fridge.",
+    "sources": [
+      "https://www.zigzag.am/en/cecotec-02703-bolero-minicooling-25l-bahamas-pat-1.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "aliases": [
+      "Cecotec 02703 Bolero MiniCooling 25L Bahamas Pat 1"
+    ]
+  },
+  {
+    "id": "cecotec-bolero-dresscode-840-bi",
+    "category": "largeappliance",
+    "brand": "Cecotec",
+    "name": "Bolero DressCode 840 Built-in Washing Machine",
+    "tier": "mid",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "washing_machine",
+      "load": 8
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Bolero DressCode 840 Built-in Washing Machine.",
+    "sources": [
+      "https://eldorado.am/en/built-in-washing-machine-cecotec-bolero-dresscode-840-bi-inverter-a"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Built-in washing machine CECOTEC BOLERO DRESSCODE 840 BI INVERTER A"
+    ]
+  },
+  {
+    "id": "cecotec-cecofry-fantastik-window-6500",
+    "category": "kitchen",
+    "brand": "Cecotec",
+    "name": "Cecofry Fantastik Window 6500 Air Fryer",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "air_fryer"
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Cecofry Fantastik Window 6500 Air Fryer.",
+    "sources": [
+      "https://eldorado.am/en/cecotec-cecofry-fantastik-window-6500"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Air Fryer CECOTEC Cecofry FANTASTIK WINDOW 6500"
+    ]
+  },
+  {
+    "id": "cecotec-powertwist-500-gyro",
+    "category": "kitchen",
+    "brand": "Cecotec",
+    "name": "Powertwist 500 Gyro Hand Blender",
+    "tier": "budget",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "hand_blender"
+    },
+    "battery": {},
+    "summaryEn": "Cecotec Powertwist 500 Gyro Hand Blender.",
+    "sources": [
+      "https://likemobile.am/en/cecotec-powertwist-500-gyro"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "CECOTEC Powertwist 500 Gyro"
+    ]
   }
 ]
