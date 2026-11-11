@@ -2883,12 +2883,17 @@
       "Black"
     ],
     "connectivity": {
-      "ports": "USB-C"
+      "ports": "USB-C",
+      "bluetooth": "yes",
+      "usb": "USB-C"
     },
-    "body": {},
+    "body": {
+      "weight": 369
+    },
     "summaryEn": "The full-size Magic Keyboard with Touch ID and a numeric keypad, in white or black keys.",
     "sources": [
-      "https://istore.am/product/582"
+      "https://istore.am/product/582",
+      "https://support.apple.com/en-gb/121953"
     ]
   },
   {
@@ -88478,18 +88483,24 @@
     "display": {},
     "battery": {},
     "connectivity": {
-      "wifi": "Wi-Fi 6, 2.4/5 GHz, 1500 Mbps, Mesh"
+      "wifi": "Wi-Fi 6 (AX1500, 5 GHz)",
+      "ports": "4 x 1 Gbit"
     },
     "summaryEn": "Xiaomi Router AX1500.",
     "sources": [
-      "https://miarmenia.am/en/product/464/wi-fi-%D5%A5%D6%80%D5%A9%D5%B8%D6%82%D5%B2%D5%AB%D5%B9-xiaomi-router-ax1500"
+      "https://miarmenia.am/en/product/464/wi-fi-%D5%A5%D6%80%D5%A9%D5%B8%D6%82%D5%B2%D5%AB%D5%B9-xiaomi-router-ax1500",
+      "https://www.mi.com/global/product/xiaomi-router-ax1500/specs",
+      "https://www.mi.com/global/support/faq/details/KA-106648/"
     ],
     "unsure": [
       "popularity"
     ],
     "colors": [
       "White"
-    ]
+    ],
+    "chipset": {
+      "name": "Realtek RTL8197H"
+    }
   },
   {
     "id": "xiaomi-router-4a",
