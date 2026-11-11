@@ -17535,7 +17535,8 @@
       "HS09 Co-anda2x",
       "Dyson HS09 Airwrap Co-anda2x",
       "HS09 Airwrap Co-anda2x",
-      "Airwrap Co-anda2x HS09"
+      "Airwrap Co-anda2x HS09",
+      "Dyson HS09"
     ],
     "appliance": {
       "type": "hair_styler",
@@ -31598,6 +31599,63 @@
     "colors": [
       "White",
       "Black",
+      "Purple",
+      "Teal"
+    ]
+  },
+  {
+    "id": "jbl-tune-flex-2",
+    "category": "headphones",
+    "brand": "JBL",
+    "name": "Tune Flex 2",
+    "aliases": [
+      "JBL Tune Flex 2",
+      "Tune Flex 2 ANC",
+      "Tune Flex Ghost 2",
+      "Tune Flex 2 Ghost"
+    ],
+    "tier": "budget",
+    "priceAmd": 48000,
+    "priceAmdMax": 62900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 48000
+      }
+    ],
+    "display": {},
+    "battery": {
+      "life": "8 hours",
+      "chargeTime": "2 h"
+    },
+    "summaryEn": "JBL Tune Flex 2.",
+    "unsure": [
+      "popularity"
+    ],
+    "audio": {
+      "form": "tws",
+      "conn": "wireless",
+      "anc": true,
+      "driver": "12 mm",
+      "frequency": "20 Hz – 20 kHz",
+      "impedance": "13 Ω"
+    },
+    "year": 2025,
+    "connectivity": {
+      "bluetooth": "5.3"
+    },
+    "body": {
+      "weight": 4.4
+    },
+    "sources": [
+      "https://global.jbl.com/wireless-earbuds/TUNE-FLEX-2.html"
+    ],
+    "colors": [
+      "Black",
+      "White",
       "Purple",
       "Teal"
     ]
@@ -66685,7 +66743,9 @@
     "category": "speaker",
     "brand": "Marshall",
     "name": "Kilburn III",
-    "aliases": [],
+    "aliases": [
+      "Kilburn III"
+    ],
     "tier": "mid",
     "priceAmd": 153000,
     "priceAmdMax": 153000,
@@ -77315,7 +77375,8 @@
     "name": "Vacuum L60 Ultra",
     "aliases": [
       "Dreame Robot Vacuum L60 Ultra Black (RLL37CE0) EU",
-      "Dreame Robot Vacuum L60 Ultra White (RLL37CE0) EU"
+      "Dreame Robot Vacuum L60 Ultra White (RLL37CE0) EU",
+      "Dreame L60 Ultra"
     ],
     "tier": "upper-mid",
     "priceAmd": 549900,
@@ -77402,7 +77463,8 @@
     "name": "Vacuum X60 Ultra Complete",
     "aliases": [
       "Dreame Robot Vacuum X60 Ultra Complete Black (RLX87DE)",
-      "Dreame Robot Vacuum X60 Ultra Complete White (RLX87DE)"
+      "Dreame Robot Vacuum X60 Ultra Complete White (RLX87DE)",
+      "Dreame X60 Ultra Complete"
     ],
     "tier": "upper-mid",
     "priceAmd": 699900,
@@ -79987,7 +80049,9 @@
     "category": "tv",
     "brand": "TCL",
     "name": "43P7L QLED",
-    "aliases": [],
+    "aliases": [
+      "TCL 43P7L"
+    ],
     "tier": "mid",
     "priceAmd": 186900,
     "priceAmdMax": 186900,
@@ -91420,7 +91484,8 @@
     "brand": "Logitech",
     "name": "G29 Driving Force Racing Wheel (PS5/PS4/PC)",
     "aliases": [
-      "Sony Playstation 5 Driving Force Logitech G29"
+      "Sony Playstation 5 Driving Force Logitech G29",
+      "G29 Driving Force"
     ],
     "tier": "budget",
     "priceAmd": 119000,
@@ -100550,7 +100615,8 @@
     "name": "ECAM320.60 Coffee Machine",
     "aliases": [
       "DELONGHI ECAM320.60.B",
-      "DELONGHI ECAM320.60.W"
+      "DELONGHI ECAM320.60.W",
+      "ECAM320.60"
     ],
     "tier": "upper-mid",
     "priceAmd": 399000,
@@ -100590,7 +100656,8 @@
     "brand": "De'Longhi",
     "name": "ECAM320.70 Coffee Machine",
     "aliases": [
-      "DELONGHI ECAM320.70.TB"
+      "DELONGHI ECAM320.70.TB",
+      "ECAM320.70"
     ],
     "tier": "upper-mid",
     "priceAmd": 409000,
@@ -100894,7 +100961,8 @@
     "brand": "De'Longhi",
     "name": "ECAM630.55 Coffee Machine",
     "aliases": [
-      "DELONGHI ECAM630.55.SSM"
+      "DELONGHI ECAM630.55.SSM",
+      "ECAM630.55"
     ],
     "tier": "upper-mid",
     "priceAmd": 699000,
@@ -101496,7 +101564,8 @@
     "name": "AHD51 Pocket Hair Dryer",
     "aliases": [
       "DREAME AHD51 Pocket Space Gray (676272)",
-      "DREAME AHD51 Pocket Titanium Gold (676289)"
+      "DREAME AHD51 Pocket Titanium Gold (676289)",
+      "Dreame Pocket"
     ],
     "tier": "budget",
     "priceAmd": 69900,
@@ -101693,7 +101762,8 @@
     "name": "AMF18A AirStyle Pro Hair Dryer",
     "aliases": [
       "DREAME AMF18A  AirStyle Pro Purple (253546)",
-      "DREAME AMF18A AirStyle Pro Gold Titanium (063168)"
+      "DREAME AMF18A AirStyle Pro Gold Titanium (063168)",
+      "Dreame Airstyle Pro"
     ],
     "tier": "mid",
     "priceAmd": 159900,
@@ -103746,7 +103816,8 @@
     "brand": "Karcher",
     "name": "WD4 S Go!Further Vacuum Cleaner",
     "aliases": [
-      "KARCHER WD4 S Go!Further 1.628-262.0"
+      "KARCHER WD4 S Go!Further 1.628-262.0",
+      "WD 4 S GO FURTHER"
     ],
     "tier": "budget",
     "priceAmd": 85000,
@@ -130999,7 +131070,8 @@
       "Samsung DW60M6050FW/WT",
       "SAMSUNG DW60M6050FW/WT",
       "DW60M6050FW/WT",
-      "SAMSUNG DW60M6050FW/WT Dishwashers"
+      "SAMSUNG DW60M6050FW/WT Dishwashers",
+      "DW60M6050FW"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -132516,7 +132588,8 @@
       "Samsung WW80AG6L28BB/LP",
       "SAMSUNG WW80AG6L28BB/LP",
       "WW80AG6L28BB/LP",
-      "SAMSUNG WW80AG6L28BB/LP Automatic Washing Machines"
+      "SAMSUNG WW80AG6L28BB/LP Automatic Washing Machines",
+      "WW80AG6L28BBLP"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -132681,7 +132754,8 @@
       "Samsung WW70AG6S23AX/LP",
       "SAMSUNG WW70AG6S23AX/LP",
       "WW70AG6S23AX/LP",
-      "SAMSUNG WW70AG6S23AX/LP Automatic Washing Machines"
+      "SAMSUNG WW70AG6S23AX/LP Automatic Washing Machines",
+      "WW70AG6S23AXLP"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -132845,7 +132919,8 @@
       "Samsung WW80AGAS21AX/LP",
       "SAMSUNG WW80AGAS21AX/LP",
       "WW80AGAS21AX/LP",
-      "SAMSUNG WW80AGAS21AX/LP Automatic Washing Machines"
+      "SAMSUNG WW80AGAS21AX/LP Automatic Washing Machines",
+      "WW80AGAS21AXLP"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -138977,7 +139052,8 @@
     "aliases": [
       "LG GRB509FVFW",
       "GRB509FVFW",
-      "LG GRB509FVFW Refrigerators (Bottom Mount)"
+      "LG GRB509FVFW Refrigerators (Bottom Mount)",
+      "GR-B509FVFW"
     ],
     "tier": "flagship",
     "popularity": 35,
@@ -146051,7 +146127,8 @@
     "aliases": [
       "Electrolux EWS6307BE",
       "ELECTROLUX EWS6307BE",
-      "EWS6307BE"
+      "EWS6307BE",
+      "EWS-6307BE"
     ],
     "tier": "flagship",
     "popularity": 35,
