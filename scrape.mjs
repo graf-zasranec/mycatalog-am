@@ -3004,6 +3004,10 @@ for (const key of names) {
   let got = [], threw = false;
   const f = fetched.get(key) || {};
   if (f.error) { threw = true; console.warn('adapter failed:', f.error.message); } else got = f.got || [];
+  // A shop that blocks us (403) reads as an empty list, not an error: Pixel went from 737 offers to
+  // none on 2026-11-11. Nothing at all from a shop that had plenty last night is a failed read.
+  const hadBefore = Object.values(prev.offers || {}).flat().filter(o => o.shop === key).length;
+  if (!threw && got.length === 0 && hadBefore >= 20) { threw = true; console.warn(`read nothing (had ${hadBefore} last run) - treated as a failed read`); }
   if (threw && await shopSuspended(key)) {
     console.log('the shop\'s site is suspended - its offers are dropped until it returns');
     report.push({ shop: key, offers: 0, models: 0, suspended: true });
