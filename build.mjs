@@ -1060,6 +1060,8 @@ function emptyDiv(html, marker) {
 
 let shared = 0;
 const sitemapRows = [];
+const SECTIONS_H = { hy: 'Բաժիններ', ru: 'Разделы', en: 'Sections' };
+const SECTION_N = { hy: n => `${n} մոդել`, ru: n => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'модель' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'модели' : 'моделей'}`, en: n => `${n} model${n === 1 ? '' : 's'}` };
 const DEAL_LINK = { hy: 'Ինչն է էժանացել', ru: 'Что подешевело', en: 'What got cheaper' };
 const cats = [...new Set(phones.map(catOf))];
 for (const lang of LANGS) {
@@ -1113,7 +1115,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
   }
   // One page per section, and one per brand inside it ("Samsung phones") wherever a brand has three
   // priced products or more: every product with its cheapest price, linking to its own page.
-  const listPage = ({ list, path, label, trail, appHash, brands = [], others = [] }) => {
+  const listPage = ({ list, path, label, trail, appHash, brands = [], others = [], sections = [] }) => {
     // one sentence of facts only this list has, so a brand page is more than a list of links
     const factsOf = l => { const c = l.slice().sort((a, b) => bestOf(a) - bestOf(b)), w = l.slice().sort((a, b) => shopsOf(b) - shopsOf(a))[0];
       return t.facts(nameOf(c[0]), amd(bestOf(c[0])), nameOf(w), shopsOf(w), amd(bestOf(c[0])), amd(Math.max(...l.map(p => offersOf(p).at(-1).price))), new Set(l.flatMap(p => offersOf(p).map(o => o.shop))).size); };
@@ -1129,6 +1131,8 @@ ${TOP(lang, path)}
 <p class="lead">${esc(desc)}</p>
 <a class="go" href="${R}${app}#/${appHash}">${t.cgo}</a>
 ${others.length ? `<p class="lead" style="margin:18px 0 0">${t.others}</p><ul class="pills" style="margin-top:6px">${others.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}</ul>` : ''}
+${sections.length ? `<h2>${SECTIONS_H[lang]}</h2>
+<ul class="pg sec">${sections.map(([n, u, l]) => `<li><a class="cd" href="${R}${pre}${u}">${cardImg(l[0])}<b>${esc(n)}</b><span class="pr">${SECTION_N[lang](l.length)} · ${t.from(amd(Math.min(...l.map(bestOf))))}</span></a></li>`).join('\n')}</ul>` : ''}
 <ul class="pills">${brands.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}<li><a href="${R}${pre}deals/">${DEAL_LINK[lang]}</a></li></ul>
 <h2>${t.models}</h2>
 <ul class="pg">${list.slice(0, CARD_LIMIT).map(p => `<li><a class="cd" href="${R}${pre}p/${p.id}/">${cardImg(p)}<b>${esc(nameOf(p))}</b><span class="pr">${t.from(amd(bestOf(p)))}</span></a></li>`).join('\n')}</ul>
@@ -1152,7 +1156,15 @@ ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](li
     for (const [brand, l] of byBrand)
       listPage({ list: l, path: `c/${c}/${slug(brand)}/`, label: `${brand} — ${label}`, trail: [[label, `c/${c}/`]], appHash: `c/${c}`,
         others: byBrand.filter(([b]) => b !== brand).map(([b]) => [b, `c/${c}/${slug(b)}/`]) });
-    listPage({ list, path: `c/${c}/`, label, trail: [], appHash: `c/${c}`, brands: byBrand.map(([b]) => [b, `c/${c}/${slug(b)}/`]) });
+    // Sub-sections by product type (fridges, washing machines, capsule coffee machines...): a big
+    // category is one long list otherwise (owner, 2026-11-11: "make a lot new sections").
+    const byType = Object.entries(Object.groupBy(list.filter(p => p.appliance?.type), p => p.appliance.type))
+      .filter(([k, l]) => l.length >= 2 && STR[lang]['section.' + k]).sort((x, y) => y[1].length - x[1].length);
+    const sections = byType.length >= 2 ? byType.map(([k, l]) => [STR[lang]['section.' + k], `c/${c}/${slug(k)}/`, l, k]) : [];
+    for (const [n, u, l, k] of sections)
+      listPage({ list: l, path: u, label: n, trail: [[label, `c/${c}/`]], appHash: `c/${c}/${k}`,
+        others: sections.filter(x => x[3] !== k).map(([n2, u2]) => [n2, u2]) });
+    listPage({ list, path: `c/${c}/`, label, trail: [], appHash: `c/${c}`, brands: byBrand.map(([b]) => [b, `c/${c}/${slug(b)}/`]), sections });
   }
 }
 // The blog, as real pages a search engine can index (the app reads the same articles from BLOG).

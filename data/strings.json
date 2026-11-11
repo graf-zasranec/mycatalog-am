@@ -1408,5 +1408,341 @@
     "hy": "Ձեռքի բլենդեր",
     "ru": "Погружной блендер",
     "en": "Hand blender"
+  },
+  {
+    "key": "appliance.automatic_coffee",
+    "hy": "Ավտոմատ սրճեփ մեքենա",
+    "ru": "Автоматическая кофемашина",
+    "en": "Automatic coffee machine"
+  },
+  {
+    "key": "appliance.espresso_machine",
+    "hy": "Էսպրեսո սրճեփ մեքենա",
+    "ru": "Рожковая кофеварка",
+    "en": "Espresso machine"
+  },
+  {
+    "key": "appliance.drip_coffee",
+    "hy": "Կաթիլային սրճեփ",
+    "ru": "Капельная кофеварка",
+    "en": "Drip coffee maker"
+  },
+  {
+    "key": "appliance.capsule_coffee",
+    "hy": "Պատիճային սրճեփ մեքենա",
+    "ru": "Капсульная кофемашина",
+    "en": "Capsule coffee machine"
+  },
+  {
+    "key": "appliance.turkish_coffee",
+    "hy": "Սուրճ եփող սարք (ջազվե)",
+    "ru": "Турка электрическая",
+    "en": "Turkish coffee maker"
+  },
+  {
+    "key": "section.automatic_coffee",
+    "hy": "Ավտոմատ սրճեփ մեքենաներ",
+    "ru": "Автоматические кофемашины",
+    "en": "Automatic coffee machines"
+  },
+  {
+    "key": "section.espresso_machine",
+    "hy": "Էսպրեսո սրճեփ մեքենաներ",
+    "ru": "Рожковые кофеварки",
+    "en": "Espresso machines"
+  },
+  {
+    "key": "section.drip_coffee",
+    "hy": "Կաթիլային սրճեփներ",
+    "ru": "Капельные кофеварки",
+    "en": "Drip coffee makers"
+  },
+  {
+    "key": "section.capsule_coffee",
+    "hy": "Պատիճային սրճեփ մեքենաներ (Nespresso)",
+    "ru": "Капсульные кофемашины (Nespresso)",
+    "en": "Capsule machines (Nespresso)"
+  },
+  {
+    "key": "section.turkish_coffee",
+    "hy": "Սուրճ եփող սարքեր",
+    "ru": "Электротурки",
+    "en": "Turkish coffee makers"
+  },
+  {
+    "key": "section.fridge",
+    "hy": "Սառնարաններ",
+    "ru": "Холодильники",
+    "en": "Refrigerators"
+  },
+  {
+    "key": "section.freezer",
+    "hy": "Սառցարաններ",
+    "ru": "Морозильники",
+    "en": "Freezers"
+  },
+  {
+    "key": "section.washing_machine",
+    "hy": "Լվացքի մեքենաներ",
+    "ru": "Стиральные машины",
+    "en": "Washing machines"
+  },
+  {
+    "key": "section.dishwasher",
+    "hy": "Սպասք լվացող մեքենաներ",
+    "ru": "Посудомоечные машины",
+    "en": "Dishwashers"
+  },
+  {
+    "key": "section.dryer",
+    "hy": "Չորանոց մեքենաներ",
+    "ru": "Сушильные машины",
+    "en": "Tumble dryers"
+  },
+  {
+    "key": "section.air_conditioner",
+    "hy": "Օդորակիչներ (սպլիտ)",
+    "ru": "Кондиционеры (сплит-системы)",
+    "en": "Air conditioners (split systems)"
+  },
+  {
+    "key": "section.water_heater",
+    "hy": "Ջրատաքացուցիչներ",
+    "ru": "Водонагреватели",
+    "en": "Water heaters"
+  },
+  {
+    "key": "section.boiler",
+    "hy": "Գազի կաթսաներ",
+    "ru": "Газовые котлы",
+    "en": "Gas boilers"
+  },
+  {
+    "key": "section.humidifier",
+    "hy": "Խոնավացուցիչներ",
+    "ru": "Увлажнители воздуха",
+    "en": "Humidifiers"
+  },
+  {
+    "key": "section.heater",
+    "hy": "Ջեռուցիչներ",
+    "ru": "Обогреватели",
+    "en": "Heaters"
+  },
+  {
+    "key": "section.kettle",
+    "hy": "Թեյնիկներ",
+    "ru": "Чайники",
+    "en": "Kettles"
+  },
+  {
+    "key": "section.air_fryer",
+    "hy": "Աէրոգրիլներ",
+    "ru": "Аэрогрили",
+    "en": "Air fryers"
+  },
+  {
+    "key": "section.toaster",
+    "hy": "Տոստերներ",
+    "ru": "Тостеры",
+    "en": "Toasters"
+  },
+  {
+    "key": "section.grill",
+    "hy": "Էլեկտրական գրիլներ",
+    "ru": "Электрогрили",
+    "en": "Electric grills"
+  },
+  {
+    "key": "section.juicer",
+    "hy": "Հյութաքամիչներ",
+    "ru": "Соковыжималки",
+    "en": "Juicers"
+  },
+  {
+    "key": "section.blender",
+    "hy": "Բլենդերներ",
+    "ru": "Блендеры",
+    "en": "Blenders"
+  },
+  {
+    "key": "section.hand_mixer",
+    "hy": "Ձեռքի միքսերներ",
+    "ru": "Ручные миксеры",
+    "en": "Hand mixers"
+  },
+  {
+    "key": "section.stand_mixer",
+    "hy": "Միքսերներ ամանով",
+    "ru": "Миксеры с чашей",
+    "en": "Stand mixers"
+  },
+  {
+    "key": "section.food_processor",
+    "hy": "Խոհանոցային կոմբայններ",
+    "ru": "Кухонные комбайны",
+    "en": "Food processors"
+  },
+  {
+    "key": "section.meat_grinder",
+    "hy": "Մսաղացներ",
+    "ru": "Мясорубки",
+    "en": "Meat grinders"
+  },
+  {
+    "key": "section.microwave",
+    "hy": "Միկրոալիքային վառարաններ",
+    "ru": "Микроволновые печи",
+    "en": "Microwaves"
+  },
+  {
+    "key": "section.hand_blender",
+    "hy": "Ձեռքի բլենդերներ",
+    "ru": "Погружные блендеры",
+    "en": "Hand blenders"
+  },
+  {
+    "key": "section.food_slicer",
+    "hy": "Սննդի կտրատիչներ",
+    "ru": "Ломтерезки",
+    "en": "Food slicers"
+  },
+  {
+    "key": "section.cordless_vacuum",
+    "hy": "Անլար փոշեկուլներ",
+    "ru": "Беспроводные пылесосы",
+    "en": "Cordless vacuums"
+  },
+  {
+    "key": "section.robot_vacuum",
+    "hy": "Ռոբոտ փոշեկուլներ",
+    "ru": "Роботы-пылесосы",
+    "en": "Robot vacuums"
+  },
+  {
+    "key": "section.wet_dry_vacuum",
+    "hy": "Լվացող փոշեկուլներ",
+    "ru": "Моющие пылесосы",
+    "en": "Wet and dry vacuums"
+  },
+  {
+    "key": "section.canister_vacuum",
+    "hy": "Փոշեկուլներ տարայով",
+    "ru": "Пылесосы с контейнером",
+    "en": "Canister vacuums"
+  },
+  {
+    "key": "section.hair_dryer",
+    "hy": "Ֆեններ",
+    "ru": "Фены",
+    "en": "Hair dryers"
+  },
+  {
+    "key": "section.hair_styler",
+    "hy": "Ստայլերներ",
+    "ru": "Стайлеры",
+    "en": "Hair stylers"
+  },
+  {
+    "key": "section.hot_air_brush",
+    "hy": "Ֆեն-խոզանակներ",
+    "ru": "Фены-щётки",
+    "en": "Hot air brushes"
+  },
+  {
+    "key": "section.hair_curler",
+    "hy": "Մազերի գանգրացնողներ",
+    "ru": "Плойки",
+    "en": "Hair curlers"
+  },
+  {
+    "key": "section.garment_steamer",
+    "hy": "Շոգեարդուկներ",
+    "ru": "Отпариватели",
+    "en": "Garment steamers"
+  },
+  {
+    "key": "section.iron",
+    "hy": "Արդուկներ",
+    "ru": "Утюги",
+    "en": "Steam irons"
+  },
+  {
+    "key": "section.shaver",
+    "hy": "Էլեկտրական սափրիչներ",
+    "ru": "Электробритвы",
+    "en": "Electric shavers"
+  },
+  {
+    "key": "section.oneblade",
+    "hy": "OneBlade տրիմերներ",
+    "ru": "Триммеры OneBlade",
+    "en": "OneBlade trimmers"
+  },
+  {
+    "key": "section.beard_trimmer",
+    "hy": "Մորուքի տրիմերներ",
+    "ru": "Триммеры для бороды",
+    "en": "Beard trimmers"
+  },
+  {
+    "key": "section.multigroom",
+    "hy": "Ունիվերսալ տրիմերներ",
+    "ru": "Мультитриммеры",
+    "en": "Multigroom trimmers"
+  },
+  {
+    "key": "section.hair_clipper",
+    "hy": "Մազ կտրելու մեքենաներ",
+    "ru": "Машинки для стрижки",
+    "en": "Hair clippers"
+  },
+  {
+    "key": "section.nose_trimmer",
+    "hy": "Քթի և ականջի տրիմերներ",
+    "ru": "Триммеры для носа и ушей",
+    "en": "Nose & ear trimmers"
+  },
+  {
+    "key": "section.epilator",
+    "hy": "Էպիլյատորներ",
+    "ru": "Эпиляторы",
+    "en": "Epilators"
+  },
+  {
+    "key": "section.toothbrush",
+    "hy": "Էլեկտրական ատամի խոզանակներ",
+    "ru": "Электрические зубные щётки",
+    "en": "Electric toothbrushes"
+  },
+  {
+    "key": "section.water_flosser",
+    "hy": "Իրիգատորներ",
+    "ru": "Ирригаторы",
+    "en": "Water flossers"
+  },
+  {
+    "key": "section.mirrorless",
+    "hy": "Առանց հայելու ֆոտոխցիկներ",
+    "ru": "Беззеркальные камеры",
+    "en": "Mirrorless cameras"
+  },
+  {
+    "key": "section.dslr",
+    "hy": "Հայելային ֆոտոխցիկներ",
+    "ru": "Зеркальные камеры",
+    "en": "DSLR cameras"
+  },
+  {
+    "key": "section.compact",
+    "hy": "Կոմպակտ ֆոտոխցիկներ",
+    "ru": "Компактные камеры",
+    "en": "Compact cameras"
+  },
+  {
+    "key": "section.instant",
+    "hy": "Ակնթարթային ֆոտոխցիկներ",
+    "ru": "Камеры моментальной печати",
+    "en": "Instant cameras"
   }
 ]

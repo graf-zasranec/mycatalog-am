@@ -1318,9 +1318,9 @@ function languageHref(lang) {
   const pre = lang === 'hy' ? '/' : '/' + lang + '/';
   const route = location.hash || '#/';
   const product = route.match(/^#\/p\/([a-z0-9-]+)$/);
-  const category = route.match(/^#\/c\/([a-z0-9-]+)$/);
+  const category = route.match(/^#\/c\/([a-z0-9-]+)(?:\/([a-z_]+))?$/);
   const article = route.match(/^#\/blog(?:\/([a-z0-9-]+))?$/);
-  return pre + (product ? 'p/' + product[1] + '/' : category ? 'c/' + category[1] + '/' : article ? 'b/' + (article[1] ? article[1] + '/' : '') : '');
+  return pre + (product ? 'p/' + product[1] + '/' : category ? 'c/' + category[1] + '/' + (category[2] ? category[2].replace(/_/g, '-') + '/' : '') : article ? 'b/' + (article[1] ? article[1] + '/' : '') : '');
 }
 function paintChrome() {
   document.documentElement.lang = st.lang;
@@ -3158,12 +3158,14 @@ function render(keepScroll) {
   // #/c/phones (the tab links say #/c/phone) used to leave you on "0 results - try changing the
   // filters", with no tab marked current and no filter to change. A section nobody stocks is not
   // a section; show the whole catalogue instead of a dead end.
-  const mc0 = h.startsWith('/c/') ? h.slice(3) : null;
+  // #/c/<cat>/<type> is a sub-section (fridges, capsule machines): the category with that type picked
+  const [mc0, mt0] = h.startsWith('/c/') ? h.slice(3).split('/') : [null];
   const mc = mc0 && DATA.some(p => catOf(p) === mc0) ? mc0 : (mc0 ? '' : null);
   // a category lives in the URL so it can be shared and the back button works
   const wasCat = st.cat;
   st.cat = mc !== null ? mc : (h === '/' ? '' : st.cat);
   if (st.cat !== wasCat) { pruneFilters(); if (!sortKeys().includes(st.sort)) st.sort = 'popular'; }
+  if (mt0 && st.cat === mc0 && DATA.some(p => catOf(p) === mc0 && p.appliance?.type === mt0)) { st.atypes = [mt0]; save(); }
   setBounds();
   // A product folded into another by tools/merge.mjs: an old link lands on the survivor.
   const was = h.match(/^\/(p|offers)\/(.+)$/);

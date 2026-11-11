@@ -1816,7 +1816,7 @@ const SHOPS = {
       const out = [];
       const seen = new Set();
       // llms.txt points AI clients at /category/*; every catalogue category we carry is here
-      const CATS = ['iphone', 'ipad', 'airpods', 'apple-watch', 'mac'];
+      const CATS = ['iphone', 'ipad', 'airpods', 'apple-watch', 'mac', 'tv', 'accessories'];
       for (const cat of CATS)
       for (let page = 1; page <= 12; page++) {
         const html = await get(`https://ispace.am/category/${cat}${page > 1 ? '?page=' + page : ''}`);
@@ -1925,7 +1925,12 @@ const SHOPS = {
       // so paging it just refetches the same 140 products
       {
         // one listing per catalogue category we carry; each returns its whole list in one response
-        const MC = ['phones/138/0', 'tablets/139/0', 'smart-watches/141/175', 'headphone/146/156', 'computers/144/0'];
+        const MC = ['phones/138/0', 'tablets/139/0', 'smart-watches/141/175', 'headphone/146/156', 'computers/144/0',
+          // the other device categories the catalogue carries (2026-11-09 coverage check)
+          'speaker/146/158', 'power-bank/146/161', 'tvs/143/0', 'game-console/148/174', 'joystick/148/167',
+          'racing-wheel/148/170', 'drone/148/166', 'photo-cameras/140/0', 'camera/148/197', 'vacuum-cleaners/178/183',
+          'air-fryer/178/631', 'coffee-preparation/178/184', 'hair-dryers/178/195', 'shaver/178/207',
+          'hair-clippers/178/200', 'blenders/178/186', 'kettles/178/181', 'microwave/178/201', 'vr-glass/148/172'];
         const hits = [];
         for (const cat of MC) {
         const html = await get(`https://mobilecentre.am/category/${cat}/`);
