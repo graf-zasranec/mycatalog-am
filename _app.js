@@ -1208,6 +1208,7 @@ const GROUPS = [
     ['f.appliance_suction', p => p.appliance?.suction],
     ['f.appliance_dust', p => p.appliance?.dust],
     ['f.appliance_water', p => p.appliance?.water],
+    ['f.appliance_pressure', p => p.appliance?.pressure],
     ['f.appliance_compatibility', p => p.appliance?.compatibility],
   ]],
   ['sec.audio', [

@@ -166066,7 +166066,7 @@
       "type": "steam_generator",
       "power": 2200,
       "pressure": "3.5 bar",
-      "tank": "1.1 L"
+      "water": "1.1 L"
     },
     "battery": {},
     "summaryEn": "Laurastar Lift Steam Generator.",
@@ -166114,7 +166114,7 @@
       "type": "steam_generator",
       "power": 2200,
       "pressure": "3.5 bar",
-      "tank": "1.1 L"
+      "water": "1.1 L"
     },
     "battery": {},
     "summaryEn": "Laurastar Lift Plus Steam Generator.",
@@ -166156,7 +166156,7 @@
       "type": "steam_generator",
       "power": 2200,
       "pressure": "3.5 bar",
-      "tank": "1.1 L"
+      "water": "1.1 L"
     },
     "battery": {},
     "summaryEn": "Laurastar Lift Xtra Steam Generator.",
@@ -166434,12 +166434,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "steam_generator"
+      "type": "garment_steamer",
+      "power": 2000,
+      "pressure": "3.5 bar",
+      "water": "1.1 L"
     },
     "battery": {},
-    "summaryEn": "Laurastar IZZI Plus Steam Generator.",
+    "summaryEn": "Laurastar IZZI Plus Garment Steamer.",
     "sources": [
-      "https://www.laurastar.com/steam-generators-en"
+      "https://www.laurastar.com/steam-generators-en",
+      "https://www.laurastar.com/izzi-plus/000-0137-585.html"
     ],
     "unsure": [
       "popularity"
@@ -166471,12 +166475,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "garment_steamer"
+      "type": "garment_steamer",
+      "power": 850,
+      "pressure": "3.9 bar",
+      "water": "80 mL"
     },
     "battery": {},
     "summaryEn": "Laurastar IGGI Handheld Steamer.",
     "sources": [
-      "https://www.laurastar.com/"
+      "https://www.laurastar.com/",
+      "https://www.laurastar.com/iggi-intense-red/000-0104-600.html"
     ],
     "unsure": [
       "popularity"
@@ -166509,12 +166517,18 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "dust": "500 mL",
+      "noise": "80 dB"
     },
-    "battery": {},
+    "battery": {
+      "life": "60 min",
+      "chargeTime": "4 h"
+    },
     "summaryEn": "Miele Triflex HX1 Cordless Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-triflex-hx1-lotus-white.html"
+      "https://www.zigzag.am/en/miele-triflex-hx1-lotus-white.html",
+      "https://media.miele.com/downloads/n-/gb/FS_11819130_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166544,12 +166558,18 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "dust": "500 mL",
+      "noise": "77 dB"
     },
-    "battery": {},
+    "battery": {
+      "life": "120 min",
+      "chargeTime": "4 h"
+    },
     "summaryEn": "Miele Triflex HX2 Pro Cordless Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-triflex-hx2-pro-power-line-infinity-grey.html"
+      "https://www.zigzag.am/en/miele-triflex-hx2-pro-power-line-infinity-grey.html",
+      "https://media.miele.com/downloads/n-/gb/FS_11819190_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166579,12 +166599,18 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "dust": "500 mL",
+      "noise": "74 dB"
     },
-    "battery": {},
+    "battery": {
+      "life": "70 min",
+      "chargeTime": "4 h"
+    },
     "summaryEn": "Miele Triflex HX3 Cordless Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-triflex-hx3-powerline-brilliant-white.html"
+      "https://www.zigzag.am/en/miele-triflex-hx3-powerline-brilliant-white.html",
+      "https://media.miele.com/downloads/n-/us/FS_12878460_USE_US-en-US.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166614,12 +166640,18 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "dust": "500 mL",
+      "noise": "74 dB"
     },
-    "battery": {},
+    "battery": {
+      "life": "70 min",
+      "chargeTime": "4 h"
+    },
     "summaryEn": "Miele Triflex HX3 Aqua Cordless Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-triflex-hx3-aqua-obsidian-black.html"
+      "https://www.zigzag.am/en/miele-triflex-hx3-aqua-obsidian-black.html",
+      "https://media.miele.com/downloads/n-/us/FS_12878500_USE_US-en-US.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166649,12 +166681,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "3.5 L",
+      "noise": "76 dB"
     },
     "battery": {},
     "summaryEn": "Miele Guard S1 Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-guard-s1-powerline-nordic-blue.html"
+      "https://www.zigzag.am/en/miele-guard-s1-powerline-nordic-blue.html",
+      "https://media.miele.com/downloads/n-/gb/FS_12652890_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166684,12 +166720,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "4.5 L",
+      "noise": "77 dB"
     },
     "battery": {},
     "summaryEn": "Miele Guard M1 Flex Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-guard-m1-flex-powerline-nordic-blue.html"
+      "https://www.zigzag.am/en/miele-guard-m1-flex-powerline-nordic-blue.html",
+      "https://media.miele.com/downloads/n-/gb/FS_12652550_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166719,12 +166759,15 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "4.5 L"
     },
     "battery": {},
     "summaryEn": "Miele Guard M1 Parquet Flex Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-guard-m1-parquet-flex-powerline-brilliant-white.html"
+      "https://www.zigzag.am/en/miele-guard-m1-parquet-flex-powerline-brilliant-white.html",
+      "https://media.miele.com/downloads/n-/gb/FS_12652550_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166754,12 +166797,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "3.5 L",
+      "noise": "74 dB"
     },
     "battery": {},
     "summaryEn": "Miele Guard L1 Comfort XL Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-guard-l1-comfort-xl-powerline-titanium-pearl.html"
+      "https://www.zigzag.am/en/miele-guard-l1-comfort-xl-powerline-titanium-pearl.html",
+      "https://media.miele.com/downloads/n-/gb/FS_12652330_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166789,12 +166836,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "3.5 L",
+      "noise": "74 dB"
     },
     "battery": {},
     "summaryEn": "Miele Guard L1 AllFloor Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-guard-l1-allfloor-powerline-obsidian-black.html"
+      "https://www.zigzag.am/en/miele-guard-l1-allfloor-powerline-obsidian-black.html",
+      "https://media.miele.com/downloads/n-/gb/FS_12652280_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166824,12 +166875,15 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "2 L"
     },
     "battery": {},
     "summaryEn": "Miele Blizzard CX1 Excellence Bagless Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-blizzard-cx1-excellence-lotus-white.html"
+      "https://www.zigzag.am/en/miele-blizzard-cx1-excellence-lotus-white.html",
+      "https://media.miele.com/downloads/n-/ce/FS_12034050_OVE_OV-en-CE.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166859,12 +166913,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "canister_vacuum"
+      "type": "canister_vacuum",
+      "power": 890,
+      "dust": "2 L",
+      "noise": "76 dB"
     },
     "battery": {},
     "summaryEn": "Miele Blizzard CX1 Comfort Bagless Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-blizzard-cx1-comfort-obsidian-black.html"
+      "https://www.zigzag.am/en/miele-blizzard-cx1-comfort-obsidian-black.html",
+      "https://media.miele.com/downloads/n-/gb/FS_12034140_GBE_GB-en-GB.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166896,10 +166954,14 @@
     "appliance": {
       "type": "robot_vacuum"
     },
-    "battery": {},
+    "battery": {
+      "life": "170 min",
+      "chargeTime": "4 h"
+    },
     "summaryEn": "Miele Scout RX3 Home Vision Robot Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/miele-scout-rx3-home-vision-rose-gold.html"
+      "https://www.zigzag.am/en/miele-scout-rx3-home-vision-rose-gold.html",
+      "https://media.miele.com/downloads/n-/ie/FS_11830070_IEE_IE-en-IE.pdf"
     ],
     "unsure": [
       "popularity"
@@ -166929,12 +166991,19 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 200,
+      "suction": "20 kPa",
+      "dust": "500 mL"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min",
+      "chargeTime": "4.5 h"
+    },
     "summaryEn": "Cecotec Conga Rockstar 25.2V Animal Hand Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/cecotec-a01-eu01-115420-rockstar-conga-25-2v-animal-hand-vacuum-cleaner.html"
+      "https://www.zigzag.am/en/cecotec-a01-eu01-115420-rockstar-conga-25-2v-animal-hand-vacuum-cleaner.html",
+      "https://cecotec.es/es/aspiradores-de-mano/conga-rockstar-252v-animal-hand"
     ],
     "unsure": [
       "popularity"
@@ -166964,12 +167033,17 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 200,
+      "suction": "20 kPa"
     },
-    "battery": {},
+    "battery": {
+      "life": "40 min"
+    },
     "summaryEn": "Cecotec Conga Micro+ Handheld Vacuum.",
     "sources": [
-      "https://www.zigzag.am/en/cecotec-08381-cecotec-conga-micro-plus-handheld-vacuum-cleaner-with-200-w.html"
+      "https://www.zigzag.am/en/cecotec-08381-cecotec-conga-micro-plus-handheld-vacuum-cleaner-with-200-w.html",
+      "https://cecotec.es/es/aspiradores-de-mano/conga-rockstar-micro"
     ],
     "unsure": [
       "popularity"
@@ -167072,12 +167146,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "garment_steamer",
-      "power": 1800
+      "power": 1800,
+      "water": "360 mL"
     },
     "battery": {},
     "summaryEn": "Cecotec IronHero 1800 Vital Vertical Steamer.",
     "sources": [
-      "https://www.zigzag.am/en/cecotec-08510-ironhero-1800-vital-vertical-steamer.html"
+      "https://www.zigzag.am/en/cecotec-08510-ironhero-1800-vital-vertical-steamer.html",
+      "https://cecotec.es/es/planchas-verticales/ironhero-1800-vital"
     ],
     "unsure": [
       "popularity"
@@ -167142,12 +167218,14 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "iron"
+      "type": "iron",
+      "power": 1200
     },
     "battery": {},
     "summaryEn": "Cecotec Fast&Furious 4000 Travel Iron.",
     "sources": [
-      "https://www.zigzag.am/en/cecotec-05538-fast-furious-4000-travel-travel-iron.html"
+      "https://www.zigzag.am/en/cecotec-05538-fast-furious-4000-travel-travel-iron.html",
+      "https://cecotec.es/es/planchas-de-viaje/fastfurious-4000-travel"
     ],
     "unsure": [
       "popularity"
@@ -167322,12 +167400,14 @@
     "accent": "#5C6470",
     "appliance": {
       "type": "washing_machine",
-      "load": 8
+      "load": 8,
+      "programs": 16
     },
     "battery": {},
     "summaryEn": "Cecotec Bolero DressCode 840 Built-in Washing Machine.",
     "sources": [
-      "https://eldorado.am/en/built-in-washing-machine-cecotec-bolero-dresscode-840-bi-inverter-a"
+      "https://eldorado.am/en/built-in-washing-machine-cecotec-bolero-dresscode-840-bi-inverter-a",
+      "https://cecotec.es/es/lavadoras/bolero-dresscode-840-bi-inverter-a"
     ],
     "unsure": [
       "popularity"
@@ -167357,12 +167437,17 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "air_fryer"
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 6.5,
+      "temperature": "80–200 °C",
+      "programs": 12
     },
     "battery": {},
     "summaryEn": "Cecotec Cecofry Fantastik Window 6500 Air Fryer.",
     "sources": [
-      "https://eldorado.am/en/cecotec-cecofry-fantastik-window-6500"
+      "https://eldorado.am/en/cecotec-cecofry-fantastik-window-6500",
+      "https://cecotec.es/es/freidoras-sin-aceite/cecofry-fantastik-window-6500-a90-eu01-004967"
     ],
     "unsure": [
       "popularity"
@@ -167392,12 +167477,16 @@
     "popularity": 30,
     "accent": "#5C6470",
     "appliance": {
-      "type": "hand_mixer"
+      "type": "hand_mixer",
+      "power": 500,
+      "volume": 3.5,
+      "speeds": 5
     },
     "battery": {},
     "summaryEn": "Cecotec Powertwist 500 Gyro Hand Blender.",
     "sources": [
-      "https://likemobile.am/en/cecotec-powertwist-500-gyro"
+      "https://likemobile.am/en/cecotec-powertwist-500-gyro",
+      "https://cecotec.es/es/batidora-amasadora/powertwist-500-gyro"
     ],
     "unsure": [
       "popularity"
