@@ -104,6 +104,14 @@ is(app.selectionOffers(caseProduct,{storage:46}).map(o=>o.storage),[46],'a 46 mm
 delete prices.offers[caseProduct.id];
 const fold8 = phones.find(p => p.id === 'samsung-galaxy-z-fold-8');
 is(app.hayMatch(fold8, 'samsung fold'), true, 'two words, not contiguous, still match');
+const delonghiP = phones.find(p => p.brand === "De'Longhi" && app.hayMatch(p, ''));
+if (delonghiP) {
+  is(app.hayMatch(delonghiP, 'delonghi'), true, 'brand without its apostrophe still matches (delonghi)');
+  is(app.hayMatch(delonghiP, 'de longhi'), true, 'brand split in two words still matches');
+  is(app.hayMatch(delonghiP, 'делонги'), true, 'Russian spelling of De\'Longhi matches');
+}
+const caps = phones.find(p => p.appliance?.type === 'capsule_coffee' && app.hayMatch(p, ''));
+if (caps) is(app.hayMatch(caps, 'nespresso'), true, 'capsule machines answer to nespresso');
 is(app.hayMatch(fold8, 'fold samsung'), true, 'word order does not matter');
 is(app.hayMatch(fold8, ''), true, 'an empty query matches everything');
 is(app.hayMatch(fold8, 'samsung flip'), false, 'a word that is absent fails the whole query');

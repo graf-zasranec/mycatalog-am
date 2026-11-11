@@ -723,7 +723,11 @@ function loadLazy() {
 // Every keystroke and every filter count asks this of all 1304 products; the text never changes.
 let HAY = new WeakMap();
 const hay = p => { let h = HAY.get(p);
-  if (h === undefined) HAY.set(p, h = (p.brand + ' ' + fullName(p) + ' ' + (p.chipset?.name || '') + (p.category === 'laptop' ? ' laptop' : p.category === 'tablet' ? ' tablet' : '')).toLowerCase());
+  // The brand also goes in squashed ("De'Longhi" -> delonghi: nobody types the apostrophe) and the
+  // product type in words, so "air fryer" or "nespresso" find the machines (owner, 2026-11-11).
+  // only home appliances: a graphics tablet's "pen tablet" type must not answer a search for tablets
+  const type = p.appliance?.type && /^(coffee|kitchen|vacuum|largeappliance|climate|haircare|grooming|appliance|purifier)$/.test(p.category) ? ' ' + p.appliance.type.replace(/_/g, ' ') + (p.appliance.type === 'capsule_coffee' ? ' nespresso' : '') : '';
+  if (h === undefined) HAY.set(p, h = (p.brand + ' ' + String(p.brand).replace(/[^\p{L}\d]+/gu, '') + ' ' + fullName(p) + ' ' + (p.chipset?.name || '') + (p.category === 'laptop' ? ' laptop' : p.category === 'tablet' ? ' tablet' : '') + type).toLowerCase());
   return h; };
 const SEARCH_CACHE = new Map();
 // Local brand names are aliases of the same query, never of a model number.
@@ -733,7 +737,8 @@ const SEARCH_ALIASES = new Map([
   ['նոութբուք','laptop'],['նոթբուք','laptop'],['ноутбук','laptop'],
   ['էյսեր','acer'],['эйсер','acer'],['ռեդմի','redmi'],['редми','redmi'],
   ['հուավեյ','huawei'],['хуавей','huawei'],['хуавэй','huawei'],
-  ['պլանշետ','tablet'],['планшет','tablet'],['էփլ','apple'],['էպլ','apple'],['эпл','apple'],['эппл','apple']
+  ['պլանշետ','tablet'],['планшет','tablet'],['էփլ','apple'],['էպլ','apple'],['эпл','apple'],['эппл','apple'],
+  ['դելոնգի','delonghi'],['делонги','delonghi'],['նեսպրեսո','nespresso'],['неспрессо','nespresso'],['миле','miele'],['միլե','miele']
 ]);
 const canonicalSearch = q => String(q || '').normalize('NFKC').toLowerCase().slice(0,120).replace(/[\p{L}]+/gu, word => {
   if (SEARCH_ALIASES.has(word)) return SEARCH_ALIASES.get(word);
