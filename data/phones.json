@@ -169150,7 +169150,13 @@
     "colors": [
       "Light Blue",
       "Black"
-    ]
+    ],
+    "specNA": {
+      "display.size": "Not published by shop; checking manufacturer",
+      "display.resolution": "Not published by shop; checking manufacturer",
+      "chipset.name": "Not published by shop; checking manufacturer",
+      "camera.main": "Not published by shop; checking manufacturer"
+    }
   },
   {
     "id": "huawei-freebuds-se-4-anc-t0026l",
@@ -169507,7 +169513,10 @@
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-hbx470amci-hs2.html"
-    ]
+    ],
+    "specNA": {
+      "appliance.volume": "Not published by shop; checking manufacturer"
+    }
   },
   {
     "id": "sharp-sj-hbx430amci-hs2",
@@ -169543,7 +169552,10 @@
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-hbx430amci-hs2.html"
-    ]
+    ],
+    "specNA": {
+      "appliance.volume": "Not published by shop; checking manufacturer"
+    }
   },
   {
     "id": "berg-br-n344bxi",
@@ -169582,7 +169594,10 @@
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-berg-br-n344bxi.html"
-    ]
+    ],
+    "specNA": {
+      "appliance.volume": "Not published by shop; checking manufacturer"
+    }
   },
   {
     "id": "sharp-sj-xe55pm-sl",
@@ -170136,7 +170151,8 @@
     "appliance": {
       "type": "dryer",
       "programs": 12,
-      "noise": "61 dB"
+      "noise": "61 dB",
+      "load": 9
     },
     "body": {
       "height": 850,
@@ -170456,7 +170472,8 @@
     "appliance": {
       "type": "dishwasher",
       "programs": 8,
-      "noise": "46 dB"
+      "noise": "46 dB",
+      "settings": 14
     },
     "body": {
       "height": 818,
@@ -173235,7 +173252,8 @@
     "display": {
       "size": 34,
       "resolution": "2560 x 1080",
-      "refresh": 100
+      "refresh": 100,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "LG 34U530A-W.",
@@ -173281,7 +173299,8 @@
     "display": {
       "size": 31.5,
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "type": "IPS"
     },
     "battery": {},
     "summaryEn": "LG 32U850SA-W.",
@@ -173324,7 +173343,8 @@
     "display": {
       "size": 34,
       "resolution": "3440 x 1440",
-      "refresh": 160
+      "refresh": 160,
+      "type": "VA"
     },
     "battery": {},
     "summaryEn": "LG 34G600A-B.",
@@ -173431,7 +173451,10 @@
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-lg-f2y2hyp6j.html"
-    ]
+    ],
+    "specNA": {
+      "appliance.load": "Not published by shop; checking manufacturer"
+    }
   },
   {
     "id": "lg-rh90y1mptnp",
@@ -173470,7 +173493,10 @@
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/tumble-dryers/tumble-dryer-lg-rh90y1mptnp.html"
-    ]
+    ],
+    "specNA": {
+      "appliance.load": "Not published by shop; checking manufacturer"
+    }
   },
   {
     "id": "lg-ms-2595dis",
