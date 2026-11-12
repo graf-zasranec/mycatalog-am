@@ -214,6 +214,9 @@ const ACCESSORY_WORDS = [
   'protection', 'tempered', 'film', 'skin', 'charger', 'charging', 'cable', 'adapter',
   'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank', 'power bank',
   'airtag', 'pencil', 'keyboard', 'magic kb', 'stylus', 'dongle', 'hub',
+  // iBolit's screen protectors: "iPad Pro 11 2024 Green Lion Screen Guard" (14 900) sat on the
+  // iPad Pro M4 page as its cheapest offer, "iPhone 14 ... Privacy Round Edge Glass" (2026-11-12)
+  'screen guard', 'privacy', 'edge glass', 'hd glass', 'green lion',
   'պատյան', 'պաշտպան', 'լիցքավոր', 'մալուխ', 'ադապտեր',
   'чехол', 'защит', 'кабел', 'зарядн', 'адаптер', 'держател',
   'накладк', 'бампер', 'пленк', 'плёнк'
@@ -2645,9 +2648,13 @@ const SHOPS = {
       // Accessories itself is left out, but these sub-sections hold devices the catalogue carries
       // (earphones, AirTag, Apple keyboard/mouse/Pencil, power banks) - 2026-11-11 coverage check.
       const CATS = ['phones', 'tablets', 'watches', 'computers', 'accessories/earphones', 'accessories/airtag',
-        'accessories/keyboards', 'accessories/mouses', 'accessories/pencils', 'accessories/power-bank'];
+        'accessories/keyboards', 'accessories/mouses', 'accessories/pencils', 'accessories/power-bank',
+        // Laptops moved out of electronics/computers into their own top-level section around
+        // 2026-11-10 (every MacBook and Acer offer stopped updating that day): a leading '/' marks a
+        // path that is not under /en/electronics/.
+        '/notebooks'];
       const out = [];
-      for (const cat of CATS) for await (const html of catPages(`https://www.yerevanmobile.am/en/electronics/${cat}.html`, /https:\/\/www\.yerevanmobile\.am\/en\/[a-z0-9-]+\.html/g)) {
+      for (const cat of CATS) for await (const html of catPages(`https://www.yerevanmobile.am/en${cat.startsWith('/') ? cat : '/electronics/' + cat}.html`, /https:\/\/www\.yerevanmobile\.am\/en\/[a-z0-9-]+\.html/g)) {
         // Magento product grid. Ucom's index-scanning does not transfer: here the anchor writes
         // href BEFORE class, so reading "the first url in the block" picks up a hover widget
         // rather than the product. Match the anchor itself.
@@ -2660,7 +2667,7 @@ const SHOPS = {
           const pi = b.indexOf('data-price-amount=' + D);
           const price = pi < 0 ? 0 : Math.round(Number(b.slice(pi + 19, b.indexOf(D, pi + 19))));
           if (!url || !title || !price || price < 5000 || !safeUrl(url)) continue;
-          if (/\/electronics\//.test(url)) continue;         // a category, not a product
+          if (/\/electronics\/|\/notebooks(?:\/|\.html)/.test(url)) continue;   // a category, not a product
           const id = matchPhone(title, { price, url }) || matchPhone(url);
           if (!id) continue;
           // The grid gives one price for the whole product. The page behind it is an ordinary
