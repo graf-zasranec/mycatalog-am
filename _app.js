@@ -68,7 +68,7 @@ const X = {
     any: 'Բոլորը', min: 'նվազ.', max: 'մինչև', weightF: 'Քաշ', newBadge: 'Նոր', view: 'Դիտել', allFilters: 'Բոլոր զտիչները',
     dS: 'օ', hS: 'ժ', mS: 'ր',
     unsureMark: 'չհաստատված', unsureTip: 'Այս թիվը հաստատված չէ արտադրողի տվյալներում',
-    scrLo: '{x}″-ից փոքր', scrHi: '{x}″-ից մեծ',
+    scrLo: '{x}″-ից փոքր', scrHi: '{x}″ և ավելի',
     cameraF: 'Հիմնական տեսախցիկ', mp: 'ՄՊ', lifeF: 'Աշխատանքի տևողություն', hrs: 'ժ', mins: 'րոպե', days: 'օր',
     cpuF: 'Պրոցեսոր', gpuF: 'Գրաֆիկա', integrated: 'Ներակառուցված',
     ancF: 'Աղմուկի ճնշում', waterF: 'Ջրակայունություն', chargeF: 'Արագ լիցքավորում', wlessF: 'Անլար լիցքավորում', sdF: 'Հիշողության քարտ', frameF: 'Շրջանակ', lensF: 'Ոսպնյակներ',
@@ -103,7 +103,7 @@ const X = {
     any: 'Все', min: 'от', max: 'до', weightF: 'Вес', newBadge: 'Новинка', view: 'Смотреть', allFilters: 'Все фильтры',
     dS: 'д', hS: 'ч', mS: 'м',
     unsureMark: 'не подтверждено', unsureTip: 'Эта цифра не подтверждена данными производителя',
-    scrLo: 'до {x}″', scrHi: 'от {x}″',
+    scrLo: 'меньше {x}″', scrHi: 'от {x}″',
     cameraF: 'Основная камера', mp: 'МП', lifeF: 'Время работы', hrs: 'ч', mins: 'мин', days: 'дн.',
     cpuF: 'Процессор', gpuF: 'Графика', integrated: 'Встроенная',
     ancF: 'Шумоподавление', waterF: 'Влагозащита', chargeF: 'Быстрая зарядка', wlessF: 'Беспроводная зарядка', sdF: 'Слот для карты памяти', frameF: 'Оправа', lensF: 'Линзы',
@@ -216,10 +216,8 @@ for (const k of Object.keys(D).filter(k => typeof D[k] === 'number' && !['anc', 
 }
 if (![0, 1, 2].includes(st.touch)) st.touch = D.touch;
 st.page = Number.isFinite(+st.page) && +st.page >= 1 ? Math.floor(+st.page) : 1;
-// The screen bands are cut from whatever is in the category, so their keys are positions
-// ('lo' is not 6.3" on a page of laptops), and a band saved under the old fixed phone scale
-// would silently select the wrong third.
-st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => ['lo', 'mid', 'hi'].includes(v)) : [];
+// Stored range keys include their inch boundaries and stay stable across data updates.
+st.scrs = Array.isArray(st.scrs) ? st.scrs.filter(v => typeof v === 'string' && /^\d+(?:\.\d+)?~(?:\d+(?:\.\d+)?)?$/.test(v)) : [];
 st.waters = Array.isArray(st.waters) ? st.waters.filter(v => ['splash', 'dip'].includes(v)) : [];
 const save = () => { try { localStorage.setItem(LS, JSON.stringify(st)); } catch (e) { } };
 
@@ -428,10 +426,11 @@ function selectionOffers(p, sel) {
   });
 }
 const catalogOffers = (p, s = st) => offersFor(p).filter(o => {
-  if (!s.ram && !s.stor) return !(s.shops || []).length || s.shops.includes(o.shop);
+  if (s.shops?.length && !s.shops.includes(o.shop)) return false;
+  if (s.panels?.length && !s.panels.includes(panelOf(p, o))) return false;
+  if (!s.ram && !s.stor) return true;
   const c = offerConfig(p, o);
-  return (!s.ram || c.ram >= s.ram) && (!s.stor || c.storage >= s.stor)
-    && (!(s.shops || []).length || s.shops.includes(o.shop));
+  return (!s.ram || c.ram >= s.ram) && (!s.stor || c.storage >= s.stor);
 });
 const catalogVariants = (p, s = st) => (p.variants || []).filter(v => (!s.ram || v.ram >= s.ram) && (!s.stor || v.storage >= s.stor));
 // Filter options must describe purchasable configurations, rather than every spec
@@ -860,26 +859,36 @@ const gpuOf = p => {
   const r = /\bRX\s*(\d{3,4}[A-Z]*)\b/i.exec(g.name);
   return r ? `Radeon RX ${r[1].toUpperCase()}` : g.name;
 };
-// Screen bands used to be the three phone bands - under 6.3", 6.3-6.7", over 6.7" - drawn on a
-// page of laptops, where every one of them lands in the last band and the filter answers
-// nothing. Cut them from the sizes the category actually has instead.
-const _bandC = {};
-function bandCuts(cat) {
-  if (cat in _bandC) return _bandC[cat];
-  const v = [...new Set(DATA.filter(p => !cat || (p.category || 'phone') === cat)
-    .map(p => p.display?.size).filter(n => typeof n === 'number' && n > 0))].sort((a, b) => a - b);
-  return _bandC[cat] = v.length < 3 ? null : [v[Math.floor(v.length / 3)], v[Math.floor(v.length * 2 / 3)]];
+// Each upper boundary belongs to the next range. Keep popular buying sizes as
+// stable boundaries instead of moving them whenever the catalogue is refreshed.
+const SCREEN_CUTS = {
+  phone: [6, 6.3, 6.5, 6.7, 7, 7.6],
+  tablet: [8, 10, 11, 12, 13, 14],
+  laptop: [13, 14, 15, 16, 17, 18],
+  desktop: [21, 24, 27, 32],
+  ereader: [6, 7, 8, 10, 11],
+  watch: [1.3, 1.5, 1.7, 1.9, 2.1],
+  monitor: [22, 24, 27, 30, 32, 34, 40, 45],
+  tv: [32, 43, 50, 55, 65, 75, 85, 98]
+};
+const bandCuts = cat => SCREEN_CUTS[cat] || [];
+const bandKey = (cuts, i) => (cuts[i - 1] || 0) + '~' + (cuts[i] || '');
+function screenBands(p, s = st) {
+  const cuts = bandCuts(s.cat);
+  if (!cuts.length) return [];
+  const variantSizes = new Set((p.variants || []).map(v => v.size).filter(Number.isFinite));
+  const offered = variantSizes.size > 1 ? filterValues(p, 'size') : [];
+  const sizes = offered.length ? offered : [p.display?.size];
+  return [...new Set(sizes.filter(n => Number.isFinite(n) && n > 0)
+    .map(n => bandKey(cuts, cuts.filter(cut => n >= cut).length)))];
 }
-const bandOf = (p, cat) => {
-  const c = bandCuts(cat), d = p.display?.size;
-  return (!c || d == null) ? null : d < c[0] ? 'lo' : d < c[1] ? 'mid' : 'hi';
-};
-const bandLabel = v => {
-  const c = bandCuts(st.cat);
-  if (!c) return '';
-  return v === 'lo' ? x('scrLo').replace('{x}', c[0])
-    : v === 'hi' ? x('scrHi').replace('{x}', c[1]) : c[0] + '\u2013' + c[1] + '\u2033';
-};
+function bandLabel(v) {
+  const [lo, hi] = v.split('~');
+  const format = n => Number(n).toLocaleString(st.lang === 'ru' ? 'ru' : 'en', { maximumFractionDigits: 2 });
+  if (lo === '0') return x('scrLo').replace('{x}', format(hi));
+  if (!hi) return x('scrHi').replace('{x}', format(lo));
+  return format(lo) + '–<' + format(hi) + '″';
+}
 
 // One table for every filter. 'min' is a "this much or more" radio, 'set' is a tick list where
 // any chosen value qualifies, 'flag' is a yes/no button. The bar, the option counts, the chips,
@@ -899,8 +908,8 @@ const FILT = {
   cam:   { kind: 'min', label: () => x('cameraF'), of: mpOf, fmt: v => v + ' ' + x('mp') },
   // a watch lasts days, earbuds hours: kept in hours underneath, shown in days from two up
   life:  { kind: 'min', label: () => x('lifeF'), of: hoursOf, fmt: v => v >= 48 && v % 24 === 0 ? v / 24 + ' ' + x('days') : v < 2 && v % 1 ? Math.round(v * 60) + ' ' + x('mins') : v + ' ' + x('hrs') },
-  scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), of: (p, s) => bandOf(p, s.cat),
-           fmt: bandLabel, vals: () => bandCuts(st.cat) ? ['lo', 'mid', 'hi'] : [] },
+  scr:   { kind: 'set', arr: 'scrs', label: () => t('filter.screen_size'), all: screenBands,
+           fmt: bandLabel, vals: () => { const cuts = bandCuts(st.cat); return [...cuts, Infinity].map((_, i) => bandKey(cuts, i)); } },
   cpu:   { kind: 'set', arr: 'cpus', label: () => x('cpuF'), of: cpuOf, fmt: v => v },
   gpu:   { kind: 'set', arr: 'gpus', label: () => x('gpuF'), of: gpuOf, fmt: v => v === 'integrated' ? x('integrated') : v },
   water: { kind: 'set', arr: 'waters', label: () => x('waterF'), of: waterOf, fmt: v => x('waters')[v], vals: () => ['splash', 'dip'] },
@@ -945,7 +954,8 @@ const FILT = {
            vals: () => ['HD', 'Full HD', 'QHD', '4K', '8K'] },
   // Ninety-six televisions and thirty-eight monitors all differ on the one thing a buyer of
   // either actually chooses between, and nothing here could ask about it until now.
-  panel: { kind: 'set', arr: 'panels', label: () => x('panelF'), of: p => panelOf(p), fmt: v => v },
+  panel: { kind: 'set', arr: 'panels', label: () => x('panelF'), of: p => panelOf(p),
+    all: p => offersFor(p).map(o => panelOf(p, o)), fmt: v => v },
   // A shop sells last year's laptop next to this year's at the same price, and the model number
   // is the only thing that says which - except here, where the catalogue already knows.
   year:  { kind: 'min', label: () => x('yearF'), of: p => yearOf(p), fmt: v => String(v) },
@@ -960,8 +970,8 @@ const FILT = {
 // Mini-LED", "Neo QLED" - and the buyer is choosing between about five things. The most specific
 // word in the string is the one that decides, so OLED beats LED in "NanoCell LED".
 const PANELS = ['Mini-LED', 'QNED', 'Neo QLED', 'QLED', 'AMOLED', 'OLED', 'NanoCell', 'IPS', 'VA', 'TN', 'LCD', 'LED', 'E Ink'];
-function panelOf(p) {
-  const t = String(p.display?.type || '');
+function panelOf(p, offer) {
+  const t = String(offer?.configSpecs?.display?.type || p.display?.type || '');
   if (!t) return null;
   if (/\bAMOLED\b/i.test(t)) return 'OLED';
   return PANELS.find(k => new RegExp('\\b' + k.replace(/[-\s]/g, '[-\\s]?') + '\\b', 'i').test(t)) || null;
@@ -1054,11 +1064,11 @@ function matches(p, s) {
   if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
   if (!hayMatch(p, s.q)) return false;
   const pr = catalogPrice(p, s);
-  if ((s.ram || s.stor || (s.shops || []).length) &&
+  if ((s.ram || s.stor || s.shops?.length || s.panels?.length) &&
       (hasReal(p) ? !catalogOffers(p, s).length : !catalogVariants(p, s).length)) return false;
   if (pr < s.pmin || pr > s.pmax) return false;
   for (const k in FILT) {
-    if (k === 'ram' || k === 'stor') continue; // checked jointly against actual configurations above
+    if (k === 'ram' || k === 'stor' || k === 'panel') continue; // checked jointly against actual offers above
     const f = FILT[k];
     // an ACTIVE spec filter excludes anything without that spec: earbuds have no screen, so
     // they must not slip through a "120 Hz or more" filter merely by lacking the field
@@ -1069,8 +1079,8 @@ function matches(p, s) {
     const sel = s[f.arr] || [];
     if (!sel.length) continue;
     if (k === 'shop') { if (!offersFor(p).some(o => sel.includes(o.shop))) return false; continue; }
-    const v = f.of(p, s);                        // any chosen value qualifies
-    if (v == null || !sel.includes(v)) return false;
+    const values = f.all ? f.all(p, s) : [f.of(p, s)];
+    if (!values.some(v => v != null && sel.includes(v))) return false;
   }
   if (s.scrmin && !(p.display?.size >= s.scrmin)) return false;
   return true;
@@ -1236,6 +1246,7 @@ const GROUPS = [
     ['f.refresh_rate', p => p.display.refresh + ' ' + u('hz'), p => p.display.refresh, 1],
     ['f.ppi', p => p.display.ppi && p.display.ppi + ' ppi', p => p.display.ppi, 1],
     ['f.brightness', p => p.display.brightness && money(p.display.brightness) + ' ' + u('nit'), p => p.display.brightness, 1],
+    ['f.dimming_zones', p => p.display?.localDimmingZones && money(p.display.localDimmingZones)],
     ['f.protection', p => p.display?.protection],
     ['f.touch', p => p.display?.touch == null ? null : p.display.touch ? t('common.yes') : t('common.no')]
   ]],
@@ -1500,7 +1511,7 @@ function varies(get) { return new Set(inView().map(get).filter(v => v != null &&
 function setVals(k, f, pool) {
   if (k === 'shop') return [...new Set(pool.flatMap(p => offersFor(p).map(o => o.shop)))]
     .sort((a, b) => shopName(a).localeCompare(shopName(b)));
-  const have = new Set(pool.map(p => f.of(p, st)).filter(v => v != null && v !== ''));
+  const have = new Set(pool.flatMap(p => f.all ? f.all(p, st) : [f.of(p, st)]).filter(v => v != null && v !== ''));
   return (f.vals ? f.vals() : [...have].sort()).filter(v => have.has(v));
 }
 // One filter's control - or nothing at all, when the category is never asked this question or
@@ -1518,7 +1529,7 @@ function covered(k, pool) {
   const live = pool.filter(hasReal).filter(p => !f.scope || f.scope(p));
   // Two in five, not half (2026-10-24): 45% of laptops state a refresh rate and 45% of vacuums a
   // wattage - the gaming laptops and the corded vacuums, exactly the buyers who ask.
-  return !live.length || live.filter(p => f.all ? f.all(p).some(has) : has(f.of(p, st))).length * 5 >= live.length * 2;
+  return !live.length || live.filter(p => f.all ? f.all(p, st).some(has) : has(f.of(p, st))).length * 5 >= live.length * 2;
 }
 function fdrop(k, pool) {
   const f = FILT[k];

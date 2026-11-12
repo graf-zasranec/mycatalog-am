@@ -41,8 +41,8 @@ try {
             const config = offerConfig(p, o);
             return config[k === 'stor' ? 'storage' : 'ram'] >= +v;
           });
+          if (f.kind === 'set') return (f.all ? f.all(p, s) : [f.of(p, s)]).some(value => String(value) === v);
           const val = f.of(p, s);
-          if (f.kind === 'set') return String(val) === v;
           if (f.kind === 'min') return val >= +v;
           if (f.kind === 'max') return val <= +v;
           if (f.kind === 'yn') return val === (+v === 1);
@@ -65,8 +65,8 @@ try {
       }
       for (const k of seen) {
         const f = FILT[k];
-        if (!f.of || k === 'brand') continue;
-        const none = pool.filter(p => { const v = f.of(p, st); return v == null || v === '' || (typeof v === 'number' && !v); });
+        if ((!f.of && !f.all) || k === 'brand') continue;
+        const none = pool.filter(p => { if (!f.of) return !f.all(p, st).length; const v = f.of(p, st); return v == null || v === '' || (typeof v === 'number' && !v); });
         if (none.length && f.kind !== 'flag' && f.kind !== 'yn') out.gaps.push(`${k}: ${none.length}/${pool.length} have no value (e.g. ${none.slice(0, 3).map(p => p.id).join(', ')})`);
       }
       return out;

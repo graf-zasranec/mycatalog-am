@@ -1431,6 +1431,18 @@
         "color": "Black"
       },
       "evidence": "Primary Dell15DC15250 page explicitly shows Սպառված է; keep URL and prior price."
+    },
+    {
+      "shop": "planet3d",
+      "url": "https://3dplanet.am/en/store/product/google-pixel-11-pro-xl",
+      "status": 200,
+      "reason": "exact_variant_sold_out",
+      "checked": "2026-11-12",
+      "checkedAt": "2026-11-12T12:01:42.000Z",
+      "scope": {
+        "storage": 1024
+      },
+      "stock": false
     }
   ]
 }

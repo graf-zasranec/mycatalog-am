@@ -280,5 +280,25 @@
     "reason": "Exact merchant H1 EOS R50 V 14-30mm differs from EOS R50 18-45 model family. Preserve source pending remapping to exact V model.",
     "sourceRow": "Canon EOS R50 V 14-30mm",
     "evidenceFile": ".codex/reports/2026-11-06-manual-variants/page-261.json"
+  },
+  {
+    "id": "msi-modern-15-a11mu-1006xge",
+    "url": "https://ibolit.mobi/product/msi-modern-15-a11mu-1006xgeryzen-5ram-8ssd-512/",
+    "checked": "2026-11-12",
+    "reason": "Merchant lists AMD Ryzen 5 under A11MU-1006XGE. MSI lists A11MU with Intel CPUs. Exact AMD product identity is unverified.",
+    "sources": [
+      "https://ibolit.mobi/product/msi-modern-15-a11mu-1006xgeryzen-5ram-8ssd-512/",
+      "https://www.msi.com/Business-Productivity/Modern-15-A11X/Specification"
+    ]
+  },
+  {
+    "id": "lenovo-v15-g4-iru",
+    "url": "https://allsell.am/en/lenovo-v15-g4-iru-core-i5-16gb-i-1tb-83cc002hus",
+    "checked": "2026-11-12",
+    "reason": "Merchant listing labels 83CC002HUS Core i5. The exact Lenovo SKU specifies Core i7-13620H. Merchant primary specs are unverified.",
+    "sources": [
+      "https://allsell.am/en/lenovo-v15-g4-iru-core-i5-16gb-i-1tb-83cc002hus",
+      "https://psref.lenovo.com/Detail/Lenovo_V15_G4_IRU?M=83CC002HUS"
+    ]
   }
 ]

@@ -44,6 +44,13 @@ export function istoreCachedRows(snapshot, today) {
   });
 }
 
+export const storageStockKey = (shop, row) => cacheOfferKey(shop, row.url) + '|' + row.storage;
+
+export function unavailableStorageKeys(shop, rows) {
+  return rows.filter(row => row.url && row.inStock === false && row.unavailableStorage && Number.isFinite(row.storage))
+    .map(row => storageStockKey(shop, row));
+}
+
 export function unavailableSourceKeys(shop, rows) {
   const groups = new Map();
   for (const row of rows) {
@@ -52,7 +59,7 @@ export function unavailableSourceKeys(shop, rows) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(row);
   }
-  return [...groups].filter(([,group]) => group.every(o => o.inStock === false || o.specConflict?.length)).map(([key]) => key);
+  return [...groups].filter(([,group]) => group.every(o => (o.inStock === false && !o.unavailableStorage) || o.specConflict?.length)).map(([key]) => key);
 }
 
 export function checkpointShopRows(shop, rows, kept, fresh) {

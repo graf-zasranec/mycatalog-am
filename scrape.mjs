@@ -1,4 +1,4 @@
-import {readPlanetModifiers,planetRamOptions} from './tools/planet-modifiers.mjs';
+import {readPlanetModifiers,planetRamOptions,readPlanetStorage} from './tools/planet-modifiers.mjs';
 // Collects real smartphone prices from Armenian online shops into data/prices.json.
 //
 //   node scrape.mjs            all shops
@@ -2429,11 +2429,7 @@ const SHOPS = {
         // Each capacity is its own button with its own price and its own variation id, and
         // /variations/<id>/modifiers answers with the colours, their price deltas and - the part
         // that matters - is_active, which is 0 for a colour the shop has sold out of.
-        const tiers = [...html.matchAll(/class="storage-btn[^"]*"([^>]*)>\s*([^<]+?)\s*</g)].map(m => ({
-          price: Math.round(Number((m[1].match(/data-price="([\d.]+)"/) || [])[1] || 0)),
-          varId: (m[1].match(/data-id="(\d+)"/) || [])[1],
-          storage: capOf(m[2])
-        })).filter(t => t.price >= 5000 && t.varId);
+        const tiers = readPlanetStorage(html, capOf);
         if (!tiers.length) {
           const price = Math.round(Number((o && o.price) || 0));
           if (price >= 5000 && title) out.push({ id, price, title, url: u, image: img,
@@ -2441,6 +2437,10 @@ const SHOPS = {
           continue;
         }
         for (const t of tiers) {
+          if (t.disabled) {
+            out.push({ id, url: u, title, storage: t.storage, price: t.price, inStock: false, unavailableStorage: true });
+            continue;
+          }
           const mod = await planetModifiers(t.varId); await sleep(DELAY_MS);
           const cols = mod.color || [];
           const sims = mod.sim || [];
@@ -2946,7 +2946,7 @@ if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched a
 const report = [];
 import {modelEsimOnly} from './tools/sim-hardware.mjs';
 // Parser-only audit tools stop at this marker; runtime helpers belong after it.
-import { purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows, istoreCartState, istoreCachedRows } from './tools/cache-availability.mjs';
+import { purchasableOffer, magentoCartState, unavailableSourceKeys, unavailableStorageKeys, storageStockKey, checkpointShopRows, istoreCartState, istoreCachedRows } from './tools/cache-availability.mjs';
 import {resumablePartial} from './tools/refresh-recovery.mjs';
 import { caseSize } from './tools/spec-values.mjs';
 
@@ -2988,6 +2988,11 @@ if (process.argv.includes('--probe')) {
   process.exit(0);
 }
 const sourceUnavailable = new Set();
+const sourceStorageUnavailable = new Set();
+function recordUnavailable(shop, rows) {
+  for (const key of unavailableSourceKeys(shop, rows)) sourceUnavailable.add(key);
+  for (const key of unavailableStorageKeys(shop, rows)) sourceStorageUnavailable.add(key);
+}
 const hiddenHandUrls = new Set();
 // Fetch first, several shops at once (owner, 2026-10-16: the nightly run hit GitHub's 6-hour cap).
 // Each shop is still asked one page at a time at its own pace - only different shops overlap.
@@ -3010,7 +3015,7 @@ for (const key of names) {
   CURSHOP_SEQ = key;
   // Already read today, in a run that did not finish. Take it rather than ask the shop again.
   if (done.shops[key]) {
-    for (const blocked of unavailableSourceKeys(key, done.shops[key])) sourceUnavailable.add(blocked);
+    recordUnavailable(key, done.shops[key]);
     for (const o of done.shops[key]) (offers[o.id] ||= []).push(o);
     const models = new Set(done.shops[key].map(o => o.id));
     console.log(`[${s.name}] ${done.shops[key].length} offers across ${models.size} models (already read today)`);
@@ -3038,7 +3043,7 @@ for (const key of names) {
     report.push({ shop: key, offers: kept.length, models: new Set(kept.map(o => o.id)).size, stale: true });
     continue;
   }
-  for (const blocked of unavailableSourceKeys(key, got)) sourceUnavailable.add(blocked);
+  recordUnavailable(key, got);
   // keep the cheapest offer per (phone, storage)
   const best = new Map();
   // Two different reasons, counted apart. A sold-out listing is perfectly plausible; calling it
@@ -3615,6 +3620,7 @@ let noPriceCount = 0;
 for (const id of Object.keys(offers)) {
   const before = offers[id].length;
   offers[id] = offers[id].filter(o => !noPriceUrls.has(priceUrlKey(o.shop, o.url))
+    && !sourceStorageUnavailable.has(storageStockKey(o.shop, o))
     && !hiddenHandUrls.has(o.shop + '|' + o.url));
   noPriceCount += before - offers[id].length;
 }

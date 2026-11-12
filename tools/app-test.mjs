@@ -263,6 +263,27 @@ is([app.askable('batt','watch'), app.askable('hz','watch'), app.askable('touch',
 /* --- screen bands are cut from the category, not from phones --------------------------- */
 const pb = app.bandCuts('phone'), lb = app.bandCuts('laptop');
 is(pb[1] < 9 && lb[0] > 9, true, 'a laptop band is not a phone band');
+const monitorBands = size => app.FILT.scr.all({display:{size}}, {cat:'monitor'});
+is([23.9,24,26.99,27,31.9,32,34,49].map(monitorBands),
+  [['22~24'],['24~27'],['24~27'],['27~30'],['30~32'],['32~34'],['34~40'],['45~']],
+  'screen ranges place each exact boundary in the next band');
+const xiaomiMini = phones.find(p => p.id === 'xiaomi-gaming-monitor-g-pro-27i');
+const monitorState = {...app.st, cat:'monitor',scrs:['27~30'],q:'',brands:[],shops:[],ram:0,stor:0,pmin:0,pmax:Infinity};
+is(app.matches(xiaomiMini, monitorState), true, 'monitor range filters include the lower boundary');
+is(app.matches({...xiaomiMini,display:{...xiaomiMini.display,size:30}}, monitorState), false,
+  'monitor range filters exclude the upper boundary');
+is(app.FILT.panel.of(xiaomiMini), 'Mini-LED', 'Mini LED classification takes precedence over the underlying IPS panel');
+const mixedDisplay = {id:'mixed-display-fixture',category:'laptop',display:{type:'Mini-LED'},variants:[]};
+prices.offers[mixedDisplay.id] = [
+  {shop:'notebookcentre',price:499000,configSpecs:{display:{type:'IPS'}}},
+  {shop:'redstore',price:759000,configSpecs:{display:{type:'Mini-LED'}}}
+];
+const miniFilter = {...monitorState,cat:'laptop',scrs:[],panels:['Mini-LED']};
+is(app.catalogPrice(mixedDisplay, miniFilter),759000,'Mini LED catalogue price uses only matching display offers');
+is(app.matches(mixedDisplay,{...miniFilter,shops:['notebookcentre']}),false,'panel and shop filters match the same offer');
+delete prices.offers[mixedDisplay.id];
+
+
 
 /* --- the readings behind the new filters ----------------------------------------------- */
 const w = ip => app.waterOf({ body: { ip } });

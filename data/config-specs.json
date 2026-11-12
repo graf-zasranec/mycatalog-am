@@ -15573,5 +15573,121 @@
       "source": "https://www.yerevanmobile.am/en/google-pixel-10-pro.html",
       "evidence": "Manual live source Google Pixel 10 Pro/Obsidian; verified {\"color\":\"Obsidian\"}. Exact fixed SKU/specifications; price changes do not invalidate these hardware facts."
     }
+  ],
+  "dell-16-plus-2-in-1-db06250": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/dell-16-plus-2-in-1-db06250",
+      "source": "https://notebookcentre.am/en/product/dell-16-plus-2-in-1-db06250",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "ram": 16,
+        "storage": 1024,
+        "color": "Ice Blue"
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core Ultra 7-256V"
+        },
+        "display": {
+          "size": 16,
+          "resolution": "1920x1200",
+          "touch": true,
+          "type": "IPS",
+          "refresh": 60
+        }
+      },
+      "matchAxes": {
+        "color": "Silver"
+      },
+      "correctAxes": {
+        "color": "Ice Blue"
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/dell-16-plus-2-in-1-db06250",
+      "source": "https://redstore.am/en/product/dell-16-plus-2-in-1-db06250",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "ram": 32,
+        "storage": 1024
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core Ultra 9-288V"
+        },
+        "display": {
+          "size": 16,
+          "type": "Mini-LED",
+          "resolution": "2560x1600",
+          "refresh": 90,
+          "touch": true
+        }
+      }
+    }
+  ],
+  "asus-vivobook-x1504va-bq4173-i7-150u": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/asus-vivobook-x1504va-bq4173",
+      "source": "https://notebookcentre.am/en/product/asus-vivobook-x1504va-bq4173",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "ram": 8,
+        "storage": 512,
+        "color": "Silver"
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core 7-150U"
+        }
+      },
+      "matchAxes": {
+        "color": "Black"
+      },
+      "correctAxes": {
+        "color": "Silver"
+      }
+    },
+    {
+      "shop": "vega",
+      "url": "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-asus-vivobook-15-x1504va-bq4173-core-7-150u-156-8gb-512gb-cool-silver-90nb13y2-m01tw0.html",
+      "source": "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-asus-vivobook-15-x1504va-bq4173-core-7-150u-156-8gb-512gb-cool-silver-90nb13y2-m01tw0.html",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "ram": 8,
+        "storage": 512
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core 7-150U"
+        }
+      }
+    },
+    {
+      "shop": "redstore",
+      "url": "https://redstore.am/en/product/asus-vivobook-15-x1504va-bq4173",
+      "source": "https://redstore.am/en/product/asus-vivobook-15-x1504va-bq4173",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "ram": 8,
+        "storage": 512
+      },
+      "matchAxes": {
+        "ram": 16,
+        "storage": 512
+      },
+      "correctAxes": {
+        "ram": 8,
+        "storage": 512
+      },
+      "specs": {
+        "chipset": {
+          "name": "Intel Core 7-150U"
+        },
+        "os": "Windows 11"
+      }
+    }
   ]
 }

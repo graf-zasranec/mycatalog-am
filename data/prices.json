@@ -118751,19 +118751,6 @@
    },
    {
     "id": "asus-vivobook-x1504va",
-    "shop": "notebookcentre",
-    "title": "Asus Vivobook X1504VA-BQ4173",
-    "price": 315000,
-    "storage": 512,
-    "ram": 8,
-    "color": "Black",
-    "url": "https://notebookcentre.am/en/product/asus-vivobook-x1504va-bq4173",
-    "seeded": true,
-    "seen": "2026-11-11",
-    "band": null
-   },
-   {
-    "id": "asus-vivobook-x1504va",
     "price": 339400,
     "storage": 512,
     "ram": 16,
@@ -131373,40 +131360,7 @@
     "seen": "2026-11-11"
    }
   ],
-  "asus-vivobook-15-x1504va": [
-   {
-    "id": "asus-vivobook-15-x1504va",
-    "price": 315000,
-    "title": "Asus Vivobook 15 X1504VA-BQ4173",
-    "url": "https://redstore.am/en/product/asus-vivobook-15-x1504va-bq4173",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://admin.redstore.am/storage/products/62489/image/7-montaznaia-oblast-1.webp",
-    "sku": "RA173977",
-    "band": null,
-    "ram": 16,
-    "size": 15,
-    "color": "Silver",
-    "shop": "redstore",
-    "seen": "2026-11-12",
-    "checkedAt": "2026-11-12T04:59:28.336Z"
-   },
-   {
-    "id": "asus-vivobook-15-x1504va",
-    "price": 359900,
-    "storage": 512,
-    "title": "Նոթբուք ASUS Vivobook 15 X1504VA-BQ4173 (Core 7-150U) 15.6 8GB 512GB (Cool Silver) (90NB13Y2-M01TW0)",
-    "url": "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-asus-vivobook-15-x1504va-bq4173-core-7-150u-156-8gb-512gb-cool-silver-90nb13y2-m01tw0.html",
-    "inStock": true,
-    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/September/Notebook/Vivobook%2015%20X1504VA-BQ4173%20(Core%207-150U)%2015.6%208GB%20512GB%20(Cool%20Silver)%20(2)-500x500.jpg",
-    "band": null,
-    "ram": 8,
-    "size": 15,
-    "color": "Silver",
-    "shop": "vega",
-    "seen": "2026-11-11"
-   }
-  ],
+  "asus-vivobook-15-x1504va": [],
   "lg-24g411a-b": [
    {
     "id": "lg-24g411a-b",
@@ -158278,22 +158232,6 @@
    },
    {
     "id": "google-pixel-11-pro-xl",
-    "url": "https://3dplanet.am/en/store/product/google-pixel-11-pro-xl",
-    "image": null,
-    "storage": 1024,
-    "ram": 16,
-    "ramFromPage": true,
-    "price": 515000,
-    "color": "Green",
-    "title": "Google Pixel 11 Pro XL (16GB RAM)",
-    "inStock": true,
-    "band": null,
-    "shop": "planet3d",
-    "seen": "2026-11-12",
-    "checkedAt": "2026-11-12T04:21:18.709Z"
-   },
-   {
-    "id": "google-pixel-11-pro-xl",
     "price": 519000,
     "title": "Google Pixel 11 Pro XL 12GB/256GB Obsidian",
     "url": "https://redstore.am/en/product/google-pixel-11-pro-xl-12gb256gb-obsidian",
@@ -160046,21 +159984,6 @@
     "shop": "allsell",
     "seen": "2026-11-11",
     "checkedAt": "2026-11-11T23:44:29.211Z"
-   },
-   {
-    "id": "lenovo-v15-g4-iru",
-    "price": 379000,
-    "storage": 1024,
-    "ram": 16,
-    "title": "Lenovo V15 G4 IRU Core i5 16GB I 1TB (83CC002HUS)",
-    "url": "https://allsell.am/en/lenovo-v15-g4-iru-core-i5-16gb-i-1tb-83cc002hus",
-    "inStock": true,
-    "image": "https://allsell.am/media/catalog/product/cache/6517c62f5899ad6aa0ba23ceb3eeff97/v/1/v14g4_1_2.png",
-    "band": null,
-    "color": "Black",
-    "shop": "allsell",
-    "seen": "2026-11-11",
-    "checkedAt": "2026-11-11T23:45:31.246Z"
    }
   ],
   "lenovo-ideapad-slim-3-15iru8-256gb": [
@@ -162200,11 +162123,12 @@
     "storage": 1024,
     "ram": 16,
     "size": 16,
-    "color": "Silver",
+    "color": "Ice Blue",
     "url": "https://notebookcentre.am/en/product/dell-16-plus-2-in-1-db06250",
     "seeded": true,
     "seen": "2026-11-11",
-    "band": null
+    "band": null,
+    "cpu": "Intel Core Ultra 7-256V"
    },
    {
     "id": "dell-16-plus-2-in-1-db06250",
@@ -162221,7 +162145,8 @@
     "color": "Silver",
     "shop": "redstore",
     "seen": "2026-11-12",
-    "checkedAt": "2026-11-12T04:54:07.529Z"
+    "checkedAt": "2026-11-12T04:54:07.529Z",
+    "cpu": "Intel Core Ultra 9-288V"
    }
   ],
   "hp-omen-slim-16-an0008tx": [
@@ -200661,23 +200586,6 @@
     "shop": "ibolit",
     "seen": "2026-11-12",
     "checkedAt": "2026-11-12T04:21:32.661Z"
-   },
-   {
-    "id": "msi-modern-15-a11mu-1006xge",
-    "price": 247000,
-    "title": "MSI Modern 15 A11MU-1006XGE,(RYZEN 5,RAM -8,SSD - 512)",
-    "url": "https://ibolit.mobi/product/msi-modern-15-a11mu-1006xgeryzen-5ram-8ssd-512/",
-    "storage": 512,
-    "inStock": true,
-    "image": "https://ibolit.mobi/wp-content/uploads/2025/09/msi-modern.jpg",
-    "sku": "IBL:8040",
-    "band": null,
-    "ram": 8,
-    "size": 15,
-    "color": "Silver",
-    "shop": "ibolit",
-    "seen": "2026-11-12",
-    "checkedAt": "2026-11-12T04:25:22.375Z"
    }
   ],
   "msi-modern-15-b11m-006xge": [
@@ -209184,6 +209092,59 @@
     "band": null,
     "color": "Starlight",
     "shop": "zigzag"
+   }
+  ],
+  "asus-vivobook-x1504va-bq4173-i7-150u": [
+   {
+    "id": "asus-vivobook-x1504va-bq4173-i7-150u",
+    "shop": "notebookcentre",
+    "title": "Asus Vivobook X1504VA-BQ4173",
+    "price": 315000,
+    "storage": 512,
+    "ram": 8,
+    "color": "Silver",
+    "url": "https://notebookcentre.am/en/product/asus-vivobook-x1504va-bq4173",
+    "seeded": true,
+    "seen": "2026-11-11",
+    "band": null,
+    "ramFromPage": true,
+    "cpu": "Intel Core 7-150U"
+   },
+   {
+    "id": "asus-vivobook-x1504va-bq4173-i7-150u",
+    "price": 315000,
+    "title": "Asus Vivobook 15 X1504VA-BQ4173",
+    "url": "https://redstore.am/en/product/asus-vivobook-15-x1504va-bq4173",
+    "storage": 512,
+    "inStock": true,
+    "image": "https://admin.redstore.am/storage/products/62489/image/7-montaznaia-oblast-1.webp",
+    "sku": "RA173977",
+    "band": null,
+    "ram": 8,
+    "size": 15,
+    "color": "Silver",
+    "shop": "redstore",
+    "seen": "2026-11-12",
+    "checkedAt": "2026-11-12T04:59:28.336Z",
+    "ramFromPage": true,
+    "cpu": "Intel Core 7-150U"
+   },
+   {
+    "id": "asus-vivobook-x1504va-bq4173-i7-150u",
+    "price": 359900,
+    "storage": 512,
+    "title": "Նոթբուք ASUS Vivobook 15 X1504VA-BQ4173 (Core 7-150U) 15.6 8GB 512GB (Cool Silver) (90NB13Y2-M01TW0)",
+    "url": "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-asus-vivobook-15-x1504va-bq4173-core-7-150u-156-8gb-512gb-cool-silver-90nb13y2-m01tw0.html",
+    "inStock": true,
+    "image": "https://vega.am/image/cache/catalog/1HRACH/2020/2021/2026/September/Notebook/Vivobook%2015%20X1504VA-BQ4173%20(Core%207-150U)%2015.6%208GB%20512GB%20(Cool%20Silver)%20(2)-500x500.jpg",
+    "band": null,
+    "ram": 8,
+    "size": 15,
+    "color": "Silver",
+    "shop": "vega",
+    "seen": "2026-11-11",
+    "ramFromPage": true,
+    "cpu": "Intel Core 7-150U"
    }
   ]
  }

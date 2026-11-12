@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {cacheOfferKey, unavailableCacheKeys, purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows} from './cache-availability.mjs';
+import {cacheOfferKey, unavailableCacheKeys, purchasableOffer, magentoCartState, unavailableSourceKeys, checkpointShopRows, unavailableStorageKeys, storageStockKey} from './cache-availability.mjs';
 const url = 'https://www.zigzag.am/am/samsung-galaxy-a06-4gb-64gb-black.html';
 const rows = [{url, price: 35900, inStock: false}];
 const excluded = new Set(unavailableCacheKeys('zigzag', rows));
@@ -53,3 +53,13 @@ const snapshot = {fetched:'2026-11-04',rows:[
 assert.deepEqual(istoreCachedRows(snapshot,'2026-11-04').map(o=>[o.seen,o.inStock]),[
   ['2026-11-03',false],['2026-11-04',true]
 ], 'fallback keeps the exact row date and preorder status');
+
+const planetUrl = 'https://3dplanet.am/en/store/product/example';
+const disabledTier = {url:planetUrl,storage:1024,inStock:false,unavailableStorage:true};
+const availableTier = {url:planetUrl,storage:512,inStock:true};
+assert.deepEqual(unavailableSourceKeys('planet3d',[disabledTier]),[], 'storage evidence does not block the whole page');
+const disabledKeys = new Set(unavailableStorageKeys('planet3d',[disabledTier,availableTier]));
+assert(disabledKeys.has(storageStockKey('planet3d',disabledTier)));
+assert(!disabledKeys.has(storageStockKey('planet3d',availableTier)));
+const resumedPlanet = checkpointShopRows('planet3d',[availableTier],[],[disabledTier,availableTier]);
+assert.deepEqual(unavailableStorageKeys('planet3d',resumedPlanet),[storageStockKey('planet3d',disabledTier)]);

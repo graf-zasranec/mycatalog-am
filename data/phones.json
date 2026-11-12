@@ -885,6 +885,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 628000
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 577000
       }
     ],
     "display": {
@@ -6095,7 +6100,7 @@
     "display": {
       "size": 14.2,
       "resolution": "3024x1964",
-      "type": "Liquid Retina XDR",
+      "type": "Liquid Retina XDR Mini-LED",
       "refresh": 120
     },
     "battery": {
@@ -6115,7 +6120,8 @@
       "weight": 1550
     },
     "sources": [
-      "https://support.apple.com/en-us/117735"
+      "https://support.apple.com/en-us/117735",
+      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/"
     ],
     "colors": [
       "Silver",
@@ -6207,7 +6213,7 @@
     ],
     "display": {
       "size": 14.2,
-      "type": "Liquid Retina XDR",
+      "type": "Liquid Retina XDR Mini-LED",
       "resolution": "1964x3024",
       "refresh": 120,
       "ppi": 254,
@@ -6239,7 +6245,8 @@
       "materials": "Aluminium unibody"
     },
     "sources": [
-      "https://support.apple.com/en-us/121553"
+      "https://support.apple.com/en-us/121553",
+      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/"
     ],
     "chipset": {
       "name": "Apple M4 Max",
@@ -6280,7 +6287,7 @@
     ],
     "display": {
       "size": 16.2,
-      "type": "Liquid Retina XDR",
+      "type": "Liquid Retina XDR Mini-LED",
       "resolution": "2234x3456",
       "refresh": 120,
       "ppi": 254,
@@ -6312,7 +6319,8 @@
       "materials": "Aluminium unibody"
     },
     "sources": [
-      "https://support.apple.com/en-us/121554"
+      "https://support.apple.com/en-us/121554",
+      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/"
     ],
     "chipset": {
       "name": "Apple M4 Max",
@@ -6335,7 +6343,7 @@
     "accent": "#2E2E30",
     "display": {
       "size": 14.2,
-      "type": "Liquid Retina XDR",
+      "type": "Liquid Retina XDR Mini-LED",
       "resolution": "1964x3024",
       "refresh": 120,
       "ppi": 254,
@@ -6398,6 +6406,9 @@
       "MacBook Pro 14 M4 Pro MX2E3 (2024) Silver",
       "Apple Macbook Pro 14.2\"/M4 Pro/24GB RAM/1TB SSD/MX2J3/Space Black",
       "Apple Macbook Pro 14.2\"/M4 Pro/24GB RAM/512GB SSD/MX2H3/Space Black"
+    ],
+    "sources": [
+      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/"
     ]
   },
   {
@@ -6413,7 +6424,7 @@
     "accent": "#2E2E30",
     "display": {
       "size": 16.2,
-      "type": "Liquid Retina XDR",
+      "type": "Liquid Retina XDR Mini-LED",
       "resolution": "2234x3456",
       "refresh": 120,
       "ppi": 254,
@@ -6469,6 +6480,9 @@
       "MacBook Pro 16 M4Pro",
       "Apple Macbook Pro 16.2\"/M4 Pro/24GB RAM/512GB/MX2X3/Space Black",
       "Apple Macbook Pro 16.2\"/M4 Pro/24GB RAM/512GB SSD/MX2T3/Silver"
+    ],
+    "sources": [
+      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/"
     ]
   },
   {
@@ -15042,7 +15056,14 @@
       {
         "ram": 32,
         "storage": 1024,
-        "priceAmd": 759000
+        "priceAmd": 759000,
+        "cpu": "Intel Core Ultra 9-288V"
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "cpu": "Intel Core Ultra 7-256V",
+        "priceAmd": 499000
       }
     ],
     "battery": {
@@ -15056,7 +15077,8 @@
       "https://www.notebookcheck.net/"
     ],
     "colors": [
-      "Silver"
+      "Silver",
+      "Ice Blue"
     ]
   },
   {
@@ -20624,7 +20646,7 @@
       "size": 110,
       "resolution": "3840 x 2160",
       "refresh": 144,
-      "type": "QLED"
+      "type": "Mini-LED"
     },
     "battery": {},
     "summaryEn": "Hisense 110UXNQ.",
@@ -20633,7 +20655,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://qrcode.hisense.com/appliance/0000000000200149180000000000000000000?lang=en"
     ],
     "colors": [
       "Black"
@@ -20661,7 +20684,7 @@
       "size": 116,
       "resolution": "3840 x 2160",
       "refresh": 165,
-      "type": "QLED"
+      "type": "RGB Mini-LED"
     },
     "battery": {},
     "summaryEn": "Hisense 116UXQ.",
@@ -20670,7 +20693,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://uk.hisense.com/products/tv/rgb-miniled-tv/TV-SET-116UXQTUK-HSN/p/000000000020017377"
     ],
     "colors": [
       "Black"
@@ -21470,7 +21494,7 @@
     ],
     "display": {
       "size": 50,
-      "type": "QLED",
+      "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -21481,7 +21505,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.hisense.es/wp-content/uploads/2025/03/Ficha-Tecnica-Serie-U7Q.pdf"
     ],
     "colors": [
       "Black"
@@ -21805,7 +21830,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "QLED",
+      "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -21816,7 +21841,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.hisense.es/wp-content/uploads/2025/03/Ficha-Tecnica-Serie-U7Q.pdf"
     ],
     "colors": [
       "Black"
@@ -22466,7 +22492,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "QLED",
+      "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -22477,7 +22503,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.hisense.es/wp-content/uploads/2025/03/Ficha-Tecnica-Serie-U7Q.pdf"
     ],
     "colors": [
       "Black"
@@ -22873,7 +22900,7 @@
     ],
     "display": {
       "size": 75,
-      "type": "QLED",
+      "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -22884,7 +22911,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.hisense.es/wp-content/uploads/2025/03/Ficha-Tecnica-Serie-U7Q.pdf"
     ],
     "colors": [
       "Black"
@@ -23237,7 +23265,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "QLED",
+      "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -23248,7 +23276,8 @@
     ],
     "os": "VIDAA",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.hisense.es/wp-content/uploads/2025/03/Ficha-Tecnica-Serie-U7Q.pdf"
     ],
     "colors": [
       "Black"
@@ -35950,7 +35979,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 50,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -35968,7 +35997,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/50qned80a6a/"
     ],
     "colors": [
       "Black"
@@ -36096,7 +36126,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -36114,7 +36144,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/55qned70a6a/"
     ],
     "colors": [
       "Black"
@@ -36132,7 +36163,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -36150,7 +36181,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/55qned80a6a/"
     ]
   },
   {
@@ -36198,7 +36230,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -36216,7 +36248,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/55qned80t6a/"
     ]
   },
   {
@@ -36239,7 +36272,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -36251,7 +36284,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/za/tv-soundbars/qned/55qned816ra/"
     ],
     "colors": [
       "Black"
@@ -36269,7 +36303,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -36288,7 +36322,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/55qned82a6b/"
     ]
   },
   {
@@ -36339,7 +36374,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -36357,7 +36392,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/55qned86t6a/"
     ]
   },
   {
@@ -36480,7 +36516,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 65,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -36498,7 +36534,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/65qned70a6a/"
     ]
   },
   {
@@ -36513,7 +36550,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 65,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -36531,7 +36568,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/65qned80a6a/"
     ]
   },
   {
@@ -36580,7 +36618,7 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 65,
-      "type": "QNED Mini-LED",
+      "type": "QNED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -36598,7 +36636,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/65qned86t6a/"
     ]
   },
   {
@@ -38268,6 +38307,11 @@
         "ram": 12,
         "storage": 256,
         "priceAmd": 220000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 219000
       }
     ],
     "display": {
@@ -46112,7 +46156,7 @@
       "touch": false,
       "size": 55,
       "resolution": "3840 x 2160",
-      "type": "VA",
+      "type": "Mini-LED (VA)",
       "refresh": 165
     },
     "battery": {},
@@ -46121,7 +46165,8 @@
       "popularity"
     ],
     "sources": [
-      "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/ls55cg970nnxgo/SPECSHEET_LS55CG970NNXGO_v2.pdf"
+      "https://image-us.samsung.com/SamsungUS/home/computing/monitors/gaming/ls55cg970nnxgo/SPECSHEET_LS55CG970NNXGO_v2.pdf",
+      "https://www.samsung.com/kz_kz/monitors/gaming/odyssey-ark-g97nc-55-inch-165hz-1ms-curved-uhd-4k-ls55cg97wnixci/"
     ],
     "colors": [
       "Black"
@@ -46371,7 +46416,7 @@
     ],
     "display": {
       "size": 43,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -46383,7 +46428,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -46529,7 +46575,7 @@
     ],
     "display": {
       "size": 50,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -46541,7 +46587,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -46707,7 +46754,7 @@
     "accent": "#3F5B78",
     "display": {
       "size": 55,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -46725,7 +46772,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "aliases": [
       "QE55QN80FAUXRU"
@@ -46756,7 +46804,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -46768,7 +46816,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -46951,7 +47000,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -46963,7 +47012,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -46981,7 +47031,7 @@
     "accent": "#3F5B78",
     "display": {
       "size": 65,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 100
     },
@@ -46999,7 +47049,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "aliases": [
       "QE65QN85DBUXRU"
@@ -47030,7 +47081,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "7680 x 4320",
       "refresh": 120
     },
@@ -47041,7 +47092,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -47059,7 +47111,7 @@
     "accent": "#3F5B78",
     "display": {
       "size": 65,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 165
     },
@@ -47077,7 +47129,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "aliases": [
       "QE65QN90FAUXRU"
@@ -47108,7 +47161,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "7680 x 4320",
       "refresh": 120
     },
@@ -47119,7 +47172,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -47407,7 +47461,7 @@
     "accent": "#3F5B78",
     "display": {
       "size": 75,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -47426,7 +47480,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "aliases": [
       "QE75QN70FAUXRU"
@@ -47454,7 +47509,7 @@
     ],
     "display": {
       "size": 75,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -47466,7 +47521,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -47484,7 +47540,7 @@
     "accent": "#3F5B78",
     "display": {
       "size": 75,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -47503,7 +47559,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "aliases": [
       "QE75QN80FAUXRU"
@@ -47524,7 +47581,7 @@
     "accent": "#3F5B78",
     "display": {
       "size": 75,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -47543,7 +47600,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "aliases": [
       "QE75QN90CAUXRU"
@@ -47767,7 +47825,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "7680 x 4320",
       "refresh": 120
     },
@@ -47778,7 +47836,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -47806,7 +47865,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -47817,7 +47876,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -47845,7 +47905,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -47857,7 +47917,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ],
     "colors": [
       "Black"
@@ -47950,7 +48011,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 43,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -47969,7 +48030,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "aliases": [
       "UE43M70HAUXPY"
@@ -48106,7 +48168,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 55,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -48125,7 +48187,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "aliases": [
       "UE55M70HAUXPY"
@@ -48156,7 +48219,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -48168,7 +48231,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "colors": [
       "Black"
@@ -48235,7 +48299,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -48247,7 +48311,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "colors": [
       "Black"
@@ -48265,7 +48330,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 65,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -48284,7 +48349,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "aliases": [
       "UE65M80HAUXPY"
@@ -48394,7 +48460,7 @@
     ],
     "display": {
       "size": 75,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -48406,7 +48472,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "colors": [
       "Black"
@@ -48424,7 +48491,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 75,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -48443,7 +48510,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "aliases": [
       "UE75M80HAUXPY"
@@ -48514,7 +48582,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -48526,7 +48594,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "colors": [
       "Black"
@@ -49359,7 +49428,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -49370,7 +49439,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://electronics.sony.com/tv-video/televisions/all-tvs/p/k65xr70"
     ],
     "colors": [
       "Black"
@@ -49396,7 +49466,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "LED",
+      "type": "QD-OLED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -49408,6 +49478,9 @@
     "os": "Google TV",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://electronics.sony.com/tv-video/televisions/all-tvs/p/k65xr80m2"
     ]
   },
   {
@@ -49467,7 +49540,7 @@
     ],
     "display": {
       "size": 75,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -49479,6 +49552,9 @@
     "os": "Google TV",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.sony.com/electronics/support/televisions-projectors-lcd-tvs-android-/k-75xr50/specifications"
     ]
   },
   {
@@ -49501,7 +49577,7 @@
     ],
     "display": {
       "size": 75,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -49512,7 +49588,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://electronics.sony.com/tv-video/televisions/all-tvs/p/k75xr70"
     ]
   },
   {
@@ -50992,7 +51069,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 55,
-      "type": "LED",
+      "type": "QD Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -51010,7 +51087,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/uk/en/tvs/55p8l"
     ],
     "colors": [
       "Black"
@@ -51169,7 +51247,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 65,
-      "type": "LED",
+      "type": "QD Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -51187,7 +51265,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/global/en/support/model/65p8l"
     ],
     "colors": [
       "Black"
@@ -51418,7 +51497,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 85,
-      "type": "LED",
+      "type": "QD Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -51436,7 +51515,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/mk/mk/tvs/p8l"
     ],
     "colors": [
       "Black"
@@ -51454,7 +51534,7 @@
     "accent": "#5A6B7C",
     "display": {
       "size": 98,
-      "type": "QLED",
+      "type": "QD Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -51472,7 +51552,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/global/en/tvs/98c6k"
     ]
   },
   {
@@ -52140,7 +52221,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "QLED",
+      "type": "QD Mini-LED",
       "refresh": 144,
       "resolution": "3840 x 2160"
     },
@@ -52150,7 +52231,8 @@
       "popularity"
     ],
     "sources": [
-      "https://vlv.am/en/Product/47565"
+      "https://vlv.am/en/Product/47565",
+      "https://tv-toshiba.ru/tvs/55z680se/"
     ],
     "colors": [
       "Black"
@@ -52279,7 +52361,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "QLED",
+      "type": "QD Mini-LED",
       "refresh": 144,
       "resolution": "3840 x 2160"
     },
@@ -52289,7 +52371,8 @@
       "popularity"
     ],
     "sources": [
-      "https://vlv.am/en/Product/47557"
+      "https://vlv.am/en/Product/47557",
+      "https://tv-toshiba.ru/tvs/65z680se/"
     ],
     "colors": [
       "Black"
@@ -53685,11 +53768,12 @@
     "accent": "#5C6470",
     "display": {
       "size": 27,
-      "type": "IPS",
-      "resolution": "2560 x 1600",
+      "type": "Mini-LED (Fast IPS)",
+      "resolution": "2560 x 1440",
       "refresh": 180,
-      "brightness": 350,
-      "touch": false
+      "brightness": 1000,
+      "touch": false,
+      "localDimmingZones": 1152
     },
     "connectivity": {
       "ports": "HDMI, Display port"
@@ -53708,6 +53792,10 @@
     ],
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-mini-led-gaming-monitor-g-pro-27i/",
+      "https://www.mi.com/uk/product/xiaomi-mini-led-gaming-monitor-g-pro-27i/specs/"
     ]
   },
   {
@@ -59669,7 +59757,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "QLED",
+      "type": "QD Mini-LED",
       "refresh": 144,
       "resolution": "3840 x 2160"
     },
@@ -59680,7 +59768,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "https://vlv.am/en/Product/45645"
+      "https://vlv.am/en/Product/45645",
+      "https://www.mi.com/global/product/xiaomi-tv-s-pro-mini-led-65-2026/"
     ],
     "colors": [
       "Black"
@@ -64886,7 +64975,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "Neo QLED",
+      "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -64899,6 +64988,9 @@
     "os": "Tizen",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
     ]
   },
   {
@@ -65031,7 +65123,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "LED",
+      "type": "OLED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -65047,6 +65139,9 @@
     "os": "Google TV",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://electronics.sony.com/tv-video/televisions/all-tvs/p/k55xr80"
     ]
   },
   {
@@ -79527,7 +79622,7 @@
     ],
     "display": {
       "size": 100,
-      "type": "LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -79541,6 +79636,9 @@
     "os": "Tizen",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ]
   },
   {
@@ -79635,7 +79733,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "Mini LED",
+      "type": "QD-OLED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -79649,6 +79747,9 @@
     "os": "Google TV",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://electronics.sony.com/tv-video/televisions/all-tvs/p/k55xr80m2"
     ]
   },
   {
@@ -80174,7 +80275,7 @@
     ],
     "display": {
       "size": 75,
-      "type": "QLED",
+      "type": "QD Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 144
     },
@@ -80185,7 +80286,10 @@
       "display.resolution",
       "chipset"
     ],
-    "os": "Google TV"
+    "os": "Google TV",
+    "sources": [
+      "https://www.tcl.com/global/en/support/model/75p8l"
+    ]
   },
   {
     "id": "tcl-85c7l-sqd-miniled",
@@ -81160,7 +81264,10 @@
       "weight": 1700
     },
     "sources": [
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://notebookcentre.am/en/product/asus-vivobook-x1504va-bq4173",
+      "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-asus-vivobook-15-x1504va-bq4173-core-7-150u-156-8gb-512gb-cool-silver-90nb13y2-m01tw0.html",
+      "https://redstore.am/en/product/asus-vivobook-15-x1504va-bq4173"
     ],
     "colors": [
       "Silver"
@@ -84301,6 +84408,11 @@
         "ram": 8,
         "storage": 512,
         "priceAmd": 330000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 375000
       }
     ],
     "battery": {
@@ -94867,12 +94979,13 @@
       "size": 100,
       "refresh": 165,
       "resolution": "3840 x 2160",
-      "type": "QLED"
+      "type": "QLED Mini-LED"
     },
     "battery": {},
     "summaryEn": "Hisense 100U7Q.",
     "sources": [
-      "https://vlv.am/en/Product/38792"
+      "https://vlv.am/en/Product/38792",
+      "https://www.hisense.es/wp-content/uploads/2025/03/Ficha-Tecnica-Serie-U7Q.pdf"
     ],
     "unsure": [
       "popularity"
@@ -95431,13 +95544,14 @@
     "display": {
       "size": 50,
       "resolution": "3840 x 2160",
-      "type": "LED",
+      "type": "Mini-LED",
       "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung UE50M70HAUXPY.",
     "sources": [
-      "https://vlv.am/en/Product/46661"
+      "https://vlv.am/en/Product/46661",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ],
     "unsure": [
       "popularity"
@@ -168882,7 +168996,7 @@
     ],
     "display": {
       "size": 85,
-      "type": "Mini LED",
+      "type": "Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -168897,7 +169011,8 @@
       "weight": 28700
     },
     "sources": [
-      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-samsung-ue85m70hauxpy.html"
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-samsung-ue85m70hauxpy.html",
+      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
     ]
   },
   {
@@ -172736,7 +172851,7 @@
     ],
     "display": {
       "size": 65,
-      "type": "QNED",
+      "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -172751,7 +172866,8 @@
       "weight": 21000
     },
     "sources": [
-      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-65qned85b6b.html"
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-65qned85b6b.html",
+      "https://www.lg.com/uk/tvs-soundbars/qned-evo/65qned85b6b/"
     ]
   },
   {
@@ -172776,7 +172892,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "QNED",
+      "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -172791,7 +172907,8 @@
       "weight": 9500
     },
     "sources": [
-      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-55qned70b6c.html"
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-55qned70b6c.html",
+      "https://www.lg.com/uk/tvs-soundbars/qned/55qned70b6c/"
     ]
   },
   {
@@ -172856,7 +172973,7 @@
     ],
     "display": {
       "size": 55,
-      "type": "QNED",
+      "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
       "refresh": 120
     },
@@ -172871,7 +172988,8 @@
       "weight": 14500
     },
     "sources": [
-      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-55qned85b6b.html"
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-55qned85b6b.html",
+      "https://www.lg.com/uk/tvs-soundbars/qned-evo/55qned85b6b/"
     ]
   },
   {
