@@ -10,7 +10,7 @@ export function readSmartGlasses(html,review,url){
  const o=own[0],price=Math.round(Number(o.price));const cash=html.match(/<span\b(?=[^>]*\bid=["']price_small["'])[^>]*data-price=["']([\d, ]+)["']/i)?.[1];
  if(cash&&Number(cash.replace(/\D/g,''))!==price)throw Error('Smart-glasses cash/schema conflict: '+url);
  if(!['https://schema.org/InStock','http://schema.org/InStock','https://schema.org/OutOfStock','http://schema.org/OutOfStock','https://schema.org/PreOrder','http://schema.org/PreOrder'].includes(o.availability))throw Error('Smart-glasses stock unknown: '+url);
- return {id:review.id,url,title:review.title,price,storage:32,color:review.color,inStock:/\/InStock$/.test(o.availability)};
+ return {id:review.id,url,title:review.title,price,storage:32,color:review.color,inStock:/\/(InStock|PreOrder)$/.test(o.availability),...(/\/PreOrder$/.test(o.availability)?{preorder:true}:{})};
 }
 export async function collectSmartGlasses({get,pause}){
  const file='data/smart-glasses-map.json';if(!fs.existsSync(file))return[];

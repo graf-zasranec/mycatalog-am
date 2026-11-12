@@ -35,6 +35,20 @@ export function istoreCartState(html, url) {
   return states.size === 1 ? [...states][0] : null;
 }
 
+// A pre-order button on the exact product with no enabled buy button: on sale today, tagged.
+export function istorePreorder(html, url) {
+  const id = String(url || '').match(/-(\d+)\/?$/)?.[1];
+  if (!id) return false;
+  let pre = false, buy = false;
+  for (const [, attrs] of String(html || '').matchAll(/<(?:a|button)\b([^>]*)>/gi)) {
+    const classes = attrs.match(/\sclass=["']([^"']*)["']/i)?.[1].split(/\s+/) || [];
+    if (!classes.includes('add-to-cart-button') || attrs.match(/\sdata-product_id=["'](\d+)["']/i)?.[1] !== id) continue;
+    if (classes.includes('make-preorder')) pre = true;
+    if (classes.includes('add-to-cart-pv') && !/\sdisabled(?:\s|=|$)/i.test(attrs)) buy = true;
+  }
+  return pre && !buy;
+}
+
 export function istoreCachedRows(snapshot, today) {
   const now = Date.parse(today);
   return (snapshot?.rows || []).flatMap(row => {

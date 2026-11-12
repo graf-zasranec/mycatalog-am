@@ -1668,7 +1668,10 @@ async function crawlLd(urls, cap = 6, names = {}) {
       storage: storageOf(title) ?? storageOf(u),
       // Only an explicit out-of-stock value drops the offer; a missing availability means the
       // shop did not say, and those are kept the way every other adapter keeps them.
-      inStock: !/OutOfStock|SoldOut|Discontinued|BackOrder|PreOrder/i.test(String(o.availability || '')),
+      // Pre-order is an offer you can place today at that price (owner, 2026-11-12: "we add
+      // preorder, just add tag preorder"), so it is kept and tagged instead of read as out of stock.
+      inStock: !/OutOfStock|SoldOut|Discontinued|BackOrder/i.test(String(o.availability || '')),
+      preorder: /PreOrder|PreSale/i.test(String(o.availability || '')) || undefined,
       image: safeUrl(String(img || '')) || null,
       sku: p.sku || null
     });
@@ -2315,7 +2318,7 @@ const SHOPS = {
         if (!price || !title) continue;
         if (!safeUrl(u)) continue;
         out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u,
-          inStock: istoreCartState(html, u) ?? undefined, checkedAt: FETCH_CHECKED.get(u),
+          ...(istorePreorder(html, u) ? { inStock: true, preorder: true } : { inStock: istoreCartState(html, u) ?? undefined }), checkedAt: FETCH_CHECKED.get(u),
           image: (html.match(/https:\/\/istore\.am\/[^"']*?\.(?:jpg|png|webp)/) || [])[0] || null });
       }
       // what a refused run will price from (see above); the id is left out on purpose
@@ -2953,7 +2956,7 @@ if (rehomed.length) console.log(`${rehomed.length} carried offer(s) re-matched a
 const report = [];
 import {modelEsimOnly} from './tools/sim-hardware.mjs';
 // Parser-only audit tools stop at this marker; runtime helpers belong after it.
-import { purchasableOffer, magentoCartState, unavailableSourceKeys, unavailableStorageKeys, storageStockKey, checkpointShopRows, istoreCartState, istoreCachedRows } from './tools/cache-availability.mjs';
+import { purchasableOffer, magentoCartState, unavailableSourceKeys, unavailableStorageKeys, storageStockKey, checkpointShopRows, istoreCartState, istorePreorder, istoreCachedRows } from './tools/cache-availability.mjs';
 import {resumablePartial} from './tools/refresh-recovery.mjs';
 import { caseSize } from './tools/spec-values.mjs';
 
@@ -3567,9 +3570,18 @@ try {
   // A colour that is still not one of the product's own reads as "not stated", which the page
   // shows under every swatch - left as it was, it vanished the moment a reader picked any colour.
   let q = 0;
+  // Kept, not just counted: data/colour-report.json lists every shop colour that matched none of the
+  // product's own, so a new spelling or a missing finish shows up after the crawl instead of in a
+  // hand check (2026-11-12: one Mobile Centre check turned up 50 such names and a misfiled watch).
+  const unknown = new Map();
   for (const [id, list] of Object.entries(offers)) { const c = (phoneById[id] || {}).colors;
-    if (c?.length) for (const o of list) if (o.color && !c.includes(o.color)) { o.color = null; q++; } }
+    if (c?.length) for (const o of list) if (o.color && !c.includes(o.color)) {
+      const k = `${o.shop}|${id}|${o.color}`;
+      if (!unknown.has(k)) unknown.set(k, { shop: o.shop, id, colour: o.color, ours: c, title: o.title || '', url: o.url || '' });
+      o.color = null; q++; } }
   if (q) console.log(`${q} offer colour(s) the product does not come in - left unstated`);
+  fs.writeFileSync('data/colour-report.json', JSON.stringify({ generated: new Date().toISOString(),
+    rows: [...unknown.values()].sort((a, b) => a.shop.localeCompare(b.shop) || a.id.localeCompare(b.id)) }, null, 1) + '\n');
 } catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
 // Re-read authoritative VLV titles after generic palette quarantine, including carried rows.
 const vlvColorChanges = applyVlvTitleColors(phones, offers, JSON.parse(fs.readFileSync('data/color-aliases.json','utf8')));

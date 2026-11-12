@@ -122,7 +122,7 @@ jobs:
           # built by pages.yml when this run finishes (2026-11-08), so a concurrent publish no
           # longer means rebuilding and re-committing 11,000 generated files.
           crawl_base=$(git rev-parse HEAD)
-          git add data/prices.json data/history.json data/eldorado.json data/eldorado-refresh-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json
+          git add data/prices.json data/history.json data/eldorado.json data/eldorado-refresh-report.json data/colour-report.json data/zigzag.json data/listings.csv data/links.csv data/phones.json
           if ! git diff --cached --quiet; then
             git commit -m "prices: $(date -u +%Y-%m-%d)"
           fi

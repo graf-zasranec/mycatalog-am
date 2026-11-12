@@ -2842,7 +2842,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
       ].filter(Boolean).join(' · ')}${!(of && simChoice(of)) ? ''
         : o.esim === true ? ' <i class="esim">eSIM</i>'
         : o.esim === false ? ' <i class="esim nano">Nano-SIM</i>' : ''}${o.checkColor || (!o.color && ((of && of.colors) || []).length > 1)
-        ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${seenTag(o)}</span>
+        ? ` <i class="chk" title="${esc(x('checkColorHint'))}">${esc(t('offer.check_color'))}</i>` : ''}${o.preorder ? ` <i class="esim po">${esc(x('preorder'))}</i>` : ''}${seenTag(o)}</span>
     <span class="pr num">${money(o.price)} ֏</span>
     <!-- No stock line. "In stock" was the shop's word for it on the day we read the page and
          "stock not known" said nothing at all, so the column was two thirds noise. What a reader

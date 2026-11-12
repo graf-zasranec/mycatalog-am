@@ -72,7 +72,9 @@ export function asbcOffer(p) {
     storage:watch?size:mac?macStorage:storageGB(f.INTERNAL_MEMORY_SIZE||f.STORAGE_CAPACITY)||storageGB(title.match(/\b\d+\s*(?:GB|TB)\b/i)?.[0]),
     ram,size,color,band,...(tablet?{cell:/Cellular/i.test(title)}:{}),
     image:image?`https://prod-cdn.prod.asbis.io/s3size/el:t/f:webp/rt:fill/plain/s3:/${image}`:null,
-    inStock:Number.isFinite(p.real_stock)&&p.real_stock>0&&p.available_action==='add_to_cart'&&
+    // pre-order: on sale today at this price, tagged (owner 2026-11-12)
+    ...(p.available_action==='preorder'?{preorder:true}:{}),
+    inStock:(p.available_action==='preorder'||Number.isFinite(p.real_stock)&&p.real_stock>0&&p.available_action==='add_to_cart')&&
       (p.condition==null||p.condition===1)&&(p.status==null||p.status===1)};
 }
 export async function collectAsbc({get,match,pause}) {

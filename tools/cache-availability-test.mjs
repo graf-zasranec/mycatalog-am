@@ -63,3 +63,9 @@ assert(disabledKeys.has(storageStockKey('planet3d',disabledTier)));
 assert(!disabledKeys.has(storageStockKey('planet3d',availableTier)));
 const resumedPlanet = checkpointShopRows('planet3d',[availableTier],[],[disabledTier,availableTier]);
 assert.deepEqual(unavailableStorageKeys('planet3d',resumedPlanet),[storageStockKey('planet3d',disabledTier)]);
+// pre-order on the exact product, no enabled buy button: kept and tagged (owner 2026-11-12)
+{ const { istorePreorder } = await import('./cache-availability.mjs');
+  const u = 'https://istore.am/product/x-2827';
+  assert.equal(istorePreorder('<button class="add-to-cart-button make-preorder" data-product_id="2827">Preorder</button>', u), true);
+  assert.equal(istorePreorder('<button class="add-to-cart-button make-preorder" data-product_id="2827"></button><button class="add-to-cart-button add-to-cart-pv" data-product_id="2827"></button>', u), false);
+  assert.equal(istorePreorder('<button class="add-to-cart-button make-preorder" data-product_id="9999"></button>', u), false); }

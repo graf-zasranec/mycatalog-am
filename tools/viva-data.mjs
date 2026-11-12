@@ -12,7 +12,9 @@ export function vivaProductPage(html) {
   const amount=box.match(/<span\b[^>]*\bid=["']display_price["'][^>]*>([\s\S]*?)<\/span>/i);
   if(!heading||!amount)return null;const price=Number(text(amount[1]).replace(/[^0-9]/g,''));if(!(price>0))return null;
   const buy=box.match(/<a\b(?=[^>]*class=["'][^"']*\bviva-buy-btn\b)[^>]*>/i)?.[0]||'';
-  const unavailable=/\bpre_order_button\b|\bdata-pre_order_date\s*=|\baria-disabled=["']true["']/i.test(buy);
-  const inStock=unavailable?false:/\bonclick=["'][^"']*\baddTo(?:Cart|Basket)\s*\(/i.test(buy)?true:null;
-  return {title:text(heading[1]),price,inStock};
+  // pre-order is sold and tagged (owner 2026-11-12), a disabled button is not
+  const preorder=/\bpre_order_button\b|\bdata-pre_order_date\s*=/i.test(buy);
+  const unavailable=!preorder&&/\baria-disabled=["']true["']/i.test(buy);
+  const inStock=preorder?true:unavailable?false:/\bonclick=["'][^"']*\baddTo(?:Cart|Basket)\s*\(/i.test(buy)?true:null;
+  return {title:text(heading[1]),price,inStock,...(preorder?{preorder:true}:{})};
 }
