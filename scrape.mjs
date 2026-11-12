@@ -1984,6 +1984,20 @@ const SHOPS = {
             seenU.add(u2);
             queue.push({ id: h.id, price: 0, title: h.title, url: u2 });
           }
+          // The "Առկա գույներ" (colours) block links the other colours as index.php?m=prod&pid=N,
+          // which the /product/ pattern above never matches - so the Z Flip 7 512GB reached the
+          // site in Coral Red only while Jet Black and Blue Shadow sat at the same price (2026-11-12).
+          const ci = (page || '').indexOf('Առկա գույներ');
+          if (ci >= 0) for (const m of page.slice(ci, ci + 4000).matchAll(/href="(https:\/\/(?:www\.)?mobilecentre\.am\/index\.php\?m=prod&(?:amp;)?pid=(\d+))"/g)) {
+            const pid = m[2];
+            if ([...seenU].some(s => s.endsWith('/' + pid + '/') || s.endsWith('pid=' + pid))) continue;
+            const u2 = safeUrl(`https://mobilecentre.am/index.php?m=prod&pid=${pid}`);
+            if (!u2) continue;
+            seenU.add(u2);
+            queue.push({ id: h.id, price: 0, title: h.title, url: u2, colourSibling: true });
+          }
+          // a colour link carries no slug, so its own page title has to name the same product
+          if (h.colourSibling && matchPhone(title) !== h.id) continue;
           // A sibling was reached from another page and carries no listing price of its own; the
           // page states it, and mcCash reads the cash figure rather than the instalment one.
           const price = mcCash(page || '') || h.price;
