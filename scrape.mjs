@@ -1964,8 +1964,12 @@ const SHOPS = {
         // ordinary link whose slug names it in full, ".../iphone-17-pro-512gb-nano-sim-&-esim-
         // _silver_/33185/", each with its own id, its own page and its own price. Following them
         // is the difference between one iPhone 17 Pro and the eighteen this shop actually sells.
-        const seenU = new Set(hits.map(h => h.url));
-        const queue = hits.slice();
+        // The page number is what resolves - the slug is decoration, so /samsung-galaxy-a18/34467/,
+        // /samsung-galaxy-a18-6gb_128gb-_silver_/34467/ and ?pid=34467 are one page read three times
+        // (2026-11-12 probe). Dedupe on the number, not the url.
+        const mcPid = u => (String(u).match(/\/(\d+)\/?$/) || String(u).match(/[?&]pid=(\d+)/) || [])[1] || String(u);
+        const seenU = new Set();
+        const queue = hits.filter(h => !seenU.has(mcPid(h.url)) && seenU.add(mcPid(h.url)));
         // 2500, not 800: with the extra categories (2026-11-11) the 800 ran out before the queued
         // sibling builds and 122 phone offers quietly dropped.
         for (let qi = 0; qi < queue.length && qi < 2500; qi++) {
@@ -1973,15 +1977,18 @@ const SHOPS = {
           const page = await get(h.url); await sleep(DELAY_MS);
           const og = page && clean((page.match(/property="og:title" content="([^"]+)"/) || [])[1] || "");
           const SEP = " - ";                                    // og:title is "Mobile Centre. - <sku>"
-          const title = og ? (og.includes(SEP) ? og.slice(og.indexOf(SEP) + SEP.length) : og) : h.title;
+          // some pages give only the shop's tagline or a bare category ("Smart Watch", "Headphone")
+          // as og:title - keep the listing's model name then
+          const ogSku = og && og.includes(SEP) ? og.slice(og.indexOf(SEP) + SEP.length) : '';
+          const title = ogSku.length > 12 ? ogSku : h.title;
           const img = page && (page.match(/property="og:image" content="([^"]+)"/) || [])[1];
           for (const m of (page || '').matchAll(/href="(https:\/\/mobilecentre\.am\/product\/[^"]*?\/\d+\/)"/g)) {
             const u2 = safeUrl(m[1]);
-            if (seenU.has(u2) || !safeUrl(u2)) continue;
+            if (!safeUrl(u2) || seenU.has(mcPid(u2))) continue;
             // a sibling build of THIS product, not one of the shop's recommendations
             const id2 = matchPhone(u2);
             if (id2 !== h.id) continue;
-            seenU.add(u2);
+            seenU.add(mcPid(u2));
             queue.push({ id: h.id, price: 0, title: h.title, url: u2 });
           }
           // The "Առկա գույներ" (colours) block links the other colours as index.php?m=prod&pid=N,
@@ -1990,10 +1997,10 @@ const SHOPS = {
           const ci = (page || '').indexOf('Առկա գույներ');
           if (ci >= 0) for (const m of page.slice(ci, ci + 4000).matchAll(/href="(https:\/\/(?:www\.)?mobilecentre\.am\/index\.php\?m=prod&(?:amp;)?pid=(\d+))"/g)) {
             const pid = m[2];
-            if ([...seenU].some(s => s.endsWith('/' + pid + '/') || s.endsWith('pid=' + pid))) continue;
+            if (seenU.has(pid)) continue;
             const u2 = safeUrl(`https://mobilecentre.am/index.php?m=prod&pid=${pid}`);
             if (!u2) continue;
-            seenU.add(u2);
+            seenU.add(pid);
             queue.push({ id: h.id, price: 0, title: h.title, url: u2, colourSibling: true });
           }
           // a colour link carries no slug, so its own page title has to name the same product
@@ -2984,7 +2991,7 @@ if (process.argv.includes('--probe')) {
   const key = process.argv[process.argv.indexOf('--probe') + 1];
   const got = await LANE.run({ shop: key, status: 0 }, () => SHOPS[key].run());
   console.log(`\n${key}: ${got.length} offers, ${new Set(got.map(o => o.id)).size} models`);
-  for (const o of got.slice(0, process.argv.includes("--all") ? 1e6 : 40)) console.log(`  ${o.id} | ${o.price} | ${o.storage ?? ''} | ${o.inStock} | ${o.url}`);
+  for (const o of got.slice(0, process.argv.includes("--all") ? 1e6 : 40)) console.log(`  ${o.id} | ${o.price} | ${o.storage ?? ''} | ${o.inStock} | ${o.url}` + (process.argv.includes('--titles') ? ` | ${o.title ?? ''}` : ''));
   process.exit(0);
 }
 const sourceUnavailable = new Set();
