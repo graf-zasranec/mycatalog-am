@@ -168830,8 +168830,9 @@
     ],
     "display": {
       "size": 85,
-      "type": "LED",
-      "resolution": "3840 x 2160"
+      "type": "Mini LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "Samsung UE85M70HAUXPY.",
@@ -168839,6 +168840,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 28700
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-samsung-ue85m70hauxpy.html"
     ]
   },
   {
@@ -168861,7 +168868,12 @@
         "priceAmd": 699900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 48,
+      "type": "OLED",
+      "resolution": "3840 x 2160",
+      "refresh": 100
+    },
     "battery": {},
     "summaryEn": "Samsung QE48S85HAEXPY.",
     "unsure": [
@@ -168869,6 +168881,12 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 12300
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-samsung-qe48s85haexpy.html"
     ]
   },
   {
@@ -168891,7 +168909,12 @@
         "priceAmd": 409000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 65,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "Sharp 4T-C65FJ16MX.",
     "unsure": [
@@ -168899,6 +168922,12 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 17000
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-sharp-4t-c65fj16mx.html"
     ]
   },
   {
@@ -168921,7 +168950,12 @@
         "priceAmd": 299000
       }
     ],
-    "display": {},
+    "display": {
+      "size": 55,
+      "type": "LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "Sharp 4T-C55FJ16MX.",
     "unsure": [
@@ -168929,6 +168963,12 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 13000
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-sharp-4t-c55fj16mx.html"
     ]
   },
   {
@@ -168962,6 +169002,9 @@
     ],
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/soundbars/soundbar-tcl-s55h.html"
     ]
   },
   {
@@ -169014,7 +169057,12 @@
         "priceAmd": 169900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 34,
+      "type": "VA",
+      "resolution": "3440 x 1440",
+      "refresh": 100
+    },
     "battery": {},
     "summaryEn": "Samsung ViewFinity S6 34 UWQHD LS34C650UAIXCI.",
     "unsure": [
@@ -169025,6 +169073,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 8000,
+      "height": 561,
+      "width": 806,
+      "thickness": 241
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-samsung-viewfinity-s6-34-uwqhd-ls34c650uaixci.html"
     ]
   },
   {
@@ -169103,6 +169160,9 @@
     "colors": [
       "White",
       "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-4-anc-t0026l-white-55038500.html"
     ]
   },
   {
@@ -169144,6 +169204,9 @@
       "White",
       "Pink",
       "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-7i-wired-charging-t0025l-white-55038457.html"
     ]
   },
   {
@@ -169183,6 +169246,9 @@
     "colors": [
       "Beige",
       "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-3-ulc-ct020-wired-charging-beige-55037990.html"
     ]
   },
   {
@@ -169206,7 +169272,11 @@
         "priceAmd": 159900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.47,
+      "type": "AMOLED",
+      "resolution": "466 x 466"
+    },
     "battery": {},
     "summaryEn": "Huawei WATCH GT6 Pro 46mm ATM-B29.",
     "unsure": [
@@ -169218,6 +169288,9 @@
     "colors": [
       "Black",
       "Brown"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-pro-46mm-atm-b29-black-fluoroelastomer-strap-black-55020fwc.html"
     ]
   },
   {
@@ -169241,7 +169314,11 @@
         "priceAmd": 129900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.47,
+      "type": "AMOLED",
+      "resolution": "466 x 466"
+    },
     "battery": {},
     "summaryEn": "Huawei WATCH GT6 46mm ATM-B19.",
     "unsure": [
@@ -169253,6 +169330,9 @@
     "colors": [
       "Green",
       "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-46mm-atm-b19-green-woven-strap-silver-55020fwd.html"
     ]
   },
   {
@@ -169276,7 +169356,11 @@
         "priceAmd": 119900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.32,
+      "type": "AMOLED",
+      "resolution": "466 x 466"
+    },
     "battery": {},
     "summaryEn": "Huawei WATCH GT6 41mm KSU-B19.",
     "unsure": [
@@ -169288,6 +169372,9 @@
     "colors": [
       "Purple",
       "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-41mm-ksu-b19-purple-fluoroelastomer-strap-silver-55020fvu.html"
     ]
   },
   {
@@ -169312,7 +169399,11 @@
         "priceAmd": 99900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 1.82,
+      "type": "AMOLED",
+      "resolution": "480 x 408"
+    },
     "battery": {},
     "summaryEn": "Huawei WATCH FIT 4 Pro SYA-B29.",
     "unsure": [
@@ -169325,6 +169416,9 @@
       "Black",
       "Blue",
       "Green"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-fit-4-pro-sya-b29-blue-fluoroelastomer-strap-blue-55020fah.html"
     ]
   },
   {
@@ -169355,6 +169449,12 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "fridge"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-hbx470amci-hs2.html"
     ]
   },
   {
@@ -169385,6 +169485,12 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "fridge"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-hbx430amci-hs2.html"
     ]
   },
   {
@@ -169418,6 +169524,12 @@
     ],
     "colors": [
       "Silver"
+    ],
+    "appliance": {
+      "type": "fridge"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-berg-br-n344bxi.html"
     ]
   },
   {
@@ -169451,6 +169563,20 @@
     ],
     "colors": [
       "Silver"
+    ],
+    "appliance": {
+      "type": "fridge",
+      "volume": 536,
+      "noise": "27 dB",
+      "nofrost": true
+    },
+    "body": {
+      "height": 1750,
+      "width": 800,
+      "thickness": 735
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-xe55pm-sl.html"
     ]
   },
   {
@@ -169484,6 +169610,20 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "fridge",
+      "volume": 578,
+      "noise": "27 dB",
+      "nofrost": true
+    },
+    "body": {
+      "height": 1850,
+      "width": 800,
+      "thickness": 735
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-xp59pg-bk.html"
     ]
   },
   {
@@ -169514,6 +169654,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 6,
+      "programs": 14,
+      "noise": "72 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 380
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-electrolux-ews-6406be.html"
     ]
   },
   {
@@ -169544,6 +169701,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 8,
+      "programs": 10,
+      "noise": "74 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 550
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-aeg-lfr6d844e.html"
     ]
   },
   {
@@ -169574,6 +169748,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 9,
+      "programs": 10,
+      "noise": "76 dB"
+    },
+    "body": {
+      "height": 847,
+      "width": 597,
+      "thickness": 636
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-aeg-lfr6g944ge.html"
     ]
   },
   {
@@ -169604,6 +169795,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 6,
+      "programs": 15,
+      "noise": "74 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 595,
+      "thickness": 435
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-gorenje-w1nhpi60scs.html"
     ]
   },
   {
@@ -169634,6 +169842,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 8.5,
+      "programs": 10,
+      "noise": "76 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 560
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-sharp-es-fe852kjz-w.html"
     ]
   },
   {
@@ -169664,6 +169889,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 10,
+      "programs": 14,
+      "noise": "68 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 600
+    },
+    "colors": [
+      "Ocean Blue"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-berg-bwm-s10147diddob.html"
     ]
   },
   {
@@ -169694,6 +169936,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 10.5,
+      "programs": 10,
+      "noise": "69 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 680
+    },
+    "colors": [
+      "Grey"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-sharp-es-fs1054kjz-g.html"
     ]
   },
   {
@@ -169724,6 +169983,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 12.5,
+      "programs": 15,
+      "noise": "76 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 680
+    },
+    "colors": [
+      "Grey"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-sharp-es-fp1252kjz-s.html"
     ]
   },
   {
@@ -169754,6 +170030,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "washing_machine",
+      "load": 10.5,
+      "programs": 15,
+      "noise": "76 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 600,
+      "thickness": 680
+    },
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-sharp-es-dp1054kjz-s.html"
     ]
   },
   {
@@ -169787,11 +170080,24 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "dryer",
+      "programs": 12,
+      "noise": "61 dB"
+    },
+    "body": {
+      "height": 850,
+      "width": 596,
+      "thickness": 636
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/tumble-dryers/tumble-dryer-aeg-tr9596cde.html"
     ]
   },
   {
     "id": "berg-bmw-23dgbn",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "Berg",
     "name": "BMW-23DGBN",
     "aliases": [
@@ -169817,11 +170123,28 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 23,
+      "power": 800
+    },
+    "body": {
+      "height": 290,
+      "width": 485,
+      "thickness": 400
+    },
+    "colors": [
+      "Black",
+      "Silver"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-berg-bmw-23dgbn.html"
     ]
   },
   {
     "id": "electrolux-emz421mmti",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "Electrolux",
     "name": "EMZ421MMTI",
     "aliases": [
@@ -169850,11 +170173,24 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 21,
+      "power": 800
+    },
+    "body": {
+      "height": 262,
+      "width": 442,
+      "thickness": 343
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-electrolux-emz421mmti.html"
     ]
   },
   {
     "id": "sharp-r-20gh-bk2",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "Sharp",
     "name": "R-20GH-BK2",
     "aliases": [
@@ -169880,11 +170216,27 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 20,
+      "power": 700
+    },
+    "body": {
+      "height": 260,
+      "width": 450,
+      "thickness": 330
+    },
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-sharp-r-20gh-bk2.html"
     ]
   },
   {
     "id": "electrolux-emz725mmk",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "Electrolux",
     "name": "EMZ725MMK",
     "aliases": [
@@ -169913,11 +170265,24 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 25,
+      "power": 900
+    },
+    "body": {
+      "height": 280,
+      "width": 470,
+      "thickness": 350
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-electrolux-emz725mmk.html"
     ]
   },
   {
     "id": "samsung-mg30t5018ak-bw",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "Samsung",
     "name": "MG30T5018AK/BW",
     "aliases": [
@@ -169946,6 +170311,19 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 30,
+      "power": 900
+    },
+    "body": {
+      "height": 298,
+      "width": 517,
+      "thickness": 425
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-samsung-mg30t5018akbw.html"
     ]
   },
   {
@@ -169979,6 +170357,19 @@
     ],
     "colors": [
       "Grey"
+    ],
+    "appliance": {
+      "type": "freezer",
+      "volume": 322,
+      "noise": "43 dB"
+    },
+    "body": {
+      "height": 1850,
+      "width": 600,
+      "thickness": 630
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/freezers/freezer-berg-bf-n322x.html"
     ]
   },
   {
@@ -170009,6 +170400,22 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "dishwasher",
+      "programs": 8,
+      "noise": "46 dB"
+    },
+    "body": {
+      "height": 818,
+      "width": 596,
+      "thickness": 550
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/built-in-appliances/dishwashers-built-in/dishwasher-built-in-electrolux-e62ld200s.html"
     ]
   },
   {
@@ -170039,6 +170446,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000,
+      "noise": "25 dB",
+      "area": "≤60 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-eacsi-18hvp-ikn8-t.html"
     ]
   },
   {
@@ -170069,6 +170488,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "noise": "33 dB",
+      "area": "≤40 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-eacsi-12hvp-ikn8-t.html"
     ]
   },
   {
@@ -170099,6 +170530,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "noise": "33 dB",
+      "area": "≤30 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-eacsi-09hvp-ikn8-t.html"
     ]
   },
   {
@@ -170129,6 +170572,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 30000,
+      "noise": "46 dB",
+      "area": "≤100 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-max-bgaci-30-t.html"
     ]
   },
   {
@@ -170159,6 +170614,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "33 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-avalanche-eacsi-24hav.html"
     ]
   },
   {
@@ -170189,6 +170656,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "noise": "40 dB",
+      "area": "≤30 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-bosch-climat-line-2000-cll2000-w26.html"
     ]
   },
   {
@@ -170219,6 +170698,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "35 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-smartline-eacsi-24hsmn8.html"
     ]
   },
   {
@@ -170252,6 +170743,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "noise": "25 dB",
+      "area": "≤30 m²"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-onix-super-dc-eacsi-09hix-blackn8.html"
     ]
   },
   {
@@ -170282,6 +170782,15 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000,
+      "noise": "26 dB",
+      "area": "≤60 m²"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-electrolux-avalanche-eacsi-18hav.html"
     ]
   },
   {
@@ -170313,6 +170822,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000,
+      "noise": "57 dB",
+      "area": "≤60 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-crystal-snow-bgaci-18-t.html"
     ]
   },
   {
@@ -170344,6 +170865,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "58 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-crystal-snow-bgaci-24-t.html"
     ]
   },
   {
@@ -170375,6 +170908,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "noise": "53 dB",
+      "area": "≤40 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-crystal-snow-bgaci-12-t.html"
     ]
   },
   {
@@ -170405,6 +170950,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "47 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgaci-24-t.html"
     ]
   },
   {
@@ -170435,6 +170992,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000,
+      "noise": "44 dB",
+      "area": "≤60 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgaci-18-t.html"
     ]
   },
   {
@@ -170465,6 +171034,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "noise": "40 dB",
+      "area": "≤40 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgaci-12-t.html"
     ]
   },
   {
@@ -170495,6 +171076,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "noise": "40 dB",
+      "area": "≤30 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgaci-09-t.html"
     ]
   },
   {
@@ -170525,6 +171118,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "43 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgac-24-t.html"
     ]
   },
   {
@@ -170555,6 +171160,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000,
+      "noise": "43 dB",
+      "area": "≤60 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgac-18-t.html"
     ]
   },
   {
@@ -170585,6 +171202,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "noise": "41 dB",
+      "area": "≤40 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgac-12-t.html"
     ]
   },
   {
@@ -170615,6 +171244,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "noise": "39 dB",
+      "area": "≤30 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-green-eco-bgac-09-t.html"
     ]
   },
   {
@@ -170645,6 +171286,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 18000,
+      "noise": "54 dB",
+      "area": "≤60 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-smart-inverter-2-bgaci-18-t.html"
     ]
   },
   {
@@ -170675,6 +171328,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "58 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-smart-inverter-2-bgaci-24-t.html"
     ]
   },
   {
@@ -170705,6 +171370,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "noise": "51 dB",
+      "area": "≤40 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-smart-inverter-2-bgaci-12-t.html"
     ]
   },
   {
@@ -170735,6 +171412,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 9000,
+      "noise": "51 dB",
+      "area": "≤30 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-berg-smart-inverter-2-bgaci-09-t.html"
     ]
   },
   {
@@ -170768,6 +171457,19 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 2700,
+      "volume": 11
+    },
+    "body": {
+      "height": 390,
+      "width": 440,
+      "thickness": 330
+    },
+    "sources": [
+      "https://vega.am/home-appliances/kitchen-house/air-fryers/air-fryers-electrolux-eafd11b.html"
     ]
   },
   {
@@ -170798,6 +171500,22 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 1700,
+      "volume": 3.8
+    },
+    "body": {
+      "height": 345,
+      "width": 310,
+      "thickness": 245
+    },
+    "colors": [
+      "Blue"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/kitchen-house/air-fryers/air-fryers-ninja-fn101eugy.html"
     ]
   },
   {
@@ -170828,6 +171546,21 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "automatic_coffee",
+      "power": 1450
+    },
+    "body": {
+      "height": 350,
+      "width": 240,
+      "thickness": 440
+    },
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/kitchen-house/coffee-machines-automatic/coffee-machines-automatic-delonghi-magnifica-start-ecam22060b.html"
     ]
   },
   {
@@ -170858,6 +171591,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "stand_mixer",
+      "power": 1000,
+      "volume": 5
+    },
+    "colors": [
+      "Black",
+      "Silver"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/kitchen-house/kitchen-machines/kitchen-machines-kenwood-kmx750ard.html"
     ]
   },
   {
@@ -170891,6 +171636,14 @@
     ],
     "colors": [
       "White"
+    ],
+    "appliance": {
+      "type": "blender",
+      "power": 600,
+      "volume": 1.6
+    },
+    "sources": [
+      "https://vega.am/home-appliances/kitchen-house/blenders/blender-berg-b-880p.html"
     ]
   },
   {
@@ -170921,6 +171674,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "canister_vacuum",
+      "power": 1900,
+      "dust": "6 L"
+    },
+    "body": {
+      "weight": 8500,
+      "height": 265,
+      "width": 320,
+      "thickness": 500
+    },
+    "colors": [
+      "Red"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-panasonic-mc-cj911r349.html"
     ]
   },
   {
@@ -170951,6 +171721,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "wet_dry_vacuum",
+      "power": 1600,
+      "dust": "21 L"
+    },
+    "body": {
+      "weight": 4800,
+      "height": 576,
+      "width": 380,
+      "thickness": 406
+    },
+    "colors": [
+      "Red"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-sharp-ec-wd1621-z.html"
     ]
   },
   {
@@ -170981,6 +171768,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "canister_vacuum",
+      "power": 1900,
+      "dust": "6 L"
+    },
+    "body": {
+      "weight": 6100,
+      "height": 265,
+      "width": 320,
+      "thickness": 500
+    },
+    "colors": [
+      "Red"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-panasonic-mc-cj911r149.html"
     ]
   },
   {
@@ -171014,6 +171818,20 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "canister_vacuum",
+      "power": 2100,
+      "dust": "6 L"
+    },
+    "body": {
+      "weight": 6100,
+      "height": 265,
+      "width": 320,
+      "thickness": 500
+    },
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-panasonic-mc-cg715k349-black.html"
     ]
   },
   {
@@ -171044,6 +171862,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "canister_vacuum",
+      "power": 1100,
+      "dust": "0.9 L"
+    },
+    "body": {
+      "weight": 4400,
+      "height": 334,
+      "width": 269,
+      "thickness": 388
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-karcher-vc-3-plus-kap-1198-0500.html"
     ]
   },
   {
@@ -171074,6 +171909,23 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "canister_vacuum",
+      "power": 750,
+      "dust": "2 L"
+    },
+    "body": {
+      "weight": 4700,
+      "height": 280,
+      "width": 300,
+      "thickness": 450
+    },
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-bosch-bgs21pow2.html"
     ]
   },
   {
@@ -171104,6 +171956,20 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "wet_dry_vacuum",
+      "power": 1000,
+      "dust": "12 L"
+    },
+    "body": {
+      "weight": 4000,
+      "height": 378,
+      "width": 328,
+      "thickness": 349
+    },
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners/vacuum-cleaner-karcher-wd-2-plus-v-12418c-1628-0090.html"
     ]
   },
   {
@@ -171127,7 +171993,10 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "≤72 min",
+      "capacity": 5000
+    },
     "summaryEn": "Dreame H16 PRO STEAM WET DRY VACUUM.",
     "unsure": [
       "popularity",
@@ -171137,6 +172006,19 @@
     ],
     "colors": [
       "Silver"
+    ],
+    "appliance": {
+      "type": "wet_dry_vacuum",
+      "dust": "600 mL"
+    },
+    "body": {
+      "weight": 6800,
+      "height": 1135,
+      "width": 277,
+      "thickness": 271
+    },
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-dreame-h16-pro-steam-wet-and-dry-vacuum-hhr48f.html"
     ]
   },
   {
@@ -171160,13 +172042,31 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "≤35 min"
+    },
     "summaryEn": "Karcher WV 3 COMFORT CARE.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "cordless_vacuum",
+      "dust": "0.2 L"
+    },
+    "body": {
+      "weight": 600,
+      "height": 290,
+      "width": 280,
+      "thickness": 140
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-karcher-wv-3-comfort-care-eu-1633-6900.html"
     ]
   },
   {
@@ -171190,13 +172090,32 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "≤90 min",
+      "capacity": 4000
+    },
     "summaryEn": "Electrolux EP82H25WET.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "cordless_vacuum",
+      "dust": "0.4 L"
+    },
+    "body": {
+      "weight": 3200,
+      "height": 1150,
+      "width": 250,
+      "thickness": 250
+    },
+    "colors": [
+      "Blue"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-electrolux-ep82h25wet.html"
     ]
   },
   {
@@ -171220,7 +172139,10 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "≤40 min",
+      "capacity": 4900
+    },
     "summaryEn": "Dreame H14 WET DRY.",
     "unsure": [
       "popularity",
@@ -171230,6 +172152,19 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "wet_dry_vacuum",
+      "dust": "0.65 L"
+    },
+    "body": {
+      "weight": 6100,
+      "height": 1140,
+      "width": 340,
+      "thickness": 300
+    },
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-dreame-h14-dual-wet-and-dry-hhv25a.html"
     ]
   },
   {
@@ -171253,13 +172188,32 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "≤35 min",
+      "capacity": 2150
+    },
     "summaryEn": "Karcher WV 2 PREMIUM.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "cordless_vacuum",
+      "dust": "0.1 L"
+    },
+    "body": {
+      "weight": 600,
+      "height": 320,
+      "width": 280,
+      "thickness": 120
+    },
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-karcher-wv-2-premium-1633-4260.html"
     ]
   },
   {
@@ -171283,13 +172237,30 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "capacity": 5200
+    },
     "summaryEn": "Karcher RCV 5.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "dust": "0.33 L"
+    },
+    "body": {
+      "height": 97,
+      "width": 350,
+      "thickness": 350
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-robot/vacuum-cleaner-robot-karcher-rcv-5-9790-1170-640643.html"
     ]
   },
   {
@@ -171320,6 +172291,16 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "garment_steamer",
+      "power": 1600
+    },
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/domestic-appliances/steamers/steamer-braun-gs7077bk.html"
     ]
   },
   {
@@ -171345,7 +172326,8 @@
     "display": {
       "size": 65,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG OLED65B6ERA.",
@@ -171353,6 +172335,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 17100
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-oled65b6era.html"
     ]
   },
   {
@@ -171378,7 +172366,8 @@
     "display": {
       "size": 77,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG OLED77B6ERA.",
@@ -171386,6 +172375,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 22900
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-oled77b6era.html"
     ]
   },
   {
@@ -171410,8 +172405,9 @@
     ],
     "display": {
       "size": 50,
-      "type": "LED",
-      "resolution": "3840 x 2160"
+      "type": "Nano 4K UHD",
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 50NU900B6LA.",
@@ -171419,6 +172415,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 8200
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-50nu900b6la.html"
     ]
   },
   {
@@ -171443,8 +172445,9 @@
     ],
     "display": {
       "size": 65,
-      "type": "LED",
-      "resolution": "3840 x 2160"
+      "type": "Nano 4K UHD",
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 65NU900B6LA.",
@@ -171452,6 +172455,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 13900
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-65nu900b6la.html"
     ]
   },
   {
@@ -171476,8 +172485,9 @@
     ],
     "display": {
       "size": 43,
-      "type": "LED",
-      "resolution": "3840 x 2160"
+      "type": "Nano 4K UHD",
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 43NU900B6LA.",
@@ -171485,6 +172495,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 6400
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-43nu900b6la.html"
     ]
   },
   {
@@ -171510,7 +172526,8 @@
     "display": {
       "size": 48,
       "type": "OLED",
-      "resolution": "3840 x 2160"
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG OLED48C6RLA.",
@@ -171518,6 +172535,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 16700
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-oled48c6rla.html"
     ]
   },
   {
@@ -171542,8 +172565,9 @@
     ],
     "display": {
       "size": 86,
-      "type": "QNED Mini-LED",
-      "resolution": "3840 x 2160"
+      "type": "QNED evo MiniLED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG 86QNED85B6B.",
@@ -171551,6 +172575,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 49500
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-86qned85b6b.html"
     ]
   },
   {
@@ -171575,8 +172605,9 @@
     ],
     "display": {
       "size": 65,
-      "type": "QNED Mini-LED",
-      "resolution": "3840 x 2160"
+      "type": "QNED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG 65QNED85B6B.",
@@ -171584,6 +172615,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 21000
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-65qned85b6b.html"
     ]
   },
   {
@@ -171608,8 +172645,9 @@
     ],
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
-      "resolution": "3840 x 2160"
+      "type": "QNED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 55QNED70B6C.",
@@ -171617,6 +172655,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 9500
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-55qned70b6c.html"
     ]
   },
   {
@@ -171641,8 +172685,9 @@
     ],
     "display": {
       "size": 65,
-      "type": "QNED Mini-LED",
-      "resolution": "3840 x 2160"
+      "type": "Mini LED",
+      "resolution": "3840 x 2160",
+      "refresh": 60
     },
     "battery": {},
     "summaryEn": "LG 65QNED70B6C.",
@@ -171650,6 +172695,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 17000
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-65qned70b6c.html"
     ]
   },
   {
@@ -171674,8 +172725,9 @@
     ],
     "display": {
       "size": 55,
-      "type": "QNED Mini-LED",
-      "resolution": "3840 x 2160"
+      "type": "QNED",
+      "resolution": "3840 x 2160",
+      "refresh": 120
     },
     "battery": {},
     "summaryEn": "LG 55QNED85B6B.",
@@ -171683,6 +172735,12 @@
       "popularity",
       "display.resolution",
       "chipset"
+    ],
+    "body": {
+      "weight": 14500
+    },
+    "sources": [
+      "https://vega.am/home-appliances/audio-video-and-photo/tv/tv-lg-55qned85b6b.html"
     ]
   },
   {
@@ -171735,7 +172793,12 @@
         "priceAmd": 699900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 31.5,
+      "type": "OLED",
+      "resolution": "3840 x 2160",
+      "refresh": 165
+    },
     "battery": {},
     "summaryEn": "LG 32GX850A-B.",
     "unsure": [
@@ -171746,6 +172809,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 9100,
+      "height": 620,
+      "width": 714,
+      "thickness": 249
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-32gx850a-b.html"
     ]
   },
   {
@@ -171768,7 +172840,12 @@
         "priceAmd": 269900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 27,
+      "type": "IPS",
+      "resolution": "3840 x 2160",
+      "refresh": 180
+    },
     "battery": {},
     "summaryEn": "LG 27G810A-B.",
     "unsure": [
@@ -171779,6 +172856,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 7400,
+      "height": 534,
+      "width": 613,
+      "thickness": 220
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-27g810a-b.html"
     ]
   },
   {
@@ -171801,7 +172887,12 @@
         "priceAmd": 369900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 27,
+      "type": "OLED",
+      "resolution": "2560 x 1440",
+      "refresh": 240
+    },
     "battery": {},
     "summaryEn": "LG 27GX704A-B.",
     "unsure": [
@@ -171812,6 +172903,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 7200,
+      "height": 532,
+      "width": 605,
+      "thickness": 220
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-27gx704a-b.html"
     ]
   },
   {
@@ -171834,7 +172934,12 @@
         "priceAmd": 149900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 27,
+      "type": "IPS",
+      "resolution": "1920 x 1080",
+      "refresh": 240
+    },
     "battery": {},
     "summaryEn": "LG 27G440A-B.",
     "unsure": [
@@ -171845,6 +172950,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 6500,
+      "height": 540,
+      "width": 614,
+      "thickness": 220
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-27g440a-b.html"
     ]
   },
   {
@@ -171867,7 +172981,12 @@
         "priceAmd": 66900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 27,
+      "type": "IPS",
+      "resolution": "1920 x 1080",
+      "refresh": 144
+    },
     "battery": {},
     "summaryEn": "LG 27U411B-B.",
     "unsure": [
@@ -171875,6 +172994,15 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 3900,
+      "height": 452,
+      "width": 611,
+      "thickness": 220
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-27u411b-b.html"
     ]
   },
   {
@@ -171897,7 +173025,12 @@
         "priceAmd": 189900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 31.5,
+      "type": "VA",
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "LG 32U701SB-B.",
     "unsure": [
@@ -171905,6 +173038,15 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 5500,
+      "height": 513,
+      "width": 714,
+      "thickness": 221
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-32u701sb-b.html"
     ]
   },
   {
@@ -171927,7 +173069,12 @@
         "priceAmd": 129900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 27,
+      "type": "IPS",
+      "resolution": "1920 x 1080",
+      "refresh": 100
+    },
     "battery": {},
     "summaryEn": "LG 27U511SB-W.",
     "unsure": [
@@ -171935,6 +173082,15 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 4200,
+      "height": 452,
+      "width": 612,
+      "thickness": 221
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-27u511sb-w.html"
     ]
   },
   {
@@ -171957,7 +173113,12 @@
         "priceAmd": 59900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 23.8,
+      "type": "IPS",
+      "resolution": "1920 x 1080",
+      "refresh": 144
+    },
     "battery": {},
     "summaryEn": "LG 24U411B-B.",
     "unsure": [
@@ -171965,6 +173126,15 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 3200,
+      "height": 412,
+      "width": 539,
+      "thickness": 220
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-24u411b-b.html"
     ]
   },
   {
@@ -171987,7 +173157,11 @@
         "priceAmd": 205900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 34,
+      "resolution": "2560 x 1080",
+      "refresh": 100
+    },
     "battery": {},
     "summaryEn": "LG 34U530A-W.",
     "unsure": [
@@ -171998,6 +173172,15 @@
     ],
     "colors": [
       "White"
+    ],
+    "body": {
+      "weight": 8800,
+      "height": 534,
+      "width": 816,
+      "thickness": 230
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-34u530a-w.html"
     ]
   },
   {
@@ -172020,7 +173203,11 @@
         "priceAmd": 359900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 31.5,
+      "resolution": "3840 x 2160",
+      "refresh": 60
+    },
     "battery": {},
     "summaryEn": "LG 32U850SA-W.",
     "unsure": [
@@ -172028,6 +173215,15 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "body": {
+      "weight": 5500,
+      "height": 608,
+      "width": 714,
+      "thickness": 217
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-32u850sa-w.html"
     ]
   },
   {
@@ -172050,7 +173246,11 @@
         "priceAmd": 244900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 34,
+      "resolution": "3440 x 1440",
+      "refresh": 160
+    },
     "battery": {},
     "summaryEn": "LG 34G600A-B.",
     "unsure": [
@@ -172061,6 +173261,15 @@
     ],
     "colors": [
       "Black"
+    ],
+    "body": {
+      "weight": 10000,
+      "height": 470,
+      "width": 810,
+      "thickness": 250
+    },
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/monitors/monitor-lg-34g600a-b.html"
     ]
   },
   {
@@ -172094,6 +173303,20 @@
     ],
     "colors": [
       "Silver"
+    ],
+    "appliance": {
+      "type": "fridge",
+      "volume": 612,
+      "noise": "35 dB",
+      "nofrost": true
+    },
+    "body": {
+      "height": 1860,
+      "width": 830,
+      "thickness": 740
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-lg-ltb842pfbq.html"
     ]
   },
   {
@@ -172127,6 +173350,12 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "washing_machine"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-lg-f2y2hyp6j.html"
     ]
   },
   {
@@ -172160,11 +173389,17 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "dryer"
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/tumble-dryers/tumble-dryer-lg-rh90y1mptnp.html"
     ]
   },
   {
     "id": "lg-ms-2595dis",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "LG",
     "name": "MS-2595DIS",
     "aliases": [
@@ -172193,11 +173428,24 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 25,
+      "power": 1000
+    },
+    "body": {
+      "height": 272,
+      "width": 476,
+      "thickness": 360
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-lg-ms-2595dis.html"
     ]
   },
   {
     "id": "lg-ms-2535gib",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "LG",
     "name": "MS-2535GIB",
     "aliases": [
@@ -172226,11 +173474,24 @@
     ],
     "colors": [
       "Black"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 25,
+      "power": 1000
+    },
+    "body": {
+      "height": 270,
+      "width": 480,
+      "thickness": 390
+    },
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-lg-ms-2535gib.html"
     ]
   },
   {
     "id": "lg-ms-2336gih",
-    "category": "largeappliance",
+    "category": "kitchen",
     "brand": "LG",
     "name": "MS-2336GIH",
     "aliases": [
@@ -172256,6 +173517,17 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "microwave",
+      "volume": 23,
+      "power": 1000
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/major-home-appliances/microwave-ovens/microwave-oven-lg-ms-2336gih.html"
     ]
   },
   {
@@ -172286,6 +173558,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 24000,
+      "noise": "65 dB",
+      "area": "≤80 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-lg-i24ceh-t.html"
     ]
   },
   {
@@ -172316,6 +173600,18 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "appliance": {
+      "type": "air_conditioner",
+      "btu": 12000,
+      "noise": "60 dB",
+      "area": "≤40 m²"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-lg-i12ceh-t.html"
     ]
   }
 ]
