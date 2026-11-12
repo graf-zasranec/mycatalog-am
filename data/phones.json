@@ -168993,7 +168993,7 @@
     ],
     "display": {},
     "battery": {},
-    "summaryEn": "TCL S55H.",
+    "summaryEn": "TCL S55H 2.1-channel Dolby Atmos soundbar with wireless subwoofer.",
     "unsure": [
       "popularity",
       "display",
@@ -169004,8 +169004,12 @@
       "Black"
     ],
     "sources": [
-      "https://vega.am/home-appliances/audio-video-and-photo/soundbars/soundbar-tcl-s55h.html"
-    ]
+      "https://vega.am/home-appliances/audio-video-and-photo/soundbars/soundbar-tcl-s55h.html",
+      "https://www.tcl.com/nz/en/soundbar/s55h"
+    ],
+    "connectivity": {
+      "bluetooth": "5.2"
+    }
   },
   {
     "id": "asus-vivobook-15-f1504va-bq250-15-6",
@@ -169027,7 +169031,13 @@
         "priceAmd": 319900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "touch": false
+    },
     "battery": {},
     "summaryEn": "ASUS Vivobook 15 F1504VA-BQ250 15.6.",
     "unsure": [
@@ -169035,6 +169045,22 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "chipset": {
+      "name": "Intel Core 5 120U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1700
+    },
+    "colors": [
+      "Blue"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-asus-vivobook-15-f1504va-bq250-core-5-120u-156-16gb-1tb-quiet-blue-90nb13y1-m01ft0.html"
     ]
   },
   {
@@ -169120,6 +169146,10 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "colors": [
+      "Light Blue",
+      "Black"
     ]
   },
   {
@@ -169155,15 +169185,24 @@
     "audio": {
       "conn": "wireless",
       "anc": true,
-      "form": "tws"
+      "form": "tws",
+      "driver": "10 mm",
+      "frequency": "20 Hz – 20 kHz"
     },
     "colors": [
       "White",
       "Black"
     ],
     "sources": [
-      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-4-anc-t0026l-white-55038500.html"
-    ]
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-4-anc-t0026l-white-55038500.html",
+      "https://consumer.huawei.com/en/headphones/freebuds-se-4-anc/specs/"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 4.3
+    }
   },
   {
     "id": "huawei-freebuds-7i",
@@ -169188,7 +169227,9 @@
       }
     ],
     "display": {},
-    "battery": {},
+    "battery": {
+      "life": "8 hours"
+    },
     "summaryEn": "Huawei FreeBuds 7i.",
     "unsure": [
       "popularity",
@@ -169198,7 +169239,10 @@
     ],
     "audio": {
       "conn": "wireless",
-      "form": "tws"
+      "form": "tws",
+      "anc": true,
+      "driver": "11 mm",
+      "frequency": "20 Hz – 40 kHz"
     },
     "colors": [
       "White",
@@ -169206,8 +169250,12 @@
       "Black"
     ],
     "sources": [
-      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-7i-wired-charging-t0025l-white-55038457.html"
-    ]
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-7i-wired-charging-t0025l-white-55038457.html",
+      "https://consumer.huawei.com/uk/headphones/freebuds7i/specs/"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "huawei-freebuds-se-3-t0016l",
@@ -169248,8 +169296,12 @@
       "Black"
     ],
     "sources": [
-      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-3-ulc-ct020-wired-charging-beige-55037990.html"
-    ]
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-3-ulc-ct020-wired-charging-beige-55037990.html",
+      "https://vega.am/home-appliances/phones-and-gadgets/tws-wireless-headphones/tws-headphone-huawei-freebuds-se-3-ulc-ct020-wired-charging-black-55037987.html"
+    ],
+    "connectivity": {
+      "bluetooth": "5.4"
+    }
   },
   {
     "id": "huawei-watch-gt6-pro-46mm-atm-b29",
@@ -172763,7 +172815,12 @@
         "priceAmd": 429900
       }
     ],
-    "display": {},
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "touch": false
+    },
     "battery": {},
     "summaryEn": "HP AI 15-FD2011CI 15.6.",
     "unsure": [
@@ -172771,6 +172828,22 @@
       "display",
       "chipset",
       "battery.capacity"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 255U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1650
+    },
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-hp-laptop-ai-15-fd2011ci-ultra-7-255u-156-16gb-1tb-natural-silver-bk2x2ea.html"
     ]
   },
   {
