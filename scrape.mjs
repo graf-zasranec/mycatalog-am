@@ -2751,8 +2751,11 @@ const SHOPS = {
             seen.add(url); fresh++;
             const id = matchPhone(title, { price, url }) || matchPhone(url);
             if (!id) continue;
+            // A card with a pre-order button instead of the basket (iPhone 18 Pro 1TB/2TB, Nov 2026)
+            // is on sale today: kept and tagged (owner, 2026-11-12).
+            const basket = /addToBasket/.test(head), pre = !basket && /pre_order/i.test(head);
             out.push({ id, price, title, url, storage: storageOf(title) ?? storageOf(url), ram: ramOf(title),
-              inStock: /addToBasket/.test(head) });
+              inStock: basket || pre, ...(pre ? { preorder: true } : {}) });
           }
           // past the last page Bitrix serves the last one again: nothing new means done
           if (!fresh) break;
