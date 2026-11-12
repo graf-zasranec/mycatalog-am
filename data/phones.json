@@ -174350,7 +174350,8 @@
     "battery": {},
     "appliance": {
       "type": "fridge",
-      "noise": "35 dB"
+      "noise": "35 dB",
+      "volume": 39
     },
     "body": {
       "weight": 14000,
@@ -174359,14 +174360,10 @@
     "colors": [
       "Black"
     ],
-    "summaryEn": "Cecotec freestanding wine cooler for 15 bottles, glass door and LED light.",
+    "summaryEn": "Cecotec thermoelectric wine cooler for 15 bottles: 39 L, 35 dB, glass door with LED light.",
     "unsure": [
-      "popularity",
-      "appliance.noise"
+      "popularity"
     ],
-    "specNA": {
-      "appliance.volume": "Cecotec gives capacity as 15 bottles, not litres"
-    },
-    "specSource": "https://www.zigzag.am/en/cecotec-100135-bolero-grandsommelier-1550-coolcrystal.html"
+    "specSource": "https://cecotec.es/es/vinoteca/bolero-grandsommelier-1550-coolcrystal"
   }
 ]
