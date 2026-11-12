@@ -162266,7 +162266,8 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 24000
     }
   },
   {
@@ -162299,7 +162300,8 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 18000
     }
   },
   {
@@ -162332,7 +162334,8 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 12000
     }
   },
   {
@@ -162365,7 +162368,8 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 50000
     }
   },
   {
@@ -162398,7 +162402,8 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_conditioner"
+      "type": "air_conditioner",
+      "btu": 60000
     }
   },
   {
@@ -162431,7 +162436,9 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "humidifier"
+      "type": "humidifier",
+      "volume": 5,
+      "power": 25
     }
   },
   {
@@ -162464,7 +162471,8 @@
       "battery.capacity"
     ],
     "appliance": {
-      "type": "air_purifier"
+      "type": "air_purifier",
+      "power": 36
     }
   },
   {
