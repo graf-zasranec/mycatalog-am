@@ -169138,25 +169138,33 @@
         "priceAmd": 55900
       }
     ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Honor X5es MLD-LX2.",
+    "display": {
+      "size": 6.9,
+      "resolution": "720x1600",
+      "refresh": 90,
+      "type": "IPS LCD"
+    },
+    "battery": {
+      "capacity": 6000,
+      "wired": 15
+    },
+    "summaryEn": "Budget Honor phone with a 6.9-inch 90 Hz screen, Helio G81 and a 6000 mAh battery (sold elsewhere as the Play 20A).",
     "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
       "Light Blue",
       "Black"
     ],
-    "specNA": {
-      "display.size": "Not published by shop; checking manufacturer",
-      "display.resolution": "Not published by shop; checking manufacturer",
-      "chipset.name": "Not published by shop; checking manufacturer",
-      "camera.main": "Not published by shop; checking manufacturer"
-    }
+    "chipset": {
+      "name": "MediaTek Helio G81"
+    },
+    "camera": {
+      "main": "13 MP, f/1.8",
+      "front": "5 MP, f/2.2"
+    },
+    "os": "Android 15 (MagicOS 9)",
+    "specSource": "https://www.gsmchoice.com/en/catalogue/honor/play-20a-2026/"
   },
   {
     "id": "huawei-freebuds-se-4-anc-t0026l",
@@ -173447,14 +173455,12 @@
       "Black"
     ],
     "appliance": {
-      "type": "washing_machine"
+      "type": "washing_machine",
+      "load": 7
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/washing-machines/washing-machine-lg-f2y2hyp6j.html"
-    ],
-    "specNA": {
-      "appliance.load": "Not published by shop; checking manufacturer"
-    }
+    ]
   },
   {
     "id": "lg-rh90y1mptnp",
@@ -173489,14 +173495,12 @@
       "Black"
     ],
     "appliance": {
-      "type": "dryer"
+      "type": "dryer",
+      "load": 9
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/tumble-dryers/tumble-dryer-lg-rh90y1mptnp.html"
-    ],
-    "specNA": {
-      "appliance.load": "Not published by shop; checking manufacturer"
-    }
+    ]
   },
   {
     "id": "lg-ms-2595dis",
