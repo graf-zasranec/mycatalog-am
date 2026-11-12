@@ -165905,11 +165905,10 @@
     "brand": "De'Longhi",
     "name": "RIVELIA EXAM440.55.B",
     "aliases": [
-      "Ավտոմատ սրճեփ մեքենաներ De'Longhi RIVELIA EXAM440.55.B",
-      "Ավտոմատ սրճեփ մեքենաներ De'Longhi RIVELIA EXAM440.35.B"
+      "Ավտոմատ սրճեփ մեքենաներ De'Longhi RIVELIA EXAM440.55.B"
     ],
     "tier": "upper-mid",
-    "priceAmd": 399900,
+    "priceAmd": 343000,
     "priceAmdMax": 429000,
     "popularity": 40,
     "accent": "#5C6470",
@@ -165932,6 +165931,48 @@
     "appliance": {
       "type": "automatic_coffee"
     }
+  },
+  {
+    "id": "de-longhi-rivelia-exam440-35-b",
+    "category": "coffee",
+    "brand": "De'Longhi",
+    "name": "RIVELIA EXAM440.35.B",
+    "aliases": [
+      "Ավտոմատ սրճեփ մեքենաներ De'Longhi RIVELIA EXAM440.35.B",
+      "Rivelia EXAM440.35.B",
+      "EXAM440.35.B"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 319900,
+    "priceAmdMax": 319900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 319900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "De'Longhi Rivelia bean-to-cup machine, Onyx Black: 3.5-inch colour touch screen, 8 drinks, two swappable bean hoppers and a manual milk frother.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "automatic_coffee",
+      "power": 1450,
+      "volume": 1.4
+    },
+    "body": {
+      "weight": 9800,
+      "dimensions": "24.5 x 43 x 38.5 cm"
+    },
+    "colors": [
+      "Onyx Black"
+    ],
+    "specSource": "https://delonghi.com/en/p/EXAM440.35.B"
   },
   {
     "id": "de-longhi-magnifica-plus-ecam320-61-g",
@@ -173718,5 +173759,455 @@
     "sources": [
       "https://vega.am/home-appliances/cooling-heating/air-conditioners/air-conditioner-lg-i12ceh-t.html"
     ]
+  },
+  {
+    "id": "liebherr-sufd-3603",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Freezer SUFd 3603 88 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "freezer",
+      "volume": 88,
+      "noise": "34 dB",
+      "freezerVolume": 88
+    },
+    "battery": {},
+    "body": {
+      "weight": 36000
+    },
+    "summaryEn": "Liebherr freezer SUFd 3603, 88 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-sufd-3603.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Liebherr SUFd 3603",
+      "Liebherr SUFd 3603"
+    ]
+  },
+  {
+    "id": "liebherr-uwgbi-3682",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler UWgbi 3682 95 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 95,
+      "noise": "32 dB",
+      "freezerVolume": 95
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "82-88 x 60 x 58 cm",
+      "weight": 52
+    },
+    "summaryEn": "Liebherr wine cooler UWgbi 3682, 95 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-uwgbi-3682.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Liebherr UWgbi 3682",
+      "Liebherr UWgbi 3682"
+    ]
+  },
+  {
+    "id": "liebherr-fe-1404",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Freezer Fe 1404 107 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "freezer",
+      "volume": 107,
+      "noise": "37 dB",
+      "freezerVolume": 107,
+      "nofrost": false
+    },
+    "battery": {},
+    "body": {
+      "weight": 36000
+    },
+    "summaryEn": "Liebherr freezer Fe 1404, 107 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-fe-1404.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "White"
+    ],
+    "aliases": [
+      "Liebherr Fe 1404",
+      "Liebherr Fe 1404"
+    ]
+  },
+  {
+    "id": "liebherr-wsbl-4201",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler WSbl 4201 272 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 272,
+      "noise": "38 dB"
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "128,4 х 59,7 х 76,3 cm"
+    },
+    "summaryEn": "Liebherr wine cooler WSbl 4201, 272 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-wsbl-4201.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [],
+    "aliases": [
+      "Liebherr WSbl 4201",
+      "Liebherr WSbl 4201"
+    ]
+  },
+  {
+    "id": "liebherr-wpbl-4201",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler WPbl 4201 272 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 272,
+      "noise": "38 dB"
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "128,4 х 59,7 х 76,3 cm",
+      "weight": 67300
+    },
+    "summaryEn": "Liebherr wine cooler WPbl 4201, 272 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-wpbl-4201.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "aliases": [
+      "Liebherr WPbl 4201",
+      "Liebherr WPbl 4201"
+    ]
+  },
+  {
+    "id": "liebherr-suig-1514",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Freezer SUIG 1514 95 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "freezer",
+      "volume": 95,
+      "noise": "35 dB",
+      "freezerVolume": 95,
+      "nofrost": false
+    },
+    "battery": {},
+    "body": {
+      "weight": 36300
+    },
+    "summaryEn": "Liebherr freezer SUIG 1514, 95 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-suig-1514.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [],
+    "aliases": [
+      "Liebherr SUIG 1514",
+      "Liebherr SUIG 1514"
+    ]
+  },
+  {
+    "id": "liebherr-wkes-653",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler WKes 653 48 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 48,
+      "noise": "37 dB"
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "61.2 x 42.5 x 47.8 cm"
+    },
+    "summaryEn": "Liebherr wine cooler WKes 653, 48 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-wkes-653.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [],
+    "aliases": [
+      "Liebherr WKes 653",
+      "Liebherr WKes 653"
+    ]
+  },
+  {
+    "id": "liebherr-ewtgb-3583",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler EWTgb 3583 271 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 271,
+      "noise": "32 dB"
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "181.6 x 59.5 x 57.2 cm"
+    },
+    "summaryEn": "Liebherr wine cooler EWTgb 3583, 271 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-ewtgb-3583.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [],
+    "aliases": [
+      "Liebherr EWTgb 3583",
+      "Liebherr EWTgb 3583"
+    ]
+  },
+  {
+    "id": "liebherr-wkegb-582",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler WKEgb 582 46 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 46,
+      "noise": "34 dB"
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "44.8 x 55.5 x 55.9 cm"
+    },
+    "summaryEn": "Liebherr wine cooler WKEgb 582, 46 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-wkegb-582.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [],
+    "aliases": [
+      "Liebherr WKEgb 582",
+      "Liebherr WKEgb 582"
+    ]
+  },
+  {
+    "id": "liebherr-wkb-1802",
+    "category": "largeappliance",
+    "brand": "Liebherr",
+    "name": "Wine Cooler WKb 1802 134 L",
+    "tier": "flagship",
+    "popularity": 30,
+    "accent": "#5C6470",
+    "appliance": {
+      "type": "fridge",
+      "volume": 134,
+      "noise": "41 dB"
+    },
+    "battery": {},
+    "body": {
+      "dimensions": "90.1 x 59.7 x 61.2 cm"
+    },
+    "summaryEn": "Liebherr wine cooler WKb 1802, 134 L.",
+    "sources": [
+      "https://www.zigzag.am/en/liebherr-wkb-1802.html"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "priceAmd": null,
+    "priceAmdMax": null,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": null
+      }
+    ],
+    "colors": [],
+    "aliases": [
+      "Liebherr WKb 1802",
+      "Liebherr WKb 1802"
+    ]
+  },
+  {
+    "id": "cecotec-bolero-grandsommelier-1550",
+    "category": "largeappliance",
+    "brand": "Cecotec",
+    "name": "Bolero GrandSommelier 1550 CoolCrystal Wine Cooler",
+    "aliases": [
+      "Cecotec A01_EU01_100135 Bolero GrandSommelier 1550 CoolCrystal",
+      "Bolero GrandSommelier 1550 CoolCrystal"
+    ],
+    "tier": "mid",
+    "priceAmd": 125000,
+    "priceAmdMax": 125000,
+    "popularity": 25,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 125000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "fridge",
+      "noise": "35 dB"
+    },
+    "body": {
+      "weight": 14000,
+      "dimensions": "56 x 34.5 x 52 cm"
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "Cecotec freestanding wine cooler for 15 bottles, glass door and LED light.",
+    "unsure": [
+      "popularity",
+      "appliance.noise"
+    ],
+    "specNA": {
+      "appliance.volume": "Cecotec gives capacity as 15 bottles, not litres"
+    },
+    "specSource": "https://www.zigzag.am/en/cecotec-100135-bolero-grandsommelier-1550-coolcrystal.html"
   }
 ]
