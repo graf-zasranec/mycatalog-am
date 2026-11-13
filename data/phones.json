@@ -19013,8 +19013,7 @@
     },
     "summaryEn": "Garmin Instinct 2X Solar.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -19026,6 +19025,9 @@
     },
     "colors": [
       "Graphite"
+    ],
+    "sources": [
+      "https://www.garmin.com/en-IE/p/884585/pn/010-02805-00/"
     ]
   },
   {
@@ -20459,7 +20461,7 @@
       }
     ],
     "audio": {
-      "power": "30 W"
+      "power": "40 W RMS"
     },
     "battery": {
       "life": "12 hours"
@@ -20472,14 +20474,14 @@
       "bluetooth": "5.3"
     },
     "summaryEn": "Harman Kardon in a portable, waterproof shell for the first time in years.",
-    "unsure": [
-      "audio.power"
-    ],
     "colors": [
       "Sand",
       "Black",
       "Gray",
       "White"
+    ],
+    "sources": [
+      "https://www.harmankardon.com/LUNA-1.html"
     ]
   },
   {
@@ -24060,8 +24062,7 @@
     },
     "summaryEn": "Honor Band 6.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "year": 2020,
     "body": {
@@ -24069,6 +24070,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.honor.com/global/wearables/honor-band-6/"
     ]
   },
   {
@@ -35946,12 +35950,12 @@
     "battery": {},
     "summaryEn": "A 43-inch LED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uz_ru/televisions/lg-43ua75009la"
     ],
     "colors": [
       "Black"
@@ -36792,12 +36796,12 @@
     "battery": {},
     "summaryEn": "A 65-inch LED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uz_ru/televisions/lg-65ua75009la"
     ],
     "colors": [
       "Black"
@@ -47786,7 +47790,7 @@
       "size": 75,
       "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 144
     },
     "variants": [
       {
@@ -47798,13 +47802,13 @@
     "battery": {},
     "summaryEn": "A 75-inch Neo QLED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
       "kitele",
-      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/",
+      "https://www.samsung.com/ru/tvs/qled-tv/qn90c-75-inch-neo-qled-4k-smart-tv-qe75qn90cauxru/"
     ],
     "aliases": [
       "QE75QN90CAUXRU"
@@ -48113,18 +48117,18 @@
       "size": 85,
       "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 144
     },
     "battery": {},
     "summaryEn": "Samsung QE85QN90CAUXRU.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
       "kitele",
-      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/",
+      "https://www.samsung.com/ru/tvs/qled-tv/qn90c-85-inch-neo-qled-4k-smart-tv-qe85qn90cauxru/"
     ],
     "colors": [
       "Black"
@@ -56645,8 +56649,7 @@
     },
     "summaryEn": "Xiaomi Redmi 4 Lite.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "audio": {
       "form": "tws",
@@ -56661,6 +56664,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.mi.com/sg/product/redmi-buds-4-lite/"
     ]
   },
   {
@@ -62214,12 +62220,12 @@
     "summaryEn": "The 24-inch all-in-one iMac on the M6 chip, in seven colours.",
     "unsure": [
       "priceAmd",
-      "popularity",
-      "body.dimensions"
+      "popularity"
     ],
     "year": 2026,
     "sources": [
-      "https://www.apple.com/imac/specs/"
+      "https://www.apple.com/imac/specs/",
+      "https://www.apple.com/uk/imac/specs/"
     ]
   },
   {
@@ -64546,7 +64552,6 @@
     "summaryEn": "Amazon Kindle Scribe.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -64556,7 +64561,10 @@
     "connectivity": {
       "network": "Wi-Fi"
     },
-    "os": "Kindle OS"
+    "os": "Kindle OS",
+    "sources": [
+      "https://www.amazon.com/dp/B0CZ9VFQ2P"
+    ]
   },
   {
     "id": "amazon-kindle-kids",
@@ -64636,7 +64644,6 @@
     "summaryEn": "Amazon Fire HD 10 Kids.",
     "unsure": [
       "popularity",
-      "display",
       "chipset"
     ],
     "specNA": {
@@ -64685,9 +64692,7 @@
     "summaryEn": "Nothing CMF Watch Pro.",
     "unsure": [
       "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Gray"
@@ -64696,7 +64701,9 @@
       "weight": 31.1
     },
     "sources": [
-      "https://m.gsmarena.com/nothing_cmf_watch_pro-14219.php"
+      "https://m.gsmarena.com/nothing_cmf_watch_pro-14219.php",
+      "https://support.nothing.tech/hc/en-us/categories/25888172835217-CMF-Watch-Pro",
+      "https://support.nothing.tech/hc/ja/articles/26184962535185-Watch-Pro-%E3%81%AE%E3%83%90%E3%83%83%E3%83%86%E3%83%AA%E3%83%BC%E5%AE%B9%E9%87%8F%E3%81%AF"
     ]
   },
   {
@@ -64905,19 +64912,18 @@
     "summaryEn": "Honor Band 9.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
     ],
     "body": {
-      "weight": 14
+      "weight": 16.3
     },
     "sources": [
-      "https://www.honor.com/global/wearables/honor-band-9/"
+      "https://www.honor.com/global/wearables/honor-band-9/",
+      "https://www.honor.com/pk/wearables/honor-band-9/spec/"
     ]
   },
   {
@@ -71009,8 +71015,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -71024,10 +71029,11 @@
       "connectivity.bluetooth": "wired headphones, no Bluetooth"
     },
     "body": {
-      "weight": 150
+      "weight": 142
     },
     "sources": [
-      "https://shop.teqex.co.uk/microsoft-modern-usb-c-headset-wired-head-band-office-call-center-usb-type-c-black-i6s-00010.html"
+      "https://shop.teqex.co.uk/microsoft-modern-usb-c-headset-wired-head-band-office-call-center-usb-type-c-black-i6s-00010.html",
+      "https://www.microsoft.com/en-sg/d/microsoft-modern-usb-headset/8Z19KMZQSZ2G/64R1"
     ]
   },
   {
@@ -72095,8 +72101,7 @@
     "summaryEn": "ASUS TUF 16\" i7-14650HX RTX5050 /90NR0NA1-M003C0.",
     "unsure": [
       "popularity",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "chipset": {
       "name": "Intel Core i7-14650HX"
@@ -72108,7 +72113,8 @@
       "Gray"
     ],
     "sources": [
-      "https://www.notebookcheck.net/Asus-TUF-Gaming-F16-FX607VJ.1064720.0.html"
+      "https://www.notebookcheck.net/Asus-TUF-Gaming-F16-FX607VJ.1064720.0.html",
+      "https://www.asus.com/me-en/laptops/for-gaming/tuf-gaming/asus-tuf-gaming-f16-2025/techspec/"
     ]
   },
   {
@@ -72143,8 +72149,7 @@
     },
     "summaryEn": "ASUS Vivobook S 16\" Core 5-210H /90NB1672-M009K0.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core 5-210H"
@@ -72156,7 +72161,8 @@
       "Gray"
     ],
     "sources": [
-      "https://www.notebookcheck.net/Asus-Vivobook-S16-S3607VA.1090608.0.html"
+      "https://www.notebookcheck.net/Asus-Vivobook-S16-S3607VA.1090608.0.html",
+      "https://www.asus.com/my/laptops/for-home/vivobook/asus-vivobook-s16-s3607/techspec/"
     ]
   },
   {
@@ -75569,8 +75575,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "White",
@@ -75587,11 +75592,12 @@
       "bluetooth": "6.0"
     },
     "body": {
-      "weight": 225
+      "weight": 225.2
     },
     "sources": [
       "https://versus.com/en/jbl-tune-770nc-vs-jbl-tune-780nc",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://uk.jbl.com/TUNE780NC.html?dwvar_TUNE780NC_color=White-GLOBAL-Current"
     ]
   },
   {
@@ -78459,7 +78465,6 @@
     "summaryEn": "Garmin Enduro 3.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -78469,7 +78474,8 @@
     "sources": [
       "https://www.garmin.com/en-US/p/896691",
       "https://www8.garmin.com/manuals/webhelp/GUID-7AD1A592-9044-4D84-9688-7B5209F85BFF/EN-GB/GUID-31A5D9B6-F81F-4BD8-A401-66E333CE1414.html",
-      "https://www.garmin.com/es-ES/p/851039/"
+      "https://www.garmin.com/es-ES/p/851039/",
+      "https://www.garmin.com/nl-NL/blog/verschillen-enduro3-enduro2/"
     ],
     "specNA": {
       "battery.capacity": "maker publishes battery life, not mAh (checked 2026-10-24)"
@@ -83238,7 +83244,6 @@
     "summaryEn": "Amazon Kindle Scribe Colorsoft with Premium Pen.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -83250,7 +83255,10 @@
       "network": "Wi-Fi"
     },
     "os": "Kindle OS",
-    "released": "2025"
+    "released": "2025",
+    "sources": [
+      "https://www.amazon.com/dp/B0DWRBVDN6"
+    ]
   },
   {
     "id": "apple-airpods-5-wireless-charging-case",
@@ -91519,11 +91527,11 @@
     "summaryEn": "Bose SoundLink Revolve+ II.",
     "sources": [
       "https://likemobile.am/en/bose-soundlink-revolve-iiad",
-      "https://fullspecs.net/bluetooth-speaker/bose/soundlink-revolve-plus-ii-specifications/"
+      "https://fullspecs.net/bluetooth-speaker/bose/soundlink-revolve-plus-ii-specifications/",
+      "https://www.bose.com/p/refurbished/bose-soundlink-revolve-ii-bluetooth-speaker/SLRVPII-SPEAKERWIRELESS-FR.html"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "colors": [
       "Silver"
@@ -91532,7 +91540,7 @@
       "bluetooth": "4.2"
     },
     "body": {
-      "weight": 900
+      "weight": 907
     }
   },
   {
@@ -98821,11 +98829,11 @@
     "summaryEn": "Sony ULT Field 5 (SRS-ULT50).",
     "sources": [
       "https://vlv.am/en/Product/45158",
-      "https://versus.com/en/bose-soundlink-revolve-ii-vs-sony-ult-field-5"
+      "https://versus.com/en/bose-soundlink-revolve-ii-vs-sony-ult-field-5",
+      "https://www.sony.com/electronics/support/speakers-wireless-speakers/srs-ult50/specifications"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
@@ -160487,12 +160495,14 @@
     "summaryEn": "LG 32LB650B6LA.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.lg.com/ru/televisions/lg-32lb650b6la-aru"
     ]
   },
   {
