@@ -74563,8 +74563,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "appliance": {
       "type": "robot_vacuum",
@@ -74578,7 +74577,8 @@
       "thickness": 350
     },
     "sources": [
-      "https://www.mi.com/sg/product/xiaomi-robot-vacuum-5-pro/specs/"
+      "https://www.mi.com/sg/product/xiaomi-robot-vacuum-5-pro/specs/",
+      "https://www.mi.com/global/product/xiaomi-robot-vacuum-5-pro/"
     ],
     "colors": [
       "White"
@@ -77296,8 +77296,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "White"
@@ -77314,7 +77313,8 @@
       "thickness": 340
     },
     "sources": [
-      "https://www.mi.com/uk/product/xiaomi-robot-vacuum-h40/specs/"
+      "https://www.mi.com/uk/product/xiaomi-robot-vacuum-h40/specs/",
+      "https://www.mi.com/global/product/xiaomi-robot-vacuum-h40/"
     ]
   },
   {
@@ -110353,7 +110353,6 @@
       "S1142/00"
     ],
     "tier": "budget",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110368,11 +110367,11 @@
     ],
     "summaryEn": "Philips Shaver Series 1000 electric shaver, wet & dry, 40 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/31040"
+      "https://vlv.am/en/Product/31040",
+      "https://www.documents.philips.com/assets/20240206/edf174f3c3354264b742b10e00fdbc56.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 17900,
     "priceAmdMax": 17900,
@@ -110382,7 +110381,10 @@
         "storage": null,
         "priceAmd": 17900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s3143-00",
@@ -110395,7 +110397,6 @@
       "S3143/00"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110410,11 +110411,11 @@
     ],
     "summaryEn": "Philips Shaver Series 3000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/29011"
+      "https://vlv.am/en/Product/29011",
+      "https://www.documents.philips.com/assets/20230724/eca159be9c75415c945db0490165ebf4.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 41900,
     "priceAmdMax": 41900,
@@ -110424,7 +110425,10 @@
         "storage": null,
         "priceAmd": 41900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s3144-00",
@@ -110437,7 +110441,6 @@
       "S3144/00"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110452,11 +110455,11 @@
     ],
     "summaryEn": "Philips Shaver Series 3000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/29012"
+      "https://vlv.am/en/Product/29012",
+      "https://www.documents.philips.com/assets/20240718/1da3005559264185be0cb1b1010ce5c6.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 39900,
     "priceAmdMax": 39900,
@@ -110466,7 +110469,10 @@
         "storage": null,
         "priceAmd": 39900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s3243-12",
@@ -110479,7 +110485,6 @@
       "S3243/12"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110494,11 +110499,11 @@
     ],
     "summaryEn": "Philips Shaver Series 3000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/29013"
+      "https://vlv.am/en/Product/29013",
+      "https://www.documents.philips.com/assets/20230808/52d5e395315941df99f0b0580173f96e.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 44900,
     "priceAmdMax": 44900,
@@ -110508,7 +110513,10 @@
         "storage": null,
         "priceAmd": 44900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s3244-12",
@@ -110521,7 +110529,6 @@
       "S3244/12"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110536,11 +110543,11 @@
     ],
     "summaryEn": "Philips Shaver Series 3000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/29014"
+      "https://vlv.am/en/Product/29014",
+      "https://www.philips.co.uk/shop/UK_Outlet_Loyaltyshop/personal-care/face-shavers/shaver-3000-series-wet-dry-electric-shaver/p/S3244_12?bvstate=pg%3A11%2Fct%3Ar"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 44900,
     "priceAmdMax": 44900,
@@ -110550,7 +110557,10 @@
         "storage": null,
         "priceAmd": 44900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s3333-54",
@@ -110563,7 +110573,6 @@
       "S3333/54"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110578,11 +110587,11 @@
     ],
     "summaryEn": "Philips Shaver Series 3000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/12831"
+      "https://vlv.am/en/Product/12831",
+      "https://www.documents.philips.com/assets/20220422/b0fa8a0deb2d485daaefae7f007f167d.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 39900,
     "priceAmdMax": 59000,
@@ -110592,7 +110601,10 @@
         "storage": null,
         "priceAmd": 39900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s3343-13",
@@ -110605,7 +110617,6 @@
       "S3343/13"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110620,11 +110631,11 @@
     ],
     "summaryEn": "Philips Shaver Series 3000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/29015"
+      "https://vlv.am/en/Product/29015",
+      "https://www.documents.philips.com/assets/20230808/6731940913fd42ce9efdb058017311e0.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 49000,
     "priceAmdMax": 49900,
@@ -110634,7 +110645,10 @@
         "storage": null,
         "priceAmd": 49000
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-x3002-00",
@@ -110647,7 +110661,6 @@
       "X3002/00"
     ],
     "tier": "budget",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110662,11 +110675,11 @@
     ],
     "summaryEn": "Philips Shaver 3000X Series electric shaver, wet & dry, 40 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/32056"
+      "https://vlv.am/en/Product/32056",
+      "https://www.philips.co.uk/c-p/X3002_00/-"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 27900,
     "priceAmdMax": 27900,
@@ -110676,7 +110689,10 @@
         "storage": null,
         "priceAmd": 27900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-x3051-00",
@@ -110689,7 +110705,6 @@
       "X3051/00"
     ],
     "tier": "mid",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110705,11 +110720,11 @@
     "summaryEn": "Philips Shaver 3000X Series electric shaver, wet & dry, 40 min cordless.",
     "sources": [
       "https://vlv.am/en/Product/30686",
-      "https://www.documents.philips.com/assets/20230626/51383b0de30d44de8779b02d007351e2.pdf"
+      "https://www.documents.philips.com/assets/20230626/51383b0de30d44de8779b02d007351e2.pdf",
+      "https://www.philips.co.uk/c-p/X3051_00/-"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 31900,
     "priceAmdMax": 31900,
@@ -110719,7 +110734,10 @@
         "storage": null,
         "priceAmd": 31900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-x5004-00",
@@ -110732,7 +110750,6 @@
       "X5004/00"
     ],
     "tier": "mid",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110747,11 +110764,11 @@
     ],
     "summaryEn": "Philips Shaver 5000X Series electric shaver, wet & dry, 50 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/37173"
+      "https://vlv.am/en/Product/37173",
+      "https://www.philips.co.uk/c-p/X5004_00/shaver-5000x-series-wet-dry-electric-shaver"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 34900,
@@ -110761,7 +110778,10 @@
         "storage": null,
         "priceAmd": 34900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-x5006-00",
@@ -110817,7 +110837,6 @@
       "X5012/00"
     ],
     "tier": "mid",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110832,11 +110851,11 @@
     ],
     "summaryEn": "Philips Shaver 5000X Series electric shaver, wet & dry, 50 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/37172"
+      "https://vlv.am/en/Product/37172",
+      "https://www.documents.philips.com/assets/20240912/1fb44a67c577495cacb4b1e900991c46.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 39900,
     "priceAmdMax": 39900,
@@ -110846,7 +110865,10 @@
         "storage": null,
         "priceAmd": 39900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s5883-10",
@@ -110859,7 +110881,6 @@
       "S5883/10"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110874,11 +110895,11 @@
     ],
     "summaryEn": "Philips Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://likemobile.am/en/philips-s588310"
+      "https://likemobile.am/en/philips-s588310",
+      "https://www.documents.philips.com/assets/20230520/4bbf414d439b4524bf8ab0080188addf.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 53000,
     "priceAmdMax": 53000,
@@ -110888,7 +110909,10 @@
         "storage": null,
         "priceAmd": 53000
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s5884-50",
@@ -110901,7 +110925,6 @@
       "S5884/50"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110916,11 +110939,11 @@
     ],
     "summaryEn": "Philips Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/28320"
+      "https://vlv.am/en/Product/28320",
+      "https://www.documents.philips.com/assets/20230215/55f6eefd932946df86eaafaa01255982.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 77900,
     "priceAmdMax": 77900,
@@ -110930,7 +110953,10 @@
         "storage": null,
         "priceAmd": 77900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s5885-10",
@@ -110943,7 +110969,6 @@
       "S5885/10"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -110958,11 +110983,11 @@
     ],
     "summaryEn": "Philips Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/28324"
+      "https://vlv.am/en/Product/28324",
+      "https://www.documents.philips.com/assets/20230302/f1a2110e64c64236bb7aafb9014790dd.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 56900,
     "priceAmdMax": 56900,
@@ -110972,7 +110997,10 @@
         "storage": null,
         "priceAmd": 56900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s5886-30",
@@ -110985,7 +111013,6 @@
       "S5886/30"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111000,11 +111027,11 @@
     ],
     "summaryEn": "Philips Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/28323"
+      "https://vlv.am/en/Product/28323",
+      "https://www.documents.philips.com/assets/20230215/774c5250751c45408651afaa01255a9d.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 64900,
     "priceAmdMax": 64900,
@@ -111014,7 +111041,10 @@
         "storage": null,
         "priceAmd": 64900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s5887-10",
@@ -111027,7 +111057,6 @@
       "S5887/10"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111042,11 +111071,11 @@
     ],
     "summaryEn": "Philips Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/35155"
+      "https://vlv.am/en/Product/35155",
+      "https://www.philips.co.uk/c-p/S5887_10"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 54900,
     "priceAmdMax": 54900,
@@ -111056,7 +111085,10 @@
         "storage": null,
         "priceAmd": 54900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s5887-30",
@@ -111069,7 +111101,6 @@
       "S5887/30"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111084,11 +111115,11 @@
     ],
     "summaryEn": "Philips Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://likemobile.am/en/philips-s588730"
+      "https://likemobile.am/en/philips-s588730",
+      "https://www.documents.philips.com/assets/20230215/73c4616f423a467cb472afaa01277da4.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 59000,
     "priceAmdMax": 59000,
@@ -111098,7 +111129,10 @@
         "storage": null,
         "priceAmd": 59000
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s7885-50",
@@ -111111,7 +111145,6 @@
       "S7885/50"
     ],
     "tier": "upper-mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111126,11 +111159,11 @@
     ],
     "summaryEn": "Philips Shaver Series 7000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/28319"
+      "https://vlv.am/en/Product/28319",
+      "https://dev.philips.co.jp/c-p/S7885_50/shaver-series-7000-wet-dry-electric-shaver/support"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 99900,
     "priceAmdMax": 99900,
@@ -111140,7 +111173,10 @@
         "storage": null,
         "priceAmd": 99900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s7886-58",
@@ -111153,7 +111189,6 @@
       "S7886/58"
     ],
     "tier": "upper-mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111168,11 +111203,11 @@
     ],
     "summaryEn": "Philips Shaver Series 7000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/28316"
+      "https://vlv.am/en/Product/28316",
+      "https://www.philips.co.uk/shop/UK_Portmandentex/personal-care/face-shavers/shaver-series-7000-wet-dry-electric-shaver/p/S7886_58"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 124900,
     "priceAmdMax": 124900,
@@ -111182,7 +111217,10 @@
         "storage": null,
         "priceAmd": 124900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-s9976-55",
@@ -111195,7 +111233,6 @@
       "S9976/55"
     ],
     "tier": "flagship",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111211,11 +111248,11 @@
     "summaryEn": "Philips Shaver Series 9000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
       "https://vlv.am/en/Product/31038",
-      "https://www.documents.philips.com/assets/20230920/3f6ad11c68e846e4832cb083017e97bf.pdf"
+      "https://www.documents.philips.com/assets/20230920/3f6ad11c68e846e4832cb083017e97bf.pdf",
+      "https://www.philips.hu/c-p/S9976_55/shaver-series-9000-nedves-es-szaraz-elektromos-borotva-es-skiniq/tamogatas"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 159000,
     "priceAmdMax": 159000,
@@ -111225,7 +111262,10 @@
         "storage": null,
         "priceAmd": 159000
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-xp9200-30",
@@ -111324,7 +111364,6 @@
       "HS5980/15"
     ],
     "tier": "mid",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111339,11 +111378,11 @@
     ],
     "summaryEn": "Philips Head Shaver Series 5000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/44066"
+      "https://vlv.am/en/Product/44066",
+      "https://www.documents.philips.com/assets/20251001/1dcf57d81c734954b9d9b36900c28079.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 44900,
     "priceAmdMax": 44900,
@@ -111353,7 +111392,10 @@
         "storage": null,
         "priceAmd": 44900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-qp2734-31",
@@ -111366,7 +111408,6 @@
       "QP2734/31"
     ],
     "tier": "mid",
-    "released": "2022",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111381,11 +111422,11 @@
     ],
     "summaryEn": "Philips OneBlade Face + Body trimmer-shaver, wet & dry, 45 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/32053"
+      "https://vlv.am/en/Product/32053",
+      "https://www.documents.philips.com/assets/20240217/972ea9546219462aa677b119011c64e8.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 34900,
@@ -111395,7 +111436,10 @@
         "storage": null,
         "priceAmd": 34900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-qp6532-10",
@@ -111408,7 +111452,6 @@
       "QP6532/10"
     ],
     "tier": "budget",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111427,8 +111470,7 @@
       "https://www.documents.philips.com/assets/20250801/78e997103ddd47629f7ab32c00606b7e.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 29900,
     "priceAmdMax": 29900,
@@ -111438,7 +111480,10 @@
         "storage": null,
         "priceAmd": 29900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-qp6542-15",
@@ -111451,7 +111496,6 @@
       "QP6542/15"
     ],
     "tier": "mid",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111466,11 +111510,11 @@
     ],
     "summaryEn": "Philips OneBlade Pro 360 Face + Body trimmer-shaver, wet & dry, 90 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/38828"
+      "https://vlv.am/en/Product/38828",
+      "https://www.philips.com.au/c-p/QP6542_15/-"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 34900,
@@ -111480,7 +111524,10 @@
         "storage": null,
         "priceAmd": 34900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-qp6552-15",
@@ -111493,7 +111540,6 @@
       "QP6552/15"
     ],
     "tier": "mid",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111508,11 +111554,11 @@
     ],
     "summaryEn": "Philips OneBlade Pro 360 Face + Body trimmer-shaver, wet & dry, 120 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/37175"
+      "https://vlv.am/en/Product/37175",
+      "https://www.philips.no/c-p/QP6552_15"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 49900,
     "priceAmdMax": 49900,
@@ -111522,7 +111568,10 @@
         "storage": null,
         "priceAmd": 49900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-bt3617-15",
@@ -111535,7 +111584,6 @@
       "BT3617/15"
     ],
     "tier": "budget",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111549,11 +111597,11 @@
     ],
     "summaryEn": "Philips Beardtrimmer Series 3000 beard trimmer, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42206"
+      "https://vlv.am/en/Product/42206",
+      "https://www.documents.philips.com/assets/20250428/c07407b059264b17961db2cd01392021.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 15900,
     "priceAmdMax": 15900,
@@ -111563,7 +111611,10 @@
         "storage": null,
         "priceAmd": 15900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-bt3660-15",
@@ -111576,7 +111627,6 @@
       "BT3660/15"
     ],
     "tier": "budget",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111590,11 +111640,11 @@
     ],
     "summaryEn": "Philips Beardtrimmer Series 3000 beard trimmer, 80 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42207"
+      "https://vlv.am/en/Product/42207",
+      "https://www.philips.es/c-p/BT3660_15/barbero-serie-3000-arreglo-de-barba-con-cuchillas-totalmente-met"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 21900,
     "priceAmdMax": 21900,
@@ -111604,7 +111654,10 @@
         "storage": null,
         "priceAmd": 21900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-bt5780-15",
@@ -111617,7 +111670,6 @@
       "BT5780/15"
     ],
     "tier": "budget",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111631,11 +111683,11 @@
     ],
     "summaryEn": "Philips Beardtrimmer Series 5000 beard trimmer, 100 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42208"
+      "https://vlv.am/en/Product/42208",
+      "https://www.documents.philips.com/assets/20251202/cfa23abe72824efd894bb3a7008c9c42.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 25900,
     "priceAmdMax": 25900,
@@ -111645,7 +111697,10 @@
         "storage": null,
         "priceAmd": 25900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-bg5470-15",
@@ -111658,7 +111713,6 @@
       "BG5470/15"
     ],
     "tier": "mid",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111673,11 +111727,11 @@
     ],
     "summaryEn": "Philips Bodygroom Series 5000 body groomer, wet & dry, cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42209"
+      "https://vlv.am/en/Product/42209",
+      "https://www.philips.ie/c-p/BG5470_15/body-groomer-5000-series-with-triple-protect-shave-system/support"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 31900,
     "priceAmdMax": 31900,
@@ -111687,7 +111741,10 @@
         "storage": null,
         "priceAmd": 31900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-mg3720-15",
@@ -111700,7 +111757,6 @@
       "MG3720/15"
     ],
     "tier": "budget",
-    "released": "2018",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111714,11 +111770,11 @@
     ],
     "summaryEn": "Philips Multigroom Series 3000 multigroom trimmer, 60 min cordless.",
     "sources": [
-      "https://likemobile.am/en/philips-mg372015"
+      "https://likemobile.am/en/philips-mg372015",
+      "https://www.philips.co.uk/c-p/MG3720_15/multigroom-series-3000-7-in-1-face-and-hair"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 23000,
     "priceAmdMax": 23000,
@@ -111728,7 +111784,10 @@
         "storage": null,
         "priceAmd": 23000
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-mg7921-15",
@@ -111741,7 +111800,6 @@
       "MG7921/15"
     ],
     "tier": "mid",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111755,11 +111813,11 @@
     ],
     "summaryEn": "Philips Multigroom Series 7000 multigroom trimmer, 120 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42212"
+      "https://vlv.am/en/Product/42212",
+      "https://www.documents.philips.com/assets/20251013/04caf0db4a06485b8f83b37500ffe1dc.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 39900,
     "priceAmdMax": 39900,
@@ -111769,7 +111827,10 @@
         "storage": null,
         "priceAmd": 39900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-mg7951-15",
@@ -111782,7 +111843,6 @@
       "MG7951/15"
     ],
     "tier": "mid",
-    "released": "2024",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111796,11 +111856,11 @@
     ],
     "summaryEn": "Philips Multigroom Series 7000 multigroom trimmer, 120 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/44087"
+      "https://vlv.am/en/Product/44087",
+      "https://www.philips.co.uk/c-p/MG7951_15/all-in-one-trimmer-7000-series-17-in-1-trimmer/support"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 49900,
     "priceAmdMax": 49900,
@@ -111810,7 +111870,10 @@
         "storage": null,
         "priceAmd": 49900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc1091-15",
@@ -111823,7 +111886,6 @@
       "HC1091/15"
     ],
     "tier": "budget",
-    "released": "2023",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111837,12 +111899,11 @@
     ],
     "summaryEn": "Philips Kids Hair Clipper: rounded comb tips, quiet, waterproof (IPX7), 45 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/11513"
+      "https://vlv.am/en/Product/11513",
+      "https://www.documents.philips.com/assets/20220422/a1f27e456e394bc882fcae7f01426bf6.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released",
-      "battery.life"
+      "popularity"
     ],
     "priceAmd": 14900,
     "priceAmdMax": 14900,
@@ -111855,6 +111916,9 @@
     ],
     "body": {
       "ip": "IPX7"
+    },
+    "specNA": {
+      "released": "Not published by Philips"
     }
   },
   {
@@ -111868,7 +111932,6 @@
       "HC3505/15"
     ],
     "tier": "budget",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111881,11 +111944,11 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 3000 hair clipper, corded.",
     "sources": [
-      "https://vlv.am/en/Product/11312"
+      "https://vlv.am/en/Product/11312",
+      "https://www.documents.philips.com/assets/20220426/dc9e3a6e4586495ab19cae8300d251d8.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 14900,
     "priceAmdMax": 14900,
@@ -111895,7 +111958,10 @@
         "storage": null,
         "priceAmd": 14900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc3510-15",
@@ -111908,7 +111974,6 @@
       "HC3510/15"
     ],
     "tier": "budget",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111921,11 +111986,11 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 3000 hair clipper, corded.",
     "sources": [
-      "https://vlv.am/en/Product/10808"
+      "https://vlv.am/en/Product/10808",
+      "https://www.documents.philips.com/assets/20220423/f13236c07f3741fcbe57ae8000536d77.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 16900,
     "priceAmdMax": 16900,
@@ -111935,7 +112000,10 @@
         "storage": null,
         "priceAmd": 16900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc3525-15",
@@ -111948,7 +112016,6 @@
       "HC3525/15"
     ],
     "tier": "budget",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111963,11 +112030,11 @@
     "summaryEn": "Philips Hair Clipper Series 3000 hair clipper, 45 min cordless.",
     "sources": [
       "https://vlv.am/en/Product/25009",
-      "https://www.documents.philips.com/assets/20220602/bc27566f12b048c7b614aea800014182.pdf"
+      "https://www.documents.philips.com/assets/20220602/bc27566f12b048c7b614aea800014182.pdf",
+      "https://www.documents.philips.com/assets/20220603/c08f80a7c0a8464c9543aea90141f7f9.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 18900,
     "priceAmdMax": 18900,
@@ -111977,7 +112044,10 @@
         "storage": null,
         "priceAmd": 18900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc3530-15",
@@ -111990,7 +112060,6 @@
       "HC3530/15"
     ],
     "tier": "budget",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112004,11 +112073,11 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 3000 hair clipper, 75 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/16248"
+      "https://vlv.am/en/Product/16248",
+      "https://www.documents.philips.com/assets/20220503/9f0bae2e316a4450a724ae8a005cedcf.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 19900,
     "priceAmdMax": 19900,
@@ -112018,7 +112087,10 @@
         "storage": null,
         "priceAmd": 19900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc5610-15",
@@ -112031,7 +112103,6 @@
       "HC5610/15"
     ],
     "tier": "budget",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112046,11 +112117,11 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 5000 hair clipper, corded.",
     "sources": [
-      "https://vlv.am/en/Product/12840"
+      "https://vlv.am/en/Product/12840",
+      "https://www.philips.ru/c-p/HC5610_15/hairclipper-series-5000-washable-hair-clipper/support"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 26900,
     "priceAmdMax": 26900,
@@ -112060,7 +112131,10 @@
         "storage": null,
         "priceAmd": 26900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc5632-15",
@@ -112073,7 +112147,6 @@
       "HC5632/15"
     ],
     "tier": "mid",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112088,11 +112161,11 @@
     "summaryEn": "Philips Hair Clipper Series 5000 hair clipper, 50 min cordless.",
     "sources": [
       "https://vlv.am/en/Product/19200",
-      "https://www.documents.philips.com/assets/20220421/91a3ca4789b2435cb0acae7e00f8ee17.pdf"
+      "https://www.documents.philips.com/assets/20220421/91a3ca4789b2435cb0acae7e00f8ee17.pdf",
+      "https://www.documents.philips.com/assets/20220531/a63697d7478d45cc9b37aea600a0d21e.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 34900,
@@ -112102,7 +112175,10 @@
         "storage": null,
         "priceAmd": 34900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc5650-15",
@@ -112115,7 +112191,6 @@
       "HC5650/15"
     ],
     "tier": "mid",
-    "released": "2019",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112130,11 +112205,11 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 5000 hair clipper, cordless.",
     "sources": [
-      "https://vlv.am/en/Product/12841"
+      "https://vlv.am/en/Product/12841",
+      "https://www.philips.co.uk/c-p/HC5650_15/hairclipper-series-5000-washable-hair-clipper"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 44000,
@@ -112144,7 +112219,10 @@
         "storage": null,
         "priceAmd": 34900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-hc9420-15",
@@ -112157,7 +112235,6 @@
       "HC9420/15"
     ],
     "tier": "mid",
-    "released": "2020",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112171,11 +112248,11 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 9000 hair clipper, 120 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/28328"
+      "https://vlv.am/en/Product/28328",
+      "https://www.documents.philips.com/assets/20220610/65e50698ba1246e5aefcaeb001640b6a.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 49900,
     "priceAmdMax": 49900,
@@ -112185,7 +112262,10 @@
         "storage": null,
         "priceAmd": 49900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-nt1620-15",
@@ -112198,7 +112278,6 @@
       "NT1620/15"
     ],
     "tier": "budget",
-    "released": "2018",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112215,11 +112294,11 @@
     "sources": [
       "https://vlv.am/en/Product/18599",
       "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
-      "https://www.documents.philips.com/assets/20220424/dad5bbf30d92472c9d84ae81006bd4ae.pdf"
+      "https://www.documents.philips.com/assets/20220424/dad5bbf30d92472c9d84ae81006bd4ae.pdf",
+      "https://www.philips.com.co/c-p/NT1620_15/-"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 5900,
     "priceAmdMax": 5900,
@@ -112232,6 +112311,9 @@
     ],
     "body": {
       "ip": "IPX7"
+    },
+    "specNA": {
+      "released": "Not published by Philips"
     }
   },
   {
@@ -112245,7 +112327,6 @@
       "NT1650/16"
     ],
     "tier": "budget",
-    "released": "2018",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112260,11 +112341,11 @@
     "summaryEn": "Philips Nose Trimmer Series 1000 nose and ear trimmer, washable.",
     "sources": [
       "https://vlv.am/en/Product/26438",
-      "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf"
+      "https://www.documents.philips.com/assets/20260306/34e860dcf5fc4ca0babab40500fbe30f.pdf",
+      "https://www.philips.ru/c-p/NT1650_16/nose-trimmer-series-1000-nose-ear-trimmer"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 11900,
     "priceAmdMax": 11900,
@@ -112277,6 +112358,9 @@
     ],
     "body": {
       "ip": "IPX7"
+    },
+    "specNA": {
+      "released": "Not published by Philips"
     }
   },
   {
@@ -112290,7 +112374,6 @@
       "NT3650/16"
     ],
     "tier": "budget",
-    "released": "2018",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -112305,11 +112388,11 @@
     "summaryEn": "Philips Nose Trimmer Series 3000 nose and ear trimmer, washable.",
     "sources": [
       "https://vlv.am/en/Product/15662",
-      "https://www.philips.com.ph/c-m-pe/face-stylers-and-grooming-kits/detail-and-nose-trimmers/all"
+      "https://www.philips.com.ph/c-m-pe/face-stylers-and-grooming-kits/detail-and-nose-trimmers/all",
+      "https://www.philips.co.nz/c-p/NT3650_16/nose-trimmer-series-3000-nose-ear-eyebrow-trimmer/support?language=CES"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 9900,
     "priceAmdMax": 9900,
@@ -112319,7 +112402,10 @@
         "storage": null,
         "priceAmd": 9900
       }
-    ]
+    ],
+    "specNA": {
+      "released": "Not published by Philips"
+    }
   },
   {
     "id": "philips-bha301-00",
@@ -170256,7 +170342,6 @@
     "summaryEn": "Huawei WATCH GT6 Pro 46mm ATM-B29.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -170265,7 +170350,8 @@
       "Brown"
     ],
     "sources": [
-      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-pro-46mm-atm-b29-black-fluoroelastomer-strap-black-55020fwc.html"
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-pro-46mm-atm-b29-black-fluoroelastomer-strap-black-55020fwc.html",
+      "https://consumer.huawei.com/my/wearables/watch-gt6-pro/specs/"
     ]
   },
   {
@@ -170298,7 +170384,6 @@
     "summaryEn": "Huawei WATCH GT6 46mm ATM-B19.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -170307,7 +170392,8 @@
       "Black"
     ],
     "sources": [
-      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-46mm-atm-b19-green-woven-strap-silver-55020fwd.html"
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-46mm-atm-b19-green-woven-strap-silver-55020fwd.html",
+      "https://consumer.huawei.com/en/wearables/watch-gt6/specs/"
     ]
   },
   {
@@ -170340,7 +170426,6 @@
     "summaryEn": "Huawei WATCH GT6 41mm KSU-B19.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -170349,7 +170434,8 @@
       "White"
     ],
     "sources": [
-      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-41mm-ksu-b19-purple-fluoroelastomer-strap-silver-55020fvu.html"
+      "https://vega.am/home-appliances/phones-and-gadgets/smart-watches/smart-watch-huawei-watch-gt6-41mm-ksu-b19-purple-fluoroelastomer-strap-silver-55020fvu.html",
+      "https://consumer.huawei.com/en/wearables/watch-gt6/specs/"
     ]
   },
   {
