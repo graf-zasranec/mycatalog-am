@@ -1801,12 +1801,17 @@ async function* catPages(base, linkRe, max = 40) {
 
 // Pixel's spec table states the capacity ("MEMORY: 64 GB") where the title does not (owner,
 // 2026-11-14: iPad mini 6). Only the table's own label is read, so a related product cannot answer.
-const pixelMemory = h => {
+// Pixel writes "MEMORY" for the RAM on some pages and the storage on others (owner, 2026-11-14), so
+// the figure counts only when it is a capacity this product is really sold in - an 8 GB RAM line can
+// never pass for a 256 GB phone - and never below 32 GB, which nothing in the catalogue stores.
+const pixelMemory = (h, id) => {
   const t = String(h).replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   const m = t.match(/(?:MEMORY|Memory|ՀԻՇՈՂՈՒԹՅՈՒՆ|Հիշողություն|ПАМЯТЬ|Память)\s*:\s*(\d+(?:[.,]\d+)?)\s*(GB|TB|ԳԲ|ՏԲ|ГБ|ТБ)/);
   if (!m) return undefined;
   const n = parseFloat(m[1].replace(',', '.'));
-  return /^(TB|ՏԲ|ТБ)$/.test(m[2]) ? Math.round(n * 1024) : Math.round(n);
+  const gb = /^(TB|ՏԲ|ТБ)$/.test(m[2]) ? Math.round(n * 1024) : Math.round(n);
+  const sold = new Set(((phoneById[id] || {}).variants || []).map(v => v.storage).filter(Boolean));
+  return gb >= 32 && sold.has(gb) ? gb : undefined;
 };
 const SHOPS = {
   vesta: {
@@ -2143,7 +2148,7 @@ const SHOPS = {
           continue;
         }
         out.push({ id, price: cash || Math.min(...prices),
-          storage: storageOf(title) ?? storageOf(u) ?? v.storage ?? pixelMemory(h), title, url: safe,
+          storage: storageOf(title) ?? storageOf(u) ?? v.storage ?? pixelMemory(h, id), title, url: safe,
           image: img, color, inStock: true });
       }
       return out;
