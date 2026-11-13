@@ -53948,6 +53948,54 @@
     ]
   },
   {
+    "id": "xiaomi-mijia-smart-kettle-bluetooth",
+    "category": "kitchen",
+    "brand": "Xiaomi",
+    "name": "Mijia Smart Kettle (Bluetooth)",
+    "aliases": [
+      "Kettle Xiaomi MiJia Smart Kettle Bluetooth YM-K1501",
+      "Xiaomi Mi Smart Kettle EU ZHF4012GL",
+      "Mi Smart Kettle ZHF4012GL",
+      "Xiaomi Mijia Smart Kettle YM-K1501",
+      "YM-K1501",
+      "ZHF4012GL"
+    ],
+    "tier": "budget",
+    "priceAmd": 32000,
+    "priceAmdMax": 32000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Mijia Smart Kettle: 1.5 L, 1800 W, app temperature control over Bluetooth.",
+    "sources": [
+      "https://www.mi.com/uk/kettle/specs",
+      "https://www.mi.com/global/product/mi-smart-kettle/"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "power": 1800,
+      "volume": 1.5,
+      "control": "app"
+    },
+    "body": {
+      "dimensions": "204 x 145 x 235 mm"
+    },
+    "colors": [
+      "White"
+    ]
+  },
+  {
     "id": "xiaomi-pad-7",
     "category": "tablet",
     "brand": "Xiaomi",
