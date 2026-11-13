@@ -76232,7 +76232,6 @@
     "summaryEn": "HP OmniBook 3 17.3\" Core 3-100U /DR9V7EA.",
     "unsure": [
       "popularity",
-      "display",
       "battery.capacity"
     ],
     "chipset": {
@@ -76242,7 +76241,8 @@
       "weight": 2010
     },
     "sources": [
-      "https://kelaptop.com/de/hp-omnibook-3-17-dk0003ns-d44c1ea"
+      "https://kelaptop.com/de/hp-omnibook-3-17-dk0003ns-d44c1ea",
+      "https://support.hp.com/us-en/document/ish_13687015-13687068-16"
     ],
     "colors": [
       "Silver"
@@ -84697,11 +84697,12 @@
     "sources": [
       "https://appzone.am/en/Assortment/hp-15-fd0558nia-bl8p8ea/",
       "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html",
-      "https://partsurfer.hp.com/"
+      "https://partsurfer.hp.com/",
+      "https://pcb.inc.hp.com/dc/api/productsheet/za-en/2102764698/pdf/BL8P8EA.pdf",
+      "https://support.hp.com/us-en/drivers/hp-15.6-inch-laptop-pc-15-fd0000/model/2102764698?sku=BL8P8EA"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i7-1355U"
@@ -95505,17 +95506,17 @@
     "summaryEn": "Hisense HS5100.",
     "sources": [
       "https://vlv.am/en/Product/33177",
-      "https://device.report/hisense/hs5100"
+      "https://device.report/hisense/hs5100",
+      "https://ru.hisense.com/upload/file_tovar/Service/User%20Manuals/Soundbars/HS5100.pdf"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 1590
+      "weight": 1600
     },
     "colors": [
       "Black"
@@ -96552,11 +96553,11 @@
     "summaryEn": "Hisense H50 Lite.",
     "sources": [
       "https://vlv.am/en/Product/17954",
-      "https://www.devicespecifications.com/en/model/d14d573e"
+      "https://www.devicespecifications.com/en/model/d14d573e",
+      "https://hisense.co.za/products/hisense-infinity-h50-lite-smartphone/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "chipset": {
       "name": "Unisoc T610",
@@ -96637,17 +96638,19 @@
     "summaryEn": "Honor Choice Speaker Pro.",
     "sources": [
       "https://vlv.am/en/Product/35506",
-      "https://box.co.uk/5504aavq-honor-choice-speaker-pro-black"
+      "https://box.co.uk/5504aavq-honor-choice-speaker-pro-black",
+      "https://www.honor.com/ro/honor-choice/honor-choice-portable-bluetooth-speaker-pro/",
+      "https://www.honor.com/cn/honor-choice/bluetooth-portable-speaker-pro/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
     },
-    "body": {
-      "weight": 635
+    "body": {},
+    "specNA": {
+      "body.weight": "Not published by HONOR"
     }
   },
   {
@@ -109382,8 +109385,7 @@
       "life": "9 hours"
     },
     "body": {
-      "ip": "IPX4",
-      "weight": 5
+      "ip": "IPX4"
     },
     "connectivity": {
       "bluetooth": "5.3"
@@ -109394,11 +109396,12 @@
     "summaryEn": "Motorola's noise-cancelling earbuds with 12.4 mm drivers and Bluetooth 5.3.",
     "sources": [
       "https://shop.ucom.am/am/motorola-motobuds.html",
-      "https://smartprix.com/mobile_headphones/motorola-moto-buds-true-wireless-earbuds-ppd1hezjl6xc"
+      "https://smartprix.com/mobile_headphones/motorola-moto-buds-true-wireless-earbuds-ppd1hezjl6xc",
+      "https://www.motorola.com/we/en/moto-buds",
+      "https://en-gb.support.motorola.com/ci/fattach/get/87344305/1754049568/redirect/1/filename/moto%2Bbuds%2B%2B%26%2Bmoto%2Bbuds.ROW.Online.User%2BGuide.en-GB.SSC8E51826-A_web.pdf"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "priceAmd": 35900,
     "priceAmdMax": 35900,
@@ -109408,7 +109411,10 @@
         "storage": null,
         "priceAmd": 35900
       }
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Not published by Motorola"
+    }
   },
   {
     "id": "motorola-moto-buds-bass",
