@@ -28,7 +28,7 @@ from zigzag_stock import stock_of, price_of
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / 'data' / 'zigzag.json'
-DELAY = 2  # 3 s took 115 min for ~1700 pages with only 12 refusals (2026-10-16 night log)
+DELAY = 1.5  # 2 s read 2,423 pages with no refusal from the owner's Armenian line (2026-11-13); 3 s took 115 min for ~1700 (2026-10-16)
 
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
 
@@ -77,6 +77,12 @@ def known_urls():
             if o.get('shop') == 'zigzag' and str(o.get('url', '')).startswith('http'):
                 urls.add(o['url'])
     return urls
+
+
+def save(rows):
+    temporary = OUT.with_suffix('.json.tmp')
+    temporary.write_bytes((json.dumps(list(rows.values()), ensure_ascii=False) + '\n').encode('utf-8'))
+    temporary.replace(OUT)
 
 
 def main():
@@ -129,10 +135,10 @@ def main():
         checked += 1
         if i % 25 == 0:
             print(f'  {i}/{len(urls)}', flush=True)
+        if i % 100 == 0:
+            save(rows)  # an interrupted run keeps what it read (2026-11-13)
 
-    temporary = OUT.with_suffix('.json.tmp')
-    temporary.write_bytes((json.dumps(list(rows.values()), ensure_ascii=False) + '\n').encode('utf-8'))
-    temporary.replace(OUT)
+    save(rows)
     print(f'done: {checked} confirmed, {gone} unresolved (previous dates retained), {len(rows)} cached -> {OUT.relative_to(ROOT)}')
 
 if __name__ == '__main__':
