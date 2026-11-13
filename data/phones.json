@@ -64936,8 +64936,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-155H"
@@ -72628,8 +72627,7 @@
     },
     "summaryEn": "ASUS Zenbook DUO 14.5\" Touch Ultra 9-285H W11 /UX8406CA-IS99T.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-285H"
@@ -72641,7 +72639,8 @@
       "Gray"
     ],
     "sources": [
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.asus.com/lk/laptops/for-home/zenbook/asus-zenbook-duo-2024-ux8406/techspec/"
     ],
     "os": "Windows 11"
   },
@@ -73121,8 +73120,7 @@
     },
     "summaryEn": "Apple MacBook Air 13 M3.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Apple M3",
@@ -73138,7 +73136,10 @@
     "colors": [
       "Gray"
     ],
-    "os": "macOS Sonoma"
+    "os": "macOS Sonoma",
+    "sources": [
+      "https://www.apple.com/macbook-air/compare/?modelList=MacBook-Air-M3,MacBook-Air-M3-15"
+    ]
   },
   {
     "id": "hp-15-6-core-5-120u-a5cv9ea",
@@ -73690,8 +73691,7 @@
     },
     "summaryEn": "Huawei MateBook Fold Ultimate 18\".",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Huawei Kirin X90"
@@ -73701,7 +73701,8 @@
     },
     "sources": [
       "https://www.notebookcheck.net/",
-      "https://www.yerevanmobile.am/en/huawei-matebook-fold-ultimate-18.html"
+      "https://www.yerevanmobile.am/en/huawei-matebook-fold-ultimate-18.html",
+      "https://consumer.huawei.com/cn/harmonyos-computer/matebook-fold-ultimate-design/specs/"
     ],
     "colors": [
       "Black"
@@ -76380,20 +76381,19 @@
     "summaryEn": "Samsung Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "chipset": {
       "name": "Intel Core i7-1355U",
       "cpu": "10-core (2 performance + 8 efficiency), up to 5.0 GHz"
     },
     "body": {
-      "weight": 1580
+      "weight": 1570
     },
     "sources": [
-      "https://www.samsung.com/us/computing/galaxy-books/galaxy-book3/"
+      "https://www.samsung.com/us/computing/galaxy-books/galaxy-book3/",
+      "https://image-us.samsung.com/SamsungUS/samsungbusiness/solutions/industries/government/msrp-price-sheets/06052024/Samsung_Mobile_Computing_MSRP_Price_File_May_2024.pdf"
     ],
     "connectivity": {
       "wifi": "Wi-Fi 6"
@@ -76570,7 +76570,6 @@
     "summaryEn": "LG Gram Book 15.6\" Core i5-1334U /2. W11H /15U50T-G.ARS2U1.",
     "unsure": [
       "popularity",
-      "display",
       "battery.capacity"
     ],
     "chipset": {
@@ -76580,7 +76579,8 @@
       "weight": 1650
     },
     "sources": [
-      "https://www.notebookcheck.net/LG-gram-Book-15U50T.1077540.0.html"
+      "https://www.notebookcheck.net/LG-gram-Book-15U50T.1077540.0.html",
+      "https://www.lg.com/us/newsroom/media-entertainment/lg-announces-us-pricing-and-availability-of-new-gram-book-laptop"
     ],
     "os": "Windows 11",
     "colors": [
@@ -84055,12 +84055,12 @@
     "sources": [
       "https://appzone.am/en/Assortment/katana-15hx-b14wgk/",
       "https://www.notebookcheck.net/MSI-Katana-15-HX-B14WGK-i7-14650HX.1243320.0.html",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.msi.com/Laptop/Katana-15-HX-B14WX/Specification"
     ],
     "unsure": [
       "popularity",
-      "chipset",
-      "graphics"
+      "chipset"
     ],
     "display": {
       "size": 15.6,
@@ -85726,8 +85726,7 @@
     },
     "summaryEn": "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i5-1240P"
@@ -85777,8 +85776,7 @@
     },
     "summaryEn": "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "AMD Ryzen 5 6600H"
@@ -85820,7 +85818,7 @@
       }
     ],
     "display": {
-      "size": 15.6,
+      "size": 16,
       "resolution": "1920x1200"
     },
     "battery": {
@@ -85828,8 +85826,7 @@
     },
     "summaryEn": "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i5-12450H"
@@ -86461,8 +86458,7 @@
     },
     "summaryEn": "Lenovo Legion 5 15AHP11 Ryzen 7.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "AMD Ryzen 7 250"
@@ -86841,9 +86837,7 @@
     },
     "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 5 135H.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-135H"
@@ -86893,9 +86887,7 @@
     },
     "summaryEn": "Lenovo ThinkBook 16 G8 IAL Ultra 7 255H.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255H"
@@ -87008,9 +87000,7 @@
     },
     "summaryEn": "Lenovo ThinkBook 16 G9 IPL Ultra 7.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-355"
@@ -87060,9 +87050,7 @@
     },
     "summaryEn": "Lenovo ThinkBook 16 G9 IRL i7-240H.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core 7-240H"
@@ -87112,9 +87100,7 @@
     },
     "summaryEn": "Lenovo ThinkPad E14 Gen 7 Ultra 5 225U.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-225U"
@@ -87164,9 +87150,7 @@
     },
     "summaryEn": "Lenovo ThinkPad E16 G4 Ultra 7.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-355"
@@ -87260,9 +87244,7 @@
     },
     "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 5 225U.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-225U"
@@ -87312,9 +87294,7 @@
     },
     "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 7 255H.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255H"
@@ -87364,9 +87344,7 @@
     },
     "summaryEn": "Lenovo ThinkPad E16 Gen 3 Ultra 7 258V.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-258V"
@@ -87657,8 +87635,7 @@
     "summaryEn": "Lenovo Yoga Slim 7 14ILL10 Ultra 5 226V.",
     "unsure": [
       "popularity",
-      "display",
-      "battery.capacity"
+      "display"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-226V"
@@ -110720,19 +110697,19 @@
       "wetDry": true
     },
     "battery": {
-      "life": "40 min"
+      "life": "45 min"
     },
     "colors": [
       "Black"
     ],
     "summaryEn": "Philips Shaver 3000X Series electric shaver, wet & dry, 40 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/30686"
+      "https://vlv.am/en/Product/30686",
+      "https://www.documents.philips.com/assets/20230626/51383b0de30d44de8779b02d007351e2.pdf"
     ],
     "unsure": [
       "popularity",
-      "released",
-      "battery.life"
+      "released"
     ],
     "priceAmd": 31900,
     "priceAmdMax": 31900,
@@ -110812,12 +110789,12 @@
     ],
     "summaryEn": "Philips Shaver 5000X Series electric shaver, wet & dry, 50 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/37174"
+      "https://vlv.am/en/Product/37174",
+      "https://www.documents.philips.com/assets/20221101/34c2e266e9ac4443833daf4000ffc7d8.pdf",
+      "https://www.philips.co.jp/about/news-and-insights/press-release/mg-shaver-5000x-series"
     ],
     "unsure": [
-      "popularity",
-      "released",
-      "battery.life"
+      "popularity"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 34900,
@@ -111233,12 +111210,12 @@
     ],
     "summaryEn": "Philips Shaver Series 9000 electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/31038"
+      "https://vlv.am/en/Product/31038",
+      "https://www.documents.philips.com/assets/20230920/3f6ad11c68e846e4832cb083017e97bf.pdf"
     ],
     "unsure": [
       "popularity",
-      "released",
-      "battery.life"
+      "released"
     ],
     "priceAmd": 159000,
     "priceAmdMax": 159000,
@@ -111261,7 +111238,7 @@
       "XP9200/30"
     ],
     "tier": "flagship",
-    "released": "2024",
+    "released": "2025",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111276,11 +111253,12 @@
     ],
     "summaryEn": "Philips Shaver i9000 Prestige electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42203"
+      "https://vlv.am/en/Product/42203",
+      "https://www.philips.com/a-w/about/news/archive/standard/news/press/2025/philips-launches-its-most-intelligent-shaver-yet-the-i9000-shaver-series-redefines-premium-personalized-male-grooming",
+      "https://www.philips.ie/c-p/XP9200_30/i9000-prestige-wet-dry-electric-shaver-with-skiniq"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 179900,
     "priceAmdMax": 179900,
@@ -111303,7 +111281,7 @@
       "XP9202/10"
     ],
     "tier": "flagship",
-    "released": "2024",
+    "released": "2025",
     "popularity": 35,
     "accent": "#5C6470",
     "appliance": {
@@ -111318,11 +111296,12 @@
     ],
     "summaryEn": "Philips Shaver i9000 Prestige electric shaver, wet & dry, 60 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/42204"
+      "https://vlv.am/en/Product/42204",
+      "https://www.philips.com/a-w/about/news/archive/standard/news/press/2025/philips-launches-its-most-intelligent-shaver-yet-the-i9000-shaver-series-redefines-premium-personalized-male-grooming",
+      "https://www.documents.philips.com/assets/20250226/9ed53c35c9ad4d67bb68b29000f2e14b.pdf"
     ],
     "unsure": [
-      "popularity",
-      "released"
+      "popularity"
     ],
     "priceAmd": 149900,
     "priceAmdMax": 149900,
@@ -111444,12 +111423,12 @@
     ],
     "summaryEn": "Philips OneBlade Pro 360 trimmer-shaver, wet & dry, 90 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/38841"
+      "https://vlv.am/en/Product/38841",
+      "https://www.documents.philips.com/assets/20250801/78e997103ddd47629f7ab32c00606b7e.pdf"
     ],
     "unsure": [
       "popularity",
-      "released",
-      "battery.life"
+      "released"
     ],
     "priceAmd": 29900,
     "priceAmdMax": 29900,
@@ -111983,12 +111962,12 @@
     ],
     "summaryEn": "Philips Hair Clipper Series 3000 hair clipper, 45 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/25009"
+      "https://vlv.am/en/Product/25009",
+      "https://www.documents.philips.com/assets/20220602/bc27566f12b048c7b614aea800014182.pdf"
     ],
     "unsure": [
       "popularity",
-      "released",
-      "battery.life"
+      "released"
     ],
     "priceAmd": 18900,
     "priceAmdMax": 18900,
@@ -112101,19 +112080,19 @@
       "type": "hair_clipper"
     },
     "battery": {
-      "life": "50 min"
+      "life": "90 min"
     },
     "colors": [
       "Black"
     ],
     "summaryEn": "Philips Hair Clipper Series 5000 hair clipper, 50 min cordless.",
     "sources": [
-      "https://vlv.am/en/Product/19200"
+      "https://vlv.am/en/Product/19200",
+      "https://www.documents.philips.com/assets/20220421/91a3ca4789b2435cb0acae7e00f8ee17.pdf"
     ],
     "unsure": [
       "popularity",
-      "released",
-      "battery.life"
+      "released"
     ],
     "priceAmd": 34900,
     "priceAmdMax": 34900,
