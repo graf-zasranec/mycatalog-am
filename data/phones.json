@@ -39336,7 +39336,6 @@
     ],
     "summaryEn": "Flagship silicon in the Nord price bracket: Snapdragon 8s Gen 4 and a 6.78-inch AMOLED.",
     "unsure": [
-      "variants",
       "popularity"
     ],
     "year": 2026,
@@ -39344,7 +39343,9 @@
     "sources": [
       "kimovil",
       "https://www.yerevanmobile.am/en/oneplus-nord-6.html",
-      "https://www.notebookcheck.net/Nord-6-OnePlus-reveals-price-and-features-of-new-mid-range-smartphone.1268799.0.html"
+      "https://www.notebookcheck.net/Nord-6-OnePlus-reveals-price-and-features-of-new-mid-range-smartphone.1268799.0.html",
+      "https://www.oneplus.com/global/nord-6/specs",
+      "https://www.oneplus.in/oneplus-nord-6"
     ]
   },
   {
@@ -69427,8 +69428,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "White",
@@ -69444,10 +69444,11 @@
       "bluetooth": "5.3"
     },
     "body": {
-      "weight": 8.5
+      "weight": 10.9
     },
     "sources": [
-      "https://www.bose.com/p/earbuds/bose-quietcomfort-earbuds"
+      "https://www.bose.com/p/earbuds/bose-quietcomfort-earbuds",
+      "https://www.bose.com/p/earbuds/bose-quietcomfort-headphones/QCEARB24-HEADPHONEIN.html?dwvar_QCEARB24-HEADPHONEIN_color=CHILLED+LILAC"
     ]
   },
   {
@@ -72826,8 +72827,7 @@
     },
     "summaryEn": "Honor MagicBook X14 i5-13420H W11H /5301ALWG.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
@@ -72838,6 +72838,9 @@
     "os": "Windows 11",
     "colors": [
       "Silver"
+    ],
+    "sources": [
+      "https://www.honor.com/eurasia/laptops/honor-magicbook-x14-2025-i5-13420H/"
     ]
   },
   {
@@ -83968,11 +83971,12 @@
     "sources": [
       "https://appzone.am/en/Assortment/lenovo-v15-g3/",
       "https://psref.lenovo.com/syspool/Sys/PDF/Lenovo/Lenovo_V15_G3_IAP/Lenovo_V15_G3_IAP_Spec.pdf",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/Lenovo_V15_G3_IAP?M=82TT00HNAK",
+      "https://psref.lenovo.com/Detail/Lenovo_V15_G3_IAP?M=82TTA097IH"
     ],
     "unsure": [
-      "popularity",
-      "graphics"
+      "popularity"
     ],
     "display": {
       "size": 15.6,
@@ -84021,11 +84025,11 @@
     "sources": [
       "https://appzone.am/en/Assortment/dell-vostro-15-3530/",
       "https://laptopdecision.com/compare/dell-vostro-15-3530-vs-Dell-Vostro-15-3500",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.dell.com/support/manuals/pt-br/vostro-15-3530-laptop/vostro_3530_om/gpu-integrada?guid=guid-df564d91-9aad-4d11-8bce-cd96e402acd3&lang=pt-br"
     ],
     "unsure": [
-      "popularity",
-      "graphics"
+      "popularity"
     ],
     "display": {
       "size": 15.6,
@@ -84037,7 +84041,7 @@
       "name": "Intel Core i3-1315U"
     },
     "graphics": {
-      "name": "INTEGRATED",
+      "name": "Intel UHD Graphics",
       "type": "integrated"
     },
     "body": {
@@ -84284,11 +84288,11 @@
     "sources": [
       "https://appzone.am/en/Assortment/lenovo-loq-15ahp10/",
       "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15AHP10/LOQ_15AHP10_Spec.pdf",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/Detail/LOQ_15AHP10?M=83JG000VRK"
     ],
     "unsure": [
-      "popularity",
-      "graphics"
+      "popularity"
     ],
     "display": {
       "size": 15.6,
@@ -108126,18 +108130,18 @@
       "https://mobilecentre.am/product/xiaomi-buds-3-carbon-black-bhr5527gl-_m2111e1_/27340/",
       "https://www.mi.com/global/product/xiaomi-buds-3/specs/",
       "https://www.mi.com/global/product/xiaomi-buds-3/",
-      "https://www.digitalcitizen.life/xiaomi-buds-3-review/"
+      "https://www.digitalcitizen.life/xiaomi-buds-3-review/",
+      "https://www.mi.com/uk/product/xiaomi-buds-3/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.2"
     },
     "body": {
       "ip": "IP55 (earbuds only)",
-      "weight": 5
+      "weight": 4.6
     }
   },
   {
@@ -110268,11 +110272,12 @@
     "sources": [
       "https://redstore.am/en/product/lenovo-yoga-7i-2in1-14iph11",
       "https://www.notebookcheck.net/Lenovo-Yoga-7-2-in-1-14IPH11.1309320.0.html",
-      "https://psref.lenovo.com/Product/2794"
+      "https://psref.lenovo.com/Product/2794",
+      "https://psref.lenovo.com/Detail/Yoga_Slim_7_Ultra_14IPH11?M=83TC0003US",
+      "https://psref.lenovo.com/Detail/Yoga_7_2_in_1_14IPH11?M=83TC003XUS"
     ],
     "unsure": [
       "popularity",
-      "display.resolution",
       "body.weight"
     ],
     "priceAmd": 799000,
