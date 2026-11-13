@@ -813,7 +813,12 @@ h2.sh em{font-style:normal;color:inherit;padding:0;font-size:13px;margin-left:8p
 .product-page{--product-section-space:48px;--product-heading-space:16px}
 .product-page>h2.sh{margin:var(--product-section-space) 0 var(--product-heading-space);font-size:1rem;font-weight:700;line-height:1.4;color:var(--text)}
 .product-page>h2.sh+ :is(.olist,.hist,.secgrid,.grid,.note){margin-top:0}
-@media(max-width:700px){.product-page{--product-section-space:32px;--product-heading-space:12px}}
+@media(max-width:700px){
+  .product-page{--product-section-space:32px;--product-heading-space:12px}
+  .product-page .sc li{font-size:12px}
+  .product-page .orow :is(.stale,.esim){color:var(--body)}
+  .product-page .orow:has(.stale.old){opacity:1}
+}
 
 /* ---- product stage (Roastery): the name is the page, the phone stands against it ---- */
 .pstage{margin-top:6px}
