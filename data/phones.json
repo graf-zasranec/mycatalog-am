@@ -20003,11 +20003,6 @@
       },
       {
         "ram": 16,
-        "storage": 256,
-        "priceAmd": 587700
-      },
-      {
-        "ram": 16,
         "storage": 512,
         "priceAmd": 675000
       }
@@ -20050,7 +20045,6 @@
     ],
     "summaryEn": "The largest Pixel: a 6.8-inch 120 Hz LTPO screen on Tensor G6, with a 42 MP front camera.",
     "unsure": [
-      "variants",
       "popularity"
     ],
     "year": 2026,
@@ -20058,7 +20052,8 @@
     "sources": [
       "kimovil",
       "https://www.gsmarena.com/a-14800.php",
-      "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/"
+      "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
+      "https://store.google.com/us/product/pixel_11_pro_specs?hl=en-US"
     ]
   },
   {
@@ -40269,16 +40264,14 @@
       "Poco Yellow"
     ],
     "summaryEn": "A performance-focused mid-ranger with a flagship-class Dimensity chip, 120Hz AMOLED, 6000 mAh battery and IP68.",
-    "unsure": [
-      "variants"
-    ],
     "category": "phone",
     "aliases": [
       "Xiaomi Poco X7 Pro",
       "POCO POCO X7 Pro"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/poco-x7-pro/specs/"
     ]
   },
   {
@@ -57862,11 +57855,11 @@
     "summaryEn": "The same 200 MP sensor as the Pro+, on a flat screen and a smaller bill.",
     "unsure": [
       "popularity",
-      "priceAmdMax",
-      "colors"
+      "priceAmdMax"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/support/faq/details/KA-243056/"
     ]
   },
   {
@@ -64955,11 +64948,10 @@
     "summaryEn": "Lenovo Yoga 9 14IMH9.",
     "unsure": [
       "popularity",
-      "display",
-      "chipset"
+      "display"
     ],
     "chipset": {
-      "name": "Intel Core Ultra 7-155H"
+      "name": "Intel Core Ultra 7 155H"
     },
     "body": {
       "weight": 1320
@@ -70214,8 +70206,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -70232,7 +70223,8 @@
       "weight": 7.5
     },
     "sources": [
-      "https://support.jbl.com/gb/en/headphones/TOUR-PRO-TWS-.html"
+      "https://support.jbl.com/gb/en/headphones/TOUR-PRO-TWS-.html",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwe30c09f5/pdfs/JBL_TOUR%20PRO%2BTWS_QSG.pdf"
     ]
   },
   {
@@ -71162,8 +71154,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -71180,7 +71171,8 @@
       "weight": 6.2
     },
     "sources": [
-      "https://gearjunkie.com/product/jbl-endurance-race-tws"
+      "https://gearjunkie.com/product/jbl-endurance-race-tws",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwd071d9f0/pdfs/JBL_Endurance%20Race%20TWS_QSG_Multlingual.pdf"
     ],
     "settled": [
       "notADuplicate"
@@ -72056,8 +72048,7 @@
     },
     "summaryEn": "ASUS VivoBook 17.3\" Core 5-120U /90NB13X2-M00J00.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core 5-120U"
@@ -72069,7 +72060,8 @@
       "Blue"
     ],
     "sources": [
-      "https://www.sparepartworld.com/asus/notebook/vivobook-serie/vivobook-17-x1704va/"
+      "https://www.sparepartworld.com/asus/notebook/vivobook-serie/vivobook-17-x1704va/",
+      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-17-x1704/techspec/"
     ]
   },
   {
@@ -72198,8 +72190,7 @@
     },
     "summaryEn": "ASUS Vivobook S 14\" Core 5-210H /90NB1682-M00720.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core 5-210H"
@@ -72211,7 +72202,8 @@
       "Gray"
     ],
     "sources": [
-      "https://online.challenger.sg/products/asus-vb-s3407ca-sf143w-u7-255h-16gb-1tb-14"
+      "https://online.challenger.sg/products/asus-vb-s3407ca-sf143w-u7-255h-16gb-1tb-14",
+      "https://www.asus.com/ph/laptops/for-home/vivobook/asus-vivobook-s14-s3407/techspec/"
     ]
   },
   {
@@ -72336,8 +72328,7 @@
     },
     "summaryEn": "HP OmniBook X Flip 14\" Ultra 7-256V W11H /BZ2X0EA.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-256V"
@@ -72350,7 +72341,8 @@
     ],
     "sources": [
       "https://laptopdecision.com/compare/hp-omnibook-x-flip-16-vs-hp-omnibook-x-flip-14",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.hp.com/kz-ru/products/laptops/product-details/product-specifications/2103163507"
     ],
     "os": "Windows 11"
   },
@@ -72571,8 +72563,7 @@
     },
     "summaryEn": "HP OmniBook 7 16\" Core 5-210H W11H /C21N7EA.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core 5-210H"
@@ -72583,7 +72574,10 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "sources": [
+      "https://www.hp.com/kz-ru/products/laptops/product-details/product-specifications/2103219703"
+    ]
   },
   {
     "id": "hp-omen-16-ultra-7-255hx-rtx-5070ti-c5hz1ea",
@@ -72924,8 +72918,7 @@
     },
     "summaryEn": "HP OmniBook X Flip x360 14\" Ultra 7-256V W11H /C1UM8EA.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-256V"
@@ -72936,7 +72929,10 @@
     "colors": [
       "Silver"
     ],
-    "os": "Windows 11"
+    "os": "Windows 11",
+    "sources": [
+      "https://www.hp.com/kz-ru/products/laptops/product-details/product-specifications/2103212408"
+    ]
   },
   {
     "id": "hp-pavilion-16-r7-8840u-b2cv4ea",
@@ -73061,8 +73057,7 @@
     },
     "summaryEn": "Honor MagicBook X 16 Pro i5-13420H W11H /5301AHQV.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
@@ -73074,7 +73069,8 @@
       "Silver"
     ],
     "sources": [
-      "https://m.gsmarena.com/honor_unveils_magicbook_x_14_pro_and_x_16_pro_in_india-news-61971.php"
+      "https://m.gsmarena.com/honor_unveils_magicbook_x_14_pro_and_x_16_pro_in_india-news-61971.php",
+      "https://www.honor.com/global/laptops/honor-magicbook-x16-pro-2024/"
     ],
     "os": "Windows 11"
   },
@@ -76411,7 +76407,6 @@
     "summaryEn": "Samsung Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*.",
     "unsure": [
       "popularity",
-      "chipset",
       "battery.capacity"
     ],
     "chipset": {
@@ -76423,7 +76418,8 @@
     },
     "sources": [
       "https://www.samsung.com/us/computing/galaxy-books/galaxy-book3/",
-      "https://image-us.samsung.com/SamsungUS/samsungbusiness/solutions/industries/government/msrp-price-sheets/06052024/Samsung_Mobile_Computing_MSRP_Price_File_May_2024.pdf"
+      "https://image-us.samsung.com/SamsungUS/samsungbusiness/solutions/industries/government/msrp-price-sheets/06052024/Samsung_Mobile_Computing_MSRP_Price_File_May_2024.pdf",
+      "https://www.intel.com/content/www/us/en/products/sku/232160/intel-core-i71355u-processor-12m-cache-up-to-5-00-ghz/specifications.html"
     ],
     "connectivity": {
       "wifi": "Wi-Fi 6"
@@ -76463,7 +76459,6 @@
     "summaryEn": "Honor MagicBook X16 Plus 16\" Core 16/1 W11H /5301ALVV.",
     "unsure": [
       "popularity",
-      "display",
       "chipset"
     ],
     "chipset": {
@@ -76691,10 +76686,7 @@
     "summaryEn": "Samsung Galaxy Book5 Pro 14\" Touch Ultra 7-Series 2 W11H /NP940XHA-KG1US.",
     "unsure": [
       "popularity",
-      "display",
-      "chipset",
-      "battery.capacity",
-      "body.weight"
+      "chipset"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7 (Series 2)",
@@ -76704,7 +76696,8 @@
       "weight": 1230
     },
     "sources": [
-      "https://www.samsung.com/us/computing/galaxy-books/galaxy-book5-pro/"
+      "https://www.samsung.com/us/computing/galaxy-books/galaxy-book5-pro/",
+      "https://www.samsung.com/ie/business/computers/galaxy-book/galaxy-book5-pro-14-inch-ultra-7-16gb-512gb-np940xha-kg1uk/"
     ],
     "connectivity": {
       "wifi": "Wi-Fi 7"
@@ -76879,9 +76872,7 @@
     "summaryEn": "ASUS ZEP 16 i7-13620H 4060 W11 /GU603VV*.",
     "unsure": [
       "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
+      "display"
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
@@ -76890,7 +76881,8 @@
       "weight": 2000
     },
     "sources": [
-      "https://www.notebookcheck.net/Asus-ROG-Zephyrus-G16-GU603VV.713853.0.html"
+      "https://www.notebookcheck.net/Asus-ROG-Zephyrus-G16-GU603VV.713853.0.html",
+      "https://rog.asus.com/us/laptops/rog-zephyrus/rog-zephyrus-g16-2023-series/spec/"
     ],
     "os": "Windows 11",
     "colors": [
@@ -77889,8 +77881,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Black",
@@ -77907,7 +77898,8 @@
     },
     "sources": [
       "https://dreametech.com.tr/products/dreame-aqua10-ultra-roller-complete-robot-supurge",
-      "https://de.dreametech.com/products/aqua10-ultra-roller-complete-saugroboter-landing"
+      "https://de.dreametech.com/products/aqua10-ultra-roller-complete-saugroboter-landing",
+      "https://pt.dreametech.com/products/aspirador-robo-aqua10-ultra-roller-complete"
     ]
   },
   {
@@ -78099,8 +78091,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black",
@@ -78113,7 +78104,8 @@
       "weight": 2000
     },
     "sources": [
-      "https://www.ldlc.com/en/product/PB00570369.html"
+      "https://www.ldlc.com/en/product/PB00570369.html",
+      "https://ph.harmankardon.com/CITATION-ONE-MK3.html"
     ]
   },
   {
@@ -84141,13 +84133,11 @@
     "summaryEn": "HP HYPERX OMEN 16-AM2715NR.",
     "sources": [
       "https://appzone.am/en/Assortment/hyperx-omen-16-am2715nr/",
-      "https://www.notebookcheck.net/HP-Omen-16-2024.826491.0.html"
+      "https://www.notebookcheck.net/HP-Omen-16-2024.826491.0.html",
+      "https://www.hp.com/us-en/shop/pdp/hyperx-omen-16-inch-gaming-laptop-pc-16-am2715nr?jumpid=ma_hp-gaming_product-tile_intel-gaming_11_d9km2ua_hyperx-omen-16-inch-"
     ],
     "unsure": [
-      "popularity",
-      "chipset",
-      "graphics",
-      "body.weight"
+      "popularity"
     ],
     "display": {
       "size": 16,
@@ -84156,14 +84146,14 @@
     },
     "os": "Windows 11",
     "chipset": {
-      "name": "Intel Core Ultra 7-356H"
+      "name": "Intel Core Ultra 7 356H"
     },
     "graphics": {
       "name": "RTX 5070 8GB",
       "type": "discrete"
     },
     "body": {
-      "weight": 2430
+      "weight": 2480
     },
     "colors": [
       "Black"
@@ -88333,8 +88323,7 @@
     },
     "summaryEn": "HP Victus 15.6\" FHD i7-Geforce RTX 5060 I.",
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
@@ -88348,7 +88337,8 @@
     },
     "sources": [
       "https://www.notebookcheck.net/HP-Victus-15-fa2000ng.1186034.0.html",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.hp.com/emea_middle_east-en/products/laptops/product-details/product-specifications/2103606985"
     ],
     "colors": [
       "Gray"
@@ -98386,11 +98376,11 @@
     "sources": [
       "https://vlv.am/en/Product/17931",
       "https://e-catalog.com/SAMSUNG-HW-A450.htm",
-      "https://www.easylounge.com/barre-de-son/samsung-hw-a450-noir-70125"
+      "https://www.easylounge.com/barre-de-son/samsung-hw-a450-noir-70125",
+      "https://www.samsung.com/pl/audio-devices/soundbar/a450-black-hw-a450-en/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "body": {
       "weight": 1500
@@ -173358,8 +173348,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "appliance": {
       "type": "robot_vacuum",
@@ -173374,7 +173363,8 @@
       "White"
     ],
     "sources": [
-      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-robot/vacuum-cleaner-robot-karcher-rcv-5-9790-1170-640643.html"
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-robot/vacuum-cleaner-robot-karcher-rcv-5-9790-1170-640643.html",
+      "https://www.kaercher.com/documents/manuals/html/BTA-5814301-000-06/EN.html"
     ]
   },
   {
