@@ -77,7 +77,7 @@ const X = {
     findL: 'Որոնել', showN: 'Ցույց տալ {n}', filtersT: 'Զտիչներ', closeL: 'Փակել',
     atShop: '{shop}', lessDearest: 'ամենաթանկ խանութից {n} ֏ ցածր',
     histNone: '{c}-ի գնի պատմությունը կսկսվի հաջորդ գիշերային թարմացումից', histLow: 'Ամենացածրը {d}-ից ի վեր', histAbove: '{p}%-ով բարձր {d}-ի ամենացածրից', histLowLine: 'Ամենացածրը {d}-ից՝ {n} ֏ ({d2})', histWhat: 'օրվա ամենացածր գինը՝ {c}', histKeys: 'Սլաքներով կարդացեք ամեն օրը', histLowest: 'Ամենացածր',
-    spotT: 'Օրվա առաջարկը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
+    spotT: 'Օրվա առաջարկը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', faqL: 'Հաճախ տրվող հարցեր', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
     dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', sourcesL: 'Աղբյուրներ', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
     connF: 'Միացում', cellY: 'Wi-Fi + բջջային կապ', conns: { wireless: 'Անլար', wired: 'Լարով' },
@@ -112,7 +112,7 @@ const X = {
     findL: 'Найти', showN: 'Показать {n}', filtersT: 'Фильтры', closeL: 'Закрыть',
     atShop: 'в {shop}', lessDearest: 'на {n} ֏ дешевле самого дорогого магазина',
     histNone: 'История цены для {c} начнётся со следующего ночного обновления', histLow: 'Самая низкая с {d}', histAbove: 'На {p}% выше минимума {d}', histLowLine: 'Минимум с {d}: {n} ֏ ({d2})', histWhat: 'самая низкая цена дня, {c}', histKeys: 'Стрелки читают каждый день', histLowest: 'Минимум',
-    spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', allPosts: 'Все статьи', readL: 'Читать',
+    spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', faqL: 'Частые вопросы', allPosts: 'Все статьи', readL: 'Читать',
     dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', sourcesL: 'Источники', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
     connF: 'Подключение', cellY: 'Wi-Fi + сотовая связь', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
@@ -150,7 +150,7 @@ const X = {
     findL: 'Find', showN: 'Show {n}', filtersT: 'Filters', closeL: 'Close',
     atShop: 'at {shop}', lessDearest: '{n} ֏ less than the dearest shop',
     histNone: 'Price history for {c} starts with the next nightly update', histLow: 'Lowest since {d}', histAbove: '{p}% above the {d} low', histLowLine: 'Lowest since {d}: {n} ֏ on {d2}', histWhat: 'cheapest shop each day, {c}', histKeys: 'Arrow keys read each day', histLowest: 'Lowest',
-    spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', allPosts: 'All posts', readL: 'Read',
+    spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', faqL: 'Frequently asked questions', allPosts: 'All posts', readL: 'Read',
     dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', sourcesL: 'Sources', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
     connF: 'Connection', cellY: 'Wi-Fi + Cellular', conns: { wireless: 'Wireless', wired: 'Wired' },
@@ -2605,6 +2605,9 @@ function postBody(list) {
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>';
     inList = li;
+    // "!items:<id>,..." is a live price list build.mjs resolved from the article's "!list:" query
+    if (s.startsWith('!items:')) { const ps = s.slice(7).split(',').map(byId).filter(p => p && hasReal(p)); if (ps.length) html += `<div class="grid post-grid">${ps.map(card).join('')}</div>`; continue; }
+    if (s.startsWith('### ')) { html += `<h3>${esc(s.slice(4))}</h3>`; continue; }
     // "!fig:<path>|<caption>" is a picture from images/blog with its caption
     const fig = /^!fig:(images\/blog\/[\w.-]+)\|(.*)$/.exec(s);
     html += fig ? `<figure class="post-fig"><img src="${esc(fig[1])}" alt="${esc(fig[2])}" loading="lazy" decoding="async"><figcaption>${esc(fig[2])}</figcaption></figure>`
@@ -2630,6 +2633,7 @@ function postView(a) {
       <p class="post-lead">${LIVE(esc(T.lead))}</p>
       ${a.cover ? `<img class="post-cover" src="${esc(a.cover)}" alt="${esc(T.title)}" decoding="async" fetchpriority="high">` : ''}
       ${postBody(T.body)}
+      ${(T.faq || []).length ? `<h2>${esc(x('faqL'))}</h2>${T.faq.map(f => `<h3>${esc(f.q)}</h3><p>${LIVE(esc(f.a))}</p>`).join('')}` : ''}
       ${(a.sources || []).length ? `<p class="post-src">${esc(x('sourcesL'))}: ${a.sources.filter(s => /^https:\/\//.test(s.url)).map(s =>
         `<a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer nofollow">${esc(s.name)}</a>`).join(' · ')}</p>` : ''}
       ${cta ? `<p class="post-cta"><a class="btn" href="${esc(cta.href)}">${esc(cta[st.lang] || cta.en)} →</a></p>` : ''}

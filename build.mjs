@@ -70,6 +70,38 @@ applyVlvTitleColors(phones, PRICES.offers || {}, fs.existsSync('data/color-alias
 // 8+ -> 60. A number somebody set by hand is never touched.
 for (const p of phones) if ((p.unsure || []).includes('popularity'))
   p.popularity = Math.min(60, 14 + 6 * new Set((PRICES.offers[p.id] || []).map(o => o.shop)).size);
+// Blog price guides (owner, 2026-11-13): "!list:cat=phone&brand=Apple&max=200000&n=8" in an
+// article body is resolved here, on every build, into "!items:<id>,<id>,..." - the products that
+// match, cheapest in-stock offer first. Both the app and the static b/ pages render !items as
+// product cards, so "the cheapest X today" is true on the day it is read, not the day it was written.
+// Keys: cat, brand, type (appliance.type), size (display inches), min, max (AMD), q (regex on the
+// name and aliases), shops (at least this many shops), n (default 8),
+// sort=price|shops|drop (shops: most shops first; drop: the real price drops, biggest first).
+const lowNow = id => { const l = (PRICES.offers[id] || []).filter(o => o.inStock !== false && o.price > 0); return l.length ? Math.min(...l.map(o => o.price)) : null; };
+const shopsNow = id => new Set((PRICES.offers[id] || []).filter(o => o.inStock !== false).map(o => o.shop)).size;
+const GUIDES_H = { hy: 'Գների ուղեցույցներ', ru: 'Гиды по ценам', en: 'Price guides' };
+const blogList = (spec, list = phones) => {
+  const q = Object.fromEntries(new URLSearchParams(spec));
+  const re = q.q ? new RegExp(q.q, 'i') : null, n = +q.n || 8;
+  const hits = list.filter(p => {
+    const lo = lowNow(p.id);
+    if (lo == null) return false;
+    if (q.cat && (p.category === 'earbuds' ? 'headphones' : p.category) !== q.cat) return false;
+    if (q.brand && !q.brand.split(',').some(b => b.toLowerCase() === String(p.brand).toLowerCase())) return false;
+    if (q.type && !q.type.split(',').includes(p.appliance?.type)) return false;
+    if (q.size && Math.round(p.display?.size || 0) !== +q.size) return false;
+    if (q.min && lo < +q.min) return false;
+    if (q.max && lo > +q.max) return false;
+    if (q.shops && shopsNow(p.id) < +q.shops) return false;
+    if (q.sort === 'drop' && !DROPS.some(d => d.id === p.id)) return false;
+    if (re && !re.test([p.brand, p.name, ...(p.aliases || [])].join(' '))) return false;
+    return true;
+  });
+  const fall = id => { const d = DROPS.find(x => x.id === id); return d ? d.fall / (d.lo + d.fall) : 0; };
+  hits.sort(q.sort === 'drop' ? (a, b) => fall(b.id) - fall(a.id) : q.sort === 'shops' ? (a, b) => shopsNow(b.id) - shopsNow(a.id) || lowNow(a.id) - lowNow(b.id) : (a, b) => lowNow(a.id) - lowNow(b.id));
+  return hits.slice(0, n).map(p => p.id);
+};
+
 // The shop's own page title rides along in prices.json because the capacity re-derivation reads
 // it, but nothing in the app renders it - and inlining it puts a shop's marketing copy
 // ("... - Warranty - AllSell") into our page and adds weight for nothing.
@@ -111,6 +143,9 @@ for (const p of phones) {
     loShop: offs[0].shop, shops: last.shops, pop: p.popularity || 0 });
 }
 DROPS.sort((a, b) => b.pop - a.pop);
+// the blog's live lists (blogList, above) - resolved here because sort=drop needs DROPS
+for (const a of BLOG) for (const lang of ['hy', 'ru', 'en']) if (a[lang]?.body)
+  a[lang].body = a[lang].body.map(s => s.startsWith('!list:') ? '!items:' + blogList(s.slice(6)).join(',') : s);
 
 // A configuration a shop actually sells is a real configuration. phones.json carries the spec
 // sheet, which lags: the MacBook Pro 14 sells at 512 GB, the Pixel 11 Pro XL at 12/256, and
@@ -920,7 +955,7 @@ ul.pl{list-style:none;padding:0;margin:0}ul.pl li{display:flex;justify-content:s
 ul.pg{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,210px),1fr));gap:12px}
 @media (max-width:520px){ul.pg{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}}@media (max-width:300px){ul.pg{grid-template-columns:minmax(0,1fr)}}
 .cd{display:flex;flex-direction:column;height:100%;padding:10px;border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none;transition:transform .15s ease,border-color .15s ease}.cd:hover{transform:translateY(-2px);border-color:var(--muted)}
-.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}
+.cd .ph{display:block;aspect-ratio:1;border-radius:10px;background:var(--surface2);overflow:hidden}.cd img{display:block;width:100%;height:100%;object-fit:contain;padding:8%}.cd .bc16{aspect-ratio:1200/630}.cd .bc16 img{object-fit:cover;padding:0}
 .cd b{display:block;margin-top:10px;font-size:15px;font-weight:700;line-height:1.3;overflow-wrap:anywhere}
 .cd .pr{margin-top:auto;padding-top:8px;font-size:17px;font-weight:800;letter-spacing:-.01em;font-variant-numeric:tabular-nums}
 .cd .sh{font-size:13px;color:var(--muted)}.cd .dp{align-self:flex-start;margin-top:8px;padding:2px 8px;border-radius:8px;background:var(--good-soft);color:var(--good);font-size:13px;font-weight:700;font-variant-numeric:tabular-nums}
@@ -1135,6 +1170,7 @@ ${others.length ? `<p class="lead" style="margin:18px 0 0">${t.others}</p><ul cl
 ${sections.length ? `<h2>${SECTIONS_H[lang]}</h2>
 <ul class="pg sec">${sections.map(([n, u, l]) => `<li><a class="cd" href="${R}${pre}${u}">${cardImg(l[0])}<b>${esc(n)}</b><span class="pr">${SECTION_N[lang](l.length)} · ${t.from(amd(Math.min(...l.map(bestOf))))}</span></a></li>`).join('\n')}</ul>` : ''}
 <ul class="pills">${brands.map(([n, u]) => `<li><a href="${R}${pre}${u}">${esc(n)}</a></li>`).join('')}<li><a href="${R}${pre}deals/">${DEAL_LINK[lang]}</a></li></ul>
+${(() => { const g = BLOG.filter(a => (a.cats || []).includes(path.split('/')[1])); return g.length ? `<h2>${GUIDES_H[lang]}</h2><ul class="pills">${g.map(a => `<li><a href="${R}${pre}b/${a.id}/">${esc(a[lang].title)}</a></li>`).join('')}</ul>` : ''; })()}
 <h2>${t.models}</h2>
 <ul class="pg">${list.slice(0, CARD_LIMIT).map(p => `<li><a class="cd" href="${R}${pre}p/${p.id}/">${cardImg(p)}<b>${esc(nameOf(p))}</b><span class="pr">${t.from(amd(bestOf(p)))}</span></a></li>`).join('\n')}</ul>
 ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](list.length)}</summary><ul class="pl">${list.slice(CARD_LIMIT).map(p => `<li><a href="${R}${pre}p/${p.id}/">${esc(nameOf(p))}</a><span>${t.from(amd(bestOf(p)))}</span></li>`).join('\n')}</ul></details>` : ''}
@@ -1176,13 +1212,23 @@ const LIVE = s => s.replace(/\{\{price:([\w-]+)\}\}/g, (m, id) => livePrice(id) 
   .replace(/\{\{diff:([\w-]+)\|([\w-]+)\}\}/g, (m, a, b) =>
     livePrice(a) != null && livePrice(b) != null ? amd(Math.abs(livePrice(b) - livePrice(a))) : '—');
 // "## " starts a heading, "- " a list item (consecutive ones form one list), anything else a paragraph
-const bodyHTML = list => {
+const SHOPS_W = { hy: n => `${n} խանութ`, ru: n => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'магазин' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'магазина' : 'магазинов'}`, en: n => `${n} shop${n === 1 ? '' : 's'}` };
+const FAQ_W = { hy: 'Հաճախ տրվող հարցեր', ru: 'Частые вопросы', en: 'Frequently asked questions' };
+const FROM_W = { hy: 'սկսած', ru: 'от', en: 'from' };
+// "!items:<id>,..." (resolved from !list above) as the same cards as the price-drops page
+const itemsHTML = (ids, lang, root) => {
+  const ps = ids.split(',').map(id => phones.find(p => p.id === id)).filter(p => p && offersOf(p).length);
+  return ps.length ? `<ul class="pg">${ps.map(p => `<li><a class="cd" href="${root}${PRE[lang]}p/${p.id}/">${cardImg(p)}<b>${esc(nameOf(p))}</b><span class="pr">${FROM_W[lang]} ${amd(offersOf(p)[0].price)}</span><span class="sh">${SHOPS_W[lang](new Set(offersOf(p).map(o => o.shop)).size)}</span></a></li>`).join('\n')}</ul>\n` : '';
+};
+const bodyHTML = (list, lang = 'hy', root = '../../') => {
   let html = '', inList = false;
   for (const s of list) {
     const li = s.startsWith('- ');
     if (li && !inList) html += '<ul>';
     if (!li && inList) html += '</ul>\n';
     inList = li;
+    if (s.startsWith('!items:')) { html += itemsHTML(s.slice(7), lang, root); continue; }
+    if (s.startsWith('### ')) { html += `<h3>${esc(s.slice(4))}</h3>\n`; continue; }
     const fig = /^!fig:(images\/blog\/[\w.-]+)\|(.*)$/.exec(s);
     if (fig) { html += `<figure style="margin:20px 0"><img src="../../${fig[1]}" alt="${esc(fig[2])}" style="width:100%;height:auto;border-radius:12px"><figcaption style="font-size:13px;color:#626974;margin-top:6px">${esc(fig[2])}</figcaption></figure>\n`; continue; }
     html += s.startsWith('## ') ? `<h2>${esc(s.slice(3))}</h2>\n` : li ? `<li>${LIVE(esc(s.slice(2)))}</li>` : `<p>${LIVE(esc(s))}</p>\n`;
@@ -1233,7 +1279,7 @@ ${TOP(lang, 'b/')}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R1}${app}">Better.am</a> › <span>${t.blog}</span></nav>
 <main>
 <h1>${t.blog}</h1>
-<ul class="pl">${BLOG.map(a => `<li><a href="${a.id}/">${esc(a[lang].title)}</a><span>${a.date.split('-').reverse().join('.')}</span></li>`).join('\n')}</ul>
+<ul class="pg">${BLOG.map(a => `<li><a class="cd" href="${a.id}/">${a.cover && fs.existsSync(a.cover) ? `<span class="ph bc16"><img src="${R1}${a.cover}" alt="${esc(a[lang].title)}" width="1200" height="630" loading="lazy" decoding="async"></span>` : ''}<b>${esc(a[lang].title)}</b><span class="sh">${a.date.split('-').reverse().join('.')}</span></a></li>`).join('\n')}</ul>
 </main>${FOOT(lang)}</body></html>
 `);
   sitemapRows.push([bUrl, BLOG[0].date, 0.6]);
@@ -1243,7 +1289,7 @@ ${TOP(lang, 'b/')}
     const A = a[lang], url = `${bUrl}${a.id}/`;
     const articleImage = a.cover && fs.existsSync(a.cover) ? a.cover : fs.existsSync(`images/blog/${a.id}.jpg`) ? `images/blog/${a.id}.jpg` : null;
     const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: A.title, description: A.lead,
-      datePublished: a.date, dateModified: a.modified || a.date, inLanguage: lang, url, mainEntityOfPage: url,
+      datePublished: a.date, dateModified: A.body.some(s => s.startsWith('!items:')) ? today : a.modified || a.date, inLanguage: lang, url, mainEntityOfPage: url,
       ...(articleImage ? { image: SITE + articleImage } : {}),
       author: { '@type': 'Organization', name: 'Better.am', url: SITE },
       publisher: { '@type': 'Organization', name: 'Better.am', url: SITE } },
@@ -1251,7 +1297,11 @@ ${TOP(lang, 'b/')}
     fs.mkdirSync(`${pre}b/${a.id}`, { recursive: true });
     const og = `images/blog/${a.id}.jpg`;
     // bodyHTML writes figure paths for a page two folders deep
-    const body = bodyHTML(A.body).replaceAll('src="../../', `src="${R2}`);
+    const body = bodyHTML(A.body, lang, R2).replaceAll('src="../../', `src="${R2}`)
+      + ((A.faq || []).length ? `<h2>${FAQ_W[lang]}</h2>\n` + A.faq.map(f => `<h3>${esc(f.q)}</h3>\n<p>${LIVE(esc(f.a))}</p>\n`).join('') : '');
+    if ((A.faq || []).length) ld.push({ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: A.faq.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: LIVE(f.a) } })) });
+    const items = A.body.filter(s => s.startsWith('!items:')).flatMap(s => s.slice(7).split(',')).filter(Boolean);
+    if (items.length) ld.push({ '@context': 'https://schema.org', '@type': 'ItemList', itemListElement: items.map((id, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE}${pre}p/${id}/` })) });
     writePage(`${pre}b/${a.id}/index.html`, HEAD({ title: `${A.title} | Better.am`, desc: A.lead, url, img: articleImage && ON_R2.test(articleImage) && IMG_HOST ? pub(articleImage) : SITE + (articleImage || SEO.img), ld, lang, path: `b/${a.id}/` }) + `
 ${TOP(lang, `b/${a.id}/`)}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R2}${app}">Better.am</a> › <a href="../">${t.blog}</a> › <span>${esc(A.title)}</span></nav>
@@ -1265,7 +1315,7 @@ ${(a.sources || []).length ? `<p class="upd">${t.sources}${a.sources.filter(s =>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
 </main>${FOOT(lang)}</body></html>
 `);
-    sitemapRows.push([url, a.date, 0.6]);
+    sitemapRows.push([url, A.body.some(s => s.startsWith('!items:')) ? today : a.modified || a.date, 0.7]);
   }
 }
 // A product folded into another keeps its url: the share page and any link to it that was
