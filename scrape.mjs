@@ -3211,6 +3211,11 @@ try {
     // Older hand rows for that page cannot supply another SKU or override today's prices.
     if (r.shop === 'istyle' && list.some(o => o.shop === 'istyle' && !o.seeded
         && istyleProductPage(o.url) === istyleProductPage(r.url))) continue;
+    // The same single-product page read by today's crawl supersedes an older hand reading of it.
+    // Vega re-reads every listings.csv url nightly, and the hand row's 12 Nov price (Karcher RCV 5
+    // at 111,800) stayed on the site beside the shop's 149,900 as the "cheapest" (2026-11-13).
+    if (shared.get(r.url) === 1 && list.some(o => o.shop === r.shop && !o.seeded
+        && canonUrl(o.url) === canonUrl(r.url))) continue;
 
     // Colour belongs in this key as much as SIM build does: AirPods Max has no storage variant
     // at all, so every one of its colours shared the same (shop, storage, esim) key, and only
