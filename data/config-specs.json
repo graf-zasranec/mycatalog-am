@@ -4071,7 +4071,59 @@
         "color": "Gray"
       },
       "source": "Manual shop-page / selected product-photo review",
-      "evidence": "Zigzag technical table explicitly says Space Gray; catalogue Gray is the matching M2 finish."
+      "evidence": "Zigzag technical table explicitly says Space Gray; catalogue Gray is the matching M2 finish.",
+      "size": 12.9,
+      "specs": {
+        "display": {
+          "size": 12.9,
+          "resolution": "2732x2048",
+          "ppi": 264,
+          "refresh": 120,
+          "type": "Liquid Retina XDR Mini-LED"
+        },
+        "body": {
+          "weight": 684
+        }
+      },
+      "specSource": "https://support.apple.com/en-ie/111841"
+    },
+    {
+      "url": "https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-wifi-128gb-s-grey-mnxp3rk-a.html",
+      "shop": "zigzag",
+      "size": 12.9,
+      "checked": "2026-11-13",
+      "source": "https://support.apple.com/en-ie/111841",
+      "specs": {
+        "display": {
+          "size": 12.9,
+          "resolution": "2732x2048",
+          "ppi": 264,
+          "refresh": 120,
+          "type": "Liquid Retina XDR Mini-LED"
+        },
+        "body": {
+          "weight": 682
+        }
+      }
+    },
+    {
+      "url": "https://www.zigzag.am/am/apple-ipad-pro-12-9-m2-wifi-128gb-silver-mnxq3rk-a.html",
+      "shop": "zigzag",
+      "size": 12.9,
+      "checked": "2026-11-13",
+      "source": "https://support.apple.com/en-ie/111841",
+      "specs": {
+        "display": {
+          "size": 12.9,
+          "resolution": "2732x2048",
+          "ppi": 264,
+          "refresh": 120,
+          "type": "Liquid Retina XDR Mini-LED"
+        },
+        "body": {
+          "weight": 682
+        }
+      }
     }
   ],
   "apple-macbook-pro-14-m5-max": [
@@ -4552,6 +4604,21 @@
       "offerAxes": {
         "color": "Green"
       }
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/xiaomi-poco-c85",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 256,
+        "ram": 8
+      },
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Xiaomi Poco C85",
+      "sku": "00005387"
     }
   ],
   "samsung-galaxy-z-fold-7": [
@@ -6007,6 +6074,19 @@
       },
       "source": "https://www.yerevanmobile.am/en/apple-watch-ultra-3.html",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/apple-watch-ultra-3-black-ti-black-alpine-loop",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 49
+      },
+      "offerAxes": {
+        "color": "Black Titanium"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Exact case color in shop heading"
     }
   ],
   "samsung-eo-ic100-usb-type-c": [
@@ -6063,6 +6143,17 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Manually reviewed the selected SKU product photograph. Exact body finish matches the existing catalogue finish; strap, wallpaper and packaging colours are kept separate."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/samsung-galaxy-buds-3-fe",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Samsung Galaxy Buds 3 FE",
+      "sku": "00007655"
     }
   ],
   "samsung-galaxy-9-44mm": [
@@ -6506,6 +6597,34 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "NotebookCentre selected watch specification states Graphite."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/samsung-galaxy-watch-8-40mm",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 40
+      },
+      "offerAxes": {
+        "color": "Graphite"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Samsung Galaxy Watch 8 40mm",
+      "sku": "00005083"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/samsung-galaxy-watch-8-44mm",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 44
+      },
+      "offerAxes": {
+        "color": "Graphite"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Samsung Galaxy Watch 8 44mm",
+      "sku": "00005084"
     }
   ],
   "samsung-galaxy-watch-8-classic": [
@@ -6800,6 +6919,16 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected exact Sony SKU source title/technical table explicitly names this finish; missing from catalogue palette."
+    },
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/42921",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Sony WF-C510/L color: https://electronics.sony.com/audio/headphones/all-headphones/p/wfc510-l"
     }
   ],
   "sony-wf-c700n-gz-e": [
@@ -6854,6 +6983,16 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Selected exact Sony SKU source title/technical table explicitly names this finish; missing from catalogue palette."
+    },
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/42937",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Exact Sony WH1000XM5/SME finish: https://www.sony.com.my/microsite/tnc/Sony-April-2026-Redemption.pdf"
     }
   ],
   "sony-wh-1000xm6": [
@@ -6902,6 +7041,16 @@
       },
       "source": "Manual shop-page / selected product-photo review",
       "evidence": "Exact Sony BZ E source technical table states Սև (Black)."
+    },
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/42928",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Sony WH-CH520/LZ color: https://www.sony.co.id/id/headphones/wireless"
     }
   ],
   "sony-ps5-dualsense-edge": [
@@ -9561,6 +9710,28 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manually read exact Zigzag SKU page title and colour specification (Armenian/English): Տեխնիկական բնութագիր Yandex Station Max/YNDX-00053 Tourquise. Cyrillic/Armenian colour translated; exact commercial shade retained. No variant price extrapolation."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-smart-station-max",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Beige"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Yandex Smart Station Max",
+      "sku": "00004391"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-smart-station-max-4",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Yandex Smart Station Max",
+      "sku": "00009140"
     }
   ],
   "yandex-station-midi": [
@@ -9727,6 +9898,28 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manually read exact Zigzag SKU page title and colour specification (Armenian/English): Տեխնիկական բնութագիր Yandex Smart Station Midi/YNDX-00054 Grey. Cyrillic/Armenian colour translated; exact commercial shade retained. No variant price extrapolation."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-station-midi-yndx-00054",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Pink"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Yandex Station Midi (YNDX-00054)",
+      "sku": "00004383"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-station-midi-yndx-00054-5",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Orange"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Yandex Station Midi (YNDX-00054)",
+      "sku": "00010038"
     }
   ],
   "jbl-tour-one-m3": [
@@ -10937,6 +11130,17 @@
       },
       "source": "https://redstore.am/en/product/jbl-flip-7-blue",
       "evidence": "Manually reopened exact Redstore source after429 cleared; H1 JBL Flip 7 Blue; explicit source finish Blue."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/jbl-flip-7",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "JBL Flip 7",
+      "sku": "00009278"
     }
   ],
   "jbl-tune-670-nc": [
@@ -13176,6 +13380,20 @@
       },
       "source": "https://www.zigzag.am/am/amazon-kindle-paperwhite-kids-7-16gb-starfish.html",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/amazon-kindle-paperwhite-gen-12-16gb",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 16
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Amazon Kindle Paperwhite Gen 12 16GB",
+      "sku": "00009868"
     }
   ],
   "apple-macbook-pro-14-m4-pro": [
@@ -13275,6 +13493,16 @@
       },
       "source": "https://eldorado.am/en/bang-olufsen-beosound-explore",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    },
+    {
+      "shop": "ispace",
+      "url": "https://ispace.am/product/portable-speaker-bang-olufsen-beosound-explore-1626004",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Shop heading names Green in Armenian"
     }
   ],
   "dji-mic-mini": [
@@ -14462,6 +14690,21 @@
       },
       "source": "https://miarmenia.am/en/product/645/redmi-note-17-5g-6-256",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/xiaomi-redmi-note-17-5g",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 128,
+        "ram": 6
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Redmi Note 17 5G 6GB/128GB",
+      "sku": "00009811"
     }
   ],
   "xiaomi-redmi-note-17-pro-5g": [
@@ -14518,6 +14761,22 @@
       },
       "source": "https://miarmenia.am/en/product/383/redmi-pad-2-8-256gb",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/xiaomi-redmi-pad-2-wi-fi-25040rp0ag",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 256,
+        "ram": 8,
+        "cell": false
+      },
+      "offerAxes": {
+        "color": "Gray"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Xiaomi Redmi Pad 2 Wi-Fi 8 GB / 256 GB",
+      "sku": "00004322"
     }
   ],
   "xiaomi-redmi-pad-2-pro": [
@@ -14655,6 +14914,17 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manual visual review of exact merchant listing product image (not shoplogo), source URL/title and configured RAM/storage retained. Advertised finish Black. Evidence manual-shop-photos-v2 contact sheets and shop-photo-proof-v2/178.png. Generic multi-colour collage, repeated AppZone placeholders and ambiguous watch-band/case images excluded."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-station-mini-2-time-yndx-00020k",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Yandex Station Mini 2 Time (YNDX-00020K)",
+      "sku": "00004366"
     }
   ],
   "yandex-station-street": [
@@ -14677,6 +14947,17 @@
       },
       "source": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from the shop's main picture; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-smart-station-street-yndx-00030-2",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Yandex Smart Station Street (YNDX-00030)",
+      "sku": "00005996"
     }
   ],
   "samsung-galaxy-z-fold-6": [
@@ -14852,6 +15133,17 @@
       },
       "source": "https://vesta.am/audio-video-sarqavorumner/audio-nvagarkichner/jbl-partybox-330",
       "evidence": "Owner instruction 2026-11-06: colour read by hand from our main picture of this model; the shop text states none."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/jbl-partybox-330",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "JBL PartyBox 330",
+      "sku": "00009685"
     }
   ],
   "marshall-stockwell-iii": [
@@ -14954,6 +15246,17 @@
       },
       "source": "Manual exact merchant product-page review",
       "evidence": "Manual visual review of exact merchant listing product image (not shoplogo), source URL/title and configured RAM/storage retained. Advertised finish Black. Evidence manual-shop-photos-v2 contact sheets and shop-photo-proof-v2/147.png. Generic multi-colour collage, repeated AppZone placeholders and ambiguous watch-band/case images excluded."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/harman-kardon-citation-200",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Harman Kardon Citation 200",
+      "sku": "00004386"
     }
   ],
   "yandex-station-mini-3": [
@@ -15134,6 +15437,16 @@
       },
       "source": "https://www.zigzag.am/am/yandex-smart-station-lite-2-yndx-00026-violet.html",
       "evidence": "Shop title says Violet."
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/yandex-smart-station-lite-2-yndx-00026-violet",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Purple"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Exact Violet finish in shop heading, catalogue uses Purple"
     }
   ],
   "dyson-ontrac": [
@@ -15688,6 +16001,213 @@
         },
         "os": "Windows 11"
       }
+    }
+  ],
+  "apple-magic-mouse": [
+    {
+      "shop": "ispace",
+      "url": "https://ispace.am/product/mouse-apple-magic-mouse-4-mxk53zma",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Shop heading names White in Armenian"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/apple-magic-mouse-3-silver",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Apple Magic Mouse 3 Silver",
+      "sku": "00004237"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/apple-magic-mouse-4-usb-c",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Apple Magic Mouse 4 (USB-C)",
+      "sku": "00004231"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/apple-magic-mouse-3-space-grey",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Apple Magic Mouse 3 Space Grey",
+      "sku": "00004229"
+    }
+  ],
+  "apple-magic-trackpad": [
+    {
+      "shop": "ispace",
+      "url": "https://ispace.am/product/trackpad-apple-magic-trackpad-3-mxk93zma",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Exact MXK93 model family: https://www.apple.com/shop/product/mxk93am/a"
+    }
+  ],
+  "bo-beoplay-h95": [
+    {
+      "shop": "ispace",
+      "url": "https://ispace.am/product/bang-olufsen-beoplay-h95-1266100",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Shop heading names Black in Armenian"
+    }
+  ],
+  "bo-beosound-a1-2": [
+    {
+      "shop": "ispace",
+      "url": "https://ispace.am/product/portable-speaker-bang-olufsen-beosound-a1-2nd-gen-1734012",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Green"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Shop heading names Green in Armenian"
+    }
+  ],
+  "sony-wh-ch720n": [
+    {
+      "shop": "vlv",
+      "url": "https://vlv.am/en/Product/42934",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Sony WH-CH720N/LC color: https://www.sofmap.com/contents/?id=nw_ax_sony&sid=wireless"
+    }
+  ],
+  "apple-ipad-a16": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/ipad-11-a16-2025-wifi-cellular",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 128,
+        "ram": 6,
+        "size": 11,
+        "cell": true
+      },
+      "offerAxes": {
+        "color": "Silver"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "iPad 11 A16 (2025) WiFi + Cellular / 128 GB",
+      "sku": "00007018"
+    }
+  ],
+  "apple-watch-series-12-gps-42mm": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/apple-watch-series-12-42mm",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 42
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Apple Watch Series 12 42mm",
+      "sku": "00009458"
+    }
+  ],
+  "honor-choice-ros-me01": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/honor-choice-headphones-ros-me01",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Honor Choice Headphones ROS-ME01",
+      "sku": "00008362"
+    }
+  ],
+  "jbl-clip-5": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/jbl-clip-5",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Blue"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "JBL Clip 5",
+      "sku": "00009284"
+    }
+  ],
+  "samsung-galaxy-6-classic-43mm-r950": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/samsung-galaxy-watch-6-classic-43mm",
+      "checked": "2026-11-12",
+      "matchAxes": {
+        "storage": 43
+      },
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Samsung Galaxy Watch 6 Classic 43mm",
+      "sku": "00004507"
+    }
+  ],
+  "jbl-charge-6": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/jbl-charge-6",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "JBL Charge 6",
+      "sku": "00004377"
+    }
+  ],
+  "xiaomi-air-fryer-6-5l": [
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/xiaomi-air-fryer-6-5l-maf-w6501-bhr083meu",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "White"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Xiaomi Air Fryer 6.5L (MAF-W6501) BHR083MEU",
+      "sku": "00009234"
+    },
+    {
+      "shop": "notebookcentre",
+      "url": "https://notebookcentre.am/en/product/xiaomi-air-fryer-6-5l-maf-w6501-bhr083neu",
+      "checked": "2026-11-12",
+      "offerAxes": {
+        "color": "Black"
+      },
+      "source": "Exact merchant product page / selected SKU",
+      "evidence": "Xiaomi Air Fryer 6.5L (MAF-W6501) BHR083NEU",
+      "sku": "00007934"
     }
   ]
 }
