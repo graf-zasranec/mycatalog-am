@@ -1796,6 +1796,15 @@ async function* catPages(base, linkRe, max = 40) {
   }
 }
 
+// Pixel's spec table states the capacity ("MEMORY: 64 GB") where the title does not (owner,
+// 2026-11-14: iPad mini 6). Only the table's own label is read, so a related product cannot answer.
+const pixelMemory = h => {
+  const t = String(h).replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+  const m = t.match(/(?:MEMORY|Memory|ՀԻՇՈՂՈՒԹՅՈՒՆ|Հիշողություն|ПАМЯТЬ|Память)\s*:\s*(\d+(?:[.,]\d+)?)\s*(GB|TB|ԳԲ|ՏԲ|ГБ|ТБ)/);
+  if (!m) return undefined;
+  const n = parseFloat(m[1].replace(',', '.'));
+  return /^(TB|ՏԲ|ТБ)$/.test(m[2]) ? Math.round(n * 1024) : Math.round(n);
+};
 const SHOPS = {
   vesta: {
     name:'Vesta',site:'https://vesta.am',note:'Exact reviewed product pages and current cash prices',
@@ -2131,7 +2140,7 @@ const SHOPS = {
           continue;
         }
         out.push({ id, price: cash || Math.min(...prices),
-          storage: storageOf(title) ?? storageOf(u) ?? v.storage, title, url: safe,
+          storage: storageOf(title) ?? storageOf(u) ?? v.storage ?? pixelMemory(h), title, url: safe,
           image: img, color, inStock: true });
       }
       return out;
