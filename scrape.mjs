@@ -289,6 +289,9 @@ const PINS = new Map();
 // SIM/eSIM labels are all reversed. Without the bang the column is what the crawl derived
 // and is re-derived freely; with it, somebody checked.
 const SIMPINS = new Map();
+// ...and column 5, the capacity, written as "512!" when somebody read it off the shop's own page
+// (owner, 2026-11-14: offers whose title names no capacity showed "variant not stated").
+const STORPINS = new Map();
 try {
   const seenTwice = new Set();
   for (const line of fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).slice(1)) {
@@ -300,8 +303,9 @@ try {
     if (PINS.has(c[9]) && PINS.get(c[9]) !== c[0]) { seenTwice.add(c[9]); continue; }
     if (c[0]) PINS.set(c[9], c[0]);
     if (c[6] === 'esim!' || c[6] === 'nano!') SIMPINS.set(c[9], c[6] === 'esim!');
+    if (/^\d+!$/.test(c[4])) STORPINS.set(c[9], parseInt(c[4], 10));
   }
-  for (const u of seenTwice) { PINS.delete(u); SIMPINS.delete(u); }
+  for (const u of seenTwice) { PINS.delete(u); SIMPINS.delete(u); STORPINS.delete(u); }
   if (seenTwice.size) console.warn(`links.csv: ${seenTwice.size} url(s) name more than one product - not pinned`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('links.csv:', e.message); }
 const urlIn = text => String(text).match(/https?:\/\/\S+/)?.[0].replace(/[),.;]+$/, '');
@@ -3335,6 +3339,9 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // viva, istore, vega and redstore import the same way, confirmed by the owner on 2026-09-21:
 // if their listing does not say otherwise in its own name, it is the nano tray.
 // istyle and asbc too (owner, 2026-10-16: "istyle and asbc are nano sim").
+// a capacity somebody read off the shop's own page, for an offer whose title names none
+for (const list of Object.values(offers)) for (const o of list)
+  if (o.storage == null && STORPINS.has(o.url)) o.storage = STORPINS.get(o.url);
 const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace',
   'viva', 'istore', 'vega', 'redstore', 'istyle', 'asbc']);
 // Only where a SIM build means anything. A laptop has no tray to charge more for, and stamping
