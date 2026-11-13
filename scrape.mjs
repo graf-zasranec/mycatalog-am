@@ -3776,14 +3776,10 @@ if (missPriced) console.log(`   ${missPriced} of them carry a price and a link, 
 // a hand check of the 92 rows older than three days found 26 sold out or delisted and 18 repriced.
 // Carrying them showed buyers prices they could not pay. Dropped here, after every carry-forward.
 const STALE_DAYS = 3;
-// Owner, 2026-11-06: Eldorado refuses every read from abroad until the owner is back in Armenia
-// on 15 Nov, and asked to keep its last read on the site until then. Each offer still shows the
-// date it was read. The exception ends by itself on the 16th and the normal rule returns.
-const heldThroughAbsence = (o, today) => o.shop === 'eldorado' && today <= '2026-11-16' && (o.seen || '') >= '2026-11-04';
 const staleCut = new Date(Date.parse(TODAY) - STALE_DAYS * 864e5).toISOString().slice(0, 10);
 let staleN = 0;
 for (const [id, list] of Object.entries(offers)) {
-  const fresh = list.filter(o => !o.seen || o.seen >= staleCut || heldThroughAbsence(o, TODAY));
+  const fresh = list.filter(o => !o.seen || o.seen >= staleCut);
   staleN += list.length - fresh.length;
   if (fresh.length) offers[id] = fresh; else delete offers[id];
 }
