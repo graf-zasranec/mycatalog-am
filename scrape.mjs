@@ -292,6 +292,8 @@ const SIMPINS = new Map();
 // ...and column 5, the capacity, written as "512!" when somebody read it off the shop's own page
 // (owner, 2026-11-14: offers whose title names no capacity showed "variant not stated").
 const STORPINS = new Map();
+// ...and column 6, the colour, written as "Black!" when the shop's page shows only that one
+const COLPINS = new Map();
 try {
   const seenTwice = new Set();
   for (const line of fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).slice(1)) {
@@ -304,8 +306,9 @@ try {
     if (c[0]) PINS.set(c[9], c[0]);
     if (c[6] === 'esim!' || c[6] === 'nano!') SIMPINS.set(c[9], c[6] === 'esim!');
     if (/^\d+!$/.test(c[4])) STORPINS.set(c[9], parseInt(c[4], 10));
+    if (/^[^!]+!$/.test(c[5])) COLPINS.set(c[9], c[5].slice(0, -1));
   }
-  for (const u of seenTwice) { PINS.delete(u); SIMPINS.delete(u); STORPINS.delete(u); }
+  for (const u of seenTwice) { PINS.delete(u); SIMPINS.delete(u); STORPINS.delete(u); COLPINS.delete(u); }
   if (seenTwice.size) console.warn(`links.csv: ${seenTwice.size} url(s) name more than one product - not pinned`);
 } catch (e) { if (e.code !== 'ENOENT') console.warn('links.csv:', e.message); }
 const urlIn = text => String(text).match(/https?:\/\/\S+/)?.[0].replace(/[),.;]+$/, '');
@@ -3351,6 +3354,8 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // a capacity somebody read off the shop's own page, for an offer whose title names none
 for (const list of Object.values(offers)) for (const o of list)
   if (o.storage == null && STORPINS.has(o.url)) o.storage = STORPINS.get(o.url);
+for (const [id, list] of Object.entries(offers)) for (const o of list)
+  if (!o.color && COLPINS.has(o.url) && (phoneById[id]?.colors || []).includes(COLPINS.get(o.url))) o.color = COLPINS.get(o.url);
 const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace',
   'viva', 'istore', 'vega', 'redstore', 'istyle', 'asbc']);
 // Only where a SIM build means anything. A laptop has no tray to charge more for, and stamping
