@@ -24199,8 +24199,7 @@
     },
     "summaryEn": "Honor Choice Earbuds X5.",
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "audio": {
       "form": "tws",
@@ -24213,14 +24212,16 @@
     "sources": [
       "https://www.honor.com/my/honor-choice/earbuds-x5/",
       "https://versus.com/en/honor-earbuds-x5",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://www.honor.com/uk/honor-choice/earbuds-x5/"
     ],
-    "body": {
-      "weight": 7.6
-    },
+    "body": {},
     "colors": [
       "White"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Not published by HONOR"
+    }
   },
   {
     "id": "honor-choice-earbuds-x7e-ast-me00",
@@ -41603,15 +41604,15 @@
       "Light Gray"
     ],
     "summaryEn": "A budget Samsung with an AMOLED 90Hz screen, 5G and an unusually long six-year update commitment.",
-    "unsure": [
-      "variants",
-      "chipset"
-    ],
     "category": "phone",
     "aliases": [],
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-13346.php"
+      "https://www.gsmarena.com/a-13346.php",
+      "https://www.samsung.com/ae/smartphones/galaxy-a/galaxy-a16-5g-blue-black-128gb-sm-a166ezkdmea/",
+      "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a16-5g-blue-black-128gb-sm-a166pzkhins/",
+      "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a16-5g-blue-black-256gb-sm-a166pzkiins/buy/",
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_Interim_Report.pdf"
     ]
   },
   {
@@ -65024,7 +65025,6 @@
     "summaryEn": "Dell Pro 14 PC14250.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -65035,7 +65035,8 @@
       "weight": 1360
     },
     "sources": [
-      "https://www.notebookcheck-cn.com/Dell-Pro-14-PC14250.1173633.0.html"
+      "https://www.notebookcheck-cn.com/Dell-Pro-14-PC14250.1173633.0.html",
+      "https://www.dell.com/support/manuals/en-us/dell-pro-pc14250-laptop/dell-pro-14-pc14250-owners-manual/display?guid=guid-f4d69d29-a481-4d76-aafc-8bf69eb5008c&lang=en-us"
     ],
     "colors": [
       "Gray"
@@ -108687,17 +108688,18 @@
       "https://mobilecentre.am/product/headphone-beats-studio-wireless-_red_/23439/",
       "https://www.productindetail.com/cs/comparison-beats-studio-wireless-vs-sennheiser-hd-2-30g",
       "https://www.phileweb.com/sp/news/d-av/201406/23/35137.html",
-      "https://www.rtings.com/headphones/tools/compare/beats-solo3-2019-beats-studio-wireless/19724/369"
+      "https://www.rtings.com/headphones/tools/compare/beats-solo3-2019-beats-studio-wireless/19724/369",
+      "https://www.beatsbydre.com/content/dam/beats-support/global/quick-start-guides/studio-wireless-quick-start-guide-americas.pdf"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
-    "body": {
-      "weight": 260
-    },
+    "body": {},
     "connectivity": {
       "bluetooth": "4.0"
+    },
+    "specNA": {
+      "body.weight": "Not published by Beats"
     }
   },
   {
@@ -173252,15 +173254,13 @@
     ],
     "display": {},
     "battery": {
-      "life": "≤90 min",
-      "capacity": 4000
+      "life": "≤90 min"
     },
     "summaryEn": "Electrolux EP82H25WET.",
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "appliance": {
       "type": "cordless_vacuum",
@@ -173276,8 +173276,13 @@
       "Blue"
     ],
     "sources": [
-      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-electrolux-ep82h25wet.html"
-    ]
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-electrolux-ep82h25wet.html",
+      "https://www.electrolux.pl/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ep82h25wet/",
+      "https://shop.electrolux.co.uk/model/m/EP82H25WET"
+    ],
+    "specNA": {
+      "battery.capacity": "Not published by Electrolux"
+    }
   },
   {
     "id": "dreame-h14-wet-dry",
@@ -173350,15 +173355,13 @@
     ],
     "display": {},
     "battery": {
-      "life": "≤35 min",
-      "capacity": 2150
+      "life": "≤35 min"
     },
     "summaryEn": "Karcher WV 2 PREMIUM.",
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "appliance": {
       "type": "cordless_vacuum",
@@ -173374,8 +173377,12 @@
       "Black"
     ],
     "sources": [
-      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-karcher-wv-2-premium-1633-4260.html"
-    ]
+      "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-karcher-wv-2-premium-1633-4260.html",
+      "https://s1.kaercher-media.com/documents/datasheets/machines/de_AT/1.633-426.0_PI_de_AT.pdf"
+    ],
+    "specNA": {
+      "battery.capacity": "Not published by Kärcher"
+    }
   },
   {
     "id": "karcher-rcv-5",
