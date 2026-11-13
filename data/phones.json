@@ -169834,7 +169834,7 @@
       "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-hbx470amci-hs2.html"
     ],
     "specNA": {
-      "appliance.volume": "Not published by shop; checking manufacturer"
+      "appliance.volume": "Not published by the shop or by Sharp"
     }
   },
   {
@@ -169873,7 +169873,7 @@
       "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-sharp-sj-hbx430amci-hs2.html"
     ],
     "specNA": {
-      "appliance.volume": "Not published by shop; checking manufacturer"
+      "appliance.volume": "Not published by the shop or by Sharp"
     }
   },
   {
@@ -169909,14 +169909,14 @@
       "Silver"
     ],
     "appliance": {
-      "type": "fridge"
+      "type": "fridge",
+      "volume": 326,
+      "fridgeVolume": 243,
+      "freezerVolume": 83
     },
     "sources": [
       "https://vega.am/home-appliances/major-home-appliances/refrigerators/refrigerator-berg-br-n344bxi.html"
-    ],
-    "specNA": {
-      "appliance.volume": "Not published by shop; checking manufacturer"
-    }
+    ]
   },
   {
     "id": "sharp-sj-xe55pm-sl",
