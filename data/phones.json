@@ -13516,8 +13516,7 @@
     },
     "summaryEn": "Beats Solo True Wireless.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "audio": {
       "form": "tws",
@@ -13528,7 +13527,8 @@
       "weight": 5.7
     },
     "sources": [
-      "https://www.beatsbydre.com/earbuds/solo-buds"
+      "https://www.beatsbydre.com/earbuds/solo-buds",
+      "https://www.beatsbydre.com/support/earbuds/solo-buds"
     ],
     "colors": [
       "Red",
@@ -18400,8 +18400,7 @@
     },
     "summaryEn": "Garmin Fenix 7 Pro Sapphire Solar.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -18413,6 +18412,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www8.garmin.com/manuals/webhelp/GUID-C001C335-A8EC-4A41-AB0E-BAC434259F92/EN-US/GUID-694C4E14-D875-479F-AFB1-2A6A582FF506.html"
     ]
   },
   {
@@ -18442,8 +18444,7 @@
     },
     "summaryEn": "Garmin Fenix 7X Pro – Sapphire Solar Edition.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -18455,6 +18456,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www8.garmin.com/manuals/webhelp/GUID-C001C335-A8EC-4A41-AB0E-BAC434259F92/EN-US/GUID-694C4E14-D875-479F-AFB1-2A6A582FF506.html"
     ]
   },
   {
@@ -18960,8 +18964,7 @@
     },
     "summaryEn": "Garmin Forerunner® 970.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2025,
@@ -18973,6 +18976,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.garmin.com/en-CA/blog/general/how-long-will-my-garmin-smartwatch-battery-last/"
     ]
   },
   {
@@ -19047,8 +19053,7 @@
     },
     "summaryEn": "Garmin Instinct 2X Solar – Tactical Edition.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -19060,6 +19065,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.garmin.com/en-US/compare/?compareProduct=1476633&compareProduct=884414"
     ]
   },
   {
@@ -19102,8 +19110,7 @@
     },
     "summaryEn": "Garmin Instinct 3, 50mm,AMOLED.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "colors": [
       "Black"
@@ -19116,7 +19123,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "sources": [
+      "https://www8.garmin.com/manuals/webhelp/GUID-2DA54DF8-8084-40ED-954F-EDA09C13B47F/EN-US/GUID-7BB65BBD-E34E-4C59-A573-F91F599FD835.html"
+    ]
   },
   {
     "id": "garmin-instinct-3-50mm-solar",
@@ -19254,8 +19264,7 @@
     },
     "summaryEn": "Garmin Venu 3s French.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2023,
@@ -19267,6 +19276,9 @@
     },
     "colors": [
       "Grey"
+    ],
+    "sources": [
+      "https://www8.garmin.com/manuals-apac/webhelp/venu33s/EN-SG/GUID-4CF146DB-BE66-402C-B586-0A50E36F5832-1457.html"
     ]
   },
   {
@@ -19453,8 +19465,7 @@
     },
     "summaryEn": "Garmin vivoactive® 6.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "os": "Garmin (own system)",
     "year": 2025,
@@ -19467,7 +19478,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "sources": [
+      "https://support.garmin.com/en-PH/?faq=BVYnXOj08Z3dPshQ88UvS6"
+    ]
   },
   {
     "id": "google-fitbit-air",
@@ -26316,15 +26330,15 @@
     ],
     "summaryEn": "The drop-test phone: a 5800 mAh battery behind Honor’s toughened curved screen.",
     "unsure": [
-      "popularity",
-      "colors"
+      "popularity"
     ],
     "settled": [
       "notADuplicate"
     ],
     "cardSlot": false,
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.honor.com/ae-en/phones/honor-x9b/spec/"
     ]
   },
   {
@@ -35862,12 +35876,12 @@
     "battery": {},
     "summaryEn": "A 43-inch LED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/es/tv-y-barras-de-sonido/nano-4k-uhd/43nu850b6la/"
     ],
     "colors": [
       "Black"
@@ -36707,12 +36721,12 @@
     "battery": {},
     "summaryEn": "A 65-inch QNED Mini-LED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/es/tv-y-barras-de-sonido/qned-evo/65qned80b6b/"
     ],
     "colors": [
       "Black"
@@ -37028,7 +37042,7 @@
       "size": 55,
       "type": "OLED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 165
     },
     "variants": [
       {
@@ -37040,12 +37054,12 @@
     "battery": {},
     "summaryEn": "A 55-inch OLED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/ru/televisions/lg-oled55c6rla"
     ],
     "colors": [
       "Black"
@@ -38904,8 +38918,7 @@
     },
     "summaryEn": "Nothing CMF PRO 2.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "year": 2024,
     "connectivity": {
@@ -38921,6 +38934,9 @@
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "sources": [
+      "https://checkout-eu.nothing.tech/pages/cmf-watch-pro-2"
     ]
   },
   {
@@ -46676,17 +46692,17 @@
       "size": 48,
       "type": "OLED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE48S90HAEXPY.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s90h-48-inch-4k-smart-tv-qe48s90haexpy/"
     ],
     "colors": [
       "Black"
@@ -47033,12 +47049,12 @@
     "battery": {},
     "summaryEn": "Samsung QE55S85HAEXPY.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s85h-55-inch-4k-smart-tv-qe55s85haexpy/"
     ],
     "colors": [
       "Black"
@@ -47068,17 +47084,17 @@
       "size": 55,
       "type": "OLED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 165
     },
     "battery": {},
     "summaryEn": "Samsung QE55S90HAUXPY.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s90h-55-inch-4k-smart-tv-qe55s90hauxpy/"
     ],
     "colors": [
       "Black"
@@ -47392,12 +47408,12 @@
     "battery": {},
     "summaryEn": "Samsung QE65S85HAEXPY.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s85h-65-inch-4k-smart-tv-qe65s85haexpy/"
     ],
     "colors": [
       "Black"
@@ -47549,12 +47565,12 @@
     "battery": {},
     "summaryEn": "Samsung QE65S95HAUXPY.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s95h-65-inch-4k-smart-tv-qe65s95hauxpy/"
     ],
     "colors": [
       "Black"
@@ -47664,13 +47680,13 @@
     "battery": {},
     "summaryEn": "A 75-inch Neo QLED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
       "kitele",
-      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/",
+      "https://www.samsung.com/ru/tvs/qled-tv/qn70f-75-inch-neo-qled-4k-mini-led-smart-tv-qe75qn70fauxru/"
     ],
     "aliases": [
       "QE75QN70FAUXRU"
@@ -47746,13 +47762,13 @@
     "battery": {},
     "summaryEn": "A 75-inch Neo QLED television.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
       "kitele",
-      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
+      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/",
+      "https://www.samsung.com/ru/tvs/qled-tv/qn80f-75-inch-neo-qled-4k-mini-led-smart-tv-qe75qn80fauxru/"
     ],
     "aliases": [
       "QE75QN80FAUXRU"
@@ -47948,12 +47964,12 @@
     "battery": {},
     "summaryEn": "Samsung QE83S90HAEXPY.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s90h-83-inch-4k-smart-tv-qe83s90haexpy/"
     ],
     "colors": [
       "Black"
@@ -56538,8 +56554,7 @@
     },
     "summaryEn": "Xiaomi Redmi 4 Active.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "audio": {
       "form": "tws",
@@ -56550,7 +56565,8 @@
       "weight": 3.65
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-buds-4-active/specs/"
+      "https://www.mi.com/global/product/redmi-buds-4-active/specs/",
+      "https://www.mi.com/global/product/redmi-buds-4-active/"
     ],
     "connectivity": {
       "bluetooth": "5.3"
@@ -56681,8 +56697,7 @@
     },
     "summaryEn": "Xiaomi Redmi 5.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "audio": {
       "form": "tws",
@@ -56697,7 +56712,8 @@
       "bluetooth": "5.3"
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-buds-5/specs/"
+      "https://www.mi.com/global/product/redmi-buds-5/specs/",
+      "https://www.mi.com/global/product/redmi-buds-5/"
     ],
     "colors": [
       "Black",
@@ -60257,8 +60273,7 @@
     },
     "summaryEn": "Xiaomi Smart Band 8 Champagne BHR7166GL.",
     "unsure": [
-      "popularity",
-      "battery.life"
+      "popularity"
     ],
     "year": 2023,
     "connectivity": {
@@ -60268,7 +60283,8 @@
       "weight": 27
     },
     "sources": [
-      "https://www.mi.com/global/product/xiaomi-smart-band-8/specs/"
+      "https://www.mi.com/global/product/xiaomi-smart-band-8/specs/",
+      "https://www.mi.com/global/product/xiaomi-smart-band-8/"
     ],
     "colors": [
       "Sand",
@@ -66609,8 +66625,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black",
@@ -66623,7 +66638,8 @@
       "weight": 17100
     },
     "sources": [
-      "https://www.speakerranking.com/compare/jbl-partybox-130-vs-jbl-partybox-330/"
+      "https://www.speakerranking.com/compare/jbl-partybox-130-vs-jbl-partybox-330/",
+      "https://jp.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwc1a56e0b/pdfs/JBL_PartyBox_330_Specsheet_EN.pdf"
     ]
   },
   {
@@ -66854,8 +66870,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Squad",
@@ -66870,7 +66885,8 @@
       "weight": 2900
     },
     "sources": [
-      "https://www.speakerranking.com/compare/jbl-partybox-encore-2-vs-jbl-xtreme-5/"
+      "https://www.speakerranking.com/compare/jbl-partybox-encore-2-vs-jbl-xtreme-5/",
+      "https://www.jbl.com/XTREME-5.html"
     ]
   },
   {
@@ -70046,8 +70062,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "battery.life"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -70062,7 +70077,10 @@
     },
     "body": {
       "weight": 357
-    }
+    },
+    "sources": [
+      "https://www.jbl.com/QUANTUM610WIRELESS.html"
+    ]
   },
   {
     "id": "jbl-live-free-ncplus",
@@ -70479,8 +70497,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "battery.life"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -70498,7 +70515,10 @@
     },
     "connectivity": {
       "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
-    }
+    },
+    "sources": [
+      "https://uk.jbl.com/QUANTUM350WIRELESS-.html/"
+    ]
   },
   {
     "id": "xiaomi-redmi-headphones-neo",
@@ -70796,8 +70816,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "battery.life"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -70812,7 +70831,10 @@
     },
     "body": {
       "weight": 4
-    }
+    },
+    "sources": [
+      "https://www.marshall.com/us/en/product/minor-iii"
+    ]
   },
   {
     "id": "jbl-sense-lite",
@@ -70941,8 +70963,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "Black"
@@ -70959,7 +70980,8 @@
       "weight": 25
     },
     "sources": [
-      "https://www.jbl.com/ENDURANCE-PEAK-3.html"
+      "https://www.jbl.com/ENDURANCE-PEAK-3.html",
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwb0300166/pdfs/JBL_Endurance%20Peak%203_Quick%20Start%20Guide.pdf"
     ]
   },
   {
@@ -71231,15 +71253,14 @@
     ],
     "display": {},
     "battery": {
-      "life": "30 hours"
+      "life": "50 hours"
     },
     "summaryEn": "JBL JR320BT.",
     "unsure": [
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "battery.life"
+      "battery.capacity"
     ],
     "colors": [
       "Purple",
@@ -71258,6 +71279,9 @@
     },
     "settled": [
       "notADuplicate"
+    ],
+    "sources": [
+      "https://www.jbl.com/JUNIOR320BT.html"
     ]
   },
   {
@@ -71331,8 +71355,7 @@
       "popularity",
       "display",
       "chipset",
-      "battery.capacity",
-      "body.weight"
+      "battery.capacity"
     ],
     "colors": [
       "White",
@@ -71354,7 +71377,8 @@
       "weight": 220
     },
     "sources": [
-      "https://www.91mobiles.com/list-of-headphones/jbl-headphones-price-list-in-india"
+      "https://www.91mobiles.com/list-of-headphones/jbl-headphones-price-list-in-india",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw2971c5ef/pdfs/JBL_QUANTUM_100M2_Specsheet_EN.pdf"
     ]
   },
   {
@@ -77037,7 +77061,6 @@
     "summaryEn": "Xiaomi A27i 2026.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -77045,7 +77068,9 @@
       "Black"
     ],
     "sources": [
-      "https://aio.lv/en/product--xiaomi-69664--12498784.md"
+      "https://aio.lv/en/product--xiaomi-69664--12498784.md",
+      "https://www.mi.com/global/product/xiaomi-monitor-a27i-2026/specs/",
+      "https://www.mi.com/global/product/xiaomi-monitor-a27i-2026/"
     ]
   },
   {
@@ -77616,8 +77641,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Black",
@@ -77631,7 +77655,8 @@
       "noise": "74 dB"
     },
     "sources": [
-      "https://www.zigzag.am/en/dreame-robot-vacuum-l40s-pro-ultra-black-rll74ce.html"
+      "https://www.zigzag.am/en/dreame-robot-vacuum-l40s-pro-ultra-black-rll74ce.html",
+      "https://am.dreametech.com/en/product/dreame-l40s-pro-ultra/"
     ]
   },
   {
@@ -77663,8 +77688,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Black",
@@ -77685,7 +77709,8 @@
     },
     "sources": [
       "https://fr.dreametech.com/products/dreame-l50s-pro-ultra-noir-robot-aspirateur-laveur",
-      "https://dreametech.zendesk.com/hc/es/article_attachments/57240542931481"
+      "https://dreametech.zendesk.com/hc/es/article_attachments/57240542931481",
+      "https://es.dreametech.com/products/robot-aspirador-l50s-pro-ultra"
     ]
   },
   {
@@ -77718,8 +77743,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Black",
@@ -77732,7 +77756,8 @@
     },
     "sources": [
       "https://global.dreametech.com/products/l60-ultra",
-      "https://www.dreametech.com/products/l60-ultra-robot-vacuum"
+      "https://www.dreametech.com/products/l60-ultra-robot-vacuum",
+      "https://www.dreametech.com/pages/l60-series-robot-vacuum"
     ]
   },
   {
@@ -77806,8 +77831,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Black",
@@ -77821,7 +77845,8 @@
     "sources": [
       "https://global.dreametech.com/pages/x60-ultra-complete-user-manual",
       "https://support.dreametech.com/hc/en-us/article_attachments/15593655201039",
-      "https://ru.dreametech.com/product/rlx87de"
+      "https://ru.dreametech.com/product/rlx87de",
+      "https://am.dreametech.com/en/product/dreame-x60-ultra-complete-white/"
     ]
   },
   {
@@ -78335,8 +78360,7 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Gray"
@@ -78350,7 +78374,8 @@
       "weight": 485
     },
     "sources": [
-      "https://www.mi.com/global/product/xiaomi-pad-8-pro/"
+      "https://www.mi.com/global/product/xiaomi-pad-8-pro/",
+      "https://www.mi.com/sg/product/xiaomi-pad-8-pro/specs/"
     ],
     "camera": {
       "main": "50 MP",
@@ -82042,8 +82067,7 @@
     },
     "summaryEn": "A 13.4-inch laptop with Intel Core Ultra 7-155H, 8 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-155H"
@@ -82054,10 +82078,11 @@
     },
     "os": "Windows 11 Pro",
     "body": {
-      "weight": 1190
+      "weight": 1220
     },
     "sources": [
-      "https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-9340-laptop"
+      "https://www.dell.com/en-us/shop/dell-laptops/xps-13-laptop/spd/xps-13-9340-laptop",
+      "https://www.dell.com/support/manuals/en-us/xps-13-9340-laptop/xps-13-9340_owners_manual/dimensions-and-weight?guid=guid-ef5a25b9-7da4-44a6-bd7f-4f7072a8c76f&lang=en-us"
     ],
     "colors": [
       "Silver"
@@ -91398,11 +91423,11 @@
     "summaryEn": "Marshall Monitor II A.N.C..",
     "sources": [
       "https://likemobile.am/en/marshall-monitor-ii-anc",
-      "https://www.marshall.com/global/en/product/monitor-ii-a-n-c"
+      "https://www.marshall.com/global/en/product/monitor-ii-a-n-c",
+      "https://www.marshall.com/de/de/product/monitor-ii-anc?pid=1005228"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
@@ -91623,11 +91648,11 @@
     "summaryEn": "Sony PULSE 3D Wireless Headset.",
     "sources": [
       "https://likemobile.am/en/sony-playstation-5-pulse-3d-wireless-headset",
-      "https://mein-mmo.de/en/sonys-pulse-3d-convinces-in-the-test-but-fails-on-my-head,925482"
+      "https://mein-mmo.de/en/sonys-pulse-3d-convinces-in-the-test-but-fails-on-my-head,925482",
+      "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/accessories/ps5-accessories/pulse-3d-wireless-headset/EN_FR_AMER_Pulse%203D%20Headset_Instruction%20Manual_v3_Web.pdf"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "colors": [
       "Black",
@@ -98058,17 +98083,17 @@
     "sources": [
       "https://vlv.am/en/Product/37344",
       "https://images.samsung.com/is/content/samsung/assets/au/audio-devices/soundbar-product-specs/B650-product-specs.pdf",
-      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b650d-ru"
+      "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b650d-ru",
+      "https://www.samsung.com/ae/audio-devices/soundbar/b650d-black-hw-b650d-zn/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "4.2"
     },
     "body": {
-      "weight": 3100
+      "weight": 2000
     },
     "colors": [
       "Black"
@@ -98143,11 +98168,11 @@
       "https://vlv.am/en/Product/47863",
       "https://e-catalog.com/cmp/179443/hw-b750f-vs-hw-b650/",
       "https://vesta.am/audio-video-sarqavorumner/tnayin-kinotatronner/samsung-hw-b750f-ru",
-      "https://manuals.plus/m/f02389b9aa3ab56f9f9128d5b498317a6e2dc3d57b1bcd83365548ee16974ca6"
+      "https://manuals.plus/m/f02389b9aa3ab56f9f9128d5b498317a6e2dc3d57b1bcd83365548ee16974ca6",
+      "https://www.samsung.com/uk/business/audio-devices/soundbar/b750f-b-series-soundbar-with-subwoofer-black-hw-b750f-xu/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "body": {
       "weight": 3200
@@ -98546,11 +98571,11 @@
     "summaryEn": "Samsung Sound Tower MX-ST50B.",
     "sources": [
       "https://vlv.am/en/Product/37347",
-      "https://www.theaureview.com/technology/tech-review-the-samsung-mx-st50b-sound-tower/"
+      "https://www.theaureview.com/technology/tech-review-the-samsung-mx-st50b-sound-tower/",
+      "https://www.samsung.com/my/business/audio-devices/sound-tower/st50b-black-mx-st50b-xm/"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.0"
@@ -112998,7 +113023,7 @@
     "id": "philips-bhh880-00",
     "category": "haircare",
     "brand": "Philips",
-    "name": "Hair Styler BHH880/00",
+    "name": "StyleCare Essential Heated Straightening Brush BHH880/00",
     "aliases": [
       "PHILIPS BHH880/00",
       "Philips BHH880/00",
@@ -113014,11 +113039,11 @@
     "battery": {},
     "summaryEn": "Philips hair styler BHH880/00.",
     "sources": [
-      "https://vlv.am/en/Product/11320"
+      "https://vlv.am/en/Product/11320",
+      "https://www.philips.co.uk/c-p/BHH880_00"
     ],
     "unsure": [
-      "popularity",
-      "name"
+      "popularity"
     ],
     "priceAmd": 24900,
     "priceAmdMax": 24900,
@@ -155903,8 +155928,7 @@
     "battery": {},
     "summaryEn": "Retro-styled instant camera with automatic exposure and a close-up mode; prints Instax Mini photos.",
     "unsure": [
-      "popularity",
-      "year"
+      "popularity"
     ],
     "appliance": {
       "type": "instant"
@@ -155913,7 +155937,10 @@
     "colors": [
       "Black"
     ],
-    "year": 2025
+    "year": 2025,
+    "sources": [
+      "https://www.fujifilm.com/nl/en/news/hq/12237"
+    ]
   },
   {
     "id": "fujifilm-instax-mini-evo",
