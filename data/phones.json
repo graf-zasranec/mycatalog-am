@@ -16631,8 +16631,7 @@
     },
     "summaryEn": "Dell XPS 16 9640.",
     "unsure": [
-      "popularity",
-      "display.resolution"
+      "popularity"
     ],
     "released": "2024",
     "chipset": {
@@ -16643,7 +16642,8 @@
     },
     "year": 2024,
     "sources": [
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.dell.com/support/manuals/en-us/xps-16-9640-laptop/xps-16-9640-owners-manual/display?guid=guid-73e1ca36-2dcd-41d4-b0bd-abbae75a1deb&lang=en-us"
     ],
     "colors": [
       "Silver"
@@ -36293,8 +36293,7 @@
     "battery": {},
     "summaryEn": "LG 55QNED816RA.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
@@ -36303,7 +36302,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "chipset": {
+      "name": "α7 AI Processor 4K Gen6"
+    }
   },
   {
     "id": "lg-55qned82a6b",
@@ -36884,16 +36886,19 @@
     "battery": {},
     "summaryEn": "LG OLED55B4RLA.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/kz/tvs-soundbars/oled/oled55b4rla/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "chipset": {
+      "name": "α8 AI Processor 4K"
+    }
   },
   {
     "id": "lg-oled55c6rla",
@@ -63288,8 +63293,7 @@
     },
     "summaryEn": "Xiaomi F8 Pro.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
@@ -63323,7 +63327,10 @@
     "connectivity": {
       "bluetooth": "5.4"
     },
-    "os": "HyperOS 3"
+    "os": "HyperOS 3",
+    "sources": [
+      "https://www.po.co/global/product/poco-f8-pro/specs/"
+    ]
   },
   {
     "id": "xiaomi-12-pro",
@@ -63565,8 +63572,7 @@
     },
     "summaryEn": "Xiaomi F8 Ultra.",
     "unsure": [
-      "popularity",
-      "display.refresh"
+      "popularity"
     ],
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
@@ -63599,7 +63605,10 @@
     "connectivity": {
       "bluetooth": "6.0"
     },
-    "os": "HyperOS 3"
+    "os": "HyperOS 3",
+    "sources": [
+      "https://www.po.co/global/product/poco-f8-ultra/specs/"
+    ]
   },
   {
     "id": "xiaomi-17",
@@ -110100,7 +110109,8 @@
     "display": {
       "size": 14,
       "resolution": "1920x1200",
-      "touch": true
+      "touch": true,
+      "type": "OLED"
     },
     "chipset": {
       "name": "Intel Core Ultra 7 355"
@@ -110119,7 +110129,8 @@
     "summaryEn": "A 14-inch convertible with Intel Core Ultra 7 355, a pen-ready touchscreen and a 70 Wh battery.",
     "sources": [
       "https://redstore.am/en/product/lenovo-yoga-7i-2in1-14iph11",
-      "https://www.notebookcheck.net/Lenovo-Yoga-7-2-in-1-14IPH11.1309320.0.html"
+      "https://www.notebookcheck.net/Lenovo-Yoga-7-2-in-1-14IPH11.1309320.0.html",
+      "https://psref.lenovo.com/Product/2794"
     ],
     "unsure": [
       "popularity",
@@ -110217,7 +110228,7 @@
     "display": {
       "size": 15,
       "type": "PixelSense Flow",
-      "resolution": "2496x1664",
+      "resolution": "3270x2180",
       "refresh": 120,
       "touch": true
     },
@@ -110245,9 +110256,7 @@
       "https://www.microsoft.com/en-us/surface/devices/surface-laptop"
     ],
     "unsure": [
-      "popularity",
-      "display.resolution",
-      "display.refresh"
+      "popularity"
     ],
     "priceAmd": 999000,
     "priceAmdMax": 999000,
@@ -149917,7 +149926,8 @@
       "ultrawide": "5 MP, f/2.2",
       "front": "13 MP, f/2.0",
       "modules": 3,
-      "video": "1080p@30fps"
+      "video": "1080p@30fps",
+      "macro": "2 MP, f/2.4"
     },
     "battery": {
       "capacity": 5000,
@@ -149946,11 +149956,11 @@
     ],
     "summaryEn": "The 4G Galaxy A16 (SM-A165): the same 6.7-inch 90 Hz AMOLED body as the 5G model, with a MediaTek Helio G99.",
     "sources": [
-      "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a165-256gb-grey/2078/"
+      "https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a165-256gb-grey/2078/",
+      "https://www.samsung.com/uk/smartphones/galaxy-a/galaxy-a16-grey-128gb-sm-a165fzabeub/"
     ],
     "unsure": [
-      "popularity",
-      "camera"
+      "popularity"
     ]
   },
   {
