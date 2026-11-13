@@ -1810,8 +1810,10 @@ const pixelMemory = (h, id) => {
   if (!m) return undefined;
   const n = parseFloat(m[1].replace(',', '.'));
   const gb = /^(TB|ՏԲ|ТБ)$/.test(m[2]) ? Math.round(n * 1024) : Math.round(n);
-  const sold = new Set(((phoneById[id] || {}).variants || []).map(v => v.storage).filter(Boolean));
-  return gb >= 32 && sold.has(gb) ? gb : undefined;
+  const vs = (phoneById[id] || {}).variants || [];
+  const sold = new Set(vs.map(v => v.storage).filter(Boolean)), ram = new Set(vs.map(v => v.ram).filter(Boolean));
+  // a tablet or laptop can carry 32 GB or more of RAM, so a figure that is also one of its RAM sizes is ambiguous
+  return gb >= 32 && sold.has(gb) && !ram.has(gb) ? gb : undefined;
 };
 const SHOPS = {
   vesta: {
