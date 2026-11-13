@@ -1862,7 +1862,10 @@ const SHOPS = {
           if (!id || !safe) continue;
           out.push({ id, price, storage: storageOf(pr.name) ?? storageOf(u), title: pr.name, url: safe,
             sku: pr.sku || null, image: (Array.isArray(pr.image) ? pr.image[0] : pr.image) || null,
-            inStock: /InStock/i.test(pr.offers.availability || '') });
+            // a pre-order shows "OutOfStock" in its schema but a Preorder button (owner, 2026-11-14:
+            // the Apple TV 4K MLFF4 was missing) - keep it, tagged, like the other shops' pre-orders
+            ...((pre => ({ inStock: pre || /InStock/i.test(pr.offers.availability || ''), ...(pre ? { preorder: true } : {}) }))(
+              /data-test="preorder-button"/.test(ph) || /"force_preorder"/.test(ph))) });
         }
       }
       return out;
