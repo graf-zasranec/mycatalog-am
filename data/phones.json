@@ -1898,8 +1898,8 @@
       "Black"
     ],
     "summaryEn": "The Paperwhite in a kids bundle: a cover and no adverts, set up for a child from the first page.",
-    "unsure": [
-      "variants[].storage"
+    "sources": [
+      "https://www.aboutamazon.com/news/devices/kids-devices-amazon-prime-day-deals-2023"
     ]
   },
   {
@@ -61228,13 +61228,11 @@
     },
     "battery": {
       "wired": 20,
-      "wireless": 15,
-      "capacity": 3279
+      "wireless": 15
     },
     "summaryEn": "Apple iPhone 14.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "released": "2022-09",
     "colors": [
@@ -61278,8 +61276,13 @@
     "sources": [
       "https://support.apple.com/en-gb/111850",
       "https://www.gsmarena.com/a-11861.php",
-      "https://support.apple.com/en-sg/111850"
-    ]
+      "https://support.apple.com/en-sg/111850",
+      "https://support.apple.com/en-us/111850",
+      "https://support.apple.com/en-gb/100308"
+    ],
+    "specNA": {
+      "battery.capacity": "Not published by Apple"
+    }
   },
   {
     "id": "apple-iphone-14-pro-max",
@@ -61308,13 +61311,11 @@
     },
     "battery": {
       "wired": 20,
-      "wireless": 15,
-      "capacity": 4323
+      "wireless": 15
     },
     "summaryEn": "Apple iPhone 14 Pro Max.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "released": "2022-09",
     "colors": [
@@ -61356,8 +61357,13 @@
     "os": "iOS 16",
     "sources": [
       "https://support.apple.com/en-gb/111846",
-      "https://www.gsmarena.com/a-11773.php"
-    ]
+      "https://www.gsmarena.com/a-11773.php",
+      "https://support.apple.com/en-us/111846",
+      "https://support.apple.com/en-ge/100357"
+    ],
+    "specNA": {
+      "battery.capacity": "Not published by Apple"
+    }
   },
   {
     "id": "apple-iphone-14-plus",
@@ -64612,7 +64618,6 @@
     "summaryEn": "Amazon Kindle Kids.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -64624,6 +64629,10 @@
     "colors": [
       "Space Whale",
       "Unicorn Valley"
+    ],
+    "sources": [
+      "https://press.aboutamazon.com/2022/9/introducing-the-all-new-kindle-and-kindle-kids-now-with-300-ppi-high-resolution-display-usb-c-charging-and-2x-storage",
+      "https://digprjsurvey.amazon.com/csad/help/node/Tnx3eeuXDtZL0Q91ms"
     ]
   },
   {
@@ -64922,14 +64931,12 @@
       "resolution": "256x402"
     },
     "battery": {
-      "capacity": 180,
       "life": "14 days"
     },
     "summaryEn": "Honor Band 9.",
     "unsure": [
       "popularity",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
       "Black"
@@ -64940,7 +64947,10 @@
     "sources": [
       "https://www.honor.com/global/wearables/honor-band-9/",
       "https://www.honor.com/pk/wearables/honor-band-9/spec/"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "Not published by HONOR"
+    }
   },
   {
     "id": "lenovo-yoga-9-14imh9",
@@ -73426,8 +73436,7 @@
     },
     "summaryEn": "HP ENVY 16 i9-13900H 16/1 4060 W11 /7Z0P3UA#ABA.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i9-13900H"
@@ -73437,7 +73446,8 @@
     },
     "sources": [
       "https://laptopmedia.com/?p=1152115",
-      "https://partsurfer.hp.com/"
+      "https://partsurfer.hp.com/",
+      "https://kaas.hpcloud.hp.com/pdf-public/pdf_5808570_en-US-1.pdf"
     ],
     "os": "Windows 11",
     "colors": [
@@ -76067,7 +76077,6 @@
     "unsure": [
       "popularity",
       "display",
-      "battery.capacity",
       "body.weight"
     ],
     "chipset": {
@@ -76078,7 +76087,8 @@
     },
     "sources": [
       "https://support.hp.com/au-en/document/ish_7751519-7751693-16",
-      "https://partsurfer.hp.com/"
+      "https://partsurfer.hp.com/",
+      "https://h20195.www2.hp.com/v2/getpdf.aspx/c09074037.pdf"
     ],
     "colors": [
       "Jet Black"
@@ -76334,9 +76344,7 @@
     },
     "summaryEn": "HP OmniBook 5 16\" Ultra 5-225U /BG7H7EA.",
     "unsure": [
-      "popularity",
-      "display",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5 225U"
@@ -76346,7 +76354,8 @@
     },
     "sources": [
       "https://www.paradigit.ie/hp-omnibook-5-16-ba1564nd/80069069/product",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://www.hp.com/kz-ru/products/laptops/product-details/product-specifications/2103020732"
     ],
     "colors": [
       "Silver"
@@ -76428,8 +76437,7 @@
     },
     "summaryEn": "Samsung Galaxy Book3 15.6 FHD i7-1355U SLV /NP750XFG-KB2US*.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i7-1355U",
@@ -76441,7 +76449,8 @@
     "sources": [
       "https://www.samsung.com/us/computing/galaxy-books/galaxy-book3/",
       "https://image-us.samsung.com/SamsungUS/samsungbusiness/solutions/industries/government/msrp-price-sheets/06052024/Samsung_Mobile_Computing_MSRP_Price_File_May_2024.pdf",
-      "https://www.intel.com/content/www/us/en/products/sku/232160/intel-core-i71355u-processor-12m-cache-up-to-5-00-ghz/specifications.html"
+      "https://www.intel.com/content/www/us/en/products/sku/232160/intel-core-i71355u-processor-12m-cache-up-to-5-00-ghz/specifications.html",
+      "https://www.samsung.com/hk_en/business/computers/galaxy-book/galaxy-book3-15-6-inch-int-i7-16gb-512gb-np750xfg-ka1hk/"
     ],
     "connectivity": {
       "wifi": "Wi-Fi 6"
@@ -76480,8 +76489,7 @@
     },
     "summaryEn": "Honor MagicBook X16 Plus 16\" Core 16/1 W11H /5301ALVV.",
     "unsure": [
-      "popularity",
-      "chipset"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core 5 220H"
@@ -76493,7 +76501,8 @@
       "https://www.notebookcheck.net/Honor-MagicBook-X16-Plus-2024.892027.0.html",
       "https://www.notebookcheck.net/",
       "https://www.notebookcheck.net/Honor-MagicBook-X16-Plus-2025.1090686.0.html",
-      "https://www.honor.com/global/laptops/honor-magicbook-x16-plus-2025/"
+      "https://www.honor.com/global/laptops/honor-magicbook-x16-plus-2025/",
+      "https://www.honor.com/pk/laptops/honor-magicbook-x16-plus-2025/spec/"
     ],
     "os": "Windows 11",
     "colors": [
@@ -85385,8 +85394,7 @@
     },
     "summaryEn": "HP ProBook 4G1i16 Ultra 5 225U.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5-225U"
@@ -85401,7 +85409,9 @@
     "sources": [
       "https://laptopmedia.com/?p=1795705",
       "https://www.notebookcheck.net/",
-      "https://www.hp.com/za-en/products/laptops/product-details/product-specifications/2103305204"
+      "https://www.hp.com/za-en/products/laptops/product-details/product-specifications/2103305204",
+      "https://www.hp.com/emea_middle_east-en/products/laptops/product-details/product-specifications/2103517887",
+      "https://www.hp.com/rs-sr/products/laptops/product-details/product-specifications/2103461856"
     ],
     "colors": [
       "Silver"
@@ -85540,9 +85550,7 @@
     "summaryEn": "HP Victus 15-fa2082wm Core i5.",
     "unsure": [
       "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
+      "display"
     ],
     "chipset": {
       "name": "Intel Core i5-13420H"
@@ -85552,7 +85560,8 @@
     },
     "sources": [
       "https://www.notebookcheck.net/HP-Victus-15-fa2000ng.1186034.0.html",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://support.hp.com/in-en/product/product-specs/victus-by-hp-15.6-inch-gaming-laptop-15-fa2000/model/2102671382?sku=B5EQ3UA"
     ],
     "colors": [
       "Gray"
@@ -107856,11 +107865,11 @@
     "sources": [
       "https://mobilecentre.am/product/realme-headphone-buds-air-5-_white_/31211/",
       "https://www.facecebu.net/2023/10/unboxed-realme-buds-air-5-specs-and.html",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://www.realme.com/ru/newsroom/tws"
     ],
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "connectivity": {
       "bluetooth": "5.3"
