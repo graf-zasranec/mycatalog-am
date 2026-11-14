@@ -74041,12 +74041,8 @@
     "summaryEn": "Acer Aspire Lite 15.6'' FHD Core i5.",
     "unsure": [
       "popularity",
-      "chipset",
       "battery.capacity"
     ],
-    "chipset": {
-      "name": "Intel Core 5"
-    },
     "body": {
       "weight": 1590
     },
@@ -74055,7 +74051,11 @@
     ],
     "sources": [
       "https://www.yerevanmobile.am/en/acer-notebook-aspire-lite-15-6-fhd-core-i5.html"
-    ]
+    ],
+    "specNA": {
+      "chipset": "exact model sheet not found",
+      "chipset.name": "exact model sheet not found"
+    }
   },
   {
     "id": "lenovo-v15-g5-irl-15-6-intel-i5-13420h-fhd",
@@ -74335,20 +74335,13 @@
         "priceAmd": 94000
       }
     ],
-    "display": {
-      "size": 1.78,
-      "resolution": "368x448",
-      "type": "Retina LTPO OLED"
-    },
     "battery": {
       "life": "18 hours",
       "capacity": 296
     },
     "summaryEn": "Apple Watch SE 2 44mm.",
     "unsure": [
-      "popularity",
-      "display",
-      "body.weight"
+      "popularity"
     ],
     "chipset": {
       "name": "Apple S8 SiP"
@@ -74360,14 +74353,20 @@
     ],
     "variantUnit": "mm",
     "body": {
-      "weight": 26.4,
       "materials": "Aluminium case"
     },
     "sources": [
       "https://support.apple.com/kb/SP877",
       "https://9to5mac.com/2022/09/13/apple-watch-battery-mah-lte/"
     ],
-    "os": "watchOS 9"
+    "os": "watchOS 9",
+    "specNA": {
+      "display": "depends on case size/configuration",
+      "display.size": "depends on case size/configuration",
+      "display.resolution": "depends on case size/configuration",
+      "display.type": "depends on case size/configuration",
+      "body.weight": "depends on case size/configuration"
+    }
   },
   {
     "id": "flyingvoice-sr3000-5g",
@@ -76935,17 +76934,12 @@
         "priceAmd": 733300
       }
     ],
-    "display": {
-      "size": 16,
-      "resolution": "2560x1600"
-    },
     "battery": {
       "capacity": 90
     },
     "summaryEn": "ASUS ZEP 16 i7-13620H 4060 W11 /GU603VV*.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
@@ -76960,7 +76954,12 @@
     "os": "Windows 11",
     "colors": [
       "Black"
-    ]
+    ],
+    "specNA": {
+      "display": "exact model sheet not found",
+      "display.size": "exact model sheet not found",
+      "display.resolution": "exact model sheet not found"
+    }
   },
   {
     "id": "lenovo-thinkpad-t16-gen-5-16-ultra-7-21wt005cfw",
@@ -83275,8 +83274,7 @@
     },
     "summaryEn": "A 14-inch laptop with Intel Core Ultra 9-185H, 16 GB RAM and 512 GB storage.",
     "unsure": [
-      "popularity",
-      "body.weight"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 9-185H"
@@ -83286,16 +83284,17 @@
       "type": "integrated"
     },
     "os": "DOS",
-    "body": {
-      "weight": 1200
-    },
+    "body": {},
     "sources": [
       "https://www.asus.com/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/techspec/",
       "https://www.notebookcheck.net/"
     ],
     "colors": [
       "Silver"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "exact model sheet not found"
+    }
   },
   {
     "id": "amazon-kindle-scribe-colorsoft",
@@ -86103,13 +86102,10 @@
       "size": 15.3,
       "resolution": "1920x1200"
     },
-    "battery": {
-      "capacity": 50
-    },
+    "battery": {},
     "summaryEn": "Lenovo IdeaPad Slim 3 15IRH10 i7-13620H.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i7-13620H"
@@ -86131,7 +86127,10 @@
     "os": "No OS",
     "colors": [
       "Gray"
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "depends on case size/configuration"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-3-16ahp10-ryzen-5-8640hs",
@@ -169998,17 +169997,10 @@
         "priceAmd": 409000
       }
     ],
-    "display": {
-      "size": 65,
-      "type": "LED",
-      "resolution": "3840 x 2160",
-      "refresh": 60
-    },
     "battery": {},
     "summaryEn": "Sharp 4T-C65FJ16MX.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -170020,7 +170012,14 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "specNA": {
+      "display": "exact model sheet not found",
+      "display.size": "exact model sheet not found",
+      "display.type": "exact model sheet not found",
+      "display.resolution": "exact model sheet not found",
+      "display.refresh": "exact model sheet not found"
+    }
   },
   {
     "id": "sharp-4t-c55fj16mx",
@@ -170042,17 +170041,10 @@
         "priceAmd": 299000
       }
     ],
-    "display": {
-      "size": 55,
-      "type": "LED",
-      "resolution": "3840 x 2160",
-      "refresh": 60
-    },
     "battery": {},
     "summaryEn": "Sharp 4T-C55FJ16MX.",
     "unsure": [
       "popularity",
-      "display",
       "chipset",
       "battery.capacity"
     ],
@@ -170064,7 +170056,14 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "specNA": {
+      "display": "exact model sheet not found",
+      "display.size": "exact model sheet not found",
+      "display.type": "exact model sheet not found",
+      "display.resolution": "exact model sheet not found",
+      "display.refresh": "exact model sheet not found"
+    }
   },
   {
     "id": "tcl-s55h",
