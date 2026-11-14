@@ -210,6 +210,10 @@ const ACCESSORY_WORDS = [
   // a studio flash's model name reads like a phone's: Godox AD600 Pro II landed on the Honor 600
   // Pro and AD400 Pro II on the Honor 400 Pro (2026-09-28)
   'godox', 'speedlite',
+  // robot-vacuum spare parts name the robots they fit ("Robot vacuum filter Xiaomi S20 / S40 / S40 Pro")
+  // and matched those robots once their shop titles became aliases (2026-11-14)
+  'mop cloth', 'mop pad', 'mop pads', 'side brush', 'main brush', 'roller brush', 'rubber brush', 'dust bag',
+  'dust bags', 'hepa filter', 'vacuum filter', 'filter set',
   'case', 'cover', 'bumper', 'sleeve', 'pouch', 'wallet', 'folio', 'protector',
   'protection', 'tempered', 'film', 'skin', 'charger', 'charging', 'cable', 'adapter',
   'adaptor', 'dock', 'holder', 'mount', 'strap', 'lens', 'magsafe', 'powerbank', 'power bank',
