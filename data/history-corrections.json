@@ -1988,5 +1988,1544 @@
         }
       ]
     }
+  ],
+  "proposals": [
+    {
+      "reviewed": "2026-11-14",
+      "product": "yandex-mini-3",
+      "reason": "Wrong product in price snapshot. ATLAS plumbing filter and Kodak photo printers were matched to Yandex Station Mini 3.",
+      "evidenceRevision": "8aa043e98b46",
+      "records": [
+        {
+          "date": "2026-11-09",
+          "revision": "f4722433b4ded10bbf41d6626800adcdd4c64f4e",
+          "generated": "2026-11-09T18:30:54.812Z",
+          "before": {
+            "d": "2026-11-09",
+            "lo": 29000,
+            "hi": 63900,
+            "shops": 4,
+            "t": {
+              "base": 29000
+            }
+          },
+          "after": {
+            "d": "2026-11-09",
+            "lo": 53900,
+            "hi": 63900,
+            "shops": 3,
+            "t": {
+              "base": 53900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/39529",
+              "title": "YANDEX Mini 3 Black (YNDX-00027BLK)",
+              "price": 53900
+            },
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/44277",
+              "title": "YANDEX Mini 3 Purple (YNDX-00027LIL)",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-black.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Black",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-grey.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Grey",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-purple.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Purple",
+              "price": 53900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-turquoise-yndx-00027trq.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Turquoise) (YNDX-00027TRQ)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-gray-yndx-00027gry.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Gray) (YNDX-00027GRY)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-black-yndx-00027blk.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Black) (YNDX-00027BLK)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-violet-yndx-00027lil.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Violet) (YNDX-00027LIL)",
+              "price": 63900
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/47543",
+              "title": "ATLAS HYDRA MINI 3/4 RLHOT SELF-CLEANING 25 MCR",
+              "price": 29000
+            },
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/photo-printer-kodak-mini-3-retro-p300r.html",
+              "title": "Photo Printer Kodak Mini 3 Retro P300R",
+              "price": 42900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-10",
+          "revision": "07f1e36545948f773342e7c5e558c28d94c9d31d",
+          "generated": "2026-11-10T16:54:07.709Z",
+          "before": {
+            "d": "2026-11-10",
+            "lo": 29000,
+            "hi": 63900,
+            "shops": 4,
+            "t": {
+              "base": 29000
+            }
+          },
+          "after": {
+            "d": "2026-11-10",
+            "lo": 53900,
+            "hi": 63900,
+            "shops": 3,
+            "t": {
+              "base": 53900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/39529",
+              "title": "YANDEX Mini 3 Black (YNDX-00027BLK)",
+              "price": 53900
+            },
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/44277",
+              "title": "YANDEX Mini 3 Purple (YNDX-00027LIL)",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-black.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Black",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-grey.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Grey",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-purple.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Purple",
+              "price": 53900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-turquoise-yndx-00027trq.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Turquoise) (YNDX-00027TRQ)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-gray-yndx-00027gry.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Gray) (YNDX-00027GRY)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-black-yndx-00027blk.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Black) (YNDX-00027BLK)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-violet-yndx-00027lil.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Violet) (YNDX-00027LIL)",
+              "price": 63900
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/47543",
+              "title": "ATLAS HYDRA MINI 3/4 RLHOT SELF-CLEANING 25 MCR",
+              "price": 29000
+            },
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/photo-printer-kodak-mini-3-retro-p300r.html",
+              "title": "Photo Printer Kodak Mini 3 Retro P300R",
+              "price": 42900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "revision": "5e05d9ad496b2346452e9b59227fd0de817e7658",
+          "generated": "2026-11-11T23:45:34.001Z",
+          "before": {
+            "d": "2026-11-11",
+            "lo": 29000,
+            "hi": 63900,
+            "shops": 4,
+            "t": {
+              "base": 29000
+            }
+          },
+          "after": {
+            "d": "2026-11-11",
+            "lo": 53900,
+            "hi": 63900,
+            "shops": 3,
+            "t": {
+              "base": 53900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/39529",
+              "title": "YANDEX Mini 3 Black (YNDX-00027BLK)",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-black.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Black",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-grey.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Grey",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-purple.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Purple",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/en/yandex-mini-3-station-yndx-00027-tourquise.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Tourquise",
+              "price": 53900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-turquoise-yndx-00027trq.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Turquoise) (YNDX-00027TRQ)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-gray-yndx-00027gry.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Gray) (YNDX-00027GRY)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-black-yndx-00027blk.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Black) (YNDX-00027BLK)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-violet-yndx-00027lil.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Violet) (YNDX-00027LIL)",
+              "price": 63900
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/47543",
+              "title": "ATLAS HYDRA MINI 3/4 RLHOT SELF-CLEANING 25 MCR",
+              "price": 29000
+            },
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/photo-printer-kodak-mini-3-retro-p300r.html",
+              "title": "Photo Printer Kodak Mini 3 Retro P300R",
+              "price": 42900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-12",
+          "revision": "2918f847f2a5e02b91b40e4285ab3d66a7b446f2",
+          "generated": "2026-11-12T17:20:45.427Z",
+          "before": {
+            "d": "2026-11-12",
+            "lo": 29000,
+            "hi": 63900,
+            "shops": 5,
+            "t": {
+              "base": 29000
+            }
+          },
+          "after": {
+            "d": "2026-11-12",
+            "lo": 53900,
+            "hi": 63900,
+            "shops": 3,
+            "t": {
+              "base": 53900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/39529",
+              "title": "YANDEX Mini 3 Black (YNDX-00027BLK)",
+              "price": 53900
+            },
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/44277",
+              "title": "YANDEX Mini 3 Purple (YNDX-00027LIL)",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-black.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Black",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-grey.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Grey",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-purple.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Purple",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/en/yandex-mini-3-station-yndx-00027-tourquise.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Tourquise",
+              "price": 53900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-turquoise-yndx-00027trq.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Turquoise) (YNDX-00027TRQ)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-gray-yndx-00027gry.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Gray) (YNDX-00027GRY)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-black-yndx-00027blk.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Black) (YNDX-00027BLK)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-violet-yndx-00027lil.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Violet) (YNDX-00027LIL)",
+              "price": 63900
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/47543",
+              "title": "ATLAS HYDRA MINI 3/4 RLHOT SELF-CLEANING 25 MCR",
+              "price": 29000
+            },
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/photo-printer-kodak-mini-3-retro-p300r.html",
+              "title": "Photo Printer Kodak Mini 3 Retro P300R",
+              "price": 42900
+            },
+            {
+              "shop": "eldorado",
+              "url": "https://eldorado.am/en/kodak-mini-3-retro-p300ry-3x3",
+              "title": "Portable Photo Printer KODAK Mini 3 Retro P300RY (3x3&#039;&#039;)",
+              "price": 49900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-13",
+          "revision": "6d2d2eca2e0f75cc5cb7422d8d84797a5ddcb867",
+          "generated": "2026-11-13T16:32:22.651Z",
+          "before": {
+            "d": "2026-11-13",
+            "lo": 29000,
+            "hi": 63900,
+            "shops": 5,
+            "t": {
+              "base": 29000
+            }
+          },
+          "after": {
+            "d": "2026-11-13",
+            "lo": 53900,
+            "hi": 63900,
+            "shops": 3,
+            "t": {
+              "base": 53900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/39529",
+              "title": "YANDEX Mini 3 Black (YNDX-00027BLK)",
+              "price": 53900
+            },
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/44277",
+              "title": "YANDEX Mini 3 Purple (YNDX-00027LIL)",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-black.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Black",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-grey.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Grey",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/yandex-mini-3-station-yndx-00027-purple.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Purple",
+              "price": 53900
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/en/yandex-mini-3-station-yndx-00027-tourquise.html",
+              "title": "Yandex Mini 3 Station/YNDX-00027 Tourquise",
+              "price": 53900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-turquoise-yndx-00027trq.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Turquoise) (YNDX-00027TRQ)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-gray-yndx-00027gry.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Gray) (YNDX-00027GRY)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-black-yndx-00027blk.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Black) (YNDX-00027BLK)",
+              "price": 63900
+            },
+            {
+              "shop": "vega",
+              "url": "https://vega.am/home-appliances/audio-video-and-photo/smart-speaker/smart-station-yandex-mini-3-violet-yndx-00027lil.html",
+              "title": "Խելացի բարձրախոս YANDEX Mini 3 (Violet) (YNDX-00027LIL)",
+              "price": 63900
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/47543",
+              "title": "ATLAS HYDRA MINI 3/4 RLHOT SELF-CLEANING 25 MCR",
+              "price": 29000
+            },
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/photo-printer-kodak-mini-3-retro-p300r.html",
+              "title": "Photo Printer Kodak Mini 3 Retro P300R",
+              "price": 42900
+            },
+            {
+              "shop": "eldorado",
+              "url": "https://eldorado.am/en/kodak-mini-3-retro-p300ry-3x3",
+              "title": "Portable Photo Printer KODAK Mini 3 Retro P300RY (3x3'')",
+              "price": 49900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reviewed": "2026-11-14",
+      "product": "dreame-l50-ultra",
+      "reason": "Dreame L50 Ultra AE RLL51SE offer was assigned to the standard L50 Ultra chart.",
+      "evidenceRevision": "8aa043e98b46",
+      "records": [
+        {
+          "date": "2026-11-06",
+          "revision": "3d6e0176f53dc5bd5b1d988fa37262467378b9d2",
+          "generated": "2026-11-06T22:59:01.979Z",
+          "before": {
+            "d": "2026-11-06",
+            "lo": 409900,
+            "hi": 599000,
+            "shops": 3,
+            "t": {
+              "base": 409900
+            }
+          },
+          "after": {
+            "d": "2026-11-06",
+            "lo": 597900,
+            "hi": 599000,
+            "shops": 2,
+            "t": {
+              "base": 597900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "miarmenia",
+              "url": "https://miarmenia.am/en/product/628/dreame-l50-ultra",
+              "title": "Dreame L50 Ultra",
+              "price": 597900
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/dreame-l50-ultra-robotic-vacuum-cleaner-white",
+              "title": "Dreame L50 Ultra Robotic Vacuum Cleaner White",
+              "price": 599000
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/48246",
+              "title": "DREAME L50 Ultra AE Black (RLL51SE)",
+              "price": 409900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-07",
+          "revision": "6f1bb236c8317b44bcf16d2e7f2a7ded69fa0cf0",
+          "generated": "2026-11-07T20:46:21.317Z",
+          "before": {
+            "d": "2026-11-07",
+            "lo": 409900,
+            "hi": 599000,
+            "shops": 3,
+            "t": {
+              "base": 409900
+            }
+          },
+          "after": {
+            "d": "2026-11-07",
+            "lo": 597900,
+            "hi": 599000,
+            "shops": 2,
+            "t": {
+              "base": 597900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "miarmenia",
+              "url": "https://miarmenia.am/en/product/628/dreame-l50-ultra",
+              "title": "Dreame L50 Ultra",
+              "price": 597900
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/dreame-l50-ultra-robotic-vacuum-cleaner-white",
+              "title": "Dreame L50 Ultra Robotic Vacuum Cleaner White",
+              "price": 599000
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/48246",
+              "title": "DREAME L50 Ultra AE Black (RLL51SE)",
+              "price": 409900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-11",
+          "revision": "5e05d9ad496b2346452e9b59227fd0de817e7658",
+          "generated": "2026-11-11T23:45:34.001Z",
+          "before": {
+            "d": "2026-11-11",
+            "lo": 409900,
+            "hi": 599000,
+            "shops": 3,
+            "t": {
+              "base": 409900
+            }
+          },
+          "after": {
+            "d": "2026-11-11",
+            "lo": 597900,
+            "hi": 599000,
+            "shops": 2,
+            "t": {
+              "base": 597900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "miarmenia",
+              "url": "https://miarmenia.am/en/product/628/dreame-l50-ultra",
+              "title": "Dreame L50 Ultra",
+              "price": 597900
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/dreame-l50-ultra-robotic-vacuum-cleaner-white",
+              "title": "Dreame L50 Ultra Robotic Vacuum Cleaner White",
+              "price": 599000
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/48246",
+              "title": "DREAME L50 Ultra AE Black (RLL51SE)",
+              "price": 409900
+            }
+          ]
+        },
+        {
+          "date": "2026-11-13",
+          "revision": "dea1ad4c3ca5249190b842b818153b9e72c344a7",
+          "generated": "2026-11-13T11:42:32.252Z",
+          "before": {
+            "d": "2026-11-13",
+            "lo": 409900,
+            "hi": 599000,
+            "shops": 3,
+            "t": {
+              "base": 409900
+            }
+          },
+          "after": {
+            "d": "2026-11-13",
+            "lo": 597900,
+            "hi": 599000,
+            "shops": 2,
+            "t": {
+              "base": 597900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "miarmenia",
+              "url": "https://miarmenia.am/en/product/628/dreame-l50-ultra",
+              "title": "Dreame L50 Ultra",
+              "price": 597900
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/dreame-l50-ultra-robotic-vacuum-cleaner-white",
+              "title": "Dreame L50 Ultra Robotic Vacuum Cleaner White",
+              "price": 599000
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "vlv",
+              "url": "https://vlv.am/en/Product/48246",
+              "title": "DREAME L50 Ultra AE Black (RLL51SE)",
+              "price": 409900
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reviewed": "2026-11-14",
+      "product": "apple-iphone-16-pro",
+      "reason": "Yerevan Mobile’s 295000 AMD 128 GB quote is explicitly out of stock.",
+      "records": [
+        {
+          "date": "2026-10-11",
+          "revision": "28bd8c9125eed7f64d7a74e8b07693ec40df3f2a",
+          "generated": "2026-10-11T14:38:24.310Z",
+          "before": {
+            "d": "2026-10-11",
+            "lo": 295000,
+            "hi": 735000,
+            "shops": 6,
+            "t": {
+              "128": 295000,
+              "256": 409000,
+              "512": 569000,
+              "1024": 619000
+            }
+          },
+          "after": {
+            "d": "2026-10-11",
+            "lo": 409000,
+            "hi": 735000,
+            "shops": 5,
+            "t": {
+              "256": 409000,
+              "128": 459900,
+              "512": 569000,
+              "1024": 619000
+            }
+          },
+          "quotes": [
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-black-titanium-mynh3hx-a-outlet.html",
+              "title": "Apple iPhone 16 Pro 256GB Black Titanium /MYNH3HX/A - outlet",
+              "price": 409000,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-black-titanium-mynd3hx-a.html",
+              "title": "Apple iPhone 16 Pro 128GB Black Titanium /MYND3HX/A",
+              "price": 459900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-desert-titanium.html",
+              "title": "Apple iPhone 16 Pro 128GB Desert Titanium",
+              "price": 459900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-natural-titanium.html",
+              "title": "Apple iPhone 16 Pro 128GB Natural Titanium",
+              "price": 459900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/iphone-16-pro-128gb-natural-titanium-dual",
+              "title": "iPhone 16 Pro 128GB Natural Titanium Dual",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/iphone-16-pro-128gb-white-titanium-dual",
+              "title": "iPhone 16 Pro 128GB White Titanium Dual",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-black-titanium-dual/",
+              "title": "iPhone 16 Pro 128GB 2SIM Black Titanium",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-natural-titanium-dual/",
+              "title": "iPhone 16 Pro 128GB 2SIM Natural Titanium",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-white-titanium-dual/",
+              "title": "iPhone 16 Pro 128GB 2SIM White Titanium",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-white-titanium.html",
+              "title": "Apple iPhone 16 Pro 128GB White Titanium",
+              "price": 471900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-128gb-/",
+              "title": "iPhone 16 Pro 128GB Black Titanium",
+              "price": 471900,
+              "storage": 128
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-128gb-natural-titanium/",
+              "title": "iPhone 16 Pro 128GB Natural Titanium",
+              "price": 471900,
+              "storage": 128
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-128gb-white-titanium/",
+              "title": "iPhone 16 Pro 128GB  White Titanium",
+              "price": 471900,
+              "storage": 128
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-256gb-2sim-black-titanium/",
+              "title": "iPhone 16 Pro 256GB 2SIM Black Titanium",
+              "price": 489000,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-desert-titanium-mynk3hx-a.html",
+              "title": "Apple iPhone 16 Pro 256GB Desert Titanium /MYNK3HX/A",
+              "price": 509900,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-natural-titanium-mynl3hx-a.html",
+              "title": "Apple iPhone 16 Pro 256GB Natural Titanium /MYNL3HX/A",
+              "price": 509900,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-white-titanium.html",
+              "title": "Apple iPhone 16 Pro 256GB White Titanium",
+              "price": 509900,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-256gb-/",
+              "title": "iPhone 16 Pro 256GB Natural Titanium",
+              "price": 525900,
+              "storage": 256
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-256gb-white-titanium/",
+              "title": "iPhone 16 Pro 256GB  White Titanium",
+              "price": 525900,
+              "storage": 256
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-256gb-titanium/",
+              "title": "iPhone 16 Pro 256GB Black Titanium",
+              "price": 525900,
+              "storage": 256
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-512gb-titanium/",
+              "title": "iPhone 16 Pro 512GB Black Titanium",
+              "price": 589900,
+              "storage": 512
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-512gb-desert-titanium/",
+              "title": "iPhone 16 Pro 512GB Desert Titanium",
+              "price": 589900,
+              "storage": 512
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-512gb-black-titanium.html",
+              "title": "Apple iPhone 16 Pro 512GB Black Titanium",
+              "price": 609000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-1tb-desert-titanium.html",
+              "title": "Apple iPhone 16 Pro 1TB Desert Titanium",
+              "price": 619000,
+              "storage": 1024,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-512gb-natural-titanium.html",
+              "title": "Apple iPhone 16 Pro 512GB Natural Titanium",
+              "price": 625000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-512gb-desert-titanium.html",
+              "title": "Apple iPhone 16 Pro 512GB Desert Titanium",
+              "price": 633900,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-1tb-black-titanium.html",
+              "title": "Apple iPhone 16 Pro 1TB Black Titanium",
+              "price": 699000,
+              "storage": 1024,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-1tb-natural-titanium.html",
+              "title": "Apple iPhone 16 Pro 1TB Natural Titanium",
+              "price": 735000,
+              "storage": 1024,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "yerevanmobile",
+              "url": "https://www.yerevanmobile.am/en/apple-iphone-16-pro.html",
+              "title": "Apple iPhone 16 Pro",
+              "price": 295000,
+              "storage": 128,
+              "inStock": false
+            }
+          ]
+        },
+        {
+          "date": "2026-10-12",
+          "revision": "46cb13508be16b3f4657eae50dc0407c80499170",
+          "generated": "2026-10-12T17:37:03.760Z",
+          "before": {
+            "d": "2026-10-12",
+            "lo": 295000,
+            "hi": 735000,
+            "shops": 6,
+            "t": {
+              "128": 295000,
+              "256": 409000,
+              "512": 569000,
+              "1024": 619000
+            }
+          },
+          "after": {
+            "d": "2026-10-12",
+            "lo": 409000,
+            "hi": 735000,
+            "shops": 5,
+            "t": {
+              "256": 409000,
+              "128": 459900,
+              "512": 569000,
+              "1024": 619000
+            }
+          },
+          "quotes": [
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-black-titanium-mynh3hx-a-outlet.html",
+              "title": "Apple iPhone 16 Pro 256GB Black Titanium /MYNH3HX/A - outlet",
+              "price": 409000,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-black-titanium-mynd3hx-a.html",
+              "title": "Apple iPhone 16 Pro 128GB Black Titanium /MYND3HX/A",
+              "price": 459900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-desert-titanium.html",
+              "title": "Apple iPhone 16 Pro 128GB Desert Titanium",
+              "price": 459900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-natural-titanium.html",
+              "title": "Apple iPhone 16 Pro 128GB Natural Titanium",
+              "price": 459900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/iphone-16-pro-128gb-natural-titanium-dual",
+              "title": "iPhone 16 Pro 128GB Natural Titanium Dual",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "redstore",
+              "url": "https://redstore.am/en/product/iphone-16-pro-128gb-white-titanium-dual",
+              "title": "iPhone 16 Pro 128GB White Titanium Dual",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-black-titanium-dual/",
+              "title": "iPhone 16 Pro 128GB 2SIM Black Titanium",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-natural-titanium-dual/",
+              "title": "iPhone 16 Pro 128GB 2SIM Natural Titanium",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-128gb-white-titanium-dual/",
+              "title": "iPhone 16 Pro 128GB 2SIM White Titanium",
+              "price": 465000,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-128gb-white-titanium.html",
+              "title": "Apple iPhone 16 Pro 128GB White Titanium",
+              "price": 471900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-128gb-/",
+              "title": "iPhone 16 Pro 128GB Black Titanium",
+              "price": 471900,
+              "storage": 128
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-128gb-natural-titanium/",
+              "title": "iPhone 16 Pro 128GB Natural Titanium",
+              "price": 471900,
+              "storage": 128
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-128gb-white-titanium/",
+              "title": "iPhone 16 Pro 128GB  White Titanium",
+              "price": 471900,
+              "storage": 128
+            },
+            {
+              "shop": "ibolit",
+              "url": "https://ibolit.mobi/product/iphone-16-pro-256gb-2sim-black-titanium/",
+              "title": "iPhone 16 Pro 256GB 2SIM Black Titanium",
+              "price": 489000,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-desert-titanium-mynk3hx-a.html",
+              "title": "Apple iPhone 16 Pro 256GB Desert Titanium /MYNK3HX/A",
+              "price": 509900,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-natural-titanium-mynl3hx-a.html",
+              "title": "Apple iPhone 16 Pro 256GB Natural Titanium /MYNL3HX/A",
+              "price": 509900,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-256gb-white-titanium.html",
+              "title": "Apple iPhone 16 Pro 256GB White Titanium",
+              "price": 509900,
+              "storage": 256,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-256gb-/",
+              "title": "iPhone 16 Pro 256GB Natural Titanium",
+              "price": 525900,
+              "storage": 256
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-256gb-white-titanium/",
+              "title": "iPhone 16 Pro 256GB  White Titanium",
+              "price": 525900,
+              "storage": 256
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-256gb-titanium/",
+              "title": "iPhone 16 Pro 256GB Black Titanium",
+              "price": 525900,
+              "storage": 256
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "planet3d",
+              "url": "https://3dplanet.am/en/store/product/apple-iphone-16-pro",
+              "title": "Apple iPhone 16 Pro (1 ՍԻմ քարտ + Esim)",
+              "price": 569000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-512gb-titanium/",
+              "title": "iPhone 16 Pro 512GB Black Titanium",
+              "price": 589900,
+              "storage": 512
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/iphone-16-pro-512gb-desert-titanium/",
+              "title": "iPhone 16 Pro 512GB Desert Titanium",
+              "price": 589900,
+              "storage": 512
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-512gb-black-titanium.html",
+              "title": "Apple iPhone 16 Pro 512GB Black Titanium",
+              "price": 609000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-1tb-desert-titanium.html",
+              "title": "Apple iPhone 16 Pro 1TB Desert Titanium",
+              "price": 619000,
+              "storage": 1024,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-512gb-natural-titanium.html",
+              "title": "Apple iPhone 16 Pro 512GB Natural Titanium",
+              "price": 625000,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-512gb-desert-titanium.html",
+              "title": "Apple iPhone 16 Pro 512GB Desert Titanium",
+              "price": 633900,
+              "storage": 512,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-1tb-black-titanium.html",
+              "title": "Apple iPhone 16 Pro 1TB Black Titanium",
+              "price": 699000,
+              "storage": 1024,
+              "inStock": true
+            },
+            {
+              "shop": "zigzag",
+              "url": "https://www.zigzag.am/am/apple-iphone-16-pro-1tb-natural-titanium.html",
+              "title": "Apple iPhone 16 Pro 1TB Natural Titanium",
+              "price": 735000,
+              "storage": 1024,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "yerevanmobile",
+              "url": "https://www.yerevanmobile.am/en/apple-iphone-16-pro.html",
+              "title": "Apple iPhone 16 Pro",
+              "price": 295000,
+              "storage": 128,
+              "inStock": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "reviewed": "2026-11-14",
+      "product": "samsung-galaxy-a55",
+      "reason": "Ucom title explicitly identifies 128 GB; the archive incorrectly assigned its price to 256 GB.",
+      "records": [
+        {
+          "date": "2026-10-06",
+          "revision": "a122d903d737e2da96beb26a7aa92ec19cce6737",
+          "generated": "2026-10-06T11:58:17.504Z",
+          "before": {
+            "d": "2026-10-06",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "256": 144900
+            }
+          },
+          "after": {
+            "d": "2026-10-06",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "128": 144900,
+              "256": 166900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/samsung-galaxy-a55-256gb-blue-black4843/",
+              "title": "Samsung Galaxy A55 256GB Blue black",
+              "price": 166900,
+              "storage": 256,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 256,
+              "inStock": true
+            }
+          ]
+        },
+        {
+          "date": "2026-10-07",
+          "revision": "4512083c8fcf579e3c6e7aa1c35084ee5d5ef293",
+          "generated": "2026-10-07T16:05:30.842Z",
+          "before": {
+            "d": "2026-10-07",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "256": 144900
+            }
+          },
+          "after": {
+            "d": "2026-10-07",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "128": 144900,
+              "256": 166900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/samsung-galaxy-a55-256gb-blue-black4843/",
+              "title": "Samsung Galaxy A55 256GB Blue black",
+              "price": 166900,
+              "storage": 256,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 256,
+              "inStock": true
+            }
+          ]
+        },
+        {
+          "date": "2026-10-08",
+          "revision": "915bea7238488155f759a07349477bd9f295cfe3",
+          "generated": "2026-10-08T16:25:03.166Z",
+          "before": {
+            "d": "2026-10-08",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "256": 144900
+            }
+          },
+          "after": {
+            "d": "2026-10-08",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "128": 144900,
+              "256": 166900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/samsung-galaxy-a55-256gb-blue-black4843/",
+              "title": "Samsung Galaxy A55 256GB Blue black",
+              "price": 166900,
+              "storage": 256,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 256,
+              "inStock": true
+            }
+          ]
+        },
+        {
+          "date": "2026-10-09",
+          "revision": "4b6674c29e14b214360e2c779d11551d5ed24060",
+          "generated": "2026-10-09T11:37:35.022Z",
+          "before": {
+            "d": "2026-10-09",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "256": 144900
+            }
+          },
+          "after": {
+            "d": "2026-10-09",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "128": 144900,
+              "256": 166900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/samsung-galaxy-a55-256gb-blue-black4843/",
+              "title": "Samsung Galaxy A55 256GB Blue black",
+              "price": 166900,
+              "storage": 256,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 256,
+              "inStock": true
+            }
+          ]
+        },
+        {
+          "date": "2026-10-10",
+          "revision": "078c73417f0f1674a7175c46199b357f576fe1e0",
+          "generated": "2026-10-10T11:21:29.549Z",
+          "before": {
+            "d": "2026-10-10",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "256": 144900
+            }
+          },
+          "after": {
+            "d": "2026-10-10",
+            "lo": 144900,
+            "hi": 166900,
+            "shops": 2,
+            "t": {
+              "128": 144900,
+              "256": 166900
+            }
+          },
+          "quotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 128,
+              "inStock": true
+            },
+            {
+              "shop": "viva",
+              "url": "https://shop.viva.am/en/product/samsung-galaxy-a55-256gb-blue-black4843/",
+              "title": "Samsung Galaxy A55 256GB Blue black",
+              "price": 166900,
+              "storage": 256,
+              "inStock": true
+            }
+          ],
+          "excludedQuotes": [
+            {
+              "shop": "ucom",
+              "url": "https://shop.ucom.am/am/samsung-galaxy-a55.html",
+              "title": "Samsung Galaxy A55 5G 8GB 128GB Awesome Lilac",
+              "price": 144900,
+              "storage": 256,
+              "inStock": true
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
