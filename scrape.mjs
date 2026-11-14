@@ -3891,7 +3891,11 @@ const hist = fs.existsSync(HIST) ? JSON.parse(fs.readFileSync(HIST, 'utf8')) : {
 hist.points ||= {};
 const day = new Date().toISOString().slice(0, 10);
 let hadded = 0;
-for (const [id, list] of Object.entries(offers)) {
+for (const [id, all] of Object.entries(offers)) {
+  // Only offers a buyer can take today: an out-of-stock 128 GB iPhone 16 Pro at 295 000 set the
+  // chart's low for days (Codex history audit, 2026-11-14). A product with nothing in stock
+  // records no point that day rather than a price nobody can pay.
+  const list = all.filter(o => o.inStock !== false && o.price > 0);
   if (!list.length) continue;
   const lo = Math.min(...list.map(o => o.price));
   const hi = Math.max(...list.map(o => o.price));
