@@ -16,8 +16,10 @@ const get=async url=>{
  assert.ok([black,gold].includes(url),'no invented destination');
  return `<meta property="og:title" content="Mobile Centre. - Realme C75 8GB/256GB (${url===black?'Black':'Gold'})"><a href="${rawBlack}">black</a><a href="${rawGold}">gold</a>`;
 };
-const run=new Function('get','sleep','DELAY_MS','clean','mcCash','safeUrl','matchPhone','storageOf','mcRam','simBuild','return ({'+adapter+'}).mobilecentre.run();');
-const offers=await run(get,async()=>{},0,s=>s.replace(/<[^>]+>/g,''),()=>79900,safeUrl,()=>'realme-c75',()=>256,()=>8,()=>undefined);
+const mcUnavailable=new Function('return '+source.match(/const mcUnavailable = (page => [^\n]+);/)[1])();
+const run=new Function('get','sleep','DELAY_MS','clean','mcCash','safeUrl','matchPhone','storageOf','mcRam','simBuild','mcUnavailable','return ({'+adapter+'}).mobilecentre.run();');
+const offers=await run(get,async()=>{},0,s=>s.replace(/<[^>]+>/g,''),()=>79900,safeUrl,()=>'realme-c75',()=>256,()=>8,()=>undefined,mcUnavailable);
 assert.deepEqual(offers.map(o=>o.url).sort(),[black,gold].sort());
 for(const url of [black,gold])assert.equal(requested.filter(u=>u===url).length,1,'normalized sibling is deduplicated');
+assert.ok(offers.every(o=>o.inStock===true),'a page without its own unavailable label stays in stock');
 console.log('MOBILECENTRE_LINK_PASS: normalized listing and sibling destinations requested and saved once');

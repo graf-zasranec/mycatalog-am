@@ -964,6 +964,11 @@ const ldJson = html => [...html.matchAll(/<script[^>]*application\/ld\+json[^>]*
 // The cash price, read out of the product's own price block so a related item's price cannot
 // stand in for it. Returns 0 when the page does not state one.
 // Mobile Centre's cash price: the number after "Գին՝" inside this product's own block.
+// Mobile Centre marks the page's OWN product unavailable with a label straight after the photo
+// gallery's indicator list; the same label further down belongs to the other builds the page
+// links (an iPhone page carries one per sold-out capacity). Only the first kind says this offer
+// is gone - the reader used to mark every page in stock (2026-11-14: a sold-out Galaxy Buds).
+const mcUnavailable = page => /<\/ol>\s*<span class="label unavailable">/.test(String(page || ''));
 function mcCash(block) {
   // the listing closes the span between label and number ("<span>Գին՝ </span> 174,900դր.")
   // while the product page runs them together. Allow either.
@@ -1567,6 +1572,10 @@ if (process.argv[2] === '--selftest') {
     // 2026-11-14: a loose last-word match must not hand a shop's other colour our sibling's name
     ['Dyson Airwrap HS08 Ceramic Apricot/Topaz', ['Ceramic Patina/Topaz', 'Blue'], null],
     ['Samsung Galaxy A57 5G 256GB navy', ['Awesome Navy', 'Awesome Lilac'], 'Awesome Navy']);
+  for (const [html, want] of [['<ol class="carousel-indicators"><li></li></ol>\n\t<span class="label unavailable">Առկա չէ</span>', true],
+      ['<ol class="carousel-indicators"><li></li></ol><div class="info"></div><a title="Համեմատել"></a> </div> <span class="label unavailable">Առկա չէ</span>', false]]) {
+    if (mcUnavailable(html) !== want) { bad++; console.log(`FAIL mcUnavailable want=${want}`); }
+  }
   for (const [txt, cols, want] of colCases) {
     const got = colorOf(txt, cols);
     if (got !== want) { bad++; console.log(`FAIL colour got=${got} want=${want} <- ${txt}`); }
@@ -2082,7 +2091,7 @@ const SHOPS = {
           const said = simBuild(title);
           out.push({ id: h.id, price, storage: storageOf(title) ?? storageOf(h.url), ram: mcRam(page, title), title, url: h.url,
             esim: said, simFromPage: said !== undefined || undefined,
-            image: img && safeUrl(img) ? img : null, inStock: true });
+            image: img && safeUrl(img) ? img : null, inStock: !mcUnavailable(page) });
         }
       }
       return out;
