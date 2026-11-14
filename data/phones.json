@@ -173440,6 +173440,284 @@
     ]
   },
   {
+    "id": "xiaomi-robot-vacuum-s20",
+    "category": "vacuum",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum S20",
+    "aliases": [
+      "Xiaomi Robot Vacuum S20",
+      "Robot Vacuum Xiaomi S20 (D106)",
+      "Xiaomi CF Vacuum Cleaner Robot S20",
+      "Xiaomi Vacuum Robot S20",
+      "Xiaomi Robot Vacuum S20 (D106)",
+      "D106",
+      "BHR8628EU",
+      "BHR8629EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 82900,
+    "priceAmdMax": 82900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 82900
+      }
+    ],
+    "battery": {
+      "capacity": 3200
+    },
+    "summaryEn": "Xiaomi Robot Vacuum S20: 5000 Pa suction, LDS laser navigation and mopping.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "power": 45,
+      "suction": "5000 Pa"
+    },
+    "body": {
+      "weight": 3500
+    },
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-robot-vacuum-s20/specs/"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-s20-plus",
+    "category": "vacuum",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum S20+",
+    "aliases": [
+      "Xiaomi Robot Vacuum S20+",
+      "Xiaomi Robot Vacuum S20 Plus",
+      "Robot vacuum cleaner Xiaomi S20+ (B108GL)",
+      "Xiaomi Robot Vacuum Cleaner S20+",
+      "Xiaomi Vacuum Robot S20+",
+      "B108GL",
+      "BHR8158EU"
+    ],
+    "tier": "mid",
+    "priceAmd": 134900,
+    "priceAmdMax": 147900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 134900
+      }
+    ],
+    "battery": {
+      "capacity": 5200
+    },
+    "summaryEn": "Xiaomi Robot Vacuum S20+: LDS navigation, rotating mop pads and a 350 mm body.",
+    "unsure": [
+      "popularity"
+    ],
+    "specNA": {
+      "appliance.suction": "Not on Xiaomi's spec page"
+    },
+    "appliance": {
+      "type": "robot_vacuum",
+      "power": 55
+    },
+    "body": {
+      "weight": 3800,
+      "width": 350,
+      "height": 97
+    },
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-robot-vacuum-s20-plus/specs",
+      "https://www.mi.com/uk/product/xiaomi-robot-vacuum-s20-plus/specs/"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-e5",
+    "category": "vacuum",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum E5",
+    "aliases": [
+      "Xiaomi Robot Vacuum E5",
+      "Xiaomi Robot Vacuum Cleaner E5",
+      "BHR7969EU",
+      "BHR8298EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 49900,
+    "priceAmdMax": 49900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 49900
+      }
+    ],
+    "battery": {
+      "capacity": 2600,
+      "life": "110 min"
+    },
+    "summaryEn": "Xiaomi Robot Vacuum E5: 2000 Pa suction, 110 minutes per charge, vacuum and mop in one.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "suction": "2000 Pa",
+      "dust": "400 mL"
+    },
+    "colors": [
+      "White",
+      "Black"
+    ],
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-robot-vacuum-e5/",
+      "https://www.mi.com/my/product/xiaomi-robot-vacuum-e5/"
+    ]
+  },
+  {
+    "id": "xiaomi-robot-vacuum-s10-plus",
+    "category": "vacuum",
+    "brand": "Xiaomi",
+    "name": "Robot Vacuum S10+",
+    "aliases": [
+      "Xiaomi Robot Vacuum S10+",
+      "Xiaomi Robot Vacuum S10 Plus",
+      "Xiaomi Mi Robot Vacuum S10 Plus",
+      "Xiaomi Robot Vacuum S10+ (B105)",
+      "B105",
+      "BHR6368EU"
+    ],
+    "tier": "mid",
+    "priceAmd": 147900,
+    "priceAmdMax": 147900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 147900
+      }
+    ],
+    "battery": {
+      "capacity": 5200
+    },
+    "summaryEn": "Xiaomi Robot Vacuum S10+: 4000 Pa suction, LDS navigation and dual rotating mops.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "robot_vacuum",
+      "power": 55,
+      "suction": "4000 Pa"
+    },
+    "body": {
+      "weight": 3800,
+      "width": 350,
+      "height": 97
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-robot-vacuum-s10-plus/specs/"
+    ]
+  },
+  {
+    "id": "xiaomi-dust-mite-vacuum-cleaner",
+    "category": "vacuum",
+    "brand": "Xiaomi",
+    "name": "Dust Mite Vacuum Cleaner",
+    "aliases": [
+      "Xiaomi Dust Mite Vacuum Cleaner",
+      "Xiaomi Dust Mite Vacuum Cleaner (MJCMY02EU)",
+      "MJCMY02EU",
+      "BHR8276EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 19400,
+    "priceAmdMax": 19400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19400
+      }
+    ],
+    "summaryEn": "Xiaomi Dust Mite Vacuum Cleaner: a corded mattress vacuum with 12,000 Pa suction and 50 °C hot-air drying.",
+    "unsure": [
+      "popularity"
+    ],
+    "specNA": {
+      "appliance.power": "Xiaomi's pages disagree (350 W / 450 W)"
+    },
+    "appliance": {
+      "type": "handheld_vacuum",
+      "suction": "12000 Pa"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": [
+      "https://www.mi.com/africa-en/product/xiaomi-dust-mite-vacuum-cleaner/"
+    ]
+  },
+  {
+    "id": "lydsto-h3",
+    "category": "vacuum",
+    "brand": "Lydsto",
+    "name": "H3 Cordless Vacuum",
+    "aliases": [
+      "Lydsto H3",
+      "Xiaomi Lydsto H3",
+      "Cordless vacuum cleaner Xiaomi Lydsto H3"
+    ],
+    "tier": "budget",
+    "priceAmd": 32900,
+    "priceAmdMax": 32900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32900
+      }
+    ],
+    "summaryEn": "Lydsto H3 cordless stick vacuum from Xiaomi's ecosystem.",
+    "unsure": [
+      "popularity"
+    ],
+    "specNA": {
+      "appliance.suction": "Not published by Lydsto",
+      "appliance.power": "Not published by Lydsto",
+      "battery.capacity": "Not published by Lydsto"
+    },
+    "appliance": {
+      "type": "cordless_vacuum"
+    },
+    "colors": [
+      "White"
+    ],
+    "sources": []
+  },
+  {
     "id": "braun-gs7077bk",
     "category": "appliance",
     "brand": "Braun",
