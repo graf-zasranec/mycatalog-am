@@ -839,6 +839,23 @@ const ramOf = text => {
 // at viva. Each spelling that reaches the page as its own word makes one phone look like two.
 const cword = w => String(w).toLowerCase().replace(/[^a-z]/g, '')
   .replace(/^grey$/, 'gray').replace(/^ice(blue)$/, 'icy$1').replace(/^icy$/, 'ice').replace(/^burgand$/, 'burgundy');
+// Every word that names a colour somewhere in the catalogue (apricot, lavender, blueberry...),
+// minus words that also name products (pro, air, pad). A shop title that carries one of these
+// words, when the colour picked for it does not, is naming a different colour: Dyson's
+// "Ceramic Apricot/Topaz" was read as our Ceramic Patina/Topaz on the shared word Topaz, and the
+// Galaxy A36's "Awesome Lavender" as Awesome Lime. The loose matches below check it and leave
+// such an offer unstated (it then lands in data/colour-report.json) rather than guess a sibling.
+const CATALOGUE_COLOUR_WORDS = (() => {
+  const named = new Set(phones.flatMap(p => `${p.brand || ''} ${p.name || ''}`.split(/[^A-Za-z]+/).map(cword)));
+  const out = new Set();
+  for (const p of phones) for (const c of p.colors || []) for (const w of String(c).split(/[^A-Za-z]+/)) {
+    const k = cword(w); if (k.length > 2 && !named.has(k)) out.add(k); }
+  return out;
+})();
+const foreignColour = (text, colour) => {
+  const own = new Set(String(colour).split(/[^A-Za-z]+/).map(cword));
+  return String(text).split(/[^A-Za-z]+/).map(cword).some(w => CATALOGUE_COLOUR_WORDS.has(w) && !own.has(w));
+};
 // istyle's own labels, read onto the catalogue's names: "Jetblack" is Jet Black, "Levender" is
 // Lavender. Squashed spaces first, then one wrong letter in a name longer than five.
 function colorLoose(label, colors) {
@@ -886,7 +903,7 @@ function colorOf(text, colors) {
     const tail = cword(String(c).split(/\s+/).pop());
     return tail.length > 2 && words.has(tail);
   });
-  return cand.length === 1 ? cand[0] : null;
+  return cand.length === 1 && !foreignColour(h, cand[0]) ? cand[0] : null;
 }
 // pixel.am never names the variant in the title, but its product photo does:
 // ".../17-pro-orng-1.png". Expand the shop's abbreviations, then match a word of one of
@@ -1540,7 +1557,10 @@ if (process.argv[2] === '--selftest') {
   }
   colCases.push(['Burgand', ['Black', 'Burgundy', 'Silver'], 'Burgundy'],
     ['Blue', ['Black', 'Burgundy', 'Glacier', 'Silver'], 'Glacier'],
-    ['Blue', ['Black', 'Silver'], null]);
+    ['Blue', ['Black', 'Silver'], null],
+    // 2026-11-14: a loose last-word match must not hand a shop's other colour our sibling's name
+    ['Dyson Airwrap HS08 Ceramic Apricot/Topaz', ['Ceramic Patina/Topaz', 'Blue'], null],
+    ['Samsung Galaxy A57 5G 256GB navy', ['Awesome Navy', 'Awesome Lilac'], 'Awesome Navy']);
   for (const [txt, cols, want] of colCases) {
     const got = colorOf(txt, cols);
     if (got !== want) { bad++; console.log(`FAIL colour got=${got} want=${want} <- ${txt}`); }
@@ -3596,6 +3616,23 @@ try {
     if (o.color && map[o.color]) { o.color = map[o.color]; n++; }
     else if (!o.color && o.colorRaw && map[o.colorRaw]) { o.color = map[o.colorRaw]; n++; } }
   if (n) console.log(`${n} offer colour(s) renamed to the catalogue's name (data/color-aliases.json)`);
+  // A title that names exactly one of the product's own colours in full outranks the colour a
+  // shop's swatch or filter gave the row: ucom filed the Galaxy A36 "Awesome Lavender" under
+  // Awesome Lime. A longer name beats one it contains (Midnight Black over Black); a title naming
+  // two of the colours (a watch case and its band) is left as it was.
+  // A page selling several colours under one title (its default colour's name) is skipped: there
+  // each row's colour comes from the page's own variant data, not from the title.
+  let byTitle = 0;
+  for (const [id, list] of Object.entries(offers)) { const cs = (phoneById[id] || {}).colors || [];
+    if (cs.length < 2) continue;
+    const perUrl = new Map();
+    for (const o of list) if (o.url && o.color) (perUrl.get(o.url) || perUrl.set(o.url, new Set()).get(o.url)).add(o.color);
+    for (const o of list) { if (!o.color || !o.title || (perUrl.get(o.url)?.size || 0) > 1) continue;
+      const t = String(o.title).toLowerCase();
+      const hits = cs.filter(c => new RegExp('(^|[^\\p{L}\\p{N}])' + c.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?=$|[^\\p{L}\\p{N}])', 'u').test(t));
+      const top = hits.filter(h => !hits.some(k => k !== h && k.toLowerCase().includes(h.toLowerCase())));
+      if (top.length === 1 && o.color !== top[0]) { o.color = top[0]; byTitle++; } } }
+  if (byTitle) console.log(`${byTitle} offer colour(s) taken from a title that names the colour in full`);
   // An offer naming no colour often names it in its own link or title, just not the way we spell
   // it: iBolit "lavander", REDstore "charkoal" and "blueberr", iStore "blk", Eldorado "wht", and
   // "charcoal" for our "Awesome Charcoal". Taken only when exactly one of the product's colours
@@ -3612,10 +3649,10 @@ try {
       const w = ` ${String(o.title || '') + ' ' + urlWords(o.url)} `.toLowerCase().replace(/[^a-z]+/g, ' ')
         .replace(/\b[a-z]+\b/g, t => FIX[t] || t);
       const norm = c => c.toLowerCase().replace(/grey/g, 'gray').replace(/[^a-z]+/g, ' ').trim();
-      let hit = cs.filter(c => w.includes(` ${norm(c)} `));
-      if (!hit.length) hit = cs.filter(c => w.includes(` ${norm(c).split(' ').pop()} `));
+      let hit = cs.filter(c => w.includes(` ${norm(c)} `)), loose = false;
+      if (!hit.length) { loose = true; hit = cs.filter(c => w.includes(` ${norm(c).split(' ').pop()} `)); }
       if (!hit.length) hit = cs.filter(c => { const l = norm(c).split(' ').pop(); return SYN[l] && w.includes(` ${SYN[l]} `); });
-      if (hit.length === 1) { o.color = hit[0]; named++; } } }
+      if (hit.length === 1 && !(loose && foreignColour(w, hit[0]))) { o.color = hit[0]; named++; } } }
   if (named) console.log(`${named} offer colour(s) read from the shop's own link or title`);
   // A colour that is still not one of the product's own reads as "not stated", which the page
   // shows under every swatch - left as it was, it vanished the moment a reader picked any colour.
@@ -3630,8 +3667,17 @@ try {
       if (!unknown.has(k)) unknown.set(k, { shop: o.shop, id, colour: o.color, ours: c, title: o.title || '', url: o.url || '' });
       o.color = null; q++; } }
   if (q) console.log(`${q} offer colour(s) the product does not come in - left unstated`);
+  // And every offer whose own title names a colour word its chosen colour lacks - the nightly list
+  // of rows to look at (owner, 2026-11-14: "every random product we pick has bugs"). Not changed
+  // here: band colours on watches and "Black & Brass" speakers land in it too.
+  const conflicts = [];
+  for (const [id, list] of Object.entries(offers)) for (const o of list)
+    if (o.color && o.title && foreignColour(o.title, o.color))
+      conflicts.push({ shop: o.shop, id, colour: o.color, title: o.title, url: o.url || '' });
+  if (conflicts.length) console.log(`${conflicts.length} offer(s) whose title names a different colour - data/colour-report.json`);
   fs.writeFileSync('data/colour-report.json', JSON.stringify({ generated: new Date().toISOString(),
-    rows: [...unknown.values()].sort((a, b) => a.shop.localeCompare(b.shop) || a.id.localeCompare(b.id)) }, null, 1) + '\n');
+    rows: [...unknown.values()].sort((a, b) => a.shop.localeCompare(b.shop) || a.id.localeCompare(b.id)),
+    conflicts: conflicts.sort((a, b) => a.id.localeCompare(b.id) || a.shop.localeCompare(b.shop)) }, null, 1) + '\n');
 } catch (e) { if (e.code !== 'ENOENT') console.warn('color-aliases.json:', e.message); }
 // Re-read authoritative VLV titles after generic palette quarantine, including carried rows.
 const vlvColorChanges = applyVlvTitleColors(phones, offers, JSON.parse(fs.readFileSync('data/color-aliases.json','utf8')));
