@@ -350,6 +350,8 @@ function looksLikeBundle(text) {
     if (/^auto ?iq\b/.test(right)) continue;
     // "Shark ... with AED" / "... and stain remover": a feature of the one product, not a second
     if (/^(aed|stain remover)\b/.test(right)) continue;
+    // "AirPods 4 with ANC MXP93": noise cancelling is the product's own feature
+    if (/^(anc|active noise|noise cancel)/.test(right)) continue;
     // a second product names itself: a word of its own and a number belonging to it - not the
     // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
     // the joiner, and reading 128GB and Red as a second product dropped every such offer.
@@ -993,6 +995,7 @@ if (process.argv[2] === '--selftest') {
     [null, 'JBL Tune 570BT'],
     [null, 'Dyson Supersonic HD16 hair dryer Red Velvet/Gold - outlet'],
     ['apple-airpods-4-anc', 'AirPods 4 NC'],
+    ['apple-airpods-4-anc', 'apple airpods 4 with anc mxp93'],
     // 2026-11-08: products whose own name carries an accessory word, and the accessories beside them
     ['apple-airpods-5-wireless-charging-case', 'AirPods 5 with Wireless Charging Case'],
     ['apple-airpods-pro-3', 'AirPods Pro 3 with MagSafe Charging Case'],
