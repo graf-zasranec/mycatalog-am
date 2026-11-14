@@ -2614,7 +2614,8 @@ const SHOPS = {
         if (!id || !r.price || r.price <= 0 || !safeUrl(r.url) || !/^\d{4}-\d{2}-\d{2}$/.test(r.checked || '')) continue;
         out.push({ id, price: r.price, title: r.title, url: r.url,
           storage: phoneById[id]?.variantUnit === 'mm' ? storageOf(r.title) : (r.storage ?? storageOf(r.title)),
-          ram: r.ram ?? ramOf(r.title), color: r.color || undefined, seen: r.checked, checkedAt: r.checkedAt, inStock: r.inStock !== false });
+          ram: r.ram ?? ramOf(r.title), color: r.color || undefined, seen: r.checked, checkedAt: r.checkedAt, inStock: r.inStock !== false,
+          ...(r.preorder ? { preorder: true } : {}) });
       }
       return out;
     }

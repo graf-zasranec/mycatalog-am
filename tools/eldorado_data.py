@@ -19,12 +19,14 @@ def product_row(html, url):
         raise ValueError('No primary product and purchase form (blocked/changed page)')
     title = heading.get_text(' ', strip=True)
     button = form.select_one('#product-addtocart-button')
+    preorder = False
     if button:
-        # Magento also enables this control for pre-orders. It must not make a
-        # future delivery count as an immediately available shop offer.
-        preorder = re.search(r'pre[\s-]*order|նախապատվ|предзаказ',
-                             button.get_text(' ', strip=True), re.I)
-        stock = not button.has_attr('disabled') and 'disabled' not in button.get('class', []) and not preorder
+        # Magento also enables this control for pre-orders. The owner keeps pre-order offers and
+        # tags them (2026-11-12, as iSpace and iStore already do): a live pre-order button is an
+        # offer a buyer can take, marked preorder so the page says so.
+        preorder = bool(re.search(r'pre[\s-]*order|նախապատվ|предзаказ',
+                                  button.get_text(' ', strip=True), re.I))
+        stock = not button.has_attr('disabled') and 'disabled' not in button.get('class', [])
     elif re.search(r'notify|out of stock|unavailable|առկա չէ|ծանուց', primary.get_text(' ', strip=True), re.I):
         stock = False
     else:
@@ -35,7 +37,8 @@ def product_row(html, url):
         raise ValueError('Missing or conflicting primary final price')
     if prices[0] <= 0 and stock:
         raise ValueError('In-stock product has no positive cash price')
-    row = dict(url=url, title=title, price=prices[0], inStock=stock, detailVerified=True)
+    row = dict(url=url, title=title, price=prices[0], inStock=stock, detailVerified=True,
+               preorder=bool(button and stock and preorder))
     finish = primary_color(title)
     if finish is not None:
         row['color'] = finish
