@@ -73540,7 +73540,6 @@
     "unsure": [
       "popularity",
       "display",
-      "chipset",
       "battery.capacity"
     ],
     "chipset": {
@@ -73552,6 +73551,9 @@
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.dell.com/support/manuals/en-zm/vostro-3910-desktop/vostro-3910-setup-and-specifications/processor?guid=guid-daed7bac-4d2d-4ced-a804-43c6f7744908&lang=en-us"
     ]
   },
   {
@@ -76112,7 +76114,6 @@
     "summaryEn": "HP 250R G10 15.6\" Core 5-120U /D7KM3AT.",
     "unsure": [
       "popularity",
-      "display",
       "body.weight"
     ],
     "chipset": {
@@ -76124,7 +76125,9 @@
     "sources": [
       "https://support.hp.com/au-en/document/ish_7751519-7751693-16",
       "https://partsurfer.hp.com/",
-      "https://h20195.www2.hp.com/v2/getpdf.aspx/c09074037.pdf"
+      "https://h20195.www2.hp.com/v2/getpdf.aspx/c09074037.pdf",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=D7KM3AT",
+      "https://support.hp.com/lv-en/document/ish_11296151-11683092-16"
     ],
     "colors": [
       "Jet Black"
@@ -76661,8 +76664,7 @@
     },
     "summaryEn": "LG Gram Book 15.6\" Core i5-1334U /2. W11H /15U50T-G.ARS2U1.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core i5-1334U"
@@ -76672,7 +76674,9 @@
     },
     "sources": [
       "https://www.notebookcheck.net/LG-gram-Book-15U50T.1077540.0.html",
-      "https://www.lg.com/us/newsroom/media-entertainment/lg-announces-us-pricing-and-availability-of-new-gram-book-laptop"
+      "https://www.lg.com/us/newsroom/media-entertainment/lg-announces-us-pricing-and-availability-of-new-gram-book-laptop",
+      "https://images.webfronts.com/cache/frspqapkvbjt.pdf",
+      "https://www.lg.com/us/laptops/lg-15u50t-g.ars2u1-gram-laptop"
     ],
     "os": "Windows 11",
     "colors": [
@@ -85346,8 +85350,6 @@
     "summaryEn": "HP Probook 450 G9 i5-1235U.",
     "unsure": [
       "popularity",
-      "display",
-      "battery.capacity",
       "body.weight"
     ],
     "chipset": {
@@ -85362,7 +85364,10 @@
     },
     "sources": [
       "https://laptopdecision.com/compare/HP-ProBook-450-G9-vs-hp-probook-440-g11",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=5Y3T1EA",
+      "https://support.hp.com/se-sv/document/ish_5999155-5999207-16?fallbackLocale=us-en&validated=true",
+      "https://h20195.www2.hp.com/v2/getpdf.aspx/c08741410.pdf"
     ],
     "colors": [
       "Gray"
@@ -85398,7 +85403,6 @@
     "summaryEn": "HP ProBook 460 G11 Ultra 5 125U.",
     "unsure": [
       "popularity",
-      "display",
       "battery.capacity"
     ],
     "chipset": {
@@ -85413,7 +85417,9 @@
     },
     "sources": [
       "https://laptopdecision.com/compare/hp-probook-460-g11-vs-HP-ProBook-450-G8",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=A38BGET",
+      "https://support.hp.com/no-no/document/ish_10396742-10396786-16?fallbackLocale=us-en&validated=true"
     ],
     "colors": [
       "Silver"
@@ -85501,8 +85507,7 @@
     },
     "summaryEn": "HP ProBook 4G1i16 Ultra 7 255H.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255H"
@@ -85517,7 +85522,8 @@
     "sources": [
       "https://laptopmedia.com/?p=1795705",
       "https://www.notebookcheck.net/",
-      "https://www.hp.com/za-en/products/laptops/product-details/product-specifications/2103305204"
+      "https://www.hp.com/za-en/products/laptops/product-details/product-specifications/2103305204",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=C7GF4ET"
     ],
     "colors": [
       "Silver"
@@ -85553,8 +85559,7 @@
     },
     "summaryEn": "HP ProBook 4G1i16 Ultra 7 255U.",
     "unsure": [
-      "popularity",
-      "display"
+      "popularity"
     ],
     "chipset": {
       "name": "Intel Core Ultra 7-255U"
@@ -85569,7 +85574,9 @@
     "sources": [
       "https://laptopmedia.com/?p=1795705",
       "https://www.notebookcheck.net/",
-      "https://www.hp.com/za-en/products/laptops/product-details/product-specifications/2103305204"
+      "https://www.hp.com/za-en/products/laptops/product-details/product-specifications/2103305204",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=CW9E0ET",
+      "https://www.hp.com/emea_middle_east-en/products/laptops/product-details/product-specifications/2103593709"
     ],
     "colors": [
       "Silver"
@@ -88129,8 +88136,6 @@
     "summaryEn": "HP Omen 16-AN011 Ultra 9 285H I.",
     "unsure": [
       "popularity",
-      "display",
-      "battery.capacity",
       "body.weight"
     ],
     "chipset": {
@@ -88141,7 +88146,9 @@
     },
     "sources": [
       "https://nanoreview.net/en/laptop/hp-omen-16-2025",
-      "https://partsurfer.hp.com/"
+      "https://partsurfer.hp.com/",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=BM7B9UA",
+      "https://kaas.hpcloud.hp.com/pdf-public/pdf_11619159_en-US-1.pdf"
     ],
     "colors": [
       "Black"
@@ -173971,7 +173978,6 @@
     "summaryEn": "HP AI 15-FD2011CI 15.6.",
     "unsure": [
       "popularity",
-      "display",
       "battery.capacity"
     ],
     "chipset": {
@@ -173988,7 +173994,9 @@
       "Silver"
     ],
     "sources": [
-      "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-hp-laptop-ai-15-fd2011ci-ultra-7-255u-156-16gb-1tb-natural-silver-bk2x2ea.html"
+      "https://vega.am/home-appliances/computers-and-accessories/notebooks/notebook-hp-laptop-ai-15-fd2011ci-ultra-7-255u-156-16gb-1tb-natural-silver-bk2x2ea.html",
+      "https://partsurfer.hp.com/?searchby=product&searchtext=BK2X2EA",
+      "https://support.hp.com/dk-da/document/ish_12998867-13034380-16?fallbackLocale=us-en&validated=true"
     ]
   },
   {
