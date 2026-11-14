@@ -175671,5 +175671,138 @@
       "popularity"
     ],
     "specSource": "https://cecotec.es/es/vinoteca/bolero-grandsommelier-1550-coolcrystal"
+  },
+  {
+    "id": "lenovo-loq-16irh8-82ya003yrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "LOQ 16IRH8 (82YA003YRK)",
+    "aliases": [
+      "LENOVO 16IRH8 i5-13500H 16GB 1TB RTX4060 16\" (82YA003YRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 649900,
+    "priceAmdMax": 649900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 649900
+      }
+    ],
+    "chipset": {
+      "name": "Intel Core i5-13500H"
+    },
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "2560x1600",
+      "refresh": 240
+    },
+    "battery": {
+      "capacity": 80
+    },
+    "summaryEn": "Lenovo LOQ 16IRH8 (82YA003YRK).",
+    "sources": [
+      "https://psref.lenovo.com/Detail/LOQ_16IRH8?M=82YA003YRK",
+      "https://vlv.am/en/Product/28397"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "specNA": {
+      "body.weight": "Lenovo publishes under 2.4 kg, not an exact weight"
+    }
+  },
+  {
+    "id": "lenovo-ideapad-slim-5-16imh9-83dc004frk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 5 16IMH9 (83DC004FRK)",
+    "aliases": [
+      "LENOVO 5 16IMH9 Ultra 5 125H 16GB SSD512 16\" (83DC004FRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 479900,
+    "priceAmdMax": 479900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 479900
+      }
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5 125H"
+    },
+    "display": {
+      "size": 16,
+      "type": "OLED",
+      "resolution": "2048x1280",
+      "refresh": 120
+    },
+    "battery": {
+      "capacity": 76
+    },
+    "summaryEn": "Lenovo IdeaPad Slim 5 16IMH9 (83DC004FRK).",
+    "sources": [
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IMH9?M=83DC004FRK",
+      "https://vlv.am/en/Product/37034"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "body": {
+      "weight": 1820
+    }
+  },
+  {
+    "id": "lenovo-yoga-7-2-in-1-16iph11-83te0022rk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 7 2-in-1 16IPH11 (83TE0022RK)",
+    "aliases": [
+      "LENOVO YOGA 7 2-IN-1 16IPH11 ULTRA7 355 16GB 1TB W11 16\" 83TE0022RK"
+    ],
+    "tier": "mid",
+    "priceAmd": 789900,
+    "priceAmdMax": 789900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 789900
+      }
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 355"
+    },
+    "display": {
+      "size": 16,
+      "type": "OLED",
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "touch": true
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "summaryEn": "Lenovo Yoga 7 2-in-1 16IPH11 (83TE0022RK).",
+    "sources": [
+      "https://psref.lenovo.com/Detail/Yoga_7_2_in_1_16IPH11?M=83TE0022RK",
+      "https://vlv.am/en/Product/48968"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "body": {
+      "weight": 1740
+    }
   }
 ]
