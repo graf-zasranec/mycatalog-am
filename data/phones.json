@@ -175852,5 +175852,54 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "hp-hyperx-omen-16-am2013dx-d5cd0ua",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "HyperX OMEN 16-am2013dx (D5CD0UA)",
+    "aliases": [
+      "HP OMEN HyperX 16-AM2013 D5CD0UA",
+      "HP HyperX OMEN 16-am2013dx",
+      "D5CD0UA"
+    ],
+    "tier": "mid",
+    "priceAmd": 806400,
+    "priceAmdMax": 806400,
+    "popularity": 35,
+    "accent": "#292A2B",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 806400
+      }
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 356H"
+    },
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 165
+    },
+    "body": {
+      "weight": 2480
+    },
+    "battery": {
+      "capacity": 70
+    },
+    "colors": [
+      "Shadow Black"
+    ],
+    "summaryEn": "HP HyperX OMEN gaming laptop with a 16-inch IPS display.",
+    "sources": [
+      "https://support.hp.com/us-en/drivers/hyperx-omen-16-inch-gaming-laptop-pc-16-am2000/model/2103532269?sku=D5CD0UA",
+      "https://ais.amti.com.ph/hermes?catalog=Laptops&country=US&language=EN&page=178&page_size=25&part_number=D5CD0UA&phrase=&reference=5b29c816-7f57-48d6-8b1f-583e19362fce&search_type=name"
+    ],
+    "unsure": [
+      "popularity"
+    ]
   }
 ]
