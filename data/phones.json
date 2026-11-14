@@ -109435,7 +109435,8 @@
       "life": "9 hours"
     },
     "body": {
-      "ip": "IPX4"
+      "ip": "IPX4",
+      "weight": 4.5
     },
     "connectivity": {
       "bluetooth": "5.3"
@@ -109448,7 +109449,8 @@
       "https://shop.ucom.am/am/motorola-motobuds.html",
       "https://smartprix.com/mobile_headphones/motorola-moto-buds-true-wireless-earbuds-ppd1hezjl6xc",
       "https://www.motorola.com/we/en/moto-buds",
-      "https://en-gb.support.motorola.com/ci/fattach/get/87344305/1754049568/redirect/1/filename/moto%2Bbuds%2B%2B%26%2Bmoto%2Bbuds.ROW.Online.User%2BGuide.en-GB.SSC8E51826-A_web.pdf"
+      "https://en-gb.support.motorola.com/ci/fattach/get/87344305/1754049568/redirect/1/filename/moto%2Bbuds%2B%2B%26%2Bmoto%2Bbuds.ROW.Online.User%2BGuide.en-GB.SSC8E51826-A_web.pdf",
+      "https://support.lenovo.com/za/en/solutions/ht516782-faq-for-moto-guitar-version-v1"
     ],
     "unsure": [
       "popularity"
@@ -109461,10 +109463,7 @@
         "storage": null,
         "priceAmd": 35900
       }
-    ],
-    "specNA": {
-      "body.weight": "Not published by Motorola"
-    }
+    ]
   },
   {
     "id": "motorola-moto-buds-bass",
@@ -173266,7 +173265,8 @@
     ],
     "display": {},
     "battery": {
-      "life": "≤90 min"
+      "life": "≤90 min",
+      "capacity": 4000
     },
     "summaryEn": "Electrolux EP82H25WET.",
     "unsure": [
@@ -173290,11 +173290,9 @@
     "sources": [
       "https://vega.am/home-appliances/domestic-appliances/vacuum-cleaners-wireless/vacuum-cleaner-wireless-electrolux-ep82h25wet.html",
       "https://www.electrolux.pl/vacuums-home-comfort/vacuum-cleaners/stick-vacuum-cleaners/cordless-sticks/ep82h25wet/",
-      "https://shop.electrolux.co.uk/model/m/EP82H25WET"
-    ],
-    "specNA": {
-      "battery.capacity": "Not published by Electrolux"
-    }
+      "https://shop.electrolux.co.uk/model/m/EP82H25WET",
+      "https://shop.electrolux.pl/ecodesign/pre-tax/90040230400"
+    ]
   },
   {
     "id": "dreame-h14-wet-dry",
