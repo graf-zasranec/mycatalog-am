@@ -353,7 +353,8 @@ function looksLikeBundle(text) {
     // a second product names itself: a word of its own and a number belonging to it - not the
     // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
     // the joiner, and reading 128GB and Red as a second product dropped every such offer.
-    const own = words.filter(w => !/^\d+(gb|tb|mb)$/.test(w) && !COLOR_WORDS.has(w));
+    // "5g"/"4g" is the radio, not a model number: "Redmi Note 15 Pro Plus 5G Mocha Brown" is one phone.
+    const own = words.filter(w => !/^\d+(gb|tb|mb)$/.test(w) && !/^[45]g$/.test(w) && !COLOR_WORDS.has(w));
     if (own.some(w => /^[a-z]{3,}$/.test(w)) && own.some(w => /\d/.test(w))) return true;
   }
   return false;
@@ -1146,6 +1147,7 @@ if (process.argv[2] === '--selftest') {
     [null, 'https://vega.am/home-appliances/phones-and-gadgets/smart-phones/smart-phone-xiaomi-poco-c85-8gb-256gb-green-plus-redmi-buds-6-active-25078pc3eg.html'],
     // A bundle is rejected whichever of its two products the catalogue happens to carry.
     [null, 'Xiaomi POCO C85 8GB 256GB Green plus Redmi Buds 6 Active'],
+    ['xiaomi-redmi-note-15-pro-plus-5g', 'Xiaomi Redmi Note 15 Pro Plus 5G 8GB 256GB Mocha Brown'],
     // ...and the ordinary readings a "+" appears in are not bundles
     ['samsung-galaxy-s26-plus', 'Samsung Galaxy S26+ 256GB'],
     ['xiaomi-redmi-note-17-pro-max-5g', 'https://redstore.am/en/product/xiaomi-redmi-note-17-pro-max-5g-8gb256g'],
