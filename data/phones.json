@@ -70579,7 +70579,12 @@
     "category": "headphones",
     "brand": "Xiaomi",
     "name": "Redmi Headphones Neo",
-    "aliases": [],
+    "aliases": [
+      "Redmi Headphone Neo",
+      "Xiaomi Redmi Headphone Neo",
+      "Xiaomi Redmi Headphones Neo",
+      "Redmi Headphones Neo M2546E1"
+    ],
     "tier": "budget",
     "priceAmd": 49000,
     "priceAmdMax": 49000,
@@ -70594,33 +70599,37 @@
     ],
     "display": {},
     "battery": {
-      "life": "72 hours"
+      "life": "72 hours",
+      "capacity": 600,
+      "playback": 72
     },
     "summaryEn": "Xiaomi Redmi Headphones Neo.",
     "unsure": [
       "popularity",
       "display",
-      "chipset",
-      "battery.capacity"
+      "chipset"
     ],
     "colors": [
+      "Obsidian Black",
       "Sand White",
-      "Obsidian Black"
+      "Mist Blue"
     ],
     "audio": {
       "form": "full",
       "conn": "wireless",
-      "anc": true
+      "anc": true,
+      "frequency": "20 Hz–20 kHz",
+      "impedance": "32 Ω"
     },
     "connectivity": {
-      "bluetooth": "5.4"
+      "bluetooth": "5.4",
+      "wireless": "USB-C charging"
     },
     "body": {
       "weight": 263
     },
     "sources": [
-      "https://www.mi.com/global/product/redmi-headphones-neo/specs/",
-      "https://versus.com/"
+      "https://www.mi.com/global/product/redmi-headphones-neo/specs/"
     ]
   },
   {
