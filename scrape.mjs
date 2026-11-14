@@ -1540,7 +1540,8 @@ if (process.argv[2] === '--selftest') {
       ['Apple iPad Pro 12.9 M2 128GB Cell SpaceGray', TAB, 12.9], ['iPad Air 11 128GB Wi-Fi 2024 Purple', TAB, 11],
       ['iPad Air M4 128GB', TAB, undefined], ['Fire HD 10 Kids 32GB/11Gen', TAB, undefined],
       ['Fire HD 10 Kids 32GB/13Gen', TAB, undefined], ['Smart TV XIAOMI A 50 2026 (L50MB-ARU)', TV, 50],
-      ['Xiaomi TV A Pro 55 2026 QLED', TV, 55], ['Smart TV Samsung QE43Q60BA 4K UHD', TV, undefined]]) {
+      ['Xiaomi TV A Pro 55 2026 QLED', TV, 55], ['Smart TV Samsung QE43Q60BA 4K UHD', TV, undefined],
+      ['MacBook Air M5 13/16GB RAM', 'apple-macbook-air-13-m5', 13], ['Macbook Air M5 16/512 MDHE4LLA Midnight', 'apple-macbook-air-13-m5', undefined]]) {
     const got = screenOf(txt, id);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
   }
@@ -1747,7 +1748,9 @@ function screenOf(title, id) {
   // CPU generation labels such as i7-13 are not display diagonals. Remove the
   // CPU token before scanning, retaining a separately stated screen in the title.
   const screenTitle = String(title || '').replace(/\b(?:core\s*)?i[3579]\s*[- ]\s*\d{2,5}(?:th|[a-z]{0,3})?\b/gi, ' ');
-  const m = screenTitle.match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\s*\d))/i);
+  // ...but only when what follows the slash is a disk: iStyle's "MacBook Air M5 13/16GB RAM" is a
+  // 13-inch with 16 GB of memory, where "16/512" is memory and disk.
+  const m = screenTitle.match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\s*(?:\d{3,}|\d+\s*(?:TB|ՏԲ))))/i);
   if (!m) return undefined;
   return Math.trunc(parseFloat(m[1].replace(/[\s-]/, '.')));
 }
