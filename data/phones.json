@@ -175805,5 +175805,52 @@
     "body": {
       "weight": 1740
     }
+  },
+  {
+    "id": "acer-swift-3-sf313-53-78ug",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Swift 3 SF313-53-78UG",
+    "aliases": [
+      "Acer Swift 3 SF313-53-78UG",
+      "Acer NX.A4KAA.003"
+    ],
+    "tier": "mid",
+    "priceAmd": 269000,
+    "priceAmdMax": 269000,
+    "popularity": 35,
+    "accent": "#A7A9AD",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 269000
+      }
+    ],
+    "chipset": {
+      "name": "Intel Core i7-1165G7"
+    },
+    "display": {
+      "size": 13.5,
+      "type": "IPS",
+      "resolution": "2256x1504"
+    },
+    "body": {
+      "weight": 1190
+    },
+    "colors": [
+      "Sparkly Silver"
+    ],
+    "summaryEn": "Acer Swift 3 with a 13.5-inch IPS display.",
+    "sources": [
+      "https://store.acer.com/en-us/swift-3-laptop-sf313-53-78ug",
+      "https://allsell.am/en/acer-swift-3-sf313-53-78ug-i7-8gb-i-512gb"
+    ],
+    "specNA": {
+      "battery.capacity": "Battery capacity not published by Acer for this SKU"
+    },
+    "unsure": [
+      "popularity"
+    ]
   }
 ]
