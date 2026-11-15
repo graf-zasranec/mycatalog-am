@@ -63,8 +63,16 @@ for (const [id, list] of Object.entries(PRICES.offers || {})) {
 }
 assertPriceSnapshot(PRICES);
 assertCatalogueData(phones, PRICES.offers);
+const COLOR_ALIASES = JSON.parse(rd('data/color-aliases.json'));
+// A newer colour alias must work with snapshots produced before it was introduced.
+for (const [id, offers] of Object.entries(PRICES.offers || {})) {
+  if (!Object.hasOwn(COLOR_ALIASES, id)) continue;
+  for (const offer of offers) {
+    if (offer.color) [offer.color] = canonicalColors(id, [offer.color], COLOR_ALIASES);
+  }
+}
 attachOfferConfigs(phones, PRICES.offers || {});
-applyVlvTitleColors(phones, PRICES.offers || {}, fs.existsSync('data/color-aliases.json') ? JSON.parse(rd('data/color-aliases.json')) : {});
+applyVlvTitleColors(phones, PRICES.offers || {}, COLOR_ALIASES);
 // Popularity nobody set (unsure) was a flat default of 40 on 1,100 products, so "popular" sorted
 // them in file order. How many shops stock a product is a real, nightly-updated signal: 1 shop -> 20,
 // 8+ -> 60. A number somebody set by hand is never touched.
@@ -231,7 +239,6 @@ const cutFiles = fs.existsSync(CUT) ? fs.readdirSync(CUT).filter(f => f.endsWith
 const colourFloor = () => 600;
 
 const DUPES = fs.existsSync('data/photo-dupes.json') ? JSON.parse(rd('data/photo-dupes.json')) : {};
-const COLOR_ALIASES = JSON.parse(rd('data/color-aliases.json'));
 // The refresh already canonicalizes shop offers. Apply the same curated names to product
 // choices so obsolete aliases do not survive as duplicate, disabled swatches.
 for (const p of phones) p.colors = canonicalColors(p.id, p.colors, COLOR_ALIASES);
