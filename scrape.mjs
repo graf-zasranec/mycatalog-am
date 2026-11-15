@@ -1953,7 +1953,7 @@ const SHOPS = {
             // a pre-order shows "OutOfStock" in its schema but a Preorder button (owner, 2026-11-14:
             // the Apple TV 4K MLFF4 was missing) - keep it, tagged, like the other shops' pre-orders
             ...((pre => ({ inStock: pre || /InStock/i.test(pr.offers.availability || ''), ...(pre ? { preorder: true } : {}) }))(
-              /data-test="preorder-button"/.test(ph) || /"force_preorder"/.test(ph))) });
+              /<button\b[^>]*\bdata-test="preorder-button"/i.test(ph) || /\/(?:PreOrder|PreSale)$/i.test(pr.offers.availability || ""))) });
         }
       }
       return out;
