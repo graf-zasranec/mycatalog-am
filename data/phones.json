@@ -31727,21 +31727,26 @@
     ],
     "audio": {
       "anc": true,
-      "form": "full",
-      "conn": "wireless"
+      "form": "on-ear",
+      "conn": "wireless",
+      "driver": "32 mm"
     },
     "battery": {
-      "life": "70 hours"
+      "life": "Up to 76 hours (ANC off), 50 hours (ANC on)"
     },
     "connectivity": {
-      "bluetooth": "5.3"
+      "bluetooth": "6.0"
     },
-    "summaryEn": "ANC and seventy hours, for the price of a decent wired pair.",
+    "summaryEn": "On-ear headphones with active noise cancellation and up to 76 hours of playback.",
     "body": {
-      "weight": 220
+      "weight": 161
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://ch.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw3f76ceb8/pdfs/LS_JBL_Tune_680NC_QSG_Multilingual.pdf",
+      "https://www.jbl.com/TUNE680NC.html/"
     ]
   },
   {
@@ -49133,7 +49138,8 @@
       "size": 75,
       "type": "Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 120,
+      "hdr": "HDR10+"
     },
     "variants": [
       {
@@ -49151,14 +49157,18 @@
     "sources": [
       "kitele",
       "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/",
-      "https://www.rtings.com/tv/reviews/samsung/m80h"
+      "https://www.rtings.com/tv/reviews/samsung/m80h",
+      "https://www.samsung.com/ru/tvs/mini-led-tv/m80h-75-inch-4k-smart-tv-ue75m80hauxpy/"
     ],
     "aliases": [
       "UE75M80HAUXPY"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3 × HDMI, up to 4K at 144 Hz"
+    }
   },
   {
     "id": "samsung-ue75u8000huxpy",
@@ -49174,7 +49184,8 @@
       "size": 75,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10+"
     },
     "variants": [
       {
@@ -49191,14 +49202,18 @@
     "os": "Tizen",
     "sources": [
       "kitele",
-      "https://images.samsung.com/is/content/samsung/assets/au/tvs/product-specs/U8000H-Spec-Sheet-12082026.pdf"
+      "https://images.samsung.com/is/content/samsung/assets/au/tvs/product-specs/U8000H-Spec-Sheet-12082026.pdf",
+      "https://www.samsung.com/ru/tvs/uhd-4k-tv/u8000h-75-inch-crystal-uhd-4k-smart-tv-ue75u8000huxpy/"
     ],
     "aliases": [
       "UE75U8000HUXPY"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3 × HDMI, up to 4K at 60 Hz"
+    }
   },
   {
     "id": "samsung-ue85m80hauxpy",
@@ -52076,7 +52091,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 75,
-      "type": "LED",
+      "type": "QLED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -52094,7 +52109,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/il/en/support-tv/model/75t6d"
     ],
     "colors": [
       "Black"
@@ -52114,7 +52130,8 @@
       "size": 75,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HDR10+, HLG"
     },
     "variants": [
       {
@@ -52130,7 +52147,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/eu/en/tvs/v6d"
     ],
     "colors": [
       "Black"
@@ -54817,10 +54835,11 @@
     "camera": {
       "main": "50 MP, f/1.8",
       "front": "32 MP",
-      "video": "4K"
+      "video": "4K at 30 or 60 fps"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/xiaomi-pad-7-pro/specs/"
     ]
   },
   {
