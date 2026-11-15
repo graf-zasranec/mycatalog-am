@@ -305,8 +305,7 @@ const STORPINS = new Map();
 const COLPINS = new Map();
 try {
   const seenTwice = new Set();
-  for (const line of fs.readFileSync('data/links.csv', 'utf8').trim().split(/\r?\n/).slice(1)) {
-    const c = line.split(',');
+  for (const c of parseCsv(fs.readFileSync('data/links.csv', 'utf8')).slice(1)) {
     if (!c[9]) continue;
     // A url two different products answer to names no single product, so it settles nothing. The
     // file should not contain one, and a pin taken from one would be applied to every row it
@@ -1822,6 +1821,13 @@ function caseColorOf(text, colors) {
   const w = m[1].toLowerCase();
   return (colors || []).find(c => c.toLowerCase() === w || c.toLowerCase() === w + ' titanium') || null;
 }
+function watchCaseText(text, id) {
+  if (!id.startsWith('apple-watch-')) return String(text || '');
+  return String(text || '').replace(
+    /\b(?:(?:navy|light|dark|deep|jet|space|powder|pebble)\s+)?(?:burgundy|navy|blue|black|white|starlight|midnight|charcoal|gray|grey|pink|orange|green|red|purple|silver|gold|natural)(?:[/-](?:black|white|gray|grey|orange|blue))?\s+(?:sport band|sport loop|ocean band|alpine loop|trail loop|milanese loop|link bracelet)\b/gi,
+    ' '
+  ).replace(/\b(?:sport band|sport loop|ocean band|alpine loop|trail loop|milanese loop|link bracelet)\b/gi, ' ');
+}
 const enrich = (o, {allowSoleColor = true} = {}) => ({
   ...o,
   band: o.band ?? bandOf(o.title + ' ' + urlWords(o.url), o.id),
@@ -1841,7 +1847,7 @@ const enrich = (o, {allowSoleColor = true} = {}) => ({
   // Last resort, and it works surprisingly often: the shop names the colour in its own photo
   // filename ("...17-pro-orng-1.png"). pixel.am was the only adapter using this; every shop
   // that publishes an image gets it now, which is 32 more offers that can say what they are.
-  color: caseColorOf(o.title, (phoneById[o.id] || {}).colors) ?? o.color ?? colorOf(o.title + ' ' + urlWords(o.url), (phoneById[o.id] || {}).colors)
+  color: caseColorOf(o.title, (phoneById[o.id] || {}).colors) ?? o.color ?? colorOf(watchCaseText(o.title, o.id) + ' ' + watchCaseText(urlWords(o.url), o.id), (phoneById[o.id] || {}).colors)
     ?? (o.image ? colorFromImage(o.image, (phoneById[o.id] || {}).colors) : null)
     ?? (allowSoleColor ? soleValue((phoneById[o.id] || {}).colors) : null)
     ?? colorWords(urlWords(o.url))
@@ -3686,7 +3692,7 @@ try {
     const perUrl = new Map();
     for (const o of list) if (o.url && o.color) (perUrl.get(o.url) || perUrl.set(o.url, new Set()).get(o.url)).add(o.color);
     for (const o of list) { if (!o.color || !o.title || (perUrl.get(o.url)?.size || 0) > 1) continue;
-      const t = String(o.title).toLowerCase();
+      const t = watchCaseText(o.title, id).toLowerCase();
       const hits = cs.filter(c => new RegExp('(^|[^\\p{L}\\p{N}])' + c.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?=$|[^\\p{L}\\p{N}])', 'u').test(t));
       const top = hits.filter(h => !hits.some(k => k !== h && k.toLowerCase().includes(h.toLowerCase())));
       if (top.length === 1 && o.color !== top[0]) { o.color = top[0]; byTitle++; } } }
@@ -3704,7 +3710,7 @@ try {
   for (const [id, list] of Object.entries(offers)) { const cs = (phoneById[id] || {}).colors || [];
     if (cs.length < 2) continue;
     for (const o of list) { if (o.color) continue;
-      const w = ` ${String(o.title || '') + ' ' + urlWords(o.url)} `.toLowerCase().replace(/[^a-z]+/g, ' ')
+      const w = ` ${watchCaseText(o.title, id) + ' ' + watchCaseText(urlWords(o.url), id)} `.toLowerCase().replace(/[^a-z]+/g, ' ')
         .replace(/\b[a-z]+\b/g, t => FIX[t] || t);
       const norm = c => c.toLowerCase().replace(/grey/g, 'gray').replace(/[^a-z]+/g, ' ').trim();
       let hit = cs.filter(c => w.includes(` ${norm(c)} `)), loose = false;
@@ -3731,11 +3737,31 @@ try {
   const squash = t => String(t).toLowerCase().replace(/grey/g, 'gray').replace(/[^a-z]/g, '');
   const colourNamed = (title, colour) => squash(title).includes(squash(colour));
   const conflicts = [];
-  for (const [id, list] of Object.entries(offers)) for (const o of list)
-    // A title that already names our colour ("MacBook Air, Midnight, ... Liquid Retina") is right
-    // whatever else it mentions; only rows whose title never says our colour are worth a look.
-    if (o.color && o.title && !colourNamed(o.title, o.color) && foreignColour(o.title, o.color))
-      conflicts.push({ shop: o.shop, id, colour: o.color, title: o.title, url: o.url || '' });
+  for (const [id, list] of Object.entries(offers)) {
+    const titleColors = new Map();
+    for (const offer of list) {
+      if (!offer.url || !offer.title || !offer.color) continue;
+      const key = JSON.stringify([offer.url, offer.title]);
+      if (!titleColors.has(key)) titleColors.set(key, new Set());
+      titleColors.get(key).add(offer.color);
+    }
+    for (const o of list) {
+      const pin = COLPINS.get(o.url);
+      if (pin === 'Unstated' || (phoneById[id]?.colors || []).includes(pin)) {
+        o.color = pin === 'Unstated' ? null : pin;
+        continue;
+      }
+      if (!o.color || !o.title || titleColors.get(JSON.stringify([o.url, o.title]))?.size > 1) continue;
+      let title = watchCaseText(o.title, id);
+      for (const [alias, canonical] of Object.entries(AL[id] || {})) {
+        if (canonical !== o.color) continue;
+        const literal = alias.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        title = title.replace(new RegExp('(^|[^\\p{L}\\p{N}])' + literal + '(?=$|[^\\p{L}\\p{N}])', 'giu'), '$1' + canonical);
+      }
+      if (!colourNamed(title, o.color) && foreignColour(title, o.color))
+        conflicts.push({ shop: o.shop, id, colour: o.color, title: o.title, url: o.url || '' });
+    }
+  }
   if (conflicts.length) console.log(`${conflicts.length} offer(s) whose title names a different colour - data/colour-report.json`);
   fs.writeFileSync('data/colour-report.json', JSON.stringify({ generated: new Date().toISOString(),
     rows: [...unknown.values()].sort((a, b) => a.shop.localeCompare(b.shop) || a.id.localeCompare(b.id)),

@@ -18659,7 +18659,8 @@
       "popularity"
     ],
     "colors": [
-      "Slate Gray"
+      "Slate Gray",
+      "Titanium"
     ],
     "variantUnit": "mm",
     "os": "Garmin (own system)",
@@ -18669,7 +18670,10 @@
     },
     "specNA": {
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
-    }
+    },
+    "sources": [
+      "https://www.garmin.com/en-GB/p/pn/010-02904-11/"
+    ]
   },
   {
     "id": "garmin-fenix-8-47-mm-amoled-sapphire-carbon",
@@ -18866,7 +18870,11 @@
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     },
     "colors": [
-      "Black"
+      "Black",
+      "Carbon Gray DLC Titanium"
+    ],
+    "sources": [
+      "https://www.garmin.com/de-DE/p/1953727/pn/010-04336-11/"
     ]
   },
   {
@@ -19088,10 +19096,12 @@
       "battery.capacity": "Garmin publishes battery life, not mAh (maker spec page read 2026-10-02); PhoneArena has no figure either"
     },
     "colors": [
-      "Yellow"
+      "Yellow",
+      "Black"
     ],
     "sources": [
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://www.garmin.com/en-IE/p/886725/pn/010-02809-10/"
     ]
   },
   {
@@ -30222,7 +30232,11 @@
       "Gray",
       "Orange",
       "Green",
-      "Teal"
+      "Teal",
+      "Squad"
+    ],
+    "sources": [
+      "https://www.jbl.com/JBLCLIP4SQUADAM.html"
     ]
   },
   {
@@ -30366,7 +30380,8 @@
       "Sand",
       "Black",
       "Blue",
-      "Purple"
+      "Purple",
+      "Squad"
     ],
     "sources": [
       "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw32fd5d0d/pdfs/PA_JBL_Flip%207_QSG_Global_SOP_V9_online.pdf"
@@ -30415,7 +30430,11 @@
       "Green",
       "Pink",
       "Teal",
-      "White"
+      "White",
+      "Squad"
+    ],
+    "sources": [
+      "https://global.jbl.com/personalize-lister.html"
     ]
   },
   {
@@ -78515,7 +78534,8 @@
       "Red",
       "Green",
       "Pink",
-      "Silver"
+      "Silver",
+      "Squad"
     ],
     "connectivity": {
       "bluetooth": "6.0"
@@ -78524,7 +78544,8 @@
       "weight": 230
     },
     "sources": [
-      "https://www.jbl.com/GO-5.html"
+      "https://www.jbl.com/GO-5.html",
+      "https://www.jbl.com/JBLGO5SQUADAM.html"
     ]
   },
   {
