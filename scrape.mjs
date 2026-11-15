@@ -1919,14 +1919,17 @@ const SHOPS = {
       const out = [];
       const seen = new Set();
       // llms.txt points AI clients at /category/*; every catalogue category we carry is here
-      const CATS = ['iphone', 'ipad', 'airpods', 'apple-watch', 'mac', 'tv', 'accessories'];
+      const CATS = ['tv', 'iphone', 'ipad', 'airpods', 'apple-watch', 'mac', 'accessories'];
+      // iSpace can omit preorders from category results. Read this catalogued SKU directly
+      // so the current product button, rather than its inclusion in the category, decides stock.
+      const appleTv = 'https://ispace.am/product/apple-tv-4k-128-gb-mlff4ru-a';
       for (const cat of CATS)
       for (let page = 1; page <= 12; page++) {
         const html = await get(`https://ispace.am/category/${cat}${page > 1 ? '?page=' + page : ''}`);
         await sleep(DELAY_MS);
-        if (!html) break;
-        const list = ldJson(html).find(j => j['@type'] === 'ItemList');
+        const list = ldJson(html || '').find(j => j['@type'] === 'ItemList');
         const urls = (list?.itemListElement || []).map(i => i.url).filter(Boolean);
+        if (cat === 'tv' && page === 1 && !urls.includes(appleTv)) urls.unshift(appleTv);
         if (!urls.length) break;
         const fresh = urls.filter(u => !seen.has(u) && matchPhone(u));
         urls.forEach(u => seen.add(u));
@@ -1954,12 +1957,14 @@ const SHOPS = {
           const id = matchPhone(pr.name + ' ' + u);
           const safe = safeUrl(u);
           if (!id || !safe) continue;
+          const availability = pr.offers.availability || '';
+          const preorder = /(?:^|\/)(?:PreOrder|PreSale)$/i.test(availability) ||
+            [...ph.matchAll(/<button\b[^>]*\bdata-test=["']preorder-button["'][^>]*>/gi)]
+              .some(([tag]) => !/\s(?:disabled(?:\s|=|>)|aria-disabled=["']true["'])/i.test(tag));
           out.push({ id, price, storage: storageOf(pr.name) ?? storageOf(u), title: pr.name, url: safe,
             sku: pr.sku || null, image: (Array.isArray(pr.image) ? pr.image[0] : pr.image) || null,
-            // a pre-order shows "OutOfStock" in its schema but a Preorder button (owner, 2026-11-14:
-            // the Apple TV 4K MLFF4 was missing) - keep it, tagged, like the other shops' pre-orders
-            ...((pre => ({ inStock: pre || /InStock/i.test(pr.offers.availability || ''), ...(pre ? { preorder: true } : {}) }))(
-              /<button\b[^>]*\bdata-test="preorder-button"/i.test(ph) || /\/(?:PreOrder|PreSale)$/i.test(pr.offers.availability || ""))) });
+            inStock: preorder || /(?:^|\/)InStock$/i.test(availability),
+            ...(preorder ? { preorder: true } : {}) });
         }
       }
       return out;
