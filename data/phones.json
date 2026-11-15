@@ -4834,8 +4834,7 @@
     },
     "battery": {
       "wireless": 25,
-      "capacity": 4674,
-      "wired": 25
+      "capacity": 4674
     },
     "body": {
       "height": 160.9,
@@ -4870,8 +4869,14 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
-    ]
+      "kimovil",
+      "https://support.apple.com/en-ie/121030",
+      "https://cdsassets.apple.com/live/6GJYWVAV/information/locale/en-gb/iphone-16-info.pdf",
+      "https://www.apple.com/newsroom/2024/09/apple-introduces-iphone-16-and-iphone-16-plus/"
+    ],
+    "specNA": {
+      "battery.wired": "Depends on configuration"
+    }
   },
   {
     "id": "apple-iphone-16-pro",
@@ -5784,7 +5789,7 @@
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3",
-      "ports": "2x Thunderbolt 4 front, 3x Thunderbolt 4 rear, HDMI, Gigabit Ethernet"
+      "ports": "3 × Thunderbolt 4 (USB-C), 2 × USB-C, HDMI, Ethernet, 3.5 mm headphone jack"
     },
     "cardSlot": false,
     "os": "macOS 26",
@@ -5793,7 +5798,8 @@
     ],
     "summaryEn": "Apple's smallest desktop — a full M4 machine in a 12.7 cm box, screen and keyboard not included.",
     "sources": [
-      "https://www.yerevanmobile.am/en/apple-mac-mini-m4.html"
+      "https://www.yerevanmobile.am/en/apple-mac-mini-m4.html",
+      "https://support.apple.com/en-ie/121555"
     ]
   },
   {
@@ -29979,7 +29985,9 @@
       }
     ],
     "audio": {
-      "power": "80 W"
+      "power": "80 W",
+      "type": "Portable Bluetooth speaker",
+      "driver": "2 × 106 mm woofers, 2 × 20 mm tweeters"
     },
     "battery": {
       "life": "24 hours"
@@ -29994,6 +30002,9 @@
     "summaryEn": "Eighty watts and a day of battery, in something you carry by a handle.",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw9944cb9a/pdfs/JBL_BoomBox2_SpecSheet_English.pdf"
     ]
   },
   {
@@ -30202,7 +30213,9 @@
       }
     ],
     "audio": {
-      "power": "7 W"
+      "power": "7 W",
+      "type": "Portable Bluetooth speaker",
+      "driver": "45 mm transducer"
     },
     "battery": {
       "life": "12 hours"
@@ -30223,6 +30236,9 @@
       "Purple",
       "Pink",
       "Squad"
+    ],
+    "sources": [
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw835ce561/pdfs/JBL%20Clip%205_%20Specsheet_EN.pdf"
     ]
   },
   {
@@ -30296,10 +30312,12 @@
       }
     ],
     "audio": {
-      "power": "35 W"
+      "power": "35 W",
+      "type": "Portable Bluetooth speaker",
+      "driver": "45 × 80 mm woofer and 16 mm tweeter"
     },
     "battery": {
-      "life": "14 hours"
+      "life": "Up to 14 hours, up to 16 with Playtime Boost"
     },
     "body": {
       "ip": "IP68",
@@ -30317,6 +30335,9 @@
       "Black",
       "Blue",
       "Purple"
+    ],
+    "sources": [
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw32fd5d0d/pdfs/PA_JBL_Flip%207_QSG_Global_SOP_V9_online.pdf"
     ]
   },
   {
@@ -30879,7 +30900,9 @@
       }
     ],
     "audio": {
-      "power": "100 W"
+      "power": "100 W",
+      "type": "Portable Bluetooth party speaker",
+      "driver": "1 × 5.25-inch woofer, 2 × 1.75-inch tweeters"
     },
     "battery": {
       "life": "6 hours"
@@ -30894,6 +30917,9 @@
     "summaryEn": "A hundred watts, a light show and a microphone input, on wheels-free 12 kg.",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw7023cfe4/pdfs/JBL_PartyBox_Encore_Essential_OM_EN_V4.pdf"
     ]
   },
   {
@@ -33164,7 +33190,8 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=83EM008WIN",
-      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IRH8?M=83EM008WIN"
+      "https://psref.lenovo.com/Detail/IdeaPad_Slim_3_15IRH8?M=83EM008WIN",
+      "https://psref.lenovo.com/Product/IdeaPad_Slim_3_15IRH8"
     ]
   },
   {
@@ -37145,9 +37172,10 @@
     "accent": "#4A6B8A",
     "display": {
       "size": 85,
-      "type": "QNED Mini-LED",
+      "type": "QNED Mini LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37161,13 +37189,17 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 26",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/85qned70b6a/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3 × HDMI (eARC on HDMI 2, ALLM)"
+    }
   },
   {
     "id": "lg-oled55b4rla",
@@ -37589,7 +37621,9 @@
       }
     ],
     "audio": {
-      "power": "36 W"
+      "power": "36 W",
+      "type": "Portable Bluetooth speaker",
+      "codecs": "Qualcomm aptX"
     },
     "battery": {
       "life": "20+ hours"
@@ -37599,7 +37633,7 @@
       "weight": 2500
     },
     "connectivity": {
-      "bluetooth": "5.2"
+      "bluetooth": "5.0"
     },
     "summaryEn": "The one with the guitar-amp handle: 36 W, twenty hours, built like a road case.",
     "settled": [
@@ -37607,6 +37641,10 @@
     ],
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.marshall.com/fi/en/product/kilburn-ii?pid=1005923",
+      "https://www.marshall.com/on/demandware.static/-/Library-Sites-SharedLibrary-Marshall/default/dwe0dadd06/images/cms-pages/user/Kilburn_II_Full_User_Manual_lt-LT.pdf"
     ]
   },
   {
@@ -41763,7 +41801,7 @@
       "sim": "Dual Nano-SIM"
     },
     "cardSlot": true,
-    "os": "Android 14, One UI 6.1",
+    "os": "Android 16 (One UI 8)",
     "updates": "6 Android version updates, 6 years of security patches",
     "colors": [
       "Blue Black",
@@ -41780,7 +41818,8 @@
       "https://www.samsung.com/ae/smartphones/galaxy-a/galaxy-a16-5g-blue-black-128gb-sm-a166ezkdmea/",
       "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a16-5g-blue-black-128gb-sm-a166pzkhins/",
       "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a16-5g-blue-black-256gb-sm-a166pzkiins/buy/",
-      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_Interim_Report.pdf"
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_4Q_Interim_Report.pdf",
+      "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-8-to-galaxy-devices"
     ]
   },
   {
@@ -42385,7 +42424,8 @@
     "released": "2026-03",
     "sources": [
       "kimovil",
-      "https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a37-5g/buy/"
+      "https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a37-5g/buy/",
+      "https://www.samsung.com/global/sustainability/policy-file/AYVhR1k6BicAIx95/LCA%20Results%20for%20Smart%20phones.pdf"
     ]
   },
   {
@@ -43054,10 +43094,11 @@
     "audio": {
       "anc": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "codecs": "Samsung Scalable Codec, AAC, SBC"
     },
     "battery": {
-      "life": "6 hours (21 with the case)"
+      "life": "Up to 6 h (21 h with case) with ANC, 8.5 h (30 h with case) without ANC"
     },
     "connectivity": {
       "bluetooth": "5.2"
@@ -43068,7 +43109,8 @@
     },
     "summaryEn": "ANC and wingtips at the bottom of the Galaxy Buds range.",
     "sources": [
-      "https://www.samsung.com/ae/support/mobile-devices/galaxy-buds-fe-specifications-and-design/"
+      "https://www.samsung.com/ae/support/mobile-devices/galaxy-buds-fe-specifications-and-design/",
+      "https://www.samsung.com/uk/business/audio-sound/galaxy-buds/galaxy-buds-fe-white-sm-r400nzwaeua/"
     ],
     "colors": [
       "White",
@@ -43376,7 +43418,7 @@
       "sim": "Nano-SIM + eSIM, or dual nano-SIM"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Titanium Silver",
@@ -43391,7 +43433,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/hk_en/support/newsalert/129982/"
     ]
   },
   {
@@ -43464,7 +43507,7 @@
       "sim": "Nano-SIM + eSIM, or dual nano-SIM"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Icyblue",
@@ -43480,7 +43523,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/hk_en/support/newsalert/129982/"
     ]
   },
   {
@@ -45628,7 +45672,7 @@
       "sim": "Nano-SIM + eSIM (dual eSIM support)"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Blue Shadow",
@@ -45644,7 +45688,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/hk_en/support/newsalert/129982/"
     ]
   },
   {
@@ -45794,7 +45839,7 @@
       "sim": "Nano-SIM + eSIM (dual eSIM support)"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Pink",
@@ -45813,7 +45858,8 @@
     "year": 2026,
     "released": "2026-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living"
     ]
   },
   {
@@ -45975,7 +46021,7 @@
       "sim": "Nano-SIM + eSIM (dual eSIM support)"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Lavender",
@@ -45994,7 +46040,8 @@
     "year": 2026,
     "released": "2026-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living"
     ]
   },
   {
@@ -46072,7 +46119,7 @@
       "sim": "Nano-SIM + eSIM (dual eSIM support)"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Violet Shadow",
@@ -46091,7 +46138,8 @@
     "year": 2026,
     "released": "2026-07",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-z-fold8-ultra-fold8-and-flip8foldables-perfected-for-every-way-of-living"
     ]
   },
   {
@@ -48230,7 +48278,8 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/support/model/QE85Q60DAUXRU/"
     ],
     "aliases": [
       "QE85Q60DAUXRU"
@@ -50750,7 +50799,9 @@
     "audio": {
       "anc": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "5 mm driver",
+      "codecs": "SBC, AAC"
     },
     "battery": {
       "life": "8.5 hours (30 with the case)"
@@ -50764,7 +50815,8 @@
     },
     "summaryEn": "Sony's mid-range ANC buds, now with a clear case and a much better call mic.",
     "sources": [
-      "https://helpguide.sony.net/mdr/2986/v1/en/contents/TP1001829716.html"
+      "https://helpguide.sony.net/mdr/2986/v1/en/contents/TP1001829716.html",
+      "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wf-c710n/specifications"
     ],
     "colors": [
       "Black"
@@ -50949,7 +51001,9 @@
     "audio": {
       "anc": true,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "30 mm dynamic driver",
+      "codecs": "SBC, AAC"
     },
     "battery": {
       "life": "35 hours"
@@ -50970,6 +51024,9 @@
       "Blue",
       "White",
       "Pink"
+    ],
+    "sources": [
+      "https://www.sony.com/electronics/support/wireless-headphones-bluetooth-headphones/wh-ch720n/specifications"
     ]
   },
   {
@@ -51948,7 +52005,8 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/global/en/tvs/85p7l"
     ],
     "colors": [
       "Black"
@@ -54473,7 +54531,8 @@
       "touch": true,
       "resolution": "3200x2136",
       "ppi": 344,
-      "brightness": 800
+      "brightness": 800,
+      "hdr": "HDR10, Dolby Vision"
     },
     "chipset": {
       "name": "Snapdragon 7+ Gen 3",
@@ -54523,7 +54582,8 @@
       "video": "4K"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/uk/product/xiaomi-pad-7/specs/"
     ]
   },
   {
@@ -58369,7 +58429,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-note-14-pro-5g/"
     ]
   },
   {
@@ -59773,7 +59834,7 @@
     },
     "battery": {
       "capacity": 470,
-      "life": "18 days"
+      "life": "Up to 18 days (typical use)"
     },
     "variants": [
       {
@@ -59784,7 +59845,8 @@
     ],
     "connectivity": {
       "network": "Built-in GPS",
-      "bluetooth": "5.3"
+      "bluetooth": "5.3",
+      "gps": "GPS, Galileo, GLONASS, BeiDou, QZSS"
     },
     "colors": [
       "Black",
@@ -59792,7 +59854,8 @@
     ],
     "summaryEn": "A budget smartwatch with built-in GPS.",
     "sources": [
-      "https://www.mi.com/global/product/redmi-watch-5-lite/specs/"
+      "https://www.mi.com/global/product/redmi-watch-5-lite/specs/",
+      "https://www.mi.com/uk/product/redmi-watch-5-lite/specs/"
     ]
   },
   {
