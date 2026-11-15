@@ -17623,7 +17623,6 @@
     ],
     "colors": [
       "Iron Fuchsia",
-      "Black/Nickel",
       "Nickel/Copper"
     ],
     "appliance": {
@@ -17633,7 +17632,7 @@
     "sources": [
       "https://eldorado.am/en/dyson-supersonic-schwarz-nickel-bbn-hd07",
       "https://www.dyson.com.sg/spare-parts/hair-care/hair-dryers",
-      "https://tr-fit31.commerce.dyson.com/destek/urun-guvenlik-bilgileri"
+      "https://www.dyson.com/ (official product images 389922-01, 111952-01)"
     ]
   },
   {
@@ -18126,10 +18125,11 @@
       "power": 1300
     },
     "colors": [
+      "Pink",
       "Nickel/Copper"
     ],
     "sources": [
-      "https://www.dyson.com/hair-care/hair-stylers/airwrap-origin"
+      "https://www.dyson.com/ (official product images 389922-01, 111952-01)"
     ]
   },
   {
@@ -175920,5 +175920,339 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "xiaomi-air-fryer-essential-6l-bhr8588eu",
+    "category": "kitchen",
+    "brand": "Xiaomi",
+    "name": "Air Fryer Essential 6L",
+    "aliases": [
+      "Xiaomi Air Fryer Essential 6L (MAF13) BHR8588EU",
+      "Air Fryer Xiaomi Essential 6L (MAF13) BHR8588EU",
+      "Xiaomi Air Fryer Essential 6L",
+      "MAF13",
+      "BHR8588EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 34900,
+    "priceAmdMax": 34900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 34900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Air Fryer Essential 6L.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "appliance": {
+      "type": "air_fryer",
+      "power": 1550,
+      "volume": 6,
+      "temperature": "80–200 °C"
+    },
+    "sources": [
+      "https://www.mi.com/bd/product/xiaomi-air-fryer-essential-6l/specs/",
+      "https://www.mi.com/sg/product/xiaomi-air-fryer-essential-6l/",
+      "https://www.mi.com/global/support/faq/details/KA-218829/"
+    ],
+    "body": {
+      "weight": 4400,
+      "width": 279,
+      "height": 324,
+      "thickness": 368
+    }
+  },
+  {
+    "id": "xiaomi-electric-kettle-2-bhr5927eu",
+    "category": "kitchen",
+    "brand": "Xiaomi",
+    "name": "Electric Kettle 2",
+    "aliases": [
+      "Xiaomi Electric Kettle 2 (MJDSH04YM) BHR5927EU",
+      "Electric Kettle 2 Xiaomi (MJDSH04YM) BHR5927EU",
+      "XIAOMI Xiaomi Electric Kettle 2 (BHR5927EU) Kettle",
+      "Xiaomi Electric Kettle 2 MJDSH04YM",
+      "MJDSH04YM",
+      "BHR5927EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 18900,
+    "priceAmdMax": 18900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 18900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Electric Kettle 2.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "power": 1800,
+      "volume": 1.7
+    },
+    "sources": [
+      "https://www.mi.com/uk/product/xiaomi-electric-kettle-2/specs/"
+    ],
+    "body": {
+      "width": 227,
+      "thickness": 158,
+      "height": 262
+    }
+  },
+  {
+    "id": "xiaomi-electric-kettle-2-lite-bhr9036eu",
+    "category": "kitchen",
+    "brand": "Xiaomi",
+    "name": "Electric Kettle 2 Lite",
+    "aliases": [
+      "Xiaomi Electric Kettle 2 Lite (MJDSH06-A) BHR9036EU",
+      "Kettle Xiaomi 2 Lite (MJDSH06-A) BHR9036EU",
+      "XIAOMI Electric Kettle 2 Lite (BHR9036EU) Kettle",
+      "Xiaomi Electric Kettle 2 Lite",
+      "MJDSH06-A",
+      "BHR9036EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 14900,
+    "priceAmdMax": 14900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 14900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Electric Kettle 2 Lite.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "power": 1500,
+      "volume": 1.5
+    },
+    "sources": [
+      "https://www.mi.com/uk/support/faq/details/KA-212765",
+      "https://www.mi.com/be/product/xiaomi-electric-kettle-2-lite/specs"
+    ],
+    "body": {
+      "width": 211,
+      "thickness": 143,
+      "height": 244
+    }
+  },
+  {
+    "id": "xiaomi-double-wall-electric-kettle-bhr9539eu",
+    "category": "kitchen",
+    "brand": "Xiaomi",
+    "name": "Double Wall Electric Kettle",
+    "aliases": [
+      "Xiaomi Double Wall Electric Kettle (MJDSH07YM-A) BHR9539EU",
+      "Xiaomi Electric Kettle S1 Silver BHR9539",
+      "Xiaomi Double Wall Electric Kettle",
+      "MJDSH07YM-A",
+      "BHR9539EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 17900,
+    "priceAmdMax": 17900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 17900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Double Wall Electric Kettle.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "appliance": {
+      "type": "kettle",
+      "power": 1800,
+      "volume": 1.7
+    },
+    "sources": [
+      "https://www.mi.com/be-nl/product/xiaomi-double-wall-electric-kettle/specs/",
+      "https://www.mi.com/global/support/faq/details/KA-508120/"
+    ],
+    "body": {
+      "width": 220,
+      "thickness": 150,
+      "height": 251.5
+    }
+  },
+  {
+    "id": "xiaomi-electric-glass-kettle-bhr7490ru",
+    "category": "kitchen",
+    "brand": "Xiaomi",
+    "name": "Electric Glass Kettle",
+    "aliases": [
+      "Xiaomi Electric Glass Kettle (MJDSH05FD) BHR7490RU",
+      "XIAOMI Xiaomi Electric Glass Kettle (BHR7490RU) Kettle",
+      "Eectric glass kettle Xiaomi MJDSH05FD",
+      "Xiaomi Electric Glass Kettle",
+      "XIAOMI BHR7490RU",
+      "MJDSH05FD",
+      "BHR7490RU"
+    ],
+    "tier": "budget",
+    "priceAmd": 11900,
+    "priceAmdMax": 11900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 11900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Electric Glass Kettle.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [],
+    "appliance": {
+      "type": "kettle",
+      "powerRange": "1850–2200 W",
+      "volume": 1.7
+    },
+    "sources": [
+      "https://www.mi.com/es/product/xiaomi-electric-glass-kettle/specs/",
+      "https://www.mi.com/ph/support/faq/details/KA-231217/"
+    ]
+  },
+  {
+    "id": "xiaomi-humidifier-2-lite-bhr6605eu",
+    "category": "climate",
+    "brand": "Xiaomi",
+    "name": "Humidifier 2 Lite",
+    "aliases": [
+      "Xiaomi Humidifier 2 Lite (MJJSQ06DY) BHR6605EU",
+      "Humidifier Xiaomi Humidifier 2 Lite MJJSQ06DY (BHR6605EU)",
+      "XIAOMI Humidifier 2 Lite (BHR6605EU) Air Humidifiers",
+      "Xiaomi Humidifier 2 Lite",
+      "MJJSQ06DY",
+      "BHR6605EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 22900,
+    "priceAmdMax": 22900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 22900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Humidifier 2 Lite.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "appliance": {
+      "type": "humidifier",
+      "power": 23,
+      "volume": 4,
+      "noise": "≤38 dB(A)"
+    },
+    "sources": [
+      "https://www.mi.com/sg/product/xiaomi-humidifier-2-lite/",
+      "https://www.manualslib.com/manual/2942027/Xiaomi-2-Lite.html?page=9"
+    ],
+    "body": {
+      "weight": 1400
+    }
+  },
+  {
+    "id": "xiaomi-smart-humidifier-2-bhr6026eu",
+    "category": "climate",
+    "brand": "Xiaomi",
+    "name": "Smart Humidifier 2",
+    "aliases": [
+      "Xiaomi Smart Humidifier 2 (MJJSQ05DY) BHR6026EU",
+      "Humidifier Xiaomi Smart Humidifier 2 (BHR6026EU)",
+      "XIAOMI Smart Humidifier 2 (BHR6026EU) Air Humidifiers",
+      "Xiaomi Smart Humidifier 2",
+      "MJJSQ05DY",
+      "BHR6026EU"
+    ],
+    "tier": "budget",
+    "priceAmd": 32900,
+    "priceAmdMax": 32900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "summaryEn": "Xiaomi Smart Humidifier 2.",
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ],
+    "appliance": {
+      "type": "humidifier",
+      "power": 28,
+      "volume": 4.5
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-humidifier-2/",
+      "https://www.mi.com/kz-kk/product/xiaomi-smart-humidifier-2/"
+    ],
+    "body": {
+      "weight": 1570
+    }
   }
 ]
