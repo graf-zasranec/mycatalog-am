@@ -1838,7 +1838,8 @@
     },
     "connectivity": {
       "network": "Wi-Fi",
-      "bluetooth": "yes (Audible)"
+      "bluetooth": "yes (Audible)",
+      "ports": "USB-C"
     },
     "cardSlot": false,
     "os": "Kindle OS",
@@ -1851,7 +1852,10 @@
       "Jade",
       "Raspberry"
     ],
-    "summaryEn": "The fastest Paperwhite yet: a 7-inch 300 ppi screen, weeks of battery and IPX8 waterproofing."
+    "summaryEn": "The fastest Paperwhite yet: a 7-inch 300 ppi screen, weeks of battery and IPX8 waterproofing.",
+    "sources": [
+      "https://digprjsurvey.amazon.com/csad/help/node/GK33S847NN4V6Y83"
+    ]
   },
   {
     "id": "amazon-kindle-paperwhite-kids-11",
@@ -6474,9 +6478,10 @@
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3",
-      "wireless": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3"
+      "wireless": "Three Thunderbolt 5, HDMI, SDXC, MagSafe 3",
+      "ports": "3 × Thunderbolt 5 (USB-C), HDMI, SDXC, MagSafe 3, 3.5 mm headphone jack"
     },
-    "os": "macOS Sequoia",
+    "os": "macOS 27",
     "variants": [
       {
         "ram": 24,
@@ -6513,7 +6518,9 @@
       "Apple Macbook Pro 14.2\"/M4 Pro/24GB RAM/512GB SSD/MX2H3/Space Black"
     ],
     "sources": [
-      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/"
+      "https://www.apple.com/macbook-pro/liquid-retina-xdr-display/",
+      "https://support.apple.com/en-us/121553",
+      "https://support.apple.com/en-us/127255"
     ]
   },
   {
@@ -7452,7 +7459,7 @@
         "band": "Milanese Loop"
       }
     ],
-    "os": "watchOS 26",
+    "os": "watchOS 27",
     "colors": [
       "Black Titanium",
       "Natural Titanium"
@@ -7465,7 +7472,10 @@
     ],
     "chipset": {
       "name": "Apple S10"
-    }
+    },
+    "sources": [
+      "https://www.apple.com/os/watchos/"
+    ]
   },
   {
     "id": "apple-watch-ultra-4-gps-plus-cellular-plus-band",
@@ -20136,8 +20146,8 @@
       "type": "LTPO OLED",
       "refresh": 120,
       "resolution": "1344x2992",
-      "ppi": 482,
-      "brightness": 2700
+      "ppi": 486,
+      "brightness": 3600
     },
     "chipset": {
       "name": "Google Tensor G6",
@@ -20203,7 +20213,8 @@
       "kimovil",
       "https://www.gsmarena.com/a-14800.php",
       "https://blog.google/products-and-platforms/devices/pixel/google-pixel-11-pro-xl/",
-      "https://store.google.com/us/product/pixel_11_pro_specs?hl=en-US"
+      "https://store.google.com/us/product/pixel_11_pro_specs?hl=en-US",
+      "https://store.google.com/product/pixel_11_pro_specs?hl=en-US"
     ]
   },
   {
@@ -20574,7 +20585,8 @@
       }
     ],
     "audio": {
-      "power": "130 W"
+      "power": "130 W",
+      "driver": "6 × 40 mm mid-high drivers, 130 mm subwoofer"
     },
     "battery": {},
     "body": {
@@ -20582,11 +20594,14 @@
       "weight": 3600
     },
     "connectivity": {
-      "bluetooth": "5.3"
+      "bluetooth": "4.2"
     },
     "summaryEn": "A transparent dome with a light show inside and 130 W under it.",
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.harmankardon.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw65bb630f/pdfs/HK_Aura_Studio_4_Spec_Sheet_EN.pdf"
     ]
   },
   {
@@ -20652,22 +20667,26 @@
       }
     ],
     "audio": {
-      "power": "50 W"
+      "power": "50 W",
+      "driver": "120 mm woofer, 2 × 25 mm tweeters"
     },
     "battery": {
       "life": "8 hours"
     },
     "body": {
-      "weight": 3200
+      "weight": 3295
     },
     "connectivity": {
-      "bluetooth": "5.0"
+      "bluetooth": "4.2"
     },
     "summaryEn": "A 50 W ring on a chrome stand — the one that looks like furniture.",
     "colors": [
       "Black",
       "Gray",
       "Blue"
+    ],
+    "sources": [
+      "https://support.harmankardon.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw61810a4f/pdfs/HK_Onyx_Studio7_SpecSheet_English.pdf"
     ]
   },
   {
@@ -29906,7 +29925,9 @@
       }
     ],
     "audio": {
-      "power": "60 W"
+      "power": "60 W",
+      "type": "Mains-powered Wi-Fi and Bluetooth speaker",
+      "driver": "2 × 25 mm tweeters and 5-inch woofer"
     },
     "connectivity": {
       "network": "Wi-Fi and Bluetooth",
@@ -29919,7 +29940,8 @@
       "weight": 3120
     },
     "sources": [
-      "https://www.jbl.com/AUTHENTICS-200.html"
+      "https://www.jbl.com/AUTHENTICS-200.html",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5f798b0f/pdfs/HA_JBL_Authentics%20200%20%26%20500_OM_V8_EN.pdf"
     ],
     "colors": [
       "Black",
@@ -29946,7 +29968,9 @@
       }
     ],
     "audio": {
-      "power": "270 W"
+      "power": "270 W",
+      "type": "Mains-powered Wi-Fi and Bluetooth speaker",
+      "driver": "3 × 25 mm tweeters, 3 × 2.75-inch midrange drivers, 6.5-inch subwoofer"
     },
     "connectivity": {
       "network": "Wi-Fi and Bluetooth",
@@ -29959,7 +29983,8 @@
       "weight": 7800
     },
     "sources": [
-      "https://www.jbl.com/AUTHENTICS-500.html"
+      "https://www.jbl.com/AUTHENTICS-500.html",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw5f798b0f/pdfs/HA_JBL_Authentics%20200%20%26%20500_OM_V8_EN.pdf"
     ],
     "colors": [
       "Black"
@@ -34381,7 +34406,8 @@
       "capacity": 60
     },
     "connectivity": {
-      "wifi": "Wi-Fi 6"
+      "wifi": "Wi-Fi 6",
+      "ports": "3 × USB-A, USB-C with DisplayPort, HDMI, Ethernet, 3.5 mm audio, Slim Tip power"
     },
     "os": "Windows 11",
     "colors": [
@@ -34403,7 +34429,8 @@
       "https://psref.lenovo.com/Detail/?M=83DV01CMRK",
       "https://psref.lenovo.com/Detail/?M=83DV01HPSA",
       "https://psref.lenovo.com/Detail/?M=83DV01CJRK",
-      "https://psref.lenovo.com/Detail/?M=83DV0069RK"
+      "https://psref.lenovo.com/Detail/?M=83DV0069RK",
+      "https://psref.lenovo.com/Product/LOQ_15IRX9"
     ]
   },
   {
@@ -37454,7 +37481,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/ru/televisions/lg-oled83c4rla"
     ],
     "colors": [
       "Black"
@@ -37669,7 +37697,8 @@
     "audio": {
       "anc": false,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "40 mm dynamic driver"
     },
     "battery": {
       "life": "80+ hours"
@@ -37684,6 +37713,9 @@
     "colors": [
       "Black",
       "Brown"
+    ],
+    "sources": [
+      "https://www.marshall.com/us/en/product/major-iv?pid=1005773"
     ]
   },
   {
@@ -37834,17 +37866,18 @@
       }
     ],
     "audio": {
-      "power": "20 W"
+      "power": "20 W",
+      "driver": "Dynamic"
     },
     "battery": {
       "life": "20+ hours"
     },
     "body": {
       "ip": "IPX4",
-      "weight": 1400
+      "weight": 1380
     },
     "connectivity": {
-      "bluetooth": "5.2"
+      "bluetooth": "5.0"
     },
     "summaryEn": "A 1.4 kg Marshall that still runs a full day on one charge.",
     "colors": [
@@ -37852,6 +37885,9 @@
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "sources": [
+      "https://www.marshall.com/us/en/product/stockwell-ii"
     ]
   },
   {
@@ -40427,7 +40463,8 @@
       "refresh": 120,
       "ppi": 446,
       "brightness": 3200,
-      "protection": "Corning Gorilla Glass 7i"
+      "protection": "Corning Gorilla Glass 7i",
+      "hdr": "Dolby Vision, HDR10+"
     },
     "chipset": {
       "name": "MediaTek Dimensity 8400-Ultra",
@@ -41932,7 +41969,7 @@
       "Awesome Black"
     ],
     "cardSlot": true,
-    "os": "Android 15, One UI 7",
+    "os": "Android 16 (One UI 8)",
     "updates": "6 major Android updates and 6 years of security patches",
     "display": {
       "size": 6.7,
@@ -41999,7 +42036,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-begins-official-rollout-of-one-ui-8-to-galaxy-devices"
     ]
   },
   {
@@ -42064,7 +42102,7 @@
       "sim": "Dual nano-SIM plus a dedicated microSD slot"
     },
     "cardSlot": true,
-    "os": "Android, One UI",
+    "os": "Android 16 (One UI 8)",
     "updates": "6 years of OS and security updates",
     "colors": [
       "Black",
@@ -42082,7 +42120,8 @@
     "released": "2026-06",
     "sources": [
       "kimovil",
-      "https://www.notebookcheck.net/Samsung-Czech-lists-the-Galaxy-A27-ahead-of-launch-revealing-its-full-spec-sheet.1320893.0.html"
+      "https://www.notebookcheck.net/Samsung-Czech-lists-the-Galaxy-A27-ahead-of-launch-revealing-its-full-spec-sheet.1320893.0.html",
+      "https://www.samsung.com/us/smartphones/galaxy-a27-5g/"
     ]
   },
   {
@@ -45456,7 +45495,7 @@
     },
     "battery": {
       "capacity": 445,
-      "life": "40 hours"
+      "life": "Up to 40 hours with AOD off, up to 30 with AOD on"
     },
     "variantUnit": "mm",
     "variants": [
@@ -45483,7 +45522,8 @@
     ],
     "summaryEn": "The Watch 8 with a steel case and the rotating bezel.",
     "sources": [
-      "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch8-classic-46mm-black-bluetooth-sm-l500nzkaeua/"
+      "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch8-classic-46mm-black-bluetooth-sm-l500nzkaeua/",
+      "https://www.samsung.com/de/support/mobile-devices/galaxy-watch8-vs-watch8-classic/"
     ],
     "chipset": {
       "name": "Exynos W1000"
@@ -45928,7 +45968,7 @@
       "sim": "Nano-SIM + eSIM, or dual nano-SIM"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Blue Shadow",
@@ -45944,7 +45984,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/hk_en/support/newsalert/129982/"
     ]
   },
   {
@@ -48160,14 +48201,18 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/oled-tv/s95f-77-inch-oled-4k-smart-tv-qe77s95fauxru/"
     ],
     "aliases": [
       "QE77S95FAUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI with 4K up to 165 Hz"
+    }
   },
   {
     "id": "samsung-qe83s90daexru",
@@ -50956,10 +51001,11 @@
     "audio": {
       "anc": false,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "codecs": "SBC, AAC"
     },
     "battery": {
-      "life": "50 hours"
+      "life": "Up to 50 hours"
     },
     "connectivity": {
       "bluetooth": "5.2"
@@ -50975,6 +51021,9 @@
       "Pink",
       "Yellow",
       "Beige"
+    ],
+    "sources": [
+      "https://electronics.sony.com/audio/headphones/headband/p/whch520-c"
     ]
   },
   {
@@ -52024,7 +52073,7 @@
     "accent": "#5C6470",
     "display": {
       "size": 85,
-      "type": "QD Mini-LED",
+      "type": "QD-Mini LED",
       "resolution": "3840 x 2160",
       "refresh": 60
     },
@@ -52043,7 +52092,8 @@
     "os": "Google TV",
     "sources": [
       "kitele",
-      "https://www.tcl.com/mk/mk/tvs/p8l"
+      "https://www.tcl.com/mk/mk/tvs/p8l",
+      "https://www.tcl.com/global/en/tvs/p8l"
     ],
     "colors": [
       "Black"
@@ -53711,7 +53761,8 @@
       "notADuplicate"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/xiaomi-15/specs/"
     ]
   },
   {
@@ -62149,7 +62200,8 @@
     "released": "2026-08",
     "sources": [
       "https://store.google.com/us/product/pixel_11_specs",
-      "https://www.gsmarena.com/a-14799.php"
+      "https://www.gsmarena.com/a-14799.php",
+      "https://store.google.com/product/pixel_11_specs?hl=en-US"
     ]
   },
   {
@@ -62239,7 +62291,8 @@
     "released": "2026-08",
     "sources": [
       "https://store.google.com/us/product/pixel_11_pro_specs",
-      "https://www.gsmarena.com/a-14801.php"
+      "https://www.gsmarena.com/a-14801.php",
+      "https://store.google.com/product/pixel_11_pro_specs?hl=en-US"
     ]
   },
   {
@@ -62284,10 +62337,15 @@
       }
     ],
     "body": {
-      "dimensions": "127 x 127 x 50 mm"
+      "dimensions": "127 x 127 x 50 mm",
+      "weight": 670
     },
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6.0",
+      "ports": "3 × Thunderbolt 4 (USB-C), 2 × USB-C (USB 3), HDMI, 2.5 Gb Ethernet, 3.5 mm headphone jack"
+    },
     "cardSlot": false,
     "os": "macOS 27",
     "colors": [
@@ -62300,7 +62358,8 @@
     ],
     "year": 2026,
     "sources": [
-      "https://www.apple.com/mac-mini/specs/"
+      "https://www.apple.com/mac-mini/specs/",
+      "https://support.apple.com/en-us/128108"
     ]
   },
   {
@@ -62791,7 +62850,7 @@
     "connectivity": {
       "wifi": "Wi-Fi 7",
       "bluetooth": "6",
-      "ports": "3x Thunderbolt 4, HDMI, MagSafe 3, 3.5 mm"
+      "ports": "3 × Thunderbolt 4 (USB-C), HDMI, SDXC, MagSafe 3, 3.5 mm headphone jack"
     },
     "cardSlot": true,
     "os": "macOS 27",
@@ -62807,7 +62866,8 @@
     "year": 2026,
     "sources": [
       "https://www.apple.com/macbook-pro/specs/",
-      "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/"
+      "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+      "https://support.apple.com/en-us/148300"
     ]
   },
   {
