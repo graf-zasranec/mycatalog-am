@@ -2418,7 +2418,7 @@
     ],
     "audio": {
       "anc": false,
-      "form": "in-ear",
+      "form": "open-fit earbuds",
       "conn": "wired",
       "plug": "usb-c"
     },
@@ -2430,12 +2430,15 @@
     "colors": [
       "White"
     ],
-    "body": {
-      "weight": 10
-    },
     "sources": [
-      "https://www.coolblue.nl/en/product/942218/apple-earpods-with-usb-c.html"
-    ]
+      "https://www.coolblue.nl/en/product/942218/apple-earpods-with-usb-c.html",
+      "https://www.apple.com/shop/product/myqy3am/a/earpods-usb-c"
+    ],
+    "specNA": {
+      "audio.driver": "Not published by Apple",
+      "body.weight": "Not published by Apple",
+      "body.ip": "Not published by Apple"
+    }
   },
   {
     "id": "apple-homepod-2",
@@ -3219,7 +3222,6 @@
     },
     "graphics": {
       "name": "Apple M4 8- or 10-core GPU",
-      "cores": 10,
       "type": "integrated"
     },
     "variants": [
@@ -3241,14 +3243,13 @@
     ],
     "body": {
       "materials": "Aluminium unibody",
-      "dimensions": "461 x 547 x 115 mm",
-      "weight": 4480
+      "dimensions": "461 x 547 x 115 mm"
     },
     "battery": {},
     "connectivity": {
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3",
-      "ports": "2x or 4x Thunderbolt 4, Gigabit Ethernet"
+      "ports": "2 or 4 × Thunderbolt 4, 3.5 mm audio, Gigabit Ethernet varies by configuration"
     },
     "cardSlot": false,
     "os": "macOS 26",
@@ -3265,6 +3266,15 @@
     "unsure": [
       "priceAmdMax",
       "popularity"
+    ],
+    "specNA": {
+      "graphics.cores": "Depends on configuration",
+      "body.weight": "Depends on configuration",
+      "display.refresh": "Not published by Apple"
+    },
+    "sources": [
+      "https://support.apple.com/en-ie/121556",
+      "https://support.apple.com/en-ie/121557"
     ]
   },
   {
@@ -7243,7 +7253,7 @@
       "wifi": "Wi-Fi 4",
       "nfc": true
     },
-    "os": "watchOS 11",
+    "os": "watchOS 27",
     "variants": [
       {
         "storage": 46,
@@ -7278,7 +7288,9 @@
       "materials": "Aluminium or titanium case"
     },
     "sources": [
-      "https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-10-gps-cellular-46mm.html"
+      "https://everymac.com/systems/apple/apple-watch/specs/apple-watch-series-10-gps-cellular-46mm.html",
+      "https://support.apple.com/en-la/121202",
+      "https://www.apple.com/os/watchos/"
     ]
   },
   {
@@ -12111,7 +12123,8 @@
       "capacity": 96
     },
     "connectivity": {
-      "wifi": "Wi-Fi 6E"
+      "wifi": "Wi-Fi 6E",
+      "ports": "Thunderbolt 4, USB-C 3.2 Gen 2, 2 × USB-A 3.2 Gen 1, HDMI 2.1, Ethernet, 3.5 mm audio"
     },
     "os": "Windows 11",
     "colors": [
@@ -12124,7 +12137,10 @@
     "sources": [
       "https://nanoreview.net/en/laptop/asus-vivobook-pro-16-k6602",
       "https://www.notebookcheck.net/",
-      "https://device.report/m/35ce6222fec7373e7ceed6e31912a4767a8cd8864f2045ab3b8ca9214da27d0d"
+      "https://device.report/m/35ce6222fec7373e7ceed6e31912a4767a8cd8864f2045ab3b8ca9214da27d0d",
+      "https://www.asus.com/event/2023/productguide/au/ASUS_Lifestyle_Product_Guide_2023.pdf",
+      "https://www.asus.com/us/supportonly/k6602vv/helpdesk_download/",
+      "https://press.asus.com/news/press-releases/1254"
     ]
   },
   {
@@ -13313,9 +13329,7 @@
     "accent": "#4A4F57",
     "display": {
       "size": 14,
-      "type": "FHD+ OLED",
-      "touch": true,
-      "resolution": "2880x1800"
+      "type": "OLED"
     },
     "chipset": {
       "name": "Intel Core Ultra 7 265H"
@@ -13329,7 +13343,8 @@
       "wired": 65
     },
     "connectivity": {
-      "wifi": "Wi-Fi 7"
+      "wifi": "Wi-Fi 7",
+      "ports": "2 × Thunderbolt 4, 1 × USB-A 3.2 Gen 1, HDMI 2.1 TMDS, 3.5 mm audio"
     },
     "variants": [
       {
@@ -13357,12 +13372,17 @@
       "ASUS Zenbook 14 UX3405CA",
       "ZenBook 14 OLED TOUCH Ultra 7-265H"
     ],
-    "body": {
-      "weight": 1200
-    },
+    "body": {},
     "sources": [
-      "https://nanoreview.net/en/laptop/asus-zenbook-14-oled-ux3405"
-    ]
+      "https://nanoreview.net/en/laptop/asus-zenbook-14-oled-ux3405",
+      "https://www.asus.com/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/techspec/"
+    ],
+    "specNA": {
+      "display.resolution": "Depends on configuration",
+      "display.refresh": "Depends on configuration",
+      "display.touch": "Depends on configuration",
+      "body.weight": "Depends on configuration"
+    }
   },
   {
     "id": "asus-zenbook-flip-ux3407qa-x1p512",
@@ -20641,7 +20661,9 @@
       }
     ],
     "audio": {
-      "power": "40 W RMS"
+      "power": "40 W RMS",
+      "type": "Portable Bluetooth speaker",
+      "driver": "48 × 90 mm woofer and 20 mm tweeter"
     },
     "battery": {
       "life": "12 hours"
@@ -20661,8 +20683,12 @@
       "White"
     ],
     "sources": [
-      "https://www.harmankardon.com/LUNA-1.html"
-    ]
+      "https://www.harmankardon.com/LUNA-1.html",
+      "https://id.harmankardon.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwef635db2/pdfs/HA_HK_LUNA_QSG_Global_CR_V15_online.pdf"
+    ],
+    "specNA": {
+      "audio.codecs": "Not published by Harman Kardon"
+    }
   },
   {
     "id": "harman-kardon-onyx-studio-7",
@@ -30462,7 +30488,9 @@
     "audio": {
       "type": "Ultra-portable Bluetooth speaker",
       "anc": false,
-      "transparency": false
+      "transparency": false,
+      "driver": "45 mm",
+      "power": "4.2 W RMS"
     },
     "battery": {
       "life": "7 hours (9 with Playtime Boost)"
@@ -30487,6 +30515,13 @@
     "summaryEn": "A pocket speaker that survives dust and a dunk, with a carry loop.",
     "unsure": [
       "popularity"
+    ],
+    "specNA": {
+      "audio.codecs": "Not published by JBL"
+    },
+    "sources": [
+      "https://www.jbl.com/JBLGO4BLKAM.html",
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwa4475697/pdfs/PA_JBL_GO%204_QSG_Global_SOP.pdf"
     ]
   },
   {
@@ -37082,7 +37117,8 @@
       "size": 75,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37096,14 +37132,18 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 26",
     "sources": [
       "kitele",
-      "https://www.lg.com/us/tvs/lg-55nu850baua-4k-uhd-tv"
+      "https://www.lg.com/us/tvs/lg-55nu850baua-4k-uhd-tv",
+      "https://www.lg.com/uk/tvs-soundbars/nano-4k-uhd/75nu850b6la/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3 × HDMI with eARC and ALLM"
+    }
   },
   {
     "id": "lg-75qned70b6a",
@@ -37119,7 +37159,8 @@
       "size": 75,
       "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37133,13 +37174,17 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 26",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned/75qned70b6a/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3 × HDMI with eARC and ALLM"
+    }
   },
   {
     "id": "lg-75qned85b6b",
@@ -37155,7 +37200,8 @@
       "size": 75,
       "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 120,
+      "hdr": "Dolby Vision, HDR10, HLG"
     },
     "variants": [
       {
@@ -37169,13 +37215,17 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 26",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/uk/tvs-soundbars/qned-evo/75qned85b6b/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI with 4K at 120 Hz"
+    }
   },
   {
     "id": "lg-75qned86a6a",
@@ -37191,7 +37241,8 @@
       "size": 75,
       "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 120,
+      "hdr": "Dolby Vision, HDR10, HLG"
     },
     "variants": [
       {
@@ -37205,13 +37256,17 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 25",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.lg.com/de/tvs-und-soundbars/qned/75qned86a6a/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI with 4K at 120 Hz"
+    }
   },
   {
     "id": "lg-85qned70b6a",
@@ -41931,11 +41986,11 @@
     ],
     "camera": {
       "modules": 3,
-      "main": "50 MP, f/1.8",
+      "main": "50 MP, f/1.8, OIS",
       "ultrawide": "5 MP, f/2.2",
-      "telephoto": "2 MP, f/2.4, macro focus",
       "front": "13 MP",
-      "video": "1080p@30fps"
+      "video": "1080p@30fps",
+      "macro": "2 MP, f/2.4"
     },
     "battery": {
       "capacity": 5000,
@@ -41954,7 +42009,7 @@
       "wifi": "Wi-Fi 5",
       "bluetooth": "5.3",
       "nfc": true,
-      "sim": "Dual nano-SIM plus a dedicated microSD slot"
+      "sim": "Dual nano-SIM, second slot shared with microSD"
     },
     "cardSlot": true,
     "os": "Android, One UI",
@@ -41975,7 +42030,9 @@
     "released": "2025-08",
     "sources": [
       "kimovil",
-      "https://www.ifixit.com/Device/Samsung_Galaxy_A17"
+      "https://www.ifixit.com/Device/Samsung_Galaxy_A17",
+      "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a17-5g-blue-128gb-sm-a176bzbmins/",
+      "https://news.samsung.com/uk/awesome-made-easy-samsung-introduces-the-galaxy-a17-5g"
     ]
   },
   {
@@ -43610,7 +43667,7 @@
       "refresh": 120,
       "ppi": 513,
       "brightness": 2600,
-      "protection": "Gorilla Armor 2"
+      "protection": "Corning Gorilla Glass Victus 2"
     },
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite for Galaxy",
@@ -43673,7 +43730,8 @@
     ],
     "cardSlot": false,
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/ca/business/smartphones/galaxy-s/galaxy-s25-plus-sm-s936wzsexac/"
     ]
   },
   {
@@ -47934,7 +47992,8 @@
       "size": 75,
       "type": "QLED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10+"
     },
     "variants": [
       {
@@ -47950,14 +48009,18 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/qled-tv/q60d-75-inch-qled-4k-tizen-os-smart-tv-qe75q60dauxru/"
     ],
     "aliases": [
       "QE75Q60DAUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3 × HDMI, up to 4K at 60 Hz on all three"
+    }
   },
   {
     "id": "samsung-qe75q70dauxru",
@@ -47973,7 +48036,8 @@
       "size": 75,
       "type": "QLED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 120,
+      "hdr": "HDR10+ Adaptive, HDR10+ Gaming"
     },
     "variants": [
       {
@@ -47989,14 +48053,18 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.samsung.com/ru/tvs/qled-tv/q70d-75-inch-qled-4k-tizen-os-smart-tv-qe75q70dauxru/"
     ],
     "aliases": [
       "QE75Q70DAUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI, up to 4K at 120 Hz on all four"
+    }
   },
   {
     "id": "samsung-qe75qn70fauxru",
@@ -48094,7 +48162,8 @@
       "size": 75,
       "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 120,
+      "hdr": "HDR10+"
     },
     "variants": [
       {
@@ -48119,7 +48188,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI, up to 4K at 144 Hz on all four"
+    }
   },
   {
     "id": "samsung-qe75qn90cauxru",
@@ -48135,7 +48207,8 @@
       "size": 75,
       "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 120,
+      "hdr": "HDR10+"
     },
     "variants": [
       {
@@ -48160,7 +48233,10 @@
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI, supports 4K at 120 Hz"
+    }
   },
   {
     "id": "samsung-qe77s90faexru",
@@ -51927,7 +52003,8 @@
       "size": 75,
       "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 144,
+      "hdr": "HDR10+, Dolby Vision IQ"
     },
     "variants": [
       {
@@ -51943,11 +52020,15 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://static-obg.tcl.com/content/dam/brandsite/region/australia/products/tv/c-series/c6k/downloads/75C6K_Specs.pdf"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4 × HDMI 2.1"
+    }
   },
   {
     "id": "tcl-75c7k",
@@ -110206,18 +110287,21 @@
     "display": {
       "type": "AMOLED",
       "size": 1.74,
-      "resolution": "336x480"
+      "resolution": "480x336",
+      "refresh": 60,
+      "brightness": 2000
     },
     "battery": {
       "capacity": 350,
-      "life": "21 days"
+      "life": "Up to 21 days in light mode"
     },
     "body": {
       "ip": "5 ATM",
       "weight": 21.6
     },
     "connectivity": {
-      "bluetooth": "5.4"
+      "bluetooth": "5.4",
+      "gps": "GPS, GLONASS, BeiDou, Galileo, QZSS"
     },
     "colors": [
       "Black",
@@ -110227,7 +110311,8 @@
     "summaryEn": "The Smart Band with its own GPS: a 1.74-inch AMOLED screen and up to 21 days on a charge.",
     "sources": [
       "https://www.mi.com/global/product/xiaomi-smart-band-10-pro/specs/",
-      "https://www.androidauthority.com/xiaomi-smart-band-10-pro-global-launch-3670474/"
+      "https://www.androidauthority.com/xiaomi-smart-band-10-pro-global-launch-3670474/",
+      "https://www.mi.com/global/product/xiaomi-smart-band-10-pro/"
     ],
     "unsure": [
       "popularity"
