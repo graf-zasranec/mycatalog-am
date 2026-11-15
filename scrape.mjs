@@ -2483,6 +2483,23 @@ const SHOPS = {
     }
   },
 
+  prix: {
+    name: 'PRIX.AM', site: 'https://prix.am', note: 'Electronics and home appliances retailer',
+    async run() {
+      // robots.txt allows every path for ordinary crawlers (search=yes). The sitemap index lists the
+      // product sitemaps; each product appears once per locale and the English page is the one read.
+      // Pages carry schema.org Product + Offer with price and availability, so crawlLd reads them.
+      // Added 2026-11-15 for the DeLonghi EC260.BK, which no other shop we read sells.
+      const idx = await get('https://prix.am/sitemap.xml'); await sleep(DELAY_MS);
+      const maps = [...String(idx || '').matchAll(/<loc>(https:\/\/prix\.am\/sitemap-localized-products-\d+\.xml)<\/loc>/g)].map(m => m[1]);
+      const urls = [];
+      for (const m of maps) {
+        const xml = await get(m); await sleep(DELAY_MS);
+        for (const u of String(xml || '').matchAll(/<loc>(https:\/\/prix\.am\/en\/catalog\/[^<]+)<\/loc>/g)) urls.push(u[1]);
+      }
+      return crawlLd(urls);
+    }
+  },
   redstore: {
     name: 'REDstore', site: 'https://redstore.am', note: 'electronics retailer',
     async run() {
