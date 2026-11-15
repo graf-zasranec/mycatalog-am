@@ -1,6 +1,6 @@
 // The same modifier groups used by the retailer's storage/RAM/color controls.
 export function readPlanetModifiers(data){
- const out={};for(const m of Array.isArray(data)?data:[]){const ts=m.specification?.translations||[];const name=(ts.find(t=>t.locale==='en')||ts[0])?.name||'';const key=/^colou?r$/i.test(name)?'color':/^sim$/i.test(name)?'sim':/^ram$/i.test(name)?'ram':null;if(!key)continue;
+ const out={};for(const m of Array.isArray(data)?data:[]){const ts=m.specification?.translations||[];const name=(ts.find(t=>t.locale==='en')||ts[0])?.name||'';const key=/^colou?r$/i.test(name)?'color':/^sim$/i.test(name)?'sim':/^ram$/i.test(name)?'ram':/^diagonal$/i.test(name)?'size':null;if(!key)continue;
  out[key]=(m.values||[]).map(v=>({name:String(v.value?.value||'').trim(),price:Math.round(Number(v.price||0)),active:v.is_active!==0&&v.is_active!=='0'})).filter(x=>x.name&&Number.isFinite(x.price));}return out;
 }
 export function planetRamOptions(mod){
@@ -24,4 +24,9 @@ export function readPlanetStorage(html, capacityOf) {
     if (disabled || price >= 5000) tiers.push({ varId, storage, price, disabled });
   }
   return tiers;
+}
+// An iPad Air/Pro page sells both screens: "Diagonal" 11"/13", each value carrying the final price.
+export function planetSizeOptions(mod){
+ if(!mod.size?.length)return [{size:null,price:0,active:true}];
+ return mod.size.map(o=>({...o,size:parseFloat(String(o.name).replace(',','.'))||null})).filter(o=>o.size&&o.size<20);
 }

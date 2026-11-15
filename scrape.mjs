@@ -1,4 +1,4 @@
-import {readPlanetModifiers,planetRamOptions,readPlanetStorage} from './tools/planet-modifiers.mjs';
+import {readPlanetModifiers,planetRamOptions,planetSizeOptions,readPlanetStorage} from './tools/planet-modifiers.mjs';
 // Collects real smartphone prices from Armenian online shops into data/prices.json.
 //
 //   node scrape.mjs            all shops
@@ -1532,7 +1532,7 @@ if (process.argv[2] === '--selftest') {
     ['Lenovo LOQ 15irx10 i7-13 16/1TB RTX5050', undefined],
     ['Lenovo laptop i7 13th Gen 16GB 1TB', undefined],
     ['Lenovo 15.6 laptop i7-13 16GB 1TB', 15],
-    ['Macbook Air M5 16/512 MDHE4LLA Midnight', undefined],   // 16 GB of memory, not a 16" Air
+    ['Macbook Air M5 16/512 MDHE4LLA Midnight', 13],   // 16 GB of memory, not a 16" Air; MDHE4 is the 13"
     ['Macbook Air M5 13 16/512 Midnight', 13],
     ['Macbook Pro 16 /M5 Pro/24GB RAM', 16]];                  // istyle: "16 /M5" is the screen, only "/digit" is memory               // ...and the screen still reads
   for (const [txt, want] of scrCases) {
@@ -1549,7 +1549,8 @@ if (process.argv[2] === '--selftest') {
       ['iPad Air M4 128GB', TAB, undefined], ['Fire HD 10 Kids 32GB/11Gen', TAB, undefined],
       ['Fire HD 10 Kids 32GB/13Gen', TAB, undefined], ['Smart TV XIAOMI A 50 2026 (L50MB-ARU)', TV, 50],
       ['Xiaomi TV A Pro 55 2026 QLED', TV, 55], ['Smart TV Samsung QE43Q60BA 4K UHD', TV, undefined],
-      ['MacBook Air M5 13/16GB RAM', 'apple-macbook-air-13-m5', 13], ['Macbook Air M5 16/512 MDHE4LLA Midnight', 'apple-macbook-air-13-m5', undefined]]) {
+      ['MacBook Air M5 13/16GB RAM', 'apple-macbook-air-13-m5', 13], ['Macbook Air M5 16/512 MDHE4LLA Midnight', 'apple-macbook-air-13-m5', 13],
+      ['Apple iPad Air M4 (12GB RAM) 13"', TAB, 13], ['Apple iPad Air M4 11"', TAB, 11]]) {
     const got = screenOf(txt, id);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
   }
@@ -1767,7 +1768,9 @@ function screenOf(title, id) {
   // ...but only when what follows the slash is a disk: iStyle's "MacBook Air M5 13/16GB RAM" is a
   // 13-inch with 16 GB of memory, where "16/512" is memory and disk.
   const m = screenTitle.match(/\b(13[.\s-]?6|13[.\s-]?3|14[.\s-]?2|15[.\s-]?3|16[.\s-]?2|13|14|15|16)\b(?!\s*(?:GB|TB|ԳԲ|ՏԲ|\/\s*(?:\d{3,}|\d+\s*(?:TB|ՏԲ))))/i);
-  if (!m) return undefined;
+  // Some titles carry only Apple's part number ("Macbook Air M5 16/512 MDHE4LLA"). shortcut: one
+  // known code; add more here when a MacBook offer shows up without a size.
+  if (!m) { const part = /\b(MDHE4)/i.exec(screenTitle); return part ? { MDHE4: 13 }[part[1].toUpperCase()] : undefined; }
   return Math.trunc(parseFloat(m[1].replace(/[\s-]/, '.')));
 }
 // A product sold in exactly one capacity, or one colour, needs no shop to state it: there is
@@ -2533,13 +2536,14 @@ const SHOPS = {
           // colour on an Android phone and once per SIM build on a lone-colour iPhone.
           const simOpts = sims.length ? sims : [{ name: null, price: t.price, active: true }];
           const colOpts = cols.length ? cols : [{ name: null, price: 0, active: true }];
-          for (const r of planetRamOptions(mod)) for (const s of simOpts) for (const c of colOpts) {
-            if (!r.active || !s.active || !c.active) continue;
+          for (const z of planetSizeOptions(mod)) for (const r of planetRamOptions(mod)) for (const s of simOpts) for (const c of colOpts) {
+            if (!z.active || !r.active || !s.active || !c.active) continue;
             out.push({
               id, url: u, image: img, storage: t.storage, ram:r.ram, ramFromPage:r.ram!=null,
               // SIM's own value already IS the final price for that build; a colour delta rides
               // on top of it exactly as it would on the plain tier price.
-              price: Math.max(sims.length ? s.price : t.price, r.price) + c.price,
+              price: Math.max(sims.length ? s.price : t.price, r.price, z.price) + c.price,
+              size: z.size ?? undefined,
               // same rule as magentoChildren: a colour name of 3DPlanet's own that maps to
               // none of the product's colours is left unstated rather than invented
               color: c.name ? (colorOf(c.name, (phoneById[id] || {}).colors) || null) : null,
@@ -2548,7 +2552,7 @@ const SHOPS = {
               // re-derives esim from title+url for every shop and would DELETE a value it
               // cannot itself confirm; without the label in the title that pass saw a plain
               // "Apple iPhone 18 Pro" and erased the very field this line sets.
-              title: (sims.length ? `${title} (${s.name})` : title) + (r.ram!=null ? ` (${r.ram}GB RAM)` : ''),
+              title: (sims.length ? `${title} (${s.name})` : title) + (r.ram!=null ? ` (${r.ram}GB RAM)` : '') + (z.size ? ` ${z.size}"` : ''),
               esim: sims.length ? simBuild(s.name) : undefined,
               inStock: true
             });
