@@ -1576,6 +1576,10 @@ if (process.argv[2] === '--selftest') {
       ['<ol class="carousel-indicators"><li></li></ol><div class="info"></div><a title="Համեմատել"></a> </div> <span class="label unavailable">Առկա չէ</span>', false]]) {
     if (mcUnavailable(html) !== want) { bad++; console.log(`FAIL mcUnavailable want=${want}`); }
   }
+  for (const [u, want] of [['https://www.telecomarmenia.am/eshop/hy/smartphones/samsung-a36-8-128g-lavender/2', 128],
+      ['https://x.am/redmi-13-256g-black/18', 256], ['https://x.am/phone-8gb-ram', undefined], ['https://x.am/a-128g-256g', undefined]]) {
+    if (urlStorage(u, new Set([128, 256])) !== want) { bad++; console.log(`FAIL urlStorage ${u} want=${want}`); }
+  }
   for (const [txt, cols, want] of colCases) {
     const got = colorOf(txt, cols);
     if (got !== want) { bad++; console.log(`FAIL colour got=${got} want=${want} <- ${txt}`); }
@@ -3403,6 +3407,18 @@ for (const [k, v] of Object.entries(HAND)) if (!shops[k]) shops[k] = { ...v };
 // a capacity somebody read off the shop's own page, for an offer whose title names none
 for (const list of Object.values(offers)) for (const o of list)
   if (o.storage == null && STORPINS.has(o.url)) o.storage = STORPINS.get(o.url);
+// No storage in the title, but the page address names it: Telecom's "/samsung-a36-8-128g-lavender/"
+// is titled just "Samsung A36". Taken only when the address names exactly one of the product's
+// own capacities, so a RAM figure or a model number cannot pass for one.
+function urlStorage(url, sizes) {
+  const hits = [...String(url || '').toLowerCase().matchAll(/(?:^|[^a-z0-9])(\d{2,4})(?:g|gb)(?=[^a-z0-9]|$)/g)].map(m => +m[1]).filter(n => sizes.has(n));
+  return new Set(hits).size === 1 ? hits[0] : undefined;
+}
+for (const [id, list] of Object.entries(offers)) {
+  const sizes = new Set(((phoneById[id] || {}).variants || []).map(v => v.storage).filter(Boolean));
+  if (sizes.size < 2) continue;
+  for (const o of list) if (o.storage == null) { const st = urlStorage(o.url, sizes); if (st) o.storage = st; }
+}
 for (const [id, list] of Object.entries(offers)) for (const o of list)
   if (!o.color && COLPINS.has(o.url) && (phoneById[id]?.colors || []).includes(COLPINS.get(o.url))) o.color = COLPINS.get(o.url);
 const NANO_ONLY = new Set(['zigzag', 'eldorado', 'ucom', 'telecom', 'ispace',
