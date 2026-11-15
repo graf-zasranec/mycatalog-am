@@ -3728,9 +3728,13 @@ try {
   // And every offer whose own title names a colour word its chosen colour lacks - the nightly list
   // of rows to look at (owner, 2026-11-14: "every random product we pick has bugs"). Not changed
   // here: band colours on watches and "Black & Brass" speakers land in it too.
+  const squash = t => String(t).toLowerCase().replace(/grey/g, 'gray').replace(/[^a-z]/g, '');
+  const colourNamed = (title, colour) => squash(title).includes(squash(colour));
   const conflicts = [];
   for (const [id, list] of Object.entries(offers)) for (const o of list)
-    if (o.color && o.title && foreignColour(o.title, o.color))
+    // A title that already names our colour ("MacBook Air, Midnight, ... Liquid Retina") is right
+    // whatever else it mentions; only rows whose title never says our colour are worth a look.
+    if (o.color && o.title && !colourNamed(o.title, o.color) && foreignColour(o.title, o.color))
       conflicts.push({ shop: o.shop, id, colour: o.color, title: o.title, url: o.url || '' });
   if (conflicts.length) console.log(`${conflicts.length} offer(s) whose title names a different colour - data/colour-report.json`);
   fs.writeFileSync('data/colour-report.json', JSON.stringify({ generated: new Date().toISOString(),
