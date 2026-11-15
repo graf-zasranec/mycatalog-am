@@ -2438,7 +2438,10 @@ const SHOPS = {
         perPhone[id] = (perPhone[id] || 0) + 1;
         if (perPhone[id] > 30) continue;              // cap requests per model (6 cut off most builds: 23 MacBook Air M5 pages)
         const html = await get(u); await sleep(DELAY_MS);
-        if (!html) continue;
+        if (!html) {
+          if ([404, 410].includes(lastStatus())) out.push({ id, url: u, price: 0, inStock: false });
+          continue;
+        }
         // data-price-amount is Magento's machine-readable final price, the same marker Ucom uses;
         // the visible span carries thousands separators and a currency sign.
         const pi = html.indexOf('data-price-amount=' + D);
