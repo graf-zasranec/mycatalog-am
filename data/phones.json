@@ -33037,7 +33037,9 @@
       "size": 16,
       "type": "IPS LCD",
       "touch": true,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "brightness": 300
     },
     "chipset": {
       "name": "Intel Core Ultra 7 255U"
@@ -33062,20 +33064,23 @@
       "capacity": 57
     },
     "connectivity": {
-      "wifi": "Wi-Fi 6E"
+      "ports": "2 × USB-A 5 Gbps, 2 × USB-C 10 Gbps with charging and DisplayPort 1.4, HDMI 1.4b, 3.5 mm audio, microSD"
     },
     "os": "Windows 11",
     "colors": [
       "Gray"
     ],
     "summaryEn": "A 16-inch convertible with a touchscreen that folds back into a tablet.",
-    "body": {
-      "weight": 2100
-    },
+    "body": {},
     "year": 2025,
     "sources": [
-      "https://www.notebookcheck.net/"
-    ]
+      "https://www.notebookcheck.net/",
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_2_in_1_16IAL10/IdeaPad_5_2_in_1_16IAL10_Spec.PDF?v=0db102b4-f8aa-492c-aa72-08d03ea2266f"
+    ],
+    "specNA": {
+      "connectivity.wifi": "Depends on configuration",
+      "body.weight": "Depends on configuration"
+    }
   },
   {
     "id": "lenovo-ideapad-5-2in1-16ahp9-ryzen-7",
