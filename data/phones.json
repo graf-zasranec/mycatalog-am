@@ -4339,14 +4339,18 @@
     },
     "body": {
       "weight": 444,
-      "materials": "Aluminium alloy"
+      "materials": "Aluminium alloy",
+      "height": 249.7,
+      "width": 177.5,
+      "thickness": 5.3
     },
     "connectivity": {
       "network": "Wi-Fi",
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3",
       "nfc": false,
-      "sim": "Wi-Fi only"
+      "sim": "Wi-Fi only",
+      "ports": "Thunderbolt / USB 4, Smart Connector, magnetic Apple Pencil connector"
     },
     "cardSlot": false,
     "os": "iPadOS 18",
@@ -4400,7 +4404,8 @@
       "iPad Pro 13 M4 Wi-Fi + Cellular 2024"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/en-ie/119892"
     ]
   },
   {
@@ -50585,12 +50590,16 @@
     ],
     "battery": {},
     "body": {
-      "materials": "Plastic tower with removable side panels"
+      "materials": "Plastic tower with removable side panels",
+      "weight": 3100,
+      "width": 388,
+      "height": 89,
+      "depth": 216
     },
     "connectivity": {
       "wifi": "Wi-Fi 7",
       "bluetooth": "5.1",
-      "ports": "HDMI 2.1, 2x USB-C, 2x USB-A, Gigabit Ethernet"
+      "ports": "HDMI, 2 × USB-C, 2 × USB-A, Gigabit Ethernet, M.2 SSD expansion, disc drive connector"
     },
     "cardSlot": false,
     "os": "PlayStation 5 system software",
@@ -50600,6 +50609,9 @@
     "summaryEn": "The fastest PlayStation: a 2 TB SSD, a much larger GPU and machine-learning upscaling. Disc drive sold separately.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.playstation.com/content/dam/global_pdc/en-gb/corporate/support/manuals/ps5-docs/7000/CFI-7021_PS5_Safety_Guide_Web%24en-gb.pdf"
     ]
   },
   {
