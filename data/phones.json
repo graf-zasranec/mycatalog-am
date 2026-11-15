@@ -2115,10 +2115,11 @@
       "anc": true,
       "transparency": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "Custom high-excursion driver"
     },
     "battery": {
-      "life": "5 hours"
+      "life": "Up to 4 h with ANC, 5 h without noise control"
     },
     "connectivity": {
       "bluetooth": "5.3",
@@ -2146,10 +2147,12 @@
       "MXP93"
     ],
     "body": {
-      "weight": 4.3
+      "weight": 4.3,
+      "ip": "IP54"
     },
     "sources": [
-      "https://www.apple.com/airpods/compare/"
+      "https://www.apple.com/airpods/compare/",
+      "https://support.apple.com/en-gb/121204"
     ]
   },
   {
@@ -2270,7 +2273,8 @@
       "anc": true,
       "transparency": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "Custom high-excursion driver"
     },
     "battery": {
       "life": "6 hours"
@@ -2293,7 +2297,11 @@
     "colors": [
       "White"
     ],
-    "summaryEn": "The previous Pro generation, still sold alongside the Pro 3."
+    "summaryEn": "The previous Pro generation, still sold alongside the Pro 3.",
+    "sources": [
+      "https://support.apple.com/en-us/111834",
+      "https://support.apple.com/en-am/111851"
+    ]
   },
   {
     "id": "apple-airpods-pro-3",
@@ -3813,7 +3821,9 @@
     "body": {
       "materials": "Aluminium unibody",
       "ip": "IP42",
-      "weight": 464
+      "height": 247.6,
+      "width": 178.5,
+      "thickness": 6.1
     },
     "connectivity": {
       "network": "Wi-Fi, or Wi-Fi + Cellular",
@@ -3849,7 +3859,10 @@
       "https://www.apple.com/ipad-air/specs/",
       "https://support.apple.com/en-us/126471",
       "https://support.apple.com/en-gb/126472"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration"
+    }
   },
   {
     "id": "apple-ipad-air-11-wi-fi-2024",
@@ -4459,14 +4472,13 @@
     },
     "body": {
       "materials": "Aluminium unibody",
-      "ip": "IP42",
-      "weight": 444
+      "ip": "IP42"
     },
     "connectivity": {
       "network": "Wi-Fi, or Wi-Fi + Cellular",
       "sim": "eSIM",
       "bluetooth": "6.0",
-      "wifi": "Wi-Fi 6E",
+      "wifi": "Wi-Fi 7",
       "nfc": false
     },
     "cardSlot": false,
@@ -4490,8 +4502,12 @@
     ],
     "sources": [
       "kimovil",
-      "https://www.apple.com/ipad-pro/specs/"
-    ]
+      "https://www.apple.com/ipad-pro/specs/",
+      "https://support.apple.com/en-gb/125406"
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration"
+    }
   },
   {
     "id": "apple-iphone-15",
@@ -5379,7 +5395,7 @@
     "battery": {
       "wireless": 15,
       "capacity": 4005,
-      "wired": 25
+      "wired": 26
     },
     "body": {
       "height": 146.7,
@@ -5414,7 +5430,10 @@
     "year": 2026,
     "released": "2026-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://support.apple.com/en-gb/126470",
+      "https://cdsassets.apple.com/live/6GJYWVAV/information/locale/en-gb/iphone-17e-info.pdf",
+      "https://www.apple.com/it/iphone/compare/"
     ]
   },
   {
@@ -6832,7 +6851,8 @@
     },
     "connectivity": {
       "wifi": "Wi-Fi 6E",
-      "bluetooth": "5.3"
+      "bluetooth": "5.3",
+      "ports": "3 × Thunderbolt 5 (USB-C), HDMI, SDXC, MagSafe 3, 3.5 mm headphone jack"
     },
     "cardSlot": true,
     "os": "macOS 26",
@@ -6843,7 +6863,8 @@
     "summaryEn": "The 14-inch Pro with the M5 Pro — more CPU and GPU cores for sustained work.",
     "sources": [
       "https://www.apple.com/macbook-pro/specs/",
-      "https://istore.am/product/14-inch-macbook-pro-apple-m5-pro-chip-with-18-core-cpu-and-20-core-gpu-48gb-1tb-ssd-space-black-us-engl-2832"
+      "https://istore.am/product/14-inch-macbook-pro-apple-m5-pro-chip-with-18-core-cpu-and-20-core-gpu-48gb-1tb-ssd-space-black-us-engl-2832",
+      "https://support.apple.com/en-az/126318"
     ]
   },
   {
@@ -11606,7 +11627,8 @@
       "size": 15.6,
       "type": "Full HD OLED",
       "touch": false,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 60
     },
     "chipset": {
       "name": "AMD Ryzen 5 7520U"
@@ -11639,7 +11661,8 @@
     },
     "sources": [
       "https://www.notebookcheck.net/",
-      "https://tochkapc.ru/noutbuki/noutbuki/asus-vivobook-go-15-oled-90nb0zr1-m01cc0-amd-ryzen-5-7520u-16gb-512gb-dos-silver/"
+      "https://tochkapc.ru/noutbuki/noutbuki/asus-vivobook-go-15-oled-90nb0zr1-m01cc0-amd-ryzen-5-7520u-16gb-512gb-dos-silver/",
+      "https://www.asus.com/in/laptops/for-home/vivobook/vivobook-go-15-oled-e1504f/techspec/"
     ]
   },
   {
@@ -19673,8 +19696,8 @@
       "resolution": "1080x2424",
       "refresh": 120,
       "protection": "Gorilla Glass Victus 2",
-      "ppi": 421,
-      "brightness": 2700
+      "ppi": 422,
+      "brightness": 3000
     },
     "chipset": {
       "name": "Google Tensor G5",
@@ -19740,7 +19763,9 @@
     ],
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-13979.php"
+      "https://www.gsmarena.com/a-13979.php",
+      "https://store.google.com/product/pixel_10_specs?hl=en-US",
+      "https://store.google.com/es/product/pixel_10_specs?hl=es"
     ]
   },
   {
@@ -30071,7 +30096,9 @@
       }
     ],
     "audio": {
-      "power": "40 W"
+      "power": "40 W",
+      "type": "Portable Bluetooth speaker",
+      "driver": "52 × 90 mm woofer and 20 mm tweeter"
     },
     "battery": {
       "life": "20 hours"
@@ -30096,6 +30123,9 @@
       "Pink",
       "Teal",
       "Green"
+    ],
+    "sources": [
+      "https://support.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw02a39101/pdfs/PA_JBL_Charge%205_QSG_Global.pdf"
     ]
   },
   {
@@ -42265,7 +42295,8 @@
       "A366"
     ],
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2025_3Q_Interim_Report.pdf"
     ]
   },
   {
@@ -42530,7 +42561,9 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/co/support/mobile-devices/galaxy-a57-vs-galaxy-a56/",
+      "https://www.samsung.com/fr/guide-achat-mobile/comparatifs/galaxy-a56-vs-a57/"
     ]
   },
   {
@@ -42623,7 +42656,9 @@
     "category": "phone",
     "released": "2026-03",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.samsung.com/co/support/mobile-devices/galaxy-a57-vs-galaxy-a56/",
+      "https://www.samsung.com/fr/guide-achat-mobile/comparatifs/galaxy-a56-vs-a57/"
     ]
   },
   {
@@ -42806,10 +42841,14 @@
     "audio": {
       "anc": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "type": "In-ear, active noise cancellation",
+      "driver": "Two-way dynamic driver and tweeter",
+      "codecs": "AAC, SBC, SSC, SSC-UHQ",
+      "transparency": true
     },
     "battery": {
-      "life": "6 hours (20 with the case)"
+      "life": "Up to 6 h (26 h with case) with ANC, 7 h (30 h with case) without ANC"
     },
     "connectivity": {
       "bluetooth": "5.4"
@@ -42897,7 +42936,7 @@
       "Galaxy Buds4 Pro"
     ],
     "tier": "flagship",
-    "released": "2025-07",
+    "released": "2026-03",
     "priceAmd": 72900,
     "priceAmdMax": 72900,
     "popularity": 76,
@@ -42907,10 +42946,12 @@
       "anc": true,
       "transparency": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "Two-way dynamic driver and tweeter",
+      "codecs": "SSC-UHQ, SSC, AAC, SBC, LC3"
     },
     "battery": {
-      "life": "30 hours with case"
+      "life": "Up to 6 h (26 h with case) with ANC, 7 h (30 h with case) without ANC"
     },
     "body": {
       "ip": "IP57",
@@ -42934,7 +42975,9 @@
     "summaryEn": "Samsung's flagship earbuds — in-ear, with the strongest noise cancellation.",
     "sources": [
       "https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds4-pro-black-sm-r640nzkaeub/",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://www.samsung.com/us/audio-sound/galaxy-buds4/",
+      "https://news.samsung.com/global/samsung-unveils-all-new-galaxy-buds4-series-with-ultimate-sound"
     ]
   },
   {
@@ -43266,7 +43309,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-s25-series-arrives-worldwide"
     ]
   },
   {
@@ -43611,7 +43655,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/global/samsung-galaxy-s25-series-arrives-worldwide"
     ]
   },
   {
@@ -43774,7 +43819,7 @@
       "sim": "Nano-SIM + eSIM, or dual nano-SIM"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 17 (One UI 9)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Graphite",
@@ -43791,7 +43836,8 @@
     "year": 2026,
     "released": "2026-09",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/us/samsung-galaxy-s26-fe-delivering-latest-flagship-features-what-matters-most/"
     ]
   },
   {
@@ -43841,7 +43887,7 @@
     "battery": {
       "capacity": 4900,
       "wired": 45,
-      "wireless": 25
+      "wireless": 20
     },
     "body": {
       "height": 158.4,
@@ -43859,7 +43905,7 @@
       "sim": "Nano-SIM + eSIM, or dual nano-SIM"
     },
     "cardSlot": false,
-    "os": "Android, One UI",
+    "os": "Android 16 (One UI 8.5)",
     "updates": "7 years of OS and security updates",
     "colors": [
       "Black",
@@ -43875,7 +43921,8 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://news.samsung.com/us/samsung-unveils-galaxy-s26-series-most-intuitive-galaxy-ai-phone-yet/"
     ]
   },
   {
@@ -44048,7 +44095,9 @@
       "kimovil",
       "https://www.samsung.com/ae/tablets/galaxy-tab-a/galaxy-tab-a11-gray-64gb-sm-x133nzaamea/",
       "https://news.samsung.com/id/galaxy-tab-a11-tablet-sejutaan-dengan-ai-untuk-dukung-aktivitas-keluarga",
-      "https://www.samsung.com/de/business/tablets/galaxy-tab-a/galaxy-tab-a11-gray-128gb-sm-x130nzaeeub/buy/"
+      "https://www.samsung.com/de/business/tablets/galaxy-tab-a/galaxy-tab-a11-gray-128gb-sm-x130nzaeeub/buy/",
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_Interim_Report.pdf",
+      "https://www.samsung.com/mx/business/tablets/galaxy-tab-a/galaxy-tab-a11-gray-sm-x133nzaemxo/"
     ]
   },
   {
@@ -44099,7 +44148,6 @@
     },
     "body": {
       "materials": "Aluminium unibody",
-      "weight": 477,
       "height": 257.1,
       "width": 168.7,
       "thickness": 6.9,
@@ -44123,8 +44171,14 @@
       "front": "5 MP"
     },
     "sources": [
-      "kimovil"
-    ]
+      "kimovil",
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_Interim_Report.pdf",
+      "https://news.samsung.com/us/samsung-welcomes-galaxy-a17-5g-galaxy-tab-a11-galaxy-ecosystem/",
+      "https://image-us.samsung.com/SamsungUS/home/ca-assets-folder/01072026/B2B_Tab-A11plus-5G_Datasheet_2026.pdf"
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration"
+    }
   },
   {
     "id": "samsung-galaxy-tab-a8-10-5-x200",
@@ -45285,17 +45339,13 @@
     "popularity": 78,
     "accent": "#26262A",
     "display": {
-      "type": "Super AMOLED Always-On",
-      "size": 1.47,
-      "resolution": "480x480"
+      "type": "Super AMOLED Always-On"
     },
     "body": {
       "materials": "Aluminium case",
-      "ip": "IP68, 5 ATM",
-      "weight": 34
+      "ip": "IP68, 5 ATM"
     },
     "battery": {
-      "capacity": 435,
       "life": "40 hours"
     },
     "variantUnit": "mm",
@@ -45323,7 +45373,16 @@
     "summaryEn": "The mainstream Galaxy Watch, in 40 mm and 44 mm.",
     "chipset": {
       "name": "Exynos W1000"
-    }
+    },
+    "specNA": {
+      "display.size": "Depends on configuration",
+      "display.resolution": "Depends on configuration",
+      "body.weight": "Depends on configuration",
+      "battery.capacity": "Depends on configuration"
+    },
+    "sources": [
+      "https://images.samsung.com/is/content/samsung/assets/global/ir/docs/2026_1Q_Interim_Report.pdf"
+    ]
   },
   {
     "id": "samsung-galaxy-watch-8-classic",
@@ -49467,10 +49526,12 @@
     "audio": {
       "anc": true,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "type": "Over-ear, active noise cancellation",
+      "driver": "40 mm dynamic driver"
     },
     "battery": {
-      "life": "30 hours"
+      "life": "Up to 30 hours with ANC or Aware mode"
     },
     "connectivity": {
       "bluetooth": "5.4"
@@ -49483,6 +49544,9 @@
     "colors": [
       "White",
       "Black"
+    ],
+    "sources": [
+      "https://assets.sonos.com/media-kits/hardware/sonos-ace/sonos-acefactsheet.pdf"
     ]
   },
   {
@@ -51991,7 +52055,9 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "kitele",
+      "https://www.tcl.com/global/en/tvs/98p8k",
+      "https://www.tcl.com/content/dam/brandsite/region/turkey/pis/tv/98p8k.pdf"
     ],
     "colors": [
       "Black"
@@ -54141,12 +54207,14 @@
     "audio": {
       "type": "In-ear, active noise cancellation",
       "anc": true,
-      "transparency": false,
+      "transparency": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "12.4 mm titanium-diaphragm driver",
+      "codecs": "AAC"
     },
     "battery": {
-      "life": "7 hours"
+      "life": "Up to 7 h per charge, 38 h with case (ANC off)"
     },
     "body": {
       "ip": "IP54",
@@ -54169,7 +54237,8 @@
     ],
     "summaryEn": "The cheap Buds 6, noise cancellation included.",
     "sources": [
-      "https://www.mi.com/global/product/redmi-buds-6-lite/specs/"
+      "https://www.mi.com/global/product/redmi-buds-6-lite/specs/",
+      "https://www.mi.com/global/product/redmi-buds-6-lite/"
     ]
   },
   {
@@ -59239,9 +59308,9 @@
     "summaryEn": "Redmi's 11-inch budget tablet with a microSD slot.",
     "body": {
       "weight": 510,
-      "height": 254.6,
-      "width": 166,
-      "thickness": 7.4,
+      "height": 254.58,
+      "width": 166.04,
+      "thickness": 7.36,
       "materials": "Polycarbonate",
       "ip": "IP52"
     },
@@ -59250,7 +59319,8 @@
       "front": "5 MP"
     },
     "sources": [
-      "kimovil"
+      "kimovil",
+      "https://www.mi.com/global/product/redmi-pad-2/specs/"
     ],
     "settled": [
       "notADuplicate"
