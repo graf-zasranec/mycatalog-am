@@ -19,7 +19,11 @@ export function readMiArmenia(html,url) {
   // Several retailer descriptions were copied between capacities. Do not choose
   // one conflicting source value silently or infer a capacity from the price.
   const conflict=(storage&&statedStorage&&storage!==statedStorage)||(ram&&statedRam&&ram!==statedRam);
-  return {url,title,price:Math.round(price),inStock,storage,ram,conflict:Boolean(conflict),statedStorage,statedRam,specs};
+  // The product's own photo carries a "Pre-order" ribbon (div.not-available) before the h1;
+  // related products further down carry their own, so only the part before the h1 is read.
+  const head=html.slice(0,Math.max(0,html.search(/<h1\b/i)));
+  const preorder=/class=["'][^"']*\bnot-available\b[^>]*>\s*Pre-?order\s*</i.test(head)||undefined;
+  return {url,title,price:Math.round(price),inStock,preorder,storage,ram,conflict:Boolean(conflict),statedStorage,statedRam,specs};
 }
 
 export function miReviewMatches(page,review) {
@@ -40,7 +44,7 @@ export async function collectMiArmenia({get,pause,
       rows.push({id:review.id,title:page.title,url,price:0,inStock:false});continue;
     }
     const {reviewed,title,...config}=review;
-    rows.push({title:page.title,url,price:page.price,inStock:page.inStock,...config});
+    rows.push({title:page.title,url,price:page.price,inStock:page.inStock,preorder:page.preorder,...config});
     } catch(error) {
       const kept=previous.filter(o=>o.shop==='miarmenia'&&o.url===url&&!o.seeded);
       rows.push(...kept);warn(`MiArmenia unresolved ${url}: ${error.message}; retained ${kept.length} previous offers with original dates`);

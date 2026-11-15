@@ -13,3 +13,6 @@ console.log('MiArmenia: scoped cash price, exact memory conflict and stock check
 
 assert.equal(read('POCO C81 Pro 4GB/128G','').storage,128);
 assert.equal(miReviewMatches(read('POCO C81 Pro 4GB/128G',''),{storage:256}),false);
+{ const {readMiArmenia}=await import('./miarmenia.mjs');
+  const pg=b=>`<div class="not-available">${b}</div><h1>Xiaomi TV A 43</h1><li id="old-price">177 900 AMD</li><div id="productCart"><a id="add-to-cart">Add to Cart</a></div><div class="not-available">Pre-order</div>`;
+  if(readMiArmenia(pg('Pre-order'),'u').preorder!==true||readMiArmenia(pg('New'),'u').preorder!==undefined)throw new Error('MiArmenia preorder ribbon');console.log('MIARMENIA_PREORDER_PASS'); }

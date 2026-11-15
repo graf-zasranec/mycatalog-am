@@ -70,7 +70,12 @@ async function vlvInfo(vid) {
       .map(m => m[1].split(String.fromCharCode(92) + '/').join('/'))
       .filter(x => /\.(webp|jpe?g|png)$/i.test(x));
     const image = gal.length ? 'https://vlv.am/public/' + gal[0].replace(/^\/+/, '') : '';
-    return { price: promo || sell, image };
+    // An air conditioner's selling_price includes installation (installing_price): the page shows
+    // HISENSE AST-12 as 220 000 + 29 000 installation, the API 249 000 (2026-11-15). Other shops
+    // price the unit alone, so the installation comes off.
+    const install = Number((t.match(/"installing_price":(\d+)/) || [])[1]) || 0;
+    const base = promo || sell;
+    return { price: base && install > 0 && install < base / 2 ? base - install : base, image };
   } catch { return { price: 0, image: '' }; }
 }
 
@@ -1554,6 +1559,8 @@ if (process.argv[2] === '--selftest') {
     const got = screenOf(txt, id);
     if (got !== want) { bad++; console.log(`FAIL screenOf got=${got} want=${want} <- ${txt}`); }
   }
+  { const h = '{\\"sku\\":\\"RA1\\",\\"price\\":1119000,\\"cash_price\\":\\"1099000.00\\"}';
+    if (redstoreCash(h, 'RA1', 1119000) !== 1099000 || redstoreCash(h, 'RA2', 1119000) !== 1119000) { bad++; console.log('FAIL redstoreCash'); } }
   const colCases = [
     ['Xiaomi Sound Outdoor Bluetooth Speaker Red', ['Red','Black','Blue'], 'Red'],
     ['Redmi Watch', ['Red','Black','Blue'], null],
@@ -1675,6 +1682,16 @@ if (process.argv[2] === '--selftest') {
 
 // Shared by the two JSON-LD shops: filter candidate URLs by matchPhone first so only pages that
 // can be one of our products are fetched, then read name/price/stock out of the Product block.
+// REDstore shows its cash price (anyone paying in full gets it) while its JSON-LD carries the
+// higher instalment price: iPhone 18 Pro 2TB 1 099 000 on the page, 1 119 000 in the data
+// (2026-11-15). The cash price sits in the product's own record, right after its sku.
+function redstoreCash(html, sku, price) {
+  if (!sku) return price;
+  const i = html.indexOf(`sku\\":\\"${sku}\\"`); if (i < 0) return price;
+  const m = /cash_price\\":\\"(\d+)(?:\.\d+)?\\"/.exec(html.slice(i, i + 600));
+  const cash = m ? +m[1] : 0;
+  return cash >= 5000 && cash < price && cash > price * 0.8 ? cash : price;
+}
 async function crawlLd(urls, cap = 6, names = {}) {
   const out = [], per = {};
   // How many of these urls this will actually ask for, said before it starts asking. REDstore's
@@ -1709,7 +1726,7 @@ async function crawlLd(urls, cap = 6, names = {}) {
     if (!html) continue;
     const p = ldProduct(html), o = ldOffer(p);
     if (!o) continue;
-    const price = Math.round(Number(o.price));
+    const price = redstoreCash(html, p.sku, Math.round(Number(o.price)));
     const title = clean(p.name || '');
     // The url only decides which pages are worth fetching; what the shop CALLS the thing is in
     // the title, and every other adapter reads both. REDstore slugs the Tab S8 and the Tab S8+
@@ -1880,7 +1897,7 @@ const SHOPS = {
     name:'AppZone',site:'https://appzone.am',note:'Phones, laptops, headphones and tablets — exact shop configurations',
     async run(){
       const {collectAppzone}=await import('./tools/appzone.mjs');
-      return collectAppzone({get,match:matchPhone,pause:()=>sleep(DELAY_MS),products:phones});
+      return collectAppzone({get,match:matchPhone,pause:()=>sleep(DELAY_MS),products:phones,gone:()=>[404,410].includes(lastStatus())});
     }
   },
   asbc: {

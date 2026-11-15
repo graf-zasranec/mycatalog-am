@@ -37,3 +37,7 @@ assert.equal(reviewAppzoneOffer(changedCpu,laptopProduct,{id:'hp',cpu:'AMD Ryzen
 const currentCpu={...changedCpu,configSpecs:{chipset:{name:'AMD Ryzen AI 7 350'}}};
 assert.equal(reviewAppzoneOffer(currentCpu,laptopProduct,{id:'hp',cpu:'AMD Ryzen AI 7 350'}).cpu,'AMD Ryzen AI 7 350');
 console.log('APPZONE_CPU_REVIEW_PASS: current merchant processor conflicts rejected');
+{ const {collectAppzone}=await import('./appzone.mjs');const U='https://appzone.am/en/Assortment/gone-laptop/';
+  const get=async u=>u.includes('product-category')?'<a href="/en/Assortment/">x</a>':'';
+  const out=await collectAppzone({get,match:()=>null,pause:async()=>{},products:[{id:'x'}],gone:()=>true,reviews:{[U]:{id:'x',colors:{}}},previous:[{shop:'appzone',url:U,price:1}],warn:()=>{}});
+  assert.equal(out.length,0,'a 404 page keeps no old offer');console.log('APPZONE_GONE_PASS'); }

@@ -84,7 +84,7 @@ export function reviewAppzoneOffer(offer,product,review) {
   return o;
 }
 
-export async function collectAppzone({get,match,pause,products,
+export async function collectAppzone({get,match,pause,products,gone=()=>false,
   reviews=JSON.parse(fs.readFileSync('data/appzone-map.json','utf8')),
   previous=Object.values(JSON.parse(fs.readFileSync('data/prices.json','utf8')).offers||{}).flat(),
   warn=console.warn}) {
@@ -103,7 +103,9 @@ export async function collectAppzone({get,match,pause,products,
   const out=[];
   for(const url of urls){
     try {
-    const html=await get(url);await pause();const page=readAppzone(html,url);
+    const html=await get(url);await pause();
+    if(!html&&gone())continue; // 404/410: the shop removed the page, so its old price must not be kept
+    const page=readAppzone(html,url);
     let review=reviews[url];
     if(!review){match(page.title,{price:page.price||appzoneOffers(page)[0]?.price,url});continue;}
     const product=products.find(p=>p.id===review.id);if(!product)continue;
