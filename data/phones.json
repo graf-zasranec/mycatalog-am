@@ -7156,14 +7156,17 @@
     "popularity": 82,
     "accent": "#1F2430",
     "display": {
-      "type": "LTPO OLED"
+      "type": "LTPO OLED",
+      "size": 1.57,
+      "resolution": "394x324"
     },
     "body": {
       "materials": "Aluminium case",
       "ip": "50 m water resistant"
     },
     "battery": {
-      "life": "Up to 18 hours (32 hours in Low Power Mode)"
+      "life": "Up to 18 hours (32 hours in Low Power Mode)",
+      "capacity": 245
     },
     "connectivity": {
       "network": "GPS, or GPS + Cellular",
@@ -7290,14 +7293,18 @@
     "popularity": 88,
     "accent": "#26262A",
     "display": {
-      "type": "LTPO OLED Always-On"
+      "type": "LTPO OLED Always-On",
+      "size": 1.77,
+      "resolution": "446x374"
     },
     "body": {
       "materials": "Aluminium or titanium case",
-      "ip": "IP6X, 50 m water resistant"
+      "ip": "IP6X, 50 m water resistant",
+      "weight": 38
     },
     "battery": {
-      "life": "24 hours"
+      "life": "24 hours",
+      "capacity": 327
     },
     "connectivity": {
       "network": "GPS, or GPS + Cellular",
@@ -45422,14 +45429,18 @@
     "popularity": 78,
     "accent": "#26262A",
     "display": {
-      "type": "Super AMOLED Always-On"
+      "type": "Super AMOLED Always-On",
+      "size": 1.47,
+      "resolution": "480x480"
     },
     "body": {
       "materials": "Aluminium case",
-      "ip": "IP68, 5 ATM"
+      "ip": "IP68, 5 ATM",
+      "weight": 30
     },
     "battery": {
-      "life": "40 hours"
+      "life": "40 hours",
+      "capacity": 435
     },
     "variantUnit": "mm",
     "variants": [
@@ -60462,7 +60473,8 @@
       "resolution": "212x520"
     },
     "body": {
-      "ip": "5 ATM"
+      "ip": "5 ATM",
+      "weight": 16
     },
     "battery": {
       "capacity": 233,
