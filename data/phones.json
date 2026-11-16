@@ -14628,24 +14628,31 @@
         "priceAmd": 159900
       }
     ],
-    "audio": {},
+    "audio": {
+      "driver": "2.5-inch Unidome",
+      "type": "Mains-powered home speaker"
+    },
     "connectivity": {
       "network": "Wi-Fi and Bluetooth",
-      "wifi": "Wi-Fi 5"
+      "ports": "3.5 mm AUX input"
     },
     "battery": {},
     "summaryEn": "The small Wi-Fi Bose: six preset buttons and a room-filling sound from one box.",
-    "unsure": [
-      "audio.power"
-    ],
+    "unsure": [],
     "body": {
       "weight": 1400
     },
     "specNA": {
-      "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)"
+      "connectivity.bluetooth": "Bose publishes no Bluetooth version for this model (bose.com, support.bose.com, search for a quoted version found none)",
+      "audio.power": "Bose does not publish rated audio output power",
+      "connectivity.wifi": "Bose does not specify the Wi-Fi generation in the owner’s guide"
     },
     "colors": [
       "Black"
+    ],
+    "sources": [
+      "https://www.bose.com/pressroom/bose-announces-next-generation-soundtouch-wireless-systems-with-bluetooth-and-wi-fi",
+      "https://assets.bose.com/content/dam/Bose_DAM/Web/consumer_electronics/global/products/speakers/soundtouch_10_wireless_music_system/pdf/785169_og_soundtouch-10-wireless-system_en.pdf"
     ]
   },
   {
@@ -29533,7 +29540,9 @@
       "size": 15.6,
       "type": "IPS LCD",
       "touch": false,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 144,
+      "brightness": 300
     },
     "chipset": {
       "name": "Intel Core 5 210H"
@@ -29550,10 +29559,14 @@
       }
     ],
     "battery": {
-      "capacity": 70
+      "capacity": 52.5
     },
-    "connectivity": {},
-    "os": "Windows 11",
+    "connectivity": {
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.4",
+      "ports": "2× USB-A 5 Gbps, USB-C 5 Gbps (PD 3.1, DP 1.4a), HDMI 2.1, Gigabit Ethernet, 3.5 mm combo jack, AC input"
+    },
+    "os": "FreeDOS 3.0",
     "colors": [
       "Mica Silver"
     ],
@@ -29562,10 +29575,10 @@
       "popularity"
     ],
     "body": {
-      "weight": 2290
+      "weight": 2290,
+      "dimensions": "357.9 × 255 × 23.5 mm"
     },
     "sources": [
-      "https://www.notebookcheck.net/",
       "https://www.hp.com/kz-ru/products/laptops/product-details/product-specifications/2103985993",
       "https://kaas.hpcloud.hp.com/pdf-public/pdf_11551870_en-US-1.pdf"
     ]
@@ -50716,12 +50729,13 @@
     ],
     "battery": {},
     "body": {
-      "materials": "Plastic tower with removable side panels"
+      "materials": "Plastic tower with removable side panels",
+      "dimensions": "358 × 96 × 216 mm"
     },
     "connectivity": {
       "wifi": "Wi-Fi 6",
       "bluetooth": "5.1",
-      "ports": "HDMI 2.1, 2x USB-C, 2x USB-A, Gigabit Ethernet"
+      "ports": "HDMI 2.1, 2× USB-A (10 Gbps), USB-C (10 Gbps), USB-C (Hi-Speed), Gigabit Ethernet, M.2 SSD expansion, disc drive connector"
     },
     "cardSlot": false,
     "os": "PlayStation 5 system software",
@@ -50731,6 +50745,13 @@
     "summaryEn": "The current PlayStation 5 Slim with the Ultra HD Blu-ray disc drive.",
     "unsure": [
       "popularity"
+    ],
+    "specNA": {
+      "body.weight": "Depends on the CFI-20xx or CFI-21xx hardware revision"
+    },
+    "sources": [
+      "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps5-docs/2100ab/CFI-21XX_PS5_Instruction_Manual_Web%24en.pdf",
+      "https://www.playstation.com/content/dam/global_pdc/cs/corporate/support/manuals/ps5-docs/2000ab/CFI-20XX-B30_PS5_Safety_Guide_Web%24cs.pdf"
     ]
   },
   {
@@ -95133,12 +95154,13 @@
     ],
     "battery": {},
     "body": {
-      "materials": "Plastic tower with removable side panels"
+      "materials": "Plastic tower with removable side panels",
+      "dimensions": "358 × 80 × 216 mm"
     },
     "connectivity": {
       "wifi": "Wi-Fi 6",
       "bluetooth": "5.1",
-      "ports": "HDMI 2.1, 2x USB-C, 2x USB-A, Gigabit Ethernet"
+      "ports": "HDMI 2.1, 2× USB-A (10 Gbps), USB-C (10 Gbps), USB-C (Hi-Speed), Gigabit Ethernet, M.2 SSD expansion, disc drive connector"
     },
     "cardSlot": false,
     "os": "PlayStation 5 system software",
@@ -95152,8 +95174,13 @@
     "sources": [
       "https://direct.playstation.com/en-us/buy-consoles/playstation5-digital-edition-console-825-gb",
       "https://vesta.am/hamakargichner-monitorner/tesaxagher/sony-ps5-slim-digital-1tb-game-pack-top-bundle",
-      "https://www.playstation.com/en-gb/ps5/ps5-tech-specs/"
-    ]
+      "https://www.playstation.com/en-gb/ps5/ps5-tech-specs/",
+      "https://www.playstation.com/content/dam/global_pdc/en/corporate/support/manuals/ps5-docs/2100ab/CFI-21XX_PS5_Instruction_Manual_Web%24en.pdf",
+      "https://www.playstation.com/content/dam/global_pdc/cs/corporate/support/manuals/ps5-docs/2000ab/CFI-20XX-B30_PS5_Safety_Guide_Web%24cs.pdf"
+    ],
+    "specNA": {
+      "body.weight": "Depends on the CFI-20xx or CFI-21xx hardware revision"
+    }
   },
   {
     "id": "apple-airpods-max-lightning-2020",
@@ -110352,16 +110379,18 @@
       "resolution": "466x466"
     },
     "battery": {
-      "capacity": 524,
-      "life": "14 days"
+      "life": "14 days maximum, 9 days typical, 5 days with always-on display"
     },
     "body": {
-      "ip": "5 ATM",
-      "weight": 48
+      "ip": "5 ATM, IP69K",
+      "weight": 48,
+      "dimensions": "45.8 × 45.8 × 10.7 mm"
     },
     "connectivity": {
       "bluetooth": "5.2",
-      "nfc": true
+      "nfc": true,
+      "gps": "Dual-band GNSS (L1/L5)",
+      "network": "Bluetooth, no cellular"
     },
     "os": "HarmonyOS",
     "colors": [
@@ -110369,7 +110398,8 @@
     ],
     "summaryEn": "Huawei's round everyday watch: a 1.43-inch AMOLED screen and up to two weeks between charges.",
     "sources": [
-      "https://consumer.huawei.com/bd/wearables/watch-gt5/specs"
+      "https://consumer.huawei.com/bd/wearables/watch-gt5/specs",
+      "https://consumer.huawei.com/sg/wearables/watch-gt5/specs/"
     ],
     "unsure": [
       "popularity"
@@ -110382,7 +110412,10 @@
         "storage": null,
         "priceAmd": 139000
       }
-    ]
+    ],
+    "specNA": {
+      "battery.capacity": "Not published in Huawei’s official specifications"
+    }
   },
   {
     "id": "amazfit-bip-6",
