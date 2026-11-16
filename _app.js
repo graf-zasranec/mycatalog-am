@@ -91,7 +91,7 @@ const X = {
     heroCta: 'Որտեղ է ամենաշահավետը', heroCta2: 'Դիտել կատալոգը',
     tbNote: 'Գները դրամով · ցուցադրական տվյալներ', best: 'լավագույնը',
     footNote: 'Ցուցադրական նախագիծ։ Գները ուղղորդիչ են և չեն թարմացվում խանութներից։',
-    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց', streamer: 'Մեդիա նվագարկիչներ', smartglasses: 'Խելացի ակնոցներ', vacuum: 'Փոշեկուլներ', coffee: 'Սրճեփեր', haircare: 'Մազերի խնամք', grooming: 'Անձնական խնամք', largeappliance: 'Խոշոր կենցաղային տեխնիկա', kitchen: 'Խոհանոցային տեխնիկա', projector: 'Պրոյեկտորներ', purifier: 'Օդի մաքրիչներ', climate: 'Կլիմայական տեխնիկա', graphicstablet: 'Գրաֆիկական պլանշետներ', accessory: 'Apple աքսեսուարներ', camera: 'Ֆոտոխցիկներ', powerbank: 'Արտաքին մարտկոցներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
+    emptyT: 'Ոչինչ չի գտնվել', seeAll: 'Տեսնել բոլորը', filtersShow: 'Բոլոր զտիչները', filtersHide: 'Թաքցնել զտիչները', handSeen: 'չստուգված', handTip: 'Այս գինը գրանցվել է ձեռքով և այսօր չի ստուգվել խանութի կայքում', stockUnknown: 'առկայությունը հայտնի չէ', seenTip: 'Այս գինը վերջին անգամ ստուգվել է այս օրը', seenOn: 'ստուգված՝ {d}', allOffersN: 'Բոլոր {n} առաջարկները {from}', searchShort: 'Փնտրել ապրանք', navCmpShort: 'Համեմատել', catAll: 'Բոլորը', applyF: 'Կիրառել', clearF: 'Մաքրել', catsMore: 'Այլ բաժիններ', catsFewer: 'Ավելի քիչ', panelF: 'Էկրանի տեսակ', yearF: 'Թողարկման տարի', osF: 'Օպերացիոն համակարգ', cats: { phone: 'Հեռախոսներ', tablet: 'Պլանշետներ', watch: 'Խելացի ժամացույցներ', earbuds: 'Ականջակալներ', headphones: 'Ականջակալներ', speaker: 'Բարձրախոսներ', console: 'Խաղային կոնսոլներ', laptop: 'Նոութբուքեր', desktop: 'Համակարգիչներ', appliance: 'Կենցաղային տեխնիկա', ereader: 'Էլ. ընթերցիչներ', monitor: 'Մոնիտորներ', component: 'Մասնագործեր', tv: 'Հեռուստացույցներ', drone: 'Դրոններ և նկարահանում', network: 'Ինտերնետ և ցանց', streamer: 'Մեդիա նվագարկիչներ', smartglasses: 'Խելացի ակնոցներ', vacuum: 'Փոշեկուլներ', coffee: 'Սուրճի սարքեր', haircare: 'Մազերի խնամք', grooming: 'Անձնական խնամք', largeappliance: 'Խոշոր կենցաղային տեխնիկա', kitchen: 'Խոհանոցային տեխնիկա', projector: 'Պրոյեկտորներ', purifier: 'Օդի մաքրիչներ', climate: 'Կլիմայական տեխնիկա', graphicstablet: 'Գրաֆիկական պլանշետներ', accessory: 'Apple աքսեսուարներ', camera: 'Ֆոտոխցիկներ', powerbank: 'Արտաքին մարտկոցներ' }, emptyS: 'Փորձի՛ր փոխել զտիչները։',
     shops: 'խանութ', offersTitle: 'Գներ Հայաստանի խանութներում', bestPrice: 'Լավագույն գին', bestShort: 'Լավագույն', checkPrices: 'Ստուգել գները', cwTitle: 'Համեմատել՝', cwNewer: 'Նոր մոդել', cwOlder: 'Նախորդ մոդել', cwStronger: 'Ավելի հզոր', cwAlt: 'Այլընտրանք', nfT: 'Ապրանքը չի գտնվել', nfS: 'Հղումը հին է կամ սխալ։ Փորձի՛ր որոնումը կամ նայի՛ր այս ապրանքները։', nfCats: 'Բաժիններ', cmpPrice: 'Գինը', cwCheaper: 'Ավելի ցածր գին', cwStepup: 'Ավելի բարձր դաս', cwBigger: 'Ավելի մեծ էկրան', cwSmaller: 'Ավելի փոքր էկրան',  pgPrev: 'Նախորդ էջ', pgNext: 'Հաջորդ էջ', 
     goShop: 'Դեպի խանութ', noOffers: 'Առցանց առաջարկներ չեն գտնվել', estimated: 'Գնահատված գին', notSold: 'Հասանելի չէ',
     checkColorHint: 'Խանութը այս գույնի համար առանձին էջ չունի. հղումը տանում է նույն մոդելին', updated: 'Թարմացվել է', priceSrc: 'Գները վերցված են խանութների կայքերից', disclaim: 'Մենք միայն ցույց ենք տալիս խանութների էջերը. վաճառող չենք և պատասխանատվություն չենք կրում', from: '-ից',
@@ -129,7 +129,7 @@ const X = {
     heroCta: 'Где выгоднее всего', heroCta2: 'Открыть каталог',
     tbNote: 'Цены в драмах · демо-данные', best: 'лучшее',
     footNote: 'Демо-проект. Цены ориентировочные и не обновляются из магазинов.',
-    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети', streamer: 'Медиаплееры', smartglasses: 'Умные очки', vacuum: 'Пылесосы', coffee: 'Кофемашины', haircare: 'Уход за волосами', grooming: 'Личный уход', largeappliance: 'Крупная бытовая техника', kitchen: 'Кухонная техника', projector: 'Проекторы', purifier: 'Очистители воздуха', climate: 'Климатическая техника', graphicstablet: 'Графические планшеты', accessory: 'Аксессуары Apple', camera: 'Фотоаппараты', powerbank: 'Пауэрбанки' }, emptyS: 'Попробуйте изменить фильтры.',
+    emptyT: 'Ничего не найдено', seeAll: 'Показать все результаты', filtersShow: 'Все фильтры', filtersHide: 'Скрыть фильтры', handSeen: 'не проверено', handTip: 'Цена записана вручную и сегодня на сайте магазина не проверялась', stockUnknown: 'наличие неизвестно', seenTip: 'Эта цена в последний раз проверялась в этот день', seenOn: 'проверено {d}', allOffersN: 'Все {N} {from}', searchShort: 'Поиск товара', catAll: 'Все', applyF: 'Применить', clearF: 'Сбросить', catsMore: 'Другие разделы', catsFewer: 'Свернуть', panelF: 'Тип экрана', yearF: 'Год выпуска', osF: 'Операционная система', cats: { phone: 'Смартфоны', tablet: 'Планшеты', watch: 'Смарт-часы', earbuds: 'Наушники', headphones: 'Наушники', speaker: 'Колонки', console: 'Игровые консоли', laptop: 'Ноутбуки', desktop: 'Компьютеры', appliance: 'Бытовая техника', ereader: 'Электронные книги', monitor: 'Мониторы', component: 'Комплектующие', tv: 'Телевизоры', drone: 'Дроны и съёмка', network: 'Интернет и сети', streamer: 'Медиаплееры', smartglasses: 'Умные очки', vacuum: 'Пылесосы', coffee: 'Техника для кофе', haircare: 'Уход за волосами', grooming: 'Личный уход', largeappliance: 'Крупная бытовая техника', kitchen: 'Кухонная техника', projector: 'Проекторы', purifier: 'Очистители воздуха', climate: 'Климатическая техника', graphicstablet: 'Графические планшеты', accessory: 'Аксессуары Apple', camera: 'Фотоаппараты', powerbank: 'Пауэрбанки' }, emptyS: 'Попробуйте изменить фильтры.',
     shops: 'магазина', offersTitle: 'Цены в магазинах Армении', bestPrice: 'Лучшая цена', bestShort: 'Лучшая', checkPrices: 'Проверить цены', cwTitle: 'Сравнить с', cwNewer: 'Новая модель', cwOlder: 'Предыдущая модель', cwStronger: 'Мощнее', cwAlt: 'Альтернатива', nfT: 'Товар не найден', nfS: 'Ссылка устарела или неверна. Попробуйте поиск или посмотрите эти товары.', nfCats: 'Разделы', cmpPrice: 'Цена', cwCheaper: 'Дешевле', cwStepup: 'Классом выше', cwBigger: 'Экран больше', cwSmaller: 'Экран меньше',  pgPrev: 'Предыдущая страница', pgNext: 'Следующая страница', 
     goShop: 'В магазин', noOffers: 'Онлайн-предложений не найдено', estimated: 'Оценочная цена', notSold: 'Недоступно',
     checkColorHint: 'У магазина нет отдельной страницы для этого цвета: ссылка ведёт на ту же модель', updated: 'Обновлено', priceSrc: 'Цены взяты с сайтов магазинов', disclaim: 'Мы лишь показываем страницы магазинов: не продавец и ответственности не несём', from: 'от ',
@@ -164,7 +164,7 @@ const X = {
     heroCta: 'Where you save most', heroCta2: 'Browse the catalogue',
     tbNote: 'Prices in dram · demo data', best: 'best',
     footNote: 'Demo project. Prices are indicative and are not a live shop feed.',
-    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking', streamer: 'Streaming players', smartglasses: 'Smart glasses', vacuum: 'Vacuum cleaners', coffee: 'Coffee machines', haircare: 'Hair care', grooming: 'Personal care', largeappliance: 'Large appliances', kitchen: 'Kitchen', projector: 'Projectors', purifier: 'Air purifiers', climate: 'Climate', graphicstablet: 'Graphics tablets', accessory: 'Apple accessories', camera: 'Cameras', powerbank: 'Power banks' }, emptyS: 'Try changing the filters.',
+    emptyT: 'No results', seeAll: 'See all results', filtersShow: 'All filters', filtersHide: 'Hide filters', handSeen: 'not checked', handTip: 'Recorded by hand and not verified on the shop’s site today', stockUnknown: 'stock not known', seenTip: 'The day this price was last read from the shop', seenOn: 'checked {d}', allOffersN: 'All {N} {from}', searchShort: 'Search products', catAll: 'All', applyF: 'Apply', clearF: 'Clear', catsMore: 'More sections', catsFewer: 'Fewer', panelF: 'Screen type', yearF: 'Year', osF: 'Operating system', cats: { phone: 'Phones', tablet: 'Tablets', watch: 'Smartwatches', earbuds: 'Earbuds', headphones: 'Headphones', speaker: 'Speakers', console: 'Consoles', laptop: 'Laptops', desktop: 'Desktops', appliance: 'Home appliances', ereader: 'E-readers', monitor: 'Monitors', component: 'Components', tv: 'TVs', drone: 'Drones & filming', network: 'Internet & networking', streamer: 'Streaming players', smartglasses: 'Smart glasses', vacuum: 'Vacuum cleaners', coffee: 'Coffee equipment', haircare: 'Hair care', grooming: 'Personal care', largeappliance: 'Large appliances', kitchen: 'Kitchen', projector: 'Projectors', purifier: 'Air purifiers', climate: 'Climate', graphicstablet: 'Graphics tablets', accessory: 'Apple accessories', camera: 'Cameras', powerbank: 'Power banks' }, emptyS: 'Try changing the filters.',
     shops: 'shops', offersTitle: 'Prices in Armenian shops', bestPrice: 'Best price', bestShort: 'Best', checkPrices: 'Check prices', cwTitle: 'Compare with', cwNewer: 'Newer model', cwOlder: 'Previous model', cwStronger: 'More powerful', cwAlt: 'Alternative', nfT: 'Product not found', nfS: 'The link is old or wrong. Try the search, or look at these instead.', nfCats: 'Sections', cmpPrice: 'Price', cwCheaper: 'Cheaper', cwStepup: 'Step up', cwBigger: 'Bigger screen', cwSmaller: 'Smaller screen',  pgPrev: 'Previous page', pgNext: 'Next page', 
     goShop: 'Go to shop', noOffers: 'No online offers found', estimated: 'Estimated price', notSold: 'Not available',
     checkColorHint: 'The shop publishes no page for this colour: the link goes to the same model', updated: 'Updated', priceSrc: 'Prices taken from the shops’ own sites', disclaim: 'We only show the shops’ own pages: not a seller, and no responsibility taken', from: 'from ',
@@ -1025,7 +1025,7 @@ const ASK = {
   speaker:    ['spk', 'life', 'weight', 'water', 'year'],
   appliance:  ['atype', 'apower', 'year'],
   vacuum:     ['atype', 'apower', 'batt', 'weight', 'year'],
-  coffee:     ['apower', 'avol', 'year'],
+  coffee:     ['atype', 'apower', 'avol', 'year'],
   haircare:   ['atype', 'apower', 'year'],
   grooming:   ['atype', 'life', 'year'],
   largeappliance: ['atype', 'avol', 'aload', 'abtu', 'asets', 'year'],
@@ -2013,7 +2013,15 @@ const countView = () => {
 
 // Categories are navigation, not a filter: one always-visible row, current item marked.
 // Counts come from the data, so a category appears the moment its first item lands.
-function catTabs(){return "";}
+function catTabs() {
+  if (st.cat !== 'coffee') return '';
+  const available = new Set(inView().map(p => p.appliance?.type));
+  const types = ['', ...['capsule_coffee', 'automatic_coffee', 'coffee_grinder'].filter(type => available.has(type))];
+  if (types.length < 2) return '';
+  return `<div class="ctabs coffee-tabs" role="group" aria-label="${esc(x('atypeF'))}">${types.map(type =>
+    `<button class="ctab" type="button" data-coffee-type="${type}" aria-pressed="false">${esc(type ? t('section.' + type) : x('catAll'))}</button>`
+  ).join('')}</div>`;
+}
 
 // One stroke icon per section, drawn on a 24px grid (stroke, no fill - see .ctab svg)
 const CAT_ICON = {
@@ -2152,11 +2160,12 @@ function refresh() {
   $('#chips').innerHTML = ch.map(([k, l]) =>
     `<button class="chip" data-rm="${esc(k)}">${esc(l)}<span aria-hidden="true">×</span></button>`).join('') +
     (ch.length ? `<button class="chip clear" data-rm="all">${esc(t('common.reset'))}</button>` : '');
-  // The tab counts are taken within the active query, so they go stale the moment the query
-  // changes - clearing the search box left "All 3" sitting above 36 cards. Repaint them here,
-  // where every filter change already lands.
-  const tabs = $('.ctabs');
-  if (tabs) tabs.outerHTML = catTabs();
+  for (const button of $$('[data-coffee-type]')) {
+    const type = button.dataset.coffeeType;
+    const active = type ? st.atypes.length === 1 && st.atypes[0] === type : !st.atypes.length;
+    button.classList.toggle('on', active);
+    button.setAttribute('aria-pressed', String(active));
+  }
   syncFilters(); save();
   canonicalLinks();
   moneyFx();     // the grid is rebuilt here on every filter change, not only on a route change
@@ -3410,6 +3419,15 @@ document.addEventListener('click', e => {
   }
   const tg = e.target.closest('button[data-f]');
   if (tg) { const k = tg.dataset.f; st[k] = !st[k]; refresh(); return; }
+  const coffeeType = e.target.closest('[data-coffee-type]');
+  if (coffeeType) {
+    const type = coffeeType.dataset.coffeeType;
+    st.atypes = type ? [type] : [];
+    st.page = 1;
+    if (location.hash.startsWith('#/c/coffee/')) history.replaceState(history.state, '', '#/c/coffee');
+    refresh();
+    return;
+  }
   const ap = e.target.closest('[data-apply]');
   if (ap) { commitPanel(ap.closest('.fdrop'), ap.dataset.apply); return; }
   const cl = e.target.closest('[data-clear]');
