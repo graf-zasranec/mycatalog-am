@@ -49103,16 +49103,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele",
-      "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/",
-      "https://www.rtings.com/tv/reviews/samsung/m80h"
+      "https://www.samsung.com/ru/tvs/mini-led-tv/m80h-65-inch-4k-smart-tv-ue65m80hauxpy/"
     ],
     "aliases": [
       "UE65M80HAUXPY"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3× HDMI with up to 4K144, eARC"
+    }
   },
   {
     "id": "samsung-ue65u8000fuxru",
@@ -49144,14 +49145,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "https://www.samsung.com/ru/tvs/uhd-4k-tv/u8000f-65-inch-crystal-uhd-4k-smart-tv-ue65u8000fuxru/"
     ],
     "aliases": [
       "UE65U8000FUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3× HDMI with up to 4K60, USB-A"
+    }
   },
   {
     "id": "samsung-ue65u8000huxpy",
@@ -49183,15 +49187,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele",
-      "https://images.samsung.com/is/content/samsung/assets/au/tvs/product-specs/U8000H-Spec-Sheet-12082026.pdf"
+      "https://www.samsung.com/az/tvs/uhd-4k-tv/u8000h-65-inch-crystal-uhd-4k-smart-tv-ue65u8000huxpy/"
     ],
     "aliases": [
       "UE65U8000HUXPY"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3× HDMI with up to 4K60"
+    }
   },
   {
     "id": "samsung-ue75m70hauxpy",
@@ -50122,7 +50128,8 @@
       "size": 65,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG, Dolby Vision"
     },
     "variants": [
       {
@@ -50138,11 +50145,14 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "https://www.sony.com/electronics/support/televisions-projectors-lcd-tvs-android-/k-65s30/specifications"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with up to 4K60, 2× USB"
+    }
   },
   {
     "id": "sony-k-65xr50",
@@ -51966,7 +51976,8 @@
       "size": 65,
       "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 144,
+      "hdr": "HDR10+, Dolby Vision IQ"
     },
     "variants": [
       {
@@ -51982,7 +51993,7 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "https://www.tcl.com/content/dam/brandsite/region/australia/products/tv/c-series/c6k/downloads/65C6K_Specs.pdf"
     ],
     "colors": [
       "Black"
@@ -52002,7 +52013,8 @@
       "size": 65,
       "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 144,
+      "hdr": "HLG, Dolby Vision IQ"
     },
     "variants": [
       {
@@ -52018,7 +52030,7 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "https://static-obg.tcl.com/content/dam/brandsite/region/japan/products/tv/c-series/c7l/user-manual-55-85c7l.pdf"
     ],
     "colors": [
       "Black"
@@ -52038,7 +52050,8 @@
       "size": 65,
       "type": "QLED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 144,
+      "hdr": "HLG, Dolby Vision"
     },
     "variants": [
       {
@@ -52054,7 +52067,7 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "https://www.tcl.com/content/dam/brandsite/region/japan/products/tv/p-series/p8k/P8K_%E5%8F%96%E6%89%B1%E8%AA%AC%E6%98%8E%E6%9B%B8.pdf"
     ],
     "colors": [
       "Black"
@@ -52072,9 +52085,9 @@
     "accent": "#5C6470",
     "display": {
       "size": 65,
-      "type": "QD Mini-LED",
+      "type": "QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 144
     },
     "variants": [
       {
@@ -52090,8 +52103,7 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele",
-      "https://www.tcl.com/global/en/support/model/65p8l"
+      "https://www.tcl.com/uk/en/tvs/65p8l"
     ],
     "colors": [
       "Black"
@@ -52111,7 +52123,8 @@
       "size": 65,
       "type": "QLED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HLG"
     },
     "variants": [
       {
@@ -52127,7 +52140,7 @@
     ],
     "os": "Google TV",
     "sources": [
-      "kitele"
+      "https://static-obg.tcl.com/content/dam/brandsite/region/japan/products/tv/t-series/t6d/t6d-user-manual.pdf?t=1781059897292"
     ],
     "colors": [
       "Black"
