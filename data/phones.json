@@ -31379,13 +31379,16 @@
     "audio": {
       "anc": false,
       "form": "neckband",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "8.6 mm dynamic driver",
+      "impedance": 16
     },
     "battery": {
       "life": "16 hours"
     },
     "connectivity": {
-      "bluetooth": "5.0"
+      "bluetooth": "5.0",
+      "ports": "USB-C charging"
     },
     "summaryEn": "A neckband pair with sixteen hours in it, for the price of a cable.",
     "body": {
@@ -31398,7 +31401,11 @@
       "Coral",
       "Black",
       "White"
-    ]
+    ],
+    "specNA": {
+      "body.ip": "Not published by JBL",
+      "audio.codecs": "Not published by JBL"
+    }
   },
   {
     "id": "jbl-tune-130-tws",
@@ -36958,7 +36965,8 @@
       "size": 65,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -36972,14 +36980,16 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 26",
     "sources": [
-      "kitele",
-      "https://www.lg.com/us/tvs/lg-55nu850baua-4k-uhd-tv"
+      "https://www.lg.com/uk/tvs-soundbars/nano-4k-uhd/65nu850b6la/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3× HDMI (eARC on HDMI 2), USB-A 2.0, Ethernet"
+    }
   },
   {
     "id": "lg-65qned70a6a",
@@ -37029,7 +37039,8 @@
       "size": 65,
       "type": "QNED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37039,18 +37050,20 @@
       }
     ],
     "battery": {},
-    "summaryEn": "A 65-inch QNED Mini-LED television.",
+    "summaryEn": "A 65-inch edge-lit QNED television.",
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 25",
     "sources": [
-      "kitele",
       "https://www.lg.com/uk/tvs-soundbars/qned/65qned80a6a/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3× HDMI (eARC on HDMI 2), 2× USB-A 2.0, Ethernet, optical audio"
+    }
   },
   {
     "id": "lg-65qned80b6b",
@@ -37066,7 +37079,8 @@
       "size": 65,
       "type": "QNED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37080,14 +37094,16 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 26",
     "sources": [
-      "kitele",
-      "https://www.lg.com/es/tv-y-barras-de-sonido/qned-evo/65qned80b6b/"
+      "https://www.lg.com/ru/televisions/lg-65qned80b6b"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "3× HDMI (eARC on HDMI 2), USB-A 2.0, Ethernet, optical audio"
+    }
   },
   {
     "id": "lg-65qned86t6a",
@@ -37103,7 +37119,8 @@
       "size": 65,
       "type": "QNED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 120,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37117,14 +37134,16 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 24",
     "sources": [
-      "kitele",
-      "https://www.lg.com/uk/tvs-soundbars/qned/65qned86t6a/"
+      "https://www.lg.com/de/tvs-und-soundbars/qned/65qned86t6a/"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with 4K120 and VRR (eARC on HDMI 3), 2× USB-A 2.0, Ethernet, optical audio"
+    }
   },
   {
     "id": "lg-65ua75009la",
@@ -37140,7 +37159,8 @@
       "size": 65,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -37154,10 +37174,9 @@
     "unsure": [
       "popularity"
     ],
-    "os": "webOS",
+    "os": "webOS 25",
     "sources": [
-      "kitele",
-      "https://www.lg.com/uz_ru/televisions/lg-65ua75009la"
+      "https://www.lg.com/kz/tvs-soundbars/4k-uhd-tvs/65ua75009la/"
     ],
     "colors": [
       "Black"
@@ -161125,17 +161144,22 @@
       }
     ],
     "audio": {
-      "power": "40 W"
+      "power": "40 W RMS (25 W woofer + 15 W tweeter)",
+      "driver": "62 × 82 mm woofer and 20 mm tweeter",
+      "type": "Portable Bluetooth speaker"
     },
     "battery": {
-      "life": "12 hours"
+      "life": "12 hours",
+      "capacity": 3300
     },
     "body": {
       "ip": "IP67",
-      "weight": 735
+      "weight": 735,
+      "dimensions": "216 × 84 × 81 mm"
     },
     "connectivity": {
-      "bluetooth": "5.4"
+      "bluetooth": "5.4",
+      "ports": "USB-C charging"
     },
     "summaryEn": "Harman Kardon Luna 2 portable speaker.",
     "unsure": [
@@ -161147,9 +161171,11 @@
       "Mint"
     ],
     "sources": [
-      "https://b2b.legit.si/hkluna2wsdeu",
-      "https://www.binglee.com.au/products/luna-2-portable-bt-speaker-black-hkluna2blk"
-    ]
+      "https://global.harmankardon.com/bluetooth-speakers/LUNA-2.html"
+    ],
+    "specNA": {
+      "audio.codecs": "Not published by Harman Kardon"
+    }
   },
   {
     "id": "jbl-tune-buds-2",
@@ -161174,22 +161200,21 @@
     ],
     "display": {},
     "battery": {
-      "life": "12 hours"
+      "life": "Up to 10 hours with ANC (40 with case), 12 hours without ANC (48 with case)",
+      "capacity": 68
     },
     "audio": {
       "conn": "wireless",
       "form": "tws",
-      "anc": true
+      "anc": true,
+      "driver": "10 mm dynamic driver"
     },
     "connectivity": {
       "bluetooth": "5.3"
     },
     "summaryEn": "JBL Tune Buds 2.",
     "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
       "Black",
@@ -161197,11 +161222,16 @@
       "Teal"
     ],
     "sources": [
-      "https://support.jbl.com/all-headphones/TUNE-BUDS-2.html",
-      "https://audio46.com/blogs/headphones/jbl-tune-buds-2-review"
+      "https://global.jbl.com/wireless-earbuds/TUNE-BUDS-2.html",
+      "https://www.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dw324abb14/pdfs/JBL_TUNE_BUDS_2_Specsheet_EN.pdf"
     ],
     "body": {
-      "weight": 5.5
+      "weight": 5.5,
+      "ip": "IP54 (earbuds)",
+      "dimensions": "22.9 × 15.6 × 19.7 mm per earbud"
+    },
+    "specNA": {
+      "audio.codecs": "Not published in the JBL spec sheet"
     }
   },
   {
