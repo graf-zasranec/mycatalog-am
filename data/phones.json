@@ -2222,19 +2222,25 @@
       "anc": true,
       "transparency": true,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "Apple-designed dynamic driver",
+      "microphones": 9
     },
     "battery": {
       "playback": 20,
-      "life": "20 hours"
+      "life": "Up to 20 hours with active noise cancellation"
     },
     "body": {
       "materials": "Aluminium ear cups, stainless steel headband",
-      "weight": 386.2
+      "weight": 386.2,
+      "height": 187.3,
+      "width": 168.6,
+      "depth": 83.4
     },
     "connectivity": {
       "bluetooth": "5.3",
-      "wireless": "USB-C charging"
+      "wireless": "USB-C charging",
+      "ports": "USB-C charging and lossless audio"
     },
     "variants": [
       {
@@ -5720,8 +5726,7 @@
     },
     "battery": {
       "capacity": 3149,
-      "wireless": 20,
-      "wired": 20
+      "wireless": 20
     },
     "body": {
       "height": 156.2,
@@ -5749,8 +5754,13 @@
     ],
     "category": "phone",
     "sources": [
-      "kimovil"
-    ]
+      "kimovil",
+      "https://images.apple.com/ie/iphone-air/specs/",
+      "https://regulatoryinfo.apple.com/cwt/api/ext/file?fileId=energyLabels%2FA3517_V1%2FA3517%2FA3517_Product_Information_Sheet_EN_EU.pdf"
+    ],
+    "specNA": {
+      "battery.wired": "Apple specifies the adapter for its fast-charge test but does not publish a device maximum"
+    }
   },
   {
     "id": "apple-mac-mini-m4",
