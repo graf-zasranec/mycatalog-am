@@ -7,3 +7,5 @@
 - wacom-cintiq-16-dtk168, wacom-cintiq-pro-24(-touch): Wacom estore official product images, flood-cut
 - jbl-quantum-400/810/100p, jbl-vibe-buds-2 (black, white), jbl-vibe-beam-2, lenovo-legion-h600: Amazon hiRes listing images (amazon.de / amazon.co.uk), Vision cut
 - nothing-cmf-watch-3-pro (dark-gray, orange, light-gray): Amazon hiRes listing images (amazon.com), Vision cut
+- Redmi Pad Graphite Gray, front and back render from the Grover product listing. [Source image](https://res-5.cloudinary.com/grover/image/upload/v1666865044/ms4stsrcagaaeafjs7vc.png)
+- Redmi Watch 6 Lite Black, render for the exact finish from Geizhals. PhotoRoom filled the strap openings, which were restored using the source transparency. [Source image](https://gzhls.at/pix/74/34/74347ddbd0249722-n.webp)
