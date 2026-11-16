@@ -3690,10 +3690,11 @@
       "wifi": "Wi-Fi 6E",
       "bluetooth": "5.3",
       "nfc": false,
-      "sim": "Wi-Fi only"
+      "sim": "Wi-Fi only",
+      "ports": "USB-C (USB 3 up to 10 Gbps, DisplayPort), Smart Connector"
     },
     "cardSlot": false,
-    "os": "iPadOS 18",
+    "os": "iPadOS 26",
     "variants": [
       {
         "ram": 8,
@@ -3753,8 +3754,9 @@
       "iPad Air 13 2025"
     ],
     "sources": [
-      "kimovil",
-      "https://support.apple.com/en-za/122242"
+      "https://support.apple.com/en-za/122242",
+      "https://support.apple.com/en-ie/122241",
+      "https://www.apple.com/ipados/ipados-26/"
     ]
   },
   {
@@ -40500,7 +40502,7 @@
       "refresh": 120,
       "ppi": 526,
       "brightness": 3200,
-      "protection": "Gorilla Glass Victus 2"
+      "protection": "POCO Shield Glass"
     },
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite",
@@ -40522,8 +40524,8 @@
     ],
     "camera": {
       "modules": 3,
-      "main": "50 MP, f/1.6, 24mm wide, Light Hunter 800 sensor, OIS",
-      "ultrawide": "32 MP, f/2.0, 15mm, 119-degree",
+      "main": "50 MP, f/1.6, Light Fusion 800, OIS",
+      "ultrawide": "32 MP, f/2.2, 120°",
       "telephoto": "50 MP, f/2.0, 60mm, 2.5x optical zoom, OIS",
       "front": "32 MP, f/2.2",
       "video": "8K@24fps"
@@ -40534,9 +40536,9 @@
       "wireless": 50
     },
     "body": {
-      "height": 160.3,
-      "width": 75,
-      "thickness": 8.4,
+      "height": 160.26,
+      "width": 74.95,
+      "thickness": 8.39,
       "weight": 212,
       "materials": "Aluminium frame, glass back",
       "ip": "IP68"
@@ -40565,7 +40567,8 @@
       "POCO POCO F7 Ultra"
     ],
     "sources": [
-      "kimovil"
+      "https://www.mi.com/global/product/poco-f7-ultra/specs/",
+      "https://www.mi.com/global/support/faq/details/KA-546593/"
     ]
   },
   {
@@ -53962,7 +53965,8 @@
       "refresh": 144,
       "ppi": 447,
       "brightness": 3200,
-      "type": "AMOLED"
+      "type": "AMOLED",
+      "protection": "Corning Gorilla Glass 7i"
     },
     "chipset": {
       "name": "MediaTek Dimensity 9400+",
@@ -53972,11 +53976,11 @@
     },
     "camera": {
       "modules": 3,
-      "main": "50 MP",
-      "ultrawide": "12 MP",
-      "telephoto": "50 MP",
+      "main": "50 MP, f/1.62, 23 mm, Light Fusion 900, OIS",
+      "ultrawide": "12 MP, f/2.2, 15 mm, 120°",
+      "telephoto": "50 MP, f/3.0, 115 mm, OIS",
       "front": "32 MP",
-      "video": "8K"
+      "video": "8K@30fps"
     },
     "battery": {
       "capacity": 5500,
@@ -53987,12 +53991,12 @@
       "weight": 210,
       "height": 162.7,
       "width": 77.9,
-      "thickness": 8,
+      "thickness": 7.96,
       "materials": "Aluminium alloy",
       "ip": "IP68"
     },
     "connectivity": {
-      "sim": "Dual nano-SIM",
+      "sim": "Dual SIM (two nano-SIM, nano-SIM + eSIM, or two eSIM where supported)",
       "network": "5G",
       "bluetooth": "6.0",
       "wifi": "Wi-Fi 7",
@@ -54021,8 +54025,7 @@
     ],
     "cardSlot": false,
     "sources": [
-      "kimovil",
-      "https://www.gsmarena.com/a-14178.php"
+      "https://www.mi.com/global/product/xiaomi-15t-pro/specs/"
     ]
   },
   {
@@ -54234,9 +54237,9 @@
       "nfc": true,
       "bluetooth": "6.0",
       "wifi": "Wi-Fi 7",
-      "sim": "Dual SIM"
+      "sim": "Dual SIM (two nano-SIM, nano-SIM + eSIM, or two eSIM where supported)"
     },
-    "os": "Android, HyperOS",
+    "os": "Xiaomi HyperOS 3",
     "colors": [
       "Black",
       "Deep Blue",
@@ -54253,7 +54256,8 @@
       "refresh": 144,
       "ppi": 447,
       "brightness": 3500,
-      "type": "AMOLED"
+      "type": "AMOLED",
+      "protection": "Corning Gorilla Glass 7i"
     },
     "chipset": {
       "name": "MediaTek Dimensity 9500",
@@ -54268,26 +54272,25 @@
     },
     "body": {
       "weight": 219,
-      "height": 162.9,
+      "height": 162.2,
       "width": 77.5,
-      "thickness": 8.2,
+      "thickness": 8.25,
       "materials": "Aluminium alloy",
       "ip": "IP68"
     },
     "cardSlot": false,
     "camera": {
       "modules": 3,
-      "main": "50 MP, f/1.7",
+      "main": "50 MP, f/1.67, 23 mm, Light Fusion 950, OIS",
       "front": "32 MP",
-      "video": "8K",
+      "video": "8K@30fps",
       "ultrawide": "12 MP, f/2.2, 15mm",
       "telephoto": "50 MP, f/3.0, 115mm, OIS, 5x optical zoom"
     },
     "sources": [
-      "kimovil",
-      "https://www.gsmarena.com/a-14651.php",
       "https://www.yerevanmobile.am/en/xiaomi-17t-pro.html",
-      "https://www.mi.com/uk/product/xiaomi-17t-pro/specs/"
+      "https://www.mi.com/uk/product/xiaomi-17t-pro/specs/",
+      "https://www.mi.com/uk/support/faq/details/KA-704973/"
     ]
   },
   {
