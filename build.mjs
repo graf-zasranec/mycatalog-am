@@ -747,13 +747,8 @@ function build({ inline, standalone }) {
   return HEAD_OPEN(appJs) + head + HEAD_CLOSE + body + script + '\n</body></html>\n';
 }
 
-// Search engines in, AI crawlers out. The owner wants the catalogue found through search and not
-// harvested into AI training sets or answered from by AI assistants.
-//
-// Blocked: crawlers that collect for training, and the fetchers AI assistants send when a user
-// asks them something. Google-Extended and Applebot-Extended are opt-out TOKENS, not crawlers:
-// naming them keeps pages out of Gemini and Apple Intelligence without touching Google or Apple
-// search, which crawl as Googlebot and Applebot and stay allowed below.
+// Search, link previews, and the owner's Google-Extended exception are listed below.
+// Google-Extended controls Gemini grounding and training. Googlebot controls Search crawling.
 //
 // Allowed: everything else, which is search (Googlebot, Bingbot, YandexBot, DuckDuckBot, Applebot)
 // and the link previews (TelegramBot, facebookexternalhit, Twitterbot) that make a shared link show
@@ -765,7 +760,7 @@ function build({ inline, standalone }) {
 const AI_BOTS = [
   'GPTBot', 'ChatGPT-User', 'OAI-SearchBot',                    // OpenAI
   'ClaudeBot', 'Claude-User', 'Claude-SearchBot', 'anthropic-ai', // Anthropic
-  'Google-Extended', 'GoogleOther', 'GoogleOther-Image', 'GoogleOther-Video', 'Google-CloudVertexBot',
+  'GoogleOther', 'GoogleOther-Image', 'GoogleOther-Video', 'Google-CloudVertexBot',
   'Applebot-Extended',
   'PerplexityBot', 'Perplexity-User',
   'meta-externalagent', 'meta-externalfetcher', 'FacebookBot',
@@ -783,12 +778,17 @@ const PUBLIC_CRAWLERS = ['Googlebot', 'Googlebot-Image', 'Google Favicon', 'Goog
   'Yandex', 'YandexBot', 'DuckDuckBot', 'Applebot',
   'facebookexternalhit', 'Facebot', 'Twitterbot', 'LinkedInBot', 'WhatsApp',
   'TelegramBot', 'Discordbot', 'Slackbot', 'Pinterestbot'];
-fs.writeFileSync('robots.txt', '# AI training, AI search, agents and dataset crawlers are not permitted.\n'
+fs.writeFileSync('robots.txt', '# AI access is restricted to the Google-Extended exception below.\n'
   + AI_BOTS.map(b => `User-agent: ${b}`).join('\n') + `
 Disallow: /
 
 ${PUBLIC_CRAWLERS.map(b => `User-agent: ${b}`).join('\n')}
 Allow: /
+
+# Gemini grounding and model training.
+User-agent: Google-Extended
+Allow: /
+Content-Signal: ai-input=yes,ai-train=yes
 
 # All other automated crawlers must stay out.
 User-agent: *
