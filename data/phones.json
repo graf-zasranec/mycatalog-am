@@ -2389,18 +2389,25 @@
       "anc": false,
       "form": "in-ear",
       "conn": "wired",
-      "plug": "lightning"
+      "plug": "lightning",
+      "type": "Wired earbuds with inline remote and microphone"
     },
     "connectivity": {
-      "bluetooth": "none, wired Lightning"
+      "bluetooth": "No",
+      "ports": "Lightning"
     },
     "battery": {},
     "summaryEn": "The Lightning EarPods, for every iPhone before the USB-C switch.",
     "specNA": {
-      "body.weight": "Apple lists no weight for EarPods (apple.com shop page read 2026-10-02)"
+      "body.weight": "Not published by Apple",
+      "audio.driver": "Driver size not published by Apple",
+      "body.ip": "Apple describes sweat and water protection but does not publish an IP rating"
     },
     "colors": [
       "White"
+    ],
+    "sources": [
+      "https://www.apple.com/shop/product/mwty3am/a/earpods-lightning-connector"
     ]
   },
   {
@@ -6784,15 +6791,13 @@
       }
     ],
     "body": {
-      "materials": "Aluminium unibody",
-      "weight": 1620
+      "materials": "Aluminium unibody"
     },
-    "battery": {
-      "capacity": 72.4
-    },
+    "battery": {},
     "connectivity": {
-      "wifi": "Wi-Fi 6E",
-      "bluetooth": "5.3"
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6.0",
+      "ports": "3× Thunderbolt 5, HDMI, SDXC, MagSafe 3, 3.5 mm headphone jack"
     },
     "cardSlot": true,
     "os": "macOS 26",
@@ -6802,8 +6807,13 @@
     ],
     "summaryEn": "The most powerful 14-inch Mac laptop — M5 Max with a 32-core GPU.",
     "sources": [
-      "https://www.apple.com/macbook-pro/specs/"
-    ]
+      "https://support.apple.com/en-gb/126318",
+      "https://support.apple.com/en-gb/126319"
+    ],
+    "specNA": {
+      "battery.capacity": "Depends on size: 72.4 Wh (14-inch) or 100 Wh (16-inch)",
+      "body.weight": "Depends on the selected size; Apple lists 1.62 kg for the 14-inch M5 Max"
+    }
   },
   {
     "id": "apple-macbook-pro-14-m5-pro",
@@ -23827,8 +23837,8 @@
       "Honor 400"
     ],
     "sources": [
-      "kimovil",
-      "https://www.honor.com/global/news/honor-400-launch/"
+      "https://www.honor.com/global/news/honor-400-launch/",
+      "https://www.honor.com/global/phones/honor-400/spec/"
     ]
   },
   {
@@ -23955,8 +23965,8 @@
       "wireless": 50
     },
     "body": {
-      "height": 161.4,
-      "width": 74.6,
+      "height": 160.8,
+      "width": 76.1,
       "thickness": 8.1,
       "weight": 205,
       "materials": "Aluminium frame, glass back",
@@ -23985,8 +23995,8 @@
       "Honor 400 Pro"
     ],
     "sources": [
-      "kimovil",
-      "https://www.honor.com/global/news/honor-400-launch/"
+      "https://www.honor.com/global/news/honor-400-launch/",
+      "https://www.honor.com/global/phones/honor-400-pro/spec/"
     ]
   },
   {
@@ -37899,19 +37909,23 @@
       "type": "On-ear, closed back",
       "anc": false,
       "transparency": false,
-      "form": "full",
-      "conn": "wireless"
+      "form": "on-ear",
+      "conn": "wireless",
+      "driver": "40 mm dynamic driver",
+      "codecs": "SBC, MPEG-2 AAC, LC3",
+      "impedance": 32
     },
     "battery": {
-      "life": "100 hours"
+      "life": "100+ hours"
     },
     "body": {
       "materials": "Textured vinyl headband, folding hinges",
-      "weight": 178
+      "weight": 186
     },
     "connectivity": {
       "bluetooth": "5.3",
-      "wireless": "USB-C and Qi wireless charging, 3.5 mm jack"
+      "wireless": "Qi wireless charging",
+      "ports": "USB-C charging, 3.5 mm audio jack"
     },
     "variants": [
       {
@@ -37929,6 +37943,12 @@
     "summaryEn": "100+ hours on a charge and wireless charging, in the on-ear shape Marshall has kept for a decade.",
     "unsure": [
       "popularity"
+    ],
+    "specNA": {
+      "body.ip": "Not published by Marshall"
+    },
+    "sources": [
+      "https://www.marshall.com/my/en/product/major-v?pid=1006833"
     ]
   },
   {
@@ -41003,9 +41023,9 @@
       "wired": 120
     },
     "body": {
-      "height": 162.4,
-      "width": 76,
-      "thickness": 8.3,
+      "height": 162.42,
+      "width": 75.97,
+      "thickness": 8.25,
       "weight": 202,
       "materials": "Plastic frame, glass back",
       "ip": "IP69"
@@ -41031,8 +41051,7 @@
       "Realme GT 7T"
     ],
     "sources": [
-      "kimovil",
-      "https://www.findprix.com/mobiles/compare/realme-gt-7t-3470-vs-realme-16t-8gb-ram-128gb-4310"
+      "https://www.realme.com/mea-en/realme-gt-7t-5g/specs"
     ]
   },
   {
@@ -49703,11 +49722,13 @@
       "anc": true,
       "transparency": true,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "42 mm dynamic driver",
+      "codecs": "aptX Adaptive, AAC, SBC"
     },
     "battery": {
       "capacity": 700,
-      "life": "60 hours"
+      "life": "Up to 60 hours with ANC"
     },
     "body": {
       "weight": 293,
@@ -49715,7 +49736,7 @@
     },
     "connectivity": {
       "bluetooth": "5.2",
-      "wireless": "aptX Adaptive, AAC, SBC; 3.5 mm cable"
+      "ports": "USB-C, analogue audio input"
     },
     "variants": [
       {
@@ -49743,7 +49764,8 @@
     ],
     "display": {},
     "sources": [
-      "https://support.sennheiser-hearing.com/hc/en-sg/articles/37791406604189-MOMENTUM-4-Wireless-Specifications"
+      "https://support.sennheiser-hearing.com/hc/en-sg/articles/37791406604189-MOMENTUM-4-Wireless-Specifications",
+      "https://support.sennheiser-hearing.com/hc/en-es/articles/37791406604189-MOMENTUM-4-Wireless-Specifications"
     ]
   },
   {
@@ -53570,7 +53592,7 @@
     "connectivity": {
       "wifi": "Wi-Fi 5",
       "bluetooth": "No",
-      "ports": "HDMI 2.1, 3x USB-A, Gigabit Ethernet, storage expansion"
+      "ports": "HDMI 2.1, 3× USB-A 3.1 Gen 1, Gigabit Ethernet, storage expansion slot"
     },
     "cardSlot": false,
     "os": "Xbox system software",
@@ -53581,6 +53603,9 @@
     "summaryEn": "The small all-digital Xbox: no disc drive, 1440p aimed at 120 fps, half the price of the X.",
     "unsure": [
       "popularity"
+    ],
+    "sources": [
+      "https://www.xbox.com/en-US/consoles/xbox-series-s"
     ]
   },
   {
@@ -54447,7 +54472,8 @@
       "size": 43,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -54481,11 +54507,13 @@
       "A 65 2026"
     ],
     "connectivity": {
-      "bluetooth": "5.0"
+      "bluetooth": "5.0",
+      "ports": "3× HDMI, eARC on HDMI 2 (43-inch 4K model)"
     },
     "sources": [
       "https://eldorado.am/en/smart-tv-led-xiaomi-a-43-2026-l43mb-auru",
-      "https://www.mi.com/global/product/xiaomi-tv-a-43-2026/specs/"
+      "https://www.mi.com/global/product/xiaomi-tv-a-43-2026/specs/",
+      "https://www.mi.com/global/support/faq/details/KA-569672/"
     ],
     "colors": [
       "Black"
@@ -54505,7 +54533,8 @@
       "size": 65,
       "type": "LED",
       "resolution": "3840 x 2160",
-      "refresh": 60
+      "refresh": 60,
+      "hdr": "HDR10, HLG"
     },
     "variants": [
       {
@@ -54525,6 +54554,14 @@
     ],
     "colors": [
       "Black"
+    ],
+    "connectivity": {
+      "bluetooth": "5.0",
+      "ports": "3× HDMI (one with eARC)"
+    },
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-tv-a-65-2025/specs/",
+      "https://www.mi.com/global/support/faq/details/KA-142681/"
     ]
   },
   {
