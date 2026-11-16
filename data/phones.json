@@ -15791,12 +15791,9 @@
     "display": {
       "size": 16,
       "type": "WUXGA IPS LCD",
-      "resolution": "1920x1200",
-      "touch": true
+      "resolution": "1920x1200"
     },
-    "chipset": {
-      "name": "Intel Core 5 120U"
-    },
+    "chipset": {},
     "graphics": {
       "type": "integrated"
     },
@@ -15813,21 +15810,28 @@
       }
     ],
     "battery": {},
-    "connectivity": {},
+    "connectivity": {
+      "ports": "2× USB-A 5 Gbps, USB-C 10 Gbps (DP 1.4, PD), HDMI 1.4, SD card reader, 3.5 mm combo jack, AC input"
+    },
     "os": "Windows 11",
     "colors": [
       "Ice Blue"
     ],
-    "summaryEn": "A 16-inch Windows laptop with a touchscreen.",
+    "summaryEn": "A 16-inch Windows laptop available in multiple configurations.",
     "unsure": [
       "popularity"
     ],
-    "body": {
-      "weight": 1870
-    },
+    "body": {},
     "sources": [
-      "https://nanoreview.net/en/laptop/dell-inspiron-16-5640"
-    ]
+      "https://www.dell.com/support/manuals/en-us/inspiron-16-5640-laptop/inspiron-16-5640-owners-manual/external-ports-and-slots?guid=guid-b8f739cc-a41e-4ac9-b3f8-ff6d9c6d8c19",
+      "https://www.dell.com/support/manuals/en-sg/inspiron-16-5640-laptop/inspiron-16-5640-owners-manual/battery?guid=guid-3edc745f-d41c-42ad-836c-a57794da0e1c&lang=en-us"
+    ],
+    "specNA": {
+      "chipset.name": "Depends on configuration: Intel Core 5 120U or Core 7 150U in listed offers",
+      "battery.capacity": "Depends on configuration: 54 Wh or 64 Wh",
+      "display.touch": "Depends on the display configuration",
+      "body.weight": "Depends on the configuration"
+    }
   },
   {
     "id": "dell-inspiron-16-plus-7630",
@@ -26605,7 +26609,7 @@
     "chipset": {
       "name": "Qualcomm Snapdragon 6 Gen 1",
       "process": "4 nm",
-      "cpu": "Octa-core (2x2.2 GHz Cortex-A78 & 6x1.8 GHz Cortex-A55)",
+      "cpu": "Octa-core (4× Cortex-A78 at 2.2 GHz, 4× Cortex-A55 at 1.8 GHz)",
       "gpu": "Adreno 710"
     },
     "variants": [
@@ -26638,9 +26642,9 @@
       "wireless": 0
     },
     "body": {
-      "height": 163,
+      "height": 162.8,
       "width": 75.5,
-      "thickness": 8,
+      "thickness": 7.98,
       "weight": 189,
       "ip": "IP65M",
       "materials": "Plastic"
@@ -26650,7 +26654,8 @@
       "nfc": true,
       "sim": "Dual Nano-SIM",
       "bluetooth": "5.1",
-      "wifi": "Wi-Fi 5"
+      "wifi": "Wi-Fi 5",
+      "ports": "USB-C (USB 2.0)"
     },
     "cardSlot": false,
     "os": "Android, MagicOS",
@@ -26667,8 +26672,8 @@
       "Honor X9с"
     ],
     "sources": [
-      "kimovil",
-      "https://www.honor.com/ph/phones/honor-x9c/spec/"
+      "https://www.honor.com/ph/phones/honor-x9c/spec/",
+      "https://www.honor.com/sg/phones/honor-x9c/spec/"
     ]
   },
   {
@@ -41695,9 +41700,9 @@
     "camera": {
       "modules": 2,
       "main": "50 MP, f/1.8",
-      "ultrawide": "2 MP, f/2.4, depth",
-      "front": "8 MP",
-      "video": "1080p@30fps"
+      "front": "8 MP, f/2.0",
+      "video": "1080p@30fps",
+      "depth": "2 MP, f/2.4"
     },
     "battery": {
       "capacity": 5000,
@@ -41716,7 +41721,8 @@
       "wifi": "Wi-Fi 5",
       "bluetooth": "5.3",
       "nfc": false,
-      "sim": "Dual nano-SIM plus a dedicated microSD slot"
+      "sim": "Dual nano-SIM plus a dedicated microSD slot",
+      "ports": "USB-C (USB 2.0), 3.5 mm headphone jack"
     },
     "cardSlot": true,
     "os": "Android, One UI",
@@ -41737,8 +41743,8 @@
       "notADuplicate"
     ],
     "sources": [
-      "kimovil",
-      "https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a07-light-violet-128gb-sm-a075flvgmea/"
+      "https://www.samsung.com/sa_en/smartphones/galaxy-a/galaxy-a07-light-violet-128gb-sm-a075flvgmea/",
+      "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a07-black-64gb-sm-a075fzkdins/"
     ]
   },
   {
@@ -42637,7 +42643,8 @@
       "main": "50 MP, f/1.8, OIS",
       "ultrawide": "12 MP, f/2.2, 123-degree",
       "front": "32 MP, f/2.2",
-      "video": "4K@30fps"
+      "video": "4K@30fps",
+      "macro": "5 MP, f/2.4"
     },
     "battery": {
       "capacity": 5000,
@@ -42657,7 +42664,7 @@
       "wifi": "Wi-Fi 6",
       "bluetooth": "5.3",
       "nfc": true,
-      "sim": "Dual nano-SIM"
+      "sim": "Nano-SIM + hybrid nano-SIM/microSD slot; eSIM on supported versions"
     },
     "cardSlot": true,
     "os": "Android 14, One UI 6.1",
@@ -42689,7 +42696,7 @@
       "Galaxy A55"
     ],
     "sources": [
-      "kimovil"
+      "https://www.samsung.com/sg/smartphones/galaxy-a/galaxy-a55-5g-awesome-navy-256gb-sm-a556ezkcxsp/"
     ]
   },
   {
@@ -51127,10 +51134,12 @@
       "anc": true,
       "transparency": true,
       "form": "full",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "30 mm",
+      "codecs": "SBC, AAC, LDAC, LC3"
     },
     "battery": {
-      "life": "30 hours"
+      "life": "Up to 30 hours with ANC, 40 hours without ANC"
     },
     "body": {
       "materials": "Plastic frame, synthetic leather ear pads",
@@ -51138,7 +51147,7 @@
     },
     "connectivity": {
       "bluetooth": "5.3",
-      "wireless": "USB-C charging, 3.5 mm jack"
+      "ports": "USB-C charging, 3.5 mm audio input"
     },
     "variants": [
       {
@@ -51161,7 +51170,8 @@
     ],
     "sources": [
       "https://electronics.sony.com/audio/headphones/headband/p/wh1000xm6-b",
-      "https://www.sony.eu/presscentre/sonys-new-olive-gray-wh-1000xm6-combines-premium-noise-cancellation-with-refined-design"
+      "https://www.sony.eu/presscentre/sonys-new-olive-gray-wh-1000xm6-combines-premium-noise-cancellation-with-refined-design",
+      "https://www.sony.com/electronics/support/wireless-bluetooth-headphones/wh-1000xm6/specifications"
     ],
     "aliases": [
       "WH1000XM6",
