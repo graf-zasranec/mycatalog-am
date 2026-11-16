@@ -18,7 +18,9 @@ import re
 import sys
 import time
 from collections import OrderedDict
+from html import unescape
 from pathlib import Path
+from urllib.parse import parse_qs, urlsplit
 
 from scrapling.fetchers import Fetcher
 
@@ -53,10 +55,47 @@ SCHEMA = re.compile('availability\\"?\\s*:\\s*\\"?[^\\"]*?(InStock|OutOfStock|So
 BLOCK = re.compile(r'class=\"[^\"]*status_block[^\"]*?(out_stock|in_stock)', re.I)
 
 
-def stock_of(html):
+def istyle_stock(html, query):
+    """Read only the selected iStyle/Stivo SKU, independently of page-level metadata."""
+    params = parse_qs(query)
+    variant = re.fullmatch(r'(\d+)(?:_color_(\d+))?', params.get('variant', [''])[0])
+    page = re.search(r'\bdata-page=(["\'])(.*?)\1', html, re.S)
+    if not variant or not page:
+        return None
+    variant_id, variant_color = variant.groups()
+    color = params.get('color', [variant_color])[0]
+    if variant_color and variant_color != color:
+        return None
+    try:
+        variants = json.loads(unescape(page.group(2)))['props']['product']['variants']
+    except (ValueError, KeyError, TypeError):
+        return None
+    if not isinstance(variants, list):
+        return None
+    for row in variants:
+        if not isinstance(row, dict) or str(row.get('id')) != variant_id:
+            continue
+        if color and not any(
+            str(attribute.get('id')) == color
+            and ((attribute.get('attribute') or {}).get('name') or {}).get('en', '').lower() in ('color', 'colour')
+            for attribute in row.get('attribute_values') or []
+        ):
+            return None
+        stock = row.get('stock')
+        if row.get('is_active') is False:
+            return False
+        if re.fullmatch(r'\d+', str(stock)):
+            return int(stock) > 0
+    return None
+
+
+def stock_of(html, url=''):
     """True, False, or None when the page makes no machine-readable claim."""
     if not html:
         return None
+    target = urlsplit(url)
+    if target.hostname in ('istyle.am', 'www.istyle.am', 'stivo.am', 'www.stivo.am'):
+        return istyle_stock(html, target.query)
     # Read the page's Product, excluding related products in ItemList/BreadcrumbList.
     # A recommendation being unavailable must not hide the product being viewed.
     products = []
@@ -150,7 +189,7 @@ def check_all():
                     h = r.html_content or ''
                     heading = re.search(r'<h1\b[^>]*>([\s\S]*?)</h1>', h, re.I)
                     title = re.sub(r'<[^>]+>', ' ', heading.group(1)).strip() if heading else ''
-                    result = {'status': r.status, 'stock': stock_of(h), 'title': title,
+                    result = {'status': r.status, 'stock': stock_of(h, u), 'title': title,
                               'checked': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())}
                     return u, result
                 except Exception as e:
@@ -313,7 +352,7 @@ def main():
             dead.append((st, u))
             print(f'  DEAD {st}  {u}   ({len(urls[u])} row(s))')
             continue
-        if st == 200 and stock_of(html) is False:
+        if st == 200 and stock_of(html, u) is False:
             sold.append(u)
             print(f'  SOLD OUT  {u}   ({len(urls[u])} row(s))')
 

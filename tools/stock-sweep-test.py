@@ -45,6 +45,24 @@ spec = importlib.util.spec_from_file_location('stock_fixture_subject', source)
 subject = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(subject)
 
+# iStyle embeds the real variant inventory alongside stale OutOfStock metadata.
+product = {'props': {'product': {'variants': [
+    {'id': 742, 'stock': 4, 'is_active': True, 'attribute_values': [
+        {'id': 140, 'attribute': {'name': {'en': 'Color'}}}]},
+    {'id': 743, 'stock': 0, 'is_active': True, 'attribute_values': []},
+]}}}
+from html import escape
+markup = '<script>window.meta={"availability":"OutOfStock"};</script>'
+markup += '<div data-page="' + escape(json.dumps(product), quote=True) + '"></div>'
+base = 'https://stivo.am/en/product/iPhone%2018%20Pro'
+assert subject.stock_of(markup, base + '?variant=742_color_140&color=140') is True
+assert subject.stock_of(markup, base + '?variant=743') is False
+assert subject.stock_of(markup, base + '?variant=742_color_141&color=141') is None
+assert subject.stock_of(markup, base + '?variant=742_color_140&color=141') is None
+assert subject.stock_of(markup, base + '?variant=999') is None
+assert subject.stock_of(markup, base) is None
+assert subject.stock_of(markup, 'https://example.com/item') is False
+
 with tempfile.TemporaryDirectory() as temp:
     temp = pathlib.Path(temp)
     subject.PRICES = temp / 'prices.json'

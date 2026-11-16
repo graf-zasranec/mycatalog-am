@@ -28,7 +28,7 @@ permissions:
   pages: write
   id-token: write
 
-# Queue, never cancel: a run that ends up skipped must not cancel the publish ahead of it.
+# Let the active release finish. If pushes overlap, publish the newest queued release next.
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -38,9 +38,11 @@ jobs:
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    env:
+      PAGES_ARTIFACT: github-pages-${{ github.run_attempt }}
     environment:
       name: github-pages
-      url: ${{ steps.deploy.outputs.page_url }}
+      url: ${{ steps.deploy.outputs.page_url || steps.retry_deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4
         with:
@@ -135,25 +137,41 @@ jobs:
           touch _site/.nojekyll
           du -sh _site | cut -f1
 
-      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
+      - id: upload
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9  # v5.0.0
         with:
           path: _site
+          name: ${{ env.PAGES_ARTIFACT }}
 
       # The upload can finish before the artifact is visible to deploy-pages.
       - name: Wait for Pages artifact metadata
         env:
           GH_TOKEN: ${{ github.token }}
+          ARTIFACT_ID: ${{ steps.upload.outputs.artifact_id }}
         run: |
           set -euo pipefail
-          for attempt in 1 2 3 4 5 6; do
-            if gh api "repos/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID/artifacts?name=github-pages" \
-                --jq '.artifacts[] | select(.name == "github-pages" and .expired == false) | .id' | grep -E '^[0-9]+$'; then
+          for delay in 0 2 4 8 16 20; do
+            sleep "$delay"
+            if gh api "repos/$GITHUB_REPOSITORY/actions/artifacts/$ARTIFACT_ID" \
+                --jq 'select(.expired == false) | .name' | grep -Fxq "$PAGES_ARTIFACT"; then
               exit 0
             fi
-            if [ "$attempt" -lt 6 ]; then sleep 5; fi
           done
           echo "::error::The uploaded github-pages artifact did not become visible"
           exit 1
 
       - id: deploy
+        continue-on-error: true
         uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
+        with:
+          artifact_name: ${{ env.PAGES_ARTIFACT }}
+
+      - name: Wait before retrying Pages
+        if: steps.deploy.outcome == 'failure'
+        run: sleep 20
+
+      - id: retry_deploy
+        if: steps.deploy.outcome == 'failure'
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346  # v5.0.1
+        with:
+          artifact_name: ${{ env.PAGES_ARTIFACT }}

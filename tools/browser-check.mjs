@@ -34,22 +34,25 @@ try {
       // third-party network failures. Live analytics is verified separately.
       await ctx.addInitScript(() => Object.defineProperty(navigator, 'doNotTrack', { get: () => '1' }));
       await ctx.addInitScript(s => { try { if (!localStorage.getItem('better.v2')) localStorage.setItem('better.v2', s); } catch (e) {} }, SAVED);
-      const page = await ctx.newPage();
-      const errs = [];
-      page.on('pageerror', e => errs.push('pageerror: ' + e.message));
-      // the web fonts come from Google and may be slow or blocked here; that is the network, not the site
-      // Firefox reports a font it was still fetching when the test moved to the next page as a
-      // failed download (status 2152398850 = NS_BINDING_ABORTED). That is the test navigating
-      // away, not a missing font - a real failure has a different status, or a 404 below.
-      const ABORTED = /2152398850|NS_BINDING_ABORTED|net::ERR_ABORTED/;
-      page.on('console', m => { if (m.type() === 'error' && !/fonts\.(googleapis|gstatic)/.test(m.text()) && !ABORTED.test(m.text())) errs.push('console: ' + m.text()); });
-      page.on('response', r => { if (r.status() === 404) errs.push('404: ' + r.url()); });
-      // Optional visitor-count requests must not fail the application check when
-      // the external analytics service is unavailable or blocked by the browser.
-      page.on('requestfailed', r => { if (!/fonts\.(googleapis|gstatic)|analytics|counter|https:\/\/gc\.zgo\.at\//.test(r.url()) && !ABORTED.test(r.failure()?.errorText || '')) errs.push('request failed: ' + r.url() + ' (' + (r.failure()?.errorText || '') + ')'); });
       for (const r of [...ROUTES.map(h => `index.html?r=${n}${h}`), ...STATIC]) {
         n++;
-        errs.length = 0;
+        // Keep each route's events on its own page, so a closing document
+        // cannot send a late request failure to the next route.
+        const page = await ctx.newPage();
+        const errs = [];
+        const aborted = /2152398850|NS_(?:BINDING_ABORTED|ERROR_ABORT)|net::ERR_ABORTED|^Load request cancelled$/i;
+        page.on('pageerror', e => errs.push('pageerror: ' + e.message));
+        page.on('console', m => {
+          if (m.type() === 'error' && !/fonts\.(googleapis|gstatic)/.test(m.text()) && !aborted.test(m.text())) errs.push('console: ' + m.text());
+        });
+        page.on('response', response => {
+          if (response.status() === 404) errs.push('404: ' + response.url());
+        });
+        page.on('requestfailed', request => {
+          const error = request.failure()?.errorText || '';
+          if (!/fonts\.(googleapis|gstatic)|analytics|counter|https:\/\/gc\.zgo\.at\//.test(request.url()) && !aborted.test(error))
+            errs.push('request failed: ' + request.url() + ' (' + error + ')');
+        });
         await page.goto(BASE + r, { waitUntil: 'load' });
         // Boot deliberately waits for the first product photo to decode before
         // loading details. A fixed 350ms delay could navigate away mid-download
@@ -57,7 +60,17 @@ try {
         // Wait for the real application and route, retaining all request errors.
         if (await page.locator('script[data-src][src*="site-boot"]').count()) await page.waitForFunction(() => document.documentElement.dataset.appReady === 'true' &&
           !document.documentElement.classList.contains('route-pending'), null, { timeout: 15000 }).catch(e => { throw new Error(`${name} ${w}px ${r}: application not ready; ${errs.join('; ')}; ${e.message}`); });
-        await page.waitForTimeout(350);
+        // A picture may switch sources during application startup. Give the
+        // final visible image time to load, then still fail on broken images.
+        const imagesReady = await page.waitForFunction(() => [...document.images].every(image => {
+          const box = image.getBoundingClientRect();
+          const visible = box.width && box.height && box.bottom > 0 && box.top < innerHeight
+            && box.right > 0 && box.left < innerWidth && getComputedStyle(image).visibility !== 'hidden';
+          return !visible || !image.getAttribute('src') || (image.complete && image.naturalWidth > 0);
+        }), null, { timeout: 8000 }).then(() => true, error => {
+          if (error.name !== 'TimeoutError') throw error;
+          return false;
+        });
         const m = await page.evaluate(() => ({
           over: document.documentElement.scrollWidth - innerWidth,
           broken: [...document.images].filter(i => i.complete && i.currentSrc && i.naturalWidth === 0).map(i => i.currentSrc.slice(-60)),
@@ -67,10 +80,12 @@ try {
         }));
         const where = `${name} ${w}px ${r.replace(/\?r=\d+/, '')}`;
         if (m.over > 1) fail(`${where}: ${m.over}px sideways scroll`);
+        if (!imagesReady && !m.broken.length) fail(`${where}: visible images did not finish loading`);
         if (m.broken.length) fail(`${where}: broken image(s) ${m.broken.join(', ')}`);
         if (m.nophoto.length && /#\/(c|p)\//.test(r)) fail(`${where}: placeholder instead of a photo: ${m.nophoto.join(', ')}`);
         for (const e of errs) fail(`${where}: ${e}`);
         if (r.endsWith('does-not-exist') && !m.h1.trim()) fail(`${where}: the not-found page has no heading`);
+        await page.close();
       }
       await ctx.close();
     }

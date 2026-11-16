@@ -22,7 +22,8 @@ import { assertCaseStableBrands } from './tools/brand-integrity.mjs';
 import { assertCatalogueData, assertPriceSnapshot } from './tools/catalogue-validation.mjs';
 import {categorySeed,productSeedSource,fullCatalogueSource}from'./tools/product-startup.mjs';
 const rd = f => fs.readFileSync(f, 'utf8');
-const phones = JSON.parse(rd('data/phones.json'));
+const sourceProducts = JSON.parse(rd('data/phones.json'));
+const phones = sourceProducts.filter(p => p.appliance?.type !== 'turkish_coffee');
 assertCaseStableBrands(phones);
 // Product photos, thumbnails and share cards live in Cloudflare R2 behind img.better.am (2026-11-07):
 // together they were 900 MB of the 1.2 GB Pages upload, which kept timing out. They stay in git
@@ -62,7 +63,12 @@ for (const [id, list] of Object.entries(PRICES.offers || {})) {
   if (kept.length !== list.length) PRICES.offers[id] = kept;
 }
 assertPriceSnapshot(PRICES);
-assertCatalogueData(phones, PRICES.offers);
+assertCatalogueData(sourceProducts, PRICES.offers);
+for (const product of sourceProducts) {
+  if (product.appliance?.type !== 'turkish_coffee') continue;
+  delete PRICES.offers[product.id];
+  if (HISTORY.points) delete HISTORY.points[product.id];
+}
 // Publish each offer's verification day in Armenia. Older offers may only have a saved date.
 const offerCheckDay = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Yerevan' });
 for (const offers of Object.values(PRICES.offers || {})) {
