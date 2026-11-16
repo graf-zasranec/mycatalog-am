@@ -47737,7 +47737,8 @@
       "size": 65,
       "type": "Neo QLED Mini-LED",
       "resolution": "3840 x 2160",
-      "refresh": 100
+      "refresh": 120,
+      "hdr": "HDR10+ Adaptive, HDR10+ Gaming"
     },
     "variants": [
       {
@@ -47753,15 +47754,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele",
-      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
+      "https://www.samsung.com/ru/tvs/qled-tv/qn85d-65-inch-neo-qled-4k-tizen-os-smart-tv-qe65qn85dbuxru/"
     ],
     "aliases": [
       "QE65QN85DBUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with up to 4K 120 Hz input, eARC, Ethernet"
+    }
   },
   {
     "id": "samsung-qe65qn900duxru",
@@ -47833,15 +47836,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele",
-      "https://www.samsung.com/us/tvs/tv-buying-guide/what-is-neo-qled-tv/"
+      "https://www.samsung.com/ru/tvs/qled-tv/qn90f-65-inch-neo-qled-4k-mini-led-smart-tv-qe65qn90fauxru/"
     ],
     "aliases": [
       "QE65QN90FAUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with up to 4K 165 Hz input, eARC, Ethernet"
+    }
   },
   {
     "id": "samsung-qe65qn990fuxru",
@@ -47953,14 +47958,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "https://www.samsung.com/ru/tvs/oled-tv/s90d-65-inch-oled-4k-tizen-os-smart-tv-qe65s90dauxru/"
     ],
     "aliases": [
       "QE65S90DAUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with up to 4K 144 Hz input, eARC, Ethernet"
+    }
   },
   {
     "id": "samsung-qe65s90faexru",
@@ -47992,14 +48000,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "https://www.samsung.com/ru/tvs/oled-tv/s90f-65-inch-oled-4k-smart-tv-qe65s90faexru/"
     ],
     "aliases": [
       "QE65S90FAEXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with up to 4K 144 Hz input, eARC, Ethernet"
+    }
   },
   {
     "id": "samsung-qe65s95fauxru",
@@ -48031,14 +48042,17 @@
     ],
     "os": "Tizen",
     "sources": [
-      "kitele"
+      "https://www.samsung.com/ru/tvs/oled-tv/s95f-65-inch-oled-4k-smart-tv-qe65s95fauxru/"
     ],
     "aliases": [
       "QE65S95FAUXRU"
     ],
     "colors": [
       "Black"
-    ]
+    ],
+    "connectivity": {
+      "ports": "4× HDMI with up to 4K 165 Hz input, eARC, Ethernet"
+    }
   },
   {
     "id": "samsung-qe65s95hauxpy",
