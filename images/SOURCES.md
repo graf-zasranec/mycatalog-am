@@ -9,3 +9,6 @@
 - nothing-cmf-watch-3-pro (dark-gray, orange, light-gray): Amazon hiRes listing images (amazon.com), Vision cut
 - Redmi Pad Graphite Gray, front and back render from the Grover product listing. [Source image](https://res-5.cloudinary.com/grover/image/upload/v1666865044/ms4stsrcagaaeafjs7vc.png)
 - Redmi Watch 6 Lite Black, render for the exact finish from Geizhals. PhotoRoom filled the strap openings, which were restored using the source transparency. [Source image](https://gzhls.at/pix/74/34/74347ddbd0249722-n.webp)
+- HONOR X5es MLD-LX2 Midnight Black, front and back render for the exact SKU from Vega. [Source image](https://vega.am/image/catalog/1HRACH/2020/2021/2026/Norembaer/Smartfon/X5es%20MLD-LX2%204GB%20128GB%20%28Midnight%20Black%29%20%285%29.jpg)
+- Yandex Station Lite Purple, first-generation speaker from Olcha. [Source image](https://olcha.uz/image/1200x1200/products/2022-10-25/umnaya-kolonka-yandeks-stantsiya-layt-159673-0.jpeg)
+- Garmin Forerunner 965 Amp Yellow/Black, SKU 010-02809-12. [Source image](https://wp-aws-media.s3-accelerate.amazonaws.com/2023/03/Forerunner965_HR_2002.72.png) · [Garmin product](https://www.garmin.com/sl-SI/p/886725/)
