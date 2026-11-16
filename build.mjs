@@ -63,6 +63,14 @@ for (const [id, list] of Object.entries(PRICES.offers || {})) {
 }
 assertPriceSnapshot(PRICES);
 assertCatalogueData(phones, PRICES.offers);
+// Publish each offer's verification day in Armenia. Older offers may only have a saved date.
+const offerCheckDay = new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Yerevan' });
+for (const offers of Object.values(PRICES.offers || {})) {
+  for (const offer of offers) {
+    const checked = Date.parse(offer.checkedAt);
+    if (Number.isFinite(checked)) offer.seen = offerCheckDay.format(checked);
+  }
+}
 const COLOR_ALIASES = JSON.parse(rd('data/color-aliases.json'));
 // A newer colour alias must work with snapshots produced before it was introduced.
 for (const [id, offers] of Object.entries(PRICES.offers || {})) {
