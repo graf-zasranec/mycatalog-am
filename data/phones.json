@@ -177069,6 +177069,94 @@
     ]
   },
   {
+    "id": "bosch-tsm6a013b",
+    "category": "coffee",
+    "brand": "Bosch",
+    "name": "TSM6A013B",
+    "aliases": [
+      "Bosch TSM6A013B"
+    ],
+    "tier": "budget",
+    "priceAmd": 18900,
+    "priceAmdMax": 18900,
+    "popularity": 35,
+    "accent": "#42454C",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 18900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 180
+    },
+    "body": {
+      "height": 170,
+      "width": 90,
+      "thickness": 90,
+      "weight": 600
+    },
+    "summaryEn": "Stainless-steel blade grinder with a 75 g bean capacity.",
+    "sources": [
+      "https://www.bosch-home.com/mt/en/mkt-product/coffeemachines/coffeegrinders/TSM6A013B",
+      "https://media3.bosch-home.com/Documents/19151450_Catalogo_PAE_Bosch_10_2021.pdf"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Black"
+    ]
+  },
+  {
+    "id": "braun-kg7070",
+    "category": "coffee",
+    "brand": "Braun",
+    "name": "FreshSet KG7070",
+    "aliases": [
+      "Braun FreshSet KG7070",
+      "Braun KG701AI-KG7070 Coffee grinder"
+    ],
+    "tier": "budget",
+    "priceAmd": 39900,
+    "priceAmdMax": 39900,
+    "popularity": 35,
+    "accent": "#858B94",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 110
+    },
+    "body": {
+      "height": 269,
+      "width": 132,
+      "thickness": 188,
+      "weight": 1707
+    },
+    "summaryEn": "Burr grinder with 15 grind settings and a 220 g bean hopper.",
+    "sources": [
+      "https://www.braunhousehold.com/en/p/coffee-grinders-burr-coffee-grinder-freshset-kg-7070/KG7070.html?pid=0X17711000"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Silver"
+    ]
+  },
+  {
     "id": "de-longhi-kg89",
     "category": "coffee",
     "brand": "De'Longhi",
@@ -177159,6 +177247,226 @@
     ],
     "specNA": {
       "appliance.power": "The exact KG200 manufacturer product page does not publish the wattage."
+    }
+  },
+  {
+    "id": "gorenje-smk150e",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "SMK150E",
+    "aliases": [
+      "Gorenje SMK150E",
+      "GORENJE SMK150E"
+    ],
+    "tier": "budget",
+    "priceAmd": 9500,
+    "priceAmdMax": 9500,
+    "popularity": 35,
+    "accent": "#858B94",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 9500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 150
+    },
+    "body": {
+      "height": 215,
+      "width": 85,
+      "thickness": 105,
+      "weight": 800
+    },
+    "summaryEn": "Stainless-steel blade grinder with a 60 g bean capacity.",
+    "sources": [
+      "https://international.gorenje.com/products/food-preparation/coffee-preparation/COFFEE-GRINDER-SMK150E-GOR/p/000000000000673862"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Silver"
+    ]
+  },
+  {
+    "id": "gorenje-smk150wi",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "SMK150WI",
+    "aliases": [
+      "Gorenje SMK150WI",
+      "GORENJE SMK150WI"
+    ],
+    "tier": "budget",
+    "priceAmd": 9900,
+    "priceAmdMax": 9900,
+    "popularity": 35,
+    "accent": "#ADB1B3",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 9900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 150
+    },
+    "body": {
+      "height": 215,
+      "width": 85,
+      "thickness": 105,
+      "weight": 800
+    },
+    "summaryEn": "White blade grinder with a 60 g bean capacity.",
+    "sources": [
+      "https://international.gorenje.com/products/food-preparation/coffee-preparation/COFFEE-GRINDER-SMK150Wi-GOR/p/000000000000735662"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ]
+  },
+  {
+    "id": "gorenje-smk150sw",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "SMK150SW",
+    "aliases": [
+      "Gorenje SMK150SW",
+      "GORENJE SMK150SW"
+    ],
+    "tier": "budget",
+    "priceAmd": 13600,
+    "priceAmdMax": 13600,
+    "popularity": 35,
+    "accent": "#ADB1B3",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13600
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 150
+    },
+    "body": {
+      "height": 148,
+      "width": 90,
+      "thickness": 90,
+      "weight": 500
+    },
+    "summaryEn": "White blade grinder with a 45 g bean capacity.",
+    "sources": [
+      "https://international.gorenje.com/products/food-preparation/coffee-preparation/COFFEE-GRINDER-SMK150SW-GOR/p/000000000000742298"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "White"
+    ]
+  },
+  {
+    "id": "gorenje-smk150sb",
+    "category": "coffee",
+    "brand": "Gorenje",
+    "name": "SMK150SB",
+    "aliases": [
+      "Gorenje SMK150SB",
+      "GORENJE SMK150SB"
+    ],
+    "tier": "budget",
+    "priceAmd": 13600,
+    "priceAmdMax": 13600,
+    "popularity": 35,
+    "accent": "#42454C",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13600
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 150
+    },
+    "body": {
+      "weight": 500
+    },
+    "summaryEn": "Black blade grinder with a 45 g bean capacity.",
+    "sources": [
+      "https://international.gorenje.com/products/food-preparation/coffee-preparation/COFFEE-GRINDER-SMK150SB-GOR/p/000000000000743816"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "specNA": {
+      "body.dimensions": "The Gorenje page lists product measurements larger than the packaged measurements."
+    }
+  },
+  {
+    "id": "tefal-gt110838",
+    "category": "coffee",
+    "brand": "Tefal",
+    "name": "The Original Grinder GT110838",
+    "aliases": [
+      "Tefal The Original Grinder GT110838",
+      "TEFAL GT110838",
+      "Tefal GT110838 Coffee grinder"
+    ],
+    "tier": "budget",
+    "priceAmd": 12900,
+    "priceAmdMax": 16900,
+    "popularity": 35,
+    "accent": "#42454C",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 12900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder",
+      "power": 180
+    },
+    "summaryEn": "Push-to-grind stainless-steel blade grinder with a 50 g capacity.",
+    "sources": [
+      "https://shop.tefal.ua/kavomolka-tefal-the-original-grinder-gt110-gt110838.html",
+      "https://www.tefal.com/instructions-for-use/Products-/Beverages/Coffee-grinder/The-Original-Grinder/csp/1510001034"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "specNA": {
+      "body.dimensions": "Product dimensions not published by Tefal.",
+      "body.weight": "Tefal publishes packaged weight only."
     }
   }
 ]
