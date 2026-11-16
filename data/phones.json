@@ -1891,7 +1891,8 @@
     "connectivity": {
       "network": "Wi-Fi",
       "wifi": "Wi-Fi 5",
-      "bluetooth": "yes (Audible)"
+      "bluetooth": "yes (Audible)",
+      "ports": "USB-C"
     },
     "cardSlot": false,
     "os": "Kindle OS",
@@ -1903,7 +1904,8 @@
     ],
     "summaryEn": "The Paperwhite in a kids bundle: a cover and no adverts, set up for a child from the first page.",
     "sources": [
-      "https://www.aboutamazon.com/news/devices/kids-devices-amazon-prime-day-deals-2023"
+      "https://www.aboutamazon.com/news/devices/kids-devices-amazon-prime-day-deals-2023",
+      "https://press.aboutamazon.com/2021/9/amazon-introduces-kindle-paperwhite-kids-providing-distraction-free-reading-time-for-kids-to-explore-thousands-of-new-and-classic-titles"
     ]
   },
   {
@@ -31661,19 +31663,22 @@
     ],
     "audio": {
       "anc": false,
-      "form": "full",
+      "form": "on-ear",
       "conn": "wireless",
-      "plug": "usb-c"
+      "plug": "usb-c",
+      "driver": "33 mm",
+      "impedance": 30
     },
     "battery": {
-      "life": "57 hours"
+      "life": "Up to 76 hours (music), 45 hours (calls)",
+      "capacity": 450
     },
     "connectivity": {
-      "bluetooth": "5.3"
+      "bluetooth": "6.0"
     },
     "summaryEn": "Fifty-seven hours of on-ear JBL, folded flat into a bag.",
     "body": {
-      "weight": 150
+      "weight": 152
     },
     "colors": [
       "White",
@@ -31681,6 +31686,13 @@
       "Black",
       "Beige",
       "Blue"
+    ],
+    "specNA": {
+      "body.ip": "Not published by JBL",
+      "audio.codecs": "Not published by JBL"
+    },
+    "sources": [
+      "https://global.jbl.com/on/demandware.static/-/Sites-masterCatalog_Harman/default/dwf50fb261/pdfs/JBL_TUNE_530BT_Specsheet_EN.pdf"
     ]
   },
   {
@@ -45678,16 +45690,18 @@
     "accent": "#8E8E93",
     "display": {
       "type": "Super AMOLED Always-On",
-      "size": 1.52,
+      "size": 1.5,
       "resolution": "498x498"
     },
     "body": {
       "materials": "Titanium case",
       "ip": "IP68, 10 ATM, MIL-STD-810H",
-      "weight": 61.5
+      "weight": 61.5,
+      "dimensions": "47.4 × 47.1 × 10.7 mm"
     },
     "battery": {
-      "capacity": 800
+      "capacity": 800,
+      "life": "Up to 60 hours"
     },
     "variantUnit": "mm",
     "variants": [
@@ -45699,7 +45713,9 @@
     ],
     "connectivity": {
       "network": "GPS + LTE",
-      "bluetooth": "5.3"
+      "bluetooth": "6.0",
+      "gps": "GPS, GLONASS, BeiDou, Galileo, QZSS",
+      "nfc": true
     },
     "os": "Wear OS 6, One UI Watch",
     "colors": [
@@ -45709,10 +45725,12 @@
     ],
     "summaryEn": "Samsung's rugged titanium watch, 47 mm with 10 ATM water resistance.",
     "sources": [
-      "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch-ultra2-titanium-silver-lte-sm-l715fzsaeub/"
+      "https://www.samsung.com/uk/watches/galaxy-watch/galaxy-watch-ultra2-titanium-silver-lte-sm-l715fzsaeub/",
+      "https://news.samsung.com/global/samsung-galaxy-watch-ultra2-and-watch9-your-health-companion-on-the-wrist",
+      "https://www.samsung.com/ro/watches/galaxy-watch/galaxy-watch-ultra2-titanium-gray-lte-sm-l715fzkaeue/"
     ],
     "chipset": {
-      "name": "Exynos W1000"
+      "name": "Qualcomm Snapdragon Wear Elite"
     }
   },
   {
@@ -53533,12 +53551,13 @@
     ],
     "battery": {},
     "body": {
-      "materials": "Plastic tower with a top vent"
+      "materials": "Plastic tower with a top vent",
+      "dimensions": "151 × 151 × 301 mm"
     },
     "connectivity": {
       "wifi": "Wi-Fi 5",
       "bluetooth": "No",
-      "ports": "HDMI 2.1, 3x USB-A, Gigabit Ethernet, storage expansion"
+      "ports": "HDMI 2.1, 3× USB-A 3.1 Gen 1, Gigabit Ethernet, storage expansion slot"
     },
     "cardSlot": false,
     "os": "Xbox system software",
@@ -53549,6 +53568,12 @@
     "summaryEn": "Microsoft’s full-size console: 4K at 120 fps, a 1 TB SSD and a disc drive.",
     "unsure": [
       "popularity"
+    ],
+    "specNA": {
+      "body.weight": "Depends on disc drive and console edition"
+    },
+    "sources": [
+      "https://www.xbox.com/fr-BE/consoles/xbox-series-x"
     ]
   },
   {
@@ -54079,8 +54104,7 @@
       "resolution": "1200x2608",
       "ppi": 416,
       "brightness": 3500,
-      "type": "AMOLED",
-      "refresh": 2160
+      "type": "AMOLED"
     },
     "chipset": {
       "name": "Qualcomm Snapdragon 8 Elite Gen 5",
@@ -54112,8 +54136,13 @@
     },
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-14181.php"
-    ]
+      "https://www.gsmarena.com/a-14181.php",
+      "https://m.mi.com/search/list",
+      "https://www.mi.com/prod/xiaomi-17-pro-max"
+    ],
+    "specNA": {
+      "display.refresh": "Refresh rate not verified from Xiaomi’s accessible exact-model specifications"
+    }
   },
   {
     "id": "xiaomi-17t",
