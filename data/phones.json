@@ -177067,5 +177067,98 @@
     "unsure": [
       "popularity"
     ]
+  },
+  {
+    "id": "de-longhi-kg89",
+    "category": "coffee",
+    "brand": "De'Longhi",
+    "name": "KG89",
+    "aliases": [
+      "De'Longhi KG89",
+      "DELONGHI KG89"
+    ],
+    "tier": "budget",
+    "priceAmd": 32900,
+    "priceAmdMax": 32900,
+    "popularity": 35,
+    "accent": "#858B94",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder"
+    },
+    "body": {
+      "height": 260,
+      "width": 130,
+      "thickness": 160
+    },
+    "summaryEn": "Flat burr grinder with 16 grind settings and a 120 g bean hopper.",
+    "sources": [
+      "https://www.delonghi.com/en-sg/p/coffee-grinders-kg89-kg-series-grinder/KG89.html?pid=SG0177111026",
+      "https://www.delonghi.com/en-gb/s/KG89?lead=qr"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "specNA": {
+      "appliance.power": "De’Longhi publishes different ratings by regional SKU. The local SKU is unconfirmed.",
+      "body.weight": "De’Longhi publishes different weights by regional SKU. The local SKU is unconfirmed."
+    }
+  },
+  {
+    "id": "de-longhi-kg200",
+    "category": "coffee",
+    "brand": "De'Longhi",
+    "name": "KG200",
+    "aliases": [
+      "De'Longhi KG200",
+      "DeLonghi KG200"
+    ],
+    "tier": "budget",
+    "priceAmd": 19900,
+    "priceAmdMax": 19900,
+    "popularity": 35,
+    "accent": "#42454C",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "coffee_grinder"
+    },
+    "body": {
+      "height": 250,
+      "width": 130,
+      "thickness": 110,
+      "weight": 1000
+    },
+    "summaryEn": "Push-to-grind stainless-steel blade grinder with a removable 90 g bean hopper.",
+    "sources": [
+      "https://www.delonghi.com/en-gb/p/coffee-grinders-kg200-kg-series-grinder/KG200.html?pid=0177111065"
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "specNA": {
+      "appliance.power": "The exact KG200 manufacturer product page does not publish the wattage."
+    }
   }
 ]
