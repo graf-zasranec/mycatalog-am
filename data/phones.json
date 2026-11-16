@@ -37517,7 +37517,8 @@
       "size": 65,
       "type": "OLED",
       "resolution": "3840 x 2160",
-      "refresh": 120
+      "refresh": 120,
+      "hdr": "Dolby Vision, HDR10, HLG"
     },
     "variants": [
       {
@@ -37533,7 +37534,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "https://www.lg.com/ru/televisions/lg-oled65b5rla",
+      "https://www.lg.com/ae/support/product/lg-OLED65B5RLA.AMCN"
     ],
     "colors": [
       "Black"
@@ -37553,7 +37555,8 @@
       "size": 65,
       "type": "OLED",
       "resolution": "3840 x 2160",
-      "refresh": 144
+      "refresh": 144,
+      "hdr": "Dolby Vision, HDR10, HLG"
     },
     "variants": [
       {
@@ -37569,7 +37572,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "https://www.lg.com/ae/support/product/lg-OLED65C5RLA.AMCN",
+      "https://www.lg.com/uk/tvs-soundbars/oled-evo/oled65c55la/"
     ],
     "colors": [
       "Black"
@@ -37589,7 +37593,8 @@
       "size": 65,
       "type": "OLED",
       "resolution": "3840 x 2160",
-      "refresh": 165
+      "refresh": 165,
+      "hdr": "Dolby Vision, HDR10, HLG"
     },
     "variants": [
       {
@@ -37605,7 +37610,8 @@
     ],
     "os": "webOS",
     "sources": [
-      "kitele"
+      "https://www.lg.com/ru/televisions/lg-oled65g5rla",
+      "https://www.lg.com/ae/support/product/lg-OLED65G5RLA.AMCN"
     ],
     "colors": [
       "Black"
@@ -39681,7 +39687,7 @@
       "size": 6.78,
       "type": "AMOLED",
       "resolution": "1272x2772",
-      "refresh": 120,
+      "refresh": 165,
       "ppi": 456,
       "brightness": 1800
     },
@@ -39749,11 +39755,11 @@
     "year": 2026,
     "released": "2026-04",
     "sources": [
-      "kimovil",
       "https://www.yerevanmobile.am/en/oneplus-nord-6.html",
       "https://www.notebookcheck.net/Nord-6-OnePlus-reveals-price-and-features-of-new-mid-range-smartphone.1268799.0.html",
       "https://www.oneplus.com/global/nord-6/specs",
-      "https://www.oneplus.in/oneplus-nord-6"
+      "https://www.oneplus.in/oneplus-nord-6",
+      "https://www.oneplus.com/global/nord-6"
     ]
   },
   {
@@ -95415,7 +95421,8 @@
       "size": 14.6,
       "type": "Dynamic AMOLED 2X",
       "resolution": "2960x1848",
-      "refresh": 120
+      "refresh": 120,
+      "brightness": 1600
     },
     "chipset": {
       "name": "MediaTek Dimensity 9500",
@@ -95445,21 +95452,25 @@
       }
     ],
     "camera": {
-      "main": "13 MP + 8 MP",
-      "front": "12 MP"
+      "main": "13 MP",
+      "front": "12 MP ultrawide",
+      "modules": 2,
+      "ultrawide": "8 MP"
     },
     "battery": {
-      "capacity": 11600
+      "capacity": 11600,
+      "wired": 45
     },
     "body": {
       "height": 326.3,
       "width": 208.5,
       "thickness": 5.1,
-      "weight": 692
+      "weight": 692,
+      "ip": "IP68"
     },
     "connectivity": {
-      "wifi": "Wi-Fi",
-      "bluetooth": true
+      "wifi": "Wi-Fi 7",
+      "bluetooth": "6.0"
     },
     "cardSlot": true,
     "os": "Android, One UI",
@@ -95470,7 +95481,8 @@
     "summaryEn": "Samsung Galaxy Tab S12 Ultra: 14.6-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9500, 12 GB RAM, 11,600 mAh battery, S Pen in the box.",
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-tab-s12-ultra-wi-fi-256gb-_gray_/34491/",
-      "https://www.samsung.com/uk/tablets/"
+      "https://www.samsung.com/uk/tablets/",
+      "https://news.samsung.com/global/samsung-introduces-galaxy-tab-s12-series-the-ultimate-productivity-powerhouse-built-for-growth"
     ],
     "unsure": [
       "popularity"
@@ -95491,7 +95503,8 @@
       "size": 12.6,
       "type": "Dynamic AMOLED 2X",
       "resolution": "2800x1752",
-      "refresh": 120
+      "refresh": 120,
+      "brightness": 1600
     },
     "chipset": {
       "name": "MediaTek Dimensity 9500",
@@ -95512,20 +95525,22 @@
     ],
     "camera": {
       "main": "13 MP",
-      "front": "12 MP"
+      "front": "12 MP ultrawide",
+      "modules": 1
     },
     "battery": {
-      "capacity": 10600
+      "capacity": 10600,
+      "wired": 45
     },
     "body": {
       "height": 289.5,
       "width": 187.8,
       "thickness": 5.3,
-      "weight": 553
+      "ip": "IP68"
     },
     "connectivity": {
-      "wifi": "Wi-Fi",
-      "bluetooth": true
+      "wifi": "Wi-Fi 6E",
+      "bluetooth": "6.0"
     },
     "cardSlot": true,
     "os": "Android, One UI",
@@ -95536,11 +95551,15 @@
     "summaryEn": "Samsung Galaxy Tab S12+: 12.6-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9500, 12 GB RAM, 10,600 mAh battery, S Pen in the box.",
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-tab-s12+-wi-fi-256gb-_gray_/34477/",
-      "https://www.samsung.com/uk/tablets/"
+      "https://www.samsung.com/uk/tablets/",
+      "https://news.samsung.com/global/samsung-introduces-galaxy-tab-s12-series-the-ultimate-productivity-powerhouse-built-for-growth"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration: 553 g (Wi-Fi) or 555 g (5G)"
+    }
   },
   {
     "id": "samsung-galaxy-tab-s11",
@@ -95579,19 +95598,21 @@
     ],
     "camera": {
       "main": "13 MP",
-      "front": "12 MP"
+      "front": "12 MP ultrawide",
+      "modules": 1
     },
     "battery": {
-      "capacity": 8400
+      "capacity": 8400,
+      "wired": 45
     },
     "body": {
       "height": 253.8,
       "width": 165.3,
       "thickness": 5.5,
-      "weight": 469
+      "ip": "IP68"
     },
     "connectivity": {
-      "wifi": "Wi-Fi",
+      "wifi": "Wi-Fi 6E",
       "bluetooth": true
     },
     "cardSlot": true,
@@ -95603,11 +95624,15 @@
     "summaryEn": "Samsung Galaxy Tab S11: 11-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9400+, 12 GB RAM, 8,400 mAh battery, S Pen in the box.",
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-tab-s11-wi-fi-128gb-_gray_/32456/",
-      "https://www.samsung.com/uk/tablets/"
+      "https://www.samsung.com/uk/tablets/",
+      "https://news.samsung.com/us/samsung-unveils-galaxy-tab-s11-series/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration: 469 g (Wi-Fi) or 471 g (5G)"
+    }
   },
   {
     "id": "samsung-galaxy-tab-s10-plus",
@@ -95644,21 +95669,24 @@
       }
     ],
     "camera": {
-      "main": "13 MP + 8 MP",
-      "front": "12 MP"
+      "main": "13 MP",
+      "front": "12 MP ultrawide",
+      "modules": 2,
+      "ultrawide": "8 MP"
     },
     "battery": {
-      "capacity": 10090
+      "capacity": 10090,
+      "wired": 45
     },
     "body": {
       "height": 285.4,
       "width": 185.4,
       "thickness": 5.6,
-      "weight": 571
+      "ip": "IP68"
     },
     "connectivity": {
       "wifi": "Wi-Fi",
-      "bluetooth": true
+      "bluetooth": "5.3"
     },
     "cardSlot": true,
     "os": "Android, One UI",
@@ -95669,11 +95697,15 @@
     "summaryEn": "Samsung Galaxy Tab S10+: 12.4-inch Dynamic AMOLED 2X display, MediaTek Dimensity 9300+, 12 GB RAM, 10,090 mAh battery, S Pen in the box.",
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-tab-s10+-wi-fi-512gb-_silver_/31078/",
-      "https://www.samsung.com/uk/tablets/"
+      "https://www.samsung.com/uk/tablets/",
+      "https://news.samsung.com/us/galaxy-tab-s10-series-samsung-ai-ready-tablet/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration: 571 g (Wi-Fi) or 576 g (5G)"
+    }
   },
   {
     "id": "samsung-galaxy-tab-s9-fe-plus",
@@ -95715,8 +95747,10 @@
       }
     ],
     "camera": {
-      "main": "8 MP + 8 MP",
-      "front": "12 MP"
+      "main": "8 MP",
+      "front": "12 MP",
+      "modules": 2,
+      "ultrawide": "8 MP"
     },
     "battery": {
       "capacity": 10090
@@ -95725,12 +95759,12 @@
       "height": 285.4,
       "width": 185.4,
       "thickness": 6.5,
-      "weight": 628,
       "ip": "IP68"
     },
     "connectivity": {
-      "wifi": "Wi-Fi",
-      "bluetooth": true
+      "wifi": "Wi-Fi 6",
+      "bluetooth": "5.3",
+      "ports": "USB-C (USB 2.0)"
     },
     "cardSlot": true,
     "os": "Android, One UI",
@@ -95744,11 +95778,15 @@
     "summaryEn": "Samsung Galaxy Tab S9 FE+: 12.4-inch IPS LCD display, Samsung Exynos 1380, 8 GB RAM, 10,090 mAh battery, S Pen in the box.",
     "sources": [
       "https://mobilecentre.am/product/samsung-galaxy-tab-s9-fe+-wi-fi-128gb-_light-green_/29382/",
-      "https://www.samsung.com/uk/tablets/"
+      "https://www.samsung.com/uk/tablets/",
+      "https://www.samsung.com/uk/business/tablets/galaxy-tab-s/galaxy-tab-s9-fe-plus-wifi-gray-256gb-sm-x610nzaeeub/"
     ],
     "unsure": [
       "popularity"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Depends on Wi-Fi or cellular configuration; Samsung lists 627 g for the quoted Wi-Fi model"
+    }
   },
   {
     "id": "apple-iphone-duo",
