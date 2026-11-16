@@ -20134,7 +20134,8 @@
       "nfc": true,
       "bluetooth": "6.0",
       "wifi": "Wi-Fi 6E",
-      "sim": "Dual SIM"
+      "sim": "Nano-SIM and eSIM on models with a SIM tray",
+      "ports": "USB-C 3.2"
     },
     "os": "Android 16",
     "variants": [
@@ -20163,9 +20164,10 @@
       "size": 6.3,
       "resolution": "1080x2424",
       "refresh": 120,
-      "ppi": 421,
+      "ppi": 422.2,
       "brightness": 3000,
-      "type": "pOLED"
+      "type": "pOLED",
+      "protection": "Corning Gorilla Glass 7i"
     },
     "chipset": {
       "name": "Google Tensor G4",
@@ -20183,7 +20185,7 @@
       "height": 153.9,
       "width": 73,
       "thickness": 9,
-      "materials": "Metal",
+      "materials": "Composite matte back, aluminium frame",
       "ip": "IP68"
     },
     "cardSlot": false,
@@ -20195,9 +20197,7 @@
       "ultrawide": "13 MP, f/2.2"
     },
     "sources": [
-      "kimovil",
-      "https://www.gsmarena.com/a-14474.php",
-      "https://www.androidcentral.com/phones/google-pixel/which-google-pixel-10a-color-should-you-buy"
+      "https://store.google.com/ie/product/pixel_10a_specs?hl=en-GB"
     ]
   },
   {
@@ -39627,7 +39627,7 @@
       "wifi": "Wi-Fi 7",
       "bluetooth": "6.0",
       "nfc": true,
-      "sim": "Dual nano-SIM"
+      "sim": "Dual nano-SIM; eSIM supported"
     },
     "cardSlot": false,
     "os": "Android 15, Nothing OS 3.5",
@@ -39642,6 +39642,10 @@
     ],
     "settled": [
       "notADuplicate"
+    ],
+    "sources": [
+      "https://support.nothing.tech/hc/en-us/articles/36457416298897-Does-the-Phone-3-support-eSIM",
+      "https://support.nothing.tech/hc/en-us/sections/36456741960465-Product-Feature"
     ]
   },
   {
@@ -43372,21 +43376,25 @@
     "audio": {
       "anc": true,
       "form": "tws",
-      "conn": "wireless"
+      "conn": "wireless",
+      "driver": "11 mm woofer and 6.5 mm tweeter",
+      "codecs": "Samsung Scalable Codec, AAC, SBC"
     },
     "battery": {
-      "life": "8 hours (28 with the case)"
+      "life": "Up to 5 hours with ANC (18 with case), 8 hours without ANC (28 with case)"
     },
     "connectivity": {
       "bluetooth": "5.0"
     },
     "body": {
       "ip": "IPX7",
-      "weight": 6.3
+      "weight": 6.3,
+      "dimensions": "19.5 × 20.5 × 20.8 mm per earbud"
     },
     "summaryEn": "The 2021 Pro buds — still the only Galaxy Buds rated IPX7.",
     "sources": [
-      "https://web.archive.org/web/20221024205724/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-pro-violet-sm-r190nzvaeua/"
+      "https://web.archive.org/web/20221024205724/https://www.samsung.com/uk/audio-sound/galaxy-buds/galaxy-buds-pro-violet-sm-r190nzvaeua/",
+      "https://news.samsung.com/uk/meet-galaxy-buds-pro-epic-sound-for-every-moment"
     ],
     "colors": [
       "Black",
@@ -62811,14 +62819,13 @@
     ],
     "body": {
       "materials": "Aluminium unibody",
-      "dimensions": "461 x 547 x 147 mm",
-      "weight": 4420
+      "dimensions": "461 x 547 x 147 mm"
     },
     "battery": {},
     "connectivity": {
       "wifi": "Wi-Fi 7",
       "bluetooth": "6",
-      "ports": "2x or 4x Thunderbolt, 3.5 mm, 2.5Gb Ethernet"
+      "ports": "2 or 4 Thunderbolt 4 ports, 3.5 mm jack; 2.5 Gb Ethernet included with the 12-core version and optional on the 10-core version"
     },
     "cardSlot": false,
     "os": "macOS 27",
@@ -62840,7 +62847,10 @@
     "sources": [
       "https://www.apple.com/imac/specs/",
       "https://www.apple.com/uk/imac/specs/"
-    ]
+    ],
+    "specNA": {
+      "body.weight": "Depends on configuration: 4.42 kg for the 10-core CPU or 4.44 kg for the 12-core CPU"
+    }
   },
   {
     "id": "apple-macbook-pro-proled-m5-max",
@@ -160307,13 +160317,16 @@
       "size": 3,
       "touch": true
     },
-    "battery": {},
+    "battery": {
+      "life": "Approx. 235 shots (CIPA), or 320 in Eco mode"
+    },
     "summaryEn": "Compact camera with a 1-inch 20.1 MP sensor and 4K 30p video.",
     "appliance": {
       "type": "compact"
     },
     "body": {
-      "weight": 304
+      "weight": 304,
+      "dimensions": "105 × 60.9 × 41.4 mm"
     },
     "colors": [
       "Graphite"
@@ -160323,8 +160336,12 @@
       "video": "4K 30p"
     },
     "sources": [
-      "https://www.amazon.com/dp/B0GMK619WM"
-    ]
+      "https://www.usa.canon.com/support/p/powershot-g7-x-mark-iii"
+    ],
+    "connectivity": {
+      "wifi": "Wi-Fi 4 (2.4 GHz)",
+      "ports": "USB-C, micro HDMI (Type D)"
+    }
   },
   {
     "id": "wacom-cintiq-pro-16",
