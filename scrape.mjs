@@ -394,6 +394,9 @@ function matchPhone(text, meta) {
   // '-' in that column says "not a product this catalogue carries", which is also an answer.
   const pin = pinnedId(text);
   if (pin !== undefined) return pin === '-' ? null : pin;
+  // Vega writes the chip as "MacBook Air 13 (Apple M5)" / "iMac 24 (Apple M6)": the extra "Apple"
+  // broke every Apple-silicon match, so none of Vega's Macs reached the site (2026-11-20).
+  text = String(text || '').replace(/\bApple\s+(M[1-9]\d?)\b/gi, '$1').replace(/\bRetina\s+\d(?:[.,]\d)?K\b/gi, '');
   if (looksLikeAccessory(text)) return null;
   if (looksLikeBundle(text)) return null;
   // "iPad 10.2" is the 7th/8th/9th-generation iPad, never the 10th-generation "iPad 10" (10.9"),
@@ -1560,6 +1563,8 @@ if (process.argv[2] === '--selftest') {
   }
   { const h = '{\\"sku\\":\\"RA1\\",\\"price\\":1119000,\\"cash_price\\":\\"1099000.00\\"}';
     if (redstoreCash(h, 'RA1', 1119000) !== 1099000 || redstoreCash(h, 'RA2', 1119000) !== 1119000) { bad++; console.log('FAIL redstoreCash'); } }
+  if (matchPhone('Նոթբուք APPLE MacBook Air 13 (Apple M5) 16GB 1TB (Midnight) (A3449)') !== 'apple-macbook-air-13-m5'
+      || matchPhone('APPLE iMac 24 Retina 4.5K (Apple M6) 16GB 256GB (Blue)') !== 'apple-imac-24-m6') { bad++; console.log('FAIL Vega "(Apple M5)" naming'); }
   const colCases = [
     ['Xiaomi Sound Outdoor Bluetooth Speaker Red', ['Red','Black','Blue'], 'Red'],
     ['Redmi Watch', ['Red','Black','Blue'], null],
