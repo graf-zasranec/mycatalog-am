@@ -18,7 +18,11 @@ const { matchPhone, looksLikeAccessory } = await import('data:text/javascript;ba
 
 // curl, not fetch(): Cloudflare answers Node's fetch with 403 and curl with the file
 let xml = '';
-try { xml = execFileSync('curl', ['-sL', '--max-time', '120', '-A', UA, 'https://www.zigzag.am/sitemap/hy_AM/sitemap.xml'], { maxBuffer: 64e6 }).toString(); } catch { }
+// --xml <file>: a copy the Mac's ZigZag job fetched with scrapling. Plain curl gets 403 from
+// Cloudflare since about 19 Oct 2026, which froze data/zigzag-sitemap.txt for a month.
+const xi = process.argv.indexOf('--xml');
+if (xi > 0) { try { xml = fs.readFileSync(process.argv[xi + 1], 'utf8'); } catch { } }
+else try { xml = execFileSync('curl', ['-sL', '--max-time', '120', '-A', UA, 'https://www.zigzag.am/sitemap/hy_AM/sitemap.xml'], { maxBuffer: 64e6 }).toString(); } catch { }
 if (!xml.includes('<urlset')) { console.error('sitemap: not readable - keeping the previous list'); process.exit(0); }
 const urls = [...xml.matchAll(/<loc>(https:\/\/www\.zigzag\.am\/am\/[a-z0-9-]+\.html)<\/loc>/g)].map(m => m[1]);
 const keep = urls.filter(u => {
