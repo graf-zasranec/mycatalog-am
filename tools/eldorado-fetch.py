@@ -84,6 +84,30 @@ CATEGORIES = [
     'large-home-appliances/large-kitchen-appliences/dishwashers',
     'large-home-appliances/washing-machines-and-dryers/washing-machines',
     'large-home-appliances/washing-machines-and-dryers/dryers',
+    # shop check 2026-11-20 (Black Friday): sections the catalogue covers that were never read.
+    # Eldorado's own Apple corner holds every iPhone 18 / iPad / Mac / Watch / AirPods it sells;
+    # without it those offers aged out of the site.
+    'istore/istore-iphone',
+    'istore/istore-ipad',
+    'istore/istore-mac',
+    'istore/istore-watch',
+    'istore/istore-airpods',
+    'sale/black-friday',
+    'small-appliances/coffee-machines-and-coffee-makers/coffee-makers',
+    'small-appliances/coffee-machines-and-coffee-makers/capsule-coffee-makers',
+    'small-appliances/coffee-machines-and-coffee-makers/coffee-grinders',
+    'small-appliances/household-devices/meat-grinders',
+    'small-appliances/household-devices/microwaves',
+    'audio-video/players-headsets/projectors-navigators-dvr/projector',
+    'computer-equipments/computers/desktops',
+    'computer-equipments/networks/routers',
+    'dyson-products-eldorado/dyson-air-purifiers-heaters-eldorado',
+    'dyson-products-eldorado/dyson-headphones-eldorado-armenia',
+    'laurastar-products-eldorado-armenia/laurastar-all-in-one-ironing-systems-armenia',
+    'laurastar-products-eldorado-armenia/steam-generators',
+    'large-home-appliances/built-in-appliances/built-in-dishwashers',
+    'large-home-appliances/built-in-appliances/built-in-refrigerators',
+    'large-home-appliances/built-in-appliances/built-in-washing-machines',
 ]
 
 # <a class="product_name combo_link" href="...">TITLE</a> ... data-price-amount="89900"
