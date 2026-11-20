@@ -1400,6 +1400,7 @@ function paintCmpCount() {
   const was = lastCmpN;
   lastCmpN = st.cmp.length;
   el.textContent = st.cmp.length || '';
+  for (const b of document.querySelectorAll('.p2-cmp b')) b.textContent = st.cmp.length || '';
   if (st.cmp.length <= was) return;
   el.classList.remove('pop');
   void el.offsetWidth;          // restart the animation rather than let it be ignored
@@ -2538,7 +2539,7 @@ function detailView(p) {
   const top = rows[0];
   return `<div class="shell product-page${PDP2 ? ' pdp2' : ''}">
     <div class="navrow">${backLink('#/', t('nav.catalog'))}
-      <nav class="crumb"><span>${esc(p.brand)}</span><span>›</span><span>${esc(p.name)}</span></nav></div>
+      <nav class="crumb"><span>${esc(p.brand)}</span><span>›</span><span>${esc(p.name)}</span></nav>${PDP2 ? `<a class="p2-cmp" href="#/compare" aria-label="${esc(t('nav.compare') || 'Compare')}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10M4 12h16M4 17h7"/></svg><b>${st.cmp.length || ''}</b></a>` : ''}</div>
 
     <div class="pstage">
       <div class="pmeta">

@@ -1624,7 +1624,7 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
 }
 /* Phone product page v2 (PDP2 in _app.js; set PDP2_DEFAULT=false there to go back). Wider screens keep
    the old layout: the v2 pieces are hidden outside the phone query. */
-.p2-arc,.p2-keys,.p2-more,.p2-bar{display:none}
+.p2-arc,.p2-keys,.p2-more,.p2-bar,.p2-cmp{display:none}
 .pdp2{--p2-bar:#161C28}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pdp2{--p2-bar:#0D0F15}}
 :root[data-theme="dark"] .pdp2{--p2-bar:#0D0F15}
@@ -1634,6 +1634,26 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
  body:has(.pdp2) .compare-selection{bottom:calc(118px + env(safe-area-inset-bottom,0px))}
  .pdp2{padding-bottom:calc(118px + env(safe-area-inset-bottom,0px))}
  .pdp2 .navrow .crumb{display:none}
+ /* the reference layout (owner, 11-21): no site header, a slim back/compare bar, the product first, then its name */
+ body:has(.pdp2) .topnav{display:none}
+ .pdp2 .navrow{display:flex;justify-content:space-between;align-items:center;margin:0 -8px;padding-top:6px}
+ .pdp2 .navrow .backbtn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;min-height:44px;padding:0;border:0;background:none;box-shadow:none;font-size:0;color:var(--text)}
+ .pdp2 .navrow .backbtn span{font-size:26px;line-height:1}
+ .pdp2 .p2-cmp{display:grid;place-items:center;position:relative;width:44px;height:44px;color:var(--text)}
+ .pdp2 .p2-cmp svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+ .pdp2 .p2-cmp b{position:absolute;right:2px;top:2px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--brand);color:#fff;font:700 11px/18px var(--ui);text-align:center}
+ .pdp2 .p2-cmp b:empty{display:none}
+ .pdp2 .pstage{display:flex;flex-direction:column}
+ .pdp2 .pgrid{display:contents}
+ .pdp2 .pshotwrap{order:-1}.pdp2 .pname{margin-bottom:6px}
+ .pdp2 .pside>.og{border:0;padding:0;margin:16px 0 0}
+ .pdp2 .pside>.og>label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+ .pdp2 .pside>.og:has(.cs){display:flex;flex-direction:row-reverse;justify-content:flex-end;align-items:center;gap:8px}
+ .pdp2 .pside>.og:has(.cs)>label{position:static;width:auto;height:auto;clip:auto;font-size:0}
+ .pdp2 .pside>.og:has(.cs)>label b{font-size:14px;font-weight:500;color:var(--muted)}
+ .pdp2 .pside>.og .bs{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:8px}
+ .pdp2 .pside>.og .bs button{min-height:44px;height:44px;padding:0 6px;border-radius:12px;white-space:nowrap}
+ .pdp2 .pshotwrap img{max-height:300px;object-fit:contain}
  .pdp2 .cs button{width:44px;height:44px;min-width:44px;min-height:44px}
  .pdp2 .pside>.og{order:2}.pdp2 .pprice2{order:3}.pdp2 .p2-keys{order:4}.pdp2 .p2-more[data-p2-specs]{order:5}.pdp2 .pcta{order:6}
  .pdp2 .pshotwrap{overflow:visible;isolation:isolate;margin-bottom:22px}
