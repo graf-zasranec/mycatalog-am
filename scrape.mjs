@@ -219,6 +219,10 @@ const ACCESSORY_WORDS = [
   // and iBolit's screen glass titled with the phone ("iPhone 14 Plus Green Steve Glass", "Xmart 9D Glass
   // SP iPhone 16", "Apple Glass iPad 11"). 'glass' alone stays allowed for the iPad Pro's nano-texture glass.
   'copy', 'replica', 'steve glass', '9d glass', 'glass sp', 'apple glass',
+  // AllSell: "Տակդիր Dyson AirStrait" (a stand), "Xiaomi 17PIN NB001" (a connector part)
+  'տակդիր', 'pin nb001', '17pin',
+  // AllSell straps (Գոտի), S Pen (Գրիչ), DeadSkull bags/boxes for PS5, no-name kettles named like Xiaomi's
+  'գոտի', 'գրիչ', 's pen', 'shoulder bag', 'deadskull', 'sokany', 'alizz',
   // robot-vacuum spare parts name the robots they fit ("Robot vacuum filter Xiaomi S20 / S40 / S40 Pro")
   // and matched those robots once their shop titles became aliases (2026-11-14)
   'mop cloth', 'mop pad', 'mop pads', 'side brush', 'main brush', 'roller brush', 'rubber brush', 'dust bag',
@@ -450,6 +454,8 @@ function matchPhone(text, meta) {
   for (const [v, split] of tries) {
     const id = matchIn(' ' + v + ' ', split);
     if (id === 'jbl-tune' && /\btune\s*\d/.test(base)) return null;
+    // "PS5/Pro DualSense Edge Wireless Controller" is the controller, never the console (AllSell, 2026-11-20)
+    if (id && /dualsense/i.test(text) && !id.includes('dualsense')) return null;
     if (id) return capacityFits(id, text) && brandFits(id, text) ? id : null;
   }
   // A real product on a real shelf that this catalogue has no entry for. A URL says less than a
@@ -1024,6 +1030,14 @@ if (process.argv[2] === '--selftest') {
     ['xiaomi-ultra-slim-power-bank-5000', 'Xiaomi Ultra Slim Power Bank 5000mAh'],
     [null, 'Silicone Case for AirPods Pro 3'],
     [null, 'Airpods Pro 3 (Copy)'],
+    [null, 'Պատյան iPhone 17 Pro Max Keep Hone X-Crystal'],
+    [null, 'Տակդիր Dyson AirStrait'],
+    [null, 'Xiaomi 17PIN NB001'],
+    [null, 'Գոտի Samsung Watch8 Classic Hybrid Band ET-SLL50 S/M/L'],
+    [null, 'Գրիչ Samsung Tab S11/ S11 Ultra S Pet EJ-PX730'],
+    [null, 'PS5 Slim Shoulder Bag DeadSkull'],
+    [null, 'Թեյնիկ Sokany Electric kettle 2.3L 2000W SK-SH-0702'],
+    [null, 'Վահանակ PS5/Pro DualSense Edge Wireless Controller'],
     ['samsung-galaxy-s26-plus', 'Samsung Galaxy S26 Plus Ice Blue 256 12GB'],
     [null, 'iPhone 14 Plus Green Steve Glass'],
     [null, 'Xmart 9D Glass SP iPhone 16/16 Pro/16 Pro Max'],
@@ -2481,6 +2495,9 @@ const SHOPS = {
         const price = Math.round(Number(html.slice(pi + 19, html.indexOf(D, pi + 19))));
         const title = clean((html.match(/<title>([^<|]*)/) || [])[1] || '');
         if (!price || price < 5000 || !title || !safeUrl(u)) continue;
+        // The page was picked by its url, which never says "case": "iphone-17-pro-max-keep-hone-x-crystal" is
+        // "Պատյան iPhone 17 Pro Max Keep Hone X-Crystal". The title has the last word (shop check 2026-11-20).
+        if (looksLikeAccessory(title)) continue;
         // Magento prints class="stock available" / class="stock unavailable". The old test looked
         // for the bare word OutOfStock anywhere in the page, and every configurable product
         // carries "canDisplayShowOutOfStockStatus":true in its swatch config - so 103 of
