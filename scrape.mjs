@@ -2447,7 +2447,9 @@ const SHOPS = {
         const id = matchPhone(u);
         if (!id) continue;
         perPhone[id] = (perPhone[id] || 0) + 1;
-        if (perPhone[id] > 8) continue;               // cap requests per model
+        // was 8: the sitemap lists a model's pages black-first, so iPhone 18 Pro (32 pages: 4 sizes x
+        // colours x SIM) was read in black only (2026-11-21). 40 covers a whole line; ~480 pages a run.
+        if (perPhone[id] > 40) continue;              // cap requests per model
         const html = await get(u); await sleep(DELAY_MS);
         if (!html) continue;
         // ".price is-action" is a sale price; ".price " (trailing space) is the price of anything
