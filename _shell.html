@@ -1622,6 +1622,42 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
  html.fs-open .bx-mobile-nav{pointer-events:none}
  .mbar{margin-top:4px}#main>.shell:has(>#gridbox){padding-top:0}
 }
+/* Phone product page v2 (PDP2 in _app.js; set PDP2_DEFAULT=false there to go back). Wider screens keep
+   the old layout: the v2 pieces are hidden outside the phone query. */
+.p2-arc,.p2-keys,.p2-more,.p2-bar{display:none}
+.pdp2{--p2-bar:#161C28}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pdp2{--p2-bar:#0D0F15}}
+:root[data-theme="dark"] .pdp2{--p2-bar:#0D0F15}
+@media(max-width:800px){
+ body:has(.pdp2) .bx-mobile-nav{display:none}
+ body:has(.pdp2){padding-bottom:0}
+ body:has(.pdp2) .compare-selection{bottom:calc(118px + env(safe-area-inset-bottom,0px))}
+ .pdp2{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
+ .pdp2 .navrow .crumb{display:none}
+ .pdp2 .cs button{width:44px;height:44px;min-width:44px;min-height:44px}
+ .pdp2 .pside>.og{order:2}.pdp2 .pprice2{order:3}.pdp2 .p2-keys{order:4}.pdp2 .p2-more[data-p2-specs]{order:5}.pdp2 .pcta{order:6}
+ .pdp2 .pshotwrap{overflow:visible;isolation:isolate;margin-bottom:22px}
+ .pdp2 .p2-arc{display:block;position:absolute;left:-14%;right:-14%;bottom:-4%;height:160%;border-radius:50%;border-bottom:1.5px solid var(--line2);z-index:-1;pointer-events:none}
+ .pdp2 .p2-arc i{position:absolute;left:50%;bottom:-11px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--c);border:2px solid var(--text);box-shadow:inset 0 0 0 4px var(--bg)}
+ .pdp2 .pprice2 .lb,.pdp2 .pprice2 .pp-row,.pdp2 .pprice2 .shopn,.pdp2 .pcta .btn:not([data-cmp-btn]),.pdp2 .allofflink{display:none}
+ .pdp2 .p2-keys{display:block;margin:18px 0 0;padding-left:18px;font-size:16px;line-height:1.7;color:var(--text)}
+ .pdp2 .p2-keys li::marker{color:var(--brand-2)}
+ .pdp2 .p2-keys li span{color:var(--muted);font-size:14px}
+ .pdp2 .p2-keys li:nth-child(n+3){color:var(--muted)}
+ .pdp2 .p2-more{display:flex;width:100%;align-items:center;gap:10px;min-height:52px;margin-top:14px;padding:0 18px;border-radius:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--text);font:600 15px var(--ui);text-decoration:none;cursor:pointer;text-align:left}
+ .pdp2 .p2-more span{margin-left:auto;font-weight:500;font-size:13px;color:var(--muted)}
+ .pdp2 .p2-more svg{width:18px;height:18px;flex:none;fill:none;stroke:var(--brand-2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+ .pdp2 .p2-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:72;isolation:isolate;align-items:center;justify-content:space-between;gap:14px;padding:16px max(18px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));background:var(--p2-bar);color:#F2EEE7}
+ .pdp2 .p2-bar::after{content:"";position:absolute;left:0;right:0;top:-32px;height:32px;background:var(--p2-bar);z-index:-2}
+ .pdp2 .p2-bar::before{content:"";position:absolute;left:0;right:0;top:-33px;height:33px;background:var(--bg);border-radius:0 0 32px 32px;z-index:-1}
+ .pdp2 .p2-bar>div{min-width:0}
+ .pdp2 .p2-bar small{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#E3A0AC}
+ .pdp2 .p2-bar strong{display:block;white-space:nowrap;font-size:24px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
+ .pdp2 .p2-bar span{display:block;font-size:13px;color:#9AA3B2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .pdp2 .p2-go{flex:none;display:flex;align-items:center;gap:8px;min-height:52px;padding:0 16px;border-radius:16px;background:var(--brand);color:#fff;font:700 15px var(--ui);text-decoration:none;white-space:nowrap}
+ .pdp2 .p2-go svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2}
+}
+@media(max-width:359px){.pdp2 .p2-bar{gap:10px}.pdp2 .p2-bar strong{font-size:20px}.pdp2 .p2-bar span{white-space:normal}.pdp2 .p2-go{padding:0 12px;font-size:14px;gap:6px}}
 
 /* The heading spans both columns. IDs in :is() formerly overrode the class rule. */
 #main>.shell:has(>#gridbox)>#results.resbar{grid-column:1/-1;grid-row:1;justify-content:flex-start;text-align:left}

@@ -25,7 +25,15 @@ function routeLinkClick(e) {
   location.hash = a.dataset.route || a.getAttribute('href');
 }
 document.addEventListener('click',routeLinkClick,true);
-const OFFER_PEEK = 5;   // shops in the product page's price table; the rest are one link away, on the offers page
+const OFFER_PEEK = 5;
+// Phone product page v2 (owner 2026-11-20): photo on an arc, options, key specs, then the shops, and
+// the cheapest price in a dark bar fixed at the foot under a curved sheet. TO GO BACK to the previous
+// phone page set PDP2_DEFAULT to false, build and push (git tag pdp-v1-before-mobile-redesign is the
+// code before). Any visitor can also open ?pdp=0 (old) or ?pdp=1 (new); the choice is remembered.
+const PDP2_DEFAULT = true;
+const PDP2 = (() => { try { const q = new URLSearchParams(location.search).get('pdp');
+  if (q === '0' || q === '1') localStorage.setItem('better.pdp', q);
+  const v = localStorage.getItem('better.pdp'); return v ? v === '1' : PDP2_DEFAULT; } catch (e) { return PDP2_DEFAULT; } })();   // shops in the product page's price table; the rest are one link away, on the offers page
 // An explicit way back. An anchor to the logical parent, not history.back(), so it still
 // works when someone opens a product or offers link directly.
 const backLink = (href, label) =>
@@ -2522,7 +2530,13 @@ function detailView(p) {
     return body ? `<section class="panel-c"><h3><i></i>${esc(t(g))}</h3><dl>${body}</dl></section>` : '';
   }).join('');
 
-  return `<div class="shell product-page">
+  // v2 phone pieces (hidden on wider screens by CSS): the first four specs as a short list
+  // one from each spec group (screen, chip, camera, battery...), not four lines about the screen
+  const keys = PDP2 ? GROUPS.map(([, rs]) => rs.filter(([k]) => specAllowed(k, p))
+    .map(([k, get]) => [k, specVal(get, selectedProduct(p, SEL))]).find(([, v]) => v != null && String(v).length < 40)).filter(Boolean).slice(0, 4) : [];
+  const nSpecs = PDP2 ? GROUPS.reduce((n, [, rs]) => n + rs.filter(([k, get]) => specAllowed(k, p) && specVal(get, selectedProduct(p, SEL)) != null).length, 0) : 0;
+  const top = rows[0];
+  return `<div class="shell product-page${PDP2 ? ' pdp2' : ''}">
     <div class="navrow">${backLink('#/', t('nav.catalog'))}
       <nav class="crumb"><span>${esc(p.brand)}</span><span>›</span><span>${esc(p.name)}</span></nav></div>
 
@@ -2533,7 +2547,7 @@ function detailView(p) {
       </div>
       <h1 class="pname"><span class="pn">${esc(fullName(p))}</span>${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
-        <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" ${productImageSet(shot)} alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
+        <div class="pshotwrap" style="--t:${box[0] / 1000};--h:${(box[1] - box[0]) / 1000}"><img src="${esc(shot)}" ${productImageSet(shot)} alt="${esc(fullName(p))}" id="hpShot" fetchpriority="high">${PDP2 ? `<span class="p2-arc" aria-hidden="true"><i style="--c:${swatch(SEL.color || cols[0] || '')}"></i></span>` : ''}${otherShot ? `<span class="shot-note">${esc(x('otherColour'))}</span>` : ''}</div>
         <div class="pside">
           <!-- colours first, then RAM, then storage (owner, 2026-09-26) -->
           ${cols.length > 1 ? `<div class="og"><label>${esc(t('sec.colors'))}<b id="colName">${esc(SEL.color || cols[0])}</b></label>
@@ -2557,6 +2571,8 @@ function detailView(p) {
           ${ntPick ? `<div class="og"><label>${esc(x('glassF'))}</label>
             <div class="bs">${[false, true].map(want =>
               `<button data-nt="${want ? 1 : 0}" class="${SEL.nt === want ? 'on' : ''}" aria-pressed="${SEL.nt === want}">${esc(ntLbl(want))}</button>`).join('')}</div></div>` : ''}
+          ${PDP2 && keys.length ? `<ul class="p2-keys">${keys.map(([k, v]) => `<li><span>${esc(t(k === 'f.storage' ? storageLabel(p) : k))}</span> ${esc(tr(v, st.lang))}</li>`).join('')}</ul>
+          <button type="button" class="p2-more" data-p2-specs>${esc(t('detail.full_specs'))}<span>${nSpecs}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
             <div class="pp-row"><b class="num">${money(shownPrice)} ֏</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
@@ -2579,15 +2595,18 @@ function detailView(p) {
     ${rows.length > OFFER_PEEK || offersFor(p).length > rows.length ? `<p class="allofflink"><a href="#/offers/${esc(p.id)}">${esc(x('allOffersN')
       .replace('{n}', offersFor(p).length).replace('{N}', nx(offersFor(p).length, 'offersLbl')).replace('{from}', fromShops(shopCount(offersFor(p)))))} →</a></p>` : ''}`
       : ''}
+    ${PDP2 && rows.length ? `<a class="p2-more p2-shops" href="#/offers/${esc(p.id)}">${esc(x('allOffers'))}<span>${shopCount(offersFor(p))}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>` : ''}
     ${offs.length ? `<p class="note">${esc(x('priceSrc'))} · ${esc(x('updated'))} ${esc(updatedOn())}</p>` : ''}
 
 
     ${historyHTML(p)}
 
-    <h2 class="sh">${esc(t('detail.full_specs'))}</h2>
+    <h2 class="sh" id="specs">${esc(t('detail.full_specs'))}</h2>
     <div class="secgrid">${specs}</div>
 
     ${similarHTML(p)}
+    ${PDP2 && top ? `<div class="p2-bar"><div><small>${esc(x('bestPrice'))}</small><strong class="num">${money(lo)} ֏</strong><span>${esc([shopName(top.shop), cfgLbl].filter(Boolean).join(' · '))}</span></div>
+      <a class="p2-go" href="${esc(safeHref(top.url))}" target="_blank" rel="noopener noreferrer" data-shop="${esc(top.shop)}" data-pid="${esc(p.id)}" data-price="${top.price || ''}">${esc(x('goShop'))}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></div>` : ''}
   </div>`;
 }
 // Similar models (owner, 2026-10-16): the four on sale in the same section nearest in price. It
@@ -3911,6 +3930,8 @@ function bxSyncMobileNav(){let nav=document.querySelector('.bx-mobile-nav');if(!
 function bxStartMobileC(){const main=document.querySelector('#main'),selection=document.querySelector('#compareSelection');if(main)new MutationObserver(bxSyncMobileNav).observe(main,{childList:true});if(selection)new MutationObserver(bxSyncMobileNav).observe(selection,{childList:true,subtree:true});new MutationObserver(bxSyncMobileNav).observe(document.documentElement,{attributes:true,attributeFilter:['class']});bxSyncMobileNav();}
 document.addEventListener('click',e=>{if(e.target.closest('[data-bx-mobile-home]')){e.preventDefault();document.querySelector('.logo')?.click();}if(e.target.closest('[data-bx-mobile-category]'))bxMobileCategory();});
 
+// the v2 phone page's "all specs" button scrolls to the full table (a #specs link would leave the hash route)
+document.addEventListener('click',e=>{if(e.target.closest('[data-p2-specs]'))document.getElementById('specs')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});});
 document.addEventListener('click',e=>{const q=e.target.closest('[data-bx-search]');if(q){st.q=q.dataset.bxSearch;save();if(location.hash==='#/search')render();else location.hash='/search';}});
 
 render();
