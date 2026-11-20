@@ -390,6 +390,9 @@ function configPool(p) {
 function chooseConfig(p, current, axis, value) {
   if (value == null) return {...current, [axis]: value}; // Clearing SIM relaxes the current selection.
   const presentationAxis = ['color', 'band', 'cell', 'esim'].includes(axis);
+  // Switching SIM, colour, band or cellular must not move the other choices when the current
+  // pick exists that way too; an offer with no colour listed counts as a match (owner bug 11-21).
+  if (presentationAxis && selectionOffers(p, { ...current, [axis]: value }).length) return { ...current, [axis]: value };
   const hasRAM = (p.variants || []).some(v => v.ram != null);
   const real = (presentationAxis ? selectionOffers(p, {[axis]: value}) : offersFor(p))
     .map(o => offerConfig(p, o)).filter(o => presentationAxis || (o.storage != null && (!hasRAM || o.ram != null)));
@@ -2565,7 +2568,7 @@ function detailView(p) {
             <div class="bs">${stors.map(sv => `<button data-storage="${sv}" class="${sv === SEL.storage ? 'on' : ''}${sold(p, 'storage', sv) ? '' : ' na'}"${sold(p, 'storage', sv) ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${sv === SEL.storage}">${esc(gb(sv, p.variantUnit))}</button>`).join('')}</div></div>` : ''}
           ${simOpts.length ? `<div class="og"><label>${esc(t('f.sim'))}</label>
             <div class="bs">${simOpts.map(([n, want]) =>
-              `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}" aria-pressed="${SEL.esim === want}">${n}</button>`).join('')}</div></div>` : ''}
+              `<button data-esim="${want ? 1 : 0}" class="${SEL.esim === want ? 'on' : ''}${SEL.esim === want || selectionOffers(p, { ...SEL, esim: want }).length ? '' : ' na'}"${SEL.esim === want || selectionOffers(p, { ...SEL, esim: want }).length ? '' : ` title="${esc(x('notSold'))}"`} aria-pressed="${SEL.esim === want}">${n}</button>`).join('')}</div></div>` : ''}
           ${cellPick ? `<div class="og"><label>${esc(x('connF'))}</label>
             <div class="bs">${[false, true].map(want =>
               `<button data-cell="${want ? 1 : 0}" class="${SEL.cell === want ? 'on' : ''}" aria-pressed="${SEL.cell === want}">${esc(cellLbl(want))}</button>`).join('')}</div></div>` : ''}
