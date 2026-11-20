@@ -7,7 +7,7 @@ name: Better — stock check
 
 on:
   schedule:
-    - cron: '0 17 * * *'     # 21:00 Yerevan - finished before the 00:00 price refresh
+    - cron: '0 17 * * *'     # 21:00 Yerevan - finished before the 01:00 price refresh
   workflow_dispatch:
 
 permissions:
@@ -108,5 +108,6 @@ jobs:
       - name: Report an incomplete stock sweep
         if: always() && steps.sweep.outcome == 'failure'
         run: |
-          echo "::error::Stock sweep failed or timed out; completed hand-row changes were preserved, but sold-out coverage was not refreshed."
-          exit 1
+          # A warning, not a failure: a partial sweep keeps the previous stock state for the pages it
+          # could not reach, and a red run here only sent the owner an email every night.
+          echo "::warning::Stock sweep incomplete; completed hand-row changes were preserved, unreached pages keep their previous stock state."

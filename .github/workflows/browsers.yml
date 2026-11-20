@@ -50,9 +50,9 @@ jobs:
           PRODUCT_STARTUP_ENGINES: chromium,firefox,webkit
           CHEAPEST_ENGINES: chromium,firefox,webkit
         run: |
-          node tools/image-loading-browser-test.mjs
-          node tools/responsive-interaction-test.mjs
-          node tools/filter-browser-test.mjs
-          node tools/interaction-regressions-browser-test.mjs
-          node tools/product-startup-browser-test.mjs
-          node tools/cheapest-config-browser-test.mjs
+          # Each test gets one retry: they load real photos from img.better.am, and a slow first
+          # response on the runner timed out a passing test (2026-11-19).
+          for t in image-loading-browser-test responsive-interaction-test filter-browser-test \
+                   interaction-regressions-browser-test product-startup-browser-test cheapest-config-browser-test; do
+            node tools/$t.mjs || { echo "::warning::$t failed once, retrying"; sleep 10; node tools/$t.mjs; }
+          done

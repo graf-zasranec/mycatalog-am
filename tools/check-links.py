@@ -179,13 +179,20 @@ def check_all():
         for queue in groups.values():
             if queue:
                 pending.append(queue.popleft())
+    # A shop that never answers GitHub's runners (timeouts, not refusals) used to cost ~150 s per
+    # page and pushed the sweep past its 2-hour step limit (2026-11-19). After 6 failures in a row
+    # the rest of that host is left unchecked; its previous stock state stays as it was.
+    fails = defaultdict(int)
     def probe(u):
         host = u.split('/')[2]
         with locks[host]:
+            if fails[host] >= 6:
+                return u, {'status': 'not fetched', 'why': 'host unreachable from this runner'}
             time.sleep(0.4)
             for attempt in (1, 2):
                 try:
-                    r = Fetcher.get(u, impersonate='chrome', timeout=25)
+                    r = Fetcher.get(u, impersonate='chrome', timeout=25, retries=1)
+                    fails[host] = 0
                     h = r.html_content or ''
                     heading = re.search(r'<h1\b[^>]*>([\s\S]*?)</h1>', h, re.I)
                     title = re.sub(r'<[^>]+>', ' ', heading.group(1)).strip() if heading else ''
@@ -194,6 +201,9 @@ def check_all():
                     return u, result
                 except Exception as e:
                     result = {'status': 'ERR', 'why': type(e).__name__}
+                    fails[host] += 1
+                    if fails[host] >= 6:
+                        break
                     if attempt == 1:
                         time.sleep(2)
             return u, result

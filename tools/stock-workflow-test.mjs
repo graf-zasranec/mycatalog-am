@@ -3,7 +3,8 @@ import assert from 'node:assert/strict';
 const workflow=fs.readFileSync('.github/workflows/stock-check.yml','utf8');
 assert.match(workflow,/python tools\/check-links\.py --all --workers=4/,'bounded cross-host workers complete the sweep');
 assert.match(workflow,/id: sweep/,'capture outcome separately from continue-on-error');
-assert.match(workflow,/if: always\(\) && steps\.sweep\.outcome == 'failure'[\s\S]*exit 1/,'an incomplete sweep must fail the run');
+// Owner 2026-11-20: an incomplete sweep is reported as a warning, not a failed run (it emailed every night).
+assert.match(workflow,/if: always\(\) && steps\.sweep\.outcome == 'failure'[\s\S]*::warning::Stock sweep incomplete/,'an incomplete sweep must be reported');
 assert.match(workflow,/name: Restore this run's stock checkpoint[\s\S]*if: github\.run_attempt > 1[\s\S]*name: stock-checkpoint-\$\{\{ github\.run_id \}\}/,'only resume this run, never stale checks from another day');
 assert.match(workflow,/name: Preserve the stock checkpoint[\s\S]*if: always\(\)[\s\S]*include-hidden-files: true[\s\S]*\.links\.json/,'timeout recovery includes hidden progress');
 const preserve=workflow.indexOf('name: Preserve the stock checkpoint'),commit=workflow.indexOf('name: Commit hand rows'),fail=workflow.indexOf('name: Report an incomplete stock sweep');
