@@ -364,7 +364,11 @@ function looksLikeBundle(text) {
     // capacity and colour of the first. "iPhone 14 Plus 128GB (Red)" is one phone whose name holds
     // the joiner, and reading 128GB and Red as a second product dropped every such offer.
     // "5g"/"4g" is the radio, not a model number: "Redmi Note 15 Pro Plus 5G Mocha Brown" is one phone.
-    const own = words.filter(w => !/^\d+(gb|tb|mb)$/.test(w) && !/^[45]g$/.test(w) && !COLOR_WORDS.has(w));
+    // AllSell's "Galaxy S26 Plus Ice Blue 256 12GB": a two-word colour ("ice blue") and a bare capacity
+    // (256) are still the first product's, not a second one (2026-11-20 shop check).
+    const own = words.filter((w, i) => !/^\d+(gb|tb|mb)$/.test(w) && !/^[45]g$/.test(w) && !COLOR_WORDS.has(w)
+      && !/^(32|64|128|256|512|1024|2048)$/.test(w)
+      && !COLOR_WORDS.has(w + (words[i + 1] || '')) && !COLOR_WORDS.has((words[i - 1] || '') + w));
     if (own.some(w => /^[a-z]{3,}$/.test(w)) && own.some(w => /\d/.test(w))) return true;
   }
   return false;
@@ -1020,6 +1024,7 @@ if (process.argv[2] === '--selftest') {
     ['xiaomi-ultra-slim-power-bank-5000', 'Xiaomi Ultra Slim Power Bank 5000mAh'],
     [null, 'Silicone Case for AirPods Pro 3'],
     [null, 'Airpods Pro 3 (Copy)'],
+    ['samsung-galaxy-s26-plus', 'Samsung Galaxy S26 Plus Ice Blue 256 12GB'],
     [null, 'iPhone 14 Plus Green Steve Glass'],
     [null, 'Xmart 9D Glass SP iPhone 16/16 Pro/16 Pro Max'],
     [null, 'Apple Glass iPad 11'],
