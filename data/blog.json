@@ -1131,9 +1131,22 @@
    "title": "Black Friday 2026 Հայաստանում․ իրական զեղչեր, ոչ թե կեղծ",
    "lead": "Սև ուրբաթը 2026-ին նոյեմբերի 27-ին է։ Ինչպես տարբերել իրական զեղչը կեղծից և որ ապրանքներն են այսօր իրականում էժանացել Երևանի խանութներում։",
    "body": [
+    "## Կարևոր ամսաթվերը",
+    "- Նոյեմբերի 27՝ Black Friday (Սև ուրբաթ)",
+    "- Նոյեմբերի 30՝ Cyber Monday",
+    "- Շատ խանութներ զեղչերը սկսում են մեկ շաբաթ շուտ, ուստի գները ստուգեք արդեն հիմա։",
     "## Ինչն է այսօր իրականում էժանացել",
     "Այս ցանկը թարմանում է օրը երկու անգամ։ Այստեղ միայն այն ապրանքներն են, որոնց ամենացածր գինը իջել է առնվազն 5%-ով, և գինը համեմատվել է նույն թվով խանութներում առնվազն մեկ շաբաթ։",
     "!list:sort=drop&n=12",
+    "## Իրական զեղչերը՝ ըստ բաժինների",
+    "### Հեռախոսներ",
+    "!list:cat=phone&sort=drop&n=4",
+    "### Նոթբուքեր",
+    "!list:cat=laptop&sort=drop&n=4",
+    "### Հեռուստացույցներ",
+    "!list:cat=tv&sort=drop&n=4",
+    "### Ականջակալներ",
+    "!list:cat=headphones&sort=drop&n=4",
     "## Ինչու են շատ «զեղչեր» կեղծ",
     "Սև ուրբաթից առաջ որոշ խանութներ բարձրացնում են գինը, իսկ հետո «իջեցնում» նախկին մակարդակին։ Կարմիր թիվը և ջնջված գինը ոչինչ չեն ապացուցում։ Միակ ստուգումը գնի պատմությունն է։",
     "- Բացեք ապրանքի էջը Better.am-ում և նայեք գնի գրաֆիկին․ եթե գինը վերջին շաբաթներին բարձրացել է և նոր «իջել», դա զեղչ չէ։",
@@ -1144,7 +1157,9 @@
     "- iPhone 17՝ սկսած {{price:apple-iphone-17}}",
     "- AirPods Pro 3՝ սկսած {{price:apple-airpods-pro-3}}",
     "- MacBook Air M5՝ սկսած {{price:apple-macbook-air-13-m5}}",
-    "- PlayStation 5 Slim՝ սկսած {{price:sony-ps5-slim}}"
+    "- PlayStation 5 Slim՝ սկսած {{price:sony-ps5-slim}}",
+    "## Կեղծ զեղչի իրական օրինակ",
+    "MacBook Air M5-ը մի խանութում արժեր 509 000 ֏։ Նոյեմբերի 8-ին գինը դարձավ 579 000 ֏, իսկ հետո «իջավ» 559 000 ֏-ի՝ «−3.5%»։ Իրականում այն 50 000 ֏-ով թանկ է, քան մինչև «զեղչը»։ Գնի գրաֆիկը դա ցույց է տալիս մեկ հայացքով։"
    ],
    "faq": [
     {
@@ -1158,6 +1173,14 @@
     {
      "q": "Որտե՞ղ գտնել ամենաէժան գինը",
      "a": "Better.am-ը համեմատում է Երևանի 20-ից ավելի խանութների գները և ցույց է տալիս ամենաէժանը առաջինը։ Գները թարմանում են օրը երկու անգամ։"
+    },
+    {
+     "q": "Ո՞ր ապրանքներն են ամենաշատը էժանանում Սև ուրբաթին",
+     "a": "Սովորաբար նախորդ տարվա հեռախոսները, նոթբուքերը և հեռուստացույցները։ Վերևի ցանկերը ցույց են տալիս, թե որոնց գինն է իրականում իջել այսօր։"
+    },
+    {
+     "q": "Արժե՞ սպասել Սև ուրբաթին",
+     "a": "Եթե ապրանքի գինը վերջին շաբաթներին չի բարձրացել և արդեն ամենացածրն է, սպասելը կարող է ոչինչ չտալ։ Ստուգեք գնի պատմությունը Better.am-ում։"
     }
    ]
   },
@@ -1165,9 +1188,22 @@
    "title": "Чёрная пятница 2026 в Армении: настоящие скидки и фальшивые",
    "lead": "Чёрная пятница в 2026 году — 27 ноября. Как отличить настоящую скидку от фальшивой и что сегодня действительно подешевело в магазинах Еревана.",
    "body": [
+    "## Важные даты",
+    "- 27 ноября — Чёрная пятница (Black Friday)",
+    "- 30 ноября — Киберпонедельник (Cyber Monday)",
+    "- Многие магазины начинают акции на неделю раньше, так что проверяйте цены уже сейчас.",
     "## Что сегодня действительно подешевело",
     "Список обновляется два раза в день. В нём только товары, чья минимальная цена упала минимум на 5%, а цены сравнивались в том же числе магазинов не меньше недели.",
     "!list:sort=drop&n=12",
+    "## Настоящие скидки по разделам",
+    "### Телефоны",
+    "!list:cat=phone&sort=drop&n=4",
+    "### Ноутбуки",
+    "!list:cat=laptop&sort=drop&n=4",
+    "### Телевизоры",
+    "!list:cat=tv&sort=drop&n=4",
+    "### Наушники",
+    "!list:cat=headphones&sort=drop&n=4",
     "## Почему многие «скидки» ненастоящие",
     "Перед Чёрной пятницей некоторые магазины поднимают цену, а потом «снижают» её до прежнего уровня. Красная цифра и зачёркнутая цена ничего не доказывают. Проверка одна — история цены.",
     "- Откройте товар на Better.am и посмотрите график цены: если цена недавно выросла и тут же «упала», это не скидка.",
@@ -1178,7 +1214,9 @@
     "- iPhone 17: от {{price:apple-iphone-17}}",
     "- AirPods Pro 3: от {{price:apple-airpods-pro-3}}",
     "- MacBook Air M5: от {{price:apple-macbook-air-13-m5}}",
-    "- PlayStation 5 Slim: от {{price:sony-ps5-slim}}"
+    "- PlayStation 5 Slim: от {{price:sony-ps5-slim}}",
+    "## Реальный пример фальшивой скидки",
+    "MacBook Air M5 в одном магазине стоил 509 000 ֏. 8 ноября цена выросла до 579 000 ֏, а потом «упала» до 559 000 ֏ — «−3,5%». На деле он на 50 000 ֏ дороже, чем до «скидки». График цены показывает это с первого взгляда."
    ],
    "faq": [
     {
@@ -1192,6 +1230,14 @@
     {
      "q": "Где найти самую низкую цену?",
      "a": "Better.am сравнивает цены более 20 магазинов Еревана и показывает самую дешёвую первой. Цены обновляются два раза в день."
+    },
+    {
+     "q": "Что сильнее всего дешевеет в Чёрную пятницу",
+     "a": "Обычно прошлогодние телефоны, ноутбуки и телевизоры. Списки выше показывают, что действительно подешевело сегодня."
+    },
+    {
+     "q": "Стоит ли ждать Чёрную пятницу",
+     "a": "Если цена в последние недели не росла и уже минимальная, ожидание может ничего не дать. Проверьте историю цены на Better.am."
     }
    ]
   },
@@ -1199,9 +1245,22 @@
    "title": "Black Friday 2026 in Armenia: real discounts vs fake ones",
    "lead": "Black Friday 2026 falls on 27 November. How to tell a real discount from a fake one, and what has actually got cheaper in Yerevan shops today.",
    "body": [
+    "## Key dates",
+    "- 27 November: Black Friday",
+    "- 30 November: Cyber Monday",
+    "- Many shops start a week early, so check prices now.",
     "## What really got cheaper today",
     "This list refreshes twice a day. It only includes products whose lowest price fell by at least 5%, with prices compared across the same number of shops for at least a week.",
     "!list:sort=drop&n=12",
+    "## Real price drops by category",
+    "### Phones",
+    "!list:cat=phone&sort=drop&n=4",
+    "### Laptops",
+    "!list:cat=laptop&sort=drop&n=4",
+    "### TVs",
+    "!list:cat=tv&sort=drop&n=4",
+    "### Headphones",
+    "!list:cat=headphones&sort=drop&n=4",
     "## Why many “discounts” are fake",
     "Before Black Friday some shops raise a price and then “cut” it back to where it was. A red number and a crossed-out price prove nothing. The only test is the price history.",
     "- Open the product on Better.am and look at the price chart: if the price went up recently and then “dropped”, it is not a discount.",
@@ -1212,7 +1271,9 @@
     "- iPhone 17: from {{price:apple-iphone-17}}",
     "- AirPods Pro 3: from {{price:apple-airpods-pro-3}}",
     "- MacBook Air M5: from {{price:apple-macbook-air-13-m5}}",
-    "- PlayStation 5 Slim: from {{price:sony-ps5-slim}}"
+    "- PlayStation 5 Slim: from {{price:sony-ps5-slim}}",
+    "## A real fake discount",
+    "At one shop the MacBook Air M5 cost 509 000 ֏. On 8 November the price went up to 579 000 ֏, then “dropped” to 559 000 ֏: “−3.5%”. It is still 50 000 ֏ more than before the “discount”. The price chart shows it at a glance."
    ],
    "faq": [
     {
@@ -1226,9 +1287,18 @@
     {
      "q": "Where do I find the lowest price?",
      "a": "Better.am compares the prices of more than 20 Yerevan shops and shows the cheapest first. Prices refresh twice a day."
+    },
+    {
+     "q": "What gets cheapest on Black Friday?",
+     "a": "Usually last year’s phones, laptops and TVs. The lists above show what has really dropped today."
+    },
+    {
+     "q": "Is it worth waiting for Black Friday?",
+     "a": "If the price has not gone up in recent weeks and is already at its lowest, waiting may gain nothing. Check the price history on Better.am."
     }
    ]
-  }
+  },
+  "modified": "2026-11-20"
  },
  {
   "id": "kindle-in-armenia",
