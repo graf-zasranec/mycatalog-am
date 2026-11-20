@@ -1679,6 +1679,9 @@ if (process.argv[2] === '--selftest') {
     ['Samsung Galaxy Tab A9 64GB X115 Silver', true], ['Samsung Galaxy Tab A9 64GB X110 Silver', false],
     ['SAMSUNG Tab A11 (X130N) 128GB Gray', false], ['Samsung Galaxy Tab A11 WiFi +5G (X135G)', true],
   ];
+  for (const [title, want] of [['iPad mini A20 Pro, 512 ԳԲ Wi-Fi Նանոտեքստուրային ապակի 2026', true], ['MacBook Pro 14 M5 Nano-texture display', true],
+    ['https://ispace.am/product/ipad-mini-a20-pro-512-gb-wi-fi-nano-texture', true], ['MacBook Pro 14 M5 16/512 Space Black', false], ['iPhone 17 Pro Nano-SIM', false]])
+    if (ntOf(title) !== want) { bad++; console.log(`FAIL  nano-texture got=${ntOf(title)} want=${want}  <- ${title}`); }
   for (const [title, want] of cellCases) if (cellOf(title) !== want) { bad++; console.log(`FAIL  cell got=${cellOf(title)} want=${want}  <- ${title}`); }
   console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + cellCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
@@ -3548,6 +3551,14 @@ for (const [id, list] of Object.entries(offers)) {
   // false flags when the source explicitly names Cellular, LTE or a cellular model.
   for (const o of list) o.cell = cellOf(o.title) || cellOf(product.name) || (typeof o.cell === 'boolean' ? o.cell : false);
 }
+// Nano-texture glass (MacBook Pro, iPad Pro / mini, iMac, Studio Display) is a dearer build of the
+// same product, like the cellular tablet. Owner 2026-11-20: a listing that does not say
+// nano-texture is the standard glass. Only products with at least one nano-texture offer get the flag.
+function ntOf(t) { return /nano[\s_-]*texture|нано[\s-]*текстур|նանո[\s-]*տեքստուր/i.test(String(t || '')); }
+for (const [, list] of Object.entries(offers)) {
+  const any = list.some(o => ntOf(`${o.title || ''} ${o.url || ''}`));
+  for (const o of list) if (any) o.nt = ntOf(`${o.title || ''} ${o.url || ''}`); else delete o.nt;
+}
 // A capacity under 32 GB on anything but a watch is the memory read as storage: iBolit's
 // "Tab S9 Ultra 12GB 256GB X916 Beige" came through as 12. The title says the real one.
 for (const [id, list] of Object.entries(offers)) {
@@ -3573,7 +3584,7 @@ function offerKey(o) {
   // erased every physical-SIM iPhone it sells (2026-11-08).
   const esim = o.esim ?? (HAS_SIM_ID(o.id) ? simBuild(`${o.title || ''} ${o.url || ''}`) : undefined);
   return [o.id, o.ram ?? '?', o.storage ?? '?', o.size ?? '?', o.band ?? '?', o.color ?? '?',
-    esim === true ? 'e' : esim === false ? 'n' : '?', o.cell === true ? 'c' : o.cell === false ? 'w' : '?'].join('|');
+    esim === true ? 'e' : esim === false ? 'n' : '?', o.cell === true ? 'c' : o.cell === false ? 'w' : '?', o.nt ? 't' : ''].join('|');
 }
 // A shop that parses to NOTHING is caught above and carried forward whole. One that answers some
 // pages and refuses the rest parses to FEWER offers, and slipped straight past that: on 2026-09-21
@@ -3922,7 +3933,7 @@ for (const [id, list] of Object.entries(offers)) {
     // one row: the phone arrived with a single swatch and the picker had nothing to pick. An
     // exact repeat still collapses, because an exact repeat repeats the colour too.
     const k = [o.shop, String(o.url || '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2'), o.price, o.storage ?? '', o.color ?? '', o.ram ?? '',
-               o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell ? 'c' : ''].join('|');
+               o.esim === true ? 'e' : o.esim === false ? 'n' : '?', o.cell ? 'c' : '', o.nt ? 't' : ''].join('|');
     return seen.has(k) ? (deduped++, false) : (seen.add(k), true);
   });
 }
@@ -3930,7 +3941,7 @@ for (const [id, list] of Object.entries(offers)) {
 // and its /en/ hand row): the vaguer copy says nothing the fuller one does not, and the offers
 // page showed Pixel 9 at 285 000 twice. Dropped only when a fuller sibling exists.
 for (const [id, list] of Object.entries(offers)) {
-  const k = o => [o.shop, String(o.url || '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2'), o.price, o.storage ?? '', o.esim ?? '', o.cell ? 'c' : ''].join('|');
+  const k = o => [o.shop, String(o.url || '').replace(/^(https?:\/\/[^/]+)\/[a-z]{2}(\/)/i, '$1$2'), o.price, o.storage ?? '', o.esim ?? '', o.cell ? 'c' : '', o.nt ? 't' : ''].join('|');
   offers[id] = list.filter(o => (o.ram != null && o.color) || !list.some(v => v !== o && k(v) === k(o)
     && (v.ram ?? o.ram) === (o.ram ?? v.ram) && (v.color || o.color) === (o.color || v.color)
     && (v.ram != null) + !!v.color > (o.ram != null) + !!o.color) || (deduped++, false));

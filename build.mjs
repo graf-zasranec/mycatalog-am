@@ -921,12 +921,12 @@ const movedOn = p => {
 // one row per shop and capacity, its cheapest - five colours of one phone at one price are one
 // offer to a reader, and colour names would be English on an Armenian page
 const rows = offs => { const seen = new Set(); return offs.filter(o => {
-  const k = [o.shop, o.cpu, o.storage, o.ram, o.size, o.band, o.esim, o.cell].join('|');
+  const k = [o.shop, o.cpu, o.storage, o.ram, o.size, o.band, o.esim, o.cell, o.nt].join('|');
   return !seen.has(k) && seen.add(k);
 }); };
 const configLabel = (p, o, t) => [o.cpu || '', o.ram != null ? o.ram + ' ' + t.gb + ' RAM' : '',
   o.storage && p.variantUnit !== 'mm' ? (o.storage >= 1024 ? o.storage / 1024 + ' ' + t.tb : o.storage + ' ' + t.gb) : '',
-  o.size ? o.size + '″' : '', o.band || '', o.cell === true ? 'Wi-Fi + Cellular' : '',
+  o.size ? o.size + '″' : '', o.band || '', o.cell === true ? 'Wi-Fi + Cellular' : '', o.nt === true ? 'Nano-texture' : '',
   o.esim === true ? 'eSIM' : o.esim === false ? 'Nano-SIM' : ''].filter(Boolean).join(' · ') || '—';
 const specRows = (p, l) => {
   const d = p.display || {}, c = p.chipset || {}, b = p.battery || {}, w = (p.body || {}).weight, t = L[l];

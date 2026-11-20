@@ -80,7 +80,7 @@ const X = {
     spotT: 'Օրվա առաջարկը', blogSub: 'Գների, համեմատման և տեխնիկայի ընտրության մասին', faqL: 'Հաճախ տրվող հարցեր', allPosts: 'Բոլոր հոդվածները', readL: 'Կարդալ',
     dealUsual: 'սովորական գնից {n} ֏ ցածր', otherColour: 'Լուսանկարում կարող է այլ գույն լինել', sourcesL: 'Աղբյուրներ', dealDrop: '↓ {n} ֏ {d}-ից', prevL: 'Նախորդը', nextL: 'Հաջորդը',
     formF: 'Տեսակ', forms: { tws: 'Անլար (TWS)', 'in-ear': 'Լարով ականջակալներ', full: 'Գլխին՝ ականջների վրա', neckband: 'Պարանոցի շուրջ', open: 'Բաց / սեղմակով' },
-    connF: 'Միացում', cellY: 'Wi-Fi + բջջային կապ', conns: { wireless: 'Անլար', wired: 'Լարով' },
+    connF: 'Միացում', glassF: 'Էկրանի ապակի', ntY: 'Նանոտեքստուրա', ntN: 'Ստանդարտ', cellY: 'Wi-Fi + բջջային կապ', conns: { wireless: 'Անլար', wired: 'Լարով' },
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
     gamingF: 'Խաղային', resF: 'Թույլատրություն',
     atypeF: 'Տեսակ', powerF: 'Հզորություն', volF: 'Ծավալ', loadF: 'Բեռնվածություն', btuF: 'Սառեցման հզորություն', setsF: 'Սպասքի լրակազմեր', setsU: 'լրակազմ',
@@ -115,7 +115,7 @@ const X = {
     spotT: 'Выгода дня', blogSub: 'О ценах, сравнении и выборе техники', faqL: 'Частые вопросы', allPosts: 'Все статьи', readL: 'Читать',
     dealUsual: 'на {n} ֏ ниже обычной цены', otherColour: 'На фото может быть другой цвет', sourcesL: 'Источники', dealDrop: '↓ {n} ֏ с {d}', prevL: 'Назад', nextL: 'Вперёд',
     formF: 'Тип', forms: { tws: 'Беспроводные (TWS)', 'in-ear': 'Проводные вкладыши', full: 'Накладные и полноразмерные', neckband: 'С шейным ободом', open: 'Открытые / клипсы' },
-    connF: 'Подключение', cellY: 'Wi-Fi + сотовая связь', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
+    connF: 'Подключение', glassF: 'Стекло экрана', ntY: 'Нанотекстура', ntN: 'Стандартное', cellY: 'Wi-Fi + сотовая связь', conns: { wireless: 'Беспроводные', wired: 'Проводные' },
     plugF: 'Разъём', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 мм' },
     gamingF: 'Игровые', resF: 'Разрешение',
     atypeF: 'Тип', powerF: 'Мощность', volF: 'Объём', loadF: 'Загрузка', btuF: 'Мощность охлаждения', setsF: 'Комплекты посуды', setsU: 'компл.',
@@ -153,7 +153,7 @@ const X = {
     spotT: 'Deal of the day', blogSub: 'On prices, comparing and choosing', faqL: 'Frequently asked questions', allPosts: 'All posts', readL: 'Read',
     dealUsual: '{n} ֏ below the usual price', otherColour: 'Photo may show another colour', sourcesL: 'Sources', dealDrop: '↓ {n} ֏ since {d}', prevL: 'Previous', nextL: 'Next',
     formF: 'Type', forms: { tws: 'True wireless (TWS)', 'in-ear': 'Wired earphones', full: 'On-ear & over-ear', neckband: 'Neckband', open: 'Open-ear / clip' },
-    connF: 'Connection', cellY: 'Wi-Fi + Cellular', conns: { wireless: 'Wireless', wired: 'Wired' },
+    connF: 'Connection', glassF: 'Display glass', ntY: 'Nano-texture', ntN: 'Standard', cellY: 'Wi-Fi + Cellular', conns: { wireless: 'Wireless', wired: 'Wired' },
     plugF: 'Connector', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 mm' },
     gamingF: 'Gaming', resF: 'Resolution',
     atypeF: 'Type', powerF: 'Power', volF: 'Capacity', loadF: 'Load', btuF: 'Cooling power', setsF: 'Place settings', setsU: 'place settings',
@@ -400,7 +400,7 @@ function chooseConfig(p, current, axis, value) {
   })[0];
   const chosen = next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size'].map(k => [k, next[k] ?? null])),
     band: next.band ?? current.band, color: next.color ?? current.color,
-    cell: next.cell ?? null, esim: next.esim ?? null, configSpecs: next.configSpecs || null, [axis]: value }
+    cell: next.cell ?? null, nt: next.nt ?? null, esim: next.esim ?? null, configSpecs: next.configSpecs || null, [axis]: value }
     : { ...current, [axis]: value };
   if (chosen.color && !selectionOffers(p, chosen).length) {
     const available = selectionOffers(p, { ...chosen, color: null });
@@ -422,7 +422,8 @@ function selectionOffers(p, sel) {
       && (!sel.band || !o.band || o.band === sel.band)
       && (!sel.color || !o.color || o.color === sel.color)
       && (sel.esim == null || o.esim === sel.esim)
-      && (sel.cell == null || o.cell === sel.cell);
+      && (sel.cell == null || o.cell === sel.cell)
+      && (sel.nt == null || !!o.nt === sel.nt);
   });
 }
 const catalogOffers = (p, s = st) => offersFor(p).filter(o => {
@@ -450,7 +451,7 @@ function initialConfig(p) {
   return { id: p.id, color: o?.color || p.colors?.[0] || null, ram: v.ram ?? null,
     storage: v.storage ?? (p.variantUnit!=='mm'&&capacities.length?Math.min(...capacities):null), size: v.size ?? null,
     band: v.band ?? null, cpu: v.cpu ?? null, configSpecs: v.configSpecs || null, esim: typeof o?.esim === 'boolean' ? o.esim : null,
-    cell: typeof o?.cell === 'boolean' ? o.cell : null };
+    cell: typeof o?.cell === 'boolean' ? o.cell : null, nt: typeof o?.nt === 'boolean' ? o.nt : null };
 }
 function selectedProduct(p, sel) {
   const changedCPU = sel.cpu && sel.cpu !== p.chipset?.name;
@@ -1108,7 +1109,7 @@ const tiersOf = p => {
   for (const o of offersFor(p)) {
     if (o.storage == null && sizes.size > 1) continue;   // which configuration is unknowable
     // screen size too: a 13-inch and a 15-inch MacBook with the same memory are not one product
-    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '') + (o.cell ? '|c' : '');
+    const k = (o.storage ?? 'base') + '|' + (o.ram ?? '') + '|' + (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') + '|' + (o.size ?? '') + (o.cell ? '|c' : '') + (o.nt ? '|t' : '');
     (byTier.get(k) || byTier.set(k, []).get(k)).push(o);
   }
   const out = [];
@@ -1839,6 +1840,7 @@ function drops() {
 }
 const simLbl = e => e === true ? 'eSIM' : e === false ? 'Nano-SIM' : '';
 const cellLbl = c => c === true ? x('cellY') : c === false ? 'Wi-Fi' : '';
+const ntLbl = c => c === true ? x('ntY') : c === false ? x('ntN') : '';
 function spark(vals) {
   const lo = Math.min(...vals), hi = Math.max(...vals), n = vals.length - 1;
   const X = i => 2 + i * 116 / n, Y = v => 3 + (1 - (v - lo) / ((hi - lo) || 1)) * 22;
@@ -2430,7 +2432,7 @@ function visibleOffers(p) {
   // can see. The survivor is the colour picked above when the shop lists it - istyle gives every
   // colour its own link, and the button has to open the colour the reader chose, not the shop's
   // first one - and otherwise the shop's own first colour.
-  const key = v => [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?', v.cell ? 'c' : ''].join('|');
+  const key = v => [v.shop, v.price, v.storage ?? '', v.ram ?? '', v.esim === true ? 'e' : v.esim === false ? 'n' : '?', v.cell ? 'c' : '', v.nt ? 't' : ''].join('|');
   const pick = new Map();
   for (const v of o) {
     const had = pick.get(key(v));
@@ -2464,7 +2466,7 @@ function detailView(p) {
   const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
   const multiScr = new Set((p.variants || []).map(v => v.size).filter(v => v != null)).size > 1;
   const cfgLbl = [multiScr && SEL.size != null ? inch(SEL.size) : '', multi && SEL.storage != null ? gb(SEL.storage, p.variantUnit) : '', simLbl(SEL.esim),
-    SEL.cell != null ? cellLbl(SEL.cell) : ''].filter(Boolean).join(' · ');
+    SEL.cell != null ? cellLbl(SEL.cell) : '', SEL.nt != null ? ntLbl(SEL.nt) : ''].filter(Boolean).join(' · ');
   // The chart's verdict, repeated where the decision is made. Only once the history has loaded
   // and only for the size picked - the chart's own series, so the two never disagree.
   const hs = histSeries(p, SEL.storage, SEL.size, SEL.ram, SEL.cpu);
@@ -2500,6 +2502,7 @@ function detailView(p) {
     && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
   const cellPick = simAll.some(o => o.cell === true) && simAll.some(o => o.cell === false);
+  const ntPick = simAll.some(o => o.nt === true) && simAll.some(o => o.nt === false);
   const sizes = [...new Set(p.variants.map(v => v.size))].filter(v => v != null).sort((a, b) => a - b);
   const bands = [...new Set(p.variants.map(v => v.band))].filter(Boolean);
   const configs = configPool(p);
@@ -2551,6 +2554,9 @@ function detailView(p) {
           ${cellPick ? `<div class="og"><label>${esc(x('connF'))}</label>
             <div class="bs">${[false, true].map(want =>
               `<button data-cell="${want ? 1 : 0}" class="${SEL.cell === want ? 'on' : ''}" aria-pressed="${SEL.cell === want}">${esc(cellLbl(want))}</button>`).join('')}</div></div>` : ''}
+          ${ntPick ? `<div class="og"><label>${esc(x('glassF'))}</label>
+            <div class="bs">${[false, true].map(want =>
+              `<button data-nt="${want ? 1 : 0}" class="${SEL.nt === want ? 'on' : ''}" aria-pressed="${SEL.nt === want}">${esc(ntLbl(want))}</button>`).join('')}</div></div>` : ''}
           <div class="pprice2">
             <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
             <div class="pp-row"><b class="num">${money(shownPrice)} ֏</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
@@ -2805,6 +2811,7 @@ function initOSel(id, avail) {
     size: take('size', from && from.size != null ? from.size : ''),
     esim: take('esim', from && from.esim != null ? (from.esim ? 'e' : 'n') : ''),
     cell: take('cell', from && from.cell != null ? (from.cell ? 'c' : 'w') : ''),
+    nt: take('nt', from && from.nt != null ? (from.nt ? 't' : 's') : ''),
     color: take('color', (from && from.color) || '') };
 }
 
@@ -2847,6 +2854,7 @@ function offerRow(o, lo, i, unit, cls, of, withColor) {
         offerAxisVaries(of, 'storage') ? (o.storage ? esc(gb(o.storage, unit)) : (hasChoices(of) ? esc(x('variantUnknown')) : '')) : '',
         o.ram && offerAxisVaries(of, 'ram') ? esc(gb(o.ram)) : '',
         o.cell != null && offerAxisVaries(of, 'cell') ? esc(cellLbl(o.cell)) : '',
+        o.nt != null && offerAxisVaries(of, 'nt') ? esc(ntLbl(o.nt)) : '',
         // The product page shows one row per build and collapses the colours behind it; this
         // page shows every one of them, and without the colour written down two rows from the
         // same shop at the same price are indistinguishable - they read as the listing being
@@ -2885,7 +2893,8 @@ function offersView(p) {
   const two = a => a.length > 1 ? a : [];
   const simVals = simChoice(p) ? sims : [];
   const cells = [...new Set(all.map(o => o.cell === true ? 'c' : o.cell === false ? 'w' : null).filter(Boolean))].sort().reverse();
-  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(simVals), cell: two(cells), color: two(cols) });
+  const nts = [...new Set(all.map(o => o.nt === true ? 't' : o.nt === false ? 's' : null).filter(Boolean))].sort();
+  initOSel(p.id, { storage: two(stors), ram: two(rams), size: two(sizes), esim: two(simVals), cell: two(cells), nt: two(nts), color: two(cols) });
   // filtering is by what you are buying - capacity, memory, screen, SIM build - not by which shop
   const list = all.filter(o =>
     (!OSEL.storage || String(o.storage) === OSEL.storage) &&
@@ -2893,10 +2902,11 @@ function offersView(p) {
     (!OSEL.size || String(o.size) === OSEL.size) &&
     (!OSEL.esim || (o.esim === true ? 'e' : o.esim === false ? 'n' : '?') === OSEL.esim) &&
     (!OSEL.cell || (o.cell ? 'c' : 'w') === OSEL.cell) &&
+    (!OSEL.nt || (o.nt ? 't' : 's') === OSEL.nt) &&
     // an offer naming no colour is sold in every colour - pixel lists one row per build, any colour
     (!OSEL.color || !o.color || o.color === OSEL.color))
     // one row per thing a reader can tell apart: istyle's two Flip 7 pages, pixel's am/en copies
-    .filter((o, i, a) => { const k = v => [v.shop, v.price, v.storage, v.ram, v.esim, v.cell, v.color || (OSEL.color || '')].join('|');
+    .filter((o, i, a) => { const k = v => [v.shop, v.price, v.storage, v.ram, v.esim, v.cell, v.nt, v.color || (OSEL.color || '')].join('|');
       return a.findIndex(v => k(v) === k(o) || (!o.color && v.color && k({ ...v, color: '' }) === k(o))) === i; });
   const lo = list.length ? Math.min(...list.map(o => o.price)) : null;
   const hi = list.length ? Math.max(...list.map(o => o.price)) : null;
@@ -2922,6 +2932,7 @@ function offersView(p) {
       ${chips('size', sizes, t('f.screen'), inch)}
       ${chips('esim', simVals, t('f.sim'), v => v === 'e' ? 'eSIM' : v === 'n' ? 'Nano-SIM' : x('variantUnknown'))}
       ${chips('cell', two(cells), x('connF'), v => cellLbl(v === 'c'))}
+      ${chips('nt', two(nts), x('glassF'), v => ntLbl(v === 't'))}
       ${cols.length < 2 ? '' : `<div class="ofg"><span class="ofl">${esc(t('f.color'))}</span>
         <button class="ofc${OSEL.color === '' ? ' on' : ''}" data-of="color" data-ofv="">${esc(x('any'))}</button>
         <span class="cs ofcs">${cols.map(c => `<button data-of="color" data-ofv="${esc(c)}" style="--c:${swatch(c)}"
@@ -3523,7 +3534,7 @@ document.addEventListener('click', e => {
   if (!e.target.closest('.srch')) closeSuggest();
   const ofc = e.target.closest('[data-of]');
   if (ofc) { OSEL[ofc.dataset.of] = ofc.dataset.ofv; render(true); return; }
-  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-cpu],[data-esim],[data-size],[data-band],[data-cell]');
+  const opt = e.target.closest('[data-color],[data-storage],[data-ram],[data-cpu],[data-esim],[data-size],[data-band],[data-cell],[data-nt]');
   if (opt) {
     if (opt.disabled) return;
     fxFlashAll = true;   // every price on the page is about to answer a different question
@@ -3535,6 +3546,7 @@ document.addEventListener('click', e => {
       SEL = ph ? chooseConfig(ph, SEL, 'esim', SEL.esim === want ? null : want) : {...SEL, esim: want};
     }
     if (opt.dataset.cell !== undefined && ph) SEL = chooseConfig(ph, SEL, 'cell', opt.dataset.cell === '1');
+    if (opt.dataset.nt !== undefined && ph) SEL = chooseConfig(ph, SEL, 'nt', opt.dataset.nt === '1');
     // RAM and storage ship as a pair (Galaxy A26 is 6/128 or 8/256, never 8/128 here),
     // so picking one snaps the other to a combination that actually exists.
     if (opt.dataset.band !== undefined && ph) SEL = chooseConfig(ph, SEL, 'band', opt.dataset.band);

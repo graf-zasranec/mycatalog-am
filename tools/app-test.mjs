@@ -449,6 +449,17 @@ is(app.keepsQuery('/c/phone'), false, 'nor does a category');
   delete prices.offers[p.id];
 }
 {
+  // nano-texture glass is its own dearer build; picking it quotes only its offers
+  const p = {id:'__nano_texture',category:'laptop',colors:['Silver'],variants:[{ram:16,storage:512}]};
+  prices.offers[p.id]=[{shop:'a',price:1000000,ram:16,storage:512,color:'Silver',nt:false},
+    {shop:'b',price:1150000,ram:16,storage:512,color:'Silver',nt:true}];
+  const nano=app.chooseConfig(p,{id:p.id,ram:16,storage:512,color:'Silver',nt:false},'nt',true);
+  is(nano.nt,true,'nano-texture choice is kept');
+  is(app.selectionOffers(p,nano)[0]?.price,1150000,'nano-texture quotes the nano-texture offer');
+  is(app.selectionOffers(p,{...nano,nt:false})[0]?.price,1000000,'standard glass quotes the standard offer');
+  delete prices.offers[p.id];
+}
+{
   const p = { id: '__paired_test', category: 'phone', brand: 'Example', name: 'Pair', colors: ['Black'],
     variants: [{ ram: 8, storage: 128 }, { ram: 16, storage: 256 }], priceAmd: 100000 };
   prices.offers[p.id] = [{ shop: 'a', ram: 8, storage: 128, price: 100000 },
