@@ -215,6 +215,10 @@ const ACCESSORY_WORDS = [
   // a studio flash's model name reads like a phone's: Godox AD600 Pro II landed on the Honor 600
   // Pro and AD400 Pro II on the Honor 400 Pro (2026-09-28)
   'godox', 'speedlite',
+  // shop-check 2026-11-20: a knock-off sold under the real name ("Airpods Pro 3 (Copy)", Yerevan Mobile)
+  // and iBolit's screen glass titled with the phone ("iPhone 14 Plus Green Steve Glass", "Xmart 9D Glass
+  // SP iPhone 16", "Apple Glass iPad 11"). 'glass' alone stays allowed for the iPad Pro's nano-texture glass.
+  'copy', 'replica', 'steve glass', '9d glass', 'glass sp', 'apple glass',
   // robot-vacuum spare parts name the robots they fit ("Robot vacuum filter Xiaomi S20 / S40 / S40 Pro")
   // and matched those robots once their shop titles became aliases (2026-11-14)
   'mop cloth', 'mop pad', 'mop pads', 'side brush', 'main brush', 'roller brush', 'rubber brush', 'dust bag',
@@ -1015,6 +1019,10 @@ if (process.argv[2] === '--selftest') {
     ['apple-watch-ultra-4-gps-plus-cellular-plus-band', 'Apple Watch Ultra 4 GPS + Cellular 49mm Natural Titanium Case with Black Ocean Band'],
     ['xiaomi-ultra-slim-power-bank-5000', 'Xiaomi Ultra Slim Power Bank 5000mAh'],
     [null, 'Silicone Case for AirPods Pro 3'],
+    [null, 'Airpods Pro 3 (Copy)'],
+    [null, 'iPhone 14 Plus Green Steve Glass'],
+    [null, 'Xmart 9D Glass SP iPhone 16/16 Pro/16 Pro Max'],
+    [null, 'Apple Glass iPad 11'],
     [null, 'AirPods Pro 3 Case'],
     [null, 'Sport Band for Apple Watch 46mm'],
     [null, 'Apple Watch 46mm Sport Loop band'],
