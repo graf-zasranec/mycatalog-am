@@ -1363,11 +1363,15 @@ console.log(`${shared} product page(s) under p/, ${cats.length} section page(s) 
 // A mistyped product url, or one from a product that has since left the catalogue, gets
 // GitHub's own 404 - a black page in English about a repository. This one is the catalogue's,
 // in the catalogue's language, and it offers the way back.
+// Old share links pointed at /offers/<id>/ (and /en/, /ru/); the offers list now lives on the
+// product page as #/offers/<id>. The 404 page loads this to send those visitors there.
+fs.writeFileSync('404.js', "(function(){var m=location.pathname.match(/^\\/(en\\/|ru\\/)?offers\\/([a-z0-9-]+)\\/?$/);if(m)location.replace('/'+(m[1]||'')+'p/'+m[2]+'/#/offers/'+m[2]);})();\n");
 fs.writeFileSync('404.html', `<!doctype html>
 <html lang="hy"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' ${COUNTER.script.join(' ')}; connect-src 'self' ${COUNTER.connect.join(' ')}; img-src 'self'${IMG_ORIGIN} ${COUNTER.img.join(' ')}; style-src 'unsafe-inline';  manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'">
 ${COUNTER.tag}
+<script src="/404.js"></script>
 <title>Էջը չի գտնվել | Better.am</title>
 <meta name="robots" content="noindex">
 <style>body{margin:0;font:16px/1.6 system-ui,sans-serif;background:#F7F3EC;color:#161C28;
