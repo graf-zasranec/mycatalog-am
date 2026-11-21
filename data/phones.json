@@ -177469,5 +177469,176 @@
       "body.dimensions": "Product dimensions not published by Tefal.",
       "body.weight": "Tefal publishes packaged weight only."
     }
+  },
+  {
+    "id": "philips-ep1224-00",
+    "category": "coffee",
+    "brand": "Philips",
+    "name": "EP1224/00 Coffee Machine",
+    "aliases": [
+      "PHILIPS EP1224/00",
+      "Philips Series 1200 EP1224"
+    ],
+    "tier": "mid",
+    "priceAmd": 129900,
+    "priceAmdMax": 129900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "automatic_coffee",
+      "power": 1500,
+      "volume": 1.8
+    },
+    "body": {
+      "width": 246,
+      "height": 371,
+      "thickness": 433
+    },
+    "summaryEn": "Philips Series 1200 EP1224/00 fully automatic espresso machine: 15 bar pump, ceramic grinder with 12 settings, 275 g bean container, 1.8 L water tank, two coffee types.",
+    "sources": [
+      "https://eldorado.am/en/coffee-machine-philips-ep1224-00"
+    ],
+    "unsure": [
+      "popularity",
+      "colors"
+    ]
+  },
+  {
+    "id": "philips-ep0824-00",
+    "category": "coffee",
+    "brand": "Philips",
+    "name": "EP0824/00 Coffee Machine",
+    "aliases": [
+      "PHILIPS EP0824/00",
+      "Philips Series 800 EP0824"
+    ],
+    "tier": "mid",
+    "priceAmd": 129900,
+    "priceAmdMax": 129900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 129900
+      }
+    ],
+    "colors": [
+      "Matte Black"
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "automatic_coffee",
+      "power": 1500,
+      "volume": 1.8
+    },
+    "body": {
+      "width": 246,
+      "height": 371,
+      "thickness": 433,
+      "weight": 7500
+    },
+    "summaryEn": "Philips Series 800 EP0824/00 fully automatic espresso machine: 15 bar pump, 12 grinder settings, 275 g bean container, 1.8 L water tank, classic milk frother, espresso, coffee and hot water.",
+    "sources": [
+      "https://eldorado.am/en/coffee-machine-philips-ep0824-00"
+    ],
+    "unsure": [
+      "popularity"
+    ]
+  },
+  {
+    "id": "philips-ep2235-40",
+    "category": "coffee",
+    "brand": "Philips",
+    "name": "EP2235/40 Coffee Machine",
+    "aliases": [
+      "PHILIPS EP2235/40",
+      "Philips Series 2200 EP2235"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 202900,
+    "priceAmdMax": 202900,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 202900
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "automatic_coffee",
+      "power": 1500,
+      "volume": 1.8
+    },
+    "body": {
+      "width": 247,
+      "height": 366,
+      "thickness": 434
+    },
+    "summaryEn": "Philips Series 2200 EP2235/40 fully automatic espresso machine with LatteGo automatic milk system: espresso, americano and cappuccino, 15 bar, 12 grinder settings, 275 g beans, 1.8 L water tank.",
+    "sources": [
+      "https://eldorado.am/en/philips-series-2200-ep2235-40"
+    ],
+    "unsure": [
+      "popularity",
+      "colors"
+    ]
+  },
+  {
+    "id": "philips-hd7767-00",
+    "category": "coffee",
+    "brand": "Philips",
+    "name": "HD7767/00 Grind & Brew Coffee Maker",
+    "aliases": [
+      "PHILIPS HD7767/00",
+      "Philips Grind & Brew HD7767"
+    ],
+    "tier": "mid",
+    "priceAmd": 119000,
+    "priceAmdMax": 119000,
+    "popularity": 35,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "appliance": {
+      "type": "drip_coffee",
+      "power": 1000,
+      "volume": 1.2
+    },
+    "body": {
+      "width": 212,
+      "height": 440,
+      "thickness": 277
+    },
+    "summaryEn": "Philips Grind & Brew HD7767/00 drip coffee maker with a built-in grinder (9 settings, 350 g beans) and 1.2 L water tank; also takes ground coffee.",
+    "sources": [
+      "https://eldorado.am/en/philips-hd7767-00"
+    ],
+    "unsure": [
+      "popularity",
+      "colors"
+    ]
   }
 ]
