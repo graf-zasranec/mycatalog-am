@@ -177640,5 +177640,526 @@
       "popularity",
       "colors"
     ]
+  },
+  {
+    "id": "canon-eos-250d",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS 250D",
+    "aliases": [
+      "Canon EOS 250D",
+      "Camera Canon EOS 250D",
+      "EOS Rebel SL3"
+    ],
+    "tier": "mid",
+    "priceAmd": 339900,
+    "priceAmdMax": 339900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 339900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Compact 24.1 MP APS-C DSLR with a vari-angle touchscreen and 4K video.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "dslr"
+    },
+    "body": {
+      "weight": 449
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "24.1 MP APS-C CMOS",
+      "video": "4K 24p"
+    },
+    "chipset": {
+      "name": "DIGIC 8"
+    },
+    "released": "2019-04",
+    "sources": [
+      "https://allsell.am/en/canon-eos-250d"
+    ]
+  },
+  {
+    "id": "canon-eos-r6-mark-ii-24-105-stm",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R6 Mark II + RF 24–105mm STM",
+    "aliases": [
+      "Canon EOS R6 Mark II RF 24-105mm F4-7.1 IS STM Kit",
+      "EOS R6 MARK II RF 24-105mm F4-7.1 IS STM KIT"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1249000,
+    "priceAmdMax": 1249000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1249000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Full-frame mirrorless camera with the RF 24–105mm f/4–7.1 IS STM zoom lens.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 670
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "24.2 MP full-frame CMOS",
+      "video": "4K 60p"
+    },
+    "chipset": {
+      "name": "DIGIC X"
+    },
+    "released": "2022-11",
+    "sources": [
+      "https://allsell.am/en/canon-eos-r6-mark-ii-rf-24-105mm-f4-7-1-is-stm-kit"
+    ]
+  },
+  {
+    "id": "nikon-z5-ii",
+    "category": "camera",
+    "brand": "Nikon",
+    "name": "Z5 II",
+    "aliases": [
+      "Nikon Z5 II",
+      "Camera Nikon Z5 II",
+      "Nikon Z5II"
+    ],
+    "tier": "flagship",
+    "priceAmd": 849500,
+    "priceAmdMax": 849500,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 849500
+      }
+    ],
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Full-frame mirrorless camera with a backside-illuminated 24.5 MP sensor and EXPEED 7.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 700
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "24.5 MP full-frame BSI CMOS",
+      "video": "4K 30p"
+    },
+    "chipset": {
+      "name": "EXPEED 7"
+    },
+    "released": "2025-04",
+    "sources": [
+      "https://allsell.am/en/nikon-camera-z5-ii"
+    ]
+  },
+  {
+    "id": "nikon-z6-iii",
+    "category": "camera",
+    "brand": "Nikon",
+    "name": "Z6 III",
+    "aliases": [
+      "Nikon Z6 III",
+      "Camera Nikon Z6 III",
+      "Nikon Z6III"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1199500,
+    "priceAmdMax": 1199500,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1199500
+      }
+    ],
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Full-frame mirrorless camera with a partially stacked 24.5 MP sensor and 6K RAW video.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 760
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "24.5 MP full-frame partially stacked CMOS",
+      "video": "6K 60p RAW"
+    },
+    "chipset": {
+      "name": "EXPEED 7"
+    },
+    "released": "2024-06",
+    "sources": [
+      "https://allsell.am/en/nikon-camera-z6-iii"
+    ]
+  },
+  {
+    "id": "nikon-z8",
+    "category": "camera",
+    "brand": "Nikon",
+    "name": "Z8",
+    "aliases": [
+      "Nikon Z8",
+      "Camera Nikon Z8"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1499500,
+    "priceAmdMax": 1499500,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1499500
+      }
+    ],
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Professional 45.7 MP stacked full-frame mirrorless camera with 8K video.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 910
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "45.7 MP full-frame stacked CMOS",
+      "video": "8K 60p RAW"
+    },
+    "chipset": {
+      "name": "EXPEED 7"
+    },
+    "released": "2023-05",
+    "sources": [
+      "https://allsell.am/en/nikon-camera-z8"
+    ]
+  },
+  {
+    "id": "sony-alpha-6700",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 6700",
+    "aliases": [
+      "Sony A6700",
+      "Camera Sony A6700",
+      "Sony Alpha a6700",
+      "ILCE-6700"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 579900,
+    "priceAmdMax": 579900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 579900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "26 MP APS-C mirrorless with an AI processing unit for subject recognition and 4K 120p.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 493
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "26 MP APS-C Exmor R CMOS",
+      "video": "4K 120p"
+    },
+    "chipset": {
+      "name": "BIONZ XR"
+    },
+    "released": "2023-07",
+    "sources": [
+      "https://allsell.am/en/sony-camera-a6700"
+    ]
+  },
+  {
+    "id": "sony-alpha-7-iv",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 7 IV",
+    "aliases": [
+      "Sony A7 IV",
+      "Camera Sony A7 IV",
+      "Sony Alpha a7 IV",
+      "ILCE-7M4"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 799900,
+    "priceAmdMax": 799900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 799900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "33 MP full-frame mirrorless camera with 4K 60p video.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 658
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "33 MP full-frame Exmor R CMOS",
+      "video": "4K 60p"
+    },
+    "chipset": {
+      "name": "BIONZ XR"
+    },
+    "released": "2021-12",
+    "sources": [
+      "https://allsell.am/en/sony-camera-a7-iv"
+    ]
+  },
+  {
+    "id": "sony-alpha-7-v",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 7 V",
+    "aliases": [
+      "Sony A7 V",
+      "Camera Sony A7 V",
+      "Sony Alpha a7 V",
+      "ILCE-7M5"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1033900,
+    "priceAmdMax": 1033900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1033900
+      }
+    ],
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "33 MP partially stacked full-frame mirrorless camera with an AI processing unit.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "33 MP full-frame partially stacked Exmor RS CMOS",
+      "video": "4K 120p"
+    },
+    "chipset": {
+      "name": "BIONZ XR2"
+    },
+    "released": "2025-12",
+    "sources": [
+      "https://allsell.am/en/sony-camera-a7-v"
+    ]
+  },
+  {
+    "id": "sony-alpha-7c-ii",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 7C II",
+    "aliases": [
+      "Sony A7C II",
+      "Camera Sony A7C II",
+      "Sony Alpha a7C II",
+      "ILCE-7CM2"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 729900,
+    "priceAmdMax": 729900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 729900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Compact 33 MP full-frame mirrorless camera with an AI processing unit.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 514
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "33 MP full-frame Exmor R CMOS",
+      "video": "4K 60p"
+    },
+    "chipset": {
+      "name": "BIONZ XR"
+    },
+    "released": "2023-10",
+    "sources": [
+      "https://allsell.am/en/sony-camera-a7c-ii"
+    ]
+  },
+  {
+    "id": "sony-zv-e10-ii-16-50",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "ZV-E10 II + 16–50mm",
+    "aliases": [
+      "Sony ZV-E10 M2 EPZ16-50MM",
+      "Camera Sony ZV-E10 M2 With EPZ16-50mm F3.5-5.6 OSS II Lens",
+      "Sony ZV-E10 II 16-50mm Kit",
+      "ZV-E10M2K"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 499900,
+    "priceAmdMax": 499900,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 499900
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "summaryEn": "Vlogging APS-C camera with the E PZ 16–50mm f/3.5–5.6 OSS II power-zoom lens.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 377
+    },
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "camera": {
+      "main": "26 MP APS-C Exmor R CMOS",
+      "video": "4K 60p"
+    },
+    "chipset": {
+      "name": "BIONZ XR"
+    },
+    "released": "2024-07",
+    "sources": [
+      "https://allsell.am/en/sony-camera-zv-e10-m2-with-epz16-50mm-f3-5-5-6-oss-ii-lens"
+    ]
   }
 ]
