@@ -12524,48 +12524,6 @@
     ]
   },
   {
-    "id": "asus-vivobook-x1404za-i38128",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "VivoBook X1404ZA-I38128",
-    "tier": "budget",
-    "priceAmd": 200000,
-    "priceAmdMax": 200000,
-    "popularity": 20,
-    "accent": "#5C6470",
-    "display": {
-      "size": 14,
-      "resolution": "1920x1080"
-    },
-    "chipset": {
-      "name": "Intel Core i3-1215U"
-    },
-    "os": "DOS",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 200000
-      }
-    ],
-    "battery": {
-      "capacity": 42
-    },
-    "summaryEn": "A 14-inch laptop with Intel Core i3-1215U.",
-    "unsure": [
-      "popularity"
-    ],
-    "body": {
-      "weight": 1400
-    },
-    "sources": [
-      "https://www.notebookcheck.net/"
-    ],
-    "colors": [
-      "Silver"
-    ]
-  },
-  {
     "id": "asus-vivobook-x1502za-bq2270",
     "category": "laptop",
     "brand": "ASUS",
@@ -22380,40 +22338,6 @@
     ]
   },
   {
-    "id": "hisense-65a7nq",
-    "category": "tv",
-    "brand": "Hisense",
-    "name": "65A7NQ",
-    "aliases": [],
-    "tier": "upper-mid",
-    "priceAmd": 435000,
-    "priceAmdMax": 435000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 435000
-      }
-    ],
-    "display": {
-      "size": 65,
-      "type": "LED",
-      "resolution": "3840 x 2160",
-      "refresh": 60
-    },
-    "battery": {},
-    "summaryEn": "Hisense 65A7NQ.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "VIDAA",
-    "sources": [
-      "kitele"
-    ]
-  },
-  {
     "id": "hisense-65a7q",
     "category": "tv",
     "brand": "Hisense",
@@ -22710,37 +22634,6 @@
     "colors": [
       "Black"
     ]
-  },
-  {
-    "id": "hisense-65u7hq",
-    "category": "tv",
-    "brand": "Hisense",
-    "name": "65U7HQ",
-    "aliases": [],
-    "tier": "upper-mid",
-    "priceAmd": 549000,
-    "priceAmdMax": 549000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 549000
-      }
-    ],
-    "display": {
-      "size": 65,
-      "type": "LED",
-      "resolution": "3840 x 2160",
-      "refresh": 120
-    },
-    "battery": {},
-    "summaryEn": "Hisense 65U7HQ.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "VIDAA"
   },
   {
     "id": "hisense-65u7q",
@@ -23407,40 +23300,6 @@
     ],
     "colors": [
       "Black"
-    ]
-  },
-  {
-    "id": "hisense-85e7q",
-    "category": "tv",
-    "brand": "Hisense",
-    "name": "85E7Q",
-    "aliases": [],
-    "tier": "flagship",
-    "priceAmd": 789000,
-    "priceAmdMax": 789000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 789000
-      }
-    ],
-    "display": {
-      "size": 85,
-      "resolution": "3840 x 2160",
-      "refresh": 60,
-      "type": "QLED"
-    },
-    "battery": {},
-    "summaryEn": "Hisense 85E7Q.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "VIDAA",
-    "sources": [
-      "kitele"
     ]
   },
   {
@@ -41115,74 +40974,6 @@
     ]
   },
   {
-    "id": "samsung-a15",
-    "category": "phone",
-    "brand": "Samsung",
-    "name": "A15",
-    "aliases": [],
-    "tier": "budget",
-    "priceAmd": 69900,
-    "priceAmdMax": 69900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 69900
-      }
-    ],
-    "display": {
-      "size": 6.5,
-      "resolution": "1080x2340",
-      "refresh": 90,
-      "ppi": 396,
-      "brightness": 800,
-      "type": "Super AMOLED"
-    },
-    "battery": {
-      "capacity": 5000,
-      "wired": 25
-    },
-    "summaryEn": "Samsung A15.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "Android, One UI",
-    "year": 2023,
-    "chipset": {
-      "name": "MediaTek Helio G99 (MT6789)",
-      "process": "6 nm",
-      "gpu": "Mali-G57 MC2",
-      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)"
-    },
-    "body": {
-      "weight": 200,
-      "height": 160.1,
-      "width": 76.8,
-      "thickness": 8.4,
-      "materials": "Plastic"
-    },
-    "connectivity": {
-      "network": "4G",
-      "bluetooth": "5.2",
-      "wifi": "Wi-Fi 5",
-      "nfc": true,
-      "sim": "Dual SIM"
-    },
-    "cardSlot": true,
-    "camera": {
-      "modules": 3,
-      "main": "50 MP, f/1.8",
-      "front": "13 MP",
-      "video": "1080p@30fps"
-    },
-    "released": "2023-12",
-    "sources": [
-      "kimovil"
-    ]
-  },
-  {
     "id": "samsung-a25",
     "category": "phone",
     "brand": "Samsung",
@@ -52868,43 +52659,6 @@
     ]
   },
   {
-    "id": "toshiba-50m550le",
-    "category": "tv",
-    "brand": "Toshiba",
-    "name": "50M550LE",
-    "aliases": [],
-    "tier": "mid",
-    "priceAmd": 209900,
-    "priceAmdMax": 209900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 209900
-      }
-    ],
-    "display": {
-      "size": 50,
-      "type": "QLED",
-      "refresh": 60,
-      "resolution": "3840 x 2160"
-    },
-    "battery": {},
-    "summaryEn": "Toshiba 50M550LE.",
-    "unsure": [
-      "popularity"
-    ],
-    "sources": [
-      "https://toshiba-tv.com.au/product/50-m550lp-series/",
-      "https://vlv.am/en/Product/21266"
-    ],
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "toshiba-50v37se",
     "category": "tv",
     "brand": "Toshiba",
@@ -61697,85 +61451,6 @@
     "colors": [
       "Black",
       "White"
-    ]
-  },
-  {
-    "id": "realme-note-60x",
-    "category": "phone",
-    "brand": "Realme",
-    "name": "Note 60x",
-    "aliases": [
-      "Realme Note 60x /128GB Black",
-      "Realme Note 60x /64GB Black",
-      "Realme Note 60x /64GB Green"
-    ],
-    "tier": "budget",
-    "priceAmd": 34900,
-    "priceAmdMax": 40900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 4,
-        "storage": 64,
-        "priceAmd": 34900
-      },
-      {
-        "ram": 4,
-        "storage": 128,
-        "priceAmd": 40900
-      }
-    ],
-    "display": {
-      "size": 6.74,
-      "resolution": "720x1600",
-      "refresh": 90,
-      "ppi": 260,
-      "type": "LCD IPS"
-    },
-    "battery": {
-      "capacity": 5000,
-      "wired": 10
-    },
-    "summaryEn": "Realme Note 60x.",
-    "unsure": [
-      "popularity"
-    ],
-    "os": "Android, realme UI",
-    "year": 2024,
-    "chipset": {
-      "name": "Unisoc Tiger T612 / T7225",
-      "process": "12 nm",
-      "gpu": "Mali-G57 MP1"
-    },
-    "body": {
-      "weight": 187,
-      "height": 167.3,
-      "width": 76.7,
-      "thickness": 7.8,
-      "materials": "Plastic",
-      "ip": "IP54"
-    },
-    "connectivity": {
-      "network": "4G",
-      "bluetooth": "5.0",
-      "wifi": "Wi-Fi 5",
-      "nfc": false,
-      "sim": "Dual SIM"
-    },
-    "cardSlot": true,
-    "camera": {
-      "modules": 2,
-      "main": "8 MP, f/1.8",
-      "front": "5 MP"
-    },
-    "released": "2024-12",
-    "sources": [
-      "kimovil"
-    ],
-    "colors": [
-      "Black",
-      "Green"
     ]
   },
   {
@@ -74931,180 +74606,6 @@
     ]
   },
   {
-    "id": "hp-15-6-core-i5-1334u-full-hd",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "15.6'' Core i5-1334U Full HD",
-    "aliases": [
-      "HP Notebook 15.6'' Core i5-1334U Full HD (FD0090CA)",
-      "HP Notebook 15.6'' Core i5-1334U Full HD (FD0551DS)"
-    ],
-    "tier": "mid",
-    "priceAmd": 259000,
-    "priceAmdMax": 269000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 259000
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080",
-      "type": "IPS"
-    },
-    "battery": {
-      "capacity": 41
-    },
-    "summaryEn": "HP 15.6'' Core i5-1334U Full HD.",
-    "unsure": [
-      "popularity",
-      "battery.capacity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "Intel Core i5-1334U"
-    },
-    "body": {
-      "weight": 1590
-    },
-    "sources": [
-      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
-    ],
-    "colors": [
-      "Silver"
-    ]
-  },
-  {
-    "id": "asus-14-fhd-x1404va-i5-1334u",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "14'' FHD X1404VA i5-1334U",
-    "aliases": [
-      "Asus (notebook) 14'' FHD X1404VA i5-1334U"
-    ],
-    "tier": "mid",
-    "priceAmd": 239000,
-    "priceAmdMax": 239000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 12,
-        "storage": 256,
-        "priceAmd": 239000
-      }
-    ],
-    "display": {
-      "size": 14,
-      "resolution": "1920x1080"
-    },
-    "battery": {
-      "capacity": 42
-    },
-    "summaryEn": "ASUS 14'' FHD X1404VA i5-1334U.",
-    "unsure": [
-      "popularity",
-      "battery.capacity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "Intel Core i5-1334U"
-    },
-    "body": {
-      "weight": 1400
-    },
-    "sources": [
-      "https://www.asus.com/laptops/for-home/vivobook/asus-vivobook-14-x1404/techspec/",
-      "https://www.notebookcheck.net/"
-    ]
-  },
-  {
-    "id": "hp-15-6-ryzen-3-7320u-full-hd",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "15.6'' Ryzen 3-7320U Full HD",
-    "aliases": [
-      "HP Notebook 15.6'' Ryzen 3-7320U Full HD (FC0000)"
-    ],
-    "tier": "mid",
-    "priceAmd": 205000,
-    "priceAmdMax": 205000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 209000
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080",
-      "type": "IPS"
-    },
-    "battery": {},
-    "summaryEn": "HP 15.6'' Ryzen 3-7320U Full HD.",
-    "unsure": [
-      "popularity",
-      "battery.capacity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "AMD Ryzen 3 7320U"
-    },
-    "body": {
-      "weight": 1590
-    },
-    "sources": [
-      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
-    ]
-  },
-  {
-    "id": "asus-15-6-hd-intel-n4500-e510k",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "15.6'' HD Intel-N4500/E510K",
-    "aliases": [
-      "Asus (notebook) 15.6'' HD Intel-N4500/E510K"
-    ],
-    "tier": "mid",
-    "priceAmd": 130000,
-    "priceAmdMax": 130000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 4,
-        "storage": 128,
-        "priceAmd": 130000
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1366x768"
-    },
-    "battery": {},
-    "summaryEn": "ASUS 15.6'' HD Intel-N4500/E510K.",
-    "unsure": [
-      "popularity",
-      "battery.capacity"
-    ],
-    "chipset": {
-      "name": "Intel Celeron N4500"
-    },
-    "body": {
-      "weight": 1570
-    },
-    "sources": [
-      "https://www.asus.com/us/laptops/for-home/vivobook/vivobook-go-15-e510/techspec/"
-    ]
-  },
-  {
     "id": "apple-watch-se-2",
     "category": "watch",
     "brand": "Apple",
@@ -84354,52 +83855,6 @@
     ]
   },
   {
-    "id": "lenovo-slim-3-15amn8",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "SLIM 3 15AMN8",
-    "aliases": [
-      "Lenovo SLIM 3 15AMN8"
-    ],
-    "tier": "mid",
-    "priceAmd": 264000,
-    "priceAmdMax": 264000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 264000
-      }
-    ],
-    "battery": {
-      "capacity": 47
-    },
-    "summaryEn": "Lenovo SLIM 3 15AMN8.",
-    "sources": [
-      "https://appzone.am/en/Assortment/lenovo-slim-3-15amn8/",
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15AMN8/IdeaPad_Slim_3_15AMN8_Spec.pdf"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080"
-    },
-    "os": "Windows 11",
-    "body": {
-      "weight": 1620
-    },
-    "colors": [
-      "Silver"
-    ],
-    "chipset": {
-      "name": "AMD Ryzen 5 7520U"
-    }
-  },
-  {
     "id": "asus-vivobook-x1504va",
     "category": "laptop",
     "brand": "ASUS",
@@ -84524,55 +83979,6 @@
     },
     "colors": [
       "Gray"
-    ]
-  },
-  {
-    "id": "hp-15-fc0074nia-d01qyea",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "15-fc0074nia (D01QYEA)",
-    "aliases": [
-      "HP 15-fc0074nia (D01QYEA)"
-    ],
-    "tier": "mid",
-    "priceAmd": 285000,
-    "priceAmdMax": 285000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 285000
-      }
-    ],
-    "battery": {
-      "capacity": 41
-    },
-    "summaryEn": "HP 15-fc0074nia (D01QYEA).",
-    "sources": [
-      "https://appzone.am/en/Assortment/hp-15-fc0074nia-d01qyea/",
-      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity",
-      "chipset"
-    ],
-    "display": {
-      "size": 15.6,
-      "type": "IPS",
-      "resolution": "1920x1080"
-    },
-    "os": "Windows 11",
-    "chipset": {
-      "name": "AMD Ryzen 7 7730U"
-    },
-    "body": {
-      "weight": 1590
-    },
-    "colors": [
-      "Silver"
     ]
   },
   {
@@ -84734,54 +84140,6 @@
     }
   },
   {
-    "id": "asus-vivobook-m1807ha-db79",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "Vivobook M1807HA-DB79",
-    "aliases": [
-      "Asus Vivobook M1807HA-DB79"
-    ],
-    "tier": "mid",
-    "priceAmd": 389000,
-    "priceAmdMax": 389000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 32,
-        "storage": 1024,
-        "priceAmd": 389000
-      }
-    ],
-    "battery": {
-      "capacity": 70
-    },
-    "summaryEn": "ASUS Vivobook M1807HA-DB79.",
-    "sources": [
-      "https://appzone.am/en/Assortment/asus-vivobook-m1807ha-db79/",
-      "https://www.asus.com/"
-    ],
-    "unsure": [
-      "popularity",
-      "chipset"
-    ],
-    "display": {
-      "size": 18,
-      "type": "IPS",
-      "resolution": "1920x1200"
-    },
-    "os": "Windows 11",
-    "chipset": {
-      "name": "AMD Ryzen 7 260"
-    },
-    "body": {
-      "weight": 2600
-    },
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "lenovo-v15-g3",
     "category": "laptop",
     "brand": "Lenovo",
@@ -84833,113 +84191,6 @@
     },
     "colors": [
       "Black"
-    ]
-  },
-  {
-    "id": "dell-vostro-15-3530-intel-core-i3-1315u",
-    "category": "laptop",
-    "brand": "Dell",
-    "name": "VOSTRO 15 3530",
-    "aliases": [
-      "DELL VOSTRO 15 3530"
-    ],
-    "tier": "mid",
-    "priceAmd": 215000,
-    "priceAmdMax": 215000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 215000
-      }
-    ],
-    "battery": {
-      "capacity": 41
-    },
-    "summaryEn": "Dell VOSTRO 15 3530.",
-    "sources": [
-      "https://appzone.am/en/Assortment/dell-vostro-15-3530/",
-      "https://laptopdecision.com/compare/dell-vostro-15-3530-vs-Dell-Vostro-15-3500",
-      "https://www.notebookcheck.net/",
-      "https://www.dell.com/support/manuals/pt-br/vostro-15-3530-laptop/vostro_3530_om/gpu-integrada?guid=guid-df564d91-9aad-4d11-8bce-cd96e402acd3&lang=pt-br"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "display": {
-      "size": 15.6,
-      "type": "IPS",
-      "resolution": "1920x1080"
-    },
-    "os": "Windows 11",
-    "chipset": {
-      "name": "Intel Core i3-1315U"
-    },
-    "graphics": {
-      "name": "Intel UHD Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1630
-    },
-    "colors": [
-      "Gray"
-    ]
-  },
-  {
-    "id": "lenovo-loq-15ahp11-83tn000erk",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "LOQ 15AHP11 (83TN000ERK)",
-    "aliases": [
-      "Lenovo LOQ 15AHP11 (83TN000ERK)"
-    ],
-    "tier": "mid",
-    "priceAmd": 559000,
-    "priceAmdMax": 559000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 559000
-      }
-    ],
-    "battery": {
-      "capacity": 60
-    },
-    "summaryEn": "Lenovo LOQ 15AHP11 (83TN000ERK).",
-    "sources": [
-      "https://appzone.am/en/Assortment/lenovo-loq-15ahp11-83tn000erk/",
-      "https://psref.lenovo.com/syspool/Sys/PDF/LOQ/LOQ_15AHP11/LOQ_15AHP11_Spec.pdf",
-      "https://psref.lenovo.com/Detail/LOQ_15AHP11?M=83TN000ERK"
-    ],
-    "unsure": [
-      "popularity",
-      "chipset",
-      "graphics"
-    ],
-    "display": {
-      "size": 15.3,
-      "refresh": 165,
-      "resolution": "1920x1200"
-    },
-    "os": "Windows 11",
-    "chipset": {
-      "name": "AMD Ryzen 7 250"
-    },
-    "graphics": {
-      "name": "GeForce RTX 5050 8GB",
-      "type": "discrete"
-    },
-    "body": {
-      "weight": 2100
-    },
-    "colors": [
-      "Gray"
     ]
   },
   {
@@ -85045,53 +84296,6 @@
     "colors": [
       "Black"
     ]
-  },
-  {
-    "id": "msi-vector-16hx-ai-a2xwig",
-    "category": "laptop",
-    "brand": "MSI",
-    "name": "VECTOR 16HX AI A2XWIG",
-    "aliases": [
-      "MSI VECTOR 16HX AI A2XWIG"
-    ],
-    "tier": "mid",
-    "priceAmd": 1058000,
-    "priceAmdMax": 1058000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 1024,
-        "priceAmd": 1058000
-      }
-    ],
-    "battery": {
-      "capacity": 90
-    },
-    "summaryEn": "MSI VECTOR 16HX AI A2XWIG.",
-    "sources": [
-      "https://appzone.am/en/Assortment/vector-16hx-ai-a2xwig/",
-      "https://www.msi.com/Laptop/Vector-16-HX-AI-A2XWX/Specification",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity",
-      "chipset",
-      "body.weight"
-    ],
-    "display": {
-      "size": 16,
-      "refresh": 240,
-      "resolution": "2560x1600"
-    },
-    "os": "Windows 11",
-    "chipset": {
-      "name": "Intel Core Ultra 9-275HX"
-    },
-    "body": {
-      "weight": 2700
-    }
   },
   {
     "id": "lenovo-loq-15ahp10",
@@ -85558,104 +84762,6 @@
     ]
   },
   {
-    "id": "hp-zbook-firefly-16-g11",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "ZBOOK FIREFLY 16 G11",
-    "aliases": [
-      "HP ZBOOK FIREFLY 16 G11"
-    ],
-    "tier": "mid",
-    "priceAmd": 394000,
-    "priceAmdMax": 394000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 394000
-      }
-    ],
-    "battery": {
-      "capacity": 76
-    },
-    "summaryEn": "HP ZBOOK FIREFLY 16 G11.",
-    "sources": [
-      "https://appzone.am/en/Assortment/hp-zbook-firefly-16-g11/",
-      "https://laptopmedia.com/laptop-specs/hp-zbook-firefly-16-g11-5/specs/",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "Intel Core Ultra 7-165U"
-    },
-    "display": {
-      "size": 16
-    },
-    "graphics": {
-      "name": "INTEGRATED",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "specNA": {
-      "display.resolution": "Shop SKU code does not identify the configuration; the maker sells it with 1920x1200 or 2560x1600 (checked 2026-10-23)"
-    },
-    "body": {
-      "weight": 1720
-    }
-  },
-  {
-    "id": "asus-chromebook-cx3402cv",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "CHROMEBOOK CX3402CV",
-    "aliases": [
-      "ASUS CHROMEBOOK CX3402CV"
-    ],
-    "tier": "mid",
-    "priceAmd": 139000,
-    "priceAmdMax": 139000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 139000
-      }
-    ],
-    "battery": {
-      "capacity": 50
-    },
-    "summaryEn": "ASUS CHROMEBOOK CX3402CV.",
-    "sources": [
-      "https://appzone.am/en/Assortment/asus-chromebook-cx3402cv/",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core i3-1315U"
-    },
-    "display": {
-      "size": 14,
-      "resolution": "1920x1080"
-    },
-    "graphics": {
-      "name": "INTEGRATED",
-      "type": "integrated"
-    },
-    "os": "ChromeOS",
-    "body": {
-      "weight": 1440
-    }
-  },
-  {
     "id": "hp-probook-455-g8-45n89es-16",
     "category": "laptop",
     "brand": "HP",
@@ -85761,208 +84867,6 @@
     },
     "colors": [
       "Silver"
-    ]
-  },
-  {
-    "id": "hp-17-cp2025dx",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "17-CP2025DX",
-    "aliases": [
-      "HP LAPTOP 17-CP2025DX"
-    ],
-    "tier": "mid",
-    "priceAmd": 239000,
-    "priceAmdMax": 239000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 239000
-      }
-    ],
-    "battery": {
-      "capacity": 41
-    },
-    "summaryEn": "HP 17-CP2025DX.",
-    "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-17-cp2025dx/",
-      "https://laptopmedia.com/?p=1255262",
-      "https://nanoreview.net/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "AMD Ryzen 5 7520U"
-    },
-    "display": {
-      "size": 17.3,
-      "type": "IPS",
-      "resolution": "1920x1080"
-    },
-    "graphics": {
-      "name": "INTEGRATED",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "body": {
-      "weight": 2070
-    },
-    "colors": [
-      "Silver"
-    ]
-  },
-  {
-    "id": "dell-inspiron-16-plus-7640-intel-core-ultra-9-185h",
-    "category": "laptop",
-    "brand": "Dell",
-    "name": "Inspiron 16 Plus 7640",
-    "aliases": [
-      "Dell Inspiron 16 Plus 7640"
-    ],
-    "tier": "mid",
-    "priceAmd": 479000,
-    "priceAmdMax": 479000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 479000
-      }
-    ],
-    "battery": {
-      "capacity": 90
-    },
-    "summaryEn": "Dell Inspiron 16 Plus 7640.",
-    "sources": [
-      "https://appzone.am/en/Assortment/dell-inspiron-16-plus-7640/",
-      "https://laptopdecision.com/compare/dell-inspiron-16-plus-7640-vs-dell-inspiron-15-3535",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity",
-      "body.weight"
-    ],
-    "chipset": {
-      "name": "Intel Core Ultra 9-185H"
-    },
-    "display": {
-      "size": 16,
-      "resolution": "1920x1200"
-    },
-    "os": "Windows 11",
-    "body": {
-      "weight": 1900
-    },
-    "colors": [
-      "Silver"
-    ]
-  },
-  {
-    "id": "hp-15-fc0303ci",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "15-FC0303CI",
-    "aliases": [
-      "HP LAPTOP 15-FC0303CI"
-    ],
-    "tier": "mid",
-    "priceAmd": 235000,
-    "priceAmdMax": 235000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 235000
-      }
-    ],
-    "battery": {
-      "capacity": 41
-    },
-    "summaryEn": "HP 15-FC0303CI.",
-    "sources": [
-      "https://appzone.am/en/Assortment/hp-laptop-15-fc0303ci/",
-      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "AMD Ryzen 5 7520U"
-    },
-    "display": {
-      "size": 15.6,
-      "type": "IPS",
-      "resolution": "1920x1080"
-    },
-    "graphics": {
-      "name": "INTEGRATED",
-      "type": "integrated"
-    },
-    "os": "Windows 11 PRO",
-    "body": {
-      "weight": 1590
-    }
-  },
-  {
-    "id": "acer-nitro-v15-anv15-52-74sd",
-    "category": "laptop",
-    "brand": "Acer",
-    "name": "Nitro V15 ANV15-52-74SD",
-    "aliases": [
-      "Acer Nitro V15 ANV15-52-74SD"
-    ],
-    "tier": "mid",
-    "priceAmd": 585000,
-    "priceAmdMax": 585000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 585000
-      }
-    ],
-    "battery": {
-      "capacity": 57
-    },
-    "summaryEn": "Acer Nitro V15 ANV15-52-74SD.",
-    "sources": [
-      "https://appzone.am/en/Assortment/acer-nitro-v15-anv15-52-74sd/",
-      "https://www.notebookcheck.net/Acer-Nitro-V15-ANV15-52.1097051.0.html",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core i7-13620H"
-    },
-    "display": {
-      "size": 15.6,
-      "type": "IPS",
-      "refresh": 165,
-      "resolution": "1920x1080"
-    },
-    "graphics": {
-      "name": "GeForce RTX5060 8GB",
-      "type": "discrete"
-    },
-    "os": "Windows 11",
-    "body": {
-      "weight": 2100
-    },
-    "colors": [
-      "Black"
     ]
   },
   {
@@ -88675,100 +87579,6 @@
     "os": "Windows 11"
   },
   {
-    "id": "hp-omnibook-17-dp0105dx",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "OmniBook 17-DP0105DX",
-    "aliases": [
-      "HP OMNIBOOK 17-DP0105DX"
-    ],
-    "tier": "mid",
-    "priceAmd": 244000,
-    "priceAmdMax": 244000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 244000
-      }
-    ],
-    "display": {
-      "size": 17.3,
-      "type": "IPS",
-      "resolution": "1920x1080"
-    },
-    "battery": {},
-    "summaryEn": "HP OMNIBOOK 17-DP0105DX.",
-    "unsure": [
-      "popularity",
-      "chipset"
-    ],
-    "graphics": {
-      "name": "AMD Radeon Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 2009
-    },
-    "sources": [
-      "https://files.bbystatic.com/ykmeHGuBhj7PwCjZ%2F1xxMQ%3D%3D/e14e0b00-29e0-4276-8f8b-2c0cbad01183.pdf",
-      "https://www.bestbuy.com/product/hp-omnibook-3-17-3-full-hd-laptop-amd-ryzen-5-40-2025-8gb-memory-512gb-ssd-glacier-silver/JJGWKLZ8SW"
-    ],
-    "chipset": {
-      "name": "AMD Ryzen 5 40"
-    }
-  },
-  {
-    "id": "hp-omnibook-5-flip-14-fp0023dx",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "OmniBook 5 Flip 14-fp0023dx",
-    "aliases": [
-      "HP OmniBook 5 Flip 14-fp0023dx Touch (B86Q7UA)",
-      "HP OmniBook 5 Flip 14-fp0023dx Touch"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 330000,
-    "priceAmdMax": 330000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 330000
-      }
-    ],
-    "display": {
-      "size": 14,
-      "resolution": "1920x1200",
-      "touch": true
-    },
-    "battery": {
-      "capacity": 68
-    },
-    "summaryEn": "HP OmniBook 5 Flip 14-fp0023dx Touch.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core 7-150U"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1650
-    },
-    "sources": [
-      "https://www.notebookcheck.net/HP-OmniBook-5-Flip-14-fp0000.1095995.0.html",
-      "https://www.notebookcheck.net/"
-    ]
-  },
-  {
     "id": "hp-omen-16-an011-ultra-9-285h",
     "category": "laptop",
     "brand": "HP",
@@ -89295,51 +88105,6 @@
     ],
     "body": {
       "weight": 2070
-    }
-  },
-  {
-    "id": "hp-pavilion-15-eg3040ci",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "Pavilion 15-eg3040ci",
-    "aliases": [
-      "HP PAVILION 15-EG3040CI"
-    ],
-    "tier": "mid",
-    "priceAmd": 217000,
-    "priceAmdMax": 217000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 512,
-        "priceAmd": 217000
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080"
-    },
-    "battery": {},
-    "chipset": {
-      "name": "Intel Core i3-1315U"
-    },
-    "graphics": {
-      "name": "Intel UHD Graphics",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "summaryEn": "HP Pavilion 15-eg3040ci with Intel Core i3-1315U.",
-    "sources": [
-      "https://appzone.am/en/Assortment/pavilion-15-eg3040ci/",
-      "https://www.knsneva.ru/product/noutbuk-hp-pavilion-15-eg3040ci-wpro/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "body": {
-      "weight": 1740
     }
   },
   {
@@ -97416,47 +96181,6 @@
     }
   },
   {
-    "id": "hp-15-fd2001ci-bm0q5ea",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "AI 15-fd2001ci (BM0Q5EA)",
-    "aliases": [
-      "HP AI 15-fd2001ci Ultra 5 225U 16GB SSD512 15.6\" (BM0Q5EA)"
-    ],
-    "tier": "mid",
-    "priceAmd": 369900,
-    "priceAmdMax": 369900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 369900
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080"
-    },
-    "battery": {},
-    "chipset": {
-      "name": "Intel Core Ultra 5 225U"
-    },
-    "summaryEn": "HP AI 15-fd2001ci (BM0Q5EA).",
-    "sources": [
-      "https://vlv.am/en/Product/45620",
-      "https://www.notebookcheck.net/HP-15-fc0000.1062280.0.html"
-    ],
-    "unsure": [
-      "popularity",
-      "body.weight"
-    ],
-    "body": {
-      "weight": 1590
-    }
-  },
-  {
     "id": "hp-omnibook-3-16-bu0045ci-dr9v4ea",
     "category": "laptop",
     "brand": "HP",
@@ -99333,44 +98057,6 @@
     ]
   },
   {
-    "id": "samsung-ls32ag520pixci",
-    "category": "monitor",
-    "brand": "Samsung",
-    "name": "Odyssey G5 S32AG520PI",
-    "aliases": [
-      "SAMSUNG LS32AG520PIXCI"
-    ],
-    "tier": "mid",
-    "priceAmd": 239900,
-    "priceAmdMax": 239900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 239900
-      }
-    ],
-    "display": {
-      "size": 32,
-      "resolution": "2560x1440",
-      "refresh": 165,
-      "type": "IPS"
-    },
-    "battery": {},
-    "summaryEn": "Samsung Odyssey G5 S32AG520PI.",
-    "sources": [
-      "https://vlv.am/en/Product/20485"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "samsung-mx-st50b",
     "category": "speaker",
     "brand": "Samsung",
@@ -99868,46 +98554,6 @@
     ],
     "body": {
       "weight": 4700
-    }
-  },
-  {
-    "id": "roborock-s8-maxv-ultra",
-    "category": "vacuum",
-    "brand": "Roborock",
-    "name": "S8 MaxV Ultra",
-    "aliases": [
-      "Roborock S8 MaxV Ultra White (S8MVU02-02)"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 499900,
-    "priceAmdMax": 499900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 499900
-      }
-    ],
-    "colors": [
-      "White"
-    ],
-    "display": {},
-    "battery": {},
-    "appliance": {
-      "type": "robot_vacuum",
-      "power": 60
-    },
-    "summaryEn": "Roborock S8 MaxV Ultra.",
-    "sources": [
-      "https://vlv.am/en/Product/37963"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "body": {
-      "weight": 5200
     }
   },
   {
@@ -101281,43 +99927,6 @@
     "summaryEn": "De'Longhi ECAM22.114 Coffee Machine.",
     "sources": [
       "https://vlv.am/en/Product/32351"
-    ],
-    "unsure": [
-      "popularity"
-    ]
-  },
-  {
-    "id": "de-longhi-ecam22-117",
-    "category": "coffee",
-    "brand": "De'Longhi",
-    "name": "ECAM22.117 Coffee Machine",
-    "aliases": [
-      "DELONGHI ECAM22.117.B"
-    ],
-    "tier": "mid",
-    "priceAmd": 199000,
-    "priceAmdMax": 199000,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 199000
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {},
-    "battery": {},
-    "appliance": {
-      "type": "automatic_coffee",
-      "power": 1450
-    },
-    "summaryEn": "De'Longhi ECAM22.117 Coffee Machine.",
-    "sources": [
-      "https://vlv.am/en/Product/44100"
     ],
     "unsure": [
       "popularity"
@@ -103174,45 +101783,6 @@
     ],
     "colors": [
       "Blue"
-    ]
-  },
-  {
-    "id": "dyson-ds60-piston-animal-submarine-2969",
-    "category": "vacuum",
-    "brand": "Dyson",
-    "name": "DS60 Piston Animal Submarine (2969) Cordless Vacuum",
-    "aliases": [
-      "DYSON DS60 Piston Animal Submarine (2969)"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 439900,
-    "priceAmdMax": 439900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 439900
-      }
-    ],
-    "display": {},
-    "battery": {
-      "life": "70 min"
-    },
-    "appliance": {
-      "type": "cordless_vacuum",
-      "power": 900
-    },
-    "summaryEn": "Dyson DS60 Piston Animal Submarine (2969) Cordless Vacuum.",
-    "sources": [
-      "https://vlv.am/en/Product/42312"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "colors": [
-      "Black"
     ]
   },
   {
@@ -107398,46 +105968,6 @@
     }
   },
   {
-    "id": "roborock-h60-ultra-h10a1a51-07",
-    "category": "vacuum",
-    "brand": "Roborock",
-    "name": "H60 Ultra (H10A1A51-07) Cordless Vacuum",
-    "aliases": [
-      "Roborock H60 Ultra Black (H10A1A51-07)"
-    ],
-    "tier": "mid",
-    "priceAmd": 179900,
-    "priceAmdMax": 179900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 179900
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {},
-    "battery": {},
-    "appliance": {
-      "type": "cordless_vacuum",
-      "power": 210
-    },
-    "summaryEn": "Roborock H60 Ultra (H10A1A51-07) Cordless Vacuum.",
-    "sources": [
-      "https://vlv.am/en/Product/48746"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "body": {
-      "weight": 1500
-    }
-  },
-  {
     "id": "samsung-vc18m2110sb",
     "category": "vacuum",
     "brand": "Samsung",
@@ -108194,51 +106724,6 @@
     ]
   },
   {
-    "id": "nothing-cmf-buds-2a",
-    "category": "headphones",
-    "brand": "Nothing",
-    "name": "CMF Buds 2A",
-    "aliases": [
-      "CMF by Nothing Buds 2A Headphone (Black)"
-    ],
-    "tier": "budget",
-    "priceAmd": 14900,
-    "priceAmdMax": 14900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 14900
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {},
-    "battery": {},
-    "audio": {
-      "form": "tws",
-      "conn": "wireless",
-      "anc": true
-    },
-    "summaryEn": "Nothing CMF Buds 2A.",
-    "sources": [
-      "https://mobilecentre.am/product/cmf-by-nothing-buds-2a-headphone-_black_/33024/",
-      "https://www.smartprix.com/mobile_headphones/cmf_buds_2a_vs_realme_buds_t310_true_wireless-cpd1qz6hkzn3_pd11nzdvxho.php"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "connectivity": {
-      "bluetooth": "5.4"
-    },
-    "body": {
-      "weight": 4.3
-    }
-  },
-  {
     "id": "apple-earpods-3-5mm",
     "category": "headphones",
     "brand": "Apple",
@@ -108479,53 +106964,6 @@
     }
   },
   {
-    "id": "realme-buds-t110",
-    "category": "headphones",
-    "brand": "Realme",
-    "name": "Buds T110",
-    "aliases": [
-      "Realme Headphone Buds T110 (Black)"
-    ],
-    "tier": "budget",
-    "priceAmd": 13900,
-    "priceAmdMax": 13900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 13900
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {},
-    "battery": {
-      "life": "30 hours with case"
-    },
-    "audio": {
-      "form": "tws",
-      "conn": "wireless"
-    },
-    "summaryEn": "Realme Buds T110.",
-    "sources": [
-      "https://mobilecentre.am/product/realme-headphone-buds-t110-_black_/31217/",
-      "https://www.fonearena.com/blog/421747/realme-buds-t110-price-features.html",
-      "https://versus.com/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "connectivity": {
-      "bluetooth": "5.4"
-    },
-    "body": {
-      "weight": 4.09
-    }
-  },
-  {
     "id": "realme-buds-air-6-pro",
     "category": "headphones",
     "brand": "Realme",
@@ -108726,52 +107164,6 @@
     "body": {
       "ip": "IPX5 (earbuds only)",
       "weight": 4.7
-    }
-  },
-  {
-    "id": "anker-soundcore-p2i",
-    "category": "headphones",
-    "brand": "Anker",
-    "name": "Soundcore P2i",
-    "aliases": [
-      "Headphone Anker Bluetooth Soundcore By P2i (Black)"
-    ],
-    "tier": "budget",
-    "priceAmd": 14900,
-    "priceAmdMax": 14900,
-    "popularity": 35,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 14900
-      }
-    ],
-    "colors": [
-      "Black"
-    ],
-    "display": {},
-    "battery": {
-      "life": "10 hours"
-    },
-    "audio": {
-      "form": "tws",
-      "conn": "wireless"
-    },
-    "summaryEn": "Anker Soundcore P2i.",
-    "sources": [
-      "https://mobilecentre.am/product/headphone-anker-bluetooth-soundcore-by-p2i-_black_/30346/",
-      "https://2b.com.eg/en/anker-soundcore-life-p2i-wireless-earphone-white-international-warranty.html"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "connectivity": {
-      "bluetooth": "5.2"
-    },
-    "body": {
-      "weight": 4.4
     }
   },
   {
@@ -110683,62 +109075,6 @@
         "storage": null,
         "priceAmd": 219500
       }
-    ]
-  },
-  {
-    "id": "hp-omen-max-16-ak004",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "OMEN MAX 16-AK004 Ryzen AI 7 350 RTX 5070",
-    "aliases": [
-      "HP OMEN MAX 16-AK004",
-      "OMEN MAX 16-AK004"
-    ],
-    "tier": "upper-mid",
-    "released": "2025",
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16,
-      "type": "IPS",
-      "resolution": "2560x1600",
-      "refresh": 240,
-      "touch": false
-    },
-    "chipset": {
-      "name": "AMD Ryzen AI 7 350"
-    },
-    "graphics": {
-      "name": "Nvidia GeForce RTX 5070 8GB",
-      "type": "discrete"
-    },
-    "battery": {
-      "capacity": 83
-    },
-    "os": "Windows 11",
-    "summaryEn": "A 16-inch 240 Hz gaming laptop with AMD Ryzen AI 7 350 and Nvidia GeForce RTX 5070 8GB.",
-    "sources": [
-      "https://appzone.am/en/Assortment/omen-max-16-ak004/",
-      "https://www.notebookcheck.net/HP-Omen-Max-16-ak0000.1188764.0.html",
-      "https://www.notebookcheck.net/"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 679000,
-    "priceAmdMax": 679000,
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 1024,
-        "priceAmd": 679000
-      }
-    ],
-    "body": {
-      "weight": 2660
-    },
-    "colors": [
-      "Gray"
     ]
   },
   {
@@ -113665,44 +112001,6 @@
     ]
   },
   {
-    "id": "philips-bhd538-30",
-    "category": "haircare",
-    "brand": "Philips",
-    "name": "Hair Dryer BHD538/30",
-    "aliases": [
-      "PHILIPS BHD538/30",
-      "Philips BHD538/30",
-      "BHD538/30"
-    ],
-    "tier": "mid",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "hair_dryer",
-      "power": 2300
-    },
-    "battery": {},
-    "summaryEn": "Philips hair dryer BHD538/30: 2300 W.",
-    "sources": [
-      "https://vlv.am/en/Product/30680"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 56900,
-    "priceAmdMax": 56900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 56900
-      }
-    ],
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "philips-hp8281-00",
     "category": "haircare",
     "brand": "Philips",
@@ -115512,42 +113810,6 @@
     ],
     "colors": [
       "White"
-    ]
-  },
-  {
-    "id": "philips-hx6800-87",
-    "category": "grooming",
-    "brand": "Philips",
-    "name": "Sonicare Electric Toothbrush HX6800/87",
-    "aliases": [
-      "PHILIPS HX6800/87",
-      "Philips HX6800/87",
-      "HX6800/87"
-    ],
-    "tier": "mid",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "toothbrush"
-    },
-    "battery": {
-      "life": "14 days"
-    },
-    "summaryEn": "Philips Sonicare Electric Toothbrush HX6800/87.",
-    "sources": [
-      "https://vlv.am/en/Product/25018"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 34900,
-    "priceAmdMax": 34900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 34900
-      }
     ]
   },
   {
@@ -126021,43 +124283,6 @@
     ]
   },
   {
-    "id": "kenwood-jmp600wh",
-    "category": "kitchen",
-    "brand": "Kenwood",
-    "name": "Juicer JMP600WH",
-    "aliases": [
-      "Kenwood JMP600WH",
-      "KENWOOD JMP600WH",
-      "JMP600WH",
-      "KENWOOD JMP600WH Juicers"
-    ],
-    "tier": "upper-mid",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "juicer",
-      "power": 150,
-      "volume": 1.3
-    },
-    "battery": {},
-    "summaryEn": "Kenwood Juicer JMP600WH: 150 W, 1.3 L.",
-    "sources": [
-      "https://vlv.am/en/Product/15990"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 95000,
-    "priceAmdMax": 95000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 95000
-      }
-    ]
-  },
-  {
     "id": "kenwood-blp41-c0wh",
     "category": "kitchen",
     "brand": "Kenwood",
@@ -133567,47 +131792,6 @@
     ]
   },
   {
-    "id": "zanussi-zacs-i-12hs-ik-a22-n1",
-    "category": "climate",
-    "brand": "Zanussi",
-    "name": "Air Conditioner ZACS/I-12HS/IK/A22/N1",
-    "aliases": [
-      "Zanussi ZACS/I-12HS/IK/A22/N1",
-      "ZANUSSI ZACS/I-12HS/IK/A22/N1",
-      "ZACS/I-12HS/IK/A22/N1",
-      "ZANUSSI ZACS/I-12HS/IK/A22/N1 Air Conditioners (Inverter)"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "air_conditioner",
-      "power": 1045,
-      "area": "40 m²",
-      "btu": 12000
-    },
-    "battery": {},
-    "summaryEn": "Zanussi Air Conditioner ZACS/I-12HS/IK/A22/N1: energy class A.",
-    "sources": [
-      "https://vlv.am/en/Product/27216"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 179900,
-    "priceAmdMax": 179900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 179900
-      }
-    ],
-    "colors": [
-      "White"
-    ]
-  },
-  {
     "id": "toshiba-gr-rt559we-pmj-06",
     "category": "largeappliance",
     "brand": "Toshiba",
@@ -133686,45 +131870,6 @@
     ],
     "colors": [
       "White"
-    ]
-  },
-  {
-    "id": "lg-gbb62sehmn",
-    "category": "largeappliance",
-    "brand": "LG",
-    "name": "Fridge GBB62SEHMN 384 L",
-    "aliases": [
-      "LG GBB62SEHMN",
-      "GBB62SEHMN",
-      "LG GBB62SEHMN Refrigerators (Bottom Mount)"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "fridge",
-      "volume": 384,
-      "noise": "35 dB"
-    },
-    "battery": {},
-    "summaryEn": "LG Fridge GBB62SEHMN: 384 L, No Frost, energy class A++.",
-    "sources": [
-      "https://vlv.am/en/Product/27611"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 449000,
-    "priceAmdMax": 449000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 449000
-      }
-    ],
-    "colors": [
-      "Beige"
     ]
   },
   {
@@ -134670,44 +132815,6 @@
     ]
   },
   {
-    "id": "hisense-ast-12uw4svetg15-c",
-    "category": "climate",
-    "brand": "Hisense",
-    "name": "Inverter Air Conditioner AST-12UW4SVETG15(C) 12000 BTU",
-    "aliases": [
-      "Hisense AST-12UW4SVETG15(C)",
-      "HISENSE AST-12UW4SVETG15(C)",
-      "AST-12UW4SVETG15(C)",
-      "Hisense AST-12UW4SVETG15(C) WiFi Air Conditioners (Inverter)"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "air_conditioner",
-      "power": 3500,
-      "area": "40 m²",
-      "btu": 12000
-    },
-    "battery": {},
-    "summaryEn": "Hisense Inverter Air Conditioner AST-12UW4SVETG15(C): 12000 BTU, energy class A+++.",
-    "sources": [
-      "https://vlv.am/en/Product/30925"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 255000,
-    "priceAmdMax": 255000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 255000
-      }
-    ]
-  },
-  {
     "id": "samsung-rb31ferndsa-wt",
     "category": "largeappliance",
     "brand": "Samsung",
@@ -135478,87 +133585,6 @@
     ]
   },
   {
-    "id": "lg-f4j3tyl3w-01",
-    "category": "largeappliance",
-    "brand": "LG",
-    "name": "Washing Machine F4J3TYL3W/01 8 kg",
-    "aliases": [
-      "LG F4J3TYL3W/01",
-      "F4J3TYL3W/01",
-      "LG F4J3TYL3W/01 Automatic Washing Machines"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "washing_machine",
-      "noise": "55 dB",
-      "programs": 10,
-      "load": 8
-    },
-    "battery": {},
-    "summaryEn": "LG Washing Machine F4J3TYL3W/01: 8 kg load, 1400 rpm, energy class A+++.",
-    "sources": [
-      "https://vlv.am/en/Product/31669"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 299000,
-    "priceAmdMax": 299000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 299000
-      }
-    ],
-    "colors": [
-      "White"
-    ]
-  },
-  {
-    "id": "hisense-wd5s1045bw",
-    "category": "largeappliance",
-    "brand": "Hisense",
-    "name": "Washing Machine WD5S1045BW 10.5 kg",
-    "aliases": [
-      "Hisense WD5S1045BW",
-      "HISENSE WD5S1045BW",
-      "WD5S1045BW",
-      "Hisense WD5S1045BW Washing Machines with Dryers"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "washing_machine",
-      "noise": "54 dB",
-      "programs": 16,
-      "load": 10.5
-    },
-    "battery": {},
-    "summaryEn": "Hisense Washing Machine WD5S1045BW 10.5 kg: 10.5 kg load, 1400 rpm, energy class A.",
-    "sources": [
-      "https://vlv.am/en/Product/31713"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 279000,
-    "priceAmdMax": 279000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 279000
-      }
-    ],
-    "colors": [
-      "White"
-    ]
-  },
-  {
     "id": "toshiba-ras-b16g3kvsgb-e-j2avsg-e1",
     "category": "climate",
     "brand": "Toshiba",
@@ -135959,47 +133985,6 @@
         "storage": null,
         "priceAmd": 399000
       }
-    ]
-  },
-  {
-    "id": "hisense-amw4-27u4rjc-r32",
-    "category": "climate",
-    "brand": "Hisense",
-    "name": "Air Conditioner AMW4-27U4RJC/R32",
-    "aliases": [
-      "Hisense AMW4-27U4RJC/R32",
-      "HISENSE AMW4-27U4RJC/R32",
-      "AMW4-27U4RJC/R32",
-      "Hisense AMW4-27U4RJC/R32 Air Conditioners (Outdoor Unit)"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "air_conditioner",
-      "noise": "64 dB",
-      "btu": 27300
-    },
-    "battery": {},
-    "summaryEn": "Hisense Air Conditioner AMW4-27U4RJC/R32.",
-    "sources": [
-      "https://vlv.am/en/Product/32586",
-      "https://hisense-klima.hu/wp-content/uploads/2025/07/Hisense-Hi-Multi-catalog-2025-web.pdf"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 429000,
-    "priceAmdMax": 429000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 429000
-      }
-    ],
-    "colors": [
-      "White"
     ]
   },
   {
@@ -137049,43 +135034,6 @@
       "Sand"
     ],
     "display": {}
-  },
-  {
-    "id": "bosch-kgn39lb30u",
-    "category": "largeappliance",
-    "brand": "Bosch",
-    "name": "Fridge KGN39LB30U 400 L",
-    "aliases": [
-      "Bosch KGN39LB30U",
-      "BOSCH KGN39LB30U",
-      "KGN39LB30U",
-      "BOSCH KGN39LB30U Refrigerators (Bottom Mount)"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "fridge",
-      "volume": 400,
-      "noise": "39 dB"
-    },
-    "battery": {},
-    "summaryEn": "Bosch Fridge KGN39LB30U: 400 L, No Frost, energy class A++.",
-    "sources": [
-      "https://vlv.am/en/Product/35741"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 399000,
-    "priceAmdMax": 399000,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 399000
-      }
-    ]
   },
   {
     "id": "lg-f2v7gwl2p",
@@ -138221,46 +136169,6 @@
     ],
     "colors": [
       "Iron Grey"
-    ]
-  },
-  {
-    "id": "hisense-rs-12dc-w",
-    "category": "largeappliance",
-    "brand": "Hisense",
-    "name": "Freezer RS-12DC/W 81 L",
-    "aliases": [
-      "Hisense RS-12DC/W",
-      "HISENSE RS-12DC/W",
-      "RS-12DC/W",
-      "Hisense RS-12DC/W Freezers"
-    ],
-    "tier": "mid",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "freezer",
-      "volume": 81,
-      "noise": "40 dB"
-    },
-    "battery": {},
-    "summaryEn": "Hisense Freezer RS-12DC/W: 81 L, energy class A++.",
-    "sources": [
-      "https://vlv.am/en/Product/38583"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 64900,
-    "priceAmdMax": 64900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 64900
-      }
-    ],
-    "colors": [
-      "White"
     ]
   },
   {
@@ -140085,47 +137993,6 @@
     ]
   },
   {
-    "id": "hisense-wf3s7021bb",
-    "category": "largeappliance",
-    "brand": "Hisense",
-    "name": "Washing Machine WF3S7021BB 7 kg",
-    "aliases": [
-      "Hisense WF3S7021BB",
-      "HISENSE WF3S7021BB",
-      "WF3S7021BB",
-      "Hisense WF3S7021BB Automatic Washing Machines"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "washing_machine",
-      "noise": "72 dB",
-      "programs": 16,
-      "load": 7
-    },
-    "battery": {},
-    "summaryEn": "Hisense Washing Machine WF3S7021BB: 7 kg load, 1200 rpm, energy class A.",
-    "sources": [
-      "https://vlv.am/en/Product/40245"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 166500,
-    "priceAmdMax": 166500,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 166500
-      }
-    ],
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "hisense-hs643c90w",
     "category": "largeappliance",
     "brand": "Hisense",
@@ -141174,47 +139041,6 @@
     ]
   },
   {
-    "id": "toshiba-dw-14f7-b-cis",
-    "category": "largeappliance",
-    "brand": "Toshiba",
-    "name": "Dishwasher DW-14F7(B)-CIS 14 place settings",
-    "aliases": [
-      "Toshiba DW-14F7(B)-CIS",
-      "TOSHIBA DW-14F7(B)-CIS",
-      "DW-14F7(B)-CIS",
-      "TOSHIBA DW-14F7(B)-CIS Dishwashers"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "dishwasher",
-      "noise": "47 dB",
-      "programs": 8,
-      "settings": 14
-    },
-    "battery": {},
-    "summaryEn": "Toshiba Dishwasher DW-14F7(B)-CIS: 14 place settings, energy class A.",
-    "sources": [
-      "https://vlv.am/en/Product/41403"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 229900,
-    "priceAmdMax": 229900,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 229900
-      }
-    ],
-    "colors": [
-      "Black"
-    ]
-  },
-  {
     "id": "lg-db242tx",
     "category": "largeappliance",
     "brand": "LG",
@@ -141929,48 +139755,6 @@
     ],
     "colors": [
       "Black"
-    ]
-  },
-  {
-    "id": "hisense-auf-60ur4rhpa8",
-    "category": "climate",
-    "brand": "Hisense",
-    "name": "Air Conditioner AUF-60UR4RHPA8 60000 BTU",
-    "aliases": [
-      "Hisense AUF-60UR4RHPA8",
-      "HISENSE AUF-60UR4RHPA8",
-      "AUF-60UR4RHPA8",
-      "Hisense AUF-60UR4RHPA8 (AUW-60U6RW8) Air Conditioners (Inverter)"
-    ],
-    "tier": "flagship",
-    "popularity": 35,
-    "accent": "#5C6470",
-    "appliance": {
-      "type": "air_conditioner",
-      "power": 16000,
-      "area": "200 m²",
-      "noise": "52 dB",
-      "btu": 60000
-    },
-    "battery": {},
-    "summaryEn": "Hisense Air Conditioner AUF-60UR4RHPA8: 60000 BTU.",
-    "sources": [
-      "https://vlv.am/en/Product/43986"
-    ],
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 866100,
-    "priceAmdMax": 866100,
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 866100
-      }
-    ],
-    "colors": [
-      "White"
     ]
   },
   {
@@ -151477,57 +149261,6 @@
     ]
   },
   {
-    "id": "asus-zenbook-um5606ga-ss022w",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "Zenbook S16 UM5606GA",
-    "aliases": [
-      "ZenBook UM5606GA-SS022W"
-    ],
-    "tier": "flagship",
-    "priceAmd": 809000,
-    "priceAmdMax": 809000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 32,
-        "storage": 1024,
-        "priceAmd": 809000
-      }
-    ],
-    "display": {
-      "size": 16,
-      "type": "OLED",
-      "resolution": "2880x1800",
-      "refresh": 120,
-      "touch": true
-    },
-    "battery": {
-      "capacity": 83
-    },
-    "summaryEn": "A 16-inch 120 Hz OLED ultrabook with AMD Ryzen AI 9 465, about 1.5 kg.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "AMD Ryzen AI 9 465"
-    },
-    "graphics": {
-      "name": "AMD Radeon 880M",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1500
-    },
-    "os": "Windows 11",
-    "released": "2026",
-    "year": 2026,
-    "sources": [
-      "https://www.notebookcheck.net/"
-    ]
-  },
-  {
     "id": "ariston-pro1-r80v-1-8k-pl-water-heater",
     "category": "climate",
     "brand": "Ariston",
@@ -152023,84 +149756,6 @@
     "year": null
   },
   {
-    "id": "electrolux-ewh50-trend-water-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "EWH50 Trend Water Heater",
-    "aliases": [
-      "ELECTROLUX EWH50 Trend"
-    ],
-    "tier": "budget",
-    "priceAmd": 65900,
-    "priceAmdMax": 65900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 65900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux EWH50 Trend Water Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "water_heater",
-      "power": 1500,
-      "volume": 50
-    },
-    "colors": [
-      "White"
-    ],
-    "year": null
-  },
-  {
-    "id": "electrolux-ewh80-trend-water-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "EWH80 Trend Water Heater",
-    "aliases": [
-      "ELECTROLUX EWH80 Trend"
-    ],
-    "tier": "budget",
-    "priceAmd": 76900,
-    "priceAmdMax": 76900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 76900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux EWH80 Trend Water Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "water_heater",
-      "power": 1500,
-      "volume": 80
-    },
-    "colors": [
-      "White"
-    ],
-    "year": null
-  },
-  {
     "id": "electrolux-briliant-next-ech-bne2000-heater",
     "category": "climate",
     "brand": "Electrolux",
@@ -152176,42 +149831,6 @@
     "colors": [
       "White"
     ],
-    "year": null
-  },
-  {
-    "id": "electrolux-ewh100-trend-water-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "EWH100 Trend Water Heater",
-    "aliases": [
-      "ELECTROLUX EWH100 Trend"
-    ],
-    "tier": "budget",
-    "priceAmd": 87900,
-    "priceAmdMax": 87900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 87900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux EWH100 Trend Water Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "water_heater",
-      "power": 1500,
-      "volume": 100
-    },
     "year": null
   },
   {
@@ -152786,45 +150405,6 @@
     "year": null
   },
   {
-    "id": "electrolux-ewh-100-azr-eec-water-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "EWH 100 AZR EEC Water Heater",
-    "aliases": [
-      "ELECTROLUX EWH 100 AZR EEC"
-    ],
-    "tier": "mid",
-    "priceAmd": 143900,
-    "priceAmdMax": 143900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 143900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux EWH 100 AZR EEC Water Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "water_heater",
-      "power": 1500,
-      "volume": 100
-    },
-    "colors": [
-      "White"
-    ],
-    "year": null
-  },
-  {
     "id": "electrolux-ewh-50-azr-eec-water-heater",
     "category": "climate",
     "brand": "Electrolux",
@@ -153034,44 +150614,6 @@
     ]
   },
   {
-    "id": "ariston-cares-x24-cf-ng-gas-boiler",
-    "category": "climate",
-    "brand": "Ariston",
-    "name": "CARES X24 CF NG Gas Boiler",
-    "aliases": [
-      "ARISTON CARES X24 CF NG"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 406500,
-    "priceAmdMax": 406500,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 406500
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Ariston CARES X24 CF NG Gas Boiler.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "boiler",
-      "power": 78
-    },
-    "year": null,
-    "sources": [
-      "https://tavago.ru/kotly-otopleniya/gazovye-kotly-otopleniya/nastennye-gazovye-dvukhkonturnye-kotly/ariston/seriya-cares-x/gazovyy-nastennyy-dvukhkonturnyy-kotel-ariston-cares-x-24-cf-ng.html"
-    ]
-  },
-  {
     "id": "electrolux-eifh-c-2-eec-heater",
     "category": "climate",
     "brand": "Electrolux",
@@ -153185,45 +150727,6 @@
     },
     "colors": [
       "Black"
-    ],
-    "year": null
-  },
-  {
-    "id": "electrolux-rapid-dig-invertor-ech-ri2000-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "Rapid Digital Inverter ECH/RI2000 Heater",
-    "aliases": [
-      "Rapid Dig.Invertor ECH/RI2000 Heater",
-      "ELECTROLUX Rapid Dig.Invertor ECH/RI2000"
-    ],
-    "tier": "budget",
-    "priceAmd": 49900,
-    "priceAmdMax": 49900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 49900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux Rapid Dig.Invertor ECH/RI2000 Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "heater",
-      "power": 2000
-    },
-    "colors": [
-      "White"
     ],
     "year": null
   },
@@ -153428,42 +150931,6 @@
     "colors": [
       "White"
     ],
-    "year": null
-  },
-  {
-    "id": "electrolux-ewh80-centurio-iq-invertor-water-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "EWH80 CENTURIO IQ INVERTOR Water Heater",
-    "aliases": [
-      "ELECTROLUX EWH80 CENTURIO IQ INVERTOR"
-    ],
-    "tier": "mid",
-    "priceAmd": 152900,
-    "priceAmdMax": 152900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 152900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux EWH80 CENTURIO IQ INVERTOR Water Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "water_heater",
-      "volume": 80,
-      "power": 2000
-    },
     "year": null
   },
   {
@@ -153922,45 +151389,6 @@
     "year": null,
     "colors": [
       "Silver"
-    ]
-  },
-  {
-    "id": "electrolux-ewh80-smart-inverter-water-heater",
-    "category": "climate",
-    "brand": "Electrolux",
-    "name": "EWH80 SMART INVERTER Water Heater",
-    "aliases": [
-      "ELECTROLUX EWH80 SMART INVERTER"
-    ],
-    "tier": "mid",
-    "priceAmd": 196900,
-    "priceAmdMax": 196900,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 196900
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "Electrolux EWH80 SMART INVERTER Water Heater.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "water_heater",
-      "volume": 80,
-      "power": 2000
-    },
-    "year": null,
-    "colors": [
-      "White"
     ]
   },
   {
@@ -160090,58 +157518,6 @@
     "sources": [
       "https://appzone.am/en/Assortment/hp-elitebook-655-g10/",
       "https://www.hp.com/ie-en/products/laptops/product-details/product-specifications/2101728943"
-    ]
-  },
-  {
-    "id": "lenovo-ideapad-slim-3-16iru8-i3-1315u",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "IdeaPad Slim 3 16IRU8 i3-1315U",
-    "aliases": [
-      "LENOVO 3 16IRU8 i3-1315U 8GB SSD256 16\" (82X8001DRK)",
-      "82X8001DRK"
-    ],
-    "tier": "mid",
-    "popularity": 40,
-    "accent": "#5C6470",
-    "unsure": [
-      "popularity"
-    ],
-    "priceAmd": 259900,
-    "priceAmdMax": 259900,
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 259900
-      }
-    ],
-    "display": {
-      "size": 16,
-      "type": "IPS",
-      "resolution": "1920x1200",
-      "touch": false
-    },
-    "chipset": {
-      "name": "Intel Core i3-1315U"
-    },
-    "graphics": {
-      "name": "Intel UHD Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1740
-    },
-    "battery": {
-      "capacity": 47
-    },
-    "colors": [
-      "Gray"
-    ],
-    "summaryEn": "Lenovo IdeaPad Slim 3 16IRU8 with Intel Core i3-1315U.",
-    "sources": [
-      "https://vlv.am/en/Product/34864",
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_16IRU8/IdeaPad_Slim_3_16IRU8_Spec.PDF"
     ]
   },
   {
