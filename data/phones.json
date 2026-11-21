@@ -34101,7 +34101,8 @@
       "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10 R (83J1001DRK)",
       "Նոթբուք Lenovo IdeaPad Slim 5 16IRH10R (83J1001ERK)",
       "IdeaPad Slim 516IRH10",
-      "LENOVO Slim 5 16IRH10R Core 5 210H 16GB 1TB 16\" (83J1001DRK)"
+      "LENOVO Slim 5 16IRH10R Core 5 210H 16GB 1TB 16\" (83J1001DRK)",
+      "Lenovo IdeaPad Slim 5 16IRH10R i7-240H 16GB I 1TB (83J1001GRK)"
     ],
     "tier": "upper-mid",
     "priceAmd": 459900,
@@ -34146,12 +34147,17 @@
       "https://psref.lenovo.com/Detail/IdeaPad_Slim_5_16IRH10?M=83HS002SRK",
       "https://www.regard.ru/api/site/files/goodspdf/download/13400",
       "https://seventrade.uz/upload/iblock/60e/7ae5xjbllg6s2pl120kvtreny64bqhdh.pdf",
-      "https://www.regard.ru/api/site/files/goodspdf/download/12831"
+      "https://www.regard.ru/api/site/files/goodspdf/download/12831",
+      "https://allsell.am/en/lenovo-ideapad-slim-5-16irh10r-i7-240h-16gb-i-1tb-83j1001grk"
     ],
     "os": "No OS",
     "colors": [
       "Gray"
-    ]
+    ],
+    "graphics": {
+      "name": "Intel Integrated Graphics",
+      "type": "integrated"
+    }
   },
   {
     "id": "lenovo-ideapad-slim-5i-core-7-240h-83j1002sus",
@@ -76772,7 +76778,8 @@
     "brand": "Lenovo",
     "name": "IdeaPad Slim 3 15.3\" R7- /83K700HRRK",
     "aliases": [
-      "Lenovo IdeaPad Slim 3 15.3\" R7-170 /512GB Grey /83K700HRRK"
+      "Lenovo IdeaPad Slim 3 15.3\" R7-170 /512GB Grey /83K700HRRK",
+      "Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 16GB I 512GB (83K700TUUS)"
     ],
     "tier": "upper-mid",
     "priceAmd": 301300,
@@ -76804,11 +76811,17 @@
       "https://ultra.md/tehnica-computer/laptopuri/lenovo-ideapad-slim-3-15arp10-153-60-hz-16-gb-512-gb-amd-ryzen-7-170-fara-so-luna-grey",
       "https://darwin.md/laptop-lenovo-ideapad-slim-3-15arp10-ryzen-7-170-16-gb-512-gb-vga-integrata-gray.html",
       "https://pcsupport.lenovo.com/us/en/products/laptops-and-netbooks/ideapad-s-series-netbooks/lenovo-ideapad-slim-3-15arp10/83k7/83k700hrrk/documentation",
-      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15ARP10/IdeaPad_Slim_3_15ARP10_Spec.pdf"
+      "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Slim_3_15ARP10/IdeaPad_Slim_3_15ARP10_Spec.pdf",
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15arp10-ryzen-7-16gb-i-512gb-83k700tuus"
     ],
     "body": {
       "weight": 1590
-    }
+    },
+    "graphics": {
+      "name": "AMD Radeon 680M",
+      "type": "integrated"
+    },
+    "os": "Windows 11"
   },
   {
     "id": "hp-250r-g10-15-6-core-5-120u-d7km3at",
@@ -77786,7 +77799,8 @@
     "brand": "Lenovo",
     "name": "ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V W11P /21Q6006AFW",
     "aliases": [
-      "Lenovo ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V /1TB W11P White /21Q6006AFW"
+      "Lenovo ThinkPad X9 G1 Aura Edition 15.3\" Ultra 7-258V /1TB W11P White /21Q6006AFW",
+      "Lenovo ThinkPad X9-15 Gen 1 Core Ultra 7 32GB I 1TB (21Q6001PFW)"
     ],
     "tier": "flagship",
     "priceAmd": 1003600,
@@ -77802,6 +77816,7 @@
     ],
     "display": {
       "size": 15.3,
+      "type": "OLED",
       "resolution": "2880x1800"
     },
     "battery": {
@@ -77819,12 +77834,17 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X9_15_Gen_1/ThinkPad_X9_15_Gen_1_Spec.pdf",
-      "https://psref.lenovo.com/Detail/ThinkPad_X9-15_Gen_1_Aura_Edition?M=21Q6006AFW"
+      "https://psref.lenovo.com/Detail/ThinkPad_X9-15_Gen_1_Aura_Edition?M=21Q6006AFW",
+      "https://allsell.am/en/lenovo-thinkpad-x9-15-gen-1-core-ultra-7-32gb-i-1tb-21q6001pfw"
     ],
     "os": "Windows 11",
     "colors": [
       "White"
-    ]
+    ],
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    }
   },
   {
     "id": "xiaomi-a27i-2026",
@@ -81502,7 +81522,8 @@
     "brand": "Acer",
     "name": "Aspire Lite AL16-54P-52AL i5-120U",
     "aliases": [
-      "Acer Aspire Lite AL16-54P-52AL i5-120U /512GB (NX.D73EL.002)"
+      "Acer Aspire Lite AL16-54P-52AL i5-120U /512GB (NX.D73EL.002)",
+      "Acer Aspire Lite AL16-54P-52AL i5-120U 16GB I 512GB (NX.D73EL.002)"
     ],
     "tier": "mid",
     "priceAmd": 287900,
@@ -81539,7 +81560,8 @@
       "weight": 1500
     },
     "sources": [
-      "https://laptopmedia.com/?p=1849767"
+      "https://laptopmedia.com/?p=1849767",
+      "https://allsell.am/en/acer-aspire-lite-al16-54p-52a-i5-120u-16gb-i-512gb-nx-d73el-002"
     ],
     "colors": [
       "Silver"
@@ -81597,7 +81619,8 @@
     "name": "Nitro 5 AN515-58-77Z2 GAMING i7-12700H + RTX3060",
     "aliases": [
       "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H /1TB+512GB (NH.QFMAA.004) RTX3060",
-      "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H 16GB/1TB+512GB (NH.QFMAA.004) RTX3060"
+      "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H 16GB/1TB+512GB (NH.QFMAA.004) RTX3060",
+      "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H 16GB I 1TB+512GB (NH.QFMAA.004) RTX3060"
     ],
     "tier": "flagship",
     "priceAmd": 739600,
@@ -81613,7 +81636,8 @@
     ],
     "display": {
       "size": 15.6,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "touch": true
     },
     "battery": {},
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H, 16 GB RAM and 1024 GB storage.",
@@ -81632,7 +81656,8 @@
       "weight": 2500
     },
     "sources": [
-      "https://laptopdecision.com/compare/Acer-Nitro-5-AN515-58-vs-Acer-Nitro-5-AN517-41"
+      "https://laptopdecision.com/compare/Acer-Nitro-5-AN515-58-vs-Acer-Nitro-5-AN517-41",
+      "https://allsell.am/en/acer-nitro-5-an515-58-77z2-16gb-i-1tb"
     ]
   },
   {
@@ -81734,7 +81759,8 @@
     "brand": "Acer",
     "name": "Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H",
     "aliases": [
-      "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H /1TB (NH.QRNAA.004)"
+      "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H /1TB (NH.QRNAA.004)",
+      "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H 32GB I 1TB (NH.QRNAA.004)"
     ],
     "tier": "flagship",
     "priceAmd": 957600,
@@ -81772,7 +81798,8 @@
     },
     "sources": [
       "https://laptopmedia.com/?p=1621716",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://allsell.am/en/acer-predator-helios-neo-14-phn14-51-99nm-32gb-i-1tb"
     ],
     "colors": [
       "Black"
@@ -82616,7 +82643,8 @@
     "brand": "Dell",
     "name": "Latitude 7455 Copilot+ Snapdragon X Plus X1P-64",
     "aliases": [
-      "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64-100 /512GB"
+      "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64-100 /512GB",
+      "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64-100 16GB I 512GB"
     ],
     "tier": "upper-mid",
     "priceAmd": 469400,
@@ -82655,7 +82683,8 @@
     },
     "sources": [
       "https://laptopdecision.com/compare/dell-latitude-7455-vs-dell-latitude-7650",
-      "https://nanoreview.net/"
+      "https://nanoreview.net/",
+      "https://allsell.am/en/dell-latitude-7455-16gb-i-512gb"
     ],
     "colors": [
       "Silver"
@@ -83878,7 +83907,8 @@
     "aliases": [
       "Asus VivoBook 15 Core 7 /512GB F1504VA-BQ338",
       "VivoBook 15 Core F1504VA-BQ338",
-      "Asus VivoBook 15 Core 7 16GB/512GB F1504VA-BQ338"
+      "Asus VivoBook 15 Core 7 16GB/512GB F1504VA-BQ338",
+      "Asus VivoBook 15 Core 7 16GB I 512GB F1504VA-BQ338"
     ],
     "tier": "upper-mid",
     "priceAmd": 359000,
@@ -83915,7 +83945,8 @@
       "weight": 1700
     },
     "sources": [
-      "https://www.asus.com/"
+      "https://www.asus.com/",
+      "https://allsell.am/en/asus-vivobook-15-core-7-16gb-i-512gb-f1504va-bq338"
     ],
     "colors": [
       "Silver"
@@ -83978,7 +84009,8 @@
     "aliases": [
       "Asus ZenBook Ultra 9 /512GB UX3405MA-QD993 OLED",
       "ZenBook Ultra UX3405MA-QD993 OLED",
-      "Asus ZenBook Ultra 9 16GB/512GB UX3405MA-QD993 OLED"
+      "Asus ZenBook Ultra 9 16GB/512GB UX3405MA-QD993 OLED",
+      "Asus ZenBook Ultra 9 16GB I 512GB UX3405MA-QD993 OLED"
     ],
     "tier": "upper-mid",
     "priceAmd": 599000,
@@ -83994,8 +84026,8 @@
     ],
     "display": {
       "size": 14,
-      "resolution": "1920x1200",
-      "type": "OLED"
+      "type": "OLED",
+      "resolution": "1920x1200"
     },
     "battery": {
       "capacity": 75
@@ -84015,7 +84047,8 @@
     "body": {},
     "sources": [
       "https://www.asus.com/laptops/for-home/zenbook/asus-zenbook-14-oled-ux3405/techspec/",
-      "https://www.notebookcheck.net/"
+      "https://www.notebookcheck.net/",
+      "https://allsell.am/en/asus-zenbook-ultra-9-16gb-i-512gb-ux3405ma-qd993-oled"
     ],
     "colors": [
       "Silver"
@@ -84524,7 +84557,8 @@
     "brand": "Lenovo",
     "name": "THINKPAD X1 CARBON GEN13 TP00150B",
     "aliases": [
-      "LENOVO THINKPAD X1 CARBON GEN13 TP00150B"
+      "LENOVO THINKPAD X1 CARBON GEN13 TP00150B",
+      "Lenovo ThinkPad X1 Carbon Gen 13 Aura Edition"
     ],
     "tier": "mid",
     "priceAmd": 749000,
@@ -84546,13 +84580,17 @@
       "https://appzone.am/en/Assortment/lenovo-thinkpad-x1-carbon-gen13-tp00150b/",
       "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx1/lenovo-thinkpad-x1-carbon-gen-13-aura-edition-14-inch-intel/len101t0101",
       "https://www.notebookcheck.net/",
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_Gen_13_Aura_Edition/ThinkPad_X1_Carbon_Gen_13_Aura_Edition_Spec.pdf"
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X1_Carbon_Gen_13_Aura_Edition/ThinkPad_X1_Carbon_Gen_13_Aura_Edition_Spec.pdf",
+      "https://redstore.am/en/product/lenovo-thinkpad-x1-carbon-gen-13-aura-edition"
     ],
     "unsure": [
       "popularity"
     ],
     "display": {
-      "size": 14
+      "size": 14,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "IPS"
     },
     "os": "Windows 11 PRO",
     "specNA": {
@@ -84564,7 +84602,14 @@
     },
     "colors": [
       "Black"
-    ]
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 268V"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    }
   },
   {
     "id": "lenovo-thinkpad-x1-carbon-gen12-tp00150a",
@@ -86550,7 +86595,8 @@
     "brand": "Lenovo",
     "name": "IdeaPad 5 Pro 14IAP7 i5-1240P",
     "aliases": [
-      "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P /512GB (82SH005PRK)"
+      "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P /512GB (82SH005PRK)",
+      "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P 16GB I 512GB (82SH005PRK)"
     ],
     "tier": "upper-mid",
     "priceAmd": 498400,
@@ -86587,7 +86633,8 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_5_Pro_14IAP7/IdeaPad_5_Pro_14IAP7_Spec.pdf",
-      "https://psref.lenovo.com/Detail/IdeaPad_5_Pro_14IAP7?M=82SH005PRK"
+      "https://psref.lenovo.com/Detail/IdeaPad_5_Pro_14IAP7?M=82SH005PRK",
+      "https://allsell.am/en/lenovo-ideapad-5-pro-14iap7-82sh005prk-16gb-i-512gb"
     ],
     "os": "No OS",
     "colors": [
@@ -86600,7 +86647,8 @@
     "brand": "Lenovo",
     "name": "IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H",
     "aliases": [
-      "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H /512GB (82SC007ARK)"
+      "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H /512GB (82SC007ARK)",
+      "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H 16GB I 512GB (82SC007ARK)"
     ],
     "tier": "upper-mid",
     "priceAmd": 579400,
@@ -86637,7 +86685,8 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16ARH7/IdeaPad_Gaming_3_16ARH7_Spec.pdf",
-      "https://psref.lenovo.com/Detail/IdeaPad_Gaming_3_16ARH7?M=82SC007ARK"
+      "https://psref.lenovo.com/Detail/IdeaPad_Gaming_3_16ARH7?M=82SC007ARK",
+      "https://allsell.am/en/lenovo-ideapad-gaming-3-16arh7-82sc007ark-16gb-i-512gb"
     ],
     "os": "No OS",
     "colors": [
@@ -86650,7 +86699,8 @@
     "brand": "Lenovo",
     "name": "IdeaPad Gaming 3 16IAH7 i5-12450H",
     "aliases": [
-      "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H /512GB (82SA00CWRK)"
+      "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H /512GB (82SA00CWRK)",
+      "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H 16GB I 512GB (82SA00CWRK)"
     ],
     "tier": "upper-mid",
     "priceAmd": 547400,
@@ -86688,7 +86738,8 @@
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/IdeaPad/IdeaPad_Gaming_3_16IAH7/IdeaPad_Gaming_3_16IAH7_Spec.pdf",
       "https://www.notebookcheck.net/",
-      "https://psref.lenovo.com/Detail/IdeaPad_Gaming_3_16IAH7?M=82SA00CWRK"
+      "https://psref.lenovo.com/Detail/IdeaPad_Gaming_3_16IAH7?M=82SA00CWRK",
+      "https://allsell.am/en/lenovo-ideapad-gaming-3-16iah7-82sa00cwrk-16gb-i-512gb"
     ],
     "os": "No OS",
     "colors": [
@@ -87761,7 +87812,9 @@
     "brand": "Lenovo",
     "name": "ThinkBook 16 G8 IAL Ultra 9 185H",
     "aliases": [
-      "Lenovo ThinkBook 16 G8 IAL Ultra 9 185H /512GB (21SK00JVGX)"
+      "Lenovo ThinkBook 16 G8 IAL Ultra 9 185H /512GB (21SK00JVGX)",
+      "Lenovo ThinkBook 16 G8 IAL Ultra 9 32GB I 1TB (21SK00JVGX)",
+      "Lenovo ThinkBook 16 G8 IAL Ultra 9 32GB I 512GB (21SK00JVGX)"
     ],
     "tier": "upper-mid",
     "priceAmd": 560400,
@@ -87811,7 +87864,9 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf",
-      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IAL?M=21SK00JVGX"
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IAL?M=21SK00JVGX",
+      "https://allsell.am/en/lenovo-thinkbook-16-g8-ial-ultra-9-32gb-i-1tb-21sk00jvgx",
+      "https://allsell.am/en/lenovo-thinkbook-16-g8-ial-ultra-9-32gb-i-512gb-21sk00jvgx"
     ],
     "os": "No OS",
     "colors": [
@@ -88410,7 +88465,8 @@
     "brand": "Lenovo",
     "name": "Yoga Pro 7 14AHP9 Ryzen 7",
     "aliases": [
-      "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 /1TB (83E3002ARK)"
+      "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 /1TB (83E3002ARK)",
+      "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 8845HS 16GB I 1TB (83E3001LRK)"
     ],
     "tier": "upper-mid",
     "priceAmd": 499000,
@@ -88426,8 +88482,8 @@
     ],
     "display": {
       "size": 14.5,
-      "type": "IPS",
       "resolution": "2880x1800",
+      "type": "IPS",
       "refresh": 120
     },
     "battery": {},
@@ -88446,11 +88502,13 @@
       "weight": 1490
     },
     "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_Spec.pdf"
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_Pro_7_14AHP9/Yoga_Pro_7_14AHP9_Spec.pdf",
+      "https://allsell.am/en/lenovo-yoga-pro-7-14ahp9-83e3001lrk-16gb-i-1tb"
     ],
     "colors": [
       "Gray"
-    ]
+    ],
+    "os": "Windows 11"
   },
   {
     "id": "lenovo-yoga-slim-7-14ill10-ultra-5-226v",
@@ -88961,7 +89019,8 @@
     "name": "OmniBook 3 16-BY0015 Ryzen 5",
     "aliases": [
       "HP OmniBook 3 16-BY0015 Ryzen 5 40 I (D7NF2UA#ABA)",
-      "HP OmniBook 3 16-BY0015 Ryzen 5 40 I"
+      "HP OmniBook 3 16-BY0015 Ryzen 5 40 I",
+      "HP OmniBook 3 16-by0015dx 8GB I 256GB (D7NF2UA)"
     ],
     "tier": "mid",
     "priceAmd": 255400,
@@ -88998,14 +89057,16 @@
     "sources": [
       "https://technave.com/gadget/HP-OmniBook-3-16-inch-Laptop-16-Price-in-Malaysia-Spec-46163.html",
       "https://partsurfer.hp.com/",
-      "https://allsell.am/en/hp-omnibook-3-16-by0015-ryzen-5-40-8gb-i-256gb-d7nf2ua-aba"
+      "https://allsell.am/en/hp-omnibook-3-16-by0015-ryzen-5-40-8gb-i-256gb-d7nf2ua-aba",
+      "https://allsell.am/en/hp-omnibook-3-16-by0015dx-8gb-i-256gb-d7nf2ua"
     ],
     "colors": [
       "Silver"
     ],
     "chipset": {
       "name": "AMD Ryzen 5 40"
-    }
+    },
+    "os": "Windows 11"
   },
   {
     "id": "hp-omnibook-5-16-cd0070-ultra-7-355",
@@ -97565,7 +97626,8 @@
     "brand": "HP",
     "name": "OmniBook 3 17-dk0004ci (DR9V6EA)",
     "aliases": [
-      "HP OmniBook 3 17-dk0004ci Core 5 120U 16GB SSD512 17.3\" DR9V6EA"
+      "HP OmniBook 3 17-dk0004ci Core 5 120U 16GB SSD512 17.3\" DR9V6EA",
+      "HP OmniBook 3 17-dk0004ci i5-120U 16GB I 512GB (DR9V6EA)"
     ],
     "tier": "mid",
     "priceAmd": 449900,
@@ -97590,13 +97652,18 @@
     "summaryEn": "HP OmniBook 3 17-dk0004ci (DR9V6EA).",
     "sources": [
       "https://vlv.am/en/Product/48809",
-      "https://kelaptop.com/de/hp-omnibook-3-17-dk0003ns-d44c1ea"
+      "https://kelaptop.com/de/hp-omnibook-3-17-dk0003ns-d44c1ea",
+      "https://allsell.am/en/hp-omnibook-3-17-dk0004ci-i5-120u-16gb-i-512gb-dr9v6ea"
     ],
     "unsure": [
       "popularity"
     ],
     "body": {
       "weight": 2010
+    },
+    "graphics": {
+      "name": "Intel Integrated Graphics",
+      "type": "integrated"
     }
   },
   {
@@ -178055,7 +178122,10 @@
     "released": "2025-12",
     "sources": [
       "https://allsell.am/en/sony-camera-a7-v"
-    ]
+    ],
+    "body": {
+      "weight": 695
+    }
   },
   {
     "id": "sony-alpha-7c-ii",
@@ -178166,231 +178236,6 @@
     ]
   },
   {
-    "id": "acer-aspire-lite-al16-54p-52al",
-    "category": "laptop",
-    "brand": "Acer",
-    "name": "Aspire Lite AL16-54P-52AL",
-    "aliases": [
-      "Acer Aspire Lite AL16-54P-52AL i5-120U 16GB I 512GB (NX.D73EL.002)"
-    ],
-    "tier": "mid",
-    "priceAmd": 308400,
-    "priceAmdMax": 308400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16,
-      "resolution": "1920x1200"
-    },
-    "chipset": {
-      "name": "Intel Core i5-120U"
-    },
-    "graphics": {
-      "name": "Intel UHD Graphics",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 308400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 16-inch laptop with Intel Core i5-120U.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/acer-aspire-lite-al16-54p-52a-i5-120u-16gb-i-512gb-nx-d73el-002"
-    ]
-  },
-  {
-    "id": "acer-nitro-5-an515-58-77z2",
-    "category": "laptop",
-    "brand": "Acer",
-    "name": "Nitro 5 AN515-58-77Z2",
-    "aliases": [
-      "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H 16GB I 1TB+512GB (NH.QFMAA.004) RTX3060"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 739600,
-    "priceAmdMax": 739600,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080",
-      "touch": true
-    },
-    "chipset": {
-      "name": "Intel Core i7-12700H"
-    },
-    "graphics": {
-      "name": "NVIDIA GeForce RTX 3060 6GB",
-      "type": "discrete"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 1024,
-        "priceAmd": 739600
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H and NVIDIA GeForce RTX 3060 6GB.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "colors": [
-      "Black"
-    ],
-    "sources": [
-      "https://allsell.am/en/acer-nitro-5-an515-58-77z2-16gb-i-1tb"
-    ]
-  },
-  {
-    "id": "acer-predator-helios-neo-14-phn14-51-99nm",
-    "category": "laptop",
-    "brand": "Acer",
-    "name": "Predator Helios Neo 14 PHN14-51-99NM",
-    "aliases": [
-      "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H 32GB I 1TB (NH.QRNAA.004)"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 957600,
-    "priceAmdMax": 957600,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 14.5,
-      "resolution": "3072x1920"
-    },
-    "chipset": {
-      "name": "Intel Core Ultra 9 185H"
-    },
-    "graphics": {
-      "name": "NVIDIA GeForce RTX 4070 8GB",
-      "type": "discrete"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 32,
-        "storage": 1024,
-        "priceAmd": 957600
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 14.5-inch laptop with Intel Core Ultra 9 185H and NVIDIA GeForce RTX 4070 8GB.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "colors": [
-      "Black"
-    ],
-    "sources": [
-      "https://allsell.am/en/acer-predator-helios-neo-14-phn14-51-99nm-32gb-i-1tb"
-    ]
-  },
-  {
-    "id": "apple-macbook-pro-16-m5-max",
-    "category": "laptop",
-    "brand": "Apple",
-    "name": "MacBook Pro 16 M5 Max",
-    "aliases": [
-      "Apple MacBook Pro 16 inch M5 Max 48GB I 2TB MGEE4 Space Black"
-    ],
-    "tier": "flagship",
-    "priceAmd": 2044500,
-    "priceAmdMax": 2044500,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16.2,
-      "resolution": "3456x2234",
-      "touch": true
-    },
-    "chipset": {
-      "name": "Apple M5 Max"
-    },
-    "graphics": {
-      "name": "40-core GPU",
-      "type": "integrated"
-    },
-    "os": "macOS",
-    "variants": [
-      {
-        "ram": 48,
-        "storage": 2048,
-        "priceAmd": 2044500
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 16.2-inch laptop with Apple M5 Max.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "colors": [
-      "Space Black"
-    ],
-    "sources": [
-      "https://allsell.am/en/apple-macbook-pro-16-inch-m5-max-48gb-i-2tb-mge94-silver"
-    ]
-  },
-  {
-    "id": "asus-vivobook-15-f1504va-bq338",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "Vivobook 15 F1504VA-BQ338",
-    "aliases": [
-      "Asus VivoBook 15 Core 7 16GB I 512GB F1504VA-BQ338"
-    ],
-    "tier": "mid",
-    "priceAmd": 379000,
-    "priceAmdMax": 379000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080"
-    },
-    "chipset": {
-      "name": "Intel Core 7 150U"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 379000
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 15.6-inch laptop with Intel Core 7 150U.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/asus-vivobook-15-core-7-16gb-i-512gb-f1504va-bq338"
-    ]
-  },
-  {
     "id": "asus-vivobook-15-x1504vap-wb51-cb",
     "category": "laptop",
     "brand": "ASUS",
@@ -178406,7 +178251,8 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 60
     },
     "chipset": {
       "name": "Intel Core 5 120U"
@@ -178428,17 +178274,23 @@
         "priceAmd": 275000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 42
+    },
     "summaryEn": "A 15.6-inch laptop with Intel Core 5 120U.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
       "https://allsell.am/en/asus-vivobook-core-5-16gb-i-512gb-x1504vap-wb51-cb",
       "https://allsell.am/en/asus-vivobook-core-5-8gb-i-512gb-x1504vap-wb51-cb"
-    ]
+    ],
+    "body": {
+      "weight": 1700,
+      "width": 359.7,
+      "height": 232.5,
+      "thickness": 17.9
+    }
   },
   {
     "id": "asus-vivobook-s16-s3607aa-sh060",
@@ -178455,7 +178307,10 @@
     "accent": "#5C6470",
     "display": {
       "size": 16,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "type": "OLED",
+      "refresh": 60,
+      "brightness": 300
     },
     "chipset": {
       "name": "Intel Core Ultra 5 325U"
@@ -178475,12 +178330,14 @@
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 5 325U.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "sources": [
       "https://allsell.am/en/asus-vivobook-s16-s3607aa-sh060-ultra-5-325u-16gb-i-512gb-90nb1731-m00390"
-    ]
+    ],
+    "body": {
+      "weight": 1700
+    }
   },
   {
     "id": "asus-vivobook-s16-s5652ma-tk121w",
@@ -178518,12 +178375,14 @@
     "summaryEn": "A 16-inch laptop with Intel Core 7 350.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "sources": [
       "https://allsell.am/en/asus-vivobook-s16-s5652ma-tk121w-core-7-16gb-i-512gb-90nb1961-m00c30"
-    ]
+    ],
+    "body": {
+      "weight": 1500
+    }
   },
   {
     "id": "asus-vivobook-x512ja-211-vbgb",
@@ -178566,49 +178425,6 @@
     ],
     "sources": [
       "https://allsell.am/en/asus-vivobook-x512ja-211-vbgb"
-    ]
-  },
-  {
-    "id": "asus-zenbook-14-ux3405ma-qd993-oled",
-    "category": "laptop",
-    "brand": "ASUS",
-    "name": "Zenbook 14 UX3405MA-QD993 OLED",
-    "aliases": [
-      "Asus ZenBook Ultra 9 16GB I 512GB UX3405MA-QD993 OLED"
-    ],
-    "tier": "mid",
-    "priceAmd": 599000,
-    "priceAmdMax": 599000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 14,
-      "type": "OLED",
-      "resolution": "1920x1200"
-    },
-    "chipset": {
-      "name": "Intel Core Ultra 9 185H"
-    },
-    "graphics": {
-      "name": "Intel Arc Graphics",
-      "type": "integrated"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 599000
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 14-inch laptop with Intel Core Ultra 9 185H.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/asus-zenbook-ultra-9-16gb-i-512gb-ux3405ma-qd993-oled"
     ]
   },
   {
@@ -178656,50 +178472,6 @@
     ]
   },
   {
-    "id": "dell-latitude-7455-x1p-64-100",
-    "category": "laptop",
-    "brand": "Dell",
-    "name": "Latitude 7455 (Snapdragon X Plus)",
-    "aliases": [
-      "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64-100 16GB I 512GB"
-    ],
-    "tier": "mid",
-    "priceAmd": 469400,
-    "priceAmdMax": 469400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 14,
-      "resolution": "2560x1600",
-      "touch": true
-    },
-    "chipset": {
-      "name": "Snapdragon X Plus X1P-64-100"
-    },
-    "graphics": {
-      "name": "Qualcomm Adreno",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 469400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 14-inch laptop with Snapdragon X Plus X1P-64-100.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/dell-latitude-7455-16gb-i-512gb"
-    ]
-  },
-  {
     "id": "hp-elitebook-x-flip-g1i-14-b68s8ea",
     "category": "laptop",
     "brand": "HP",
@@ -178715,7 +178487,9 @@
     "display": {
       "size": 14,
       "resolution": "1920x1200",
-      "touch": true
+      "touch": true,
+      "type": "IPS",
+      "brightness": 400
     },
     "chipset": {
       "name": "Intel Core Ultra 5 226V"
@@ -178736,7 +178510,6 @@
     "summaryEn": "A 14-inch laptop with Intel Core Ultra 5 226V.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "colors": [
@@ -178744,7 +178517,10 @@
     ],
     "sources": [
       "https://allsell.am/en/hp-elitebook-x-flip-g1i14ai-ultra-5-226v-16gb-i-512gb-b68s8ea"
-    ]
+    ],
+    "body": {
+      "weight": 1400
+    }
   },
   {
     "id": "hp-hyperx-omen-16-ap1003dx",
@@ -178782,7 +178558,6 @@
     "summaryEn": "A 16-inch laptop with AMD Ryzen 7 8745HX and NVIDIA GeForce RTX 5060 8GB.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "colors": [
@@ -178790,7 +178565,10 @@
     ],
     "sources": [
       "https://allsell.am/en/hp-hyperx-omen-16-16-ap1003dx-16gb-i-512gb-d8rb8ua-aba"
-    ]
+    ],
+    "body": {
+      "weight": 2480
+    }
   },
   {
     "id": "hp-omen-transcend-14-fb1043dx",
@@ -178808,7 +178586,8 @@
     "display": {
       "size": 14,
       "type": "OLED",
-      "resolution": "2880x1800"
+      "resolution": "2880x1800",
+      "refresh": 120
     },
     "chipset": {
       "name": "Intel Core Ultra 7 255H"
@@ -178825,19 +178604,22 @@
         "priceAmd": 695000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 71
+    },
     "summaryEn": "A 14-inch laptop with Intel Core Ultra 7 255H and NVIDIA GeForce RTX 5060 8GB.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
       "Black"
     ],
     "sources": [
       "https://allsell.am/en/hp-omen-transcend-14-fb1043dx-16gb-i-1tb-d8km3ua"
-    ]
+    ],
+    "body": {
+      "weight": 1630
+    }
   },
   {
     "id": "hp-omnibook-3-16-bu0130wm",
@@ -178854,7 +178636,9 @@
     "accent": "#5C6470",
     "display": {
       "size": 16,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "type": "IPS",
+      "refresh": 60
     },
     "chipset": {
       "name": "Intel Core 3 100U"
@@ -178871,111 +178655,22 @@
         "priceAmd": 249000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 41
+    },
     "summaryEn": "A 16-inch laptop with Intel Core 3 100U.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
       "Black"
     ],
     "sources": [
       "https://allsell.am/en/hp-omnibook-3-16-bu0130wm-8gb-i-256gb-cu1d2ua"
-    ]
-  },
-  {
-    "id": "hp-omnibook-3-16-by0015dx",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "OmniBook 3 16-BY0015DX",
-    "aliases": [
-      "HP OmniBook 3 16-by0015dx 8GB I 256GB (D7NF2UA)"
     ],
-    "tier": "budget",
-    "priceAmd": 247000,
-    "priceAmdMax": 247000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16,
-      "resolution": "1920x1200",
-      "touch": true
-    },
-    "chipset": {
-      "name": "AMD Ryzen 5 40"
-    },
-    "graphics": {
-      "name": "AMD Radeon 610M",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 8,
-        "storage": 256,
-        "priceAmd": 247000
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 16-inch laptop with AMD Ryzen 5 40.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "colors": [
-      "Silver"
-    ],
-    "sources": [
-      "https://allsell.am/en/hp-omnibook-3-16-by0015dx-8gb-i-256gb-d7nf2ua"
-    ]
-  },
-  {
-    "id": "hp-omnibook-3-17-dk0004ci",
-    "category": "laptop",
-    "brand": "HP",
-    "name": "OmniBook 3 17-DK0004CI",
-    "aliases": [
-      "HP OmniBook 3 17-dk0004ci i5-120U 16GB I 512GB (DR9V6EA)"
-    ],
-    "tier": "mid",
-    "priceAmd": 395400,
-    "priceAmdMax": 395400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 17.3,
-      "resolution": "1920x1080"
-    },
-    "chipset": {
-      "name": "Intel Core i5-120U"
-    },
-    "graphics": {
-      "name": "Intel Integrated Graphics",
-      "type": "integrated"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 395400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 17.3-inch laptop with Intel Core i5-120U.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "colors": [
-      "Silver"
-    ],
-    "sources": [
-      "https://allsell.am/en/hp-omnibook-3-17-dk0004ci-i5-120u-16gb-i-512gb-dr9v6ea"
-    ]
+    "body": {
+      "weight": 1640
+    }
   },
   {
     "id": "hp-omnibook-5-16-af1015ci",
@@ -179059,7 +178754,6 @@
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 258V.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "colors": [
@@ -179067,7 +178761,13 @@
     ],
     "sources": [
       "https://allsell.am/en/hp-omnibook-x-flip-16-as0003ci-ultra-7-258v-32gb-i-1tb-c5hz6ea"
-    ]
+    ],
+    "body": {
+      "weight": 1880,
+      "width": 356,
+      "height": 245.5,
+      "thickness": 15.3
+    }
   },
   {
     "id": "hp-omnibook-x-flip-16-as0010ci",
@@ -179106,7 +178806,6 @@
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 5 226V.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "colors": [
@@ -179114,7 +178813,13 @@
     ],
     "sources": [
       "https://allsell.am/en/hp-omnibook-x-flip-16-as0010ci-ultra-5-226v-16gb-i-1tb-cl6v7ea"
-    ]
+    ],
+    "body": {
+      "weight": 1880,
+      "width": 356,
+      "height": 245.5,
+      "thickness": 15.3
+    }
   },
   {
     "id": "hp-probook-4-g1ir-16-d0ve9at",
@@ -179147,19 +178852,22 @@
         "priceAmd": 432000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 56
+    },
     "summaryEn": "A 16-inch laptop with Intel Core 7 150U.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
       "Silver"
     ],
     "sources": [
       "https://allsell.am/en/hp-probook-4-g1ir-16-16gb-i-512gb-d0ve9at"
-    ]
+    ],
+    "body": {
+      "weight": 1740
+    }
   },
   {
     "id": "hp-probook-440-g8-i7",
@@ -179239,7 +178947,6 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-1355U.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "colors": [
@@ -179247,7 +178954,10 @@
     ],
     "sources": [
       "https://allsell.am/en/hp-probook-450-g10-8l0d6ua"
-    ]
+    ],
+    "body": {
+      "weight": 1790
+    }
   },
   {
     "id": "hp-probook-450-g8-28k98ut",
@@ -179290,48 +179000,6 @@
     ],
     "sources": [
       "https://allsell.am/en/hp-probook-450-g8-i5-1135g7-28k98ut-aba"
-    ]
-  },
-  {
-    "id": "lenovo-ideapad-5-pro-14iap7-82sh005prk",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "IdeaPad 5 Pro 14IAP7 82SH005PRK",
-    "aliases": [
-      "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P 16GB I 512GB (82SH005PRK)"
-    ],
-    "tier": "mid",
-    "priceAmd": 498400,
-    "priceAmdMax": 498400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 14,
-      "resolution": "2240x1400"
-    },
-    "chipset": {
-      "name": "Intel Core i5-1240P"
-    },
-    "graphics": {
-      "name": "NVIDIA GeForce RTX 2050 4GB",
-      "type": "discrete"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 498400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 14-inch laptop with Intel Core i5-1240P and NVIDIA GeForce RTX 2050 4GB.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-ideapad-5-pro-14iap7-82sh005prk-16gb-i-512gb"
     ]
   },
   {
@@ -179378,90 +179046,6 @@
     ]
   },
   {
-    "id": "lenovo-ideapad-gaming-3-16arh7-82sc007ark",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "IdeaPad Gaming 3 16ARH7 82SC007ARK",
-    "aliases": [
-      "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H 16GB I 512GB (82SC007ARK)"
-    ],
-    "tier": "mid",
-    "priceAmd": 579400,
-    "priceAmdMax": 579400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16,
-      "resolution": "1920x1200"
-    },
-    "chipset": {
-      "name": "AMD Ryzen 5 6600H"
-    },
-    "graphics": {
-      "name": "NVIDIA GeForce RTX 3050 Ti 4GB",
-      "type": "discrete"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 579400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 16-inch laptop with AMD Ryzen 5 6600H and NVIDIA GeForce RTX 3050 Ti 4GB.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-ideapad-gaming-3-16arh7-82sc007ark-16gb-i-512gb"
-    ]
-  },
-  {
-    "id": "lenovo-ideapad-gaming-3-16iah7-82sa00cwrk",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "IdeaPad Gaming 3 16IAH7 82SA00CWRK",
-    "aliases": [
-      "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H 16GB I 512GB (82SA00CWRK)"
-    ],
-    "tier": "mid",
-    "priceAmd": 547400,
-    "priceAmdMax": 547400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1200"
-    },
-    "chipset": {
-      "name": "Intel Core i5-12450H"
-    },
-    "graphics": {
-      "name": "NVIDIA GeForce RTX 3050 Ti 4GB",
-      "type": "discrete"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 547400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 15.6-inch laptop with Intel Core i5-12450H and NVIDIA GeForce RTX 3050 Ti 4GB.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-ideapad-gaming-3-16iah7-82sa00cwrk-16gb-i-512gb"
-    ]
-  },
-  {
     "id": "lenovo-ideapad-slim-3-15abr8-82xm0123rk",
     "category": "laptop",
     "brand": "Lenovo",
@@ -179476,7 +179060,10 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "IPS",
+      "brightness": 300
     },
     "chipset": {
       "name": "AMD Ryzen 7 5825U"
@@ -179493,58 +179080,26 @@
         "priceAmd": 326400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 47
+    },
     "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 5825U.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-ideapad-slim-3-15abr8-ryzen-7-5825u-8gb-i-512gb-82xm0123rk"
-    ]
-  },
-  {
-    "id": "lenovo-ideapad-slim-3-15arp10-83k700tuus",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "IdeaPad Slim 3 15ARP10 83K700TUUS",
-    "aliases": [
-      "Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 16GB I 512GB (83K700TUUS)"
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15abr8-ryzen-7-5825u-8gb-i-512gb-82xm0123rk",
+      "https://psref.lenovo.com/Detail/82XM0123RK"
     ],
-    "tier": "mid",
-    "priceAmd": 349000,
-    "priceAmdMax": 349000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 15.3,
-      "resolution": "1920x1200"
+    "body": {
+      "weight": 1620,
+      "width": 359.3,
+      "height": 235,
+      "thickness": 17.9
     },
-    "chipset": {
-      "name": "AMD Ryzen 7 170"
-    },
-    "graphics": {
-      "name": "AMD Radeon 680M",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 349000
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 15.3-inch laptop with AMD Ryzen 7 170.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-ideapad-slim-3-15arp10-ryzen-7-16gb-i-512gb-83k700tuus"
+    "released": "2025-04",
+    "colors": [
+      "Arctic Grey"
     ]
   },
   {
@@ -179564,7 +179119,10 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.6,
-      "resolution": "1920x1080"
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "TN",
+      "brightness": 250
     },
     "chipset": {
       "name": "Intel N150"
@@ -179581,22 +179139,33 @@
         "priceAmd": 189000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 47
+    },
     "summaryEn": "A 15.6-inch laptop with Intel N150.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
-      "Grey",
-      "Blue"
+      "Arctic Grey",
+      "Abyss Blue",
+      "Frost Blue"
     ],
     "sources": [
       "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002fus",
       "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002kus",
-      "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002mus"
-    ]
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002mus",
+      "https://psref.lenovo.com/Detail/83L7002FUS",
+      "https://psref.lenovo.com/Detail/83L7002KUS",
+      "https://psref.lenovo.com/Detail/83L7002MUS"
+    ],
+    "body": {
+      "weight": 1550,
+      "width": 359.2,
+      "height": 234,
+      "thickness": 17.9
+    },
+    "released": "2025-10"
   },
   {
     "id": "lenovo-ideapad-slim-3-15iwc11-83rr00hbrk",
@@ -179613,13 +179182,16 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.3,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS",
+      "brightness": 400
     },
     "chipset": {
       "name": "Intel Core 7 350"
     },
     "graphics": {
-      "name": "Integrated Intel Graphics",
+      "name": "Intel Graphics",
       "type": "integrated"
     },
     "os": "Windows 11",
@@ -179630,57 +179202,26 @@
         "priceAmd": 550400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 50
+    },
     "summaryEn": "A 15.3-inch laptop with Intel Core 7 350.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-ideapad-slim-3-15iwc11-i7-350-16gb-i-1tb-83rr00hbrk"
-    ]
-  },
-  {
-    "id": "lenovo-ideapad-slim-5-16irh10r-83j1001grk",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "IdeaPad Slim 5 16IRH10R 83J1001GRK",
-    "aliases": [
-      "Lenovo IdeaPad Slim 5 16IRH10R i7-240H 16GB I 1TB (83J1001GRK)"
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15iwc11-i7-350-16gb-i-1tb-83rr00hbrk",
+      "https://psref.lenovo.com/Detail/83RR00HBRK"
     ],
-    "tier": "mid",
-    "priceAmd": 526400,
-    "priceAmdMax": 526400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16,
-      "resolution": "2880x1800"
+    "body": {
+      "weight": 1590,
+      "width": 343.4,
+      "height": 239.5,
+      "thickness": 17.9
     },
-    "chipset": {
-      "name": "Intel Core 7 240H"
-    },
-    "graphics": {
-      "name": "Intel Integrated Graphics",
-      "type": "integrated"
-    },
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 1024,
-        "priceAmd": 526400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 16-inch laptop with Intel Core 7 240H.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-ideapad-slim-5-16irh10r-i7-240h-16gb-i-1tb-83j1001grk"
+    "released": "2026-07",
+    "colors": [
+      "Luna Grey"
     ]
   },
   {
@@ -179698,13 +179239,16 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.3,
-      "resolution": "2560x1600"
+      "resolution": "2560x1600",
+      "refresh": 165,
+      "type": "OLED",
+      "brightness": 1000
     },
     "chipset": {
       "name": "Intel Core Ultra 9 290HX Plus"
     },
     "graphics": {
-      "name": "NVIDIA GeForce RTX 5070 12GB",
+      "name": "NVIDIA GeForce RTX 5070 12GB GDDR7",
       "type": "discrete"
     },
     "os": "Windows 11",
@@ -179715,15 +179259,26 @@
         "priceAmd": 1571400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "A 15.3-inch laptop with Intel Core Ultra 9 290HX Plus and NVIDIA GeForce RTX 5070 12GB.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-legion-5-15iax11-ultra-9-32gb-i-2tb-83vk00b7kg"
+      "https://allsell.am/en/lenovo-legion-5-15iax11-ultra-9-32gb-i-2tb-83vk00b7kg",
+      "https://psref.lenovo.com/Detail/83VK00B7KG"
+    ],
+    "body": {
+      "weight": 1930,
+      "width": 344,
+      "height": 244.5,
+      "thickness": 19.95
+    },
+    "released": "2026-08",
+    "colors": [
+      "Eclipse Black"
     ]
   },
   {
@@ -179741,13 +179296,16 @@
     "accent": "#5C6470",
     "display": {
       "size": 15.3,
-      "resolution": "2560x1600"
+      "resolution": "2560x1600",
+      "refresh": 165,
+      "type": "OLED",
+      "brightness": 1000
     },
     "chipset": {
       "name": "Intel Core Ultra 7 356H"
     },
     "graphics": {
-      "name": "NVIDIA GeForce RTX 5050 8GB",
+      "name": "NVIDIA GeForce RTX 5050 8GB GDDR7",
       "type": "discrete"
     },
     "os": "Windows 11",
@@ -179758,64 +179316,26 @@
         "priceAmd": 1165400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 80
+    },
     "summaryEn": "A 15.3-inch laptop with Intel Core Ultra 7 356H and NVIDIA GeForce RTX 5050 8GB.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-legion-5-15iph11-ultra-7-356h-16gb-i-2tb-83rw0055kg"
-    ]
-  },
-  {
-    "id": "lenovo-thinkbook-16-g8-ial-21sk00jvgx",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "ThinkBook 16 G8 IAL 21SK00JVGX",
-    "aliases": [
-      "Lenovo ThinkBook 16 G8 IAL Ultra 9 32GB I 1TB (21SK00JVGX)",
-      "Lenovo ThinkBook 16 G8 IAL Ultra 9 32GB I 512GB (21SK00JVGX)"
+      "https://allsell.am/en/lenovo-legion-5-15iph11-ultra-7-356h-16gb-i-2tb-83rw0055kg",
+      "https://psref.lenovo.com/Detail/83RW0055KG"
     ],
-    "tier": "upper-mid",
-    "priceAmd": 676400,
-    "priceAmdMax": 710400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 16,
-      "resolution": "1920x1200"
+    "body": {
+      "weight": 1870,
+      "width": 344,
+      "height": 244.5,
+      "thickness": 19.95
     },
-    "chipset": {
-      "name": "Intel Core Ultra 9"
-    },
-    "graphics": {
-      "name": "Integrated Intel Arc Graphics",
-      "type": "integrated"
-    },
-    "variants": [
-      {
-        "ram": 32,
-        "storage": 1024,
-        "priceAmd": 710400
-      },
-      {
-        "ram": 32,
-        "storage": 512,
-        "priceAmd": 676400
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 16-inch laptop with Intel Core Ultra 9.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-thinkbook-16-g8-ial-ultra-9-32gb-i-1tb-21sk00jvgx",
-      "https://allsell.am/en/lenovo-thinkbook-16-g8-ial-ultra-9-32gb-i-512gb-21sk00jvgx"
+    "released": "2026-08",
+    "colors": [
+      "Eclipse Black"
     ]
   },
   {
@@ -179833,13 +179353,16 @@
     "accent": "#5C6470",
     "display": {
       "size": 16,
-      "resolution": "1920x1200"
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS",
+      "brightness": 400
     },
     "chipset": {
       "name": "Intel Core 5 210H"
     },
     "graphics": {
-      "name": "Integrated Intel Graphics",
+      "name": "Intel Graphics",
       "type": "integrated"
     },
     "variants": [
@@ -179849,15 +179372,26 @@
         "priceAmd": 463400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 48
+    },
     "summaryEn": "A 16-inch laptop with Intel Core 5 210H.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-thinkbook-16-g9-irl-core-i5-16gb-i-512gb-21us004tfw"
+      "https://allsell.am/en/lenovo-thinkbook-16-g9-irl-core-i5-16gb-i-512gb-21us004tfw",
+      "https://psref.lenovo.com/Detail/21US004TFW"
+    ],
+    "body": {
+      "weight": 1700,
+      "width": 356,
+      "height": 253.5,
+      "thickness": 17.5
+    },
+    "released": "2025-11",
+    "colors": [
+      "Arctic Grey"
     ]
   },
   {
@@ -179903,50 +179437,6 @@
     ]
   },
   {
-    "id": "lenovo-thinkpad-x9-15-gen-1-21q6001pfw",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "ThinkPad X9-15 Gen 1 21Q6001PFW",
-    "aliases": [
-      "Lenovo ThinkPad X9-15 Gen 1 Core Ultra 7 32GB I 1TB (21Q6001PFW)"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 939000,
-    "priceAmdMax": 939000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "display": {
-      "size": 15.3,
-      "type": "OLED",
-      "resolution": "2880x1800"
-    },
-    "chipset": {
-      "name": "Intel Core Ultra 7 258V"
-    },
-    "graphics": {
-      "name": "Intel Arc Graphics",
-      "type": "integrated"
-    },
-    "os": "Windows 11",
-    "variants": [
-      {
-        "ram": 32,
-        "storage": 1024,
-        "priceAmd": 939000
-      }
-    ],
-    "battery": {},
-    "summaryEn": "A 15.3-inch laptop with Intel Core Ultra 7 258V.",
-    "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
-    ],
-    "sources": [
-      "https://allsell.am/en/lenovo-thinkpad-x9-15-gen-1-core-ultra-7-32gb-i-1tb-21q6001pfw"
-    ]
-  },
-  {
     "id": "lenovo-yoga-7-14agp11-83td0047us",
     "category": "laptop",
     "brand": "Lenovo",
@@ -179962,13 +179452,16 @@
     "display": {
       "size": 14,
       "resolution": "1920x1200",
-      "touch": true
+      "touch": true,
+      "refresh": 60,
+      "type": "OLED",
+      "brightness": 400
     },
     "chipset": {
       "name": "AMD Ryzen AI 7 445"
     },
     "graphics": {
-      "name": "AMD Radeon 840M",
+      "name": "AMD Radeon 840M Graphics",
       "type": "integrated"
     },
     "os": "Windows 11",
@@ -179979,15 +179472,26 @@
         "priceAmd": 555000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "A 14-inch laptop with AMD Ryzen AI 7 445.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-yoga-7-14agp11-ryzen-ai-7-24gb-i-512gb-83td0047us"
+      "https://allsell.am/en/lenovo-yoga-7-14agp11-ryzen-ai-7-24gb-i-512gb-83td0047us",
+      "https://psref.lenovo.com/Detail/83TD0047US"
+    ],
+    "body": {
+      "weight": 1380,
+      "width": 316,
+      "height": 228,
+      "thickness": 15.4
+    },
+    "released": "2026-01",
+    "colors": [
+      "Seashell"
     ]
   },
   {
@@ -180006,13 +179510,16 @@
     "display": {
       "size": 14,
       "resolution": "1920x1200",
-      "touch": true
+      "touch": true,
+      "refresh": 60,
+      "type": "OLED",
+      "brightness": 400
     },
     "chipset": {
       "name": "AMD Ryzen AI 5 430"
     },
     "graphics": {
-      "name": "AMD Radeon 840M",
+      "name": "AMD Radeon 840M Graphics",
       "type": "integrated"
     },
     "os": "Windows 11",
@@ -180023,58 +179530,1991 @@
         "priceAmd": 499000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "A 14-inch laptop with AMD Ryzen AI 5 430.",
     "unsure": [
-      "popularity",
-      "body.weight",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-yoga-7-2-in-1-14agp11-ryzen-ai-5-16gb-i-512gb-83td0000us"
+      "https://allsell.am/en/lenovo-yoga-7-2-in-1-14agp11-ryzen-ai-5-16gb-i-512gb-83td0000us",
+      "https://psref.lenovo.com/Detail/83TD0000US"
+    ],
+    "body": {
+      "weight": 1380,
+      "width": 316,
+      "height": 228,
+      "thickness": 15.4
+    },
+    "released": "2026-01",
+    "colors": [
+      "Seashell"
     ]
   },
   {
-    "id": "lenovo-yoga-pro-7-14ahp9-83e3001lrk",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "Yoga Pro 7 14AHP9 83E3001LRK",
+    "id": "canon-eos-4000d-18-55",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS 4000D + EF-S 18–55mm",
     "aliases": [
-      "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 8845HS 16GB I 1TB (83E3001LRK)"
+      "Canon EOS 4000D 18-55mm"
     ],
     "tier": "mid",
-    "priceAmd": 574400,
-    "priceAmdMax": 574400,
+    "priceAmd": 179000,
+    "priceAmdMax": 179000,
     "popularity": 40,
-    "accent": "#5C6470",
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 179000
+      }
+    ],
     "display": {
-      "size": 14.5,
-      "resolution": "3072x1920"
+      "size": 2.7,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-4000d-18-55mm"
+    ],
+    "appliance": {
+      "type": "dslr"
+    },
+    "camera": {
+      "main": "18 MP APS-C CMOS",
+      "video": "Full HD 30p"
     },
     "chipset": {
-      "name": "AMD Ryzen 7 8845HS"
+      "name": "DIGIC 4+"
     },
-    "graphics": {
-      "name": "NVIDIA GeForce RTX 3050 6GB",
-      "type": "discrete"
+    "body": {
+      "weight": 436
     },
-    "os": "Windows 11",
+    "colors": [
+      "Black"
+    ],
+    "released": "2018-03",
+    "summaryEn": "Entry-level 18 MP APS-C DSLR with the EF-S 18–55mm kit lens."
+  },
+  {
+    "id": "canon-eos-6d-mark-ii-body",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS 6D Mark II Body",
+    "aliases": [
+      "Canon EOS 6D Mark II (Body)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 499000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-6d-mark-ii-body"
+    ],
+    "appliance": {
+      "type": "dslr"
+    },
+    "camera": {
+      "main": "26.2 MP full-frame CMOS",
+      "video": "Full HD 60p"
+    },
+    "chipset": {
+      "name": "DIGIC 7"
+    },
+    "body": {
+      "weight": 765
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2017-07",
+    "summaryEn": "26.2 MP full-frame DSLR with a vari-angle touchscreen."
+  },
+  {
+    "id": "canon-eos-r6-mark-iii-body",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R6 Mark III Body",
+    "aliases": [
+      "Canon EOS R6 Mark III Body"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1059000,
+    "priceAmdMax": 1059000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1059000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-r6-mark-iii-body"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "32.5 MP full-frame CMOS",
+      "video": "7K RAW 60p"
+    },
+    "chipset": {
+      "name": "DIGIC X"
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2025-11",
+    "summaryEn": "32.5 MP full-frame mirrorless camera, body only.",
+    "body": {
+      "weight": 699
+    }
+  },
+  {
+    "id": "canon-eos-r6-mark-iii-24-105-l",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R6 Mark III + RF 24–105mm F4 L",
+    "aliases": [
+      "Canon EOS R6 Mark III 24-105mm USM"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1599000,
+    "priceAmdMax": 1599000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1599000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-r6-mark-iii-24-105mm-usm"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "32.5 MP full-frame CMOS",
+      "video": "7K RAW 60p"
+    },
+    "chipset": {
+      "name": "DIGIC X"
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2025-11",
+    "summaryEn": "Full-frame mirrorless camera with the RF 24–105mm f/4 L IS USM lens.",
+    "body": {
+      "weight": 699
+    }
+  },
+  {
+    "id": "canon-eos-r6-v-body",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R6 V Body",
+    "aliases": [
+      "Canon EOS R6 V(Body)"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1699000,
+    "priceAmdMax": 1699000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 1699000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-r6-vbody"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "32.5 MP full-frame CMOS",
+      "video": "7K Open Gate RAW"
+    },
+    "chipset": {
+      "name": "DIGIC X"
+    },
+    "body": {
+      "weight": 688
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2026",
+    "summaryEn": "Video-focused 32.5 MP full-frame mirrorless camera, body only."
+  },
+  {
+    "id": "canon-eos-r6-v-20-50",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS R6 V + RF 20–50mm",
+    "aliases": [
+      "Canon EOS R6 V 20-50mm USM"
+    ],
+    "tier": "flagship",
+    "priceAmd": 2559000,
+    "priceAmdMax": 2559000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 2559000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-r6-v-20-50mm-usm"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "32.5 MP full-frame CMOS",
+      "video": "7K Open Gate RAW"
+    },
+    "chipset": {
+      "name": "DIGIC X"
+    },
+    "body": {
+      "weight": 688
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2026",
+    "summaryEn": "Video-focused full-frame mirrorless camera with the RF 20–50mm power-zoom lens."
+  },
+  {
+    "id": "canon-eos-rp-body",
+    "category": "camera",
+    "brand": "Canon",
+    "name": "EOS RP Body",
+    "aliases": [
+      "Canon EOS RP (Body)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 559000,
+    "priceAmdMax": 559000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 559000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/canon-eos-rp-body"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "26.2 MP full-frame CMOS",
+      "video": "4K 25p"
+    },
+    "chipset": {
+      "name": "DIGIC 8"
+    },
+    "body": {
+      "weight": 485
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2019-02",
+    "summaryEn": "Compact 26.2 MP full-frame mirrorless camera, body only."
+  },
+  {
+    "id": "nikon-z50-ii-16-50",
+    "category": "camera",
+    "brand": "Nikon",
+    "name": "Z50 II + 16–50mm",
+    "aliases": [
+      "Nikon Z50 II 16-50mm"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 689000,
+    "priceAmdMax": 689000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 689000
+      }
+    ],
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/nikon-z50-ii-16-50mm"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "20.9 MP APS-C CMOS",
+      "video": "4K 60p"
+    },
+    "chipset": {
+      "name": "EXPEED 7"
+    },
+    "body": {
+      "weight": 550
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2024-11",
+    "summaryEn": "APS-C mirrorless camera with the NIKKOR Z DX 16–50mm kit lens."
+  },
+  {
+    "id": "sony-alpha-7r-vi",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 7R VI",
+    "aliases": [
+      "Sony Alpha A7R VI (Body)"
+    ],
+    "tier": "flagship",
+    "priceAmd": 2999000,
+    "priceAmdMax": 2999000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 2999000
+      }
+    ],
+    "display": {
+      "size": 3.2,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/sony-alpha-a7r-vi-body"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "66.8 MP full-frame CMOS",
+      "video": "8K 30p"
+    },
+    "body": {
+      "weight": 713
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2026",
+    "summaryEn": "High-resolution 66.8 MP full-frame mirrorless camera, body only."
+  },
+  {
+    "id": "sony-zv-e10-16-50",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "ZV-E10 + 16–50mm",
+    "aliases": [
+      "Sony ZV-E10 16-50mm"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 399000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/sony-zv-e10-16-50mm"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "camera": {
+      "main": "24.2 MP APS-C Exmor CMOS",
+      "video": "4K 30p"
+    },
+    "chipset": {
+      "name": "BIONZ X"
+    },
+    "body": {
+      "weight": 343
+    },
+    "colors": [
+      "Black"
+    ],
+    "released": "2021-08",
+    "summaryEn": "Vlogging APS-C camera with the E PZ 16–50mm power-zoom lens."
+  },
+  {
+    "id": "hp-omnibook-3-14-ha0087nr",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 3 14-HA0087NR",
+    "aliases": [
+      "HP OmniBook 3 14-HA0087NR"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 429000,
+    "priceAmdMax": 429000,
+    "popularity": 40,
+    "accent": "#5C6470",
     "variants": [
       {
         "ram": 16,
-        "storage": 1024,
-        "priceAmd": 574400
+        "storage": 512,
+        "priceAmd": 429000
       }
     ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080",
+      "refresh": 60
+    },
+    "battery": {
+      "capacity": 41
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/hp-omnibook-3-14-ha0087nr"
+    ],
+    "chipset": {
+      "name": "AMD Ryzen AI 7 350"
+    },
+    "graphics": {
+      "name": "AMD Radeon Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "summaryEn": "A 14-inch laptop with AMD Ryzen AI 7 350.",
+    "body": {
+      "weight": 1470
+    },
+    "colors": [
+      "Glacier Silver"
+    ]
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-aw0033dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook X Flip 16-AW0033DX",
+    "aliases": [
+      "HP OmniBook X Flip 16-AW0033DX"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 699000,
+    "priceAmdMax": 699000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 2048,
+        "priceAmd": 699000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "resolution": "2880x1800",
+      "refresh": 120,
+      "type": "OLED",
+      "touch": true
+    },
     "battery": {},
-    "summaryEn": "A 14.5-inch laptop with AMD Ryzen 7 8845HS and NVIDIA GeForce RTX 3050 6GB.",
     "unsure": [
       "popularity",
-      "body.weight",
       "battery.capacity"
     ],
     "sources": [
-      "https://allsell.am/en/lenovo-yoga-pro-7-14ahp9-83e3001lrk-16gb-i-1tb"
+      "https://redstore.am/en/product/hp-omnibook-x-flip-16-aw0033dx"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 255H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4050 6GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "body": {
+      "weight": 1880
+    },
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 255H."
+  },
+  {
+    "id": "hp-probook-460-g11-ultra-7-155u",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 460 G11 (Ultra 7 155U)",
+    "aliases": [
+      "HP ProBook 460 G11",
+      "HP ProBook 460 G11(16GB)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 459000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 399000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 459000
+      }
+    ],
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS"
+    },
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/hp-probook-460-g11",
+      "https://redstore.am/en/product/hp-probook-460-g1116gb"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 155U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "body": {
+      "weight": 1740
+    },
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 155U."
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15itn9-n355",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15ITN9 (Core 3 N355)",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15ITN9"
+    ],
+    "tier": "mid",
+    "priceAmd": 209000,
+    "priceAmdMax": 209000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 209000
+      }
+    ],
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 60,
+      "type": "IPS"
+    },
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/lenovo-ideapad-slim-3-15itn9"
+    ],
+    "chipset": {
+      "name": "Intel Core 3 N355"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "body": {
+      "weight": 1620
+    },
+    "summaryEn": "A 15.6-inch laptop with Intel Core 3 N355."
+  },
+  {
+    "id": "lenovo-thinkbook-14x-gen-4",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkBook 14x Gen 4",
+    "aliases": [
+      "Lenovo ThinkBook 14x(Gen 4)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 499000
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "refresh": 120,
+      "type": "IPS",
+      "touch": true
+    },
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/lenovo-thinkbook-14xgen-4"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 5 226V"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "body": {
+      "weight": 1500
+    },
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 5 226V."
+  },
+  {
+    "id": "lenovo-thinkpad-e14-gen-8-ultra-7-355",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad E14 Gen 8 (Ultra 7 355)",
+    "aliases": [
+      "Lenovo ThinkPad E14 Gen 8"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 699000,
+    "priceAmdMax": 699000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 699000
+      }
+    ],
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "type": "IPS"
+    },
+    "battery": {},
+    "unsure": [
+      "popularity",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/lenovo-thinkpad-e14-gen-8"
+    ],
+    "chipset": {
+      "name": "Intel Core Ultra 7 355"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "body": {
+      "weight": 1340
+    },
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 7 355."
+  },
+  {
+    "id": "nothing-cmf-buds-neo",
+    "category": "headphones",
+    "brand": "Nothing",
+    "name": "CMF Buds Neo",
+    "aliases": [
+      "CMF by NOTHING Buds Neo Black",
+      "CMF by NOTHING Buds Neo Dark Blue",
+      "CMF by NOTHING Buds Neo White"
+    ],
+    "tier": "budget",
+    "priceAmd": 25000,
+    "priceAmdMax": 25000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25000
+      }
+    ],
+    "display": {},
+    "battery": {
+      "life": "11 h (52 h with case)"
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/cmf-by-nothing-buds-neo-black",
+      "https://redstore.am/en/product/cmf-by-nothing-buds-neo-dark-blue",
+      "https://redstore.am/en/product/cmf-by-nothing-buds-neo-white"
+    ],
+    "audio": {
+      "form": "tws",
+      "conn": "wireless",
+      "anc": true,
+      "driver": "12.4 mm dynamic"
+    },
+    "connectivity": {
+      "bluetooth": "6.0"
+    },
+    "colors": [
+      "Black",
+      "Dark Blue",
+      "White"
+    ],
+    "released": "2026-08",
+    "summaryEn": "Budget ANC earbuds with up to 35 dB adaptive noise cancelling."
+  },
+  {
+    "id": "xiaomi-redmi-buds-8",
+    "category": "headphones",
+    "brand": "Xiaomi",
+    "name": "Redmi Buds 8",
+    "aliases": [
+      "Xiaomi Redmi Buds 8 Black",
+      "Xiaomi Redmi Buds 8 Green",
+      "Xiaomi Redmi Buds 8 White"
+    ],
+    "tier": "budget",
+    "priceAmd": 25900,
+    "priceAmdMax": 25900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 25900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "life": "11 h (44 h with case)"
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/xiaomi-redmi-buds-8-black",
+      "https://redstore.am/en/product/xiaomi-redmi-buds-8-green",
+      "https://redstore.am/en/product/xiaomi-redmi-buds-8-white"
+    ],
+    "audio": {
+      "form": "tws",
+      "conn": "wireless",
+      "anc": true
+    },
+    "connectivity": {
+      "bluetooth": "5.4"
+    },
+    "body": {
+      "weight": 5
+    },
+    "colors": [
+      "Black",
+      "Green",
+      "White"
+    ],
+    "summaryEn": "ANC earbuds with up to 50 dB noise cancelling and IP54."
+  },
+  {
+    "id": "logitech-h150",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "H150 Stereo Headset",
+    "aliases": [
+      "Logitech Corded Headset H150 White"
+    ],
+    "tier": "budget",
+    "priceAmd": 10500,
+    "priceAmdMax": 10500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 10500
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/logitech-corded-headset-h150-white"
+    ],
+    "audio": {
+      "form": "on-ear",
+      "conn": "wired",
+      "plug": "3.5 mm"
+    },
+    "colors": [
+      "White"
+    ],
+    "summaryEn": "Logitech H150 Stereo Headset.",
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
+  },
+  {
+    "id": "logitech-g433",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "G433 7.1 Gaming Headset",
+    "aliases": [
+      "Logitech G433 7.1 Surround Gaming Headset Triple Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 56000,
+    "priceAmdMax": 56000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 56000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/logitech-g433-71-surround-gaming-headset-triple-black"
+    ],
+    "audio": {
+      "form": "over-ear",
+      "conn": "wired"
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "Logitech G433 7.1 Gaming Headset.",
+    "body": {
+      "weight": 259
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm / USB"
+    }
+  },
+  {
+    "id": "logitech-g535",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "G535 Lightspeed Wireless Gaming Headset",
+    "aliases": [
+      "Logitech G535 Wireless Gaming Headset Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 59000,
+    "priceAmdMax": 59000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59000
+      }
+    ],
+    "display": {},
+    "battery": {
+      "life": "33 h"
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/logitech-g535-wireless-gaming-headset-black"
+    ],
+    "audio": {
+      "form": "over-ear",
+      "conn": "wireless"
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "Logitech G535 Lightspeed Wireless Gaming Headset.",
+    "body": {
+      "weight": 236
+    },
+    "connectivity": {
+      "bluetooth": "none, 2.4 GHz wireless (USB dongle)"
+    }
+  },
+  {
+    "id": "logitech-g635",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "G635 7.1 Gaming Headset",
+    "aliases": [
+      "Logitech G635 Gaming Headset"
+    ],
+    "tier": "budget",
+    "priceAmd": 99000,
+    "priceAmdMax": 99000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 99000
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/logitech-g635-gaming-headset"
+    ],
+    "audio": {
+      "form": "over-ear",
+      "conn": "wired"
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "Logitech G635 7.1 Gaming Headset.",
+    "body": {
+      "weight": 497
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm / USB"
+    }
+  },
+  {
+    "id": "logitech-pro-x-2-lightspeed",
+    "category": "headphones",
+    "brand": "Logitech",
+    "name": "PRO X 2 Lightspeed Gaming Headset",
+    "aliases": [
+      "Logitech PRO X2 Lightspeed Headset Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 124900,
+    "priceAmdMax": 124900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 124900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "life": "50 h"
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/logitech-pro-x2-lightspeed-headset-black"
+    ],
+    "audio": {
+      "form": "over-ear",
+      "conn": "wireless"
+    },
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "Logitech PRO X 2 Lightspeed Gaming Headset.",
+    "body": {
+      "weight": 345
+    },
+    "connectivity": {
+      "bluetooth": "yes, plus 2.4 GHz LIGHTSPEED (USB dongle)"
+    }
+  },
+  {
+    "id": "hp-gaming-headset-h100",
+    "category": "headphones",
+    "brand": "HP",
+    "name": "Gaming Headset H100",
+    "aliases": [
+      "HP Gaming Headset H100"
+    ],
+    "tier": "budget",
+    "priceAmd": 7100,
+    "priceAmdMax": 7100,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 7100
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/hp-gaming-headset-h100"
+    ],
+    "audio": {
+      "form": "over-ear",
+      "conn": "wired"
+    },
+    "summaryEn": "HP Gaming Headset H100.",
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
+  },
+  {
+    "id": "hp-gaming-headset-h120",
+    "category": "headphones",
+    "brand": "HP",
+    "name": "Gaming Headset H120",
+    "aliases": [
+      "HP Gaming Headset H120"
+    ],
+    "tier": "budget",
+    "priceAmd": 8400,
+    "priceAmdMax": 8400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 8400
+      }
+    ],
+    "display": {},
+    "battery": {},
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/hp-gaming-headset-h120"
+    ],
+    "audio": {
+      "form": "over-ear",
+      "conn": "wired"
+    },
+    "summaryEn": "HP Gaming Headset H120.",
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    }
+  },
+  {
+    "id": "belkin-power-bank-10k-integrated-cable-display",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "Power Bank 10K with Integrated Cable & Display",
+    "aliases": [
+      "Belkin Power Bank 10K Integrated Cable & Display"
+    ],
+    "tier": "budget",
+    "priceAmd": 37900,
+    "priceAmdMax": 37900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 37900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/belkin-power-bank-10k-integrated-cable-display"
+    ],
+    "summaryEn": "10000 mAh power bank."
+  },
+  {
+    "id": "belkin-power-bank-20k-integrated-cable-display",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "Power Bank 20K with Integrated Cable & Display",
+    "aliases": [
+      "Belkin Power Bank 20K Integrated Cable & Display"
+    ],
+    "tier": "budget",
+    "priceAmd": 37900,
+    "priceAmdMax": 37900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 37900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 20000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/belkin-power-bank-20k-integrated-cable-display"
+    ],
+    "summaryEn": "20000 mAh power bank."
+  },
+  {
+    "id": "belkin-power-bank-10k-boostsolid",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "Power Bank 10K with BoostSolid Cell",
+    "aliases": [
+      "Belkin Power Bank 10K with BoostSolid Cell Black",
+      "Belkin Power Bank 10K with BoostSolid Cell White"
+    ],
+    "tier": "budget",
+    "priceAmd": 44900,
+    "priceAmdMax": 44900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 44900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/belkin-power-bank-10k-with-boostsolid-cell-black",
+      "https://redstore.am/en/product/belkin-power-bank-10k-with-boostsolid-cell-white"
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "summaryEn": "10000 mAh power bank."
+  },
+  {
+    "id": "belkin-slim-magnetic-power-bank-10k-qi2",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "Slim Magnetic Power Bank 10K with Qi2",
+    "aliases": [
+      "Belkin Slim Magnetic Power Bank 10K with Qi2 Black",
+      "Belkin Slim Magnetic Power Bank 10K with Qi2 White"
+    ],
+    "tier": "budget",
+    "priceAmd": 44900,
+    "priceAmdMax": 44900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 44900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000,
+      "wireless": 15
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/belkin-slim-magnetic-power-bank-10k-with-qi2-black",
+      "https://redstore.am/en/product/belkin-slim-magnetic-power-bank-10k-with-qi2-white"
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "summaryEn": "10000 mAh power bank."
+  },
+  {
+    "id": "belkin-boostcharge-power-bank-20k",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "BoostCharge Power Bank 20K",
+    "aliases": [
+      "Power Bank Belkin Boost Charge 20000mAh Blue"
+    ],
+    "tier": "budget",
+    "priceAmd": 19900,
+    "priceAmdMax": 19900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 20000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-20000mah-blue"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "summaryEn": "20000 mAh power bank."
+  },
+  {
+    "id": "belkin-boostcharge-power-bank-26k-4-port",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "BoostCharge Power Bank 26K 4-Port",
+    "aliases": [
+      "Power Bank Belkin Boost Charge 26K mAh 4 Port Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 35500,
+    "priceAmdMax": 35500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 35500
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 26000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-26k-mah-4-port-black"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "26000 mAh power bank."
+  },
+  {
+    "id": "belkin-boostcharge-magnetic-power-bank-5k-stand",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "BoostCharge Magnetic Power Bank 5K + Stand",
+    "aliases": [
+      "Power Bank Belkin Boost Charge Magnetic 5k+Stand Black",
+      "Power Bank Belkin Boost Charge Magnetic 5k+Stand White"
+    ],
+    "tier": "budget",
+    "priceAmd": 22500,
+    "priceAmdMax": 22500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 22500
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 5000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-magnetic-5kstand-black",
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-magnetic-5kstand-white"
+    ],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "summaryEn": "5000 mAh power bank."
+  },
+  {
+    "id": "belkin-boostcharge-pro-power-bank-20k",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "BoostCharge Pro Power Bank 20K",
+    "aliases": [
+      "Power Bank Belkin Boost Charge Pro 20000mAh Gray",
+      "Power Bank Belkin Boost Charge Pro 20000mAh Rose Gold"
+    ],
+    "tier": "budget",
+    "priceAmd": 19900,
+    "priceAmdMax": 19900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 19900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 20000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-pro-20000mah-gray",
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-pro-20000mah-rose-gold"
+    ],
+    "colors": [
+      "Gray",
+      "Rose Gold"
+    ],
+    "summaryEn": "20000 mAh power bank."
+  },
+  {
+    "id": "belkin-boostcharge-pro-magnetic-power-bank-8k",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "BoostCharge Pro Magnetic Power Bank 8K",
+    "aliases": [
+      "Power Bank Belkin Boost Charge Pro Magnetic 8000mAh Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 8000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-belkin-boost-charge-pro-magnetic-8000mah-black"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "8000 mAh power bank."
+  },
+  {
+    "id": "belkin-boostcharge-power-bank-10k-cable",
+    "category": "powerbank",
+    "brand": "Belkin",
+    "name": "BoostCharge Power Bank 10K + Cable",
+    "aliases": [
+      "PowerBank Belkin Boost Charge+Cable 10000mAh Black",
+      "PowerBank Belkin Boost Charge+Cable 10000mAh Blue"
+    ],
+    "tier": "budget",
+    "priceAmd": 27800,
+    "priceAmdMax": 27800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 27800
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/powerbank-belkin-boost-chargecable-10000mah-black",
+      "https://redstore.am/en/product/powerbank-belkin-boost-chargecable-10000mah-blue"
+    ],
+    "colors": [
+      "Black",
+      "Blue"
+    ],
+    "summaryEn": "10000 mAh power bank."
+  },
+  {
+    "id": "xiaomi-165w-power-bank-10000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "165W Power Bank 10000",
+    "aliases": [
+      "Power Bank Xiaomi 10000 mAh 165w Gray"
+    ],
+    "tier": "budget",
+    "priceAmd": 24900,
+    "priceAmdMax": 24900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 24900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000,
+      "wired": 165
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-10000-mah-165w-gray"
+    ],
+    "colors": [
+      "Gray"
+    ],
+    "summaryEn": "10000 mAh power bank, up to 165 W."
+  },
+  {
+    "id": "xiaomi-33w-power-bank-10000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "33W Power Bank 10000",
+    "aliases": [
+      "Power Bank Xiaomi 10000 mAh 33w Blue",
+      "Power Bank Xiaomi 10000 mAh 33w White"
+    ],
+    "tier": "budget",
+    "priceAmd": 11800,
+    "priceAmdMax": 11800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 11800
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000,
+      "wired": 33
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-10000-mah-33w-blue",
+      "https://redstore.am/en/product/power-bank-xiaomi-10000-mah-33w-white"
+    ],
+    "colors": [
+      "Blue",
+      "White"
+    ],
+    "summaryEn": "10000 mAh power bank, up to 33 W."
+  },
+  {
+    "id": "xiaomi-22-5w-power-bank-10000-lite",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "22.5W Power Bank 10000 Lite",
+    "aliases": [
+      "Power Bank Xiaomi 10000mAh 22.5W Lite Light Gray"
+    ],
+    "tier": "budget",
+    "priceAmd": 11500,
+    "priceAmdMax": 11500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 11500
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000,
+      "wired": 22.5
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-10000mah-225w-lite-light-gray"
+    ],
+    "colors": [
+      "Light Gray"
+    ],
+    "summaryEn": "10000 mAh power bank, up to 22.5 W."
+  },
+  {
+    "id": "xiaomi-18w-power-bank-30000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "18W Power Bank 30000",
+    "aliases": [
+      "Power Bank Xiaomi 18W 30000mAh Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 21900,
+    "priceAmdMax": 21900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 21900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 30000,
+      "wired": 18
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-18w-30000mah-black"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "30000 mAh power bank, up to 18 W."
+  },
+  {
+    "id": "xiaomi-33w-power-bank-20000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "33W Power Bank 20000",
+    "aliases": [
+      "Power Bank Xiaomi 20000 mAh 33w Blue",
+      "Power Bank Xiaomi 20000 mAh 33w White"
+    ],
+    "tier": "budget",
+    "priceAmd": 13800,
+    "priceAmdMax": 13800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13800
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 20000,
+      "wired": 33
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-20000-mah-33w-blue",
+      "https://redstore.am/en/product/power-bank-xiaomi-20000-mah-33w-white"
+    ],
+    "colors": [
+      "Blue",
+      "White"
+    ],
+    "summaryEn": "20000 mAh power bank, up to 33 W."
+  },
+  {
+    "id": "xiaomi-22-5w-power-bank-20000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "22.5W Power Bank 20000",
+    "aliases": [
+      "Power Bank Xiaomi 20000mAh 22.5W Dark Gray",
+      "Power Bank Xiaomi 20000mAh 22.5W Light Gray"
+    ],
+    "tier": "budget",
+    "priceAmd": 14800,
+    "priceAmdMax": 14800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 14800
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 20000,
+      "wired": 22.5
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-20000mah-225w-dark-gray",
+      "https://redstore.am/en/product/power-bank-xiaomi-20000mah-225w-light-gray"
+    ],
+    "colors": [
+      "Dark Gray",
+      "Light Gray"
+    ],
+    "summaryEn": "20000 mAh power bank, up to 22.5 W."
+  },
+  {
+    "id": "xiaomi-212w-power-bank-25000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "212W Power Bank 25000",
+    "aliases": [
+      "Power Bank Xiaomi 212W 25000mAh Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 59000,
+    "priceAmdMax": 59000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 59000
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 25000,
+      "wired": 212
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-212w-25000mah-black"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "25000 mAh power bank, up to 212 W."
+  },
+  {
+    "id": "xiaomi-wireless-power-bank-10000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "Wireless Power Bank 10000 (10W)",
+    "aliases": [
+      "Power Bank Xiaomi Wireless 10000mAh 10w Black"
+    ],
+    "tier": "budget",
+    "priceAmd": 13900,
+    "priceAmdMax": 13900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 13900
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000,
+      "wireless": 10
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/power-bank-xiaomi-wireless-10000mah-10w-black"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "10000 mAh power bank."
+  },
+  {
+    "id": "xiaomi-power-bank-10000-integrated-cable",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "Power Bank 10000 with Integrated Cable",
+    "aliases": [
+      "PowerBank Xiaomi 10000mAh Integrated Cable Blue"
+    ],
+    "tier": "budget",
+    "priceAmd": 9800,
+    "priceAmdMax": 9800,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 9800
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 10000
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/powerbank-xiaomi-10000mah-integrated-cable-blue"
+    ],
+    "colors": [
+      "Blue"
+    ],
+    "summaryEn": "10000 mAh power bank."
+  },
+  {
+    "id": "xiaomi-ultrathin-magnetic-power-bank-5000",
+    "category": "powerbank",
+    "brand": "Xiaomi",
+    "name": "UltraThin Magnetic Power Bank 5000",
+    "aliases": [
+      "Xiaomi UltraThin Magnetic Power Bank 5000 15W Black",
+      "Xiaomi UltraThin Magnetic Power Bank 5000 15W Orange",
+      "Xiaomi UltraThin Magnetic Power Bank 5000 15W Silver"
+    ],
+    "tier": "budget",
+    "priceAmd": 39000,
+    "priceAmdMax": 39000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 39000
+      }
+    ],
+    "display": {},
+    "battery": {
+      "capacity": 5000,
+      "wired": 15
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://redstore.am/en/product/xiaomi-ultrathin-magnetic-power-bank-5000-15w-black",
+      "https://redstore.am/en/product/xiaomi-ultrathin-magnetic-power-bank-5000-15w-orange",
+      "https://redstore.am/en/product/xiaomi-ultrathin-magnetic-power-bank-5000-15w-silver"
+    ],
+    "colors": [
+      "Black",
+      "Orange",
+      "Silver"
+    ],
+    "summaryEn": "5000 mAh power bank, up to 15 W."
+  },
+  {
+    "id": "xiaomi-smart-band-11",
+    "category": "watch",
+    "brand": "Xiaomi",
+    "name": "Smart Band 11",
+    "aliases": [
+      "Xiaomi Smart Band 11 Glacier Silver",
+      "Xiaomi Smart Band 11 Midnight Black",
+      "Xiaomi Smart Band 11 Mystic Rose"
+    ],
+    "tier": "budget",
+    "priceAmd": 32000,
+    "priceAmdMax": 32000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 32000
+      }
+    ],
+    "display": {
+      "size": 1.72,
+      "resolution": "212x520",
+      "type": "AMOLED"
+    },
+    "battery": {
+      "capacity": 233
+    },
+    "colors": [
+      "Glacier Silver",
+      "Midnight Black",
+      "Mystic Rose"
+    ],
+    "summaryEn": "Fitness band with a 1.72-inch AMOLED screen and up to 21 days of battery.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.mi.com/global/product/xiaomi-smart-band-11/specs/",
+      "https://redstore.am/en/product/xiaomi-smart-band-11-glacier-silver",
+      "https://redstore.am/en/product/xiaomi-smart-band-11-midnight-black",
+      "https://redstore.am/en/product/xiaomi-smart-band-11-mystic-rose"
     ]
   }
 ]

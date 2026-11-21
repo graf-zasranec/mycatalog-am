@@ -3154,6 +3154,8 @@ if (process.argv.includes('--match')) {
 // node scrape.mjs --probe <shop> : run one shop's reader, print what it found, write nothing.
 if (process.argv.includes('--probe')) {
   const key = process.argv[process.argv.indexOf('--probe') + 1];
+  // A shop without run() is filled from elsewhere (notebookcentre: tools/nbc-import.mjs); say so instead of crashing
+  if (!SHOPS[key]?.run) { console.log(`${key}: no reader here${SHOPS[key] ? ' - its rows come from an import (see the no run() note in SHOPS)' : ' - unknown shop'}`); process.exit(SHOPS[key] ? 0 : 1); }
   const got = await LANE.run({ shop: key, status: 0 }, () => SHOPS[key].run());
   console.log(`\n${key}: ${got.length} offers, ${new Set(got.map(o => o.id)).size} models`);
   for (const o of got.slice(0, process.argv.includes("--all") ? 1e6 : 40)) console.log(`  ${o.id} | ${o.price} | ${o.storage ?? ''} | ${o.inStock} | ${o.url}` + (process.argv.includes('--titles') ? ` | ${o.title ?? ''}` : ''));
