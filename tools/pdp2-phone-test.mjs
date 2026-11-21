@@ -42,7 +42,7 @@ for (const scheme of ['light', 'dark']) for (const [w, h] of sizes) {
         (await audit(p)).forEach(x => bug(ctx, `after ${sel}#${i}: ${x}`)); }
     }
     // all specs scrolls and keeps the route
-    const sp = await p.$('[data-p2-specs]'); if (sp) { await sp.click(); await p.waitForTimeout(700); const st = await p.evaluate(() => [location.hash, Math.round(document.getElementById('specs').getBoundingClientRect().top)]);
+    const sp = await p.$('[data-p2-specs]'); if (sp && await sp.isVisible()) { await sp.click(); await p.waitForTimeout(700); const st = await p.evaluate(() => [location.hash, Math.round(document.getElementById('specs').getBoundingClientRect().top)]);
       if (!st[0].includes(id)) bug(ctx, 'all specs changed the route ' + st[0]); if (st[1] > 300 || st[1] < -50) bug(ctx, 'all specs did not scroll there ' + st[1]); checks++; }
     const sh = await p.$('.p2-shops'); if (sh && !(await sh.getAttribute('href')).includes(id)) bug(ctx, 'all shops link wrong');
     if (w === 393 && ['apple-iphone-18-pro', 'apple-macbook-air-13-m5', 'acer-anv15-52-99cv'].includes(id)) { await p.evaluate(() => scrollTo(0, 0)); await p.waitForTimeout(200); await p.screenshot({ path: `/tmp/igm/pdp2/${scheme}-${id}-top.png` }); await p.evaluate(() => scrollTo(0, 650)); await p.waitForTimeout(200); await p.screenshot({ path: `/tmp/igm/pdp2/${scheme}-${id}-mid.png` }); }

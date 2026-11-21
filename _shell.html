@@ -1625,61 +1625,26 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
 /* Phone product page v2 (PDP2 in _app.js; set PDP2_DEFAULT=false there to go back). Wider screens keep
    the old layout: the v2 pieces are hidden outside the phone query. */
 .p2-arc,.p2-keys,.p2-more,.p2-bar,.p2-cmp{display:none}
-.pdp2{--p2-bar:#161C28}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pdp2{--p2-bar:#0D0F15}}
-:root[data-theme="dark"] .pdp2{--p2-bar:#0D0F15}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pdp2 .p2-bar small{color:#E3A0AC}}
-:root[data-theme="dark"] .pdp2 .p2-bar small{color:#E3A0AC}
 @media(max-width:800px){
- body:has(.pdp2) .bx-mobile-nav{display:none}
- body:has(.pdp2){padding-bottom:0}
- body:has(.pdp2) .compare-selection{bottom:calc(118px + env(safe-area-inset-bottom,0px))}
- .pdp2{padding-bottom:calc(118px + env(safe-area-inset-bottom,0px))}
- .pdp2 .navrow .crumb{display:none}
- /* the reference layout (owner, 11-21): no site header, a slim back/compare bar, the product first, then its name */
- body:has(.pdp2) .topnav{display:none}
- .pdp2 .navrow{display:flex;justify-content:space-between;align-items:center;margin:0 -8px;padding-top:6px}
- .pdp2 .navrow .backbtn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;min-height:44px;padding:0;border:0;background:none;box-shadow:none;font-size:0;color:var(--text)}
- .pdp2 .navrow .backbtn span{font-size:26px;line-height:1}
- .pdp2 .p2-cmp{display:grid;place-items:center;position:relative;width:44px;height:44px;color:var(--text)}
- .pdp2 .p2-cmp svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
- .pdp2 .p2-cmp b{position:absolute;right:2px;top:2px;min-width:18px;height:18px;padding:0 5px;border-radius:9px;background:var(--brand);color:#fff;font:700 11px/18px var(--ui);text-align:center}
- .pdp2 .p2-cmp b:empty{display:none}
- .pdp2 .pstage{display:flex;flex-direction:column}
- .pdp2 .pgrid{display:contents}
- .pdp2 .pshotwrap{order:-1}.pdp2 .pname{margin-bottom:6px}
- .pdp2 .pside>.og{border:0;padding:0;margin:16px 0 0}
- .pdp2 .pside>.og>label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+ /* owner 11-21: the old page everywhere, with the new photo stage (arc + colour dot) and the new
+    colour row; the bottom price bar, slim top bar and key-spec list are gone */
+ .pdp2 .pshotwrap{overflow:visible;isolation:isolate;margin-bottom:22px}
+ .pdp2 .pshotwrap img{max-height:300px;object-fit:contain}
+ .pdp2 .p2-arc{display:block;position:absolute;left:-14%;right:-14%;bottom:-4%;height:160%;border-radius:50%;border-bottom:1.5px solid var(--line2);z-index:-1;pointer-events:none}
+ .pdp2 .p2-arc i{position:absolute;left:50%;bottom:-11px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--c);border:2px solid var(--text);box-shadow:inset 0 0 0 4px var(--bg)}
+ .pdp2 .cs button{width:44px;height:44px;min-width:44px;min-height:44px}
  .pdp2 .pside>.og:has(.cs){display:flex;flex-direction:row-reverse;justify-content:flex-end;align-items:center;gap:8px}
- .pdp2 .pside>.og:has(.cs)>label{position:static;width:auto;height:auto;clip:auto;font-size:0}
+ .pdp2 .pside>.og:has(.cs)>label{font-size:0;margin:0}
  .pdp2 .pside>.og:has(.cs)>label b{font-size:14px;font-weight:500;color:var(--muted)}
  .pdp2 .pside>.og:has(.cs button:nth-child(6)){flex-direction:column-reverse;align-items:flex-start;gap:6px}
  .pdp2 .pside>.og .cs{flex-wrap:wrap}
+ body:has(.pdp2) .bx-mobile-nav{display:none}
+ body:has(.pdp2){padding-bottom:0}
+ .pdp2 .pside>.og{border:0;padding:0;margin:14px 0 0}
+ .pdp2 .pside>.og:not(:has(.cs))>label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
  .pdp2 .pside>.og .bs{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:8px}
  .pdp2 .pside>.og .bs button{min-height:44px;height:44px;padding:0 6px;border-radius:12px;white-space:nowrap}
- .pdp2 .pshotwrap img{max-height:300px;object-fit:contain}
- .pdp2 .cs button{width:44px;height:44px;min-width:44px;min-height:44px}
- .pdp2 .pside>.og{order:2}.pdp2 .pprice2{order:3}.pdp2 .p2-keys{order:4}.pdp2 .p2-more[data-p2-specs]{order:5}.pdp2 .pcta{order:6}
- .pdp2 .pshotwrap{overflow:visible;isolation:isolate;margin-bottom:22px}
- .pdp2 .p2-arc{display:block;position:absolute;left:-14%;right:-14%;bottom:-4%;height:160%;border-radius:50%;border-bottom:1.5px solid var(--line2);z-index:-1;pointer-events:none}
- .pdp2 .p2-arc i{position:absolute;left:50%;bottom:-11px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:var(--c);border:2px solid var(--text);box-shadow:inset 0 0 0 4px var(--bg)}
- .pdp2 .pprice2 .lb,.pdp2 .pprice2 .pp-row,.pdp2 .pprice2 .shopn,.pdp2 .pcta .btn:not([data-cmp-btn]),.pdp2 .allofflink{display:none}
- .pdp2 .p2-keys{display:block;margin:18px 0 0;padding-left:18px;font-size:16px;line-height:1.7;color:var(--text)}
- .pdp2 .p2-keys li::marker{color:var(--brand-2)}
- .pdp2 .p2-keys li span{color:var(--muted);font-size:14px}
- .pdp2 .p2-keys li:nth-child(n+3){color:var(--muted)}
- .pdp2 .p2-more{display:flex;width:100%;align-items:center;gap:10px;min-height:52px;margin-top:14px;padding:0 18px;border-radius:14px;border:1.5px solid var(--line);background:var(--surface);color:var(--text);font:600 15px var(--ui);text-decoration:none;cursor:pointer;text-align:left}
- .pdp2 .p2-more span{margin-left:auto;font-weight:500;font-size:13px;color:var(--muted)}
- .pdp2 .p2-more svg{width:18px;height:18px;flex:none;fill:none;stroke:var(--brand-2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
- .pdp2 .p2-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:72;isolation:isolate;align-items:center;justify-content:space-between;gap:14px;padding:16px max(18px,env(safe-area-inset-right,0px)) calc(18px + env(safe-area-inset-bottom,0px)) max(18px,env(safe-area-inset-left,0px));background:var(--surface);color:var(--text);border-radius:26px 26px 0 0;border:1px solid var(--line);border-bottom:0;box-shadow:0 -10px 30px rgb(0 0 0/.10)}
- .pdp2 .p2-bar>div{min-width:0}
- .pdp2 .p2-bar small{display:block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--brand-2)}
- .pdp2 .p2-bar strong{display:block;white-space:nowrap;font-size:24px;font-weight:800;letter-spacing:-.02em;margin-top:2px}
- .pdp2 .p2-bar span{display:block;font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
- .pdp2 .p2-go{flex:none;display:flex;align-items:center;gap:8px;min-height:52px;padding:0 16px;border-radius:16px;background:var(--brand);color:#fff;font:700 15px var(--ui);text-decoration:none;white-space:nowrap}
- .pdp2 .p2-go svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:2}
 }
-@media(max-width:359px){.pdp2 .p2-bar{gap:10px}.pdp2 .p2-bar strong{font-size:20px}.pdp2 .p2-bar span{white-space:normal}.pdp2 .p2-go{padding:0 12px;font-size:14px;gap:6px}}
 
 /* The heading spans both columns. IDs in :is() formerly overrode the class rule. */
 #main>.shell:has(>#gridbox)>#results.resbar{grid-column:1/-1;grid-row:1;justify-content:flex-start;text-align:left}
