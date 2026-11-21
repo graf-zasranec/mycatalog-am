@@ -77,5 +77,21 @@ def category_rows(html):
         if image:
             row['image'] = re.sub(r'/cache/[0-9a-f]{32}/', '/', image)
         rows.append(row)
+    # Eldorado's Apple corner (istore/*, 2026-11) draws its own card: title link, a plain
+    # "AMD 31,900" price and no Magento price attribute, so the loop above skips every card.
+    for card in soup.select('.istore-product-card'):
+        name = card.select_one('a.istore-card-title')
+        price = card.select_one('.istore-price-final')
+        digits = re.sub(r'\D', '', price.get_text()) if price else ''
+        if not name or not digits:
+            continue
+        image = next((el.get('src') for el in card.select('img')
+                      if '/media/catalog/product/' in el.get('src', '')), None)
+        row = dict(url=name.get('href'), title=name.get_text(' ', strip=True), price=int(digits),
+                   inStock=bool(card.select_one('form[data-role="tocart-form"]')),
+                   detailVerified=False)
+        if image:
+            row['image'] = re.sub(r'/cache/[0-9a-f]{32}/', '/', image)
+        rows.append(row)
     return rows
 

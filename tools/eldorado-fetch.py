@@ -196,6 +196,7 @@ def main():
     parser.add_argument('--offers-only', action='store_true', help='Skip discovery; verify existing product URLs')
     parser.add_argument('--recheck-hours', type=float, default=4, help='Age of direct verification before checking again; 0 forces all')
     parser.add_argument('--limit', type=int, default=0, help='Bound direct checks for diagnostics')
+    parser.add_argument('--only', default='', help='Read only the category paths containing this text')
     args = parser.parse_args()
     now = datetime.now(timezone.utc)
     day = now.date().isoformat()
@@ -207,7 +208,7 @@ def main():
         cached.setdefault(url, old)
     listing_pages = 0
     if not args.offers_only:
-        for cat in CATEGORIES:
+        for cat in [c for c in CATEGORIES if args.only in c]:
             seen = set()
             for page in range(1, PAGES + 1):
                 url = f'https://eldorado.am/en/{cat}' + (f'?p={page}' if page > 1 else '')
