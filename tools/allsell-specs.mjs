@@ -89,5 +89,5 @@ export function specOfferAllowed(offer, holds, id = offer.id) {
   const reviewed = /^\d{4}-\d{2}-\d{2}$/.test(offer.specReviewed || '');
   return !holds.some(row => (!row.id || row.id === id) && key(row.url) === key(offer.url)
     && (!row.configuration || (row.configuration.ram === offer.ram && row.configuration.storage === offer.storage))
-    && (!reviewed || offer.specReviewed < row.checked));
+    && (row.identityMismatch === true || !reviewed || offer.specReviewed < row.checked));
 }

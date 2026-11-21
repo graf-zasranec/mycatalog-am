@@ -2491,6 +2491,8 @@ const SHOPS = {
       const xml = await get('https://allsell.am/media/sitemap/en.xml');
       await sleep(DELAY_MS);
       const sitemapUrls = [...xml.matchAll(/<loc>(https:\/\/allsell\.am\/en\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      // Keep the failed-read guard when the shop refuses the runner.
+      if (!sitemapUrls.length) return [];
       // Exact product pins can cover catalogue pages outside the published sitemap.
       const pinnedUrls = [...PINS.keys()].filter(url =>
         /^https:\/\/allsell\.am\/en\/[^/?#]+$/.test(url) && pinnedId(url));

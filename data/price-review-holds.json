@@ -300,5 +300,19 @@
       "https://allsell.am/en/lenovo-v15-g4-iru-core-i5-16gb-i-1tb-83cc002hus",
       "https://psref.lenovo.com/Detail/Lenovo_V15_G4_IRU?M=83CC002HUS"
     ]
+  },
+  {
+    "id": "acer-aspire-lite-all15-36p-c0m7-n150-nx-de1aa-001",
+    "url": "https://allsell.am/en/acer-aspire-lite-al15-36p-34uj-i3-8gb-i-256gb",
+    "checked": "2026-11-21",
+    "reason": "Exact retailer page identifies AL15-36P-34UJ, Core i3, 8 GB / 256 GB. Catalogue ID denotes the NX.DE1AA.001 N150 configuration. These are different manufacturer SKUs.",
+    "identityMismatch": true
+  },
+  {
+    "id": "hp-omnibook-5-16-ultra-5-225u-16-1-bm0q2ea",
+    "url": "https://allsell.am/en/hp-omnibook-5-16-ag1000nr-16gb-i-512gb-b6kg0ua-aba",
+    "checked": "2026-11-21",
+    "reason": "Exact retailer page identifies 16-AG1000nr / B6KG0UA with 512 GB. Catalogue ID denotes BM0Q2EA / Core Ultra 5 225U. These are different manufacturer SKUs.",
+    "identityMismatch": true
   }
 ]
