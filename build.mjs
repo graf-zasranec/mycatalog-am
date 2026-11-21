@@ -165,6 +165,22 @@ for (const p of phones) {
     loShop: offs[0].shop, shops: last.shops, pop: p.popularity || 0 });
 }
 DROPS.sort((a, b) => b.pop - a.pop);
+// The cheapest price against the day before, for the small up/down badge on every card (owner 11-21).
+// Only when the history ends today, the day before is at most 3 days back, today's point is
+// today's cheapest offer, and the move is under half (the history guard drops bigger jumps).
+{
+  const pts0 = Object.values(HISTORY.points || {}).map(v => v[v.length - 1]?.d).filter(Boolean).sort();
+  const latest = pts0[pts0.length - 1];
+  for (const p of phones) {
+    const pts = (HISTORY.points || {})[p.id], offs = (PRICES.offers || {})[p.id] || [];
+    if (!pts || pts.length < 2 || !offs.length) continue;
+    const a = pts[pts.length - 1], b = pts[pts.length - 2];
+    if (a.d !== latest || (Date.parse(a.d) - Date.parse(b.d)) > 3 * 864e5) continue;
+    if (a.lo !== Math.min(...offs.map(o => o.price))) continue;
+    const d = a.lo - b.lo;
+    if (d && Math.abs(d) / b.lo < 0.5) p.dchg = d;
+  }
+}
 // the blog's live lists (blogList, above) - resolved here because sort=drop needs DROPS
 for (const a of BLOG) for (const lang of ['hy', 'ru', 'en']) if (a[lang]?.body)
   a[lang].body = a[lang].body.map(s => s.startsWith('!list:') ? '!items:' + blogList(s.slice(6)).join(',') : s);

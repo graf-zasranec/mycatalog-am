@@ -1659,6 +1659,10 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
 .pprice .price-shop{font-family:var(--ui);font-size:12px;line-height:1.5;letter-spacing:0;text-transform:none;text-decoration:none}
 .badge{font-family:var(--ui);font-size:12px;letter-spacing:0;text-transform:none;background:var(--brand-soft);color:var(--text);box-shadow:none}
 .badge.deal{background:var(--brand);color:#F4E9EA;font-weight:600}
+.badge.dchg{font-weight:700;font-variant-numeric:tabular-nums}.badge.dchg.second{top:38px}
+.badge.dchg.dn{background:#DDF1E5;color:#17663F}.badge.dchg.up{background:#F8DEDF;color:#A5282E}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .badge.dchg.dn{background:#163826;color:#7FD7A3}:root:not([data-theme="light"]) .badge.dchg.up{background:#41191C;color:#F19A9E}}
+:root[data-theme="dark"] .badge.dchg.dn{background:#163826;color:#7FD7A3}:root[data-theme="dark"] .badge.dchg.up{background:#41191C;color:#F19A9E}
 .bx-deal-date{font-size:12px;line-height:1.5;margin-top:8px;color:var(--ink-66)}
 .bx-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .bx-stats span{font-size:12px;letter-spacing:0;text-transform:none}
