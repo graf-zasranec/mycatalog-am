@@ -34865,7 +34865,10 @@
     "name": "Think Book 14 G8 IRL",
     "aliases": [
       "Նոթբուք Lenovo Think Book 14 G8 IRL (21SG008KRT)",
-      "Նոթբուք Lenovo Think Book 14 G8 IRL (21SG008LRT)"
+      "Նոթբուք Lenovo Think Book 14 G8 IRL (21SG008LRT)",
+      "ThinkBook 14 G8 IRL",
+      "Lenovo ThinkBook 14 G8 IRL Core 5 /512GB (21SG008KRT)",
+      "ThinkBook 14 G8 IRL Core"
     ],
     "tier": "upper-mid",
     "priceAmd": 389900,
@@ -34900,7 +34903,8 @@
     },
     "sources": [
       "https://psref.lenovo.com/detail/?M=21SG008KRT",
-      "https://psref.lenovo.com/Detail/ThinkBook_14_G8_IRL?M=21SG008KRT"
+      "https://psref.lenovo.com/Detail/ThinkBook_14_G8_IRL?M=21SG008KRT",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G8_IRL/ThinkBook_14_G8_IRL_Spec.pdf"
     ],
     "os": "No OS",
     "colors": [
@@ -42999,10 +43003,13 @@
     "category": "laptop",
     "brand": "Samsung",
     "name": "Galaxy Book 4 NP750XGK-KS2US",
-    "aliases": [],
+    "aliases": [
+      "Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US",
+      "Samsung Galaxy Book4 15.6\" Core 7-150U 512/16 W11 Silver /NP750XGK-KS2US"
+    ],
     "tier": "upper-mid",
     "priceAmd": 372000,
-    "priceAmdMax": 372000,
+    "priceAmdMax": 389700,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
@@ -43034,7 +43041,8 @@
       "cpu": "10-core (2 performance + 8 efficiency), up to 5.4 GHz"
     },
     "sources": [
-      "e-catalog"
+      "e-catalog",
+      "https://smartprix.com/laptops/samsung-galaxy-book-4-np750xgk-ks2in-laptop-ppd15ob5rtps"
     ],
     "connectivity": {
       "wifi": "Wi-Fi 6"
@@ -77015,11 +77023,13 @@
     "brand": "Lenovo",
     "name": "ThinkPad E16 G3 16\" Core 5-210H /21TF004RFW",
     "aliases": [
-      "Lenovo ThinkPad E16 G3 16\" Core 5-210H /512GB /21TF004RFW"
+      "Lenovo ThinkPad E16 G3 16\" Core 5-210H /512GB /21TF004RFW",
+      "ThinkPad E16 Gen 3 i5-210H",
+      "Lenovo ThinkPad E16 Gen 3 i5-210H /512GB (21TF004RFW)"
     ],
     "tier": "upper-mid",
     "priceAmd": 360700,
-    "priceAmdMax": 360700,
+    "priceAmdMax": 437400,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
@@ -77031,6 +77041,7 @@
     ],
     "display": {
       "size": 16,
+      "type": "IPS",
       "resolution": "1920x1200"
     },
     "battery": {},
@@ -77138,55 +77149,6 @@
     "colors": [
       "Silver"
     ]
-  },
-  {
-    "id": "samsung-galaxy-book4-15-6-core-7-150u-w11-np750xgk-ks2us",
-    "category": "laptop",
-    "brand": "Samsung",
-    "name": "Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US",
-    "aliases": [
-      "Samsung Galaxy Book4 15.6\" Core 7-150U 512/16 W11 Silver /NP750XGK-KS2US"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 389700,
-    "priceAmdMax": 389700,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 389700
-      }
-    ],
-    "display": {
-      "size": 15.6,
-      "resolution": "1920x1080"
-    },
-    "battery": {
-      "capacity": 54
-    },
-    "summaryEn": "Samsung Galaxy Book4 15.6\" Core 7-150U W11 /NP750XGK-KS2US.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "chipset": {
-      "name": "Intel Core 7 150U",
-      "cpu": "10-core (2 performance + 8 efficiency), up to 5.4 GHz"
-    },
-    "body": {
-      "weight": 1550
-    },
-    "sources": [
-      "https://smartprix.com/laptops/samsung-galaxy-book-4-np750xgk-ks2in-laptop-ppd15ob5rtps"
-    ],
-    "connectivity": {
-      "wifi": "Wi-Fi 6"
-    },
-    "os": "Windows 11"
   },
   {
     "id": "samsung-galaxy-book3-15-6-fhd-i7-1355u-slv-np750xfg-kb2us",
@@ -77524,11 +77486,13 @@
     "brand": "Lenovo",
     "name": "ThinkPad E16 Gen 4 16\" Ultra 7- /21YC003TFW",
     "aliases": [
-      "Lenovo ThinkPad E16 Gen 4 16\" Ultra 7-355 /512GB /21YC003TFW"
+      "Lenovo ThinkPad E16 Gen 4 16\" Ultra 7-355 /512GB /21YC003TFW",
+      "ThinkPad E16 G4 Ultra 7",
+      "Lenovo ThinkPad E16 G4 Ultra 7 355 /512GB (21YC003TFW)"
     ],
     "tier": "upper-mid",
     "priceAmd": 620900,
-    "priceAmdMax": 620900,
+    "priceAmdMax": 711400,
     "popularity": 40,
     "accent": "#5C6470",
     "variants": [
@@ -87605,57 +87569,6 @@
     ]
   },
   {
-    "id": "lenovo-thinkbook-14-g8-irl-core",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "ThinkBook 14 G8 IRL",
-    "aliases": [
-      "Lenovo ThinkBook 14 G8 IRL Core 5 /512GB (21SG008KRT)",
-      "ThinkBook 14 G8 IRL Core"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 405000,
-    "priceAmdMax": 405000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 405000
-      }
-    ],
-    "display": {
-      "size": 14,
-      "resolution": "1920x1200"
-    },
-    "battery": {
-      "capacity": 45
-    },
-    "summaryEn": "Lenovo ThinkBook 14 G8 IRL Core.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core 5-210H"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1360
-    },
-    "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14_G8_IRL/ThinkBook_14_G8_IRL_Spec.pdf",
-      "https://psref.lenovo.com/Detail/ThinkBook_14_G8_IRL?M=21SG008KRT"
-    ],
-    "os": "No OS",
-    "colors": [
-      "Gray"
-    ]
-  },
-  {
     "id": "lenovo-thinkbook-14-g9-irl-i5-210h",
     "category": "laptop",
     "brand": "Lenovo",
@@ -88021,100 +87934,6 @@
     "os": "No OS",
     "colors": [
       "Black"
-    ]
-  },
-  {
-    "id": "lenovo-thinkpad-e16-g4-ultra-7",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "ThinkPad E16 G4 Ultra 7",
-    "aliases": [
-      "Lenovo ThinkPad E16 G4 Ultra 7 355 /512GB (21YC003TFW)"
-    ],
-    "tier": "flagship",
-    "priceAmd": 711400,
-    "priceAmdMax": 711400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 711400
-      }
-    ],
-    "display": {
-      "size": 16,
-      "resolution": "1920x1200"
-    },
-    "battery": {
-      "capacity": 48
-    },
-    "summaryEn": "Lenovo ThinkPad E16 G4 Ultra 7.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core Ultra 7-355"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1650
-    },
-    "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_4_Intel/ThinkPad_E16_Gen_4_Intel_Spec.pdf",
-      "https://psref.lenovo.com/Detail/ThinkPad_E16_Gen_4_(Intel)?M=21YC003TFW"
-    ],
-    "os": "No OS",
-    "colors": [
-      "Black"
-    ]
-  },
-  {
-    "id": "lenovo-thinkpad-e16-gen-3-i5-210h",
-    "category": "laptop",
-    "brand": "Lenovo",
-    "name": "ThinkPad E16 Gen 3 i5-210H",
-    "aliases": [
-      "Lenovo ThinkPad E16 Gen 3 i5-210H /512GB (21TF004RFW)"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 437400,
-    "priceAmdMax": 437400,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": 16,
-        "storage": 512,
-        "priceAmd": 437400
-      }
-    ],
-    "display": {
-      "size": 16,
-      "type": "IPS",
-      "resolution": "1920x1200"
-    },
-    "battery": {},
-    "summaryEn": "Lenovo ThinkPad E16 Gen 3 i5-210H.",
-    "unsure": [
-      "popularity"
-    ],
-    "chipset": {
-      "name": "Intel Core 5-210H"
-    },
-    "graphics": {
-      "name": "Intel Graphics",
-      "type": "integrated"
-    },
-    "body": {
-      "weight": 1620
-    },
-    "sources": [
-      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_E16_Gen_3_Intel/ThinkPad_E16_Gen_3_Intel_Spec.pdf"
     ]
   },
   {
@@ -132045,10 +131864,12 @@
     "aliases": [
       "LG GRF589BLCM",
       "GRF589BLCM",
-      "LG GRF589BLCM Refrigerators (Bottom Mount)"
+      "LG GRF589BLCM Refrigerators (Bottom Mount)",
+      "GR-F589BLCM",
+      "Սառնարան LG GR-F589BLCM"
     ],
     "tier": "flagship",
-    "popularity": 35,
+    "popularity": 40,
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
@@ -132064,7 +131885,7 @@
       "popularity"
     ],
     "priceAmd": 509000,
-    "priceAmdMax": 509000,
+    "priceAmdMax": 599000,
     "variants": [
       {
         "ram": null,
@@ -132074,7 +131895,8 @@
     ],
     "colors": [
       "Silver"
-    ]
+    ],
+    "display": {}
   },
   {
     "id": "toshiba-tw-bl70a2uz",
@@ -139478,10 +139300,12 @@
     "aliases": [
       "LG GRB257KLJW",
       "GRB257KLJW",
-      "LG GRB257KLJW Refrigerators (Side by Side)"
+      "LG GRB257KLJW Refrigerators (Side by Side)",
+      "GR-B257KLJW",
+      "Սառնարան LG GR-B257KLJW"
     ],
     "tier": "flagship",
-    "popularity": 35,
+    "popularity": 40,
     "accent": "#5C6470",
     "appliance": {
       "type": "fridge",
@@ -139496,7 +139320,7 @@
       "popularity"
     ],
     "priceAmd": 599000,
-    "priceAmdMax": 599000,
+    "priceAmdMax": 729000,
     "variants": [
       {
         "ram": null,
@@ -139506,7 +139330,8 @@
     ],
     "colors": [
       "Silver"
-    ]
+    ],
+    "display": {}
   },
   {
     "id": "lg-grl257klkw",
@@ -162134,43 +161959,6 @@
     ]
   },
   {
-    "id": "lg-gr-b257kljw",
-    "category": "largeappliance",
-    "brand": "LG",
-    "name": "GR-B257KLJW",
-    "aliases": [
-      "Սառնարան LG GR-B257KLJW"
-    ],
-    "tier": "flagship",
-    "priceAmd": 729000,
-    "priceAmdMax": 729000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 729000
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "LG GR-B257KLJW.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "fridge",
-      "volume": 658
-    },
-    "colors": [
-      "Silver"
-    ]
-  },
-  {
     "id": "berg-br-n347bbgi",
     "category": "largeappliance",
     "brand": "Berg",
@@ -162421,43 +162209,6 @@
     "appliance": {
       "type": "fridge",
       "volume": 395
-    },
-    "colors": [
-      "Silver"
-    ]
-  },
-  {
-    "id": "lg-gr-f589blcm",
-    "category": "largeappliance",
-    "brand": "LG",
-    "name": "GR-F589BLCM",
-    "aliases": [
-      "Սառնարան LG GR-F589BLCM"
-    ],
-    "tier": "upper-mid",
-    "priceAmd": 599000,
-    "priceAmdMax": 599000,
-    "popularity": 40,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 599000
-      }
-    ],
-    "display": {},
-    "battery": {},
-    "summaryEn": "LG GR-F589BLCM.",
-    "unsure": [
-      "popularity",
-      "display",
-      "chipset",
-      "battery.capacity"
-    ],
-    "appliance": {
-      "type": "fridge",
-      "volume": 446
     },
     "colors": [
       "Silver"
