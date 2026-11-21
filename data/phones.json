@@ -178326,11 +178326,12 @@
         "priceAmd": 498400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 70
+    },
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 5 325U.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "sources": [
       "https://allsell.am/en/asus-vivobook-s16-s3607aa-sh060-ultra-5-325u-16gb-i-512gb-90nb1731-m00390"
@@ -178416,12 +178417,13 @@
         "priceAmd": 405400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 32
+    },
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-1065G7.",
     "unsure": [
       "popularity",
-      "body.weight",
-      "battery.capacity"
+      "body.weight"
     ],
     "sources": [
       "https://allsell.am/en/asus-vivobook-x512ja-211-vbgb"
@@ -178554,11 +178556,12 @@
         "priceAmd": 625000
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 83
+    },
     "summaryEn": "A 16-inch laptop with AMD Ryzen 7 8745HX and NVIDIA GeForce RTX 5060 8GB.",
     "unsure": [
-      "popularity",
-      "battery.capacity"
+      "popularity"
     ],
     "colors": [
       "Black"
@@ -178900,12 +178903,13 @@
         "priceAmd": 474900
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "A 14-inch laptop with Intel Core i7.",
     "unsure": [
       "popularity",
-      "body.weight",
-      "battery.capacity"
+      "body.weight"
     ],
     "sources": [
       "https://allsell.am/en/hp-probook-440-g8-intel-core-i7-8gb-i-256gb"
@@ -178991,12 +178995,13 @@
         "priceAmd": 428400
       }
     ],
-    "battery": {},
+    "battery": {
+      "capacity": 45
+    },
     "summaryEn": "A 15.6-inch laptop with Intel Core i5-1135G7.",
     "unsure": [
       "popularity",
-      "body.weight",
-      "battery.capacity"
+      "body.weight"
     ],
     "sources": [
       "https://allsell.am/en/hp-probook-450-g8-i5-1135g7-28k98ut-aba"
@@ -180249,12 +180254,13 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core 3 N355."
   },
   {
-    "id": "lenovo-thinkbook-14x-gen-4",
+    "id": "lenovo-thinkbook-14x-ill",
     "category": "laptop",
     "brand": "Lenovo",
-    "name": "ThinkBook 14x Gen 4",
+    "name": "ThinkBook 14x ILL",
     "aliases": [
-      "Lenovo ThinkBook 14x(Gen 4)"
+      "Lenovo ThinkBook 14x(Gen 4)",
+      "Lenovo ThinkBook 14x ILL"
     ],
     "tier": "upper-mid",
     "priceAmd": 499000,
@@ -180273,6 +180279,7 @@
       "resolution": "1920x1200",
       "refresh": 120,
       "type": "IPS",
+      "brightness": 400,
       "touch": true
     },
     "battery": {},
@@ -180281,7 +180288,8 @@
       "battery.capacity"
     ],
     "sources": [
-      "https://redstore.am/en/product/lenovo-thinkbook-14xgen-4"
+      "https://redstore.am/en/product/lenovo-thinkbook-14xgen-4",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_14x_ILL/ThinkBook_14x_ILL_Spec.PDF"
     ],
     "chipset": {
       "name": "Intel Core Ultra 5 226V"
@@ -180292,9 +180300,9 @@
     },
     "os": "Windows 11",
     "body": {
-      "weight": 1500
+      "weight": 990
     },
-    "summaryEn": "A 14-inch laptop with Intel Core Ultra 5 226V."
+    "summaryEn": "A 14-inch 990 g laptop with Intel Core Ultra 5 226V and a 120 Hz screen."
   },
   {
     "id": "lenovo-thinkpad-e14-gen-8-ultra-7-355",
@@ -180801,7 +180809,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 20000
+      "capacity": 20000,
+      "wired": 45
     },
     "unsure": [
       "popularity"
@@ -180809,7 +180818,7 @@
     "sources": [
       "https://redstore.am/en/product/belkin-power-bank-20k-integrated-cable-display"
     ],
-    "summaryEn": "20000 mAh power bank."
+    "summaryEn": "20000 mAh power bank, up to 45 W."
   },
   {
     "id": "belkin-power-bank-10k-boostsolid",
@@ -180834,7 +180843,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 10000
+      "capacity": 10000,
+      "wired": 60
     },
     "unsure": [
       "popularity"
@@ -180847,7 +180857,7 @@
       "Black",
       "White"
     ],
-    "summaryEn": "10000 mAh power bank."
+    "summaryEn": "10000 mAh power bank, up to 60 W."
   },
   {
     "id": "belkin-slim-magnetic-power-bank-10k-qi2",
@@ -180910,7 +180920,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 20000
+      "capacity": 20000,
+      "wired": 15
     },
     "unsure": [
       "popularity"
@@ -180921,7 +180932,7 @@
     "colors": [
       "Blue"
     ],
-    "summaryEn": "20000 mAh power bank."
+    "summaryEn": "20000 mAh power bank, up to 15 W."
   },
   {
     "id": "belkin-boostcharge-power-bank-26k-4-port",
@@ -180945,7 +180956,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 26000
+      "capacity": 26000,
+      "wired": 32
     },
     "unsure": [
       "popularity"
@@ -180956,7 +180968,7 @@
     "colors": [
       "Black"
     ],
-    "summaryEn": "26000 mAh power bank."
+    "summaryEn": "26000 mAh power bank, up to 32 W."
   },
   {
     "id": "belkin-boostcharge-magnetic-power-bank-5k-stand",
@@ -180981,7 +180993,9 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 5000
+      "capacity": 5000,
+      "wired": 10,
+      "wireless": 7.5
     },
     "unsure": [
       "popularity"
@@ -180994,7 +181008,7 @@
       "Black",
       "White"
     ],
-    "summaryEn": "5000 mAh power bank."
+    "summaryEn": "5000 mAh power bank, up to 10 W, 7.5 W wireless."
   },
   {
     "id": "belkin-boostcharge-pro-power-bank-20k",
@@ -181391,7 +181405,8 @@
     "display": {},
     "battery": {
       "capacity": 10000,
-      "wireless": 10
+      "wireless": 10,
+      "wired": 22.5
     },
     "unsure": [
       "popularity"
@@ -181402,7 +181417,7 @@
     "colors": [
       "Black"
     ],
-    "summaryEn": "10000 mAh power bank."
+    "summaryEn": "10000 mAh power bank, up to 22.5 W, 10 W wireless."
   },
   {
     "id": "xiaomi-power-bank-10000-integrated-cable",
@@ -181426,7 +181441,8 @@
     ],
     "display": {},
     "battery": {
-      "capacity": 10000
+      "capacity": 10000,
+      "wired": 22.5
     },
     "unsure": [
       "popularity"
@@ -181437,7 +181453,7 @@
     "colors": [
       "Blue"
     ],
-    "summaryEn": "10000 mAh power bank."
+    "summaryEn": "10000 mAh power bank, up to 22.5 W."
   },
   {
     "id": "xiaomi-ultrathin-magnetic-power-bank-5000",
@@ -181525,6 +181541,103 @@
       "https://redstore.am/en/product/xiaomi-smart-band-11-glacier-silver",
       "https://redstore.am/en/product/xiaomi-smart-band-11-midnight-black",
       "https://redstore.am/en/product/xiaomi-smart-band-11-mystic-rose"
+    ]
+  },
+  {
+    "category": "watch",
+    "brand": "Google",
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "id": "google-pixel-watch-3-45mm",
+    "name": "Pixel Watch 3 45mm Wi-Fi",
+    "aliases": [
+      "Google Pixel Watch 3 45mm Porcelain",
+      "Google Pixel Watch 3 45mm Wi-Fi",
+      "Pixel Watch 3 45mm Wi-Fi"
+    ],
+    "priceAmd": 199000,
+    "priceAmdMax": 199000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 199000
+      }
+    ],
+    "display": {
+      "size": 1.7,
+      "type": "AMOLED",
+      "resolution": "456x456"
+    },
+    "battery": {
+      "capacity": 420
+    },
+    "chipset": {
+      "name": "Qualcomm SW5100"
+    },
+    "body": {
+      "weight": 37
+    },
+    "colors": [
+      "Porcelain"
+    ],
+    "released": "2024-08",
+    "summaryEn": "Google Pixel Watch 3, 45 mm, Wi-Fi (no LTE).",
+    "sources": [
+      "https://redstore.am/en/product/google-pixel-watch-3-45mm-porcelain",
+      "https://store.google.com/product/pixel_watch_3_specs"
+    ]
+  },
+  {
+    "category": "watch",
+    "brand": "Google",
+    "tier": "mid",
+    "popularity": 40,
+    "accent": "#5C6470",
+    "unsure": [
+      "popularity"
+    ],
+    "id": "google-pixel-watch",
+    "name": "Pixel Watch Wi-Fi",
+    "aliases": [
+      "Google Pixel Watch Chalk",
+      "Google Pixel Watch Wi-Fi",
+      "Pixel Watch 1st gen"
+    ],
+    "priceAmd": 119000,
+    "priceAmdMax": 119000,
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 119000
+      }
+    ],
+    "display": {
+      "size": 1.2,
+      "type": "AMOLED",
+      "resolution": "384x384"
+    },
+    "battery": {
+      "capacity": 294
+    },
+    "chipset": {
+      "name": "Samsung Exynos 9110"
+    },
+    "body": {
+      "weight": 36
+    },
+    "colors": [
+      "Chalk"
+    ],
+    "released": "2022-10",
+    "summaryEn": "Google Pixel Watch (1st generation), 41 mm, Wi-Fi (no LTE).",
+    "sources": [
+      "https://redstore.am/en/product/google-pixel-watch-chalk"
     ]
   }
 ]
