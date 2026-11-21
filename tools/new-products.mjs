@@ -9,6 +9,8 @@
 // recognises, so an unknown model there is never seen. Review the list, then add with tools/add.mjs.
 import fs from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { parseCsv } from './hand-csv.mjs';
+import { knownRetailListings } from './known-retail-listings.mjs';
 
 const UA = 'BetterBot/1.0 (+https://better.am)';
 const shopFilter = process.argv.find(a => a.startsWith('--shops='))?.slice(8).split(',');
@@ -23,6 +25,8 @@ let matchPhone, looksLikeAccessory;
 try { ({ matchPhone, looksLikeAccessory } = await import('../' + tmp)); } finally { fs.rmSync(tmp, { force: true }); }
 
 const P = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
+const known = knownRetailListings(P, parseCsv(fs.readFileSync('data/links.csv', 'utf8')).slice(1),
+  JSON.parse(fs.readFileSync('data/prices.json', 'utf8')));
 const KINDS = new Set(['phone', 'laptop', 'watch', 'headphones']);
 const LINES = ['iPhone', 'MacBook', 'AirPods', 'Galaxy', 'Redmi', 'POCO', 'Pixel', 'ThinkPad', 'ThinkBook', 'IdeaPad',
   'Vivobook', 'Zenbook', 'ROG', 'TUF', 'Legion', 'Yoga', 'Pavilion', 'Victus', 'OMEN', 'OmniBook', 'EliteBook', 'ProBook',
@@ -46,7 +50,7 @@ const additionalKind = t => {
   if (cameraBrand.test(t) && cameraModel.test(t) && !cameraAccessory.test(t)) return 'camera';
   return null;
 };
-const wanted = t => Boolean(additionalKind(t) || (BRAND.test(t) && KIND.test(t) && !NOT.test(t) && !looksLikeAccessory(t))) && !matchPhone(bare(t));
+const wanted = (t, url) => !known(t, url) && Boolean(additionalKind(t) || (BRAND.test(t) && KIND.test(t) && !NOT.test(t) && !looksLikeAccessory(t))) && !matchPhone(bare(t));
 
 // a known model in a memory size the catalogue has not listed is not a new product
 const bare = t => t.replace(/\b\d+\s*(gb|tb)\b|\b\d+\s*\/\s*\d+\s*(gb|tb)?\b/gi, ' ').replace(/\s+/g, ' ');
@@ -60,7 +64,7 @@ const um = fs.existsSync(unmatchedPath) ? JSON.parse(fs.readFileSync(unmatchedPa
 if (!fs.existsSync(unmatchedPath)) console.warn('No unmatched-listings artifact. Checking retailer sitemaps only.');
 for (const [shop, rows] of Object.entries(um.shops)) if (selected(shop)) for (const r of rows) {
   const t = r.title.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/^#+\s*/, '');
-  if (wanted(t)) put(shop, t + (r.price ? ` | ${r.price}` : '') + (r.url ? ` | ${r.url}` : ''));
+  if (wanted(t, r.url)) put(shop, t + (r.price ? ` | ${r.price}` : '') + (r.url ? ` | ${r.url}` : ''));
 }
 
 // 2. product sitemaps (curl: Cloudflare answers Node's fetch with 403 on some of these)
@@ -78,7 +82,7 @@ for (const [shop, list] of Object.entries(SITEMAPS)) {
   let n = 0;
   for (const u of urls) {
     const words = decodeURIComponent(u.split('/').pop()).replace(/\.html$/, '').replace(/[-_]+/g, ' ');
-    if (wanted(words)) { put(shop, `${words} | ${u}`); n++; }
+    if (wanted(words, u)) { put(shop, `${words} | ${u}`); n++; }
   }
   if (urls.length) console.log(`${shop}: ${urls.length} sitemap pages, ${n} unlisted from our brands`);
   else console.warn(`${shop}: sitemap returned no usable pages; coverage unknown`);

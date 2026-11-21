@@ -35,3 +35,27 @@ for(const [title,kind] of [
  ['Anker Power Bank 20000 mAh',null],
 ]) assert.equal(additionalKind(title),kind,title);
 console.log('NEW_PRODUCTS_EXPANSION_PASS');
+
+const { knownRetailListings } = await import('./known-retail-listings.mjs');
+const products = JSON.parse(fs.readFileSync('data/phones.json', 'utf8'));
+const { parseCsv } = await import('./hand-csv.mjs');
+const links = parseCsv(fs.readFileSync('data/links.csv', 'utf8')).slice(1);
+const pinned = links.find(row => row[0] === 'belkin-bpd008btwh' && row[2] === 'redstore');
+assert.ok(pinned);
+const listedUrl = 'https://redstore.am/en/product/known-offer-test';
+const known = knownRetailListings(products, [pinned], { offers: { 'logitech-h110': [{url: listedUrl}] } });
+assert.ok(known(pinned[3], pinned[9]));
+assert.ok(known('This title does not match the catalogue', listedUrl + '/#details'));
+for (const title of [
+  'Logitech Stereo Headset H110',
+  'Acer Gaming Notebook AN515-58-77Z2',
+  'Lenovo Notebook 82SH005PRK',
+  'ASUS Laptop UX3405MA-QD993',
+  'Belkin Boost Charge Pro Magnetic BPD008',
+]) assert.ok(known(title), title);
+assert.equal(known('Logitech headset H1100'), false);
+assert.equal(known('Acer Gaming Notebook AN515-58-77Z9'), false);
+assert.equal(known('Lenovo Notebook 82SH005ZZZ'), false);
+assert.equal(known('ASUS Laptop UX3405MA-QD994'), false);
+assert.equal(known('Belkin Power Bank BPD099'), false);
+console.log('NEW_PRODUCTS_EXISTING_LISTINGS_PASS');
