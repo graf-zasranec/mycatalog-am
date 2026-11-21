@@ -2,11 +2,12 @@
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {chromium,firefox,webkit} from 'playwright';
+import {launchOptions} from './test-browser.mjs';
 const base=process.env.INTERACTION_BASE||'http://127.0.0.1:8774';
 const server=process.env.INTERACTION_BASE?null:spawn(process.execPath,['serve.mjs','8774'],{stdio:'ignore'});
 if(server)await new Promise(resolve=>setTimeout(resolve,700));
 const engines=(process.env.INTERACTION_ENGINES||'chromium').split(',');let checks=0;const failures=[];
-try { for(const name of engines){const browser=await({chromium,firefox,webkit})[name].launch(name==='chromium'&&process.env.TEST_CHROMIUM_EXECUTABLE?{executablePath:process.env.TEST_CHROMIUM_EXECUTABLE}:{});
+try { for(const name of engines){const browser=await({chromium,firefox,webkit})[name].launch(await launchOptions(name));
 try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const scenario of ['brands','keyboard','saved-filter','home-reset','legacy-reset','focus-ring']){
  const ctx=await browser.newContext({viewport:{width,height:900},reducedMotion:'reduce'});
  if(scenario==='saved-filter')await ctx.addInitScript(()=>localStorage.setItem('better.v2',JSON.stringify({cat:'largeappliance',apower:'invalid',avol:-1,aload:'Infinity',abtu:'abc',asets:'abc',chg:'abc',pmin:0,pmax:1e9,bounds:[0,1e9]})));
@@ -44,6 +45,7 @@ try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const s
   const active=await q.getAttribute('aria-activedescendant');assert.ok(active,'ArrowDown activates a suggestion');
   assert.equal(await p.locator('#'+active).getAttribute('aria-selected'),'true');
   await q.press('Enter');await p.waitForURL(/#\/p\/honor-x8d$/);await p.waitForSelector('#hpShot');checks+=3;
+  if(width<801){await p.evaluate(()=>{location.hash='#/'});await q.waitFor({state:'visible'});}
   await q.fill('iphone');await p.locator('#sugg').waitFor({state:'visible'});await q.press('ArrowUp');assert.ok(await q.getAttribute('aria-activedescendant'));
   await q.press('Escape');assert.equal(await q.getAttribute('aria-expanded'),'false');assert.equal(await q.getAttribute('aria-activedescendant'),null);checks+=3;assert.equal(await q.inputValue(),'iphone','Escape dismisses suggestions without erasing the query');checks++;
   await q.press('Enter');await p.waitForURL(/#\/search$/);checks++;await p.waitForFunction(()=>document.querySelector('#results h1')?.textContent.trim()==='iphone');

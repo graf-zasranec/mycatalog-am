@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {chromium,firefox,webkit} from 'playwright';
+import {launchOptions,installed} from './test-browser.mjs';
 const port=8773,base=process.env.RESPONSIVE_BASE||`http://127.0.0.1:${port}`;
 const server=process.env.RESPONSIVE_BASE?null:spawn(process.execPath,['serve.mjs',String(port)],{stdio:'ignore'});
 if(server)await new Promise(r=>setTimeout(r,700));
-try{for(const name of (process.env.RESPONSIVE_ENGINES||'chromium,webkit').split(',')){
- const browser=await ({chromium,firefox,webkit})[name].launch();
+try{for(const name of await installed((process.env.RESPONSIVE_ENGINES||'chromium,webkit').split(','))){
+ const browser=await ({chromium,firefox,webkit})[name].launch(await launchOptions(name));
  try{for(const lang of ['hy','en','ru'])for(const theme of ['light','dark']){
   const ctx=await browser.newContext({viewport:{width:390,height:844},colorScheme:theme,reducedMotion:'reduce',hasTouch:true});
   await ctx.addInitScript(()=>Object.defineProperty(navigator,'doNotTrack',{get:()=> '1'}));
