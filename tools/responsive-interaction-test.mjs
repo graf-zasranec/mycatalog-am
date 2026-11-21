@@ -19,7 +19,7 @@ try{for(const name of (process.env.RESPONSIVE_ENGINES||'chromium,webkit').split(
    await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
    await p.waitForTimeout(100);assert.ok(await strip.evaluate(el=>el.scrollLeft>0),'category strip responds to a native touch swipe');await cdp.detach();
   }
-  await p.locator('[data-bx-mobile-category]').tap();
+  await p.locator('[data-fsheet]').tap();
   await p.keyboard.press('Shift+Tab');
   assert.ok(await p.locator('.bx-filter-sidebar').evaluate(el=>el.contains(document.activeElement)),'modal retains keyboard focus');
   await p.setViewportSize({width:1024,height:768});
@@ -37,7 +37,7 @@ try{for(const name of (process.env.RESPONSIVE_ENGINES||'chromium,webkit').split(
    assert.ok(layout.search>=140,`${name}/${lang}/${theme}/${width}px: usable search width (${layout.search})`);
    if(width>800&&width<=1000)assert.ok(await p.locator('.pcard').first().evaluate(el=>el.getBoundingClientRect().width>=220),'tablet cards leave room for names and shop prices beside filters');
   }
-  await p.setViewportSize({width:568,height:320});await p.locator('[data-bx-mobile-category]').tap();
+  await p.setViewportSize({width:568,height:320});await p.locator('[data-fsheet]').tap();
   const apply=p.locator('.bx-apply');assert.ok(await apply.isVisible());
   const hit=await apply.evaluate(el=>{const r=el.getBoundingClientRect();return document.elementFromPoint(r.x+r.width/2,r.y+r.height/2)?.closest('button')===el});
   assert.ok(hit,'landscape Apply button remains tappable');await apply.tap();

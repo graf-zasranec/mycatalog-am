@@ -18,7 +18,7 @@ try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const s
  const p=await ctx.newPage(),errors=[];p.on('pageerror',e=>errors.push(e.message));
  try{await p.goto(base+(lang==='hy'?'/':`/${lang}/`)+(['saved-filter','home-reset'].includes(scenario)?'#/c/largeappliance':['brands','legacy-reset'].includes(scenario)?'#/c/laptop':''),{waitUntil:'domcontentloaded'});await p.waitForFunction(()=>document.documentElement.dataset.appReady==='true');
  if(scenario==='brands'){
-  if(width<801)await p.locator('[data-bx-mobile-category]').click();
+  if(width<801)await p.locator('[data-fsheet]').click();
   const labels=await p.locator('.bx-filter-form [data-bx-set="brand"] input').evaluateAll(es=>es.map(e=>e.value));
   assert.deepEqual(labels.filter(v=>v.toLowerCase()==='asus'),['ASUS'],'one ASUS brand choice');
   assert.equal(await p.locator('.bx-filter-form [data-bx-set="brand"] input[value="ASUS"]').isChecked(),true,'legacy Asus selection preserved');
@@ -31,7 +31,7 @@ try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const s
   const state=await p.evaluate(()=>JSON.parse(localStorage.getItem('better.v2')));
   assert.deepEqual(state.shops,[],'Home clears shop filter');assert.equal(state.apower,0,'Home clears appliance thresholds');assert.deepEqual(state.cmp,['honor-x8d'],'Home preserves comparison');checks+=3;
  }else if(scenario==='legacy-reset'){
-  if(width<801)await p.locator('[data-bx-mobile-category]').click();
+  if(width<801)await p.locator('[data-fsheet]').click();
   await p.locator('.bx-filter-form [data-rm="all"]').click();
   assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('better.v2')).scrmin),0,'Reset clears legacy screen threshold');checks++;
  }else if(scenario==='focus-ring'){

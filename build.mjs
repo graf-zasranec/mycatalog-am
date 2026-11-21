@@ -165,22 +165,26 @@ for (const p of phones) {
     loShop: offs[0].shop, shops: last.shops, pop: p.popularity || 0 });
 }
 DROPS.sort((a, b) => b.pop - a.pop);
-// The cheapest price against the day before, for the small up/down badge on every card (owner 11-21).
-// Only when the history ends today, the day before is at most 3 days back, today's point is
-// today's cheapest offer, and the move is under half (the history guard drops bigger jumps).
+// The one price badge on every card (owner 11-21): the last move of the cheapest price, green down /
+// red up, shown for 7 days after that move and gone if nothing changes in that week. Only when the
+// history ends on the latest day, today's point is today's cheapest offer, the two points around the
+// move are at most 3 days apart, and the move is under half (the history guard drops bigger jumps).
 {
   const pts0 = Object.values(HISTORY.points || {}).map(v => v[v.length - 1]?.d).filter(Boolean).sort();
   const latest = pts0[pts0.length - 1];
   for (const p of phones) {
     const pts = (HISTORY.points || {})[p.id], offs = (PRICES.offers || {})[p.id] || [];
     if (!pts || pts.length < 2 || !offs.length) continue;
-    const a = pts[pts.length - 1], b = pts[pts.length - 2];
-    if (a.d !== latest || (Date.parse(a.d) - Date.parse(b.d)) > 3 * 864e5) continue;
-    if (a.lo !== Math.min(...offs.map(o => o.price))) continue;
-    const d = a.lo - b.lo;
-    // percent of yesterday's price, one decimal under 1%
-    const pct = d / b.lo * 100;
-    if (d && Math.abs(pct) < 50) p.dchg = Math.abs(pct) < 1 ? Math.round(pct * 10) / 10 : Math.round(pct);
+    const a = pts[pts.length - 1];
+    if (a.d !== latest || a.lo !== Math.min(...offs.map(o => o.price))) continue;
+    let i = pts.length - 1;
+    while (i > 0 && pts[i - 1].lo === pts[i].lo) i--;
+    if (i === 0) continue;
+    const moved = pts[i], before = pts[i - 1];
+    if (Date.parse(latest) - Date.parse(moved.d) > 7 * 864e5) continue;
+    if (Date.parse(moved.d) - Date.parse(before.d) > 3 * 864e5) continue;
+    const pct = (moved.lo - before.lo) / before.lo * 100;
+    if (Math.abs(pct) < 50) { p.dchg = Math.abs(pct) < 1 ? Math.round(pct * 10) / 10 : Math.round(pct); }
   }
 }
 // the blog's live lists (blogList, above) - resolved here because sort=drop needs DROPS

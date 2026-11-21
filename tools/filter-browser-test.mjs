@@ -29,11 +29,11 @@ for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
    }
    if(await section.getAttribute('open')===null)await section.locator(':scope > summary').click();
   };
-  if(width<800)await page.locator('[data-bx-mobile-category]').click();
+  if(width<800)await page.locator('[data-fsheet]').click();
   await form.locator('.bx-category-choice:has(input[value="headphones"])').click();
   await page.waitForURL(/#\/c\/headphones$/);
   await page.waitForFunction(()=>document.querySelector('.bx-filter-form [data-bx-set="hform"]'));
-  if(width<800)await page.locator('[data-bx-mobile-category]').click();
+  if(width<800)await page.locator('[data-fsheet]').click();
   assert.equal(await form.locator('[data-bx-category]').count(),0,'category page hides global categories');checks++;
   const ids=await page.locator('.pcard').evaluateAll(es=>es.map(e=>e.dataset.id));
   assert.ok(ids.length&&ids.every(id=>catalogue.get(id)?.category==='headphones'),'category click immediately changes results');checks++;
@@ -44,7 +44,7 @@ for(const engine of (process.env.FILTER_ENGINES||'chromium,webkit').split(',')){
   assert.ok(await form.locator('[data-bx-max]').evaluate(el=>!el.validity.valid),'reversed price blocks Apply');checks++;
   await page.goto(base+(lang==='hy'?'/':`/${lang}/`));
   await page.waitForFunction(()=>document.documentElement.dataset.appReady==='true');
-  if(width<800)await page.locator('[data-bx-mobile-category]').click();
+  if(width<800)await page.locator('[data-fsheet]').click();
   await openSection('shop');
   const cards=await page.locator('.pcard').evaluateAll(es=>es.map(e=>e.dataset.id));
   const shop=form.locator('[data-bx-set="shop"] input').first();const shopValue=await shop.inputValue();await shop.check();
