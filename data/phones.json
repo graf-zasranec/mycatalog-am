@@ -35009,7 +35009,9 @@
     "brand": "Lenovo",
     "name": "ThinkPad E16 Gen 2 21MA002XRT",
     "aliases": [
-      "LENOVO ThinkPad E16 Gen 2 Ultra 7 155H 16GB 1TB 16\" (21MA002XRT)"
+      "LENOVO ThinkPad E16 Gen 2 Ultra 7 155H 16GB 1TB 16\" (21MA002XRT)",
+      "Lenovo ThinkPad E16 Gen 2 Ultra 7 16GB I 1TB (21MA002XRT)",
+      "ThinkPad E16 Gen 2 Ultra 7 21MA002XRT"
     ],
     "tier": "upper-mid",
     "priceAmd": 520000,
@@ -178117,7 +178119,8 @@
       "Sony ZV-E10 M2 EPZ16-50MM",
       "Camera Sony ZV-E10 M2 With EPZ16-50mm F3.5-5.6 OSS II Lens",
       "Sony ZV-E10 II 16-50mm Kit",
-      "ZV-E10M2K"
+      "ZV-E10M2K",
+      "Sony ZV-E10 M2 With EPZ16-50mm"
     ],
     "tier": "upper-mid",
     "priceAmd": 499900,
@@ -178159,7 +178162,1919 @@
     },
     "released": "2024-07",
     "sources": [
-      "https://allsell.am/en/sony-camera-zv-e10-m2-with-epz16-50mm-f3-5-5-6-oss-ii-lens"
+      "https://allsell.am/en/sony-zv-e10-m2-with-epz16-50mm-f3-5-5-6-oss-ii-lens"
+    ]
+  },
+  {
+    "id": "acer-aspire-lite-al16-54p-52al",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Aspire Lite AL16-54P-52AL",
+    "aliases": [
+      "Acer Aspire Lite AL16-54P-52AL i5-120U 16GB I 512GB (NX.D73EL.002)"
+    ],
+    "tier": "mid",
+    "priceAmd": 308400,
+    "priceAmdMax": 308400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core i5-120U"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 308400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core i5-120U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/acer-aspire-lite-al16-54p-52a-i5-120u-16gb-i-512gb-nx-d73el-002"
+    ]
+  },
+  {
+    "id": "acer-nitro-5-an515-58-77z2",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro 5 AN515-58-77Z2",
+    "aliases": [
+      "Acer Nitro 5 AN515-58-77Z2 GAMING i7-12700H 16GB I 1TB+512GB (NH.QFMAA.004) RTX3060"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 739600,
+    "priceAmdMax": 739600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core i7-12700H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3060 6GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 739600
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core i7-12700H and NVIDIA GeForce RTX 3060 6GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://allsell.am/en/acer-nitro-5-an515-58-77z2-16gb-i-1tb"
+    ]
+  },
+  {
+    "id": "acer-predator-helios-neo-14-phn14-51-99nm",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Predator Helios Neo 14 PHN14-51-99NM",
+    "aliases": [
+      "Acer Predator Helios Neo 14 PHN14-51-99NM Ultra 9 185H 32GB I 1TB (NH.QRNAA.004)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 957600,
+    "priceAmdMax": 957600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14.5,
+      "resolution": "3072x1920"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9 185H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4070 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 957600
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14.5-inch laptop with Intel Core Ultra 9 185H and NVIDIA GeForce RTX 4070 8GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://allsell.am/en/acer-predator-helios-neo-14-phn14-51-99nm-32gb-i-1tb"
+    ]
+  },
+  {
+    "id": "apple-macbook-pro-16-m5-max",
+    "category": "laptop",
+    "brand": "Apple",
+    "name": "MacBook Pro 16 M5 Max",
+    "aliases": [
+      "Apple MacBook Pro 16 inch M5 Max 48GB I 2TB MGEE4 Space Black"
+    ],
+    "tier": "flagship",
+    "priceAmd": 2044500,
+    "priceAmdMax": 2044500,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16.2,
+      "resolution": "3456x2234",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Apple M5 Max"
+    },
+    "graphics": {
+      "name": "40-core GPU",
+      "type": "integrated"
+    },
+    "os": "macOS",
+    "variants": [
+      {
+        "ram": 48,
+        "storage": 2048,
+        "priceAmd": 2044500
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16.2-inch laptop with Apple M5 Max.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Space Black"
+    ],
+    "sources": [
+      "https://allsell.am/en/apple-macbook-pro-16-inch-m5-max-48gb-i-2tb-mge94-silver"
+    ]
+  },
+  {
+    "id": "asus-vivobook-15-f1504va-bq338",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook 15 F1504VA-BQ338",
+    "aliases": [
+      "Asus VivoBook 15 Core 7 16GB I 512GB F1504VA-BQ338"
+    ],
+    "tier": "mid",
+    "priceAmd": 379000,
+    "priceAmdMax": 379000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core 7 150U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 379000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core 7 150U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/asus-vivobook-15-core-7-16gb-i-512gb-f1504va-bq338"
+    ]
+  },
+  {
+    "id": "asus-vivobook-15-x1504vap-wb51-cb",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook 15 X1504VAP-WB51-CB",
+    "aliases": [
+      "Asus Vivobook Core 5 16GB I 512GB X1504VAP-WB51-CB",
+      "Asus Vivobook Core 5 8GB I 512GB X1504VAP-WB51-CB"
+    ],
+    "tier": "budget",
+    "priceAmd": 275000,
+    "priceAmdMax": 299000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core 5 120U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 299000
+      },
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 275000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core 5 120U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/asus-vivobook-core-5-16gb-i-512gb-x1504vap-wb51-cb",
+      "https://allsell.am/en/asus-vivobook-core-5-8gb-i-512gb-x1504vap-wb51-cb"
+    ]
+  },
+  {
+    "id": "asus-vivobook-s16-s3607aa-sh060",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook S16 S3607AA-SH060",
+    "aliases": [
+      "Asus Vivobook S16 S3607AA-SH060 Ultra 5 325U 16GB I 512GB (90NB1731-M00390)"
+    ],
+    "tier": "mid",
+    "priceAmd": 498400,
+    "priceAmdMax": 498400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 5 325U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 498400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 5 325U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/asus-vivobook-s16-s3607aa-sh060-ultra-5-325u-16gb-i-512gb-90nb1731-m00390"
+    ]
+  },
+  {
+    "id": "asus-vivobook-s16-s5652ma-tk121w",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook S16 S5652MA-TK121W",
+    "aliases": [
+      "Asus Vivobook S16 S5652MA-TK121W Core 7 16GB I 512GB (90NB1961-M00C30)"
+    ],
+    "tier": "mid",
+    "priceAmd": 535000,
+    "priceAmdMax": 535000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core 7 350"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 535000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core 7 350.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/asus-vivobook-s16-s5652ma-tk121w-core-7-16gb-i-512gb-90nb1961-m00c30"
+    ]
+  },
+  {
+    "id": "asus-vivobook-x512ja-211-vbgb",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "VivoBook X512JA-211.VBGB",
+    "aliases": [
+      "Asus VivoBook X512JA-211.VBGB i7-1065G7 20GB I 1TB + 256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 405400,
+    "priceAmdMax": 405400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7-1065G7"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 10",
+    "variants": [
+      {
+        "ram": 20,
+        "storage": 1024,
+        "priceAmd": 405400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core i7-1065G7.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/asus-vivobook-x512ja-211-vbgb"
+    ]
+  },
+  {
+    "id": "asus-zenbook-14-ux3405ma-qd993-oled",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Zenbook 14 UX3405MA-QD993 OLED",
+    "aliases": [
+      "Asus ZenBook Ultra 9 16GB I 512GB UX3405MA-QD993 OLED"
+    ],
+    "tier": "mid",
+    "priceAmd": 599000,
+    "priceAmdMax": 599000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "type": "OLED",
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9 185H"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 599000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 9 185H.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/asus-zenbook-ultra-9-16gb-i-512gb-ux3405ma-qd993-oled"
+    ]
+  },
+  {
+    "id": "dell-latitude-7410-i5-10310u",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Latitude 7410 (i5-10310U)",
+    "aliases": [
+      "Dell Latitude 7410 i5 8GB I 256GB"
+    ],
+    "tier": "budget",
+    "priceAmd": 289900,
+    "priceAmdMax": 289900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core i5-10310U"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 289900
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core i5-10310U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/dell-latitude-7410-intel-core-i5"
+    ]
+  },
+  {
+    "id": "dell-latitude-7455-x1p-64-100",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Latitude 7455 (Snapdragon X Plus)",
+    "aliases": [
+      "Dell Latitude 7455 Copilot+ Snapdragon X Plus X1P-64-100 16GB I 512GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 469400,
+    "priceAmdMax": 469400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "2560x1600",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Snapdragon X Plus X1P-64-100"
+    },
+    "graphics": {
+      "name": "Qualcomm Adreno",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 469400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Snapdragon X Plus X1P-64-100.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/dell-latitude-7455-16gb-i-512gb"
+    ]
+  },
+  {
+    "id": "hp-elitebook-x-flip-g1i-14-b68s8ea",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "EliteBook X Flip G1i 14 B68S8EA",
+    "aliases": [
+      "HP EliteBook X Flip G1i14AI Ultra 5 226V/16GB I 512GB (B68S8EA)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 733400,
+    "priceAmdMax": 733400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 5 226V"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 733400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 5 226V.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-elitebook-x-flip-g1i14ai-ultra-5-226v-16gb-i-512gb-b68s8ea"
+    ]
+  },
+  {
+    "id": "hp-hyperx-omen-16-ap1003dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "HyperX OMEN 16-AP1003DX",
+    "aliases": [
+      "HP HyperX Omen 16 16-ap1003dx 16GB I 512GB (D8RB8UA#ABA)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 625000,
+    "priceAmdMax": 625000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "2560x1440"
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 8745HX"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 625000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with AMD Ryzen 7 8745HX and NVIDIA GeForce RTX 5060 8GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-hyperx-omen-16-16-ap1003dx-16gb-i-512gb-d8rb8ua-aba"
+    ]
+  },
+  {
+    "id": "hp-omen-transcend-14-fb1043dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OMEN Transcend 14-FB1043DX",
+    "aliases": [
+      "HP OMEN Transcend 14-fb1043dx 16GB I 1TB (D8KM3UA)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 695000,
+    "priceAmdMax": 695000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "type": "OLED",
+      "resolution": "2880x1800"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 255H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 695000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core Ultra 7 255H and NVIDIA GeForce RTX 5060 8GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omen-transcend-14-fb1043dx-16gb-i-1tb-d8km3ua"
+    ]
+  },
+  {
+    "id": "hp-omnibook-3-16-bu0130wm",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 3 16-BU0130WM",
+    "aliases": [
+      "HP OmniBook 3 16-bu0130wm 8GB I 256GB (CU1D2UA)"
+    ],
+    "tier": "budget",
+    "priceAmd": 249000,
+    "priceAmdMax": 249000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core 3 100U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 249000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core 3 100U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omnibook-3-16-bu0130wm-8gb-i-256gb-cu1d2ua"
+    ]
+  },
+  {
+    "id": "hp-omnibook-3-16-by0015dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 3 16-BY0015DX",
+    "aliases": [
+      "HP OmniBook 3 16-by0015dx 8GB I 256GB (D7NF2UA)"
+    ],
+    "tier": "budget",
+    "priceAmd": 247000,
+    "priceAmdMax": 247000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 40"
+    },
+    "graphics": {
+      "name": "AMD Radeon 610M",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 247000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with AMD Ryzen 5 40.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omnibook-3-16-by0015dx-8gb-i-256gb-d7nf2ua"
+    ]
+  },
+  {
+    "id": "hp-omnibook-3-17-dk0004ci",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 3 17-DK0004CI",
+    "aliases": [
+      "HP OmniBook 3 17-dk0004ci i5-120U 16GB I 512GB (DR9V6EA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 395400,
+    "priceAmdMax": 395400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 17.3,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i5-120U"
+    },
+    "graphics": {
+      "name": "Intel Integrated Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 395400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 17.3-inch laptop with Intel Core i5-120U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omnibook-3-17-dk0004ci-i5-120u-16gb-i-512gb-dr9v6ea"
+    ]
+  },
+  {
+    "id": "hp-omnibook-5-16-af1015ci",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook 5 16-AF1015CI",
+    "aliases": [
+      "HP OmniBook 5 AI 16-af1015ci Ultra 7-255U 16GB I 512GB (BG7H9EA#UUQ)"
+    ],
+    "tier": "mid",
+    "priceAmd": 461400,
+    "priceAmdMax": 461400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 255U"
+    },
+    "graphics": {
+      "name": "Intel Integrated Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 461400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 255U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omnibook-5-ai-16-af1015ci-ultra-7-255u-16gb-i-512gb-bg7h9ea-uuq"
+    ]
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-as0003ci",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook X Flip 16-AS0003CI",
+    "aliases": [
+      "HP OmniBook X Flip 16-as0003ci Ultra 7 258V/32GB I 1TB (C5HZ6EA)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 699400,
+    "priceAmdMax": 699400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 258V"
+    },
+    "graphics": {
+      "name": "Intel Arc 140V",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 699400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 258V.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omnibook-x-flip-16-as0003ci-ultra-7-258v-32gb-i-1tb-c5hz6ea"
+    ]
+  },
+  {
+    "id": "hp-omnibook-x-flip-16-as0010ci",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook X Flip 16-AS0010CI",
+    "aliases": [
+      "HP OmniBook X Flip 16-as0010ci Ultra 5 226V 16GB I 1TB (CL6V7EA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 536400,
+    "priceAmdMax": 536400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 5 226V"
+    },
+    "graphics": {
+      "name": "Intel Arc 130V",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 536400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 5 226V.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-omnibook-x-flip-16-as0010ci-ultra-5-226v-16gb-i-1tb-cl6v7ea"
+    ]
+  },
+  {
+    "id": "hp-probook-4-g1ir-16-d0ve9at",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 4 G1iR 16 D0VE9AT",
+    "aliases": [
+      "HP ProBook 4 G1iR 16 16GB I 512GB (D0VE9AT)"
+    ],
+    "tier": "mid",
+    "priceAmd": 432000,
+    "priceAmdMax": 432000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core 7 150U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 432000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core 7 150U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-probook-4-g1ir-16-16gb-i-512gb-d0ve9at"
+    ]
+  },
+  {
+    "id": "hp-probook-440-g8-i7",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 440 G8 (Core i7)",
+    "aliases": [
+      "HP ProBook 440 G8 Intel Core i7 8GB I 256GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 474900,
+    "priceAmdMax": 474900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 474900
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core i7.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-probook-440-g8-intel-core-i7-8gb-i-256gb"
+    ]
+  },
+  {
+    "id": "hp-probook-450-g10-8l0d6ua",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 450 G10 8L0D6UA",
+    "aliases": [
+      "HP ProBook 450 G10 16GB I 512GB (8L0D6UA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 415000,
+    "priceAmdMax": 415000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 415000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core i7-1355U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Silver"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-probook-450-g10-8l0d6ua"
+    ]
+  },
+  {
+    "id": "hp-probook-450-g8-28k98ut",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "ProBook 450 G8 28K98UT",
+    "aliases": [
+      "HP ProBook 450 G8 i5-1135G7 16GB I 256GB (28K98UT#ABA)"
+    ],
+    "tier": "mid",
+    "priceAmd": 428400,
+    "priceAmdMax": 428400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i5-1135G7"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 10",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 428400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core i5-1135G7.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/hp-probook-450-g8-i5-1135g7-28k98ut-aba"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-5-pro-14iap7-82sh005prk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad 5 Pro 14IAP7 82SH005PRK",
+    "aliases": [
+      "Lenovo IdeaPad 5 Pro 14IAP7 i5-1240P 16GB I 512GB (82SH005PRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 498400,
+    "priceAmdMax": 498400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "2240x1400"
+    },
+    "chipset": {
+      "name": "Intel Core i5-1240P"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 2050 4GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 498400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core i5-1240P and NVIDIA GeForce RTX 2050 4GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-5-pro-14iap7-82sh005prk-16gb-i-512gb"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-520-15ikb",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad 520-15IKB",
+    "aliases": [
+      "Lenovo ideapad 520-15IKB 8GB I 1TB"
+    ],
+    "tier": "mid",
+    "priceAmd": 420000,
+    "priceAmdMax": 420000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7-8550U"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce MX150 2GB",
+      "type": "discrete"
+    },
+    "os": "Windows 10",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 1024,
+        "priceAmd": 420000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core i7-8550U and NVIDIA GeForce MX150 2GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-520-15ikb-8gb-i-1tb"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-gaming-3-16arh7-82sc007ark",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Gaming 3 16ARH7 82SC007ARK",
+    "aliases": [
+      "Lenovo IdeaPad Gaming 3 16ARH7 AMD Ryzen R5-6600H 16GB I 512GB (82SC007ARK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 579400,
+    "priceAmdMax": 579400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 6600H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 Ti 4GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 579400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with AMD Ryzen 5 6600H and NVIDIA GeForce RTX 3050 Ti 4GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-gaming-3-16arh7-82sc007ark-16gb-i-512gb"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-gaming-3-16iah7-82sa00cwrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Gaming 3 16IAH7 82SA00CWRK",
+    "aliases": [
+      "Lenovo IdeaPad Gaming 3 16IAH7 i5-12450H 16GB I 512GB (82SA00CWRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 547400,
+    "priceAmdMax": 547400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core i5-12450H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 Ti 4GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 547400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel Core i5-12450H and NVIDIA GeForce RTX 3050 Ti 4GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-gaming-3-16iah7-82sa00cwrk-16gb-i-512gb"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15abr8-82xm0123rk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15ABR8 82XM0123RK",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15ABR8 Ryzen 7 5825U 8GB I 512GB (82XM0123RK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 326400,
+    "priceAmdMax": 326400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 5825U"
+    },
+    "graphics": {
+      "name": "AMD Radeon Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 326400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 5825U.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15abr8-ryzen-7-5825u-8gb-i-512gb-82xm0123rk"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15arp10-83k700tuus",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15ARP10 83K700TUUS",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 16GB I 512GB (83K700TUUS)"
+    ],
+    "tier": "mid",
+    "priceAmd": 349000,
+    "priceAmdMax": 349000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 170"
+    },
+    "graphics": {
+      "name": "AMD Radeon 680M",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 349000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.3-inch laptop with AMD Ryzen 7 170.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15arp10-ryzen-7-16gb-i-512gb-83k700tuus"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15itn9-n150",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15ITN9 (N150)",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15ITN9 8GB I 128GB (83L7002FUS)",
+      "Lenovo IdeaPad Slim 3 15ITN9 8GB I 128GB (83L7002KUS)",
+      "Lenovo IdeaPad Slim 3 15ITN9 8GB I 128GB (83L7002MUS)"
+    ],
+    "tier": "budget",
+    "priceAmd": 189000,
+    "priceAmdMax": 189000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel N150"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 189000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.6-inch laptop with Intel N150.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "colors": [
+      "Grey",
+      "Blue"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002fus",
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002kus",
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15itn9-8gb-i-128gb-83l7002mus"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15iwc11-83rr00hbrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15IWC11 83RR00HBRK",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15IWC11 i7-350 16GB I 1TB (83RR00HBRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 550400,
+    "priceAmdMax": 550400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core 7 350"
+    },
+    "graphics": {
+      "name": "Integrated Intel Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 550400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.3-inch laptop with Intel Core 7 350.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15iwc11-i7-350-16gb-i-1tb-83rr00hbrk"
+    ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-5-16irh10r-83j1001grk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 5 16IRH10R 83J1001GRK",
+    "aliases": [
+      "Lenovo IdeaPad Slim 5 16IRH10R i7-240H 16GB I 1TB (83J1001GRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 526400,
+    "priceAmdMax": 526400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "2880x1800"
+    },
+    "chipset": {
+      "name": "Intel Core 7 240H"
+    },
+    "graphics": {
+      "name": "Intel Integrated Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 526400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core 7 240H.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-slim-5-16irh10r-i7-240h-16gb-i-1tb-83j1001grk"
+    ]
+  },
+  {
+    "id": "lenovo-legion-5-15iax11-83vk00b7kg",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Legion 5 15IAX11 83VK00B7KG",
+    "aliases": [
+      "Lenovo Legion 5 15IAX11 Ultra 9 32GB I 2TB (83VK00B7KG)"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1571400,
+    "priceAmdMax": 1571400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "resolution": "2560x1600"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9 290HX Plus"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5070 12GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 2048,
+        "priceAmd": 1571400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.3-inch laptop with Intel Core Ultra 9 290HX Plus and NVIDIA GeForce RTX 5070 12GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-legion-5-15iax11-ultra-9-32gb-i-2tb-83vk00b7kg"
+    ]
+  },
+  {
+    "id": "lenovo-legion-5-15iph11-83rw0055kg",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Legion 5 15IPH11 83RW0055KG",
+    "aliases": [
+      "Lenovo Legion 5 15IPH11 Ultra 7 356H 16GB I 2TB (83RW0055KG)"
+    ],
+    "tier": "flagship",
+    "priceAmd": 1165400,
+    "priceAmdMax": 1165400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "resolution": "2560x1600"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 356H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5050 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 2048,
+        "priceAmd": 1165400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.3-inch laptop with Intel Core Ultra 7 356H and NVIDIA GeForce RTX 5050 8GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-legion-5-15iph11-ultra-7-356h-16gb-i-2tb-83rw0055kg"
+    ]
+  },
+  {
+    "id": "lenovo-thinkbook-16-g8-ial-21sk00jvgx",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkBook 16 G8 IAL 21SK00JVGX",
+    "aliases": [
+      "Lenovo ThinkBook 16 G8 IAL Ultra 9 32GB I 1TB (21SK00JVGX)",
+      "Lenovo ThinkBook 16 G8 IAL Ultra 9 32GB I 512GB (21SK00JVGX)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 676400,
+    "priceAmdMax": 710400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9"
+    },
+    "graphics": {
+      "name": "Integrated Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 710400
+      },
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 676400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 9.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-thinkbook-16-g8-ial-ultra-9-32gb-i-1tb-21sk00jvgx",
+      "https://allsell.am/en/lenovo-thinkbook-16-g8-ial-ultra-9-32gb-i-512gb-21sk00jvgx"
+    ]
+  },
+  {
+    "id": "lenovo-thinkbook-16-g9-irl-21us004tfw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkBook 16 G9 IRL 21US004TFW",
+    "aliases": [
+      "Lenovo ThinkBook 16 G9 IRL Core i5 16GB I 512GB (21US004TFW)"
+    ],
+    "tier": "mid",
+    "priceAmd": 463400,
+    "priceAmdMax": 463400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core 5 210H"
+    },
+    "graphics": {
+      "name": "Integrated Intel Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 463400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 16-inch laptop with Intel Core 5 210H.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-thinkbook-16-g9-irl-core-i5-16gb-i-512gb-21us004tfw"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-e14-i7-10th-gen",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad E14 (Core i7, 10th gen)",
+    "aliases": [
+      "Lenovo ThinkPad E14 Core i7 8GB I 1TB"
+    ],
+    "tier": "mid",
+    "priceAmd": 469900,
+    "priceAmdMax": 469900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7 (10th gen)"
+    },
+    "graphics": {
+      "name": "2GB",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 1024,
+        "priceAmd": 469900
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with Intel Core i7 (10th gen).",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-thinkpad-e14-core-i7-8gb-i-1tb"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-x9-15-gen-1-21q6001pfw",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad X9-15 Gen 1 21Q6001PFW",
+    "aliases": [
+      "Lenovo ThinkPad X9-15 Gen 1 Core Ultra 7 32GB I 1TB (21Q6001PFW)"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 939000,
+    "priceAmdMax": 939000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "type": "OLED",
+      "resolution": "2880x1800"
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 258V"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 939000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.3-inch laptop with Intel Core Ultra 7 258V.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-thinkpad-x9-15-gen-1-core-ultra-7-32gb-i-1tb-21q6001pfw"
+    ]
+  },
+  {
+    "id": "lenovo-yoga-7-14agp11-83td0047us",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 7 2-in-1 14AGP11 83TD0047US",
+    "aliases": [
+      "Lenovo Yoga 7 14AGP11 Ryzen AI 7 24GB I 512GB (83TD0047US)"
+    ],
+    "tier": "mid",
+    "priceAmd": 555000,
+    "priceAmdMax": 555000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 7 445"
+    },
+    "graphics": {
+      "name": "AMD Radeon 840M",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 24,
+        "storage": 512,
+        "priceAmd": 555000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with AMD Ryzen AI 7 445.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-yoga-7-14agp11-ryzen-ai-7-24gb-i-512gb-83td0047us"
+    ]
+  },
+  {
+    "id": "lenovo-yoga-7-14agp11-83td0000us",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 7 2-in-1 14AGP11 83TD0000US",
+    "aliases": [
+      "Lenovo Yoga 7 2 in 1 14AGP11 Ryzen AI 5 16GB I 512GB (83TD0000US)"
+    ],
+    "tier": "mid",
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 5 430"
+    },
+    "graphics": {
+      "name": "AMD Radeon 840M",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 499000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14-inch laptop with AMD Ryzen AI 5 430.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-yoga-7-2-in-1-14agp11-ryzen-ai-5-16gb-i-512gb-83td0000us"
+    ]
+  },
+  {
+    "id": "lenovo-yoga-pro-7-14ahp9-83e3001lrk",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga Pro 7 14AHP9 83E3001LRK",
+    "aliases": [
+      "Lenovo Yoga Pro 7 14AHP9 Ryzen 7 8845HS 16GB I 1TB (83E3001LRK)"
+    ],
+    "tier": "mid",
+    "priceAmd": 574400,
+    "priceAmdMax": 574400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14.5,
+      "resolution": "3072x1920"
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 8845HS"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 6GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 574400
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 14.5-inch laptop with AMD Ryzen 7 8845HS and NVIDIA GeForce RTX 3050 6GB.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-yoga-pro-7-14ahp9-83e3001lrk-16gb-i-1tb"
     ]
   }
 ]
