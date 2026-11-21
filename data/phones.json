@@ -26340,6 +26340,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 109900
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 86900
       }
     ],
     "colors": [
@@ -59942,6 +59947,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 99900
+      },
+      {
+        "ram": 6,
+        "storage": 128,
+        "priceAmd": 79900
       }
     ],
     "display": {
@@ -59988,7 +59998,8 @@
     "sources": [
       "kimovil",
       "https://shop.ucom.am/am/xiaomi-redmi-pad-se-8gb.html",
-      "https://www.mi.com/au/product/redmi-pad-se/specs/"
+      "https://www.mi.com/au/product/redmi-pad-se/specs/",
+      "https://www.mi.com/global/product/redmi-pad-se/specs/"
     ],
     "colors": [
       "Gray"
@@ -64825,6 +64836,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 459000
+      },
+      {
+        "ram": 12,
+        "storage": 256,
+        "priceAmd": 378900
       }
     ],
     "display": {
@@ -64874,7 +64890,10 @@
     "connectivity": {
       "bluetooth": "6.0"
     },
-    "os": "HyperOS 3"
+    "os": "HyperOS 3",
+    "sources": [
+      "https://www.mi.com/uk/product/poco-f9-ultra/specs/"
+    ]
   },
   {
     "id": "xiaomi-17-ultra",
@@ -64964,6 +64983,11 @@
         "ram": 16,
         "storage": 256,
         "priceAmd": 899000
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 895000
       }
     ],
     "display": {
@@ -65012,7 +65036,8 @@
     },
     "os": "Android 17",
     "sources": [
-      "https://store.google.com/us/product/pixel_11_pro_fold_specs"
+      "https://store.google.com/us/product/pixel_11_pro_fold_specs",
+      "https://store.google.com/product/pixel_11_pro_fold_specs?hl=en-US"
     ]
   },
   {
@@ -73912,6 +73937,16 @@
         "ram": 16,
         "storage": 1024,
         "priceAmd": 949000
+      },
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 449900
+      },
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 449900
       }
     ],
     "display": {
@@ -73944,7 +73979,8 @@
     "os": "macOS Sonoma",
     "sources": [
       "https://www.apple.com/macbook-air/compare/?modelList=MacBook-Air-M3,MacBook-Air-M3-15",
-      "https://support.apple.com/en-us/118551"
+      "https://support.apple.com/en-us/118551",
+      "https://support.apple.com/en-az/118551"
     ]
   },
   {
