@@ -178,7 +178,9 @@ DROPS.sort((a, b) => b.pop - a.pop);
     if (a.d !== latest || (Date.parse(a.d) - Date.parse(b.d)) > 3 * 864e5) continue;
     if (a.lo !== Math.min(...offs.map(o => o.price))) continue;
     const d = a.lo - b.lo;
-    if (d && Math.abs(d) / b.lo < 0.5) p.dchg = d;
+    // percent of yesterday's price, one decimal under 1%
+    const pct = d / b.lo * 100;
+    if (d && Math.abs(pct) < 50) p.dchg = Math.abs(pct) < 1 ? Math.round(pct * 10) / 10 : Math.round(pct);
   }
 }
 // the blog's live lists (blogList, above) - resolved here because sort=drop needs DROPS

@@ -1764,7 +1764,7 @@ function card(p) {
     <div class="pshot">
       ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
         : dealPct(p) ? `<span class="badge deal" title="${esc(({hy:'խանութների միջնագնի համեմատ',ru:'относительно медианной цены магазинов',en:'vs median shop price'})[st.lang])}">−${dealPct(p)}%</span>`
-        : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}${rows.length && p.dchg ? `<span class="badge dchg ${p.dchg < 0 ? 'dn' : 'up'}${dealPct(p) || isNew(p) ? ' second' : ''}" title="${esc(({hy:'երեկվա համեմատ',ru:'по сравнению со вчера',en:'vs yesterday'})[st.lang])}">${p.dchg < 0 ? '↓ −' : '↑ +'}${money(Math.abs(p.dchg))} ֏</span>` : ''}
+        : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}${rows.length && p.dchg ? `<span class="badge dchg ${p.dchg < 0 ? 'dn' : 'up'}${dealPct(p) || isNew(p) ? ' second' : ''}" title="${esc(({hy:'երեկվա համեմատ',ru:'по сравнению со вчера',en:'vs yesterday'})[st.lang])}">${p.dchg < 0 ? '↓' : '↑'}${String(Math.abs(p.dchg)).replace('.', st.lang === 'en' ? '.' : ',')}%</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
         <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
