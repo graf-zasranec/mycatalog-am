@@ -2483,7 +2483,11 @@ const SHOPS = {
       // by matchPhone first so only pages that can be one of our products are fetched.
       const xml = await get('https://allsell.am/media/sitemap/en.xml');
       await sleep(DELAY_MS);
-      const urls = [...xml.matchAll(/<loc>(https:\/\/allsell\.am\/en\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      const sitemapUrls = [...xml.matchAll(/<loc>(https:\/\/allsell\.am\/en\/[^<]+)<\/loc>/g)].map(m => m[1]);
+      // Exact product pins can cover catalogue pages outside the published sitemap.
+      const pinnedUrls = [...PINS.keys()].filter(url =>
+        /^https:\/\/allsell\.am\/en\/[^/?#]+$/.test(url) && pinnedId(url));
+      const urls = new Set([...pinnedUrls, ...sitemapUrls]);
       const out = [], perPhone = {};
       for (const u of urls) {
         const id = matchPhone(u);
