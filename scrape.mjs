@@ -2410,7 +2410,12 @@ const SHOPS = {
           if (mm && idMm && mm !== idMm) id = null;
           if (!id || !price || price < 5000 || !safeUrl(u)) continue;
           const img = (h.match(/property="og:image" content="([^"]+)"/) || [])[1];
-          out.push({ id, price, storage: storageOf(title) ?? storageOf(u), title, url: u,
+          // The title often names no memory ("MacBook Air 13\" M3"); the spec table does. Without it
+          // a 16/256 MacBook Air was filed as the catalogue's only build, 16/1TB (2026-11-21).
+          const spec = clean(h.replace(/<[^>]+>/g, ' '));
+          const specGB = re => { const m = spec.match(re); return m ? (/TB/i.test(m[2]) ? +m[1] * 1024 : +m[1]) : null; };
+          const ram = specGB(/Օպերատիվ հիշողություն\s+(\d+)\s*(GB|ԳԲ)/);
+          out.push({ id, price, storage: storageOf(title) ?? storageOf(u) ?? specGB(/Ներքին հիշողություն\s+(\d+)\s*(GB|TB|ԳԲ|ՏԲ)/), ...(ram ? { ram } : {}), title, url: u,
             image: img && safeUrl(img) ? img : null, inStock: true });
         }
       }
