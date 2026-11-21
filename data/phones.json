@@ -26345,6 +26345,11 @@
         "ram": 6,
         "storage": 128,
         "priceAmd": 86900
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 79900
       }
     ],
     "colors": [
@@ -42284,6 +42289,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 125000
+      },
+      {
+        "ram": 8,
+        "storage": 128,
+        "priceAmd": 130000
       }
     ],
     "camera": {
@@ -42333,7 +42343,8 @@
     "sources": [
       "kimovil",
       "https://www.notebookcheck.net/Samsung-Czech-lists-the-Galaxy-A27-ahead-of-launch-revealing-its-full-spec-sheet.1320893.0.html",
-      "https://www.samsung.com/us/smartphones/galaxy-a27-5g/"
+      "https://www.samsung.com/us/smartphones/galaxy-a27-5g/",
+      "https://www.samsung.com/in/smartphones/galaxy-a/galaxy-a27-5g-black-128gb-sm-a276bzkgins/"
     ]
   },
   {
@@ -57173,6 +57184,11 @@
         "ram": 8,
         "storage": 256,
         "priceAmd": 109000
+      },
+      {
+        "ram": 6,
+        "storage": 256,
+        "priceAmd": 94000
       }
     ],
     "display": {
@@ -57223,7 +57239,8 @@
     "released": "2026-08",
     "sources": [
       "kimovil",
-      "https://www.gsmarena.com/a-14869.php"
+      "https://www.gsmarena.com/a-14869.php",
+      "https://www.mi.com/ae-en/product/redmi-17/specs/"
     ],
     "colors": [
       "Black",
@@ -59347,7 +59364,8 @@
     "released": "2026-09",
     "sources": [
       "kimovil",
-      "https://www.mi.com/global/product/redmi-note-17"
+      "https://www.mi.com/global/product/redmi-note-17",
+      "https://www.mi.com/lk/product/redmi-note-17/specs/"
     ],
     "colors": [
       "Blue",
@@ -64913,6 +64931,11 @@
         "ram": 16,
         "storage": 512,
         "priceAmd": 575000
+      },
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 595900
       }
     ],
     "display": {
@@ -64963,7 +64986,10 @@
     "connectivity": {
       "bluetooth": "6.0"
     },
-    "os": "HyperOS 3"
+    "os": "HyperOS 3",
+    "sources": [
+      "https://www.mi.com/uk/product/xiaomi-17-ultra/specs/"
+    ]
   },
   {
     "id": "google-pixel-11-pro-fold",
