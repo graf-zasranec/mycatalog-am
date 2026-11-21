@@ -491,8 +491,11 @@ const sold = (p, field, value) => {
     // A shop writes the last word of a finish: "Gray" for Space Gray, "Blue" for Sky Blue.
     // An offer that names no colour stands in for every colour on the page (visibleOffers), so it
     // keeps every swatch live; crossing them out claimed "sold out" when the shop just didn't say.
+    // ...unless the product has that last word as a finish of its own: Beats Solo 3 sells Gold AND
+    // Rose Gold, so a "Gold" offer is the Gold one and must not keep Rose Gold live (owner audit 11-22).
+    const own = new Set((p.colors || []).map(soldKey));
     return list.some(o => { const k = o.color && soldKey(o.color);
-      return !k || (k === want || (k.length >= 4 && want.endsWith(k))); });
+      return !k || (k === want || (k.length >= 4 && want.endsWith(k) && !own.has(k))); });
   }
   // A watch's variants are case sizes in mm, but an offer's `storage` is gigabytes, and comparing
   // them crossed out both of the Apple Watch's sizes because no shop "stocks 42 GB". Nothing to
