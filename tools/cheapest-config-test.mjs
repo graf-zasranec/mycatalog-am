@@ -1,7 +1,7 @@
 import fs from'node:fs';
 const harness="import assert from 'node:assert/strict';\n"+fs.readFileSync('tools/app-test.mjs','utf8').split('let bad = 0, n = 0;')[0].replace("from './analytics.mjs'",'from '+JSON.stringify(new URL('./analytics.mjs',import.meta.url).href)).replace('PMIN, PMAX };','PMIN, PMAX,D,bxHeroOffers,mastHero };');
 const checks=`
-const p={id:'__cheapest_default',category:'phone',colors:['Silver','Black'],variants:[{ram:16,storage:512},{ram:4,storage:64},{ram:8,storage:128}]};
+const p={id:'__cheapest_default',category:'phone',connectivity:{sim:'Nano-SIM + eSIM'},colors:['Silver','Black'],variants:[{ram:16,storage:512},{ram:4,storage:64},{ram:8,storage:128}]};
 prices.offers[p.id]=[{shop:'expensive',price:500,ram:16,storage:512,esim:false,color:'Black'},{shop:'cheap',price:100,ram:4,storage:64,esim:true,color:'Silver'},{shop:'soldout',price:1,ram:4,storage:64,esim:false,inStock:false},{shop:'tie',price:100,ram:8,storage:128,esim:false}];
 app.st={...app.D,ram:16,stor:512,shops:['expensive']};
 assert.deepEqual(Object.fromEntries(['ram','storage','esim','color'].map(k=>[k,app.initialConfig(p)[k]])),{ram:4,storage:64,esim:true,color:'Silver'},'catalogue filters cannot force a dearer product default');
