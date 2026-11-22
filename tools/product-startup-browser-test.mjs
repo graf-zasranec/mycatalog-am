@@ -2,14 +2,15 @@
 import assert from 'node:assert/strict';
 import {spawn} from 'node:child_process';
 import {chromium,firefox,webkit} from 'playwright';
+import {launchOptions} from './test-browser.mjs';
 const port=8768,base=process.env.PRODUCT_STARTUP_BASE||`http://127.0.0.1:${port}`;
 const server=process.env.PRODUCT_STARTUP_BASE?null:spawn(process.execPath,['serve.mjs',String(port)],{stdio:'ignore'});
 if(server)await new Promise(r=>setTimeout(r,700));
 let checks=0;
 try{for(const engine of (process.env.PRODUCT_STARTUP_ENGINES||'chromium,webkit').split(',')){
- const browser=await({chromium,firefox,webkit})[engine].launch();
+ const browser=await({chromium,firefox,webkit})[engine].launch(await launchOptions(engine));
  try{for(const scenario of ['search','route-race','search-retry','route-retry','escape','escape-error','contradictory','ru','hy']){
-  const ctx=await browser.newContext({viewport:{width:scenario==='search'?1440:390,height:900},serviceWorkers:'block',reducedMotion:'reduce'});
+  const ctx=await browser.newContext({viewport:{width:['search','search-retry','escape','escape-error'].includes(scenario)?1440:390,height:900},serviceWorkers:'block',reducedMotion:'reduce'});
   await ctx.addInitScript(()=>{Object.defineProperty(navigator,'doNotTrack',{get:()=> '1'});localStorage.setItem('better.v2',JSON.stringify({cat:'laptop',brands:['Acer'],cmp:['honor-x8c','acer-aspire-15'],pmin:25000,pmax:750000,bounds:[10000,1000000]}))});
   const p=await ctx.newPage(),errors=[],requests=[];p.on('pageerror',e=>errors.push(e.message));p.on('request',r=>requests.push(r.url()));p.setDefaultTimeout(15000);
   let held,arrived;const pending=new Promise(r=>arrived=r);let attempts=0;
@@ -46,7 +47,7 @@ try{for(const engine of (process.env.PRODUCT_STARTUP_ENGINES||'chromium,webkit')
       await p.evaluate(()=>location.hash='#/c/laptop');await p.waitForSelector('.pcard');assert.ok(await p.locator('.pcard').count());checks++;
      }
     }else{
-     assert.ok(await p.locator('#hpShot').isVisible());const body=await p.locator('body').evaluate(e=>({scroll:e.scrollWidth,view:innerWidth}));assert.ok(body.scroll<=body.view+1,'no horizontal overflow');checks+=2;
+     assert.ok(await p.locator('#hpShot').isVisible());const body=await p.evaluate(()=>({scroll:document.documentElement.scrollWidth,view:innerWidth}));assert.ok(body.scroll<=body.view+1,'no horizontal overflow');checks+=2;
     }
    }
    assert.deepEqual(errors,[]);checks++;console.log(`${engine}/${scenario}: OK`);
