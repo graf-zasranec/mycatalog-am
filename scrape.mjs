@@ -2776,13 +2776,14 @@ const SHOPS = {
   },
 
   istyle: {
-    name: 'iStyle', site: 'https://istyle.am', note: 'Apple and premium audio retailer',
+    // rebranded to Stivo (stivo.am) in Nov 2026; the internal key stays 'istyle' for history and pins
+    name: 'Stivo', site: 'https://stivo.am', note: 'Apple and premium audio retailer (formerly iStyle)',
     async run() {
       // robots.txt is "Allow: /" with a published sitemap, so this is an ordinary crawl. The only
       // awkwardness is where the price lives: the page renders it with JavaScript, but the data is
       // already in the HTML as an HTML-escaped JSON payload - "price_override":125000 inside a
       // variants array. Unescape and read it; no browser needed.
-      const idx = await get('https://istyle.am/sitemap-en.xml'); await sleep(DELAY_MS);
+      const idx = await get('https://stivo.am/sitemap-en.xml'); await sleep(DELAY_MS);
       const urls = [...idx.matchAll(/<loc>([^<]*\/product\/[^<]+)<\/loc>/g)].map(m => m[1]);
       const out = [];
       for (const raw of urls) {
