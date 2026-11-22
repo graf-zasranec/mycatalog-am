@@ -35242,6 +35242,120 @@
     ]
   },
   {
+    "id": "lenovo-yoga-7a-2-in-1-16agp11-ryzen-ai-5-430",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 7a 2-in-1 16AGP11 Ryzen AI 5 430",
+    "aliases": [
+      "Lenovo Yoga 7 2-in-1 Gen 11(AI 5)"
+    ],
+    "tier": "mid",
+    "priceAmd": 429000,
+    "priceAmdMax": 429000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "touch": true,
+      "brightness": 400
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 5 430"
+    },
+    "graphics": {
+      "name": "AMD Radeon 840M Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1830
+    },
+    "os": "Windows 11 Home",
+    "summaryEn": "16-inch convertible laptop with Ryzen AI 5 430 and a WUXGA IPS touchscreen.",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 429000
+      }
+    ],
+    "battery": {
+      "capacity": 70
+    },
+    "connectivity": {
+      "ports": "2 × USB-C, 1 × USB-A, HDMI 2.1, microSD, 3.5 mm audio"
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Seashell"
+    ],
+    "sources": [
+      "https://psref.lenovo.com/detail/Yoga_7_2_in_1_16AGP11?M=83TF0000US",
+      "https://www.lenovo.com/us/en/p/laptops/yoga/yoga-2-in-1-series/lenovo-yoga-7a-2-in-1-gen-11-16-inch-amd/83tfcto1wwus1"
+    ]
+  },
+  {
+    "id": "lenovo-yoga-7a-2-in-1-16agp11-ryzen-ai-7-445",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "Yoga 7a 2-in-1 16AGP11 Ryzen AI 7 445",
+    "aliases": [
+      "Lenovo Yoga 7 2-in-1 Gen 11(AI 7)"
+    ],
+    "tier": "mid",
+    "priceAmd": 499000,
+    "priceAmdMax": 499000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "touch": true,
+      "brightness": 400
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 7 445"
+    },
+    "graphics": {
+      "name": "AMD Radeon 840M Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1830
+    },
+    "os": "Windows 11 Home",
+    "summaryEn": "16-inch convertible laptop with Ryzen AI 7 445 and a WUXGA IPS touchscreen.",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 499000
+      }
+    ],
+    "battery": {
+      "capacity": 70
+    },
+    "connectivity": {
+      "ports": "2 × USB-C, 1 × USB-A, HDMI 2.1, microSD, 3.5 mm audio"
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Seashell"
+    ],
+    "sources": [
+      "https://psref.lenovo.com/detail/Yoga_7_2_in_1_16AGP11?M=83TF0005US",
+      "https://www.lenovo.com/us/en/p/laptops/yoga/yoga-2-in-1-series/lenovo-yoga-7a-2-in-1-gen-11-16-inch-amd/83tfcto1wwus1"
+    ]
+  },
+  {
     "id": "lenovo-yoga-7-2-in-1-16akp10",
     "category": "laptop",
     "brand": "Lenovo",
