@@ -1378,8 +1378,12 @@ function paintChrome() {
   document.documentElement.lang = st.lang;
   if (st.theme === 'auto') document.documentElement.removeAttribute('data-theme');
   else document.documentElement.dataset.theme = st.theme;
-  $('#langs').innerHTML = ['hy', 'ru', 'en'].map(l =>
-    `<a href="${languageHref(l)}" data-lang="${l}" lang="${l}" hreflang="${l}"${st.lang === l ? ' aria-current="page"' : ''}>${{ hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' }[l]}</a>`).join('');
+  const LANG_LBL = { hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' };
+  $('#langs').classList.remove('open');
+  $('#langs').innerHTML = `<button type="button" class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="${esc(t('common.language') || 'Language')}: ${LANG_LBL[st.lang]}">${LANG_LBL[st.lang]}<i aria-hidden="true"></i></button><span class="lang-list">`
+    + ['hy', 'ru', 'en'].map(l =>
+    `<a href="${languageHref(l)}" data-lang="${l}" lang="${l}" hreflang="${l}"${st.lang === l ? ' aria-current="page"' : ''}>${LANG_LBL[l]}</a>`).join('') + '</span>';
+  const ms = $('#msrchBtn'); if (ms) ms.setAttribute('aria-label', t('nav.search_placeholder'));
   const tb = $('#themeBtn');
   tb.setAttribute('aria-label', t('common.theme') + ': ' + st.theme);
   tb.setAttribute('title', t('common.theme'));
@@ -3962,5 +3966,29 @@ document.addEventListener('click',e=>{if(e.target.closest('[data-bx-mobile-home]
 document.addEventListener('click',e=>{if(e.target.closest('[data-p2-specs]'))document.getElementById('specs')?.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});});
 document.addEventListener('click',e=>{const q=e.target.closest('[data-bx-search]');if(q){st.q=q.dataset.bxSearch;save();if(location.hash==='#/search')render();else location.hash='/search';}});
 
+// Phone header (owner 23 Nov): language dropdown and the search button.
+document.addEventListener('click', e => {
+  const langs = document.getElementById('langs');
+  if (e.target.closest('.lang-btn')) {
+    const open = !langs.classList.contains('open');
+    langs.classList.toggle('open', open);
+    e.target.closest('.lang-btn').setAttribute('aria-expanded', String(open));
+    return;
+  }
+  if (langs && langs.classList.contains('open') && (!e.target.closest('#langs') || e.target.closest('[data-lang]'))) {
+    langs.classList.remove('open'); langs.querySelector('.lang-btn')?.setAttribute('aria-expanded', 'false');
+  }
+  if (e.target.closest('#msrchBtn')) {
+    document.body.classList.add('srch-open');
+    window.scrollTo(0, 0);
+    const q = document.getElementById('q'); if (q) setTimeout(() => q.focus(), 30);
+  }
+});
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  const langs = document.getElementById('langs');
+  if (langs?.classList.contains('open')) { langs.classList.remove('open'); langs.querySelector('.lang-btn')?.focus(); }
+});
+window.addEventListener('hashchange', () => document.body.classList.remove('srch-open'));
 render();
 bxObserveHeader();bxObserveCatalogue();bxWatchCatalogueIcons();bxStartFilters();bxStartMobileC();

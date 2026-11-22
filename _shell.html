@@ -1816,6 +1816,23 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
  #main:has(> .shell > .cgrid) .navrow,.shell:has(> .cgrid) > .navrow{display:none}
 }
 @media(max-width:340px){.cgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.ccard>b{font-size:12px}}
+/* Phones (owner 23 Nov): one language button with a caret that opens all three, and a search
+   button left of it that opens the full-width search (product pages hide it otherwise). */
+.lang-btn,.msrch{display:none}
+.lang-list{display:contents}
+@media(max-width:800px){
+ .topnav .mast-r{position:relative;display:flex;align-items:center;gap:2px;order:2;margin-left:auto}
+ .topnav .langs{position:relative;margin-left:0}
+ .msrch,.lang-btn{display:inline-flex;align-items:center;justify-content:center;gap:4px;min-width:40px;height:40px;padding:0 8px;background:none;border:0;border-radius:10px;color:var(--text);cursor:pointer;font:inherit;font-size:13px;font-weight:600}
+ .msrch svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:2}
+ .lang-btn i{width:0;height:0;border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid currentColor;transition:transform .15s}
+ .langs.open .lang-btn i{transform:rotate(180deg)}
+ .lang-list{display:none}
+ .langs.open .lang-list{display:flex;flex-direction:column;position:absolute;top:calc(100% + 6px);right:0;z-index:90;min-width:120px;padding:6px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 10px 30px var(--ink-39)}
+ .langs.open .lang-list [data-lang]{display:flex;padding:11px 12px;font-size:14px;border-radius:9px;text-decoration:none;color:var(--text)}
+ .langs.open .lang-list [data-lang][aria-current="page"]{background:var(--bg);color:var(--brand-2);text-decoration:none}
+ body.srch-open .topnav .srch{display:block!important;order:4;flex:1 0 100%;max-width:none}
+}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
@@ -1832,6 +1849,7 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
+      <button type="button" class="msrch" id="msrchBtn" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button>
       <span class="langs" id="langs"></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
         <circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 0 0 0 18z" fill="currentColor" stroke="none"/></svg></button>
