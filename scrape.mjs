@@ -1692,9 +1692,12 @@ if (process.argv[2] === '--selftest') {
   PINS.delete('https://example.am/p/1'); PINS.delete('https://example.am/p/2');
   // and the SIM build a human checked beats the slug, which is the only way to read a shop that
   // has its own two builds the wrong way round
+  // 22 Nov: iBolit has since corrected these pages - the 'esim' slugs and titles now sit at the
+  // eSIM price (579 000) and the 'sim' ones at the tray price (599 000) - so the September
+  // bang-pins were re-checked against the shop's own price tiers and now follow the titles.
   const simPinCases = [
-    ['https://ibolit.mobi/product/apple-iphone-18-pro-256gb-sim-glacier/', true],
-    ['https://ibolit.mobi/product/apple-iphone-18-pro-256gb-esim-burgundy/', false],
+    ['https://ibolit.mobi/product/apple-iphone-18-pro-256gb-sim-glacier/', false],
+    ['https://ibolit.mobi/product/apple-iphone-18-pro-256gb-esim-burgundy/', true],
   ];
   for (const [url, want] of simPinCases) {
     const got = SIMPINS.has(url) ? SIMPINS.get(url) : simBuild(url);
