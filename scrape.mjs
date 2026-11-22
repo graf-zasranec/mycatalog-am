@@ -1590,6 +1590,8 @@ if (process.argv[2] === '--selftest') {
   }
   { const h = '{\\"sku\\":\\"RA1\\",\\"price\\":1119000,\\"cash_price\\":\\"1099000.00\\"}';
     if (redstoreCash(h, 'RA1', 1119000) !== 1099000 || redstoreCash(h, 'RA2', 1119000) !== 1119000) { bad++; console.log('FAIL redstoreCash'); } }
+  { const h = '{\\"sku\\":\\"R720744\\",\\"price\\":50,\\"cash_price\\":\\"50000.00\\"}';
+    if (redstoreCash(h, 'R720744', 50) !== 50000 || redstoreCash(h, 'another SKU', 50) !== 50) { bad++; console.log('FAIL REDstore thousands price'); } }
   if (matchPhone('Նոթբուք APPLE MacBook Air 13 (Apple M5) 16GB 1TB (Midnight) (A3449)') !== 'apple-macbook-air-13-m5'
       || matchPhone('APPLE iMac 24 Retina 4.5K (Apple M6) 16GB 256GB (Blue)') !== 'apple-imac-24-m6') { bad++; console.log('FAIL Vega "(Apple M5)" naming'); }
   const colCases = [
@@ -1724,6 +1726,9 @@ function redstoreCash(html, sku, price) {
   const i = html.indexOf(`sku\\":\\"${sku}\\"`); if (i < 0) return price;
   const m = /cash_price\\":\\"(\d+)(?:\.\d+)?\\"/.exec(html.slice(i, i + 600));
   const cash = m ? +m[1] : 0;
+  // Some REDstore records put the price in thousands in schema markup but
+  // retain the complete AMD amount in the same SKU's cash-price field.
+  if (price > 0 && price < 5000 && cash >= 5000 && cash === price * 1000) return cash;
   return cash >= 5000 && cash < price && cash > price * 0.8 ? cash : price;
 }
 async function crawlLd(urls, cap = 6, names = {}) {
