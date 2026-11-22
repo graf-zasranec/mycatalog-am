@@ -2491,6 +2491,8 @@ function detailView(p) {
       && (SEL.size == null || v.size == null || v.size === SEL.size))
     || p.variants.find(v => v.storage === SEL.storage && v.ram === SEL.ram) || p.variants[0] || {};
   const shownPrice = lo ?? variant.priceAmd ?? p.priceAmd;
+  const hasShownPrice = Number.isFinite(shownPrice) && shownPrice > 0;
+  const noOffersLabel = x(hasShownPrice ? 'estimated' : 'notSold');
   const rows = perShop(offs);
   // what "best price" is the best price OF, said next to it: the size, and the SIM build when chosen
   const multi = new Set((p.variants || []).map(v => v.storage).filter(v => v != null)).size > 1;
@@ -2563,7 +2565,7 @@ function detailView(p) {
     <div class="pstage">
       <div class="pmeta">
         <span>${esc(p.brand)}${tierLabel(p) ? ' / ' + esc(tierLabel(p)) : ''}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
-        <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
+        <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(noOffersLabel)}</span>
       </div>
       <h1 class="pname"><span class="pn">${esc(fullName(p))}</span>${nameTag(p, SEL.size)}</h1>
       <div class="pgrid">
@@ -2594,8 +2596,8 @@ function detailView(p) {
           ${PDP2 && keys.length ? `<ul class="p2-keys">${keys.map(([k, v]) => `<li><span>${esc(t(k === 'f.storage' ? storageLabel(p) : k))}</span> ${esc(tr(v, st.lang))}</li>`).join('')}</ul>
           <button type="button" class="p2-more" data-p2-specs>${esc(t('detail.full_specs'))}<span>${nSpecs}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>` : ''}
           <div class="pprice2">
-            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x(Number.isFinite(shownPrice) && shownPrice > 0 ? 'estimated' : 'notSold'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
-            <div class="pp-row"><b class="num">${Number.isFinite(shownPrice) && shownPrice > 0 ? money(shownPrice) + ' ֏' : '—'}</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
+            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(noOffersLabel)}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
+            <div class="pp-row"><b class="num">${hasShownPrice ? money(shownPrice) + ' ֏' : '—'}</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
             ${rows.length > 1 || verdict ? `<div class="pp-pills">${rows.length > 1 && rows[rows.length - 1].price > lo
               ? `<span class="hp good">${esc(x('lessDearest').replace('{n}', money(rows[rows.length - 1].price - lo)))}</span>` : ''}${verdict}</div>` : ''}
             ${rows.length ? `<div class="shopn">${esc(nx(rows.length, 'shops'))}</div>` : ''}
