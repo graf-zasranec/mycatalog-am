@@ -1384,6 +1384,9 @@ function paintChrome() {
     + ['hy', 'ru', 'en'].map(l =>
     `<a href="${languageHref(l)}" data-lang="${l}" lang="${l}" hreflang="${l}"${st.lang === l ? ' aria-current="page"' : ''}>${LANG_LBL[l]}</a>`).join('') + '</span>';
   const ms = $('#msrchBtn'); if (ms) ms.setAttribute('aria-label', t('nav.search_placeholder'));
+  $('#mCat')?.setAttribute('aria-label', t('nav.catalog')); $('#mCmp')?.setAttribute('aria-label', t('nav.compare'));
+  const cur = (el, on) => { if (!el) return; if (on) el.setAttribute('aria-current', 'page'); else el.removeAttribute?.('aria-current'); };
+  cur($('#mCat'), /^#\/(c\/|catalog|construct)/.test(location.hash)); cur($('#mCmp'), location.hash === '#/compare');
   const tb = $('#themeBtn');
   tb.setAttribute('aria-label', t('common.theme') + ': ' + st.theme);
   tb.setAttribute('title', t('common.theme'));
@@ -1436,6 +1439,7 @@ function paintCmpCount() {
 }
 function paintTray() {
   paintCmpCount();
+  const mn = $('#mCmpN'); if (mn) { mn.textContent = st.cmp.length || ''; mn.hidden = !st.cmp.length; }
   const selection = $('#compareSelection');
   if (selection) {
     const show = st.cmp.length > 0 && location.hash !== '#/compare';
@@ -3989,6 +3993,19 @@ document.addEventListener('keydown', e => {
   const langs = document.getElementById('langs');
   if (langs?.classList.contains('open')) { langs.classList.remove('open'); langs.querySelector('.lang-btn')?.focus(); }
 });
-window.addEventListener('hashchange', () => document.body.classList.remove('srch-open'));
+window.addEventListener('hashchange', () => { document.body.classList.remove('mbar-hide'); if (location.hash !== '#/search') document.body.classList.remove('srch-open'); });
+// Filters/Sort bar on phones: hide while scrolling down, show again on any scroll up (owner 23 Nov).
+{ let lastY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY, b = document.body;
+    if (!matchMedia('(max-width:800px)').matches) { b.classList.remove('mbar-hide'); lastY = y; return; }
+    // only once the bar is stuck to the top: in its normal place (home page, below the hero) it stays visible
+    const m = document.querySelector('.mbar'), prev = m?.previousElementSibling;
+    const stuck = m && (!prev || prev.getBoundingClientRect().bottom <= parseFloat(getComputedStyle(m).top || '0') + 2);
+    if (!stuck) { b.classList.remove('mbar-hide'); lastY = y; return; }
+    if (y > lastY + 6 && y > 160) b.classList.add('mbar-hide');
+    else if (y < lastY - 6 || y < 160) b.classList.remove('mbar-hide');
+    if (Math.abs(y - lastY) > 6) lastY = y;
+  }, { passive: true }); }
 render();
 bxObserveHeader();bxObserveCatalogue();bxWatchCatalogueIcons();bxStartFilters();bxStartMobileC();

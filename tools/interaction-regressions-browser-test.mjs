@@ -36,16 +36,18 @@ try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const s
   await p.locator('.bx-filter-form [data-rm="all"]').click();
   assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('better.v2')).scrmin),0,'Reset clears legacy screen threshold');checks++;
  }else if(scenario==='focus-ring'){
+  if(await p.locator('#msrchBtn').isVisible()&&!(await p.locator('#q').isVisible()))await p.locator('#msrchBtn').click();
   const q=p.locator('#q');await q.press('Shift+Tab');await p.keyboard.press('Tab');
   const ring=await q.evaluate(el=>({style:getComputedStyle(el).outlineStyle,width:parseFloat(getComputedStyle(el).outlineWidth)}));
   assert.notEqual(ring.style,'none','keyboard search focus has an actual outline');assert.ok(ring.width>=2,'focus outline is visible');checks+=2;
   const langs=await p.locator('#langs a[data-lang]').count();assert.equal(langs,3,'language choices are crawlable anchors');checks++;
  }else{
+  if(await p.locator('#msrchBtn').isVisible()&&!(await p.locator('#q').isVisible()))await p.locator('#msrchBtn').click();
   const q=p.locator('#q');await q.fill('honor x8d');await p.locator('#sugg').waitFor({state:'visible'});await q.press('ArrowDown');
   const active=await q.getAttribute('aria-activedescendant');assert.ok(active,'ArrowDown activates a suggestion');
   assert.equal(await p.locator('#'+active).getAttribute('aria-selected'),'true');
   await q.press('Enter');await p.waitForURL(/#\/p\/honor-x8d$/);await p.waitForSelector('#hpShot');checks+=3;
-  if(width<801){await p.evaluate(()=>{location.hash='#/'});await q.waitFor({state:'visible'});}
+  if(width<801){await p.evaluate(()=>{location.hash='#/'});await p.waitForTimeout(150);if(await p.locator('#msrchBtn').isVisible()&&!(await q.isVisible()))await p.locator('#msrchBtn').click();await q.waitFor({state:'visible'});}
   await q.fill('iphone');await p.locator('#sugg').waitFor({state:'visible'});await q.press('ArrowUp');assert.ok(await q.getAttribute('aria-activedescendant'));
   await q.press('Escape');assert.equal(await q.getAttribute('aria-expanded'),'false');assert.equal(await q.getAttribute('aria-activedescendant'),null);checks+=3;assert.equal(await q.inputValue(),'iphone','Escape dismisses suggestions without erasing the query');checks++;
   await q.press('Enter');await p.waitForURL(/#\/search$/);checks++;await p.waitForFunction(()=>document.querySelector('#results h1')?.textContent.trim()==='iphone');

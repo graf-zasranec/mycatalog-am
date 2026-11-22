@@ -1833,6 +1833,34 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
  .langs.open .lang-list [data-lang][aria-current="page"]{background:var(--bg);color:var(--brand-2);text-decoration:none}
  body.srch-open .topnav .srch{display:block!important;order:4;flex:1 0 100%;max-width:none}
 }
+/* Phones (owner 23 Nov, option A): compact cards (badge, photo, name, price, +), no bottom bar,
+   Catalog/Compare/Search as small header icons, Filters/Sort bar hides on scroll down. */
+.mico{display:none}
+@media(max-width:800px){
+ .mico{display:inline-flex;align-items:center;justify-content:center;position:relative;width:36px;height:40px;color:var(--text);border-radius:10px}
+ .mico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+ .mico[aria-current=page]{color:var(--brand-2)}
+ .mico b{position:absolute;top:3px;right:1px;min-width:16px;padding:1px 4px;border-radius:20px;background:var(--brand);color:var(--ink-5);font-size:10px;line-height:1.3;text-align:center}
+ .mico b[hidden]{display:none}
+ .msrch{min-width:36px;padding:0 6px}
+ .topnav .srch{display:none}
+ .bx-mobile-nav{display:none!important}
+ body,body.has-compare-selection{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
+ body.has-compare-selection{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
+ .compare-selection{bottom:max(14px,env(safe-area-inset-bottom))}
+ .mbar{transition:transform .22s ease}
+ body.mbar-hide .mbar{transform:translateY(-160%);pointer-events:none}
+ .pcard{padding:6px}
+ .pcard .pshot{height:132px;padding:8px}
+ .pcard .pbody{padding:7px 3px 3px}
+ .pcard .pbody h2{font-size:13px;line-height:1.3}
+ .pcard :is(.sc,.product-brand,.poffers,.go){display:none}
+ .pcard .pbody h2 .ny{font-size:10px;padding:1px 5px;vertical-align:1px}
+ .pcard .pfoot{margin-top:7px;padding-top:7px;border-top:1px solid var(--line)}
+ .pcard .pprice{font-size:16px;line-height:1.25;display:flex;flex-wrap:wrap;align-items:baseline;column-gap:6px}
+ .pcard .pprice .price-shop{display:inline;font-size:11px;line-height:1.4;white-space:nowrap}
+}
+@media(max-width:360px){.mico{width:32px}.msrch{min-width:32px;padding:0 4px}.lang-btn{padding:0 5px}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
@@ -1849,6 +1877,8 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
+      <a class="mico" id="mCat" href="#/catalog" aria-label="Catalog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></a>
+      <a class="mico" id="mCmp" href="#/compare" aria-label="Compare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v18M16 3v18M3 7h18M3 17h18"/></svg><b id="mCmpN" hidden></b></a>
       <button type="button" class="msrch" id="msrchBtn" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button>
       <span class="langs" id="langs"></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
