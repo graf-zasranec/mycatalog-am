@@ -178854,5 +178854,52 @@
     "colors": [
       "Luna Grey"
     ]
+  },
+  {
+    "id": "dell-inspiron-15-3511-i7",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Inspiron 15 3511 (i7-1165G7)",
+    "aliases": [
+      "DELL Inspiron 3511 - 7125 i7 16GB I 1TB",
+      "Dell Inspiron 3511"
+    ],
+    "tier": "mid",
+    "priceAmd": 469900,
+    "priceAmdMax": 469900,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7-1165G7"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "os": "Windows 11",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 469900
+      }
+    ],
+    "battery": {},
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "A 15.6-inch Full HD laptop with Intel Core i7-1165G7, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/dell-inspiron-3511-16gb-i-1tb"
+    ]
   }
 ]
