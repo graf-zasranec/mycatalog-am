@@ -175104,6 +175104,58 @@
     ]
   },
   {
+    "id": "sony-alpha-7-iii-body",
+    "category": "camera",
+    "brand": "Sony",
+    "name": "Alpha 7 III (Body)",
+    "aliases": [
+      "Sony A7 III (Body)",
+      "Sony Alpha 7 III Body",
+      "ILCE-7M3",
+      "ILCE7M3/B"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 799000,
+    "priceAmdMax": 799000,
+    "popularity": 40,
+    "accent": "#2E2E30",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 799000
+      }
+    ],
+    "display": {
+      "size": 3,
+      "touch": true
+    },
+    "summaryEn": "24.2 MP full-frame mirrorless camera body with 5-axis stabilization and 4K video.",
+    "unsure": [
+      "popularity"
+    ],
+    "appliance": {
+      "type": "mirrorless"
+    },
+    "body": {
+      "weight": 650,
+      "dimensions": "126.9 × 95.6 × 73.7 mm"
+    },
+    "colors": [
+      "Black"
+    ],
+    "camera": {
+      "main": "24.2 MP full-frame Exmor R CMOS",
+      "video": "4K 30p"
+    },
+    "released": "2018",
+    "sources": [
+      "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications",
+      "https://electronics.sony.com/imaging/interchangeable-lens-cameras/full-frame/p/ilce7m3-b",
+      "https://www.sony.com/ja/SonyInfo/News/Press/201802/18-020/"
+    ]
+  },
+  {
     "id": "sony-alpha-7-iv",
     "category": "camera",
     "brand": "Sony",
