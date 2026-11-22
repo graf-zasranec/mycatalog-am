@@ -1397,7 +1397,8 @@ function paintChrome() {
     `<a href="#/catalog" ${['/catalog', '/construct'].includes(h) ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${x('navCmpShort') ? `<span class="nl">${esc(t('nav.compare'))}</span><span class="ns">${esc(x('navCmpShort'))}</span>` : esc(t('nav.compare'))}`
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
-    + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '');
+    + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '')
+    + `<a href="#/contact" ${h === '/contact' ? 'aria-current="page"' : ''}>${esc(t('nav.coop'))}</a>`;
   paintCmpCount();
   $('#foot').innerHTML = `<b>Better.am</b><a href="${st.lang === 'hy' ? '' : st.lang + '/'}deals/">${esc({ hy: 'Ինչն է էժանացել', ru: 'Что подешевело', en: 'What got cheaper' }[st.lang] || 'What got cheaper')}</a><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
     + `<span class="ft-note">${esc(x('disclaim'))}</span>`
@@ -2708,6 +2709,11 @@ function docView(key, paras) {
       // is a change to data/strings.json and nothing else.
       const c = t('contact.email'), web = /^https?:\/\//i.test(c);
       return `<p><a href="${esc(web ? safeHref(c) : 'mailto:' + c)}"${web ? ' target="_blank" rel="noopener noreferrer"' : ''}>${esc(c.replace(/^https?:\/\//, ''))}</a></p>`;
+    })() : ''}
+    ${key === 'contact' && !/_HERE$/.test(t('contact.email')) && !/^https?:/i.test(t('contact.email')) ? (() => {
+      // owner 23 Nov: a separate line for cooperation, same address for now
+      const c = t('contact.email');
+      return `<p>${esc(t('contact.coop'))}: <a href="mailto:${esc(c)}">${esc(c)}</a></p>`;
     })() : ''}
     </article></div>`;
 }
