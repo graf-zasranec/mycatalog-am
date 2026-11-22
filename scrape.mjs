@@ -1934,10 +1934,7 @@ const SHOPS = {
     name:'Vesta',site:'https://vesta.am',note:'Exact reviewed product pages and current cash prices',
     async run(){const {collectVesta}=await import('./tools/vesta.mjs');return collectVesta({get,pause:()=>sleep(DELAY_MS),products:phones});}
   },
-  likemobile: {
-    name:'LikeMobile',site:'https://likemobile.am',note:'Exact catalogue SKU prices and stock',
-    async run(){const {collectLikeMobile}=await import('./tools/likemobile.mjs');return collectLikeMobile({get,pause:()=>sleep(DELAY_MS),match:matchPhone});}
-  },
+  // likemobile removed from better.am (owner, 23 Nov 2026): reader kept in tools/likemobile.mjs, not crawled
   miarmenia: {
     name:'Mi Armenia',site:'https://miarmenia.am',note:'Reviewed product pages and cash prices',
     async run(){const {collectMiArmenia}=await import('./tools/miarmenia.mjs');return collectMiArmenia({get,pause:()=>sleep(DELAY_MS)});}
