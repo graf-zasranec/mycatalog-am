@@ -2699,7 +2699,12 @@ const SHOPS = {
         // customer pays is the smallest. So ask the endpoint the page itself asks.
         const live = await vlvInfo(vid); await sleep(DELAY_MS);
         const price = live.price || Math.round(Number((o && o.price) || 0));
-        if (!id || !price || price < 5000) continue;
+        if (!id || !price) continue;
+        const reference = Number(phoneById[id]?.priceAmd);
+        // A pinned inexpensive product with explicit stock can have a real sub-5000 price.
+        const verifiedBudgetProduct = pinnedId(u) === id && reference > 0 && reference < 5000
+          && price >= reference * 0.3 && /(?:^|\/)InStock$/i.test(String(o?.availability || ''));
+        if (price < 5000 && !verifiedBudgetProduct) continue;
         // the gallery first; the page's own advertised picture only if the gallery is empty
         const img = (live.image && safeUrl(live.image))
           || safeUrl(String((Array.isArray(p.image) ? p.image[0] : p.image) || '')) || null;

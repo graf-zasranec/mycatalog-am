@@ -41,13 +41,15 @@ export async function fixture(){
  fs.readFileSync=(file,...args)=>String(file)==='data/vlv-index.json'?JSON.stringify({'48548':'JBL CHARGE 6 BLU (AM)'}):read(file,...args);
  PINS.clear();
  PINS.set('https://vlv.am/en/Product/35568','braun-hf3000ibk');
- get=async(url)=>'<script type="application/ld+json">'+JSON.stringify({'@type':'Product',name:url.endsWith('/35568')?'Air fryer':'JBL CHARGE 6 BLU (AM)',offers:{price:52900,availability:'https://schema.org/InStock'}})+'</script>';
- vlvInfo=async()=>({price:52900,image:''});
+ PINS.set('https://vlv.am/en/Product/32094','panasonic-rp-hje118-earphones');
+ get=async(url)=>'<script type="application/ld+json">'+JSON.stringify({'@type':'Product',name:url.endsWith('/32094')?'PANASONIC RP-HJE118GUS Silver Headphones':url.endsWith('/35568')?'Air fryer':'JBL CHARGE 6 BLU (AM)',offers:{price:52900,availability:'https://schema.org/InStock'}})+'</script>';
+ vlvInfo=async(vid)=>({price:vid==='32094'?2900:52900,image:''});
  try{return (await SHOPS.vlv.run()).map(o=>enrich(o));}finally{fs.readFileSync=read;}
 }`;
 const {fixture}=await import('data:text/javascript;base64,'+Buffer.from(prefix+harness).toString('base64'));
 const realAdapter=await fixture();
-assert.equal(realAdapter.length,2);
+assert.equal(realAdapter.length,3);
+assert.equal(realAdapter[2].price,2900,'an in-stock pinned budget model can sell below 5000 AMD');
 assert.equal(realAdapter[1].id,'braun-hf3000ibk','a pinned numeric URL outside the title index is read and matched');
 assert.equal(realAdapter[0].color,'Blue','title color survives real adapter and enrich before deduplication');
 assert.equal(realAdapter[0].colorRaw,'BLU');
