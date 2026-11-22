@@ -5,10 +5,7 @@
 #
 # Three different jobs, and they are not interchangeable:
 #   MISSING   nothing at all -- the page shows a grey box
-#   TOO SMALL under the 700 px floor. This one needs a LARGER ORIGINAL, never an enlargement:
-#             a 545 px picture stretched to 700 is the same picture with softer edges, and the
-#             rule against it exists because that trade reads as sharpness in a file listing and
-#             as mush on the page.
+#   TOO SMALL visible long edge below 600 px. Find a larger original.
 #   DEFECT    there is a photo and something is wrong with it -- see tools/imgcheck.py
 import sys
 import os
@@ -20,11 +17,24 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 CUT = ROOT / 'images' / 'cut'
-FLOOR = 700
-# ...except for products nobody is looking at: a popularity under 10 is a handful of views a
-# month, and there a 500px picture beats the grey box that is there instead. Owner's call,
-# 2026-09-21. Kept in step with tools/cutout.py, which decides what actually gets matted.
-LOW_FLOOR, LOW_POP = 700, 50   # the temporary 500px floor ended 2026-10-04
+FLOOR = 600
+
+def visible_long_edge(image):
+    bounds = image.convert('RGBA').getchannel('A').point(lambda alpha: 255 if alpha > 128 else 0).getbbox()
+    if bounds is None:
+        return 0
+    left, top, right, bottom = bounds
+    return max(right - left, bottom - top)
+
+if '--selftest' in sys.argv:
+    tall = Image.new('RGBA', (367, 1237))
+    tall.paste((1, 2, 3, 255), (20, 18, 345, 1218))
+    assert visible_long_edge(tall) == 1200 >= FLOOR
+    tall.paste((0, 0, 0, 128), (0, 0, 367, 1237))
+    tall.paste((1, 2, 3, 255), (20, 18, 345, 617))
+    assert visible_long_edge(tall) == 599 < FLOOR
+    print('Photo long-edge checks passed')
+    sys.exit(0)
 
 phones = json.loads((ROOT / 'data' / 'phones.json').read_text(encoding='utf8'))
 prices = json.loads((ROOT / 'data' / 'prices.json').read_text(encoding='utf8'))['offers']
@@ -44,11 +54,12 @@ for p in phones:
         rows.append(('missing', p, 0, shops))
         continue
     try:
-        w, _ = Image.open(f).size
+        with Image.open(f) as image:
+            w = visible_long_edge(image)
     except Exception:
         rows.append(('unreadable', p, 0, shops))
         continue
-    if w < (LOW_FLOOR if (p.get('popularity', 100) or 100) < LOW_POP else FLOOR):
+    if w < FLOOR:
         rows.append(('too small', p, w, shops))
 
 # the biggest sellers first: a missing photo costs more on a product people actually look at
@@ -76,7 +87,7 @@ print('by category: ' + '  '.join(f'{k}:{v}' for k, v in sorted(cat.items(), key
 
 if '--csv' in sys.argv:
     out = ROOT / 'data' / 'photos-needed.csv'
-    lines = ['what,id,brand,name,category,shops,width']
+    lines = ['what,id,brand,name,category,shops,visibleLongEdge']
     for kind, p, w, shops in rows:
         lines.append(','.join(str(c).replace(',', ' ') for c in
                               [kind, p['id'], p['brand'], p['name'], p['category'], shops, w or '']))
