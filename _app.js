@@ -3983,6 +3983,8 @@ document.addEventListener('click', e => {
     langs.classList.remove('open'); langs.querySelector('.lang-btn')?.setAttribute('aria-expanded', 'false');
   }
   if (e.target.closest('#msrchBtn')) {
+    // the icon toggles: a second tap closes the bar again (owner 23 Nov)
+    if (document.body.classList.contains('srch-open')) { document.body.classList.remove('srch-open'); document.getElementById('q')?.blur(); return; }
     document.body.classList.add('srch-open');
     window.scrollTo(0, 0);
     const q = document.getElementById('q'); if (q) setTimeout(() => q.focus(), 30);
@@ -3999,6 +4001,8 @@ window.addEventListener('hashchange', () => { document.body.classList.remove('mb
   window.addEventListener('scroll', () => {
     const y = window.scrollY, b = document.body;
     if (!matchMedia('(max-width:800px)').matches) { b.classList.remove('mbar-hide'); lastY = y; return; }
+    // the opened search bar folds away on scroll down unless someone is typing in it
+    if (y > lastY + 6 && b.classList.contains('srch-open') && location.hash !== '#/search' && document.activeElement?.id !== 'q') b.classList.remove('srch-open');
     // only once the bar is stuck to the top: in its normal place (home page, below the hero) it stays visible
     const m = document.querySelector('.mbar'), prev = m?.previousElementSibling;
     const stuck = m && (!prev || prev.getBoundingClientRect().bottom <= parseFloat(getComputedStyle(m).top || '0') + 2);
