@@ -86701,6 +86701,62 @@
     ]
   },
   {
+    "id": "lenovo-thinkbook-16-g8-ial-ultra-5-225u",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkBook 16 G8 IAL Ultra 5 225U",
+    "aliases": [
+      "Lenovo ThinkBook 16 G8 IAL Ultra 5 225U",
+      "Lenovo ThinkBook 16 G8 IAL 225U 16GB 512GB"
+    ],
+    "tier": "mid",
+    "priceAmd": 459000,
+    "priceAmdMax": 459000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "touch": false,
+      "brightness": 300
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 5 225U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1700
+    },
+    "summaryEn": "16-inch business laptop with Intel Core Ultra 5 225U, 16 GB RAM and 512 GB SSD.",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 459000
+      }
+    ],
+    "unsure": [
+      "popularity"
+    ],
+    "colors": [
+      "Arctic Gray"
+    ],
+    "specNA": {
+      "battery.capacity": "Depends on configuration; shop does not state the Lenovo model number",
+      "os": "Depends on configuration; shop does not state the Lenovo model number"
+    },
+    "sources": [
+      "https://psref.lenovo.com/Detail/ThinkBook_16_G8_IAL?M=21SK00D3EK",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkBook/ThinkBook_16_G8_IAL/ThinkBook_16_G8_IAL_Spec.pdf",
+      "https://www.lenovo.com/ca/en/p/laptops/thinkbook/thinkbook-series/lenovo-thinkbook-16-gen-8-16-inch-intel/21sk0093us?IPromoID=LEN703090"
+    ]
+  },
+  {
     "id": "lenovo-thinkbook-16-g8-ial-ultra-5-135h",
     "category": "laptop",
     "brand": "Lenovo",
