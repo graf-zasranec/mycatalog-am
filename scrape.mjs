@@ -2666,25 +2666,33 @@ const SHOPS = {
       const IDX = 'data/vlv-index.json';
       let index = {};
       try { index = JSON.parse(fs.readFileSync(IDX, 'utf8')); } catch { }
-      const ids = Object.entries(index).filter(([, title]) => matchPhone(title)).map(([id]) => id);
+      const productUrl = vid => `https://vlv.am/en/Product/${vid}`;
+      const indexed = Object.entries(index).filter(([vid, title]) => matchPhone(title + ' ' + productUrl(vid))).map(([vid]) => vid);
+      const pinned = [...PINS.keys()].flatMap(url => {
+        const match = /^https:\/\/vlv\.am\/en\/Product\/(\d+)$/.exec(url);
+        return match && matchPhone(url) ? [match[1]] : [];
+      });
+      const ids = [...new Set([...indexed, ...pinned])];
       // No index yet: fall back to the handful of products we already know the numbers for, so
       // the shop still reports prices instead of nothing.
       const SEEDS = ['44014', '41419', '39879'];
       const out = [];
       for (const vid of (ids.length ? ids : SEEDS)) {
-        const u = `https://vlv.am/en/Product/${vid}`;
+        const u = productUrl(vid);
         const html = await get(u); await sleep(DELAY_MS);
         // Suppress a missing destination in the offer output, retaining its
         // index entry so the same URL can recover on a later check.
         if (!html && [404, 410].includes(lastStatus()) && index[vid]) {
-          out.push({id: matchPhone(index[vid]), title: index[vid], url: u, price: 0, inStock: false});
+          out.push({id: matchPhone(index[vid] + ' ' + u), title: index[vid], url: u, price: 0, inStock: false});
         }
         if (!html || !safeUrl(u)) continue;
-        const p = ldProduct(html), o = ldOffer(p);
+        const p = ldProduct(html);
+        if (!p) continue;
+        const o = ldOffer(p);
         const title = clean((p && p.name) || (html.match(/<title>([^<]*)<\/title>/) || [])[1] || '')
           .replace(/^s*Buys+/i, '').replace(/s+in the VLV[^]*$/i, '');
-        // the URL is /Product/44014 and names nothing, so the product is identified by its title
-        const id = matchPhone(title);
+        // Exact URL pins take precedence over the shop's naming.
+        const id = matchPhone(title + ' ' + u);
         // The ld+json price is the catalogue figure and is neither always current nor ever the
         // discounted one: the 65" S95F printed 1,111,000 on the page while its ld+json still said
         // 1,587,000 and its own selling_price said 1,325,810. Three numbers, and the one the

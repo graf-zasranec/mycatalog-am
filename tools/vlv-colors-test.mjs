@@ -39,13 +39,16 @@ const harness=`
 export async function fixture(){
  const read=fs.readFileSync;
  fs.readFileSync=(file,...args)=>String(file)==='data/vlv-index.json'?JSON.stringify({'48548':'JBL CHARGE 6 BLU (AM)'}):read(file,...args);
- get=async()=>'<script type="application/ld+json">'+JSON.stringify({'@type':'Product',name:'JBL CHARGE 6 BLU (AM)',offers:{price:52900,availability:'https://schema.org/InStock'}})+'</script>';
+ PINS.clear();
+ PINS.set('https://vlv.am/en/Product/35568','braun-hf3000ibk');
+ get=async(url)=>'<script type="application/ld+json">'+JSON.stringify({'@type':'Product',name:url.endsWith('/35568')?'Air fryer':'JBL CHARGE 6 BLU (AM)',offers:{price:52900,availability:'https://schema.org/InStock'}})+'</script>';
  vlvInfo=async()=>({price:52900,image:''});
  try{return (await SHOPS.vlv.run()).map(o=>enrich(o));}finally{fs.readFileSync=read;}
 }`;
 const {fixture}=await import('data:text/javascript;base64,'+Buffer.from(prefix+harness).toString('base64'));
 const realAdapter=await fixture();
-assert.equal(realAdapter.length,1);
+assert.equal(realAdapter.length,2);
+assert.equal(realAdapter[1].id,'braun-hf3000ibk','a pinned numeric URL outside the title index is read and matched');
 assert.equal(realAdapter[0].color,'Blue','title color survives real adapter and enrich before deduplication');
 assert.equal(realAdapter[0].colorRaw,'BLU');
 console.log('VLV_ADAPTER_PASS: numeric product URL and title-index crawl retain explicit Blue');
