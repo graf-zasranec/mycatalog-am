@@ -92,7 +92,7 @@ const X = {
     plugF: 'Միակցիչ', plugs: { 'usb-c': 'USB-C', lightning: 'Lightning', '3.5': '3.5 մմ' },
     gamingF: 'Խաղային', resF: 'Թույլատրություն',
     atypeF: 'Տեսակ', powerF: 'Հզորություն', volF: 'Ծավալ', loadF: 'Բեռնվածություն', btuF: 'Սառեցման հզորություն', setsF: 'Սպասքի լրակազմեր', setsU: 'լրակազմ',
-    spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Party', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
+    spkF: 'Տեսակ', spks: { portable: 'Դյուրակիր', party: 'Խնջույքի', smart: 'Խելացի (Wi-Fi)', home: 'Տնային' },
     waters: { splash: 'Ցանկոտումից պաշտպանված', dip: 'Ջրի մեջ ընկղման դիմացկուն' },
     heroTag: 'Նոր թողարկում', heroA: 'Համեմատի՛ր և գտի՛ր', heroB: 'լավագույն գինը',
     heroSub: 'Բոլոր գները՝ մեկ տեղում։ Համեմատի՛ր և ընտրի՛ր քոնը։',
@@ -411,7 +411,7 @@ function chooseConfig(p, current, axis, value) {
   })[0];
   const chosen = next ? { ...current, ...Object.fromEntries(['cpu', 'ram', 'storage', 'size'].map(k => [k, next[k] ?? null])),
     band: next.band ?? current.band, color: next.color ?? current.color,
-    cell: next.cell ?? null, nt: next.nt ?? null, esim: next.esim ?? null, configSpecs: next.configSpecs || null, [axis]: value }
+    cell: next.cell ?? null, nt: next.nt ?? null, esim: simPicker(p) ? next.esim ?? null : null, configSpecs: next.configSpecs || null, [axis]: value }
     : { ...current, [axis]: value };
   if (chosen.color && !selectionOffers(p, chosen).length) {
     const available = selectionOffers(p, { ...chosen, color: null });
@@ -432,7 +432,7 @@ function selectionOffers(p, sel) {
       && (sel.size == null || c.size === sel.size || (screens.size < 2 && c.size == null))
       && (!sel.band || !o.band || o.band === sel.band)
       && (!sel.color || !o.color || o.color === sel.color)
-      && (sel.esim == null || o.esim === sel.esim)
+      && (sel.esim == null || !simPicker(p) || o.esim === sel.esim)
       && (sel.cell == null || o.cell === sel.cell)
       && (sel.nt == null || !!o.nt === sel.nt);
   });
@@ -451,6 +451,15 @@ const filterValues = (p, key) => (hasReal(p) ? offersFor(p).map(o => offerConfig
   .map(v => v[key]).filter(v => Number.isFinite(v) && v > 0);
 const catalogPrice = (p, s = st) => catalogOffers(p, s)[0]?.price
   ?? (!hasReal(p) ? catalogVariants(p, s)[0]?.priceAmd ?? p.priceAmd : null);
+// The SIM axis exists only where the page shows a SIM picker: the phone takes both builds and
+// shops sell both. Elsewhere a SIM label on some offers must not filter the others away.
+function simPicker(p) {
+  const sim = ((p.connectivity || {}).sim || '').toLowerCase(), all = offersFor(p);
+  return /nano/.test(sim) && /esim/.test(sim) && all.some(o => o.esim === true) && all.some(o => o.esim === false);
+}
+// Data uses a few tier synonyms; show them through the four translated tiers, or not at all.
+const TIER_ALIAS = { midrange: 'mid', premium: 'flagship', upper: 'upper-mid' };
+const tierLabel = p => (X[st.lang] || X.en).tier[TIER_ALIAS[p.tier] || p.tier] || '';
 function initialConfig(p) {
   // A new product visit starts at its real lowest price, independently of listing
   // filters. For equal prices prefer the smaller purchasable memory combination.
@@ -461,7 +470,7 @@ function initialConfig(p) {
   const capacities=(p.variants||[]).map(v=>v.storage).filter(v=>v!=null);
   return { id: p.id, color: o?.color || p.colors?.[0] || null, ram: v.ram ?? null,
     storage: v.storage ?? (p.variantUnit!=='mm'&&capacities.length?Math.min(...capacities):null), size: v.size ?? null,
-    band: v.band ?? null, cpu: v.cpu ?? null, configSpecs: v.configSpecs || null, esim: typeof o?.esim === 'boolean' ? o.esim : null,
+    band: v.band ?? null, cpu: v.cpu ?? null, configSpecs: v.configSpecs || null, esim: simPicker(p) && typeof o?.esim === 'boolean' ? o.esim : null,
     cell: typeof o?.cell === 'boolean' ? o.cell : null, nt: typeof o?.nt === 'boolean' ? o.nt : null };
 }
 function selectedProduct(p, sel) {
@@ -757,7 +766,13 @@ const SEARCH_ALIASES = new Map([
   ['էյսեր','acer'],['эйсер','acer'],['ռեդմի','redmi'],['редми','redmi'],
   ['հուավեյ','huawei'],['хуавей','huawei'],['хуавэй','huawei'],
   ['պլանշետ','tablet'],['планшет','tablet'],['էփլ','apple'],['էպլ','apple'],['эпл','apple'],['эппл','apple'],
-  ['դելոնգի','delonghi'],['делонги','delonghi'],['նեսպրեսո','nespresso'],['неспрессо','nespresso'],['миле','miele'],['միլե','miele']
+  ['դելոնգի','delonghi'],['делонги','delonghi'],['նեսպրեսո','nespresso'],['неспрессо','nespresso'],['миле','miele'],['միլե','miele'],
+  // model words people type in their own alphabet (bug hunt 22 Nov: 'айфон 17 про' found nothing)
+  ['про','pro'],['պրո','pro'],['макс','max'],['մաքս','max'],['мини','mini'],['մինի','mini'],['эйр','air'],['էյր','air'],['ультра','ultra'],['ուլտրա','ultra'],
+  ['айпад','ipad'],['այպադ','ipad'],['макбук','macbook'],['մակբուք','macbook'],['эйрподс','airpods'],['էյրփոդս','airpods'],['эирподс','airpods'],
+  ['сяоми','xiaomi'],['ксиоми','xiaomi'],['ксяоми','xiaomi'],['շաոմի','xiaomi'],['քսիաոմի','xiaomi'],['пиксель','pixel'],['պիքսել','pixel'],
+  ['галакси','galaxy'],['գալաքսի','galaxy'],['плейстейшн','playstation'],['փլեյսթեյշն','playstation'],['дайсон','dyson'],['դայսոն','dyson'],
+  ['сони','sony'],['սոնի','sony'],['леново','lenovo'],['լենովո','lenovo'],['асус','asus'],['ասուս','asus']
 ]);
 const canonicalSearch = q => String(q || '').normalize('NFKC').toLowerCase().slice(0,120).replace(/[\p{L}]+/gu, word => {
   if (SEARCH_ALIASES.has(word)) return SEARCH_ALIASES.get(word);
@@ -2512,9 +2527,7 @@ function detailView(p) {
   // has nothing to choose, and a row of chips you cannot act on is noise; the spec table below
   // already says which SIMs it takes.
   const simAll = offersFor(p);
-  const simPick = /nano/.test(((p.connectivity || {}).sim || '').toLowerCase())
-    && /esim/.test(((p.connectivity || {}).sim || '').toLowerCase())
-    && simAll.some(o => o.esim === true) && simAll.some(o => o.esim === false);
+  const simPick = simPicker(p);
   const simOpts = simPick ? [['Nano-SIM', false], ['eSIM', true]] : [];
   const cellPick = simAll.some(o => o.cell === true) && simAll.some(o => o.cell === false);
   const ntPick = simAll.some(o => o.nt === true) && simAll.some(o => o.nt === false);
@@ -2549,7 +2562,7 @@ function detailView(p) {
 
     <div class="pstage">
       <div class="pmeta">
-        <span>${esc(p.brand)} / ${esc(X[L].tier[p.tier] || p.tier)}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
+        <span>${esc(p.brand)}${tierLabel(p) ? ' / ' + esc(tierLabel(p)) : ''}${isNew(p) ? ' / ' + esc(x('newBadge')) : ''}</span>
         <span>${offs.length ? esc(nx(shopCount(offs), 'shops')) + ' · ' + esc(updatedOn()) : esc(x('estimated'))}</span>
       </div>
       <h1 class="pname"><span class="pn">${esc(fullName(p))}</span>${nameTag(p, SEL.size)}</h1>
@@ -2581,8 +2594,8 @@ function detailView(p) {
           ${PDP2 && keys.length ? `<ul class="p2-keys">${keys.map(([k, v]) => `<li><span>${esc(t(k === 'f.storage' ? storageLabel(p) : k))}</span> ${esc(tr(v, st.lang))}</li>`).join('')}</ul>
           <button type="button" class="p2-more" data-p2-specs>${esc(t('detail.full_specs'))}<span>${nSpecs}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>` : ''}
           <div class="pprice2">
-            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x('estimated'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
-            <div class="pp-row"><b class="num">${money(shownPrice)} ֏</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
+            <span class="lb">${offs.length ? esc(x('bestPrice')) : esc(x(Number.isFinite(shownPrice) && shownPrice > 0 ? 'estimated' : 'notSold'))}${offs.length && cfgLbl ? ' · ' + esc(cfgLbl) : ''}</span>
+            <div class="pp-row"><b class="num">${Number.isFinite(shownPrice) && shownPrice > 0 ? money(shownPrice) + ' ֏' : '—'}</b>${rows.length ? `<span class="pp-at">${esc(x('atShop').replace('{shop}', shopName(rows[0].shop)))}</span>` : ''}</div>
             ${rows.length > 1 || verdict ? `<div class="pp-pills">${rows.length > 1 && rows[rows.length - 1].price > lo
               ? `<span class="hp good">${esc(x('lessDearest').replace('{n}', money(rows[rows.length - 1].price - lo)))}</span>` : ''}${verdict}</div>` : ''}
             ${rows.length ? `<div class="shopn">${esc(nx(rows.length, 'shops'))}</div>` : ''}

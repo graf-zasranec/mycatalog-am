@@ -1644,6 +1644,7 @@ body,button,input,select,textarea,.bx-price,.bx-stats b,.bx-category h2{font-fam
  body:has(.product-page) .topnav{border-bottom:0}
  .product-page>.navrow{display:none}
  body:has(.pdp2){padding-bottom:0}
+ body.has-compare-selection:has(.pdp2){padding-bottom:calc(160px + env(safe-area-inset-bottom,0px))}
  .pdp2 .pside>.og{border:0;padding:0;margin:14px 0 0}
  .pdp2 .pside>.og:not(:has(.cs))>label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
  .pdp2 .pside>.og .bs{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:8px}
