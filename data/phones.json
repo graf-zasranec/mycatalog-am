@@ -77438,6 +77438,61 @@
     ]
   },
   {
+    "id": "lenovo-thinkpad-x9-15-gen-1-ultra-7-268v",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad X9-15 Gen 1 Aura Edition Ultra 7 268V",
+    "aliases": [
+      "Lenovo ThinkPad X9 15 Aura Edition Ultra 7 268V",
+      "ThinkPad X9-15 268V 32GB 1TB"
+    ],
+    "tier": "upper-mid",
+    "priceAmd": 1159000,
+    "priceAmdMax": 1159000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "type": "OLED",
+      "resolution": "2880x1800",
+      "refresh": 120
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 268V"
+    },
+    "graphics": {
+      "name": "Intel Arc 140V Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1400,
+      "dimensions": "339.55 × 228.5 × 12.9 mm"
+    },
+    "summaryEn": "15.3-inch OLED ThinkPad with Intel Core Ultra 7 268V, 32 GB RAM and 1 TB SSD.",
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 1159000
+      }
+    ],
+    "battery": {
+      "capacity": 80
+    },
+    "unsure": [
+      "popularity"
+    ],
+    "specNA": {
+      "display.touch": "Depends on configuration; shop does not state the Lenovo model number",
+      "os": "Depends on configuration; shop does not state the Lenovo model number"
+    },
+    "sources": [
+      "https://psref.lenovo.com/Detail/2706?M=21Q60025US",
+      "https://psref.lenovo.com/syspool/Sys/PDF/ThinkPad/ThinkPad_X9_15_Gen_1_Aura_Edition/ThinkPad_X9_15_Gen_1_Aura_Edition_Spec.PDF",
+      "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadx9/thinkpad-x9-aura-edition-15-inch-intel/21q6002bus"
+    ]
+  },
+  {
     "id": "lenovo-thinkpad-x9-g1-aura-edition-15-3-ultra-7-258v-w11p-21q6006afw",
     "category": "laptop",
     "brand": "Lenovo",
