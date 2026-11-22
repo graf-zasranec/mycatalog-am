@@ -35352,7 +35352,7 @@
       "type": "OLED",
       "resolution": "2880x1800",
       "refresh": 120,
-      "touch": false
+      "touch": true
     },
     "chipset": {
       "name": "Intel Core Ultra 7-258V"
@@ -35383,6 +35383,9 @@
     "year": 2025,
     "colors": [
       "Blue"
+    ],
+    "sources": [
+      "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_9_2_in_1_14ILL10/Yoga_9_2_in_1_14ILL10_Spec.pdf"
     ]
   },
   {
@@ -39163,10 +39166,12 @@
     },
     "sources": [
       "https://www.zigzag.am/am/nothing-headphone-1-white-6974434224179.html",
-      "https://versus.com/"
+      "https://versus.com/",
+      "https://us.nothing.tech/products/headphone-1"
     ],
     "colors": [
-      "White"
+      "White",
+      "Black"
     ]
   },
   {
