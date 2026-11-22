@@ -178809,5 +178809,52 @@
     "sources": [
       "https://redstore.am/en/product/google-pixel-watch-chalk"
     ]
+  },
+  {
+    "id": "lenovo-ideapad-slim-3-15arp10-83k700tuus",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "IdeaPad Slim 3 15ARP10 83K700TUUS",
+    "aliases": [
+      "Lenovo IdeaPad Slim 3 15ARP10 Ryzen 7 16GB I 512GB (83K700TUUS)"
+    ],
+    "tier": "mid",
+    "priceAmd": 349000,
+    "priceAmdMax": 349000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.3,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 170"
+    },
+    "graphics": {
+      "name": "AMD Radeon 680M",
+      "type": "integrated"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 349000
+      }
+    ],
+    "battery": {},
+    "summaryEn": "A 15.3-inch laptop with AMD Ryzen 7 170.",
+    "unsure": [
+      "popularity",
+      "body.weight",
+      "battery.capacity"
+    ],
+    "sources": [
+      "https://allsell.am/en/lenovo-ideapad-slim-3-15arp10-ryzen-7-16gb-i-512gb-83k700tuus",
+      "https://psref.lenovo.com/detail/IdeaPad_Slim_3_15ARP10?M=83K700TUUS"
+    ],
+    "colors": [
+      "Luna Grey"
+    ]
   }
 ]
