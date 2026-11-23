@@ -179454,5 +179454,62 @@
       "https://www.acer.com/us-en/laptops/swift/swift-go-16/pdp/NX.KSPAA.009",
       "https://images.acer.com/is/image/acer/0-etailer-hero-acer-swift-go-16-sfg16-72t-with-fingerprint-with-backlit-on-wp-ai-steel-gray-01-1?fmt=png-alpha&wid=1800"
     ]
+  },
+  {
+    "id": "acer-nitro-v-16-anv16-i31-76n7",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V 16 ANV16-I31-76N7",
+    "aliases": [
+      "Acer Nitro V16 ANV16-I31-76N7 i7 16GB I 512GB RTX 5050",
+      "NH.U7SAA.001"
+    ],
+    "tier": "mid",
+    "priceAmd": 575000,
+    "priceAmdMax": 575000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 165,
+      "touch": false
+    },
+    "chipset": {
+      "name": "Intel Core 7 240H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5050 8GB",
+      "type": "discrete"
+    },
+    "body": {
+      "weight": 2100
+    },
+    "battery": {
+      "capacity": 76
+    },
+    "connectivity": {
+      "ports": "2× USB-A 3.2 Gen 1, USB-A 3.2 Gen 2, USB-C 3.2 Gen 2, HDMI, Ethernet"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 575000
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "A 16-inch gaming laptop with Intel Core 7 240H, RTX 5050, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.acer.com/us-en/laptops/nitro/nitro-v-16/pdp/NH.U7SAA.001",
+      "https://images.acer.com/is/image/acer/acer-nitro-v-16-anv16-i31-non-fingerprint-with-backlit-on-wp-logo-black-01-1?fmt=png-alpha&wid=1800"
+    ]
   }
 ]
