@@ -934,12 +934,6 @@ const low30 = p => {
   const l = pts.filter(x => x.d >= since).map(x => x.lo).filter(Number.isFinite);
   return l.length > 1 ? Math.min(...l) : null;
 };
-// the day the price last moved - what a sitemap's lastmod is meant to say
-const movedOn = p => {
-  const pts = (HISTORY.points || {})[p.id] || [];
-  for (let i = pts.length - 1; i > 0; i--) if (pts[i].lo !== pts[i - 1].lo || pts[i].hi !== pts[i - 1].hi) return pts[i].d;
-  return pts.length ? pts[0].d : null;
-};
 // one row per shop and capacity, its cheapest - five colours of one phone at one price are one
 // offer to a reader, and colour names would be English on an Armenian page
 const rows = offs => { const seen = new Set(); return offs.filter(o => {
@@ -1189,7 +1183,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, interactiveProduct(page, lang, p, relLinks));
-    sitemapRows.push([url, movedOn(p) || today, 0.7]);
+    if (offs.length) sitemapRows.push([url, null, 0.7]);
     shared++;
   }
   // One page per section, and one per brand inside it ("Samsung phones") wherever a brand has three
@@ -1223,7 +1217,7 @@ ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](li
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, page);
-    sitemapRows.push([url, today, 0.8]);
+    sitemapRows.push([url, null, 0.8]);
   };
   const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   for (const c of cats) {
@@ -1309,7 +1303,7 @@ ${TOP(lang, 'deals/')}
 <p class="upd">${today.split('-').reverse().join('.')}</p>
 </main>${FOOT(lang)}</body></html>
 `);
-  sitemapRows.push([url, today, 0.8]);
+  sitemapRows.push([url, null, 0.8]);
 }
 if (BLOG.length) for (const lang of LANGS) {
   const t = L[lang], pre = PRE[lang], home = SITE + pre, app = lang === 'hy' ? '' : `?lang=${lang}`;
@@ -1332,7 +1326,7 @@ ${TOP(lang, 'b/')}
     const A = a[lang], url = `${bUrl}${a.id}/`;
     const articleImage = a.cover && fs.existsSync(a.cover) ? a.cover : fs.existsSync(`images/blog/${a.id}.jpg`) ? `images/blog/${a.id}.jpg` : null;
     const ld = [{ '@context': 'https://schema.org', '@type': 'Article', headline: A.title, description: A.lead,
-      datePublished: a.date, dateModified: A.body.some(s => s.startsWith('!items:')) ? today : a.modified || a.date, inLanguage: lang, url, mainEntityOfPage: url,
+      datePublished: a.date, ...(A.body.some(s => s.startsWith('!items:')) ? {} : { dateModified: a.modified || a.date }), inLanguage: lang, url, mainEntityOfPage: url,
       ...(articleImage ? { image: SITE + articleImage } : {}),
       author: { '@type': 'Organization', name: 'Better.am', url: SITE },
       publisher: { '@type': 'Organization', name: 'Better.am', url: SITE } },
@@ -1358,7 +1352,7 @@ ${(a.sources || []).length ? `<p class="upd">${t.sources}${a.sources.filter(s =>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
 </main>${FOOT(lang)}</body></html>
 `);
-    sitemapRows.push([url, A.body.some(s => s.startsWith('!items:')) ? today : a.modified || a.date, 0.7]);
+    sitemapRows.push([url, A.body.some(s => s.startsWith('!items:')) ? null : a.modified || a.date, 0.7]);
   }
 }
 // A product folded into another keeps its url: the share page and any link to it that was
@@ -1422,7 +1416,7 @@ for (const lang of ['ru','en']) {
     .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/,'$1'+links(rendered.nav)+'</nav>')
     .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/,'$1'+rendered.langs+'</span>')
     .replace(/(<div class="shell" id="foot">)[\s\S]*?<\/div><\/footer>/,'$1'+links(rendered.foot)+'</div></footer>');
-  writePage(pre+'index.html',head+'</head>'+body);sitemapRows.push([url,today,1]);
+  writePage(pre+'index.html',head+'</head>'+body);sitemapRows.push([url,null,1]);
 }
 // Only generated index files inside the known publication trees are removed. Keep
 // unrelated files, and keep every translated merged-product redirect.
@@ -1440,11 +1434,16 @@ const prunePages = dir => {
 };
 for (const pre of ['', 'ru/', 'en/']) for (const tree of ['p', 'c', 'b']) prunePages(pre + tree);
 fs.writeFileSync('data/page-manifest.json', JSON.stringify(generatedPages, null, 1) + '\n');
-const modifiedAt = url => generatedPages[(new URL(url).pathname.slice(1) || '') + 'index.html']?.modified || today;
+const sitemapLastmod = (url, knownDate) => {
+  const key = new URL(url).pathname.slice(1) + 'index.html';
+  // A clean CI checkout has no previous page manifest. Use only a known content date.
+  const modified = previousPages[key] ? generatedPages[key]?.modified : knownDate;
+  return modified ? `<lastmod>${modified}</lastmod>` : '';
+};
 fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>${SITE}</loc><lastmod>${modifiedAt(SITE)}</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
-${sitemapRows.map(([u, d, pr]) => ` <url><loc>${u}</loc><lastmod>${modifiedAt(u)}</lastmod><priority>${pr}</priority></url>`).join('\n')}
+ <url><loc>${SITE}</loc>${sitemapLastmod(SITE)}<changefreq>daily</changefreq><priority>1.0</priority></url>
+${sitemapRows.map(([u, d, pr]) => ` <url><loc>${u}</loc>${sitemapLastmod(u, d)}<priority>${pr}</priority></url>`).join('\n')}
 </urlset>
 `);
 // Search Console stuck on "Couldn't fetch" for sitemap.xml since 2026-10-06 (owner, 2026-10-16): a
@@ -1455,10 +1454,10 @@ for (const lang of ['hy', 'ru', 'en']) {
   const rows = [[SITE, null, 1], ...sitemapRows].filter(([u]) => langOf(u) === lang);
   fs.writeFileSync(`sitemap-${lang}.xml`, `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${rows.map(([u, , pr]) => ` <url><loc>${u}</loc><lastmod>${modifiedAt(u)}</lastmod><priority>${pr}</priority></url>`).join('\n')}
+${rows.map(([u, d, pr]) => ` <url><loc>${u}</loc>${sitemapLastmod(u, d)}<priority>${pr}</priority></url>`).join('\n')}
 </urlset>
 `);
-  indexParts.push(` <sitemap><loc>${SITE}sitemap-${lang}.xml</loc><lastmod>${today}</lastmod></sitemap>`);
+  indexParts.push(` <sitemap><loc>${SITE}sitemap-${lang}.xml</loc></sitemap>`);
 }
 fs.writeFileSync('sitemap-index.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
