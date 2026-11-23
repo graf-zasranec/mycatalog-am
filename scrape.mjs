@@ -1715,8 +1715,33 @@ if (process.argv[2] === '--selftest') {
     ['https://ispace.am/product/ipad-mini-a20-pro-512-gb-wi-fi-nano-texture', true], ['MacBook Pro 14 M5 16/512 Space Black', false], ['iPhone 17 Pro Nano-SIM', false]])
     if (ntOf(title) !== want) { bad++; console.log(`FAIL  nano-texture got=${ntOf(title)} want=${want}  <- ${title}`); }
   for (const [title, want] of cellCases) if (cellOf(title) !== want) { bad++; console.log(`FAIL  cell got=${cellOf(title)} want=${want}  <- ${title}`); }
-  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + cellCases.length + 1} checks pass`);
+  const saleCases = [
+    [vegaCardPrice, '<div class="price" data-price-value="399000" data-special-value="334900"><div class="price-old price_value">399 000 ֏</div><div class="price-new special_value">334 900 ֏</div></div>', 334900],
+    [vegaCardPrice, '<div class="price" data-price-value="18900" data-special-value=""><div class="price-default price_value">18 900 ֏</div></div>', 18900],
+    [ispacePagePrice, '<div data-test="product-price-old"><!--[-->1 021 900 ֏<!--]--></div><p data-test="product-price-final"><!--[-->926 900 ֏<!--]--></p>', 926900, '1021900'],
+    [ispacePagePrice, '<p data-test="product-price-final"><!--[--> ֏<!--]--></p>', 63900, '63900'],
+  ];
+  for (const [read, html, want, regular] of saleCases) {
+    const got = read(html, regular);
+    if (got !== want) { bad++; console.log(`FAIL ${read.name} sale price got=${got} want=${want}`); }
+  }
+  console.log(bad ? `${bad} failure(s)` : `all ${cases.length + st.length + ramCases.length + colCases.length + urlCases.length + priceCases.length + stockCases.length + simCases.length + pixCases.length + mcCases.length + medCases.length + buildCases.length + flipCases.length + capCases.length + labelCases.length + pinCases.length + simPinCases.length + cellCases.length + saleCases.length + 1} checks pass`);
   process.exit(bad ? 1 : 0);
+}
+
+// Vega publishes the regular and the payable special price together on each product tile.
+function vegaCardPrice(html) {
+  const tag = html.match(/<div\b[^>]*\bdata-price-value="\d+"[^>]*>/i)?.[0] || '';
+  const regular = Number(tag.match(/\bdata-price-value="(\d+)"/i)?.[1]);
+  const special = Number(tag.match(/\bdata-special-value="(\d+)"/i)?.[1]);
+  return special > 0 && special < regular ? special : regular;
+}
+
+// iSpace's Product schema can retain the old price during the sale.
+function ispacePagePrice(html, regular) {
+  const final = clean(html.match(/<p\b[^>]*\bdata-test="product-price-final"[^>]*>([\s\S]*?)<\/p>/i)?.[1] || '');
+  const payable = /^([\d\s]+)\s*֏$/.exec(final);
+  return Number(payable?.[1].replace(/\s/g, '')) || Number(regular);
 }
 
 // Shared by the two JSON-LD shops: filter candidate URLs by matchPhone first so only pages that
@@ -1992,7 +2017,7 @@ const SHOPS = {
             seen.add(sib); queue.push(sib);
           }
           const pr = ldJson(ph).find(j => j['@type'] === 'Product');
-          const price = Number(pr?.offers?.price);
+          const price = ispacePagePrice(ph, pr?.offers?.price);
           if (!pr || !price) continue;
           const id = matchPhone(pr.name + ' ' + u);
           const safe = safeUrl(u);
@@ -2045,7 +2070,7 @@ const SHOPS = {
         for (const b of blocks) {
           const url = (b.match(/href="(https:\/\/vega\.am\/[^"]*\.html)"/) || [])[1];
           const title = clean((b.match(/alt="([^"]{10,})"/) || [])[1] || '');
-          const price = Number((b.match(/data-price-value="(\d+)"/) || [])[1]);
+          const price = vegaCardPrice(b);
           if (!url || !title || !price || !safeUrl(url) || seen.has(url)) continue;
           seen.add(url); fresh++;
           const id = matchPhone(title + ' ' + url, { price, url }) || matchPhone(title, { price, url });
