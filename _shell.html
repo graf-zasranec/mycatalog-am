@@ -1855,6 +1855,9 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
  .compare-selection{bottom:max(14px,env(safe-area-inset-bottom))}
  .mbar{position:relative!important;top:auto!important}
  body.mbar-up .mbar{position:sticky!important;top:var(--bx-header-height,57px)!important}
+ body.mbar-up .mbar{animation:mbar-in .28s cubic-bezier(.2,.8,.2,1)}
+ @keyframes mbar-in{from{transform:translateY(-100%);opacity:0}to{transform:none;opacity:1}}
+ @media(prefers-reduced-motion:reduce){body.mbar-up .mbar{animation:none}}
  .pcard{padding:6px}
  .pcard .pshot{height:132px;padding:8px}
  .pcard .pbody{padding:7px 3px 3px}
