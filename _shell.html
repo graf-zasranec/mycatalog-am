@@ -1837,6 +1837,7 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
    Catalog/Compare/Search as small header icons, Filters/Sort bar hides on scroll down. */
 .mico{display:none}
 @media(max-width:800px){
+ .topnav .logo{position:relative;top:-3px} /* owner 23 Nov: lowercase wordmark sat visually lower than the icons */
  .mico{display:inline-flex;align-items:center;justify-content:center;position:relative;width:36px;height:40px;color:var(--text);border-radius:10px}
  .mico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
  .mico[aria-current=page]{color:var(--brand-2)}
@@ -1860,7 +1861,7 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
  .pcard .pprice{font-size:16px;line-height:1.25;display:flex;flex-wrap:wrap;align-items:baseline;column-gap:6px}
  .pcard .pprice .price-shop{display:inline;font-size:11px;line-height:1.4;white-space:nowrap}
 }
-@media(max-width:360px){.mico{width:32px}.msrch{min-width:32px;padding:0 4px}.lang-btn{padding:0 5px}}
+@media(max-width:360px){.topnav .logo{font-size:23px}.topnav .mast-r{gap:0}.mico{width:30px}.msrch{min-width:30px;padding:0 3px}.lang-btn{padding:0 4px;font-size:12px}.topnav .th{min-width:30px;width:30px}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
