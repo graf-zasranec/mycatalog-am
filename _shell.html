@@ -1837,7 +1837,11 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
    Catalog/Compare/Search as small header icons, Filters/Sort bar hides on scroll down. */
 .mico{display:none}
 @media(max-width:800px){
- .topnav .logo{position:relative;top:-3px} /* owner 23 Nov: lowercase wordmark sat visually lower than the icons */
+ .topnav .logo{position:relative;top:-3px}
+ .topnav{transition:padding .2s}.topnav .logo .wm{transition:font-size .2s}
+ body.scrolled .topnav{padding-block:3px}
+ body.scrolled .topnav .logo{font-size:21px;top:-2px}
+ body.scrolled :is(.mico,.msrch,.lang-btn,.topnav .th){height:34px} /* owner 23 Nov: lowercase wordmark sat visually lower than the icons */
  .mico{display:inline-flex;align-items:center;justify-content:center;position:relative;width:36px;height:40px;color:var(--text);border-radius:10px}
  .mico svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
  .mico[aria-current=page]{color:var(--brand-2)}

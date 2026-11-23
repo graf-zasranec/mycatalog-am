@@ -4001,6 +4001,7 @@ window.addEventListener('hashchange', () => { document.body.classList.remove('mb
 { let lastY = window.scrollY;
   window.addEventListener('scroll', () => {
     const y = window.scrollY, b = document.body;
+    b.classList.toggle('scrolled', y > 40); // phone header slims down once the page scrolls (owner 23 Nov)
     if (!matchMedia('(max-width:800px)').matches) { b.classList.remove('mbar-hide'); lastY = y; return; }
     // the opened search bar folds away on scroll down unless someone is typing in it
     if (y > lastY + 6 && b.classList.contains('srch-open') && location.hash !== '#/search' && document.activeElement?.id !== 'q') b.classList.remove('srch-open');
