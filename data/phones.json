@@ -81179,9 +81179,12 @@
     "id": "acer-aspire-lite-al16-54p-3185-i3-1305u",
     "category": "laptop",
     "brand": "Acer",
-    "name": "Aspire Lite AL16-54P-3185 i3 1305U",
+    "name": "Aspire Lite 16 AL16-54P (Core i3-1305U)",
     "aliases": [
-      "Acer Aspire Lite AL16-54P-3185 i3 1305U /256GB"
+      "Acer Aspire Lite AL16-54P-3185 i3 1305U /256GB",
+      "Acer Aspire Lite AL16-54P-37J9 i3 8GB I 256GB",
+      "NX.JN0EM.001",
+      "NX.JN0EX.001"
     ],
     "tier": "mid",
     "priceAmd": 219000,
@@ -81211,13 +81214,26 @@
       "name": "Intel Core i3-1305U"
     },
     "graphics": {
-      "name": "Intel Iris Xe Graphics",
+      "name": "Intel UHD Graphics",
       "type": "integrated"
     },
     "os": "DOS",
     "body": {
       "weight": 1530
-    }
+    },
+    "colors": [
+      "Silver"
+    ],
+    "connectivity": {
+      "ports": "2× USB-A 3.2 Gen 1, 2× USB-C 3.2 Gen 1, HDMI, Ethernet"
+    },
+    "specNA": {
+      "battery.capacity": "Battery energy in Wh is not published by Acer"
+    },
+    "sources": [
+      "https://www.acer.com/ro-ro/laptops/aspire/aspire-lite/pdp/NX.JN0EX.001",
+      "https://www.acer.com/ae-en/laptops/aspire/aspire-lite/pdp/NX.JN0EM.001"
+    ]
   },
   {
     "id": "acer-aspire-lite-al16-54p-52al-i5-120u",
@@ -86400,6 +86416,11 @@
         "ram": 32,
         "storage": 1024,
         "priceAmd": 864400
+      },
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 739900
       }
     ],
     "display": {
@@ -86421,7 +86442,8 @@
     },
     "sources": [
       "https://psref.lenovo.com/syspool/Sys/PDF/Legion/Legion_5_15AHP10/Legion_5_15AHP10_Spec.pdf",
-      "https://psref.lenovo.com/Detail/Legion_5_15AHP10?M=83M0003YRK"
+      "https://psref.lenovo.com/Detail/Legion_5_15AHP10?M=83M0003YRK",
+      "https://psref.lenovo.com/Detail/Legion_5_15AHP10?M=83M0003WRK"
     ],
     "os": "No OS",
     "colors": [
