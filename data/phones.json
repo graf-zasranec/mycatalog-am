@@ -179244,5 +179244,63 @@
     "sources": [
       "https://allsell.am/en/dell-inspiron-3511-16gb-i-1tb"
     ]
+  },
+  {
+    "id": "acer-swift-go-16-ai-sfg16-a71t-r5uy",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Swift Go 16 AI SFG16-A71T-R5UY",
+    "aliases": [
+      "Acer Swift Go 16 AI SFG16-A71T-R5UY Ryzen 7 16GB I 1TB",
+      "NX.JXKAA.001"
+    ],
+    "tier": "mid",
+    "priceAmd": 399000,
+    "priceAmdMax": 399000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 120,
+      "touch": true
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 7 445"
+    },
+    "graphics": {
+      "name": "AMD Radeon 840M",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1600
+    },
+    "battery": {
+      "capacity": 65
+    },
+    "connectivity": {
+      "ports": "2× USB4, 2× USB-A 3.2 Gen 1, HDMI, Ethernet, microSD"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 399000
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "16-inch IPS touchscreen laptop with AMD Ryzen AI 7 445, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.acer.com/us-en/laptops/swift/swift-go-16-ai-amd/pdp/NX.JXKAA.001",
+      "https://store.acer.com/en-us/swift-go-16-ai-laptop-sfg16-a71t-r5uy",
+      "https://static-ecpa.acer.com/media/catalog/product/a/c/acer-swift-go-16-ai-sfg16-a71t-non-fingerprint-with-backlit-wp-copilot-obsidian-black-bby-01-custom_nx.jxkaa.001.png"
+    ]
   }
 ]
