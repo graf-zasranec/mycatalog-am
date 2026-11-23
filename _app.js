@@ -3996,22 +3996,18 @@ document.addEventListener('keydown', e => {
   const langs = document.getElementById('langs');
   if (langs?.classList.contains('open')) { langs.classList.remove('open'); langs.querySelector('.lang-btn')?.focus(); }
 });
-window.addEventListener('hashchange', () => { document.body.classList.remove('mbar-hide'); if (location.hash !== '#/search') document.body.classList.remove('srch-open'); });
+window.addEventListener('hashchange', () => { document.body.classList.remove('mbar-up'); if (location.hash !== '#/search') document.body.classList.remove('srch-open'); });
 // Filters/Sort bar on phones: hide while scrolling down, show again on any scroll up (owner 23 Nov).
 { let lastY = window.scrollY;
   window.addEventListener('scroll', () => {
     const y = window.scrollY, b = document.body;
     b.classList.toggle('scrolled', y > 40); // phone header slims down once the page scrolls (owner 23 Nov)
-    if (!matchMedia('(max-width:800px)').matches) { b.classList.remove('mbar-hide'); lastY = y; return; }
+    if (!matchMedia('(max-width:800px)').matches) { b.classList.remove('mbar-up'); lastY = y; return; }
     // the opened search bar folds away on scroll down unless someone is typing in it
     if (y > lastY + 6 && b.classList.contains('srch-open') && location.hash !== '#/search' && document.activeElement?.id !== 'q') b.classList.remove('srch-open');
-    // only once the bar is stuck to the top: in its normal place (home page, below the hero) it stays visible
-    const m = document.querySelector('.mbar'), prev = m?.previousElementSibling;
-    const stuck = m && (!prev || prev.getBoundingClientRect().bottom <= parseFloat(getComputedStyle(m).top || '0') + 2);
-    if (!stuck) { b.classList.remove('mbar-hide'); lastY = y; return; }
-    if (y > lastY + 6 && y > 160) b.classList.add('mbar-hide');
-    else if (y < lastY - 6 || y < 160) b.classList.remove('mbar-hide');
-    if (Math.abs(y - lastY) > 6) lastY = y;
+    // Filters bar: in its own place while scrolling down; sticks under the header only on a scroll up (owner 23 Nov)
+    if (y > lastY + 6) b.classList.remove('mbar-up'); else if (y < lastY - 24) b.classList.add('mbar-up'); // 24: ignore the 16 px jump when the header slims
+    if (y > lastY + 6 || y < lastY - 24) lastY = y;
   }, { passive: true }); }
 render();
 bxObserveHeader();bxObserveCatalogue();bxWatchCatalogueIcons();bxStartFilters();bxStartMobileC();

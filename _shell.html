@@ -1853,8 +1853,8 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
  body,body.has-compare-selection{padding-bottom:calc(16px + env(safe-area-inset-bottom,0px))}
  body.has-compare-selection{padding-bottom:calc(96px + env(safe-area-inset-bottom,0px))}
  .compare-selection{bottom:max(14px,env(safe-area-inset-bottom))}
- .mbar{transition:transform .22s ease}
- body.mbar-hide .mbar{transform:translateY(-160%);pointer-events:none}
+ .mbar{position:relative!important;top:auto!important}
+ body.mbar-up .mbar{position:sticky!important;top:var(--bx-header-height,57px)!important}
  .pcard{padding:6px}
  .pcard .pshot{height:132px;padding:8px}
  .pcard .pbody{padding:7px 3px 3px}
