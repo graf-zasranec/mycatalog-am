@@ -1777,6 +1777,7 @@ function dealPct(p) {
   const med = v.length % 2 ? v[v.length >> 1] : (v[v.length / 2 - 1] + v[v.length / 2]) / 2;
   const pct = Math.round((1 - c.price / med) * 100); return pct >= 10 && pct < 60 ? pct : 0;
 }
+// Card badge: only price moves of 5% or more either way (owner 23 Nov); smaller ones are noise.
 function card(p) {
   // A card used to say "3 shops" and stop there, which is the one thing a price-comparison
   // card must not do: it names a spread without showing it. Now the big number carries the shop
@@ -1790,7 +1791,7 @@ function card(p) {
   return `<article class="pcard" data-id="${esc(p.id)}">
     <div class="pshot">
       ${!rows.length ? `<span class="badge na">${esc(x('notSold'))}</span>`
-        : p.dchg ? `<span class="badge dchg ${p.dchg < 0 ? 'dn' : 'up'}" title="${esc(({hy:'վերջին գնափոփոխությունը, 7 օրվա ընթացքում',ru:'последнее изменение цены, за 7 дней',en:'latest price change, within 7 days'})[st.lang])}">${p.dchg < 0 ? '↓' : '↑'}${String(Math.abs(p.dchg)).replace('.', st.lang === 'en' ? '.' : ',')}%</span>`
+        : Math.abs(p.dchg || 0) >= 5 ? `<span class="badge dchg ${p.dchg < 0 ? 'dn' : 'up'}" title="${esc(({hy:'վերջին գնափոփոխությունը, 7 օրվա ընթացքում',ru:'последнее изменение цены, за 7 дней',en:'latest price change, within 7 days'})[st.lang])}">${p.dchg < 0 ? '↓' : '↑'}${String(Math.abs(p.dchg)).replace('.', st.lang === 'en' ? '.' : ',')}%</span>`
         : isNew(p) ? `<span class="badge">${esc(x('newBadge'))}</span>` : ''}
       <button class="fav" data-cmp="${esc(p.id)}" data-cat="${esc(catOf(p))}" aria-pressed="${st.cmp.includes(p.id)}"
         aria-label="${esc(t('detail.add_compare'))}: ${esc(fullName(p))}">
