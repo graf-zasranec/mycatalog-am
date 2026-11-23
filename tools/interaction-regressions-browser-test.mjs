@@ -36,7 +36,7 @@ try{for(const width of [390,1440])for(const lang of ['en','ru','hy'])for(const s
   await p.locator('.bx-filter-form [data-rm="all"]').click();
   assert.equal(await p.evaluate(()=>JSON.parse(localStorage.getItem('better.v2')).scrmin),0,'Reset clears legacy screen threshold');checks++;
  }else if(scenario==='focus-ring'){
-  if(await p.locator('#msrchBtn').isVisible()&&!(await p.locator('#q').isVisible()))await p.locator('#msrchBtn').click();
+  if(await p.locator('#msrchBtn').isVisible()&&!(await p.locator('#q').isVisible())){await p.locator('#msrchBtn').click();await p.waitForFunction(()=>document.activeElement?.id==='q');}
   const q=p.locator('#q');await q.press('Shift+Tab');await p.keyboard.press('Tab');
   const ring=await q.evaluate(el=>({style:getComputedStyle(el).outlineStyle,width:parseFloat(getComputedStyle(el).outlineWidth)}));
   assert.notEqual(ring.style,'none','keyboard search focus has an actual outline');assert.ok(ring.width>=2,'focus outline is visible');checks+=2;
