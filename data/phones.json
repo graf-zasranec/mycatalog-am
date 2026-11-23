@@ -179375,5 +179375,62 @@
       "https://www.sony.com/ja/SonyInfo/News/Press/201802/18-020/",
       "https://d1ncau8tqf99kp.cloudfront.net/converted/152026_original_local_1200x1050_v3_converted.webp"
     ]
+  },
+  {
+    "id": "acer-swift-go-16-sfg16-72t-95z6",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Swift Go 16 SFG16-72T-95Z6",
+    "aliases": [
+      "Acer Swift Go 16 SFG16-72T-95Z6 16GB I 1TB (NX.KSPAA.009)",
+      "NX.KSPAA.009"
+    ],
+    "tier": "mid",
+    "priceAmd": 425000,
+    "priceAmdMax": 425000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 60,
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 9 185H"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "body": {
+      "weight": 1600
+    },
+    "battery": {
+      "capacity": 65
+    },
+    "connectivity": {
+      "ports": "2× USB4, 2× USB-A 3.2 Gen 1, HDMI, microSD"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 425000
+      }
+    ],
+    "colors": [
+      "Iron"
+    ],
+    "summaryEn": "A 16-inch IPS touchscreen laptop with Intel Core Ultra 9 185H, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.acer.com/us-en/laptops/swift/swift-go-16/pdp/NX.KSPAA.009",
+      "https://images.acer.com/is/image/acer/0-etailer-hero-acer-swift-go-16-sfg16-72t-with-fingerprint-with-backlit-on-wp-ai-steel-gray-01-1?fmt=png-alpha&wid=1800"
+    ]
   }
 ]
