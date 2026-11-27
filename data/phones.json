@@ -179770,8 +179770,15 @@
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/3679/"
-    ]
+      "https://www.smartbox.am/en/shop/view/3679/",
+      "https://www.acer.com/us-en/laptops/aspire/aspire-go-15/pdp/NX.JJJAA.002"
+    ],
+    "battery": {
+      "capacity": 53
+    },
+    "body": {
+      "weight": 1.73
+    }
   },
   {
     "id": "acer-nitro-v-15-anv15-52-58p7",
@@ -179862,8 +179869,12 @@
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/10009/"
-    ]
+      "https://www.smartbox.am/en/shop/view/10009/",
+      "https://www.acer.com/us-en/laptops/nitro/nitro-v-16/pdp/NH.U59AA.002"
+    ],
+    "body": {
+      "weight": 2.1
+    }
   },
   {
     "id": "acer-nitro-v-16-ai-anv16-61",
@@ -180050,11 +180061,19 @@
     "summaryEn": "A 15.6-inch laptop with Intel Core i7-1355U, 16 GB RAM and a 512 GB SSD.",
     "unsure": [
       "popularity",
-      "colors"
+      "colors",
+      "body.weight"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/3106/"
-    ]
+      "https://www.smartbox.am/en/shop/view/3106/",
+      "https://www.daffodil-bd.com (HP 15-fd0213TU spec table)"
+    ],
+    "battery": {
+      "capacity": 41
+    },
+    "body": {
+      "weight": 1.59
+    }
   },
   {
     "id": "hp-elitebook-860-g10-9y307us",
@@ -181381,10 +181400,13 @@
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/1841/"
+      "https://www.smartbox.am/en/shop/view/1841/",
+      "https://mi.moscow (Qcooker CR-SH1501)"
     ],
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 1500,
+      "volume": 1.5
     }
   },
   {
@@ -181414,10 +181436,16 @@
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/1846/"
+      "https://www.smartbox.am/en/shop/view/1846/",
+      "retailer spec table for MYSH0E1ACM"
     ],
     "appliance": {
-      "type": "kettle"
+      "type": "kettle",
+      "power": 1000,
+      "volume": 1.5
+    },
+    "body": {
+      "weight": 1.4
     }
   },
   {
@@ -182279,13 +182307,15 @@
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/3716/"
+      "https://www.smartbox.am/en/shop/view/3716/",
+      "https://www.phco.my (HP H200S spec table)"
     ],
     "audio": {
-      "form": "over-ear"
+      "form": "over-ear",
+      "driver": "50 mm"
     },
     "connectivity": {
-      "bluetooth": "none, wired 3.5 mm"
+      "bluetooth": "none, wired 3.5 mm + USB"
     }
   },
   {
@@ -182744,7 +182774,8 @@
     "name": "R10S Essential",
     "aliases": [
       "Dreame R10S Essential Cordless upright vacuum",
-      "Dreame R10S Essential"
+      "Dreame R10S Essential",
+      "VZV29A"
     ],
     "tier": "mid",
     "priceAmd": 74990,
@@ -182758,16 +182789,22 @@
         "priceAmd": 74990
       }
     ],
-    "summaryEn": "The Dreame R10S Essential.",
+    "summaryEn": "The Dreame R10S Essential, suction 19,000 Pa.",
     "unsure": [
       "popularity",
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/3381/"
+      "https://www.smartbox.am/en/shop/view/3381/",
+      "https://www.zigzag.am (Dreame R10s Essential VZV29A)"
     ],
     "appliance": {
-      "type": "cordless_vacuum"
+      "type": "cordless_vacuum",
+      "power": 310
+    },
+    "battery": {
+      "capacity": 2000,
+      "life": "40 minutes"
     }
   },
   {
@@ -183185,12 +183222,17 @@
     "summaryEn": "The Fujifilm Instax Mini SE, Instax Mini film, 60 mm lens, fixed 1/60 s shutter, always-on flash, 4x AA.",
     "unsure": [
       "popularity",
-      "colors"
+      "colors",
+      "body.weight"
     ],
     "sources": [
       "https://www.smartbox.am/en/shop/view/4150/",
-      "https://www.digitalcameraworld.com/cameras/instant-cameras/instax-mini-se-review"
-    ]
+      "https://www.digitalcameraworld.com/cameras/instant-cameras/instax-mini-se-review",
+      "https://www.bigbasket.com (instax mini SE)"
+    ],
+    "body": {
+      "weight": 0.34
+    }
   },
   {
     "id": "hp-probook-4-g1ir-16-ct1e0at",
