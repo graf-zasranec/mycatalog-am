@@ -28,7 +28,7 @@ import { AsyncLocalStorage } from 'node:async_hooks';
 const LANE = new AsyncLocalStorage();
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
-const DELAY_MS = 400;
+const DELAY_MS = Number(process.env.BETTER_DELAY_MS) || 400; // Mac Vesta job uses 1500: it 429s at 400 (2026-11-27)
 const TIMEOUT_MS = 30000;
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -87,7 +87,7 @@ const lastStatus = () => LANE.getStore()?.status ?? LAST_STATUS;
 // AllSell answers GitHub's servers 403 and iStore returns nothing there (owner, 2026-10-16: the
 // morning prices must be complete). Both approved crawling, so when a plain request comes back
 // empty, the page is asked again through tools/scrapling-get.py - the reader Eldorado and Zigzag use.
-const SCRAPLING_HOSTS = new Set(['allsell.am', 'www.allsell.am', 'istore.am', 'www.istore.am']);
+const SCRAPLING_HOSTS = new Set(['allsell.am', 'www.allsell.am', 'istore.am', 'www.istore.am', 'vesta.am', 'www.vesta.am']); // vesta: 403 to plain fetch since 2026-11-25
 let scraplingProc = null, scraplingQueue = Promise.resolve(), scraplingBuf = '', scraplingWaiters = [];
 const scraplingGet = url => (scraplingQueue = scraplingQueue.then(() => new Promise(done => {
   if (!scraplingProc) {
@@ -1958,6 +1958,16 @@ const SHOPS = {
   vesta: {
     name:'Vesta',site:'https://vesta.am',note:'Exact reviewed product pages and current cash prices',
     async run(){const {collectVesta}=await import('./tools/vesta.mjs');return collectVesta({get,pause:()=>sleep(DELAY_MS),products:phones});}
+  },
+  smartbox: {
+    name:'SmartBox',site:'https://www.smartbox.am',note:'electronics retailer',
+    // ids from data/smartbox-index.json (rebuild: node tools/smartbox.mjs --index) plus pinned pages
+    async run(){
+      const fs=await import('node:fs');const {collectSmartbox}=await import('./tools/smartbox.mjs');
+      let index={};try{index=JSON.parse(fs.readFileSync('data/smartbox-index.json','utf8'));}catch{}
+      const pinnedIds=[...PINS.keys()].flatMap(u=>{const m=/^https:\/\/www\.smartbox\.am\/en\/shop\/view\/(\d+)\/$/.exec(u);return m?[m[1]]:[];});
+      return collectSmartbox({get,pause:()=>sleep(DELAY_MS),matchPhone,pinnedIds,index});
+    }
   },
   // likemobile removed from better.am (owner, 23 Nov 2026): reader kept in tools/likemobile.mjs, not crawled
   miarmenia: {
