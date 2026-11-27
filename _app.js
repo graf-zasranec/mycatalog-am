@@ -1907,8 +1907,9 @@ function dealCard(d, isSpot) {
 // when the prices do, once a night, never while you read. On a phone it is not drawn: the deals
 // row is right below.
 function spotDeal(dl) {
+  // Rotates daily through the popular deals; picking the biggest % every day kept showing one phone.
   const pool = dl.filter(d => !d.drop).slice(0, 6);
-  return pool.reduce((a, d) => !a || d.below / d.mid > a.below / a.mid ? d : a, null);
+  return pool.length ? pool[Math.floor(Date.now() / 864e5) % pool.length] : null;
 }
 function spotHTML(d) {
   if (!d) return '';
