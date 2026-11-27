@@ -86470,6 +86470,11 @@
         "priceAmd": 616400
       },
       {
+        "ram": 24,
+        "storage": 1024,
+        "priceAmd": 795600
+      },
+      {
         "ram": 32,
         "storage": 2048,
         "priceAmd": 1378400
@@ -179510,6 +179515,1219 @@
     "sources": [
       "https://www.acer.com/us-en/laptops/nitro/nitro-v-16/pdp/NH.U7SAA.001",
       "https://images.acer.com/is/image/acer/acer-nitro-v-16-anv16-i31-non-fingerprint-with-backlit-on-wp-logo-black-01-1?fmt=png-alpha&wid=1800"
+    ]
+  },
+  {
+    "id": "asus-rog-strix-g16-g614fm-s5031",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "ROG Strix G16 G614FM-S5031",
+    "aliases": [
+      "Laptop ASUS ROG Strix G16 G614F G614FM-S5031 16\"/WQXGA/IPS/500 NIT/Ryzen 9 9955HX/16GB DDR5-5600 SO-DIMM/1TB/RTX 5060 8GB",
+      "G614FM-S5031"
+    ],
+    "tier": "mid",
+    "priceAmd": 795600,
+    "priceAmdMax": 795600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "2560x1600",
+      "refresh": 240
+    },
+    "chipset": {
+      "name": "AMD Ryzen 9 9955HX"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 795600
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with AMD Ryzen 9 9955HX, RTX 5060 8GB, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4117/"
+    ]
+  },
+  {
+    "id": "asus-rog-strix-g16-g615jmr-as74",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "ROG Strix G16 G615JMR-AS74",
+    "aliases": [
+      "Laptop ASUS ROG Strix G16 G615J MR-AS74 FHD+ 165Hz Core i7-14650HX / 16GB DDR5 / 1TB SSD / RTX 5060 8GB/90NR0LB1-M000M0 (G615JMR-AS74)",
+      "G615JMR-AS74",
+      "90NR0LB1-M000M0"
+    ],
+    "tier": "mid",
+    "priceAmd": 714000,
+    "priceAmdMax": 714000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 165
+    },
+    "chipset": {
+      "name": "Intel Core i7-14650HX"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 714000
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with Intel Core i7-14650HX, RTX 5060 8GB, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4138/"
+    ]
+  },
+  {
+    "id": "asus-tuf-gaming-a16-fa608pp",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "TUF Gaming A16 FA608PP",
+    "aliases": [
+      "Laptop ASUS TUF FA608PP-TF/A16_97 16,0\" FHD+ 165Hz /AMD Ryzen 9 8940HX/16GB DDR5/512GB SSD/RTX5070 8GB",
+      "FA608PP-TF",
+      "A16_97"
+    ],
+    "tier": "mid",
+    "priceAmd": 794600,
+    "priceAmdMax": 794600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 165
+    },
+    "chipset": {
+      "name": "AMD Ryzen 9 8940HX"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5070 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 794600
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with AMD Ryzen 9 8940HX, RTX 5070 8GB, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/10008/"
+    ]
+  },
+  {
+    "id": "asus-vivobook-15-x1502va-bq1327",
+    "category": "laptop",
+    "brand": "ASUS",
+    "name": "Vivobook 15 X1502VA-BQ1327",
+    "aliases": [
+      "Laptop ASUS Vivobook X1502VA-BQ1327 15,6\" FHD/Ci5-13420H/8GB/512GB SSD",
+      "X1502VA-BQ1327"
+    ],
+    "tier": "mid",
+    "priceAmd": 275300,
+    "priceAmdMax": 275300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i5-13420H"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 275300
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with Intel Core i5-13420H, 8 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3779/"
+    ]
+  },
+  {
+    "id": "acer-aspire-go-15-ag15-21pt",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Aspire Go 15 AG15-21PT",
+    "aliases": [
+      "Laptop Acer Aspire Go 15 AG15-21PT 5,6\" FHD Touch/AMD Ryzen 5 7520U/8GB LPDDR5/512GB SSD/AMD Radeon",
+      "AG15-21PT"
+    ],
+    "tier": "mid",
+    "priceAmd": 214200,
+    "priceAmdMax": 214200,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "touch": true
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 7520U"
+    },
+    "graphics": {
+      "name": "AMD Radeon 610M",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 214200
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 7520U, 8 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3679/"
+    ]
+  },
+  {
+    "id": "acer-nitro-v-15-anv15-52-58p7",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V 15 ANV15-52-58P7",
+    "aliases": [
+      "Laptop Acer Nitro V 15 ANV15-52-58P7 15,6\" FHD 165Hz/Core 5-210H/16GB DDR5/512GB SSD/RTX4050 6GB",
+      "ANV15-52-58P7"
+    ],
+    "tier": "mid",
+    "priceAmd": 479400,
+    "priceAmdMax": 479400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "refresh": 165
+    },
+    "chipset": {
+      "name": "Intel Core 5 210H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4050 6GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 479400
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with Intel Core 5 210H, RTX 4050 6GB, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/10010/"
+    ]
+  },
+  {
+    "id": "acer-nitro-v-16-anv16-i31-576y",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V 16 ANV16-I31-576Y",
+    "aliases": [
+      "Laptop Acer Nitro V 16 ANV16-I31-576Y 16,0\" FHD+ 165Hz/Core 5-210H/16GB DDR5/512GB SSD/RTX5060 8GB",
+      "ANV16-I31-576Y"
+    ],
+    "tier": "mid",
+    "priceAmd": 530300,
+    "priceAmdMax": 530300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 165
+    },
+    "chipset": {
+      "name": "Intel Core 5 210H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 530300
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with Intel Core 5 210H, RTX 5060 8GB, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/10009/"
+    ]
+  },
+  {
+    "id": "acer-nitro-v-16-ai-anv16-61",
+    "category": "laptop",
+    "brand": "Acer",
+    "name": "Nitro V 16 AI ANV16-61",
+    "aliases": [
+      "Laptop Acer Nitro V16 AI ANV16-61 16,0\" FHD+ 180Hz/AMD Ryzen AI 7 350/16GB DDR5/1TB SSD/RTX5060 8GB",
+      "ANV16-61"
+    ],
+    "tier": "mid",
+    "priceAmd": 612000,
+    "priceAmdMax": 612000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "IPS",
+      "resolution": "1920x1200",
+      "refresh": 180
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 7 350"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 5060 8GB",
+      "type": "discrete"
+    },
+    "os": "Windows 11 Home",
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 612000
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with AMD Ryzen AI 7 350, RTX 5060 8GB, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/10007/"
+    ]
+  },
+  {
+    "id": "dell-14s-ds4265",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "14S DS4265",
+    "aliases": [
+      "Laptop Dell 14S DS4265 14,0\" FHD+ Touch/AMD Ryzen AI 5 430/16GB/512GB SSD/AMD Radeon",
+      "DS4265"
+    ],
+    "tier": "mid",
+    "priceAmd": 357000,
+    "priceAmdMax": 357000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 5 430"
+    },
+    "graphics": {
+      "name": "AMD Radeon",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 357000
+      }
+    ],
+    "summaryEn": "A 14-inch laptop with AMD Ryzen AI 5 430, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4075/"
+    ]
+  },
+  {
+    "id": "dell-latitude-3450-i5-1335u",
+    "category": "laptop",
+    "brand": "Dell",
+    "name": "Latitude 3450 i5-1335U",
+    "aliases": [
+      "Laptop Dell Latitude 3450 14,0\" FHD/Ci5-1335U/16GB DDR5/256GB SSD/Intel",
+      "Latitude 3450"
+    ],
+    "tier": "mid",
+    "priceAmd": 305000,
+    "priceAmdMax": 305000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 256,
+        "priceAmd": 305000
+      }
+    ],
+    "summaryEn": "A 14-inch laptop with Intel Core i5-1335U, 16 GB RAM and a 256 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4158/"
+    ]
+  },
+  {
+    "id": "hp-15-fd0213tu",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "15-fd0213TU",
+    "aliases": [
+      "Laptop HP 15-fd0213TU Intel Core I7 1355U/16GB DDR4/512GB 15,6\" FHD",
+      "15-fd0213TU"
+    ],
+    "tier": "mid",
+    "priceAmd": 306000,
+    "priceAmdMax": 306000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7-1355U"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 306000
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with Intel Core i7-1355U, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3106/"
+    ]
+  },
+  {
+    "id": "hp-elitebook-860-g10-9y307us",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "EliteBook 860 G10 9Y307US",
+    "aliases": [
+      "Laptop HP EliteBook 860 G10 16,0\" WUXGA (FHD+)/Intel Core i5-1345U/16GB DDR5/512GB 9Y307US#ABA",
+      "9Y307US#ABA",
+      "9Y307US"
+    ],
+    "tier": "mid",
+    "priceAmd": 357000,
+    "priceAmdMax": 357000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "Intel Core i5-1345U"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 357000
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with Intel Core i5-1345U, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4043/"
+    ]
+  },
+  {
+    "id": "hp-elitebook-x360-830-g10-8h4u1uc",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "EliteBook x360 830 G10 8H4U1UC",
+    "aliases": [
+      "Laptop HP EliteBook x360 830 G10 13.3\" Flip WUXGA Touch / Core i7-1365U / 32GB LPDDR5 / 512GB SSD/ 8H4U1UC#ABA",
+      "8H4U1UC#ABA",
+      "8H4U1UC"
+    ],
+    "tier": "mid",
+    "priceAmd": 416200,
+    "priceAmdMax": 416200,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 13.3,
+      "resolution": "1920x1200",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core i7-1365U"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 512,
+        "priceAmd": 416200
+      }
+    ],
+    "summaryEn": "A 13.3-inch laptop with Intel Core i7-1365U, 32 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4097/"
+    ]
+  },
+  {
+    "id": "hp-envy-x360-15-ew1058wm",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "Envy x360 15-ew1058wm",
+    "aliases": [
+      "Laptop HP Envy x360 15.6\" Touch 15-ew1058wm intel core I5-1335U/intel graphics/ 8gb/512gb 85S59UA#ABA",
+      "15-ew1058wm",
+      "85S59UA#ABA",
+      "85S59UA"
+    ],
+    "tier": "mid",
+    "priceAmd": 306000,
+    "priceAmdMax": 306000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    },
+    "graphics": {
+      "name": "Intel Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 306000
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with Intel Core i5-1335U, 8 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4077/"
+    ]
+  },
+  {
+    "id": "hp-omen-16-ae0000tx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OMEN 16-ae0000TX",
+    "aliases": [
+      "Laptop HP OMEN 16-ae0000TX 16,1\"QHD 240Hz/Ci7-14650HX/16GB DDR5/512GB SSD/RTX4060 8GB",
+      "16-ae0000TX"
+    ],
+    "tier": "mid",
+    "priceAmd": 622200,
+    "priceAmdMax": 622200,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16.1,
+      "resolution": "2560x1440",
+      "refresh": 240
+    },
+    "chipset": {
+      "name": "Intel Core i7-14650HX"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4060 8GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 622200
+      }
+    ],
+    "summaryEn": "A 16.1-inch laptop with Intel Core i7-14650HX, RTX 4060 8GB, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4166/"
+    ]
+  },
+  {
+    "id": "hp-omnibook-x-flip-14-fk0033dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook X Flip 14-fk0033dx",
+    "aliases": [
+      "Laptop HP Omni X 14-fk0033dx 14\" 2K TOUCH/Ryzen Ai 7-350/24GB LPDDR5x/1TB/ B6QE6UA#ABA",
+      "14-fk0033dx",
+      "B6QE6UA#ABA",
+      "B6QE6UA",
+      "Omni X 14-fk0033dx"
+    ],
+    "tier": "mid",
+    "priceAmd": 458000,
+    "priceAmdMax": 458000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 14,
+      "touch": true,
+      "resolution": "1920x1200"
+    },
+    "chipset": {
+      "name": "AMD Ryzen AI 7 350"
+    },
+    "graphics": {
+      "name": "AMD Radeon 860M",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 24,
+        "storage": 1024,
+        "priceAmd": 458000
+      }
+    ],
+    "summaryEn": "A 14-inch laptop with AMD Ryzen AI 7 350, 24 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4086/"
+    ]
+  },
+  {
+    "id": "hp-omnibook-x-17-dd0013dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "OmniBook X 17-dd0013dx",
+    "aliases": [
+      "Laptop HP OmniBook X 17-dd0013dx 17,3\" FHD Touch/Core Ultra 7-256V/16GB LPDDR5x/1TB SSD/Intel ARC B5UH5UA#ABA",
+      "17-dd0013dx",
+      "B5UH5UA#ABA",
+      "B5UH5UA"
+    ],
+    "tier": "mid",
+    "priceAmd": 395400,
+    "priceAmdMax": 395400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 17.3,
+      "resolution": "1920x1080",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 256V"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 395400
+      }
+    ],
+    "summaryEn": "A 17.3-inch laptop with Intel Core Ultra 7 256V, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3559/"
+    ]
+  },
+  {
+    "id": "hp-spectre-x360-16-aa0013dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "Spectre x360 16-aa0013dx",
+    "aliases": [
+      "Laptop HP Spectre x360 16-aa0013dx /16'' FLIP /ULTRA7-155H /16GB DDR5/1TB/INTEL ARC/WIN 11",
+      "16-aa0013dx"
+    ],
+    "tier": "mid",
+    "priceAmd": 489600,
+    "priceAmdMax": 489600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "touch": true,
+      "resolution": "2560x1600",
+      "refresh": 120
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 155H"
+    },
+    "graphics": {
+      "name": "Intel Arc Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 1024,
+        "priceAmd": 489600
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 155H, 16 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3777/"
+    ]
+  },
+  {
+    "id": "hp-spectre-x360-16-aa0097nr",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "Spectre x360 16-aa0097nr",
+    "aliases": [
+      "Laptop HP Spectre x360 16-aa0097nr 16\" 2.8K OLED Touch /Intel Ultra 7 155H / 16GB LPDDR5x / 2TB SSD / RTX 4050 6GB /9C9B6UA#ABA",
+      "16-aa0097nr",
+      "9C9B6UA#ABA",
+      "9C9B6UA"
+    ],
+    "tier": "mid",
+    "priceAmd": 663000,
+    "priceAmdMax": 663000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "OLED",
+      "resolution": "2880x1800",
+      "touch": true
+    },
+    "chipset": {
+      "name": "Intel Core Ultra 7 155H"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 4050 6GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 2048,
+        "priceAmd": 663000
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 155H, RTX 4050 6GB, 16 GB RAM and a 2 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3776/"
+    ]
+  },
+  {
+    "id": "hp-victus-15-fb3113dx",
+    "category": "laptop",
+    "brand": "HP",
+    "name": "Victus 15-fb3113dx",
+    "aliases": [
+      "Laptop HP Victus 15-fb3113dx 15.6\" FHD 144Hz/AMD Ryzen 5 7535HS / 8GB DDR5 / 512GB / RTX 3050 6GB",
+      "15-fb3113dx"
+    ],
+    "tier": "mid",
+    "priceAmd": 377400,
+    "priceAmdMax": 377400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 144
+    },
+    "chipset": {
+      "name": "AMD Ryzen 5 7535HS"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 6GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 512,
+        "priceAmd": 377400
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with AMD Ryzen 5 7535HS, RTX 3050 6GB, 8 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4020/"
+    ]
+  },
+  {
+    "id": "lenovo-loq-15arp10e",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "LOQ 15ARP10E",
+    "aliases": [
+      "Laptop Lenovo LOQ 15ARP10E 15.6\" FHD 144Hz /RYZEN 7-170/RTX 3050 6GB/16GB/512GB",
+      "LOQ 15ARP10E"
+    ],
+    "tier": "mid",
+    "priceAmd": 428400,
+    "priceAmdMax": 428400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080",
+      "refresh": 144
+    },
+    "chipset": {
+      "name": "AMD Ryzen 7 170"
+    },
+    "graphics": {
+      "name": "NVIDIA GeForce RTX 3050 6GB",
+      "type": "discrete"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 428400
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with AMD Ryzen 7 170, RTX 3050 6GB, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4095/"
+    ]
+  },
+  {
+    "id": "lenovo-thinkpad-l13-gen-4-21fg000bix",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "ThinkPad L13 Gen 4 21FG000BIX",
+    "aliases": [
+      "Laptop Lenovo ThinkPad L13 Gen4 13,3\" FHD/Ci5-1335U LPDDR5/16GB/512GB SSD/Intel Graphics 21FG000BIX",
+      "21FG000BIX",
+      "ThinkPad L13 Gen4"
+    ],
+    "tier": "mid",
+    "priceAmd": 357000,
+    "priceAmdMax": 357000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 13.3,
+      "resolution": "1920x1200",
+      "type": "IPS"
+    },
+    "chipset": {
+      "name": "Intel Core i5-1335U"
+    },
+    "graphics": {
+      "name": "Intel Iris Xe Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 357000
+      }
+    ],
+    "summaryEn": "A 13.3-inch laptop with Intel Core i5-1335U, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3778/"
+    ]
+  },
+  {
+    "id": "lenovo-v15-g5-irl-i7-13620h",
+    "category": "laptop",
+    "brand": "Lenovo",
+    "name": "V15 G5 IRL i7-13620H",
+    "aliases": [
+      "Laptop Lenovo V15 G5 IRL 15,6\" FHD/Ci7-13620H/16GB DDR5 /512GB SSD/Intel Graphics",
+      "V15 G5 IRL Ci7-13620H"
+    ],
+    "tier": "mid",
+    "priceAmd": 336600,
+    "priceAmdMax": 336600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 15.6,
+      "resolution": "1920x1080"
+    },
+    "chipset": {
+      "name": "Intel Core i7-13620H"
+    },
+    "graphics": {
+      "name": "Intel UHD Graphics",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 336600
+      }
+    ],
+    "summaryEn": "A 15.6-inch laptop with Intel Core i7-13620H, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3789/"
+    ]
+  },
+  {
+    "id": "samsung-galaxy-book4-edge-16-np960xma",
+    "category": "laptop",
+    "brand": "Samsung",
+    "name": "Galaxy Book4 Edge 16 NP960XMA",
+    "aliases": [
+      "Laptop Samsung GalaxyBook4 Edge NP960XMA 16,0\" 3K 120Hz AMOLED Touch/Snapdragon X Elite/16GB/512GB SSD",
+      "NP960XMA",
+      "GalaxyBook4 Edge"
+    ],
+    "tier": "mid",
+    "priceAmd": 428400,
+    "priceAmdMax": 428400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 16,
+      "type": "AMOLED",
+      "refresh": 120,
+      "touch": true,
+      "resolution": "2880x1800"
+    },
+    "chipset": {
+      "name": "Qualcomm Snapdragon X Elite"
+    },
+    "graphics": {
+      "name": "Qualcomm Adreno",
+      "type": "integrated"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 428400
+      }
+    ],
+    "summaryEn": "A 16-inch laptop with Qualcomm Snapdragon X Elite, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/4010/"
+    ]
+  },
+  {
+    "id": "philips-273v7qdsb",
+    "category": "monitor",
+    "brand": "Philips",
+    "name": "273V7QDSB",
+    "aliases": [
+      "Lcd Monitor Philips 27\" IPS/75 Гц/FHD/1920x1080 273v7qdsb/01",
+      "273V7QDSB/01",
+      "273V7QDSB"
+    ],
+    "tier": "mid",
+    "priceAmd": 52000,
+    "priceAmdMax": 52000,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 27,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "refresh": 75
+    },
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 52000
+      }
+    ],
+    "summaryEn": "A 27-inch monitor.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/2101/"
+    ]
+  },
+  {
+    "id": "lg-ultrafine-27us500-w",
+    "category": "monitor",
+    "brand": "LG",
+    "name": "UltraFine 27US500-W",
+    "aliases": [
+      "Monitor LG UltraFine 27US500-W 27″ UHD 4K (3840 × 2160)",
+      "27US500-W"
+    ],
+    "tier": "mid",
+    "priceAmd": 117300,
+    "priceAmdMax": 117300,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 27,
+      "resolution": "3840x2160",
+      "type": "IPS",
+      "refresh": 60
+    },
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 117300
+      }
+    ],
+    "summaryEn": "A 27-inch monitor.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3577/"
+    ]
+  },
+  {
+    "id": "lenovo-ideacentre-aio-24irh9-f0hn00fnru",
+    "category": "desktop",
+    "brand": "Lenovo",
+    "name": "IdeaCentre AIO 24IRH9 F0HN00FNRU",
+    "aliases": [
+      "Lenovo IdeaCentre all-in-one 24IRH9 (F0HN00FNRU) core i5/16GB/512GB",
+      "F0HN00FNRU",
+      "IdeaCentre all-in-one 24IRH9"
+    ],
+    "tier": "mid",
+    "priceAmd": 387600,
+    "priceAmdMax": 387600,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 23.8
+    },
+    "chipset": {
+      "name": "Intel Core i5"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 387600
+      }
+    ],
+    "summaryEn": "A 23.8-inch all-in-one PC with Intel Core i5, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/2982/"
+    ]
+  },
+  {
+    "id": "lenovo-ideacentre-aio-27irh9-f0hm00f2ru",
+    "category": "desktop",
+    "brand": "Lenovo",
+    "name": "IdeaCentre AIO 27IRH9 F0HM00F2RU",
+    "aliases": [
+      "Lenovo IdeaCentre all-in-one 27IRH9 (F0HM00F2RU) Core i7/16GB/512GB",
+      "F0HM00F2RU",
+      "IdeaCentre all-in-one 27IRH9"
+    ],
+    "tier": "mid",
+    "priceAmd": 428400,
+    "priceAmdMax": 428400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "display": {
+      "size": 27
+    },
+    "chipset": {
+      "name": "Intel Core i7"
+    },
+    "variants": [
+      {
+        "ram": 16,
+        "storage": 512,
+        "priceAmd": 428400
+      }
+    ],
+    "summaryEn": "A 27-inch all-in-one PC with Intel Core i7, 16 GB RAM and a 512 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/2989/"
+    ]
+  },
+  {
+    "id": "roborock-s8-pro",
+    "category": "vacuum",
+    "brand": "Roborock",
+    "name": "S8 Pro",
+    "aliases": [
+      "Roborock S8 Pro Robot Vacuum"
+    ],
+    "tier": "mid",
+    "priceAmd": 122400,
+    "priceAmdMax": 122400,
+    "popularity": 40,
+    "accent": "#5C6470",
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 122400
+      }
+    ],
+    "summaryEn": "A robot vacuum.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3959/"
     ]
   }
 ]
