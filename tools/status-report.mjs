@@ -40,6 +40,7 @@ for (const [id, s] of Object.entries(shops).sort((a, b) => a[1].newest - b[1].ne
 //     (or the shop changed its site). And what each shop lists that nothing matched, counted
 //     only for brands the catalogue carries - Telecom's unread pages and watches (fixed
 //     2026-11-08) would have shown up here as a pile of Apple and Samsung titles.
+const REMOVED_SHOPS = new Set(['likemobile']);
 const weekAgoFile = process.argv.includes('--week-ago') ? process.argv[process.argv.indexOf('--week-ago') + 1] : null;
 if (weekAgoFile && fs.existsSync(weekAgoFile)) {
   const W = JSON.parse(fs.readFileSync(weekAgoFile, 'utf8'));
@@ -50,6 +51,8 @@ if (weekAgoFile && fs.existsSync(weekAgoFile)) {
     const a = then[id] || { offers: 0, models: new Set() }, b = now[id] || { offers: 0, models: new Set() };
     const name = P.shops?.[id]?.name || W.shops?.[id]?.name || id;
     rows.push([name, a.offers, b.offers, a.models.size, b.models.size]);
+    // Shops the owner removed on purpose drop to 0 by design (LikeMobile, 2026-11-23).
+    if (REMOVED_SHOPS.has(id)) continue;
     if (a.offers >= 15 && b.offers < a.offers * 0.75) alerts.push(`${name}: offers fell from ${a.offers} to ${b.offers} in a week`);
     else if (a.models.size >= 20 && b.models.size < a.models.size * 0.75) alerts.push(`${name}: models fell from ${a.models.size} to ${b.models.size} in a week`);
   }
