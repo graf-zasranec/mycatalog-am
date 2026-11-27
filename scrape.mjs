@@ -793,6 +793,11 @@ function magentoChildren(html, colors, aliases = {}) {
   for (const [child, pr] of Object.entries(cfg.optionPrices)) {
     // optionPrices/index can retain sold-out SKUs. The option's products array
     // drives the actual swatch availability; an empty array means disabled.
+    // Yerevan Mobile also lists "salable": attribute -> option -> children that can be bought. Its
+    // iPhone 17 eSIM children stayed in optionPrices (no is_in_stock flag) while the picker offered
+    // only Nano-SIM (owner, 2026-11-27); a child missing from any salable list is sold out.
+    const sal = cfg.salable && typeof cfg.salable === 'object' ? cfg.salable : null;
+    if (sal && Object.entries(sal).some(([aid, opts]) => !((opts || {})[String((cfg.index[child] || {})[aid] ?? '')] || []).map(String).includes(child))) continue;
     if (pr.is_in_stock === false || attrs.some(a => {
       const option = (a.options || []).find(o => String(o.id) === String((cfg.index[child] || {})[a.id] ?? ''));
       return option && Array.isArray(option.products) && !option.products.some(p => String(p) === child);
@@ -1261,7 +1266,7 @@ if (process.argv[2] === '--selftest') {
   const flipCases = [
     // [esimPrice, trayPrice, does the pair keep its eSIM label?]
     [569000, 525000, false],   // tray cheaper: unrankable, label dropped
-    [625000, 625000, false],   // equal: carries no signal either, label dropped
+    [625000, 625000, true],    // equal: both builds at one price (Pixel 512 GB), labels kept - owner 2026-11-27
     [525000, 569000, true],    // tray dearer: the normal case, left alone
   ];
   for (const [e0, t0v, keep] of flipCases) {
@@ -1349,6 +1354,13 @@ if (process.argv[2] === '--selftest') {
     if (available.length !== 1 || available[0].storage !== 128) {
       bad++; console.log('FAIL magentoChildren must reject children disabled in the shop selector');
     }
+  }
+
+  // Yerevan Mobile "salable": the eSIM child is listed but not buyable (2026-11-27).
+  {
+    const cfg = {attributes:{148:{id:148,code:'sim',label:'SIM-Qard',options:[{id:131,label:'Nano-SIM and/or eSIM'},{id:1203,label:'eSIM'}]}},index:{1:{148:131},2:{148:1203}},optionPrices:{1:{finalPrice:{amount:378000}},2:{finalPrice:{amount:358000}}},salable:{148:{131:['1']}}};
+    const kids=magentoChildren('<script>"jsonConfig":'+JSON.stringify(cfg)+'</script>');
+    if (kids.length !== 1 || kids[0].price !== 378000 || kids[0].esim !== false) { bad++; console.log('FAIL magentoChildren must drop children missing from salable', JSON.stringify(kids)); }
   }
 
   // Watch case selectors are millimetres, not missing memory capacities.
@@ -1703,6 +1715,12 @@ if (process.argv[2] === '--selftest') {
     const got = SIMPINS.has(url) ? SIMPINS.get(url) : simBuild(url);
     if (got !== want) { bad++; console.log(`FAIL  sim pin got=${got} want=${want}  <- ${url}`); }
   }
+  const shopSimCases = [
+    [{ shop: 'vlv' }, { category: 'phone', brand: 'Apple' }, false], [{ shop: 'vlv', esim: true }, { category: 'phone', brand: 'Apple' }, true],
+    [{ shop: 'pixel' }, { category: 'phone', brand: 'Samsung' }, false], [{ shop: 'pixel' }, { category: 'phone', brand: 'Apple' }, undefined],
+    [{ shop: 'vlv' }, { category: 'tablet', brand: 'Apple' }, undefined],
+  ];
+  for (const [o, ph, want] of shopSimCases) if (shopSimRule(o, ph) !== want) { bad++; console.log(`FAIL  shop SIM rule got=${shopSimRule(o, ph)} want=${want}  <- ${o.shop} ${ph.brand}`); }
   const cellCases = [
     ['iPad Air 11 M4 WiFi + Cellular', true], ['Apple iPad Air 13/M4/Wifi+Cellular 256', true],
     ['iPad Pro 11 M5 256GB Wi-Fi + Cellular Space Black', true], ['Apple iPad mini 7 128GB LTE', true],
@@ -3675,6 +3693,14 @@ for (const [id, list] of Object.entries(offers)) {
     o.storage = storageOf(o.title) ?? (+(/\b\d{1,2}\s*gb\s*\/\s*(\d{3,4})/i.exec(o.title) || [])[1] || null);
 }
 
+// Owner rules, 2026-11-27: every Samsung phone sold here is the Nano-SIM build; VLV only sells the
+// Nano-SIM build unless its title says eSIM (simBuild already turns "eSIM" into true).
+function shopSimRule(o, phone) {
+  if (o.esim !== undefined || !phone || phone.category !== 'phone') return o.esim;
+  if (phone.brand === 'Samsung' || o.shop === 'vlv') return false;
+  return undefined;
+}
+for (const list of Object.values(offers)) for (const o of list) { const e = shopSimRule(o, phoneById[o.id]); if (e !== undefined) o.esim = e; }
 let simDropped = 0;
 for (const list of Object.values(offers)) simDropped += dropUnrankableSim(list);
 if (simDropped) console.log(`${simDropped} eSIM/nano pair(s) unlabelled (the tray was priced at or below the eSIM)`);
@@ -3724,7 +3750,7 @@ function dropUnrankableSim(list) {
     if (!esim.length || !tray.length) continue;
     const lowE = Math.min(...esim.map(o => o.price));
     const lowT = Math.min(...tray.map(o => o.price));
-    if (lowT > lowE) continue;                  // the tray costs more: nothing to question
+    if (lowT >= lowE) continue;                 // tray dearer or the same: both builds stand (owner 2026-11-27: Pixel sells both at one price)
     for (const o of esim) delete o.esim;
     n++;
   }

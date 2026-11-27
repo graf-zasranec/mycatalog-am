@@ -26,7 +26,7 @@ const parse = l => {
   }
   return [...out, cur];
 };
-const got = {};
+const got = {}, heading = {};
 if (fetchIt) {
   const urls = [...new Set(fs.readFileSync('data/listings.csv', 'utf8').split(/\r?\n/).map(l => l.split(','))
     .filter(f => f[0] === 'notebookcentre').map(f => f[4]))];
@@ -36,6 +36,10 @@ if (fetchIt) {
       if (r.status === 404 || r.status === 410) got[u] = 0;
       else if (r.ok) {
         const h = await r.text(), p = +(h.match(/product:price:amount" content="([\d.]+)/) || [])[1];
+        // The h1 names the variant the price belongs to ("iPhone 17 White / eSIM / 256 GB"): a bare
+        // product page defaults to one SIM build, so keep that in the title for the SIM label (owner, 2026-11-27).
+        const h1 = ((h.match(/<h1[^>]*>([^<]+)/) || [])[1] || '').replace(/&amp;/g, '&').trim();
+        if (h1.includes(' / ') && !h1.includes(',')) heading[u] = h1;
         if (/"availability":\s*"https?:\/\/schema.org\/(OutOfStock|Discontinued|SoldOut)/.test(h)) got[u] = 0;
         else if (/"availability":\s*"https?:\/\/schema.org\/InStock/.test(h) && p >= 10000) got[u] = Math.round(p);
         else console.warn('Unrecognized price/stock; keeping previous row: ' + u);
@@ -67,7 +71,7 @@ const out = raw.split(nl).filter(l => {
   const f = l.split(',');
   if (f[0] !== 'notebookcentre' || !got[f[4]]) return l;
   String(got[f[4]]) === f[5] ? same++ : changed++;
-  f[5] = String(got[f[4]]); f[8] = today; return f.join(',');
+  f[5] = String(got[f[4]]); f[8] = today; if (heading[f[4]]) f[1] = heading[f[4]]; return f.join(',');
 });
 console.log(`same ${same}, changed ${changed}, removed (no price) ${gone}, not in export ${missing}`);
 if (write) fs.writeFileSync(P, out.join(nl));
