@@ -182150,38 +182150,6 @@
     }
   },
   {
-    "id": "xiaomi-truclean-w30",
-    "category": "vacuum",
-    "brand": "Xiaomi",
-    "name": "Truclean W30 Wet Dry",
-    "aliases": [
-      "Xiaomi Truclean W30 Wet Dry"
-    ],
-    "tier": "mid",
-    "priceAmd": 128500,
-    "priceAmdMax": 128500,
-    "popularity": 30,
-    "accent": "#5C6470",
-    "variants": [
-      {
-        "ram": null,
-        "storage": null,
-        "priceAmd": 128500
-      }
-    ],
-    "summaryEn": "The Xiaomi Truclean W30 Wet Dry, a vacuum cleaner.",
-    "unsure": [
-      "popularity",
-      "colors"
-    ],
-    "sources": [
-      "https://www.smartbox.am/en/shop/view/3414/"
-    ],
-    "appliance": {
-      "type": "wet_dry_vacuum"
-    }
-  },
-  {
     "id": "xiaomi-magnetic-power-bank-10000-33w-wpb1007mi",
     "category": "powerbank",
     "brand": "Xiaomi",
@@ -182522,9 +182490,10 @@
     "id": "xiaomi-mijia-desktop-fan-zmydfs01dm",
     "category": "climate",
     "brand": "Xiaomi",
-    "name": "Mijia Desktop Fan ZMYDFS01DM",
+    "name": "Mijia Rechargeable Mini Fan ZMYDFS01DM",
     "aliases": [
       "Xiaomi Mijia Desktop Fan (ZMYDFS01DM)",
+      "Xiaomi Mijia Desktop Fan ZMYDFS01DM",
       "Xiaomi Mijia Desktop Fan ZMYDFS01DM"
     ],
     "tier": "mid",
@@ -183357,6 +183326,127 @@
     "sources": [
       "https://www.lenovo.com/ru/ru/p/laptops/yoga/yoga-2-in-1-series/lenovo-yoga-9i-2-in-1-gen-9-14-inch-intel/len101y0043",
       "https://psref.lenovo.com/syspool/Sys/PDF/Yoga/Yoga_9_2in1_14IMH9/Yoga_9_2in1_14IMH9_Spec.html"
+    ]
+  },
+  {
+    "id": "dreame-t50-mix",
+    "category": "vacuum",
+    "brand": "Dreame",
+    "name": "T50 Mix Wet and Dry",
+    "aliases": [
+      "Dreame T50 Mix Wet & Dry",
+      "Dreame T50 Mix Wet and Dry"
+    ],
+    "tier": "mid",
+    "priceAmd": 204000,
+    "priceAmdMax": 204000,
+    "popularity": 35,
+    "accent": "#2A2A2E",
+    "appliance": {
+      "type": "wet_dry_vacuum"
+    },
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 204000
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "A wet and dry floor washer that converts to a handheld vacuum.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3905/"
+    ]
+  },
+  {
+    "id": "razer-blackshark-v2-x",
+    "category": "headphones",
+    "brand": "Razer",
+    "name": "BlackShark V2 X",
+    "aliases": [
+      "Razer BlackShark V2 X Gaming Headset",
+      "Razer BlackShark V2 X"
+    ],
+    "tier": "mid",
+    "priceAmd": 20000,
+    "priceAmdMax": 20000,
+    "popularity": 35,
+    "accent": "#2A2A2E",
+    "audio": {
+      "form": "over-ear"
+    },
+    "connectivity": {
+      "bluetooth": "none, wired 3.5 mm"
+    },
+    "body": {
+      "weight": 240
+    },
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 20000
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "A wired gaming headset with 50 mm drivers and a cardioid mic.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/801/"
+    ]
+  },
+  {
+    "id": "sony-wf-1000xm4",
+    "category": "headphones",
+    "brand": "Sony",
+    "name": "WF-1000XM4",
+    "aliases": [
+      "Sony WF-1000XM4 wireless in-ear headphones",
+      "Sony WF-1000XM4"
+    ],
+    "tier": "mid",
+    "priceAmd": 75000,
+    "priceAmdMax": 75000,
+    "popularity": 35,
+    "accent": "#2A2A2E",
+    "audio": {
+      "form": "tws",
+      "anc": true
+    },
+    "connectivity": {
+      "bluetooth": "5.2"
+    },
+    "battery": {
+      "life": "8 hours (24 with case)"
+    },
+    "body": {
+      "ip": "IPX4"
+    },
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 75000
+      }
+    ],
+    "colors": [
+      "Black"
+    ],
+    "summaryEn": "True wireless earbuds with noise cancelling.",
+    "unsure": [
+      "popularity"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3820/"
     ]
   }
 ]
