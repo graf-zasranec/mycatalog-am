@@ -183516,5 +183516,117 @@
     "sources": [
       "https://www.smartbox.am/en/shop/view/3820/"
     ]
+  },
+  {
+    "id": "hp-all-in-one-27-cr2057",
+    "category": "desktop",
+    "brand": "HP",
+    "name": "All-in-One 27-cr2057",
+    "aliases": [
+      "HP All-in-One 27-cr2057 – Intel Ultra 7, 32GB RAM, 1TB SSD, 24” FHD Touch",
+      "HP All-in-One 27-cr2057"
+    ],
+    "tier": "mid",
+    "priceAmd": 561000,
+    "priceAmdMax": 561000,
+    "popularity": 30,
+    "accent": "#5C6470",
+    "chipset": {
+      "name": "Intel Core Ultra 7"
+    },
+    "variants": [
+      {
+        "ram": 32,
+        "storage": 1024,
+        "priceAmd": 561000
+      }
+    ],
+    "display": {
+      "touch": true,
+      "resolution": "1920x1080"
+    },
+    "summaryEn": "An all-in-one PC with Intel Core Ultra 7, 32 GB RAM and a 1 TB SSD.",
+    "unsure": [
+      "popularity",
+      "colors",
+      "display.size"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3788/"
+    ]
+  },
+  {
+    "id": "acer-aspire-c24-1800",
+    "category": "desktop",
+    "brand": "Acer",
+    "name": "Aspire C24-1800 (DQ.BLFMC.007)",
+    "aliases": [
+      "all-in-one Acer Aspire C24-1800 DQ.BLFMC.007 Intel Core i3-1305U/8/256GB",
+      "Acer Aspire C24-1800 (DQ.BLFMC.007)"
+    ],
+    "tier": "mid",
+    "priceAmd": 219300,
+    "priceAmdMax": 219300,
+    "popularity": 30,
+    "accent": "#5C6470",
+    "chipset": {
+      "name": "Intel Core i3-1305U"
+    },
+    "variants": [
+      {
+        "ram": 8,
+        "storage": 256,
+        "priceAmd": 219300
+      }
+    ],
+    "display": {
+      "size": 23.8,
+      "type": "IPS",
+      "resolution": "1920x1080"
+    },
+    "summaryEn": "A 23.8-inch all-in-one PC with Intel Core i3-1305U, 8 GB RAM and a 256 GB SSD.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/2637/"
+    ]
+  },
+  {
+    "id": "xiaomi-gaming-monitor-g24i-2026",
+    "category": "monitor",
+    "brand": "Xiaomi",
+    "name": "Gaming Monitor G24i 2026 (P24FDA-RGGL)",
+    "aliases": [
+      "Xiaomi Monitor G24i 2026 (P24FDA-RGGL) 23.8",
+      "Xiaomi Gaming Monitor G24i 2026 (P24FDA-RGGL)"
+    ],
+    "tier": "mid",
+    "priceAmd": 55000,
+    "priceAmdMax": 55000,
+    "popularity": 30,
+    "accent": "#5C6470",
+    "display": {
+      "size": 23.8,
+      "type": "IPS",
+      "resolution": "1920x1080",
+      "refresh": 200
+    },
+    "variants": [
+      {
+        "ram": null,
+        "storage": null,
+        "priceAmd": 55000
+      }
+    ],
+    "summaryEn": "A 23.8-inch Full HD gaming monitor with a 200 Hz Fast IPS panel.",
+    "unsure": [
+      "popularity",
+      "colors"
+    ],
+    "sources": [
+      "https://www.smartbox.am/en/shop/view/3612/"
+    ]
   }
 ]
