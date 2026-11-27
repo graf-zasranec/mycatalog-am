@@ -1368,7 +1368,6 @@ for (const lang of LANGS) for (const [from, to] of Object.entries(MERGED)) {
 ${COUNTER.tag}
 <meta http-equiv="refresh" content="0;url=../${to}/">
 <link rel="canonical" href="${SITE}${pre}p/${to}/">
-<meta name="robots" content="noindex">
 <title>Better.am</title>
 </head><body><a href="../${to}/">${esc(nameOf(phones.find(p => p.id === to)))}</a></body></html>
 `);
