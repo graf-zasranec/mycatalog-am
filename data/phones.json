@@ -180092,11 +180092,16 @@
     "summaryEn": "A 16-inch laptop with Intel Core i5-1345U, 16 GB RAM and a 512 GB SSD.",
     "unsure": [
       "popularity",
-      "colors"
+      "colors",
+      "body.weight"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/4043/"
-    ]
+      "https://www.smartbox.am/en/shop/view/4043/",
+      "https://hp.com/lk-en/products/laptops/product-details/product-specifications/2102538460"
+    ],
+    "body": {
+      "weight": 1.73
+    }
   },
   {
     "id": "hp-elitebook-x360-830-g10-8h4u1uc",
@@ -180229,11 +180234,16 @@
     "summaryEn": "A 16.1-inch laptop with Intel Core i7-14650HX, RTX 4060 8GB, 16 GB RAM and a 512 GB SSD.",
     "unsure": [
       "popularity",
-      "colors"
+      "colors",
+      "battery.capacity"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/4166/"
-    ]
+      "https://www.smartbox.am/en/shop/view/4166/",
+      "https://support.hp.com/bg-en/document/ish_9862173-9862339-16"
+    ],
+    "battery": {
+      "capacity": 83
+    }
   },
   {
     "id": "hp-omnibook-x-flip-14-fk0033dx",
@@ -180375,11 +180385,20 @@
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 155H, 16 GB RAM and a 1 TB SSD.",
     "unsure": [
       "popularity",
-      "colors"
+      "colors",
+      "battery.capacity",
+      "body.weight"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/3777/"
-    ]
+      "https://www.smartbox.am/en/shop/view/3777/",
+      "https://www.notebookcheck.net/2-in-1-Convertible-HP-Spectre-x360-16-2024-laptop-review-A-powerful-Core-Ultra-allrounder-with-OLED.807431.0.html"
+    ],
+    "battery": {
+      "capacity": 83
+    },
+    "body": {
+      "weight": 1.95
+    }
   },
   {
     "id": "hp-spectre-x360-16-aa0097nr",
@@ -180420,11 +180439,21 @@
     "summaryEn": "A 16-inch laptop with Intel Core Ultra 7 155H, RTX 4050 6GB, 16 GB RAM and a 2 TB SSD.",
     "unsure": [
       "popularity",
-      "colors"
+      "colors",
+      "battery.capacity",
+      "body.weight"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/3776/"
-    ]
+      "https://www.smartbox.am/en/shop/view/3776/",
+      "https://hp.com/us-en/shop/pdp/hp-spectre-x360-2-in-1-laptop-16-aa0097nr",
+      "https://www.notebookcheck.net/2-in-1-Convertible-HP-Spectre-x360-16-2024-laptop-review-A-powerful-Core-Ultra-allrounder-with-OLED.807431.0.html"
+    ],
+    "body": {
+      "weight": 1.95
+    },
+    "battery": {
+      "capacity": 83
+    }
   },
   {
     "id": "hp-victus-15-fb3113dx",
@@ -183157,13 +183186,14 @@
         "priceAmd": 45000
       }
     ],
-    "summaryEn": "The Fujifilm Instax Mini SE.",
+    "summaryEn": "The Fujifilm Instax Mini SE, Instax Mini film, 60 mm lens, fixed 1/60 s shutter, always-on flash, 4x AA.",
     "unsure": [
       "popularity",
       "colors"
     ],
     "sources": [
-      "https://www.smartbox.am/en/shop/view/4150/"
+      "https://www.smartbox.am/en/shop/view/4150/",
+      "https://www.digitalcameraworld.com/cameras/instant-cameras/instax-mini-se-review"
     ]
   },
   {
