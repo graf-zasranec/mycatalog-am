@@ -3699,6 +3699,8 @@ function shopSimRule(o, phone) {
   if (phone.brand === 'Samsung' || o.shop === 'vlv') return false;
   // Owner, 2026-11-28: Android phones sold here all have a SIM tray. Google Pixels can be US eSIM-only builds, so they stay unlabelled.
   if (phone.brand !== 'Apple' && phone.brand !== 'Google') return false;
+  // Owner, 2026-11-28: iPhone 16 and older pages that name no build are the Nano-SIM build here.
+  if (phone.brand === 'Apple' && /^apple-iphone-(1[0-6]|se)\b/.test(phone.id)) return false;
   return undefined;
 }
 for (const list of Object.values(offers)) for (const o of list) { const e = shopSimRule(o, phoneById[o.id]); if (e !== undefined) o.esim = e; }
