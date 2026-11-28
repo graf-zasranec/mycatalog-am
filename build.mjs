@@ -1004,9 +1004,9 @@ a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
 // The same logo, menu, languages and footer as the app. A visitor from Google lands on these pages,
 // and they used to look like a different site with no way onward (audit, 2026-11-07).
 const CHROME = {
-  hy: { catalog: 'Կատալոգ', deals: 'Գների անկում', blog: 'Բլոգ' },
-  ru: { catalog: 'Каталог', deals: 'Снижение цен', blog: 'Блог' },
-  en: { catalog: 'Catalogue', deals: 'Price drops', blog: 'Blog' },
+  hy: { catalog: 'Կատալոգ', deals: 'Զեղչեր', blog: 'Բլոգ' },
+  ru: { catalog: 'Каталог', deals: 'Скидки', blog: 'Блог' },
+  en: { catalog: 'Catalogue', deals: 'Deals', blog: 'Blog' },
 };
 const LANG_NAMES = { hy: 'ՀԱՅ', ru: 'РУС', en: 'ENG' };
 // A section can hold 445 products. The most popular get cards; the rest fold into one plain list,
@@ -1022,7 +1022,8 @@ const TOP = (lang, path) => {
 };
 const FOOT = lang => {
   const pre = PRE[lang], c = CHROME[lang];
-  return `<footer class="ft"><div>${[...new Set(phones.map(catOf))].slice(0, 12).map(k => `<a href="/${pre}c/${k}/">${esc(catLabel(k, lang))}</a>`).join('')}<a href="/${pre}deals/">${c.deals}</a><a href="/${pre}b/">${c.blog}</a></div></footer>`;
+  const home = '/' + pre, A = { hy: ['Կապ', 'Գաղտնիություն', 'Պայմաններ', 'Թարմացվել է'], ru: ['Контакты', 'Конфиденциальность', 'Условия', 'Обновлено'], en: ['Contact', 'Privacy', 'Terms', 'Updated'] }[lang];
+  return `<footer class="ft"><div><b>Better.am</b><span>${A[3]} ${today.split('-').reverse().join('.')}</span><a href="${home}#/contact">${A[0]}</a><a href="${home}#/privacy">${A[1]}</a><a href="${home}#/terms">${A[2]}</a></div></footer>`;
 };
 const THUMBS = fs.existsSync('data/thumbnails.json') ? JSON.parse(rd('data/thumbnails.json')) : {};
 const cardImg = p => {
@@ -1135,7 +1136,7 @@ let shared = 0;
 const sitemapRows = [];
 const SECTIONS_H = { hy: 'Բաժիններ', ru: 'Разделы', en: 'Sections' };
 const SECTION_N = { hy: n => `${n} մոդել`, ru: n => `${n} ${n % 10 === 1 && n % 100 !== 11 ? 'модель' : n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 'модели' : 'моделей'}`, en: n => `${n} model${n === 1 ? '' : 's'}` };
-const DEAL_LINK = { hy: 'Ինչն է էժանացել', ru: 'Что подешевело', en: 'What got cheaper' };
+const DEAL_LINK = { hy: 'Զեղչեր', ru: 'Скидки', en: 'Deals' };
 const cats = [...new Set(phones.map(catOf))];
 for (const lang of LANGS) {
   // R: back up to the site root from a page two folders deep (three under ru/ and en/)
@@ -1275,13 +1276,13 @@ const bodyHTML = (list, lang = 'hy', root = '../../') => {
 // Price drops as a real page: the same strict DROPS as the front page, all of them, biggest first.
 // It is also a hub - every product on it gets a link from a page Google visits often.
 const DEAL_T = {
-  hy: { h1: 'Գների անկում', title: 'Գների անկում Հայաստանում. ինչն է էժանացել | Better.am',
+  hy: { h1: 'Զեղչեր', title: 'Զեղչեր և գների անկում Հայաստանում. ինչն է էժանացել | Better.am',
     lead: n => `${n} ապրանք, որոնց ամենացածր գինը իրականում իջել է։ Հաշվում ենք միայն առնվազն 5% անկումը, երբ գները համեմատվել են նույն թվով խանութներում առնվազն մեկ շաբաթ։`,
     since: d => `${d}-ից`, link: 'Ինչն է էժանացել' },
-  ru: { h1: 'Снижение цен', title: 'Снижение цен в Армении: что подешевело | Better.am',
+  ru: { h1: 'Скидки', title: 'Скидки и снижение цен в Армении: что подешевело | Better.am',
     lead: n => `Товаров, чья минимальная цена действительно снизилась: ${n}. Считаем только падение от 5%, когда цены сравнивались в том же числе магазинов минимум неделю.`,
     since: d => `с ${d}`, link: 'Что подешевело' },
-  en: { h1: 'Price drops', title: 'Price drops in Armenia: what got cheaper | Better.am',
+  en: { h1: 'Deals', title: 'Deals and price drops in Armenia: what got cheaper | Better.am',
     lead: n => `${n} products whose lowest price really fell. We count only falls of 5% or more, with prices compared across the same number of shops for at least a week.`,
     since: d => `since ${d}`, link: 'What got cheaper' },
 };

@@ -1090,7 +1090,12 @@ const ANY_ASK = new Set(Object.values(ASK).flat());
 const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop'
   || (cat ? (ASK[cat] || []).includes(k) : ANY_ASK.has(k));
 
+const DEALS_L = { hy: 'Զեղչեր', ru: 'Скидки', en: 'Deals' };
+const onDeals = () => location.hash.replace(/^#/, '') === '/deals';
+let DEAL_IDS = null;
+const dealIds = () => DEAL_IDS || (DEAL_IDS = new Set((typeof DROPS !== 'undefined' ? DROPS : []).map(d => d.id)));
 function matches(p, s) {
+  if (onDeals() && !dealIds().has(p.id)) return false;
   if (s.cat && (p.category || 'phone') !== s.cat) return false;   // same default inView()/catTabs() use
   if (!hayMatch(p, s.q)) return false;
   const pr = catalogPrice(p, s);
@@ -1402,14 +1407,13 @@ function paintChrome() {
   // "Catalog" now goes, and the comparison.
   $('#nav').innerHTML =
     `<a href="#/catalog" ${['/catalog', '/construct'].includes(h) ? 'aria-current="page"' : ''}>${esc(t('nav.catalog'))}</a>` +
+    `<a href="#/deals" ${h === '/deals' ? 'aria-current="page"' : ''}>${esc(DEALS_L[st.lang] || DEALS_L.en)}</a>` +
     `<a href="#/compare" ${h === '/compare' ? 'aria-current="page"' : ''}>${x('navCmpShort') ? `<span class="nl">${esc(t('nav.compare'))}</span><span class="ns">${esc(x('navCmpShort'))}</span>` : esc(t('nav.compare'))}`
     + `<span class="c" id="cmpN">${st.cmp.length || ''}</span></a>`
     + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '')
     + `<a href="#/contact" ${h === '/contact' ? 'aria-current="page"' : ''}>${esc(t('nav.coop'))}</a>`;
   paintCmpCount();
-  $('#foot').innerHTML = `<b>Better.am</b><a href="${st.lang === 'hy' ? '' : st.lang + '/'}deals/">${esc({ hy: 'Ինչն է էժանացել', ru: 'Что подешевело', en: 'What got cheaper' }[st.lang] || 'What got cheaper')}</a><span>${esc(x('priceSrc'))}${updatedOn() ? ` · ${esc(x('updated'))} ${esc(updatedOn())}` : ``}</span>`
-    + `<span class="ft-note">${esc(x('disclaim'))}</span>`
-    + `<nav class="ft-categories" aria-label="${esc(t('nav.catalog'))}">${[...new Set(DATA.map(catOf))].sort((a,b)=>catName(a).localeCompare(catName(b),st.lang)).map(cat=>`<a href="${st.lang === 'hy' ? '/' : '/' + st.lang + '/'}c/${esc(cat)}/" data-route="#/c/${esc(cat)}">${esc(catName(cat))}</a>`).join('')}</nav>`
+  $('#foot').innerHTML = `<b>Better.am</b>${updatedOn() ? `<span>${esc(x('updated'))} ${esc(updatedOn())}</span>` : ''}`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a>${typeof window.gtag === 'function' ? `<button type="button" class="analytics-settings" data-analytics-settings>${({hy:'Վիճակագրության կարգավորումներ',ru:'Настройки статистики',en:'Analytics settings'})[st.lang]}</button>` : ''}</span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
@@ -2107,6 +2111,7 @@ function catalogView() {
   const raw = location.hash.replace(/^#/, '') || '/';
   const hd = raw === '/' ? 'h2' : 'h1';
   const title = raw === '/search' && st.q.trim() ? st.q.trim()
+    : raw === '/deals' ? (DEALS_L[st.lang] || DEALS_L.en)
     : st.cat ? catName(st.cat)
     : t('catalog.title');
   return `<div class="shell">
@@ -3347,7 +3352,7 @@ function render(keepScroll) {
     if (!initialHome) { main.innerHTML = catalogView(); refresh(); }
     // the section row scrolls sideways; the one you are in may sit past the edge or under "More"
     const on = $('.ctabs .on'); if (on) on.parentNode.scrollLeft = on.offsetLeft - on.parentNode.offsetLeft - 14;
-    document.title = (st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) :
+    document.title = (h === '/deals' ? (DEALS_L[st.lang] || DEALS_L.en) : st.cat ? ((X[st.lang].cats || {})[st.cat] || st.cat) :
       ({hy:'Սարքերի գների համեմատություն Հայաստանում',ru:'Сравнение цен на технику в Армении',en:'Compare product prices in Armenia'})[st.lang]) + ' | Better.am';
     // Applied at the END of render, not here: the masthead hero is rebuilt below, and inserting
     // it after a scrollTo pushed the grid down by the hero's height - which is why coming back
@@ -3364,7 +3369,7 @@ function render(keepScroll) {
   document.documentElement.classList.remove('route-pending');
   const mh = $('#masthero');
   // the hero belongs to the front page only, not to a single category
-  const home = !m && !mc && !['/catalog', '/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
+  const home = !m && !mc && !['/catalog', '/construct', '/compare', '/privacy', '/terms', '/contact', '/search', '/blog', '/deals'].includes(h) && !h.startsWith('/offers/') && !h.startsWith('/blog/');
   mh.hidden = !home;
   if (!initialHome) mh.innerHTML = home ? mastHero() : '';
   if (home) requestAnimationFrame(dealEdges);
