@@ -831,7 +831,6 @@ User-agent: *
 Disallow: /
 
 Sitemap: ${SITE}sitemap-index.xml
-Sitemap: ${SITE}sitemap.xml
 `);
 const today = new Date().toISOString().slice(0, 10);
 const previousPages = fs.existsSync('data/page-manifest.json') ? JSON.parse(rd('data/page-manifest.json')) : {};
@@ -942,6 +941,14 @@ const low30 = p => {
   const l = pts.filter(x => x.d >= since).map(x => x.lo).filter(Number.isFinite);
   return l.length > 1 ? Math.min(...l) : null;
 };
+// the day the price last moved (lowest or highest), from the nightly history - what lastmod should say
+const movedOn = p => {
+  const pts = (HISTORY.points || {})[p.id] || [];
+  for (let i = pts.length - 1; i > 0; i--) if (pts[i].lo !== pts[i - 1].lo || pts[i].hi !== pts[i - 1].hi) return pts[i].d;
+  return pts.length ? pts[0].d : null;
+};
+// a list page changes when any of its products' prices moves
+const lastMoved = list => list.map(movedOn).filter(Boolean).sort().pop() || null;
 // one row per shop and capacity, its cheapest - five colours of one phone at one price are one
 // offer to a reader, and colour names would be English on an Armenian page
 const rows = offs => { const seen = new Set(); return offs.filter(o => {
@@ -1192,7 +1199,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, interactiveProduct(page, lang, p, relLinks));
-    if (offs.length) sitemapRows.push([url, null, 0.7]);
+    if (offs.length) sitemapRows.push([url, movedOn(p), 0.7, 'products']);
     shared++;
   }
   // One page per section, and one per brand inside it ("Samsung phones") wherever a brand has three
@@ -1226,7 +1233,7 @@ ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](li
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, page);
-    sitemapRows.push([url, null, 0.8]);
+    sitemapRows.push([url, lastMoved(list), 0.8]);
   };
   const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   for (const c of cats) {
@@ -1312,7 +1319,7 @@ ${TOP(lang, 'deals/')}
 <p class="upd">${today.split('-').reverse().join('.')}</p>
 </main>${FOOT(lang)}</body></html>
 `);
-  sitemapRows.push([url, null, 0.8]);
+  sitemapRows.push([url, lastMoved(dealRows.map(d => d.p)), 0.8]);
 }
 if (BLOG.length) for (const lang of LANGS) {
   const t = L[lang], pre = PRE[lang], home = SITE + pre, app = lang === 'hy' ? '' : `?lang=${lang}`;
@@ -1361,7 +1368,7 @@ ${(a.sources || []).length ? `<p class="upd">${t.sources}${a.sources.filter(s =>
 <p class="upd">${a.date.split('-').reverse().join('.')}</p>
 </main>${FOOT(lang)}</body></html>
 `);
-    sitemapRows.push([url, A.body.some(s => s.startsWith('!items:')) ? null : a.modified || a.date, 0.7]);
+    sitemapRows.push([url, A.body.some(s => s.startsWith('!items:')) ? lastMoved(items.map(id => phones.find(p => p.id === id)).filter(Boolean)) || a.modified || a.date : a.modified || a.date, 0.7]);
   }
 }
 // A product folded into another keeps its url: the share page and any link to it that was
@@ -1424,7 +1431,7 @@ for (const lang of ['ru','en']) {
     .replace(/(<nav class="nav" id="nav">)[\s\S]*?<\/nav>/,'$1'+links(rendered.nav)+'</nav>')
     .replace(/(<span class="langs" id="langs">)[\s\S]*?<\/span>/,'$1'+rendered.langs+'</span>')
     .replace(/(<div class="shell" id="foot">)[\s\S]*?<\/div><\/footer>/,'$1'+links(rendered.foot)+'</div></footer>');
-  writePage(pre+'index.html',head+'</head>'+body);sitemapRows.push([url,null,1]);
+  writePage(pre+'index.html',head+'</head>'+body);sitemapRows.push([url,lastMoved(phones),1]);
 }
 // Only generated index files inside the known publication trees are removed. Keep
 // unrelated files, and keep every translated merged-product redirect.
@@ -1442,36 +1449,45 @@ const prunePages = dir => {
 };
 for (const pre of ['', 'ru/', 'en/']) for (const tree of ['p', 'c', 'b']) prunePages(pre + tree);
 fs.writeFileSync('data/page-manifest.json', JSON.stringify(generatedPages, null, 1) + '\n');
+// lastmod = the day the content really changed: a product's last price move, a list's newest move,
+// an article's own date (audit 2026-11-28: the live sitemaps had almost no lastmod, because a clean CI
+// checkout has no page manifest). The manifest is only a fallback for pages without such a date.
 const sitemapLastmod = (url, knownDate) => {
   const key = new URL(url).pathname.slice(1) + 'index.html';
-  // A clean CI checkout has no previous page manifest. Use only a known content date.
-  const modified = previousPages[key] ? generatedPages[key]?.modified : knownDate;
+  const modified = knownDate || (previousPages[key] ? generatedPages[key]?.modified : null);
   return modified ? `<lastmod>${modified}</lastmod>` : '';
 };
-fs.writeFileSync('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- <url><loc>${SITE}</loc>${sitemapLastmod(SITE)}<changefreq>daily</changefreq><priority>1.0</priority></url>
-${sitemapRows.map(([u, d, pr]) => ` <url><loc>${u}</loc>${sitemapLastmod(u, d)}<priority>${pr}</priority></url>`).join('\n')}
-</urlset>
-`);
-// Search Console stuck on "Couldn't fetch" for sitemap.xml since 2026-10-06 (owner, 2026-10-16): a
-// fresh index URL with one small sitemap per language gets read anew. sitemap.xml stays for old links.
-const langOf = u => /^\/(ru|en)\//.exec(new URL(u).pathname)?.[1] || 'hy';
-const indexParts = [];
-for (const lang of ['hy', 'ru', 'en']) {
-  const rows = [[SITE, null, 1], ...sitemapRows].filter(([u]) => langOf(u) === lang);
-  fs.writeFileSync(`sitemap-${lang}.xml`, `<?xml version="1.0" encoding="UTF-8"?>
+const urlset = rows => `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${rows.map(([u, d, pr]) => ` <url><loc>${u}</loc>${sitemapLastmod(u, d)}<priority>${pr}</priority></url>`).join('\n')}
 </urlset>
-`);
-  indexParts.push(` <sitemap><loc>${SITE}sitemap-${lang}.xml</loc></sitemap>`);
+`;
+// One index, one file per language and kind (products apart from hubs), so Search Console reports
+// coverage per section. robots.txt names only the index; sitemap.xml is the same index for old links.
+const langOf = u => /^\/(ru|en)\//.exec(new URL(u).pathname)?.[1] || 'hy';
+const indexParts = [];
+const homeMoved = lastMoved(phones);
+for (const old of fs.readdirSync('.').filter(f => /^sitemap-(hy|ru|en)(-\w+)?\.xml$/.test(f))) fs.unlinkSync(old);
+for (const lang of ['hy', 'ru', 'en']) {
+  const rows = [[SITE, homeMoved, 1], ...sitemapRows].filter(([u]) => langOf(u) === lang);
+  const parts = { pages: rows.filter(r => r[3] !== 'products'), products: rows.filter(r => r[3] === 'products') };
+  for (const [kind, list] of Object.entries(parts)) {
+    // 50,000 urls per file is the protocol's limit; 5,000 keeps each one small to fetch
+    for (let i = 0, n = 1; i < list.length; i += 5000, n++) {
+      const file = `sitemap-${lang}-${kind}${n > 1 ? n : ''}.xml`, chunk = list.slice(i, i + 5000);
+      fs.writeFileSync(file, urlset(chunk));
+      const newest = chunk.map(r => r[1]).filter(Boolean).sort().pop();
+      indexParts.push(` <sitemap><loc>${SITE}${file}</loc>${newest ? `<lastmod>${newest}</lastmod>` : ''}</sitemap>`);
+    }
+  }
 }
-fs.writeFileSync('sitemap-index.xml', `<?xml version="1.0" encoding="UTF-8"?>
+const sitemapIndex = `<?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${indexParts.join('\n')}
 </sitemapindex>
-`);
+`;
+fs.writeFileSync('sitemap-index.xml', sitemapIndex);
+fs.writeFileSync('sitemap.xml', sitemapIndex);
 // The two single-file builds inline every photograph as a data URI. That was ~18 MB each when
 // this was written and is 211 MB each now, so a plain build wrote 422 MB nobody asked for -
 // GitHub Pages serves index.html and nothing else, and both files are gitignored. They are
