@@ -31,7 +31,11 @@ assertCaseStableBrands(phones);
 // IMG_HOST= (empty) keeps every path local, for a build opened straight from disk.
 const IMG_HOST = process.env.IMG_HOST ?? 'https://img.better.am/';
 const ON_R2 = /^\/?images\/(?:cut|thumb|social)\//;
-const pub = s => typeof s === 'string' && IMG_HOST && ON_R2.test(s) ? IMG_HOST + s.replace(/^\//, '') : s;
+// A replaced photo keeps its file name, so browsers and the CDN kept showing the old one for hours
+// (owner, 28 Nov: Redmi Buds 6 Lite). Cut photos carry a short content hash; thumbnails already do.
+const VTAG = new Map();
+const vtag = s => { const f = s.replace(/^\//, '').split('?')[0]; if (!/^images\/cut\//.test(f)) return ''; if (!VTAG.has(f)) { let v = ''; try { v = '?v=' + crypto.createHash('md5').update(fs.readFileSync(f)).digest('hex').slice(0, 8); } catch { } VTAG.set(f, v); } return VTAG.get(f); };
+const pub = s => typeof s === 'string' && IMG_HOST && ON_R2.test(s) ? IMG_HOST + s.replace(/^\//, '') + vtag(s) : s;
 // an image path as a page writes it: on R2 it is absolute, otherwise from the site root
 const imgUrl = s => { const u = pub(s); return /^https?:/.test(u) ? u : '/' + String(u).replace(/^\//, ''); };
 const IMG_ORIGIN = IMG_HOST ? ' ' + new URL(IMG_HOST).origin : '';
