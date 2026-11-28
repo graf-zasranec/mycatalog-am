@@ -1883,14 +1883,13 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 @keyframes dealSweep{0%,35%{background-position:100% 0}75%,100%{background-position:0 0}}
 @keyframes dealTw{0%,100%{transform:scale(0) rotate(0);opacity:0}45%{transform:scale(1) rotate(45deg);opacity:1}70%{transform:scale(.6) rotate(90deg);opacity:.6}}
 /* home deal tile swap */
-.bx-deal>*{transition:opacity .9s cubic-bezier(.4,0,.2,1),transform .9s cubic-bezier(.4,0,.2,1),filter .9s}
-.bx-deal.bx-out>*{opacity:0;transform:translateY(-6px);filter:blur(2px)}
-.bx-deal.bx-in>*{animation:bxIn 1.3s cubic-bezier(.16,1,.3,1) both}
+.bx-grid{position:relative}
+.bx-deal.bx-in>*{animation:bxIn 1.6s cubic-bezier(.16,1,.3,1) both}
 .bx-deal.bx-in>:nth-child(2){animation-delay:.1s}.bx-deal.bx-in>:nth-child(3){animation-delay:.2s}
 .bx-deal.bx-in>img{animation-name:bxInImg}
-@keyframes bxIn{from{opacity:0;transform:translateY(12px);filter:blur(3px)}to{opacity:1;transform:none;filter:none}}
+@keyframes bxIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes bxInImg{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.nav-deal span{animation:none;color:inherit;background:none}.nav-deal i{display:none}.nav a.nav-deal::before{animation:none}.nav-deal span{-webkit-text-fill-color:#fff}.bx-deal.bx-in>*,.bx-deal.bx-out>*{animation:none;transition:none}}
+@media (prefers-reduced-motion:reduce){.nav-deal span{animation:none;color:inherit;background:none}.nav-deal i{animation:dealTwFade 2.4s ease-in-out infinite;transform:scale(1) rotate(45deg)}.nav a.nav-deal::before{animation:none}.nav-deal span{-webkit-text-fill-color:#fff}.bx-deal.bx-in>*,.bx-deal.bx-in>img{animation:bxFade 1.4s ease both}}
 
 /* mobile Deals: % on a small wine burst */
 .mico.mdeal{isolation:isolate}
@@ -1916,6 +1915,16 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 /* the Deals icon made the phone header wrap: tighter icons */
 @media(max-width:800px){.topnav{flex-wrap:nowrap!important}.topnav .logo{flex-shrink:1;min-width:0}.topnav .mast-r{flex-shrink:0;margin-left:auto}.topnav .th{flex-shrink:0}}
 @media(max-width:420px){.topnav{gap:2px}.topnav .mast-r{gap:0}.mico{width:32px}.msrch{min-width:32px;padding:0 4px}.lang-btn{padding:0 4px}.topnav .th{width:30px;min-width:30px;flex-shrink:0}}
+
+@keyframes bxFade{from{opacity:0}to{opacity:1}}
+@keyframes dealTwFade{0%,100%{opacity:0}45%{opacity:1}70%{opacity:.5}}
+
+/* owner wants the deal fade and Deals sparkle even with Reduce Motion: opacity only, nothing slides */
+@media (prefers-reduced-motion:reduce){
+ .bx-grid>.bx-deal{transition-duration:1.4s!important}
+ .bx-grid>.bx-deal.bx-in>*{animation-duration:1.4s!important}
+ .nav-deal i{animation-duration:2.4s!important;animation-iteration-count:infinite!important}
+}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
@@ -1934,7 +1943,7 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
     <span class="mast-r">
       <a class="mico mdeal" id="mDeal" href="#/deals" aria-label="Deals"><span aria-hidden="true">%</span></a>
       <a class="mico" id="mCat" href="#/catalog" aria-label="Catalog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></a>
-      <a class="mico" id="mCmp" href="#/compare" aria-label="Compare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v18M16 3v18M3 7h18M3 17h18"/></svg><b id="mCmpN" hidden></b></a>
+      <a class="mico" id="mCmp" href="#/compare" aria-label="Compare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg><b id="mCmpN" hidden></b></a>
       <button type="button" class="msrch" id="msrchBtn" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button>
       <span class="langs" id="langs"></span>
       <button class="th" id="themeBtn"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
