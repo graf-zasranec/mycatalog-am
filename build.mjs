@@ -649,9 +649,11 @@ function build({ inline, standalone }) {
     .replace(/href="#\/blog(?:\/([^"#]+))?"/g, (_, id) => `href="/b/${id ? id + '/' : ''}" data-route="#/blog${id ? '/' + id : ''}"`);
   const heroImage = initial.hero.match(/<img\b[^>]*fetchpriority="high"[^>]*>/)?.[0] || '';
   // Preload is parsed before locale pages' <base>; use root paths from first fetch.
-  const heroSrcset = heroImage.match(/\bsrcset="([^"]+)"/)?.[1]?.replace(/(^|,\s*)(images\/)/g, '$1/$2');
+  // A deal whose product has no thumbnail has a plain src and no srcset; it is still the page's
+  // largest paint, so it is preloaded on its own rather than not at all.
+  const heroSrcset = (heroImage.match(/\bsrcset="([^"]+)"/)?.[1] || heroImage.match(/\bsrc="([^"]+)"/)?.[1])?.replace(/(^|,\s*)(images\/)/g, '$1/$2');
   const heroSizes = heroImage.match(/\bsizes="([^"]+)"/)?.[1];
-  const heroPreload = heroSrcset ? `<link rel="preload" as="image" imagesrcset="${heroSrcset}" imagesizes="${heroSizes}" fetchpriority="high">` : '';
+  const heroPreload = heroSrcset ? `<link rel="preload" as="image" imagesrcset="${heroSrcset}"${heroSizes ? ` imagesizes="${heroSizes}"` : ''} fetchpriority="high">` : '';
   // The shell is a head fragment; HEAD_CLOSE is added after splitShell below.
   // Put the responsive hero preload before the title rather than a missing </head>.
   const shell = seoTitle(rd('_shell.html')).replace('<title>', `${heroPreload}<title>`)
