@@ -1049,7 +1049,7 @@ const cardImg = p => {
 // path: the page's place under the site root ('p/apple-iphone-17/'), the same in every language
 const alts = path => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${PRE[l]}${path}">`).join('\n')
   + `\n<link rel="alternate" hreflang="x-default" href="${SITE}${path}">`;
-const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
+const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path, robots }) => {
   // general pages share the plain logo card (owner, 2026-10-10)
   return `<!doctype html>
 <html lang="${lang}"><head><meta charset="utf-8">
@@ -1070,7 +1070,7 @@ const HEAD = ({ title, desc, url, img, ld, lang = 'hy', path }) => {
 ${COUNTER.tag}
 <meta name="description" content="${esc(desc)}">
 <link rel="canonical" href="${url}">
-${path != null ? alts(path) : ''}
+${robots ? `<meta name="robots" content="${robots}">\n` : ''}${path != null ? alts(path) : ''}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Better.am">
 <meta property="og:locale" content="${L[lang].locale}">
@@ -1112,7 +1112,7 @@ function interactiveProduct(page, lang, product, relLinks = '') {
   const preload = photo ? `<link rel="preload" as="image" href="${imgUrl(photo)}"${set ? ` imagesrcset="${set}" imagesizes="${sizes}"` : ''} fetchpriority="high">` : '';
   const detailUrl = detailUrlsById.get(product.id);
   const detailPreload = detailUrl ? `<link rel="preload" as="script" href="/${detailUrl}" fetchpriority="low">` : '';
-  const seoTags = /<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
+  const seoTags = /<title>[\s\S]*?<\/title>|<meta (?:name="(?:description|robots|twitter:[^"]+)"|property="og:[^"]+")[^>]*>|<link rel="(?:canonical|alternate)"[^>]*>|<script type="application\/ld\+json">[\s\S]*?<\/script>/g;
   const productHead = page.split('</head>')[0];
   const head = interactiveHome.split('</head>')[0].replace(seoTags, '')
     .replace(/<style>[\s\S]*?<\/style>/g, '')
@@ -1178,7 +1178,10 @@ for (const lang of LANGS) {
         category: cat, ...(hero ? { image: SITE + hero } : {}), description: DESC(p, lang), url, offers: offerOf(p) },
       crumbs([['Better.am', SITE + app], [catLabel(cat, lang), catUrl], [n, url]]),
     ];
-    const page = HEAD({ title: t.title(n), desc: DESC(p, lang), url, img, ld, lang, path }) + `
+    // A page with one shop or none compares nothing; it stays reachable but out of the index until a
+    // second shop sells it (audit 2026-11-28: such pages were "Discovered - currently not indexed").
+    const thinProduct = shopsOf(p) < 2;
+    const page = HEAD({ title: t.title(n), desc: DESC(p, lang), url, img, ld, lang, path, robots: thinProduct ? 'noindex,follow' : '' }) + `
 <header><a href="${R}${app}">Better.am</a></header>
 <nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › <a href="${R}${pre}c/${cat}/">${esc(catLabel(cat, lang))}</a> › <span>${esc(n)}</span></nav>
 <main>
@@ -1199,12 +1202,13 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, interactiveProduct(page, lang, p, relLinks));
-    if (offs.length) sitemapRows.push([url, movedOn(p), 0.7, 'products']);
+    if (!thinProduct) sitemapRows.push([url, movedOn(p), 0.7, 'products']);
     shared++;
   }
   // One page per section, and one per brand inside it ("Samsung phones") wherever a brand has three
   // priced products or more: every product with its cheapest price, linking to its own page.
-  const listPage = ({ list, path, label, trail, appHash, brands = [], others = [], sections = [] }) => {
+  // thin: a brand or type sub-section of 3 products or fewer - reachable, not indexed (audit 2026-11-28)
+  const listPage = ({ list, path, label, trail, appHash, brands = [], others = [], sections = [], thin = false }) => {
     // one sentence of facts only this list has, so a brand page is more than a list of links
     const factsOf = l => { const c = l.slice().sort((a, b) => bestOf(a) - bestOf(b)), w = l.slice().sort((a, b) => shopsOf(b) - shopsOf(a))[0];
       return t.facts(nameOf(c[0]), amd(bestOf(c[0])), nameOf(w), shopsOf(w), amd(bestOf(c[0])), amd(Math.max(...l.map(p => offersOf(p).at(-1).price))), new Set(l.flatMap(p => offersOf(p).map(o => o.shop))).size); };
@@ -1212,7 +1216,7 @@ ${seen ? `<p class="upd">${t.checked}${seen.split('-').reverse().join('.')}</p>`
     const desc = label + '. ' + t.cdesc(list.length, amd(Math.min(...list.map(bestOf))));
     // people search "Kindle price", not "e-reader": 36 impressions a month at position 5 (Search Console, Nov 2026)
     const page = HEAD({ title: t.ctitle(path === 'c/ereader/' ? `Kindle, ${label}` : label), desc, url, img: SITE + SEO.img,
-      ld: [crumbs([['Better.am', SITE + app], ...trail.map(([n, u]) => [n, home + u]), [label, url]])], lang, path }) + `
+      ld: [crumbs([['Better.am', SITE + app], ...trail.map(([n, u]) => [n, home + u]), [label, url]])], lang, path, robots: thin ? 'noindex,follow' : '' }) + `
 ${TOP(lang, path)}
 <nav class="bc" aria-label="Breadcrumb"><a href="${R}${app}">Better.am</a> › ${trail.map(([n, u]) => `<a href="${R}${pre}${u}">${esc(n)}</a> › `).join('')}<span>${esc(label)}</span></nav>
 <main>
@@ -1233,7 +1237,7 @@ ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](li
 `;
     fs.mkdirSync(pre + path, { recursive: true });
     writePage(`${pre}${path}index.html`, page);
-    sitemapRows.push([url, lastMoved(list), 0.8]);
+    if (!thin) sitemapRows.push([url, lastMoved(list), 0.8]);
   };
   const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   for (const c of cats) {
@@ -1244,7 +1248,7 @@ ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](li
     const byBrand = Object.entries(Object.groupBy(list, p => p.brand)).filter(([, l]) => l.length >= 3)
       .sort((x, y) => y[1].length - x[1].length);
     for (const [brand, l] of byBrand)
-      listPage({ list: l, path: `c/${c}/${slug(brand)}/`, label: `${brand} — ${label}`, trail: [[label, `c/${c}/`]], appHash: `c/${c}`,
+      listPage({ list: l, path: `c/${c}/${slug(brand)}/`, label: `${brand} — ${label}`, trail: [[label, `c/${c}/`]], appHash: `c/${c}`, thin: l.length <= 3,
         others: byBrand.filter(([b]) => b !== brand).map(([b]) => [b, `c/${c}/${slug(b)}/`]) });
     // Sub-sections by product type (fridges, washing machines, capsule coffee machines...): a big
     // category is one long list otherwise (owner, 2026-11-11: "make a lot new sections").
@@ -1252,7 +1256,7 @@ ${list.length > CARD_LIMIT ? `<details class="more"><summary>${SHOW_ALL[lang](li
       .filter(([k, l]) => l.length >= 2 && STR[lang]['section.' + k]).sort((x, y) => y[1].length - x[1].length);
     const sections = byType.length >= 2 ? byType.map(([k, l]) => [STR[lang]['section.' + k], `c/${c}/${slug(k)}/`, l, k]) : [];
     for (const [n, u, l, k] of sections)
-      listPage({ list: l, path: u, label: n, trail: [[label, `c/${c}/`]], appHash: `c/${c}/${k}`,
+      listPage({ list: l, path: u, label: n, trail: [[label, `c/${c}/`]], appHash: `c/${c}/${k}`, thin: l.length <= 3,
         others: sections.filter(x => x[3] !== k).map(([n2, u2]) => [n2, u2]) });
     listPage({ list, path: `c/${c}/`, label, trail: [], appHash: `c/${c}`, brands: byBrand.map(([b]) => [b, `c/${c}/${slug(b)}/`]), sections });
   }
