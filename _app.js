@@ -352,7 +352,8 @@ const offersFor = p => {
 const hasReal = p => offersFor(p).length > 0;
 setBounds();
 const bestOf = p => hasReal(p) ? offersFor(p)[0].price : p.priceAmd;
-const safeHref = u => /^https?:\/\//i.test(String(u)) ? String(u) : '#';
+// Viva's /en/ product pages do not open (owner, 28 Nov); its plain address does.
+const safeHref = u => /^https?:\/\//i.test(String(u)) ? String(u).replace(/^(https:\/\/shop\.viva\.am)\/en\/product\//, '$1/product/') : '#';
 const shopName = k => (P.shops && P.shops[k] && P.shops[k].name) || k;
 // one phone can have many offers per shop (storage x colour), so never count rows as shops
 const shopCount = list => new Set(list.map(o => o.shop)).size;
