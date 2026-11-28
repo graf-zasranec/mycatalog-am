@@ -28,6 +28,8 @@ import { AsyncLocalStorage } from 'node:async_hooks';
 const LANE = new AsyncLocalStorage();
 
 const UA = 'BetterBot/0.1 (+price comparison; respects robots.txt)';   // tools/*.mjs use the same string
+// Owner, 2026-11-28: these shops say eSIM / Nano-SIM in the product name or on the variant picker.
+const SIM_NAMED_SHOPS = new Set(['ibolit', 'yerevanmobile', 'appzone', 'mobilecentre', 'planet3d', 'pixel', 'allsell']);
 const DELAY_MS = Number(process.env.BETTER_DELAY_MS) || 400; // Mac Vesta job uses 1500: it 429s at 400 (2026-11-27)
 const TIMEOUT_MS = 30000;
 
@@ -3695,6 +3697,8 @@ for (const [id, list] of Object.entries(offers)) {
 function shopSimRule(o, phone) {
   if (o.esim !== undefined || !phone || phone.category !== 'phone') return o.esim;
   if (phone.brand === 'Samsung' || o.shop === 'vlv') return false;
+  // Owner, 2026-11-28: Android phones sold here all have a SIM tray. Google Pixels can be US eSIM-only builds, so they stay unlabelled.
+  if (phone.brand !== 'Apple' && phone.brand !== 'Google') return false;
   return undefined;
 }
 for (const list of Object.values(offers)) for (const o of list) { const e = shopSimRule(o, phoneById[o.id]); if (e !== undefined) o.esim = e; }
@@ -3748,6 +3752,7 @@ function dropUnrankableSim(list) {
     const lowE = Math.min(...esim.map(o => o.price));
     const lowT = Math.min(...tray.map(o => o.price));
     if (lowT >= lowE) continue;                 // tray dearer or the same: both builds stand (owner 2026-11-27: Pixel sells both at one price)
+    if (SIM_NAMED_SHOPS.has(esim[0].shop)) continue; // owner 2026-11-28: these shops name the build reliably, trust it even when eSIM is dearer
     for (const o of esim) delete o.esim;
     n++;
   }
