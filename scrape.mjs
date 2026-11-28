@@ -1973,10 +1973,7 @@ const pixelMemory = (h, id) => {
   return gb >= 32 && sold.has(gb) && !ram.has(gb) ? gb : undefined;
 };
 const SHOPS = {
-  vesta: {
-    name:'Vesta',site:'https://vesta.am',note:'Exact reviewed product pages and current cash prices',
-    async run(){const {collectVesta}=await import('./tools/vesta.mjs');return collectVesta({get,pause:()=>sleep(DELAY_MS),products:phones});}
-  },
+  // vesta removed from better.am (owner, 28 Nov 2026): reader kept in tools/vesta.mjs, not crawled
   smartbox: {
     name:'SmartBox',site:'https://www.smartbox.am',note:'electronics retailer',
     // ids from data/smartbox-index.json (rebuild: node tools/smartbox.mjs --index) plus pinned pages
