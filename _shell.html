@@ -1943,6 +1943,12 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 /* phone category strip ends with "All" -> catalogue (owner 28 Nov); the desktop bento has no room for it */
 .bx-category.bx-all{display:none}
 @media(max-width:800px){.bx-category.bx-all{display:flex}.bx-all .bx-art{display:grid;place-items:center;color:var(--text)}.bx-all .bx-art svg{width:26px;height:26px}}
+
+/* owner 28 Nov: deal photo never cut off - stays inside the tile on the right */
+.bx-deal>img{right:3%!important;left:auto;top:6%!important;width:46%!important;height:88%!important;object-fit:contain;object-position:right center}
+@media(max-width:800px){.bx-deal>img{right:4%!important;top:8%!important;width:42%!important;height:84%!important}}
+/* owner 28 Nov: header search in the nav's type size, slimmer pill */
+@media(min-width:801px){.topnav .srch input{height:38px;font-size:.875rem;font-weight:600;padding-left:38px;border-radius:19px}.topnav .srch input::placeholder{font-size:.875rem;font-weight:500}.topnav .srch{max-width:440px}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
