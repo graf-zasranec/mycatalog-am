@@ -75,7 +75,20 @@
   // nothing prerendered to protect - route-pending hides #main and paints only "Loading..." - so it
   // starts at once: on a slow phone the wait held its first content back by about half a second.
   if (document.documentElement.classList.contains('route-pending')) start();
-  else requestAnimationFrame(() => setTimeout(start, 0));
+  else {
+    // The front page's largest paint is the deal-tile photo. Half a megabyte of catalogue code
+    // downloading and parsing beside it pushed that paint (PageSpeed's LCP) back by seconds on a
+    // phone, so the home page waits for the photo - never more than 1.2 s. Product pages keep
+    // starting at once: their controls must not wait for a slow photo.
+    const hero = document.querySelector?.('#masthero .bx-deal img');
+    const go = () => requestAnimationFrame(() => setTimeout(start, 0));
+    if (!hero || hero.complete) go();
+    else {
+      let done = false; const once = () => { if (!done) { done = true; go(); } };
+      hero.addEventListener('load', once, { once: true }); hero.addEventListener('error', once, { once: true });
+      setTimeout(once, 1200);
+    }
+  }
   // Installable app (owner, 2026-10-16): registered after load so it never delays the first paint.
   if ('serviceWorker' in navigator && location.protocol === 'https:')
     addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));

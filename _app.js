@@ -1555,7 +1555,16 @@ const boxes = (key, vals, fmt) => (vals.length >= FIND_AT
 // from the data means a new category never needs a hand-written filter list. Only what a shop
 // sells today counts: the grid hides the rest (hayMatch), so a brand or CPU taken from them was
 // an option that emptied the page - Meta, Starlink and Karcher all did (2026-10-24).
-function inView() { return DATA.filter(p => (!st.cat || (p.category || 'phone') === st.cat) && hasReal(p)); }
+// Asked once per filter while a bar is built (varies() and the max steps call it too): kept for
+// the rest of the current task only, so nothing can read a stale list after the data changes.
+let IN_VIEW = null;
+function inView() {
+  if (IN_VIEW && IN_VIEW.cat === st.cat && IN_VIEW.data === DATA) return IN_VIEW.list;
+  const list = DATA.filter(p => (!st.cat || (p.category || 'phone') === st.cat) && hasReal(p));
+  if (!IN_VIEW) queueMicrotask(() => { IN_VIEW = null; });
+  IN_VIEW = { cat: st.cat, data: DATA, list };
+  return list;
+}
 function varies(get) { return new Set(inView().map(get).filter(v => v != null && v !== '')).size > 1; }
 // The values a tick-list offers: only the ones something in view actually has, so "Submersible"
 // is not offered on a page where nothing is waterproof.
@@ -1604,7 +1613,18 @@ function fdrop(k, pool) {
   const vals = setVals(k, f, pool);
   return vals.length > 1 ? drop(k, f.label(), boxes(k, vals, f.fmt)) : '';
 }
+// The catalogue builds the bar and the filter form builds it again a moment later for the same
+// state; on a phone each build was ~40 ms of a tap. The same state gives the same bar, so the
+// second one is the first one. filterBodies is filled by a build, so an emptied map rebuilds.
+let FBAR_MEMO = null;
 function filterBar() {
+  const key = JSON.stringify([bxFilterSignature(), st.q, st.sort, st.fopen, PMIN, PMAX, onDeals(), DATA.length]);
+  if (FBAR_MEMO && FBAR_MEMO.key === key && FBAR_MEMO.data === DATA && filterBodies.size) return FBAR_MEMO.html;
+  const html = filterBarBuild();
+  FBAR_MEMO = { key, data: DATA, html };
+  return html;
+}
+function filterBarBuild() {
   const pool = inView();
   // On a phone the same bar is a sheet from the bottom: a head to close it, and at the foot one
   // button that applies every panel at once and says how many results that will be.
@@ -3922,9 +3942,14 @@ function bxTopAndMore(keys,flags,pool){
   const more=[shop,...rest].filter(Boolean),n=more.length+flags.filter(k=>bxFilterGroupBody(k,pool)).length;
   const active=/bx-filter-active/.test(more.join('')+flagHTML),open=BX_FILTER_OPEN.has('more')?BX_FILTER_OPEN.get('more'):active;
   return `${top.join('')}${n?`<details class="bx-more-filters" data-bx-section="more" ${open?'open':''}><summary>${esc(bxFilterWord('more'))} <span class="num">${n}</span></summary><div class="bx-spec-fields">${more.join('')}</div><div class="bx-flag-fields">${flagHTML}</div></details>`:''}`;}
-function bxFilterFormBody(barHTML){const pool=inView(),bar=barHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${st.cat?'':bxCategoryChoices(cats)}${bxChipGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}" title="${esc(bxFilterWord('budget'))} ${money(n)} ֏" aria-label="${esc(bxFilterWord('budget'))} ${money(n)} ֏">≤${n>=1e6?n/1e6+'M':n/1e3+'K'}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxTopAndMore(keys,flags,pool)}</div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
+function bxFilterFormBody(barHTML){const pool=inView(),bar=barHTML||filterBar(),keys=[...bar.matchAll(/<details[^>]*data-drop="([^"]+)"/g)].map(m=>m[1]).filter(k=>!['brand','price','shop','sort'].includes(k));const flags=[...bar.matchAll(/<button class="toggle[^"]*" data-f="([^"]+)"/g)].map(m=>m[1]);const cats=[...new Set(DATA.filter(hasReal).map(catOf))];return `<form class="bx-filter-form"><div class="bx-filter-head"><h2>${esc(x('filtersT'))}</h2><button type="submit" class="bx-filter-quick">${esc(x('applyF'))}</button><button type="button" class="bx-filter-close" data-fsclose="1" aria-label="${esc(x('closeL'))}">×</button></div><div class="bx-filter-fields">${st.cat?'':bxCategoryChoices(cats)}${bxChipGroup('brand',pool)}<fieldset class="bx-fieldset"><legend>${esc(t('filter.price'))} · ֏</legend><div class="bx-price-inputs"><label>${esc(t('common.from'))}<input name="min" type="number" inputmode="numeric" min="0" step="1" data-bx-min value="${st.pmin!==PMIN?st.pmin:''}" placeholder="${PMIN}"></label><label>${esc(t('common.to'))}<input name="max" type="number" inputmode="numeric" min="0" step="1" data-bx-max value="${st.pmax!==PMAX?st.pmax:''}" placeholder="${PMAX}"></label></div><div class="bx-budgets">${[100000,300000,1000000].map(n=>`<button type="button" data-bx-budget="${n}" title="${esc(bxFilterWord('budget'))} ${money(n)} ֏" aria-label="${esc(bxFilterWord('budget'))} ${money(n)} ֏">≤${n>=1e6?n/1e6+'M':n/1e3+'K'}</button>`).join('')}</div><p class="bx-filter-error" role="alert" hidden></p></fieldset>${bxTopAndMore(keys,flags,pool)}</div><div class="bx-filter-actions"><button type="button" data-rm="all">${esc(t('common.reset'))}</button><button type="submit" class="bx-apply">${esc(x('applyF'))}</button></div></form>`;}
 function bxRestoreFilters(force=false){const bar=document.querySelector('#fbar');if(!bar)return;let panel=document.querySelector('.bx-filter-sidebar');const signature=bxFilterSignature();if(panel&&!force&&panel.dataset.signature===signature)return;if(!panel){panel=document.createElement('aside');panel.className='bx-filter-sidebar';panel.setAttribute('aria-label',x('filtersT'));bar.before(panel);}panel.dataset.signature=signature;panel.innerHTML=bxFilterForm();}
-function bxStartFilters(){const main=document.querySelector('#main');if(main)new MutationObserver(()=>bxRestoreFilters()).observe(main,{childList:true});bxRestoreFilters();}
+// On a phone the sidebar is a closed sheet (display:none) until "Filters" is tapped. Building it
+// inside the route change was a third of going back to the catalogue on a phone, for a form
+// nobody could see yet - so there it is built just after the new page has painted.
+const bxSheetHidden=()=>matchMedia('(max-width:800px)').matches&&!document.documentElement.classList.contains('fs-open');
+const bxLater=typeof requestIdleCallback==='function'?f=>requestIdleCallback(f,{timeout:500}):f=>setTimeout(f,50);
+function bxStartFilters(){const main=document.querySelector('#main');if(main)new MutationObserver(()=>{if(bxSheetHidden())bxLater(()=>bxRestoreFilters());else bxRestoreFilters();}).observe(main,{childList:true});bxRestoreFilters();}
 document.addEventListener('click',e=>{const budget=e.target.closest('[data-bx-budget]');if(budget){const form=budget.closest('form');form.querySelector('[data-bx-min]').value='';form.querySelector('[data-bx-max]').value=budget.dataset.bxBudget;form.querySelector('[data-bx-max]').setCustomValidity('');}if(e.target.closest('[data-fsheet]')){bxFilterInvoker=e.target.closest('[data-fsheet]');bxRestoreFilters(true);const panel=document.querySelector('.bx-filter-sidebar');panel?.setAttribute('role','dialog');panel?.setAttribute('aria-modal','true');panel?.querySelector('.bx-filter-close')?.focus();}if(e.target.closest('[data-fsclose]'))bxCloseFilterFocus();if(e.target.closest('[data-rm]'))queueMicrotask(()=>bxRestoreFilters(true));});
 document.addEventListener('input',e=>{if(e.target.matches('[data-bx-min],[data-bx-max]'))e.target.closest('form').querySelector('[data-bx-max]').setCustomValidity('');if(!e.target.matches('.bx-brand-find'))return;const query=e.target.value.toLocaleLowerCase(st.lang);for(const label of e.target.closest('fieldset').querySelectorAll('.bx-check-grid label'))label.hidden=!label.textContent.toLocaleLowerCase(st.lang).includes(query);});
 // Non-category filters remain drafts until Apply. Rendering a draft must not

@@ -572,7 +572,8 @@ function seoTitle(shell) {
   const preload = ['noto-sans-armenian-armenian-16.woff2', 'manrope-latin-15.woff2', 'manrope-cyrillic-13.woff2', 'fraunces-text-19.woff2']
     .map(f => `<link rel="preload" href="/fonts/${f}" as="font" type="font/woff2" crossorigin>`).join('');
   return shell.replace('<title>Better.am</title>', `<title>${SEO.title}</title>`)
-    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `${preload}<style>${fonts}</style>`)
+    // every photo comes from img.better.am: open that connection while the HTML is still parsing
+    .replace('<link rel="stylesheet" href="fonts/fonts.css">', `<link rel="preconnect" href="https://img.better.am">${preload}<style>${fonts}</style>`)
     .replace(/<style>([\s\S]*?)<\/style>/g, (_, css) =>
       `<style>${transformSync(css, { loader: 'css', minify: true, legalComments: 'none' }).code}</style>`);
 }
