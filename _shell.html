@@ -1889,6 +1889,12 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 @keyframes bxIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @keyframes bxInImg{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.nav-deal span{animation:none;color:inherit;background:none}.nav-deal i{display:none}.nav a.nav-deal::before{animation:none}.nav-deal span{-webkit-text-fill-color:#fff}.bx-deal.bx-in>*,.bx-deal.bx-out>*{animation:none;transition:none}}
+
+/* mobile Deals: % on a small wine burst */
+.mico.mdeal{isolation:isolate}
+.mico.mdeal::before{content:"";position:absolute;inset:4px 2px;z-index:-1;background:radial-gradient(circle at 50% 45%,#9A3A4C,#7A2A3A 55%,#6E2433);clip-path:polygon(50.0% 0.0%,58.0% 14.9%,71.7% 5.0%,72.4% 21.9%,89.1% 18.8%,82.4% 34.4%,98.7% 38.9%,86.0% 50.0%,98.7% 61.1%,82.4% 65.6%,89.1% 81.2%,72.4% 78.1%,71.7% 95.0%,58.0% 85.1%,50.0% 100.0%,42.0% 85.1%,28.3% 95.0%,27.6% 78.1%,10.9% 81.2%,17.6% 65.6%,1.3% 61.1%,14.0% 50.0%,1.3% 38.9%,17.6% 34.4%,10.9% 18.8%,27.6% 21.9%,28.3% 5.0%,42.0% 14.9%);animation:dealBurst 2.4s ease-in-out infinite}
+.mico.mdeal span{color:#fff;font-weight:800;font-size:15px;line-height:1}
+@media (prefers-reduced-motion:reduce){.mico.mdeal::before{animation:none}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>
@@ -1905,6 +1911,7 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
       <div class="sugg" id="sugg" role="listbox" hidden></div>
     </div>
     <span class="mast-r">
+      <a class="mico mdeal" id="mDeal" href="#/deals" aria-label="Deals"><span aria-hidden="true">%</span></a>
       <a class="mico" id="mCat" href="#/catalog" aria-label="Catalog"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></a>
       <a class="mico" id="mCmp" href="#/compare" aria-label="Compare"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v18M16 3v18M3 7h18M3 17h18"/></svg><b id="mCmpN" hidden></b></a>
       <button type="button" class="msrch" id="msrchBtn" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.2-3.2"/></svg></button>

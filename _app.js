@@ -1389,9 +1389,9 @@ function paintChrome() {
     + ['hy', 'ru', 'en'].map(l =>
     `<a href="${languageHref(l)}" data-lang="${l}" lang="${l}" hreflang="${l}"${st.lang === l ? ' aria-current="page"' : ''}>${LANG_LBL[l]}</a>`).join('') + '</span>';
   const ms = $('#msrchBtn'); if (ms) ms.setAttribute('aria-label', t('nav.search_placeholder'));
-  $('#mCat')?.setAttribute('aria-label', t('nav.catalog')); $('#mCmp')?.setAttribute('aria-label', t('nav.compare'));
+  $('#mDeal')?.setAttribute('aria-label', DEALS_L[st.lang] || DEALS_L.en); $('#mCat')?.setAttribute('aria-label', t('nav.catalog')); $('#mCmp')?.setAttribute('aria-label', t('nav.compare'));
   const cur = (el, on) => { if (!el) return; if (on) el.setAttribute('aria-current', 'page'); else el.removeAttribute?.('aria-current'); };
-  cur($('#mCat'), /^#\/(c\/|catalog|construct)/.test(location.hash)); cur($('#mCmp'), location.hash === '#/compare');
+  cur($('#mDeal'), location.hash === '#/deals'); cur($('#mCat'), /^#\/(c\/|catalog|construct)/.test(location.hash)); cur($('#mCmp'), location.hash === '#/compare');
   const tb = $('#themeBtn');
   tb.setAttribute('aria-label', t('common.theme') + ': ' + st.theme);
   tb.setAttribute('title', t('common.theme'));
