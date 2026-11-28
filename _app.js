@@ -1854,7 +1854,7 @@ function cardFacts(p, v) {
 // type throughout (typTier), three shops at least, and 5% or more under the usual price.
 // Popular products first, and no more than three from one section or one brand, so the row is not
 // ten iPhones.
-const DEALS_MAX = 10;
+const DEALS_MAX = 30;
 // The prices do not change while the page is open, so the row is worked out once.
 let DEALS_CACHE = null;
 function deals() {
@@ -1908,7 +1908,7 @@ function dealCard(d, isSpot) {
 // row is right below.
 function spotDeal(dl) {
   // Rotates daily through the popular deals; picking the biggest % every day kept showing one phone.
-  const pool = dl.filter(d => !d.drop).slice(0, 10);
+  const pool = dl.filter(d => !d.drop).slice(0, 30);
   return pool.length ? pool[Math.floor(Date.now() / 864e5) % pool.length] : null;
 }
 function spotHTML(d) {
@@ -3846,8 +3846,9 @@ const BX_ASSETS={"images/bento/apple-iphone-18-pro-800-c9939905a9.webp":[{"src":
 const bxText=k=>(BX_WORDS[st.lang]||BX_WORDS.en)[k]||BX_WORDS.en[k]||k;
 function bxIcon(kind){const paths={phone:'<rect x="6" y="2" width="12" height="20" rx="2"/><path d="M10 18h4"/>',laptop:'<rect x="4" y="3" width="16" height="13" rx="1.5"/><path d="m4 16-2 4h20l-2-4"/>',tv:'<rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8m-4-4v4"/>',headphones:'<path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="2" y="12" width="5" height="9" rx="2"/><rect x="17" y="12" width="5" height="9" rx="2"/>',kitchen:'<path d="M5 3v5m3-5v5M2 3v5c0 3 6 3 6 0M5 10v11m13-8h3V3c-4 0-6 8-3 10Zm0 0v8"/>',vacuum:'<path d="m15 3-6 15m-4 0h9l2 4H3Zm9-14 4 2 2-4-4-2Z"/>',watch:'<rect x="6" y="6" width="12" height="12" rx="3"/><path d="m8 6 1-4h6l1 4m-8 12 1 4h6l1-4m-4-8v3l2 1"/>'};return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[kind]||paths.phone}</svg>`;}
 function bxPhoto(src,alt,hero=false){const a=BX_ASSETS[src]||[],fallback=a.find(x=>x.width>=480)||a.at(-1);return `<img src="${esc(fallback?.src||src)}" ${a.length?`srcset="${a.map(x=>`${esc(x.src)} ${x.width}w`).join(',')}" sizes="${hero?'(max-width:800px) 54vw,500px':'(max-width:800px) 48px,380px'}"`:''} alt="${esc(alt)}" width="800" height="800" decoding="async" ${hero?'fetchpriority="high"':'loading="lazy"'}>`;}
-function bxHeroOffers(){const p=byId(BX_DATA.hero.id);if(!p)return[];const list=selectionOffers(p,initialConfig(p)).slice().sort((a,b)=>a.price-b.price);return [...new Map(list.slice().reverse().map(o=>[o.shop,o])).values()].sort((a,b)=>a.price-b.price);}
-function bxMastHero(){const h=BX_DATA.hero,p=byId(h.id),config=initialConfig(p),rows=bxHeroOffers(),lo=rows[0]?.price,sorted=rows.map(o=>o.price),mid=sorted.length?(sorted[Math.floor((sorted.length-1)/2)]+sorted[Math.ceil((sorted.length-1)/2)])/2:0;const saving=lo?Math.round(mid-lo):0;const listed=DATA.filter(hasReal).length;return `<section class="bx-grid" aria-label="Better.am">
+function bxHero(){const d=spotDeal(deals());if(!d||!d.p||d.p.id===BX_DATA.hero.id)return BX_DATA.hero;const id=d.p.id,photo=IMG(id);if(!BX_ASSETS[photo]&&THUMB(id)!==photo)BX_ASSETS[photo]=[{src:THUMB(id),width:480},{src:photo,width:1200}];return {id,photo};}
+function bxHeroOffers(id=bxHero().id){const p=byId(id);if(!p)return[];const list=selectionOffers(p,initialConfig(p)).slice().sort((a,b)=>a.price-b.price);return [...new Map(list.slice().reverse().map(o=>[o.shop,o])).values()].sort((a,b)=>a.price-b.price);}
+function bxMastHero(){const h=bxHero(),p=byId(h.id),config=initialConfig(p),rows=bxHeroOffers(h.id),lo=rows[0]?.price,sorted=rows.map(o=>o.price),mid=sorted.length?(sorted[Math.floor((sorted.length-1)/2)]+sorted[Math.ceil((sorted.length-1)/2)])/2:0;const saving=lo?Math.round(mid-lo):0;const listed=DATA.filter(hasReal).length;return `<section class="bx-grid" aria-label="Better.am">
 <a class="bx-deal" href="#/p/${esc(h.id)}" data-bx-deal="${esc(h.id)}">${saving>0?`<span class="bx-save">−${money(saving)} ֏</span><span class="bx-baseline">${esc(bxText('vsMedian'))}</span>`:''}${bxPhoto(h.photo,fullName(p),true)}<div class="bx-deal-copy"><h1>${esc(p.name)}</h1><p class="bx-config">${[config.storage!=null?gb(config.storage):'',config.ram!=null?gb(config.ram):'',config.esim===true?'eSIM':config.esim===false?'Nano-SIM':''].filter(Boolean).map(esc).join(' · ')} · ${rows.length} ${esc(bxText('shops'))}</p><p class="bx-price">${lo?money(lo)+' ֏':'—'}</p><p class="bx-deal-date">${esc(bxText('deal'))} · ${esc(updatedOn().slice(0,5))}</p><div class="bx-bars">${rows.slice(0,2).map((o,i)=>`<div><span>${esc(shopName(o.shop))}</span><i><b style="width:${Math.round(lo/o.price*100)}%"></b></i><strong>${money(o.price)}</strong></div>`).join('')}</div></div></a>
 <section class="bx-summary" aria-label="${esc(bxText('better'))}"><div class="bx-stats">${[[listed,'models'],[Object.values(P.offers||{}).reduce((n,a)=>n+a.length,0),'offers'],[Object.keys(P.shops||{}).length,'shops']].map(([n,k])=>`<div><b>${money(n)}</b><span>${esc(bxText(k))}</span></div>`).join('')}</div><div><h2>${esc(bxText('better'))}</h2><p>${esc(bxText('picks'))}</p></div><div class="bx-suggest">${['Apple','Samsung','Sony','Dyson'].map(q=>`<button type="button" data-bx-search="${q}">${q}</button>`).join('')}</div></section>
 <div class="bx-categories">${BX_DATA.categories.map(c=>{const cat=catOf(byId(c.product)||{category:c.id});const pool=DATA.filter(p=>catOf(p)===cat&&hasReal(p)),min=Math.min(...pool.map(p=>offersFor(p)[0]?.price).filter(v=>v>0));return `<a class="bx-category bx-${c.id}" href="#/c/${esc(cat)}"><h2>${esc(bxText(c.id))}</h2><p>${esc(bxText('from'))} <b>${Number.isFinite(min)?money(min)+' ֏':'—'}</b></p><span class="bx-art">${bxPhoto(c.photo,byId(c.product)?.name||bxText(c.id))}</span><span class="bx-count">${pool.length} ${esc(bxText('models'))}</span><span class="bx-type">${bxIcon(c.id)}</span></a>`;}).join('')}</div></section>`;}

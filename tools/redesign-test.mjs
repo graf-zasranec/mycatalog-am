@@ -61,7 +61,7 @@ for(const [file,lang]of[['index.html','hy'],['en/index.html','en'],['ru/index.ht
  assert.equal(fs.readFileSync('data/site-ui.'+stylePath.split('?')[0],'utf8'),fs.readFileSync('data/site-ui.css','utf8'),file+' referenced CSS matches generated design');
  const preload=html.match(/<link[^>]*rel="preload"[^>]*imagesrcset="([^"]+)"/);
  assert.ok(preload,file+' preloads responsive hero');
- assert.ok(preload[1].split(',').every(v=>v.trim().startsWith('/images/')),file+' preload paths resolve before locale base element');
+ assert.ok(preload[1].split(',').every(v=>v.trim().startsWith('/images/')||v.trim().startsWith('https://')),file+' preload paths resolve before locale base element');
  assert.ok(!html.includes('assets/'),file+' no local draft asset paths');
  assert.ok(!html.includes('hybrid-preview'),file+' no isolated draft preference key');
 }
