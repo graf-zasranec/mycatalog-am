@@ -1908,7 +1908,7 @@ function dealCard(d, isSpot) {
 // row is right below.
 function spotDeal(dl) {
   // Rotates daily through the popular deals; picking the biggest % every day kept showing one phone.
-  const pool = dl.filter(d => !d.drop).slice(0, 6);
+  const pool = dl.filter(d => !d.drop).slice(0, 10);
   return pool.length ? pool[Math.floor(Date.now() / 864e5) % pool.length] : null;
 }
 function spotHTML(d) {
