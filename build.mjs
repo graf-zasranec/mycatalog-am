@@ -583,7 +583,8 @@ function splitShell(shell) {
 }
 
 // rAF runs just before the first frame, the timeout just after it.
-const ROUTE_START_JS = `(function(){var h=location.hash,p=location.pathname.match(/\\/p\\/([a-z0-9-]+)\\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();`;
+// A saved English/Russian choice used to paint the Armenian home first, then repaint; go to the right page before paint.
+const ROUTE_START_JS = `(function(){try{var lp=location.pathname;if((lp==='/'||lp==='/index.html')&&!/[?&]lang=/.test(location.search)){var r=localStorage.getItem('better.v2'),o=localStorage.getItem('mycatalog.v2'),sl=r?(JSON.parse(r)||{}).lang:null;if(!r&&!o&&/^ru\\b/i.test((navigator.languages&&navigator.languages[0])||navigator.language||''))sl='ru';if(sl==='en'||sl==='ru'){location.replace('/'+sl+'/'+location.hash);return}}}catch(e){}var h=location.hash,p=location.pathname.match(/\\/p\\/([a-z0-9-]+)\\/?$/);if(h.indexOf('#/')===0&&h!=='#/'&&!(p&&h==='#/p/'+p[1])){document.documentElement.classList.add('route-pending');var l=(new URLSearchParams(location.search)).get('lang')||document.documentElement.lang;document.documentElement.dataset.routeLabel=h==='#/compare'?({hy:'Համեմատություն',ru:'Сравнение',en:'Compare'})[l]||'Compare':({hy:'Բեռնվում է…',ru:'Загрузка…',en:'Loading…'})[l]||'Loading…'}})();`;
 const BOOT_JS = rd('tools/site-boot.js');
 
 function writeBundle(file, content) {
