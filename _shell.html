@@ -1883,11 +1883,13 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 @keyframes dealSweep{0%,35%{background-position:100% 0}75%,100%{background-position:0 0}}
 @keyframes dealTw{0%,100%{transform:scale(0) rotate(0);opacity:0}45%{transform:scale(1) rotate(45deg);opacity:1}70%{transform:scale(.6) rotate(90deg);opacity:.6}}
 /* home deal tile swap */
-.bx-deal.bx-out>*{opacity:0;transform:translateY(6px);transition:opacity .35s ease,transform .35s ease}
-.bx-deal.bx-in>*{animation:bxIn .55s cubic-bezier(.2,.7,.2,1) both}
+.bx-deal>*{transition:opacity .5s cubic-bezier(.4,0,.2,1),transform .5s cubic-bezier(.4,0,.2,1),filter .5s}
+.bx-deal.bx-out>*{opacity:0;transform:translateY(-6px);filter:blur(2px)}
+.bx-deal.bx-in>*{animation:bxIn .8s cubic-bezier(.16,1,.3,1) both}
+.bx-deal.bx-in>:nth-child(2){animation-delay:.06s}.bx-deal.bx-in>:nth-child(3){animation-delay:.12s}
 .bx-deal.bx-in>img{animation-name:bxInImg}
-@keyframes bxIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-@keyframes bxInImg{from{opacity:0;transform:scale(.96)}to{opacity:1;transform:none}}
+@keyframes bxIn{from{opacity:0;transform:translateY(12px);filter:blur(3px)}to{opacity:1;transform:none;filter:none}}
+@keyframes bxInImg{from{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.nav-deal span{animation:none;color:inherit;background:none}.nav-deal i{display:none}.nav a.nav-deal::before{animation:none}.nav-deal span{-webkit-text-fill-color:#fff}.bx-deal.bx-in>*,.bx-deal.bx-out>*{animation:none;transition:none}}
 
 /* mobile Deals: % on a small wine burst */
@@ -1895,6 +1897,15 @@ h1,h2,h3,h4{min-width:0;overflow-wrap:break-word}
 .mico.mdeal::before{content:"";position:absolute;inset:4px 2px;z-index:-1;background:radial-gradient(circle at 50% 45%,#9A3A4C,#7A2A3A 55%,#6E2433);clip-path:polygon(50.0% 0.0%,58.0% 14.9%,71.7% 5.0%,72.4% 21.9%,89.1% 18.8%,82.4% 34.4%,98.7% 38.9%,86.0% 50.0%,98.7% 61.1%,82.4% 65.6%,89.1% 81.2%,72.4% 78.1%,71.7% 95.0%,58.0% 85.1%,50.0% 100.0%,42.0% 85.1%,28.3% 95.0%,27.6% 78.1%,10.9% 81.2%,17.6% 65.6%,1.3% 61.1%,14.0% 50.0%,1.3% 38.9%,17.6% 34.4%,10.9% 18.8%,27.6% 21.9%,28.3% 5.0%,42.0% 14.9%);animation:dealBurst 2.4s ease-in-out infinite}
 .mico.mdeal span{color:#fff;font-weight:800;font-size:15px;line-height:1}
 @media (prefers-reduced-motion:reduce){.mico.mdeal::before{animation:none}}
+
+/* one-line footer (owner, 28 Nov): logo · updated · not a shop ... links on the right */
+.ft{margin-top:40px}
+.ft .shell{flex-wrap:nowrap;gap:22px;padding-block:18px;white-space:nowrap}
+.ft .shell>span:not(.ft-note):not(.ft-links){opacity:.8}
+.ft-note{flex-basis:auto;order:0;font-size:inherit;color:var(--muted);overflow:hidden;text-overflow:ellipsis}
+.ft-links,.ft-links{width:auto;margin-left:auto;border-top:0;padding-top:0;flex-wrap:nowrap;order:0}
+.ft-links a,.ft-links button{transition:color .2s}
+@media(max-width:800px){.ft .shell{flex-wrap:wrap;white-space:normal;gap:8px 16px}.ft-links{margin-left:0;width:100%}}
 </style>
 
 <a class="skip" href="#main" id="skipLink">Main</a>

@@ -1090,8 +1090,15 @@ const ANY_ASK = new Set(Object.values(ASK).flat());
 const askable = (k, cat = st.cat) => k === 'brand' || k === 'shop'
   || (cat ? (ASK[cat] || []).includes(k) : ANY_ASK.has(k));
 
+const NOTSHOP = {"hy": "Խանութ չենք, միայն համեմատում ենք գները", "ru": "Мы не магазин, только сравниваем цены", "en": "Not a shop, we only compare prices"};
 const DEALS_L = { hy: 'Զեղչեր', ru: 'Скидки', en: 'Deals' };
-const onDeals = () => location.hash.replace(/^#/, '') === '/deals';
+// matches() asks this once per product, and a facet count runs matches() over the whole
+// catalogue: reading location.hash thousands of times was a full second of a phone's INP.
+// Remembered until the route changes (render() and hashchange both forget it).
+let ON_DEALS = null;
+const onDeals = () => ON_DEALS ?? (ON_DEALS = location.hash.replace(/^#/, '') === '/deals');
+const forgetRoute = () => { ON_DEALS = null; };
+if (typeof addEventListener === 'function') { addEventListener('hashchange', forgetRoute); addEventListener('popstate', forgetRoute); }
 let DEAL_IDS = null;
 const dealIds = () => DEAL_IDS || (DEAL_IDS = new Set((typeof DROPS !== 'undefined' ? DROPS : []).map(d => d.id)));
 function matches(p, s) {
@@ -1413,7 +1420,7 @@ function paintChrome() {
     + (typeof BLOG !== 'undefined' && BLOG.length ? `<a href="#/blog" ${h.startsWith('/blog') ? 'aria-current="page"' : ''}>${esc(t('nav.blog'))}</a>` : '')
     + `<a href="#/contact" ${h === '/contact' ? 'aria-current="page"' : ''}>${esc(t('nav.coop'))}</a>`;
   paintCmpCount();
-  $('#foot').innerHTML = `<b>Better.am</b>${updatedOn() ? `<span>${esc(x('updated'))} ${esc(updatedOn())}</span>` : ''}`
+  $('#foot').innerHTML = `<b>Better.am</b>${updatedOn() ? `<span>${esc(x('updated'))} ${esc(updatedOn())}</span>` : ''}<span class="ft-note">${esc(NOTSHOP[st.lang] || NOTSHOP.en)}</span>`
     + `<span class="ft-links"><a href="#/contact">${esc(t('nav.contact'))}</a><a href="#/privacy">${esc(t('nav.privacy'))}</a><a href="#/terms">${esc(t('nav.terms'))}</a>${typeof window.gtag === 'function' ? `<button type="button" class="analytics-settings" data-analytics-settings>${({hy:'Վիճակագրության կարգավորումներ',ru:'Настройки статистики',en:'Analytics settings'})[st.lang]}</button>` : ''}</span>`;
 }
 // The compare bar is gone: picking a product goes straight to the comparison, so a second copy
@@ -3245,6 +3252,7 @@ let catalogueRenderTicket=0;
 const keepsQuery = route => !(route === '' || route === '/' || route.startsWith('/c/'));
 let painted = false;
 function render(keepScroll) {
+  forgetRoute();
   document.documentElement.classList.remove('fs-open');   // a route change never leaves the sheet up
   const raw = location.hash.replace(/^#/, '');
   const initialId=document.getElementById('main')?.dataset.prerenderProduct;
@@ -3859,7 +3867,7 @@ function bxHero(){return bxTopDeals()[0];}
 function bxHeroOffers(id=bxHero().id){const p=byId(id);if(!p)return[];const list=selectionOffers(p,initialConfig(p)).slice().sort((a,b)=>a.price-b.price);return [...new Map(list.slice().reverse().map(o=>[o.shop,o])).values()].sort((a,b)=>a.price-b.price);}
 let BX_TIMER=0;
 // Swap the tile every few seconds; pauses on hover/focus and in background tabs; reduced motion swaps without the animation.
-function bxRotate(){clearInterval(BX_TIMER);const list=bxTopDeals();if(list.length<2)return;let i=0;BX_TIMER=setInterval(()=>{const el=document.querySelector('.bx-deal');if(!el){clearInterval(BX_TIMER);return}if(document.hidden||el.matches(':hover,:focus-within'))return;el.classList.add('bx-out');setTimeout(()=>{if(!el.isConnected)return;i=(i+1)%list.length;el.outerHTML=bxDealA(list[i],' bx-in');},380);},3500);}
+function bxRotate(){clearInterval(BX_TIMER);const list=bxTopDeals();if(list.length<2)return;let i=0;BX_TIMER=setInterval(()=>{const el=document.querySelector('.bx-deal');if(!el){clearInterval(BX_TIMER);return}if(document.hidden||el.matches(':hover,:focus-within'))return;const n=(i+1)%list.length,img=new Image();img.src=list[n].photo;(img.decode?img.decode():Promise.resolve()).catch(()=>{}).then(()=>{if(!el.isConnected)return;el.classList.add('bx-out');setTimeout(()=>{if(!el.isConnected)return;i=n;el.outerHTML=bxDealA(list[i],' bx-in');},520);});},4500);}
 function bxDealA(h,cls=''){const p=byId(h.id),config=initialConfig(p),rows=bxHeroOffers(h.id),lo=rows[0]?.price,sorted=rows.map(o=>o.price),mid=sorted.length?(sorted[Math.floor((sorted.length-1)/2)]+sorted[Math.ceil((sorted.length-1)/2)])/2:0;const saving=lo?Math.round(mid-lo):0;return `<a class="bx-deal${cls}" href="#/p/${esc(h.id)}" data-bx-deal="${esc(h.id)}">${saving>0?`<span class="bx-save">−${money(saving)} ֏</span><span class="bx-baseline">${esc(bxText('vsMedian'))}</span>`:''}${bxPhoto(h.photo,fullName(p),true)}<div class="bx-deal-copy"><h1>${esc(p.name)}</h1><p class="bx-config">${[config.storage!=null?gb(config.storage):'',config.ram!=null?gb(config.ram):'',config.esim===true?'eSIM':config.esim===false?'Nano-SIM':''].filter(Boolean).map(esc).join(' · ')} · ${rows.length} ${esc(bxText('shops'))}</p><p class="bx-price">${lo?money(lo)+' ֏':'—'}</p><p class="bx-deal-date">${esc(bxText('deal'))} · ${esc(updatedOn().slice(0,5))}</p><div class="bx-bars">${rows.slice(0,2).map((o,i)=>`<div><span>${esc(shopName(o.shop))}</span><i><b style="width:${Math.round(lo/o.price*100)}%"></b></i><strong>${money(o.price)}</strong></div>`).join('')}</div></div></a>`;}
 function bxMastHero(){const h=bxHero();const listed=DATA.filter(hasReal).length;return `<section class="bx-grid" aria-label="Better.am">
 ${bxDealA(h)}
@@ -3894,7 +3902,7 @@ const options=bxFilterOptions(k);if(options.length<2)return'';return `<label cla
 const BX_TOP_SPECS=3;
 function bxChipGroup(k,pool){const f=FILT[k];if(!f)return'';const label=esc(f.label());
   if(f.kind==='flag')return bxFilterGroup(k,pool);
-  if(f.kind==='set'){const vals=setVals(k,f,pool);if(vals.length<2)return'';const n=v=>cnt({[f.arr]:[v]});
+  if(f.kind==='set'){const vals=setVals(k,f,pool);if(vals.length<2)return'';let n=v=>cnt({[f.arr]:[v]});if(k==='brand'){const by=new Map(),s0={...st,brands:[]};for(const p of DATA)if(matches(p,s0))by.set(p.brand,(by.get(p.brand)||0)+1);n=v=>by.get(v)||0;}
     const sorted=k==='brand'?[...vals].sort((a,b)=>n(b)-n(a)):vals,top=sorted.slice(0,6),rest=sorted.slice(6);
     const on=v=>(st[f.arr]||[]).includes(v);
     const chip=v=>`<label class="bx-chip"><input type="checkbox" name="${k}" value="${esc(String(v))}" data-bx-field="${k}" ${on(v)?'checked':''}><span>${esc(f.fmt?f.fmt(v):v)}${k==='brand'?` <i class="num">${n(v)}</i>`:''}</span></label>`;

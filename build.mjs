@@ -1024,7 +1024,7 @@ const TOP = (lang, path) => {
 const FOOT = lang => {
   const pre = PRE[lang], c = CHROME[lang];
   const home = '/' + pre, A = { hy: ['Կապ', 'Գաղտնիություն', 'Պայմաններ', 'Թարմացվել է'], ru: ['Контакты', 'Конфиденциальность', 'Условия', 'Обновлено'], en: ['Contact', 'Privacy', 'Terms', 'Updated'] }[lang];
-  return `<footer class="ft"><div><b>Better.am</b><span>${A[3]} ${today.split('-').reverse().join('.')}</span><a href="${home}#/contact">${A[0]}</a><a href="${home}#/privacy">${A[1]}</a><a href="${home}#/terms">${A[2]}</a></div></footer>`;
+  return `<footer class="ft"><div><b>Better.am</b><span>${A[3]} ${today.split('-').reverse().join('.')}</span><a href="${home}#/contact">${A[0]}</a><a href="${home}#/privacy">${A[1]}</a><a href="${home}#/terms">${A[2]}</a><small>${{ hy: 'Խանութ չենք, միայն համեմատում ենք գները', ru: 'Мы не магазин, только сравниваем цены', en: 'Not a shop, we only compare prices' }[lang]}</small></div></footer>`;
 };
 const THUMBS = fs.existsSync('data/thumbnails.json') ? JSON.parse(rd('data/thumbnails.json')) : {};
 const cardImg = p => {
